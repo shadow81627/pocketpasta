@@ -5,9 +5,9 @@
         "profile_name": "default",
         "keep_warm": false,
         "certificate_arn": "arn:aws:acm:us-east-1:468222072942:certificate/72aaf4d8-70d9-4683-9d6a-ecf9b804c572",
-        "domain": "www.pocketpasta.com", // Your target domain
-        "lets_encrypt_key": "s3://pocketpasta-ssl/account.key", // S3 Path to account key
-        "lets_encrypt_expression": "rate(15 days)", // LE Renew schedule
+        "domain": "www.pocketpasta.com",
+        "lets_encrypt_key": "s3://pocketpasta-ssl/account.key",
+        "lets_encrypt_expression": "rate(15 days)", 
         "s3_bucket": "pocketpasta",
         "timeout_seconds": 300,
         "memory_size": 128,
