@@ -11,25 +11,44 @@
 
     <title>Pocketpasta Planner</title>
 
-    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
 
     <!-- Bootstrap Core CSS -->
-    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='lib/bootstrap/css/bootstrap.min.css') }}">
 
     <!-- Custom Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel+Decorative:700">
-    <link rel="stylesheet" href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" type="text/css">
 
     <!-- Plugin CSS -->
-    <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="lib/simple-line-icons/css/simple-line-icons.css">
-    <link rel="stylesheet" href="lib/device-mockups/device-mockups.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='lib/font-awesome/css/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='lib/simple-line-icons/css/simple-line-icons.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='lib/device-mockups/device-mockups.min.css') }}">
 
     <!-- Theme CSS -->
-    <link href="css/new-age.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/new-age.css') }}">
+
+    <!-- MailChimp -->
+    <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+    #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+    /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+    We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+    </style>
+
+    <!-- Google Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-101341202-1', 'auto');
+    ga('send', 'pageview');
+
+    </script>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -88,7 +107,7 @@
                             <div class="device">
                                 <div class="screen">
                                     <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                                    <img src="img/inventory.png" class="img-responsive" alt="">
+                                    <img src="{{ url_for('static', filename='img/inventory.png') }}" class="img-responsive" alt="">
                                 </div>
                                 <div class="button">
                                     <!-- You can hook the "home button" to some JavaScript events or just remove it -->
@@ -155,7 +174,7 @@
                             <div class="device">
                                 <div class="screen">
                                     <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                                    <img src="img/demo-screen-1.jpg" class="img-responsive" alt=""> </div>
+                                    <img src="{{ url_for('static', filename='img/inventory.png') }}" class="img-responsive" alt=""> </div>
                                 <div class="button">
                                     <!-- You can hook the "home button" to some JavaScript events or just remove it -->
                                 </div>
@@ -248,16 +267,16 @@
     </footer>
 
     <!-- jQuery -->
-    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="{{ url_for('static', filename='lib/jquery/jquery.min.js') }}"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="{{ url_for('static', filename='lib/bootstrap/js/bootstrap.min.js') }}"></script>
 
     <!-- Plugin JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 
     <!-- Theme JavaScript -->
-    <script src="js/new-age.min.js"></script>
+    <script src="{{ url_for('static', filename='js/new-age.min.js') }}"></script>
     <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 
 
