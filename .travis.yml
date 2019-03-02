@@ -1,4 +1,9 @@
 language: node_js
+#  latest stable Node.js release
+node_js: node
+before_install:
+  # Install latest version of npm
+  - npm install npm@latest -g
 install:
 - npm install
 script: npm run build
