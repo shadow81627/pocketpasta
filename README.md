@@ -1,4 +1,4 @@
-# pocketpasta
+# Pocket Pasta
 
 ## Project setup
 ```
