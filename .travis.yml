@@ -1,6 +1,9 @@
 language: node_js
 #  latest stable Node.js release
 node_js: node
+branches:
+  only:
+    - master
 script: npm run build
 deploy:
   # Keep dist folder for deploy
