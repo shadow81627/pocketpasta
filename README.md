@@ -1,4 +1,5 @@
 # Pocket Pasta
+[![Build Status](https://travis-ci.com/shadow81627/pocketpasta.svg?branch=master)](https://travis-ci.com/shadow81627/pocketpasta)
 
 ## Project setup
 ```
