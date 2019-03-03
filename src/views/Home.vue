@@ -3,6 +3,7 @@
     <img alt="Pocket Pasta logo" src="../assets/logo.png">
     <h1>Pocket Pasta</h1>
     <!-- <HelloWorld msg="Pocket Pasta"/> -->
+    <script type="application/ld+json" src="../assets/pocketpasta.json"></script>
   </div>
 </template>
 
