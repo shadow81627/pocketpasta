@@ -12,6 +12,8 @@
    "contactPoint": {
     "@type": "ContactPoint",
     "contactType": "customer support",
-    "email": "damien.robinson@pocketpasta.com"
+    "email": "damien.robinson@pocketpasta.com",
+    "areaServed" : "AU",
+    "availableLanguage" : ["English"]
   }
 }
