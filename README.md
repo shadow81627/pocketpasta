@@ -1,32 +1,24 @@
 # Pocket Pasta
 [![Build Status](https://travis-ci.com/shadow81627/pocketpasta.svg?branch=master)](https://travis-ci.com/shadow81627/pocketpasta)
+![GitHub last commit](https://img.shields.io/github/last-commit/shadow81627/pocketpasta.svg)
 
-## Project setup
-```
-npm install
-```
+> My posh Nuxt.js project
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Build Setup
 
-### Compiles and minifies for production
-```
-npm run build
-```
+``` bash
+# install dependencies
+$ npm install
 
-### Lints and fixes files
-```
-npm run lint
-```
+# serve with hot reload at localhost:3000
+$ npm run dev
 
-### Run your unit tests
-```
-npm run test:unit
+# build for production and launch server
+$ npm run build
+$ npm start
+
+# generate static project
+$ npm run generate
 ```
 
-### Run your end-to-end tests
-```
-npm run test:e2e
-```
+For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
