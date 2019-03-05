@@ -45,7 +45,7 @@ module.exports = {
   generate: {
     // if you want to use '404.html' instead of the default '200.html'
     fallback: false,
-    routes: ['/']
+    routes: ['/', '/about', '/newsletter']
   },
 
   /*
