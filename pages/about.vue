@@ -33,7 +33,7 @@ export default {
     return {
       script: [
         {
-          innerHTML: linkData,
+          innerHTML: JSON.stringify(linkData),
           type: 'application/ld+json'
         }
       ],
