@@ -23,7 +23,6 @@
 
 <script>
 // @ is an alias to /src
-import linkData from '@/assets/pocketpasta.json';
 import damien from '@/assets/damien.json';
 export default {
   data: () => ({
@@ -33,7 +32,7 @@ export default {
     return {
       script: [
         {
-          innerHTML: JSON.stringify(linkData),
+          innerHTML: JSON.stringify(damien),
           type: 'application/ld+json'
         }
       ],
