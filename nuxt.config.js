@@ -75,10 +75,17 @@ module.exports = {
    ** Nuxt.js modules
    */
   modules: [
+    '@nuxtjs/sentry',
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     '@nuxtjs/pwa'
   ],
+  sentry: {
+    // Enter your project's DSN here
+    dsn: 'https://46d059ea02a240dfbb89bfaa4926f463@sentry.io/1411042',
+    // Additional config
+    config: {release: "pocketpasta@39f6e037dd7a948d257306b88ab508f876231468"}
+  },
   /*
    ** Axios module configuration
    */

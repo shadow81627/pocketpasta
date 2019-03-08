@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Pocket Pasta is a collection of my demo apps that I build to practice my skills.",
   "author": "Damien Robinson",
-  "private": false,
+  "private": true,
   "scripts": {
     "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
     "build": "nuxt build",
@@ -13,11 +13,12 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "cross-env": "5.2.0",
-    "nuxt": "2.4.5",
-    "koa": "2.7.0",
     "@nuxtjs/axios": "5.4.0",
-    "@nuxtjs/pwa": "2.6.0"
+    "@nuxtjs/pwa": "2.6.0",
+    "@nuxtjs/sentry": "^2.3.1",
+    "cross-env": "5.2.0",
+    "koa": "2.7.0",
+    "nuxt": "2.4.5"
   },
   "devDependencies": {
     "nodemon": "1.18.10",
