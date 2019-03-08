@@ -1,6 +1,9 @@
 # Pocket Pasta
 [![Build Status](https://travis-ci.com/shadow81627/pocketpasta.svg?branch=master)](https://travis-ci.com/shadow81627/pocketpasta)
 ![GitHub last commit](https://img.shields.io/github/last-commit/shadow81627/pocketpasta.svg)
+![David](https://img.shields.io/david/shadow81627/pocketpasta.svg)
+![David](https://img.shields.io/david/dev/shadow81627/pocketpasta.svg)
+![David](https://img.shields.io/david/peer/shadow81627/pocketpasta.svg)
 
 > My posh Nuxt.js project
 
