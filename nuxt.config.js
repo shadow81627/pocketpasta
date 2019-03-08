@@ -84,7 +84,10 @@ module.exports = {
     // Enter your project's DSN here
     dsn: 'https://46d059ea02a240dfbb89bfaa4926f463@sentry.io/1411042',
     // Additional config
-    config: {release: "pocketpasta@39f6e037dd7a948d257306b88ab508f876231468"}
+    config: {
+      // enable sentry-webpack-plugin used to send releases to Sentry
+      publishRelease: true
+    }
   },
   /*
    ** Axios module configuration
