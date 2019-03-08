@@ -36,8 +36,8 @@ module.exports = {
     script: [
       {
         src: 'https://www.googletagmanager.com/gtag/js?id=UA-125711214-1',
-        async: true
-        // defer: true
+        async: '',
+        defer: ''
       }
     ]
   },
