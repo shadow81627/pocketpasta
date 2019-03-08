@@ -9,6 +9,8 @@
     "commitBody": "[skip ci] Update devDependencies"
   },
   "bumpVersion": "patch",
+  "labels ": "dependencies",
+  "prHourlyLimit": 1,
   "extends": [
     "config:base"
   ]
