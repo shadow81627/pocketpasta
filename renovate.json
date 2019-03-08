@@ -12,6 +12,15 @@
   "bumpVersion": "patch",
   "labels ": "dependencies",
   "prHourlyLimit": 1,
+  "packageRules": [
+    {
+      "packagePatterns": [ "eslint" ],
+      "groupName": "eslint",
+      "schedule": ["before 2am on monday"],
+      "automerge": true,
+      "automergeType": "branch"
+    }
+  ],
   "extends": [
     "config:base"
   ]
