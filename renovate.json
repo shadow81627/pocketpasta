@@ -1,4 +1,13 @@
 {
+  "assignees": ["shadow81627"],
+  "automerge": true,
+  "major": {
+    "automerge": false
+  },
+  "devDependencies": {
+    "automerge": true
+  },
+  "bumpVersion": "patch",
   "extends": [
     "config:base"
   ]
