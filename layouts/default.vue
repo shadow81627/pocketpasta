@@ -1,11 +1,10 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link>|
-      <router-link to="/about">About</router-link>|
-      <router-link to="/newsletter">Newsletter</router-link>
-      <!-- |
-      <router-link to="/recipes">Recipes</router-link>-->
+      <nuxt-link to="/" exact>Home</nuxt-link>|
+      <nuxt-link to="/about">About</nuxt-link>|
+      <nuxt-link to="/newsletter">Newsletter</nuxt-link>|
+      <nuxt-link to="/recipes" exact>Recipes</nuxt-link>
     </div>
     <nuxt />
   </div>
@@ -29,7 +28,7 @@ a {
   color: #2c3e50;
 }
 
-.nuxt-link-exact-active {
+.nuxt-link-active {
   color: #59ecc0;
 }
 </style>
