@@ -24,7 +24,7 @@
 
 <script>
 // @ is an alias to /src
-import damien from '@/assets/damien.json';
+import damien from '@/assets/link-data/damien.json';
 export default {
   data: () => ({
     damien,

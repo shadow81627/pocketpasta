@@ -7,7 +7,7 @@
 
 <script>
 // @ is an alias to /src
-import linkData from '@/assets/pocketpasta.json';
+import linkData from '@/assets/link-data/pocketpasta.json';
 export default {
   head() {
     return {
