@@ -5,17 +5,18 @@
       <!-- Pocket Pasta is a progressive web app for journaling your life.
       The aim is to have a multi module app that allows users to record how they live.
       Documenting how we live is the first step in planning how to live.-->
-      Pocket Pasta is a collection of my demo apps that I build to practice my skills.
+      Pocket Pasta is a collection of my demo apps that I build to practice my
+      skills.
     </p>
     <h2>Pocket Pasta People</h2>
     <ul style="list-style-type: none; padding: 0;">
-      <li>{{damien.name}}</li>
+      <li>{{ damien.name }}</li>
       <li>
-        <a :href="damien.email">{{damien.email}}</a>
+        <a :href="damien.email">{{ damien.email }}</a>
       </li>
-      <li>{{damien.jobTitle}}</li>
+      <li>{{ damien.jobTitle }}</li>
       <li v-for="link in damien.sameAs" :key="link">
-        <a :href="link">{{link}}</a>
+        <a :href="link">{{ link }}</a>
       </li>
     </ul>
   </div>
@@ -26,18 +27,18 @@
 import damien from '@/assets/damien.json';
 export default {
   data: () => ({
-    damien
+    damien,
   }),
   head() {
     return {
       script: [
         {
           innerHTML: JSON.stringify(damien),
-          type: 'application/ld+json'
-        }
+          type: 'application/ld+json',
+        },
       ],
-      __dangerouslyDisableSanitizers: ['script']
+      __dangerouslyDisableSanitizers: ['script'],
     };
-  }
+  },
 };
 </script>

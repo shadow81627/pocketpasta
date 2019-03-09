@@ -1,58 +1,65 @@
-const pkg = require('./package');
+import pkg from './package';
 
-module.exports = {
+export default {
   mode: 'universal',
 
   /*
    ** Headers of the page
    */
   head: {
+    htmlAttrs: {
+      amp: '',
+    },
     title: pkg.name,
     meta: [
       {
-        charset: 'utf-8'
+        charset: 'utf-8',
       },
       {
         name: 'viewport',
-        content: 'width=device-width, initial-scale=1'
+        content: 'width=device-width, initial-scale=1',
       },
       {
         hid: 'description',
         name: 'description',
-        content: pkg.description
+        content: pkg.description,
       },
       {
         name: 'google-site-verification',
-        content: 'LqVnUnYGR8NrvXrhnFgW5RjNJVChZp2j2OEP55xjE30'
-      }
+        content: 'LqVnUnYGR8NrvXrhnFgW5RjNJVChZp2j2OEP55xjE30',
+      },
     ],
     link: [
       {
         rel: 'icon',
         type: 'image/x-icon',
-        href: '/favicon.ico'
-      }
+        href: '/favicon.ico',
+      },
     ],
     script: [
       {
         src: 'https://www.googletagmanager.com/gtag/js?id=UA-125711214-1',
         async: '',
-        defer: ''
-      }
-    ]
+        defer: '',
+      },
+      {
+        async: '',
+        src: 'https://cdn.ampproject.org/v0.js',
+      },
+    ],
   },
 
   generate: {
     // if you want to use '404.html' instead of the default '200.html'
     fallback: false,
-    routes: ['/', '/about', '/newsletter']
+    routes: ['/', '/about', '/newsletter'],
   },
 
   /*
    ** Customize the progress-bar color
    */
   loading: {
-    color: '#fff'
+    color: '#fff',
   },
 
   /*
@@ -67,8 +74,8 @@ module.exports = {
     // Add google analytics
     {
       src: '~plugins/ga.js',
-      ssr: false
-    }
+      ssr: false,
+    },
   ],
 
   /*
@@ -78,7 +85,7 @@ module.exports = {
     '@nuxtjs/sentry',
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
-    '@nuxtjs/pwa'
+    '@nuxtjs/pwa',
   ],
   sentry: {
     // Enter your project's DSN here
@@ -86,8 +93,8 @@ module.exports = {
     // Additional config
     config: {
       // enable sentry-webpack-plugin used to send releases to Sentry
-      publishRelease: true
-    }
+      publishRelease: true,
+    },
   },
   /*
    ** Axios module configuration
@@ -110,9 +117,9 @@ module.exports = {
           enforce: 'pre',
           test: /\.(js|vue)$/,
           loader: 'eslint-loader',
-          exclude: /(node_modules)/
+          exclude: /(node_modules)/,
         });
       }
-    }
-  }
+    },
+  },
 };

@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <img alt="Pocket Pasta logo" src="~/assets/logo.png">
+    <img alt="Pocket Pasta logo" src="~/assets/logo.png" />
     <h1>Pocket Pasta</h1>
   </div>
 </template>
@@ -14,11 +14,11 @@ export default {
       script: [
         {
           innerHTML: JSON.stringify(linkData),
-          type: 'application/ld+json'
-        }
+          type: 'application/ld+json',
+        },
       ],
-      __dangerouslyDisableSanitizers: ['script']
+      __dangerouslyDisableSanitizers: ['script'],
     };
-  }
+  },
 };
 </script>

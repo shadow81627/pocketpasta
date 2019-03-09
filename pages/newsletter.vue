@@ -2,9 +2,9 @@
   <!-- Begin MailChimp Signup Form -->
   <div id="mc_embed_signup">
     <form
+      id="mc-embedded-subscribe-form"
       action="https://pocketpasta.us16.list-manage.com/subscribe/post?u=7f69c361c7f5d97725d2e339b&amp;id=c821016b08"
       method="post"
-      id="mc-embedded-subscribe-form"
       name="mc-embedded-subscribe-form"
       class="validate"
       target="_blank"
@@ -16,36 +16,52 @@
           <span class="asterisk">*</span> indicates required
         </div>
         <div class="mc-field-group">
-          <label for="mce-EMAIL">Email Address
+          <label for="mce-EMAIL">
+            Email Address
             <span class="asterisk">*</span>
           </label>
-          <input type="email" value name="EMAIL" class="required email" id="mce-EMAIL">
+          <input
+            id="mce-EMAIL"
+            type="email"
+            value
+            name="EMAIL"
+            class="required email"
+          />
         </div>
         <div class="mc-field-group">
           <label for="mce-FNAME">First Name</label>
-          <input type="text" value name="FNAME" class id="mce-FNAME">
+          <input id="mce-FNAME" type="text" value name="FNAME" class />
         </div>
         <div class="mc-field-group">
           <label for="mce-LNAME">Last Name</label>
-          <input type="text" value name="LNAME" class id="mce-LNAME">
+          <input id="mce-LNAME" type="text" value name="LNAME" class />
         </div>
         <div id="mce-responses" class="clear">
-          <div class="response" id="mce-error-response" style="display:none"></div>
-          <div class="response" id="mce-success-response" style="display:none"></div>
+          <div id="mce-error-response" class="response" style="display:none" />
+          <div
+            id="mce-success-response"
+            class="response"
+            style="display:none"
+          />
         </div>
         <!-- real people should not fill this in and expect good things
         - do not remove this or risk form bot signups-->
         <div style="position: absolute; left: -5000px;" aria-hidden="true">
-          <input type="text" name="b_7f69c361c7f5d97725d2e339b_c821016b08" tabindex="-1" value>
+          <input
+            type="text"
+            name="b_7f69c361c7f5d97725d2e339b_c821016b08"
+            tabindex="-1"
+            value
+          />
         </div>
         <div class="clear">
           <input
+            id="mc-embedded-subscribe"
             type="submit"
             value="Subscribe"
             name="subscribe"
-            id="mc-embedded-subscribe"
             class="button"
-          >
+          />
         </div>
       </div>
     </form>

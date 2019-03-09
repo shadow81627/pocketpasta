@@ -7,7 +7,7 @@
       <!-- |
       <router-link to="/recipes">Recipes</router-link>-->
     </div>
-    <nuxt/>
+    <nuxt />
   </div>
 </template>
 
