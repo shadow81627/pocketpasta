@@ -4,5 +4,6 @@ export const state = () => ({
 });
 
 export const getters = () => ({
-  getRecipeById: state => id => state.recipes.find(recipe => recipe === id),
+  getRecipeById: (state) => (id) =>
+    state.recipes.find((recipe) => recipe === id),
 });

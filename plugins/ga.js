@@ -1,8 +1,6 @@
 /* eslint-disable */
 
-export default ({
-  app
-}) => {
+export default ({ app }) => {
   /*
    ** Only run on client-side and only in production mode
    */
@@ -27,7 +25,7 @@ export default ({
     /*
      ** We tell Google Analytics to add a `pageview`
      */
-    gtag('set', 'page', to.fullPath)
-    gtag('send', 'pageview')
-  })
-}
+    gtag('set', 'page', to.fullPath);
+    gtag('send', 'pageview');
+  });
+};
