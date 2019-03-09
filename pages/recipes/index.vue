@@ -3,9 +3,9 @@
     <h1>Recipes</h1>
     <ul style="list-style-type: none; padding: 0;">
       <li v-for="recipe in recipes" :key="recipe">
-        <router-link :to="`/recipes/detail/${recipe}`">
-          Recipe {{ recipe }}
-        </router-link>
+        <nuxt-link :to="`/recipes/detail/${recipe.id}`">
+          Recipe {{ recipe.id }}
+        </nuxt-link>
       </li>
     </ul>
   </div>

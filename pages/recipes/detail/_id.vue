@@ -1,7 +1,7 @@
 <template>
   <div class="recipe">
     <h1>Recipe {{ $route.params.id }} Details</h1>
-    <p>I am recipe {{ recipe }}</p>
+    <p>I am recipe {{ recipe.id }}</p>
   </div>
 </template>
 
