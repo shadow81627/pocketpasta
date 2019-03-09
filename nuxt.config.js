@@ -3,6 +3,10 @@ const pkg = require('./package');
 module.exports = {
   mode: 'universal',
 
+  router: {
+    linkActiveClass: 'active',
+  },
+
   /*
    ** Headers of the page
    */
@@ -34,6 +38,19 @@ module.exports = {
         rel: 'icon',
         type: 'image/x-icon',
         href: '/favicon.ico',
+      },
+      {
+        rel: 'stylesheet',
+        href:
+          'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css',
+        integrity:
+          'sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T',
+        crossorigin: 'anonymous',
+      },
+      {
+        href:
+          'https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css',
+        rel: 'stylesheet',
       },
     ],
     script: [
