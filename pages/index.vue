@@ -2,7 +2,7 @@
   <div class="home">
     <div class="row">
       <div class="col-lg-12 text-center">
-        <h1 class="mt-5">Pocket Pasta</h1>
+        <h1 class="mt-5">PocketPasta</h1>
         <img
           alt="Pocket Pasta logo"
           src="~/assets/logo.png"

@@ -4,8 +4,8 @@
   "name": "Audrey Hepburn’s Spaghetti Al Pomodoro Recipe",
   "suitableForDiet": "https://schema.org/VegetarianDiet",
   "image": "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/162208.jpg",
-  "description": "Here's what you need: extra virgin olive oil, small onion, celery, garlic, fresh basil, canned whole peeled tomato, salt, dried spathetti, freshly grated parmigiano-reggiano cheese, carrots",
-  "keywords": "Audrey Hepburn, recipe, Pasta Recipes, Sauce Recipes, Audrey, Hepburn, spaghetti, pomodoro, pasta, history, sauce",
+  "description": "Make Audrey Hepburn's spaghetti al pomodoro recipe. Hepburn liked her pasta smothered in tomato sauce.",
+  "keywords": "Audrey Hepburn, recipe, Pasta Recipes, Sauce Recipes, Audrey, Hepburn, spaghetti, spathetti, pomodoro, pasta, history, sauce",
   "author": [
     {
       "@type": "Person",
