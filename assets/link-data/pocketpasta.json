@@ -1,7 +1,7 @@
 {
   "@context": "http://schema.org",
   "@type": "Organization",
-  "name": "Pocket Pasta",
+  "name": "PocketPasta",
   "url": "https://pocketpasta.com",
   "logo": "https://pocketpasta.com/logo.png",
   "foundingDate": "2017",

@@ -1,26 +1,32 @@
 {
   "@context": "http://schema.org/",
   "@type": "Recipe",
-  "name": "Audrey Hepburn’s Spaghetti Al Pomodoro Recipe by Tasty",
+  "name": "Audrey Hepburn’s Spaghetti Al Pomodoro Recipe",
+  "suitableForDiet": "https://schema.org/VegetarianDiet",
   "image": "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/162208.jpg",
   "description": "Here's what you need: extra virgin olive oil, small onion, celery, garlic, fresh basil, canned whole peeled tomato, salt, dried spathetti, freshly grated parmigiano-reggiano cheese, carrots",
-  "keywords": "Audrey Hepburn, Audrey, Hepburn, spaghetti, pomodoro, pasta, history bites, jared nunn, devin lytle, history, sauce",
+  "keywords": "Audrey Hepburn, recipe, Pasta Recipes, Sauce Recipes, Audrey, Hepburn, spaghetti, pomodoro, pasta, history, sauce",
   "author": [
     {
       "@type": "Person",
-      "name": "Devin Lytle"
+      "name": "Audrey Hepburn"
     },
     {
       "@type": "Person",
-      "name": "Jared Nunn"
+      "name": "Damien Robinson"
+    },
+    {
+      "@type": "Person",
+      "name": "Makayla Harding"
     }
   ],
   "publisher": {
     "@type": "Organization",
-    "name": "Tasty",
+    "name": "PocketPasta",
+    "url": "https://pocketpasta.com",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://tasty.co/static-assets/img/favicon.b3bba8bf837f3cc2436736a18d4c4e6d.ico"
+      "url": "https://pocketpasta.com/logo.png"
     }
   },
   "recipeCategory": "Dinner",
@@ -29,25 +35,16 @@
   "datePublished": "2018-06-08T23:54:54",
   "recipeYield": "4 servings",
   "recipeIngredient": [
-    "2 tablespoons extra virgin olive oil",
-
     "1 small onion, diced",
-
-    "2 stalks celery, finely diced",
-
     "2 cloves garlic, minced",
-
-    "1 large bunch of fresh basil, washed, half of the leaves minced and half left whole",
-
-    "2 28-ounce cans peeled Italian Roma tomatoes",
-
-    "Salt, to taste",
-
-    "1 pound dried spaghetti",
-
-    "n/a",
-
-    "n/a"
+    "2 carrots, diced small",
+    "2 stalks celery, diced small",
+    "2 large cans (28 oz. each) peeled Italian Roma tomatoes",
+    "1 large bunch fresh basil, washed",
+    "2 tbsp extra virgin olive oil",
+    "1 lb. spaghetti pasta",
+    "Salt to taste",
+    "Freshly grated Parmigiano-Reggiano cheese"
   ],
   "recipeInstructions": [
     {
@@ -73,10 +70,6 @@
     {
       "@type": "HowToStep",
       "text": "Taste the sauce and add salt, if desired. Serve pasta topped generously with sauce, grated Parmigiano-Reggiano cheese, and the reserved sliced basil leaves."
-    },
-    {
-      "@type": "HowToStep",
-      "text": "Enjoy!"
     }
   ],
   "video": [
