@@ -30,7 +30,7 @@
             <nuxt-link tag="li" to="/newsletter" class="nav-item">
               <a class="nav-link">Newsletter</a>
             </nuxt-link>
-            <nuxt-link tag="li" to="/recipes" class="nav-item" exact>
+            <nuxt-link tag="li" to="/recipes" class="nav-item">
               <a class="nav-link">Recipes</a>
             </nuxt-link>
           </ul>
