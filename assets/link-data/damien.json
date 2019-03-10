@@ -1,6 +1,7 @@
 {
   "@context": "http://schema.org",
   "@type": "Person",
+  "description": "Programmer and full stack web developer at XCOM Media, Griffith University graduate. Aspiring entrepreneur with a passion for startup weekends and hackathons.",
   "email": "mailto:damien.robinson@pocketpasta.com",
   "jobTitle": "Full Stack Web Developer",
   "brand": "Pocket Pasta",
