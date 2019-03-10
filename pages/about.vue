@@ -1,20 +1,22 @@
 <template>
-  <div class="row">
-    <div class="col-lg-12 text-center">
-      <h1 class="mt-5">About Pocket Pasta</h1>
-      <p class="lead">
-        <!-- Pocket Pasta is a progressive web app for journaling your life.
+  <div class="about">
+    <div class="row">
+      <div class="col-lg-12 $text-center">
+        <h1 class="mt-5">About Pocket Pasta</h1>
+        <p class="lead">
+          <!-- Pocket Pasta is a progressive web app for journaling your life.
         The aim is to have a multi module app that allows users to record how they live.
-        Documenting how we live is the first step in planning how to live.-->
-        Pocket Pasta is a collection of my demo apps that I build to practice my
-        skills.
-      </p>
-      <!-- <ul class="list-unstyled">
+          Documenting how we live is the first step in planning how to live.-->
+          PocketPasta is a collection of my demo apps that I build to practice
+          my skills.
+        </p>
+        <!-- <ul class="list-unstyled">
         <li>Bootstrap 4.2.1</li>
         <li>jQuery 3.3.1</li>
-      </ul> -->
+        </ul>-->
+      </div>
     </div>
-    <div class="col-lg-12 text-center">
+    <div class="row justify-content-center">
       <!-- <h2 class="mt-5">Pocket Pasta People</h2> -->
       <Profile v-bind="damien" />
     </div>

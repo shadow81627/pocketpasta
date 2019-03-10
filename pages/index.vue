@@ -1,7 +1,15 @@
 <template>
   <div class="home">
-    <img alt="Pocket Pasta logo" src="~/assets/logo.png" />
-    <h1>Pocket Pasta</h1>
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h1 class="mt-5">Pocket Pasta</h1>
+        <img
+          alt="Pocket Pasta logo"
+          src="~/assets/logo.png"
+          class="img-fluid"
+        />
+      </div>
+    </div>
   </div>
 </template>
 

@@ -48,6 +48,7 @@
 <style>
 body {
   /* font-family: 'Lato', 'sans-serif'; */
+  /* push content below nav bar */
   padding-top: 56px;
 }
 

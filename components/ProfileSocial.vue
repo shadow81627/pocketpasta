@@ -1,26 +1,17 @@
 <template>
-  <div class="col-lg-12 text-center">
+  <div class="col-lg-12">
     <div class="card bg-light card-body mb-3 profile">
       <div class="col-md-12">
-        <div class="col-12">
+        <div class="$col-md-6">
           <h2>{{ name }}</h2>
-          <p><strong>Job Title:</strong> {{ jobTitle }}.</p>
-          <p>
-            <strong>About:</strong>
-            Web Designer / UI.
-          </p>
+          <KeyValue label="Job Title" :value="jobTitle" />
+          <KeyValue label="About" :value="description" />
           <p>
             <!-- <strong>Hobbies:</strong> -->
             <!-- Read, out with friends, listen to music,
             draw and learn new things.-->
           </p>
-          <p>
-            <strong>Skills:</strong>
-            <span class="tags">html5</span>
-            <span class="tags">css3</span>
-            <span class="tags">jquery</span>
-            <span class="tags">bootstrap3</span>
-          </p>
+          <Keywords />
           <p v-for="link in sameAs" :key="link">
             <a :href="link">{{ link }}</a>
           </p>
@@ -132,9 +123,18 @@
 </template>
 
 <script>
+import Keywords from '@/components/Keywords.vue';
+import KeyValue from '@/components/KeyValue.vue';
+
 export default {
+  inheritAttrs: false,
+  components: {
+    Keywords,
+    KeyValue,
+  },
   props: {
-    name: { type: String, default: 'Nicole Pearson' },
+    name: { type: String },
+    description: { type: String },
     email: String,
     jobTitle: String,
     sameAs: Array,
@@ -173,13 +173,6 @@ figcaption.ratings a:hover {
 }
 .emphasis h2 {
   margin-bottom: 0;
-}
-span.tags {
-  background: #1abc9c;
-  border-radius: 2px;
-  color: #f5f5f5;
-  font-weight: bold;
-  padding: 2px 4px;
 }
 .dropdown-menu {
   background-color: #34495e;
