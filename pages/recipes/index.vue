@@ -1,12 +1,16 @@
 <template>
   <div class="recipes">
     <h1>Recipes</h1>
-    <ul style="list-style-type: none; padding: 0;">
-      <li v-for="recipe in recipes" :key="recipe">
-        <nuxt-link :to="`/recipes/detail/${recipe.id}`">
-          Recipe {{ recipe.id }}
-        </nuxt-link>
-      </li>
+    <ul class="list-group-flush" style="list-style-type: none; padding: 0;">
+      <nuxt-link
+        v-for="recipe in recipes"
+        :key="recipe"
+        class="list-group-item"
+        :to="`/recipes/detail/${recipe.id}`"
+        tag="li"
+      >
+        <a>{{ recipe.name || `Recipe: ${recipe.id}` }}</a>
+      </nuxt-link>
     </ul>
   </div>
 </template>
