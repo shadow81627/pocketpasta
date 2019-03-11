@@ -5,7 +5,7 @@
 ![David](https://img.shields.io/david/dev/shadow81627/pocketpasta.svg)
 ![David](https://img.shields.io/david/peer/shadow81627/pocketpasta.svg)
 
-> My posh Nuxt.js project
+> PocketPasta is a collection of my demo apps that I build to practice my skills.
 
 ## Build Setup
 
