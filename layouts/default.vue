@@ -1,8 +1,7 @@
 <template>
-  <div class="d-flex" id="wrapper" :class="{ toggled }">
+  <div id="wrapper" class="d-flex" :class="{ toggled }">
     <!-- Sidebar -->
-    <div class="bg-light border-right" id="sidebar-wrapper">
-      <div class="sidebar-heading">PocketPasta</div>
+    <div id="sidebar-wrapper" class="bg-light border-right">
       <div class="list-group list-group-flush">
         <nuxt-link
           v-for="item in nav"
@@ -21,17 +20,10 @@
       <!-- Navigation -->
       <nav
         id="nav"
-        class="navbar navbar-expand-lg navbar-light bg-light border-bottom"
+        class="navbar navbar-expand-lg navbar-light bg-light border-bottom fixed-top"
       >
-        <button
-          class="navbar-toggler"
-          id="menu-toggle"
-          @click="toggleNav"
-          aria-label="Toggle navigation"
-          style="display: block;"
-        >
-          <span class="navbar-toggler-icon" />
-        </button>
+        <span class="navbar-toggler-icon mx-1 px-3" @click="toggleNav" />
+        <a class="navbar-brand" href="/">PocketPasta</a>
       </nav>
 
       <div class="container">
@@ -84,6 +76,7 @@ export default {
 
 body {
   overflow-x: hidden;
+  padding-top: 56px;
 }
 
 #sidebar-wrapper {
