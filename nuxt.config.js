@@ -11,9 +11,6 @@ module.exports = {
    ** Headers of the page
    */
   head: {
-    htmlAttrs: {
-      amp: '',
-    },
     title: pkg.name,
     meta: [
       {
@@ -40,17 +37,6 @@ module.exports = {
         href: '/favicon.ico',
       },
     ],
-    script: [
-      {
-        src: 'https://www.googletagmanager.com/gtag/js?id=UA-125711214-1',
-        async: '',
-        defer: '',
-      },
-      {
-        async: '',
-        src: 'https://cdn.ampproject.org/v0.js',
-      },
-    ],
   },
 
   generate: {
@@ -74,24 +60,24 @@ module.exports = {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [
-    // Add google analytics
-    {
-      src: '~plugins/ga.js',
-      ssr: false,
-    },
-  ],
+  plugins: [],
 
   /*
    ** Nuxt.js modules
    */
   modules: [
-    '@nuxtjs/sentry',
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
+    '@nuxtjs/google-analytics',
     '@nuxtjs/pwa',
+    '@nuxtjs/sentry',
     'bootstrap-vue/nuxt',
   ],
+
+  googleAnalytics: {
+    id: 'UA-125711214-1',
+  },
+
   sentry: {
     // Enter your project's DSN here
     dsn: 'https://46d059ea02a240dfbb89bfaa4926f463@sentry.io/1411042',
