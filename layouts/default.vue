@@ -1,7 +1,7 @@
 <template>
   <div id="wrapper" class="d-flex" :class="{ toggled }">
     <!-- Sidebar -->
-    <div id="sidebar-wrapper" class="bg-light border-right">
+    <div id="sidebar-wrapper" class="bg-light">
       <div class="list-group list-group-flush">
         <nuxt-link
           v-for="item in nav"
@@ -103,11 +103,15 @@ body {
 
 #wrapper.toggled #sidebar-wrapper {
   margin-left: 0;
+  /* Set border when displayed, leaving border on while hidden makes viewport 1px too large */
+  border-right: 1px solid #dee2e6;
 }
 
 @media (min-width: 768px) {
   #sidebar-wrapper {
     margin-left: 0;
+    /* Set border when displayed, leaving border on while hidden makes viewport 1px too large */
+    border-right: 1px solid #dee2e6;
   }
 
   #page-content-wrapper {
