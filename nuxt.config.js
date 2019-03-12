@@ -90,6 +90,7 @@ module.exports = {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
+    'bootstrap-vue/nuxt',
   ],
   sentry: {
     // Enter your project's DSN here
