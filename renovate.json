@@ -15,6 +15,7 @@
   "packageRules": [
     {
       "packagePatterns": [ "eslint" ],
+      "labels": ["eslint"],
       "groupName": "eslint",
       "schedule": ["before 2am on monday"],
       "automerge": true,
