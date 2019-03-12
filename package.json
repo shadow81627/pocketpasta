@@ -1,6 +1,6 @@
 {
   "name": "pocketpasta",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "PocketPasta is a collection of my demo apps that I build to practice my skills.",
   "author": "Damien Robinson",
   "private": true,
@@ -19,7 +19,7 @@
     "@nuxtjs/axios": "5.4.1",
     "@nuxtjs/pwa": "2.6.0",
     "@nuxtjs/sentry": "2.3.1",
-    "bootstrap": "^4.3.1",
+    "bootstrap": "4.3.1",
     "cross-env": "5.2.0",
     "koa": "2.7.0",
     "nuxt": "2.4.5"
