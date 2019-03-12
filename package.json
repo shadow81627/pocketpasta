@@ -49,12 +49,12 @@
     "babel-jest": "24.4.0",
     "jest": "24.4.0",
     "vue-jest": "3.0.4",
-    "@storybook/vue": "^5.0.1",
-    "@storybook/addon-actions": "^5.0.1",
-    "@storybook/addon-links": "^5.0.1",
-    "@storybook/addons": "^5.0.1",
-    "babel-preset-vue": "^2.0.2",
-    "@babel/core": "^7.3.4",
-    "babel-loader": "^8.0.5"
+    "@storybook/vue": "5.0.1",
+    "@storybook/addon-actions": "5.0.1",
+    "@storybook/addon-links": "5.0.1",
+    "@storybook/addons": "5.0.1",
+    "babel-preset-vue": "2.0.2",
+    "@babel/core": "7.3.4",
+    "babel-loader": "8.0.5"
   }
 }
