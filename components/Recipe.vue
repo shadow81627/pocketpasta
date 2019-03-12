@@ -33,7 +33,10 @@
       </li>
     </ol>
     <!-- <p>Tags: {{ recipe.keywords }}</p> -->
-    <Keywords :tags="recipe.keywords.split(',')" label="Tags" />
+    <Keywords
+      :tags="recipe.keywords ? recipe.keywords.split(',') : []"
+      label="Tags"
+    />
   </div>
 </template>
 
