@@ -10,7 +10,7 @@
           class="list-group-item list-group-item-action list-group-item-light"
           exact
         >
-          {{ item.content }}
+          {{ item.label }}
         </nuxt-link>
       </div>
     </div>
@@ -20,7 +20,7 @@
       <!-- Navigation -->
       <nav
         id="nav"
-        class="navbar navbar-expand-lg navbar-light bg-light border-bottom fixed-top"
+        class="navbar navbar-expand-lg navbar-light bg-light border-bottom"
       >
         <span class="navbar-toggler-icon mx-1 px-3" @click="toggleNav" />
         <a class="navbar-brand" href="/">PocketPasta</a>
@@ -43,19 +43,23 @@ export default {
       nav: [
         {
           link: '/',
-          content: 'Home',
+          label: 'Home',
         },
         {
           link: '/about',
-          content: 'About',
+          label: 'About',
         },
         {
           link: '/newsletter',
-          content: 'Newsletter',
+          label: 'Newsletter',
         },
         {
           link: '/recipes',
-          content: 'Recipes',
+          label: 'Recipes',
+        },
+        {
+          link: '/settings',
+          label: 'Settings',
         },
       ],
     };
@@ -65,6 +69,11 @@ export default {
       event.preventDefault();
       this.toggled = !this.toggled;
     },
+  },
+  head() {
+    return {
+      link: [this.$store.getters.getCurrentTheme()],
+    };
   },
 };
 </script>
@@ -76,7 +85,7 @@ export default {
 
 body {
   overflow-x: hidden;
-  padding-top: 56px;
+  /* padding-top: 56px; */
 }
 
 #sidebar-wrapper {
