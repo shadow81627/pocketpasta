@@ -20,10 +20,17 @@
       <!-- Navigation -->
       <nav
         id="nav"
-        class="navbar navbar-expand-lg navbar-light bg-light border-bottom"
+        class="navbar navbar-expand-lg navbar-light bg-light border-bottom fixed-top"
+        style="padding-bottom: 16px;padding-top: 16px;"
       >
-        <span class="navbar-toggler-icon mx-1 px-3" @click="toggleNav" />
-        <a class="navbar-brand" href="/">PocketPasta</a>
+        <span
+          class="navbar-toggler-icon mx-1 px-3"
+          @click="toggleNav"
+          style="font-size: 1rem;"
+        />
+        <a class="navbar-brand" href="/" style="font-size: 1rem;">
+          PocketPasta
+        </a>
       </nav>
 
       <div class="container">
@@ -85,7 +92,8 @@ export default {
 
 body {
   overflow-x: hidden;
-  /* padding-top: 56px; */
+  padding-top: 67px;
+  /* padding-top: 4.5rem; */
 }
 
 #sidebar-wrapper {
