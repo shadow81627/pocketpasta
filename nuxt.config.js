@@ -85,6 +85,7 @@ module.exports = {
     config: {
       // enable sentry-webpack-plugin used to send releases to Sentry
       publishRelease: true,
+      disabled: process.env.NODE_ENV !== 'production',
     },
   },
   /*
