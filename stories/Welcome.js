@@ -17,7 +17,8 @@ export default {
         margin: 15,
         maxWidth: 600,
         lineHeight: 1.4,
-        fontFamily: '"Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif',
+        fontFamily:
+          '"Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif',
       },
 
       logo: {
