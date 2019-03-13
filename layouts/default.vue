@@ -2,12 +2,12 @@
   <div id="wrapper" class="d-flex" :class="{ toggled }">
     <!-- Sidebar -->
     <div id="sidebar-wrapper" class="bg-light">
-      <div class="list-group list-group-flush">
+      <div class="list-group list-group-flush sticky-top">
         <nuxt-link
           v-for="item in nav"
           :key="item.link"
           :to="item.link"
-          class="list-group-item list-group-item-action list-group-item-light"
+          class="list-group-item list-group-item-action list-group-item"
           exact
         >
           {{ item.label }}
@@ -20,15 +20,10 @@
       <!-- Navigation -->
       <nav
         id="nav"
-        class="navbar navbar-expand-lg navbar-light bg-light border-bottom fixed-top"
-        style="padding-bottom: 16px;padding-top: 16px;"
+        class="navbar navbar-expand-lg navbar-light bg-light border-bottom sticky-top"
       >
-        <span
-          class="navbar-toggler-icon mx-1 px-3"
-          @click="toggleNav"
-          style="font-size: 1rem;"
-        />
-        <a class="navbar-brand" href="/" style="font-size: 1rem;">
+        <span class="navbar-toggler-icon mx-1 px-3" @click="toggleNav" />
+        <a class="navbar-brand" href="/">
           PocketPasta
         </a>
       </nav>
@@ -92,7 +87,7 @@ export default {
 
 body {
   overflow-x: hidden;
-  padding-top: 67px;
+  /* padding-top: 67px; */
   /* padding-top: 4.5rem; */
 }
 
