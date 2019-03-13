@@ -65,15 +65,15 @@ export default {
     return {
       themes: [
         {
-          name: 'cerulean',
+          value: 'cerulean',
           href: 'https://bootswatch.com/4/cerulean/bootstrap.min.css',
         },
         {
-          name: 'cosmo',
+          value: 'cosmo',
           href: 'https://bootswatch.com/4/cosmo/bootstrap.min.css',
         },
         {
-          name: 'cyborg',
+          value: 'cyborg',
           href: 'https://bootswatch.com/4/cyborg/bootstrap.min.css',
         },
         {

@@ -18,6 +18,13 @@ export default {
       },
     },
   },
+  head() {
+    return {
+      meta: [
+        { hid: 'keywords', name: 'keywords', content: this.tags.join(',') },
+      ],
+    };
+  },
 };
 </script>
 
