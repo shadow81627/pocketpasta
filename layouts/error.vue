@@ -1,15 +1,13 @@
 <template>
   <div class="nuxt-error container">
-    <!-- <component :is="errorPage" :error="error" /> -->
-    <h1 v-if="error.statusCode === 404">Page not found</h1>
-    <h1 v-else>OOPSIE WOOPSIE!!</h1>
+    <component :is="errorPage" :error="error" />
     <nuxt-link to="/">Home page</nuxt-link>
   </div>
 </template>
 
 <script>
-// import error404 from '@/components/error/404.vue';
-// import error500 from '@/components/error/500.vue';
+import error404 from '@/components/error/404.vue';
+import error500 from '@/components/error/500.vue';
 
 export default {
   props: {
@@ -19,13 +17,13 @@ export default {
     },
   },
   computed: {
-    // errorPage() {
-    //   if (this.statusCode === 404) {
-    //     return error404;
-    //   }
-    //   // catch everything else
-    //   return error500;
-    // },
+    errorPage() {
+      if (this.error.statusCode === 404) {
+        return error404;
+      }
+      // catch everything else
+      return error500;
+    },
   },
 };
 </script>

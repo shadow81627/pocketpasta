@@ -3,6 +3,7 @@
     <h1>OOPSIE WOOPSIE!!</h1>
   </div>
 </template>
+
 <script>
 export default {
   props: {
