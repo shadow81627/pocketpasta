@@ -5,10 +5,24 @@ branches:
   only:
   - master
   - production
+jobs:
+  include:
+    - # require the branch name to be master
+      if: branch = master
+      env:
+      - FIREBASE_PROJECT=staging
+      - SENTRY_ENVIRONMENT=production
+
+    - # require the branch name to be master
+      if: branch = production
+      env:
+      - FIREBASE_PROJECT=default
+      - SENTRY_ENVIRONMENT=production
 script:
 - npm audit
 - npm run lint
 - npm run generate
+# Propose release version
 - VERSION=$(./node_modules/.bin/sentry-cli releases propose-version)
 # Create a release
 - ./node_modules/.bin/sentry-cli releases new -p pocketpasta $VERSION
@@ -18,14 +32,15 @@ deploy:
   # Keep dist folder for deploy
   skip_cleanup: true
   provider: firebase
-  project: staging
+  project: $FIREBASE_PROJECT
   token:
     secure: L/UAkAWLM/+GPflHbpFh3cPa7475WgMVd9BFKeWo89dquWyMLbFaLFaxHxYXLcWcIgUMCVe5y1g1qbPpRChDb0kHUU5ATFMUNQBiWDsjOZq8FjrtW1rNgIWpo/so1iykQGhamALoOUiqsZkKuemDknRPEjI7IZqCaflHyPhkuDmSPqA+bqFOfd+eP4GOTA9gMLbTrV7oVs6kWYv0KwlPdW/B2blzLddfYBGcU+xphffDxkMgerqP4t+IHp44T4qKsvOBBNksqEiCc5DYSSh4OWiNSeC/SzRiVFGEvz1cA0clMbtT1pNgW5E3j2lGMuzFm3Wc7sBjNQuX9CYVsy8RcEzqJ+4g6cdVhVFYxRZD11/b8SlgieBs7YrGU60ByoyAB1XqLal+cZBARtqorEzs6JLVTHEcVd4zYa9ge5GvbD736Pg/2OuL272meZo2RW4clPatoLXb1DIHljij0SVI9ry7i8oCl+s0sgPm+MSvRXFvSL9pWGFJ4LjKcTGQzQEDk2Vkb9OZgJ6acT5sjfb7Rroj0XeyM7Y9lgTOD6b9JytpLe3jCEA0EXHy4HB6rRoT+JvA8DUmWuI17/ya5K9a5PMn699GeaUc2QK/7R+wNhovJof9E+fyXtBsufMm+62J6wCn42+o7G4jbPeX0DIf9mQ4XDixpSmrmgj/UjgDbY8=
 cache: npm
 after_success:
-- ./node_modules/.bin/sentry-cli releases deploys "$VERSION" new -e "staging"
+- ./node_modules/.bin/sentry-cli releases deploys "$VERSION" new
 env:
   global:
+  # FIREBASE_AUTH_TOKEN
   - secure: L/UAkAWLM/+GPflHbpFh3cPa7475WgMVd9BFKeWo89dquWyMLbFaLFaxHxYXLcWcIgUMCVe5y1g1qbPpRChDb0kHUU5ATFMUNQBiWDsjOZq8FjrtW1rNgIWpo/so1iykQGhamALoOUiqsZkKuemDknRPEjI7IZqCaflHyPhkuDmSPqA+bqFOfd+eP4GOTA9gMLbTrV7oVs6kWYv0KwlPdW/B2blzLddfYBGcU+xphffDxkMgerqP4t+IHp44T4qKsvOBBNksqEiCc5DYSSh4OWiNSeC/SzRiVFGEvz1cA0clMbtT1pNgW5E3j2lGMuzFm3Wc7sBjNQuX9CYVsy8RcEzqJ+4g6cdVhVFYxRZD11/b8SlgieBs7YrGU60ByoyAB1XqLal+cZBARtqorEzs6JLVTHEcVd4zYa9ge5GvbD736Pg/2OuL272meZo2RW4clPatoLXb1DIHljij0SVI9ry7i8oCl+s0sgPm+MSvRXFvSL9pWGFJ4LjKcTGQzQEDk2Vkb9OZgJ6acT5sjfb7Rroj0XeyM7Y9lgTOD6b9JytpLe3jCEA0EXHy4HB6rRoT+JvA8DUmWuI17/ya5K9a5PMn699GeaUc2QK/7R+wNhovJof9E+fyXtBsufMm+62J6wCn42+o7G4jbPeX0DIf9mQ4XDixpSmrmgj/UjgDbY8=
   - CODECOV_TOKEN="646222d4-c5b3-4703-98da-62670ea75e31"
   # SENTRY_AUTH_TOKEN
