@@ -4,7 +4,7 @@
 ![David](https://img.shields.io/david/shadow81627/pocketpasta.svg)
 ![David](https://img.shields.io/david/dev/shadow81627/pocketpasta.svg)
 ![David](https://img.shields.io/david/peer/shadow81627/pocketpasta.svg)
-[![Codecov Coverage](https://img.shields.io/codecov/c/github/shadow81627/pocketpasta/production.svg?style=flat-square)](https://codecov.io/gh/shadow81627/pocketpasta/)
+![Codecov](https://img.shields.io/codecov/c/github/shadow81627/pocketpasta.svg)
 
 > PocketPasta is a collection of my demo apps that I build to practice my skills.
 
