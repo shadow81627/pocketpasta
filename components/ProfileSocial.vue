@@ -11,7 +11,10 @@
             <!-- Read, out with friends, listen to music,
             draw and learn new things.-->
           </p>
-          <Keywords />
+          <Keywords
+            :tags="keywords ? keywords.split(',') : []"
+            label="Skills"
+          />
           <p v-for="link in sameAs" :key="link">
             <a :href="link">{{ link }}</a>
           </p>
@@ -135,6 +138,7 @@ export default {
   props: {
     name: { type: String },
     description: { type: String },
+    keywords: { type: String },
     email: String,
     jobTitle: String,
     sameAs: Array,
