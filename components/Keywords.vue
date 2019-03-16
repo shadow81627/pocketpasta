@@ -10,12 +10,9 @@
 <script>
 export default {
   props: {
-    label: { type: String, default: 'Skills' },
+    label: { type: String, default: 'Tags' },
     tags: {
       type: Array,
-      default: () => {
-        return ['html5', 'css3', 'jquery', 'bootstrap4'];
-      },
     },
   },
   head() {

@@ -25,7 +25,7 @@
     <ol class="list-group-flush">
       <li
         v-for="instruction in recipe.recipeInstructions"
-        :key="instruction"
+        :key="instruction.text"
         style="/*display: list-item;*//*list-style-position: inside;*/"
         class="list-group-item"
       >

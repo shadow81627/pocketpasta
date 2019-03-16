@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ThemeSelector renders properly 1`] = `
+"<form><h1>Settings</h1> <div class=\\"form-group\\"><label for=\\"theme\\">Select a theme</label> <select id=\\"theme\\" name=\\"theme\\"><option disabled=\\"disabled\\" value=\\"\\">Please select a theme</option> <option class=\\"form-control\\" value=\\"cerulean\\">
+        cerulean
+      </option><option class=\\"form-control\\" value=\\"cosmo\\">
+        cosmo
+      </option><option class=\\"form-control\\" value=\\"cyborg\\">
+        cyborg
+      </option><option class=\\"form-control\\" value=\\"darkly\\">
+        darkly
+      </option><option class=\\"form-control\\" value=\\"flatly\\">
+        flatly
+      </option><option class=\\"form-control\\" value=\\"journal\\">
+        journal
+      </option><option class=\\"form-control\\" value=\\"litera\\">
+        litera
+      </option><option class=\\"form-control\\" value=\\"lumen\\">
+        lumen
+      </option><option class=\\"form-control\\" value=\\"lux\\">
+        lux
+      </option><option class=\\"form-control\\" value=\\"materia\\">
+        materia
+      </option><option class=\\"form-control\\" value=\\"minty\\">
+        minty
+      </option><option class=\\"form-control\\" value=\\"pulse\\">
+        pulse
+      </option><option class=\\"form-control\\" value=\\"sandstone\\">
+        sandstone
+      </option><option class=\\"form-control\\" value=\\"simplex\\">
+        simplex
+      </option><option class=\\"form-control\\" value=\\"sketchy\\">
+        sketchy
+      </option><option class=\\"form-control\\" value=\\"slate\\">
+        slate
+      </option><option class=\\"form-control\\" value=\\"solar\\">
+        solar
+      </option><option class=\\"form-control\\" value=\\"spacelab\\">
+        spacelab
+      </option><option class=\\"form-control\\" value=\\"superhero\\">
+        superhero
+      </option><option class=\\"form-control\\" value=\\"untied\\">
+        untied
+      </option><option class=\\"form-control\\" value=\\"yeti\\">
+        yeti
+      </option></select> <p>Current theme: darky</p></div> <button class=\\"btn btn-primary\\">A Button</button></form>"
+`;
