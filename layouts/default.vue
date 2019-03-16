@@ -23,8 +23,15 @@
         class="navbar navbar-expand-lg navbar-light bg-light border-bottom sticky-top"
       >
         <span class="navbar-toggler-icon mx-1 px-3" @click="toggleNav" />
-        <a class="navbar-brand" href="/">
-          PocketPasta
+        <a class="navbar-brand mr-auto" href="/">
+          <img
+            src="/images/icons/icon-32x32.png"
+            width="32"
+            height="32"
+            class="d-inline-block align-top rounded"
+            alt="PocketPasta"
+          />
+          <span class="mx-1">PocketPasta</span>
         </a>
       </nav>
 
