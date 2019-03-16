@@ -9,18 +9,38 @@ module.exports = {
     description: pkg.description,
     icons: [
       {
+        src: '/images/icons/icon-16x16.png',
+        sizes: '16x16',
+        type: 'image/png',
+      },
+      {
+        src: '/images/icons/icon-32x32.png',
+        sizes: '32x32',
+        type: 'image/png',
+      },
+      {
+        src: '/images/icons/icon-36x36.png',
+        sizes: '36x36',
+        type: 'image/png',
+      },
+      {
+        src: '/images/icons/icon-48x48.png',
+        sizes: '48x48',
+        type: 'image/png',
+      },
+      {
+        src: '/images/icons/icon-70x70.png',
+        sizes: '70x70',
+        type: 'image/png',
+      },
+      {
         src: '/images/icons/icon-72x72.png',
         sizes: '72x72',
         type: 'image/png',
       },
       {
-        src: '/images/icons/icon-96x96.png',
-        sizes: '96x96',
-        type: 'image/png',
-      },
-      {
-        src: '/images/icons/icon-128x128.png',
-        sizes: '128x128',
+        src: '/images/icons/icon-96x196.png',
+        sizes: '96x196',
         type: 'image/png',
       },
       {
@@ -29,8 +49,13 @@ module.exports = {
         type: 'image/png',
       },
       {
-        src: '/images/icons/icon-152x152.png',
-        sizes: '152x152',
+        src: '/images/icons/icon-150x150.png',
+        sizes: '150x150',
+        type: 'image/png',
+      },
+      {
+        src: '/images/icons/icon-180x180.png',
+        sizes: '180x180',
         type: 'image/png',
       },
       {
@@ -39,8 +64,13 @@ module.exports = {
         type: 'image/png',
       },
       {
-        src: '/images/icons/icon-384x384.png',
-        sizes: '384x384',
+        src: '/images/icons/icon-310x150.png',
+        sizes: '310x150',
+        type: 'image/png',
+      },
+      {
+        src: '/images/icons/icon-310x310.png',
+        sizes: '310x310',
         type: 'image/png',
       },
       {
