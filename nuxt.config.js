@@ -94,6 +94,7 @@ module.exports = {
    ** Headers of the page
    */
   head: {
+    htmlAttrs: { 'data-vue-meta-server-rendered': '' },
     title: pkg.name,
     meta: [
       {
