@@ -3,6 +3,11 @@ const pkg = require('./package');
 module.exports = {
   mode: 'universal',
 
+  manifest: {
+    theme_color: '#4DBA87',
+    display: 'standalone',
+  },
+
   router: {
     linkActiveClass: 'active',
   },
@@ -78,6 +83,7 @@ module.exports = {
 
   googleAnalytics: {
     id: 'UA-125711214-1',
+    dev: false,
   },
 
   sentry: {
