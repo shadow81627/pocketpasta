@@ -21,6 +21,7 @@ jobs:
 script:
 - npm audit
 - npm run lint
+- npm run test
 - npm run generate
 # Propose release version
 - VERSION=$(./node_modules/.bin/sentry-cli releases propose-version)
