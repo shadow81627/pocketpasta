@@ -1,25 +1,15 @@
-// const assert = require('assert');
-
-// describe('pocketpasta.com page', () => {
-//   it('should have the right title', () => {
-//     browser.url('https://pocketpasta.com');
-//     const title = browser.getTitle();
-//     assert.strict.equal(title, 'pocketpasta');
-//   });
-// });
-
 import { shallowMount } from '@vue/test-utils';
-import index from '@/pages/index.vue';
+import KeyValue from '@/components/KeyValue.vue';
 
 const factory = () =>
-  shallowMount(index, {
+  shallowMount(KeyValue, {
     propsData: {
       label: 'Job Title',
       value: 'Full Stack Web Developer',
     },
   });
 
-describe('index', () => {
+describe('KeyValue', () => {
   test('mounts properly', () => {
     const wrapper = factory();
     expect(wrapper.isVueInstance()).toBeTruthy();
