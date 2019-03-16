@@ -4,7 +4,7 @@
     <ul class="list-group-flush" style="list-style-type: none; padding: 0;">
       <nuxt-link
         v-for="recipe in recipes"
-        :key="recipe"
+        :key="recipe.id"
         class="list-group-item"
         :to="`/recipes/detail/${recipe.id}`"
         tag="li"
