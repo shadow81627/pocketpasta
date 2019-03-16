@@ -1,11 +1,18 @@
 import recipe from '@/assets/link-data/spaghetti.json';
 
+import pastaAglioEOlio from '@/assets/link-data/recipe/pasta_aglio_e_olio.json';
+
 export const state = () => ({
   theme: {
     name: 'darky',
     href: 'https://bootswatch.com/4/darkly/bootstrap.min.css',
   },
-  recipes: [{ ...recipe, id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }],
+  recipes: [
+    { ...recipe, id: 1 },
+    { ...pastaAglioEOlio, id: 2 },
+    { id: 3 },
+    { id: 4 },
+  ],
 });
 
 export const getters = {
