@@ -1,47 +1,48 @@
 <template>
-  <div id="wrapper" class="d-flex" :class="{ toggled }">
-    <!-- Sidebar -->
-    <div id="sidebar-wrapper" class="bg-light">
-      <div class="list-group list-group-flush sticky-top">
-        <nuxt-link
-          v-for="item in nav"
-          :key="item.link"
-          :to="item.link"
-          class="list-group-item list-group-item-action list-group-item"
-          exact
-        >
-          {{ item.label }}
-        </nuxt-link>
+  <div>
+    <!-- Navigation -->
+    <nav
+      id="nav"
+      class="navbar navbar-expand-lg navbar-light bg-light border-bottom sticky-top"
+    >
+      <span class="navbar-toggler-icon mx-1 px-3" @click="toggleNav" />
+      <a class="navbar-brand mr-auto" href="/">
+        <img
+          src="/images/icons/icon-32x32.png"
+          width="32"
+          height="32"
+          class="d-inline-block align-top rounded"
+          alt="PocketPasta"
+        />
+        <span class="mx-1">PocketPasta</span>
+      </a>
+    </nav>
+    <div id="wrapper" class="d-flex" :class="{ toggled }">
+      <!-- Sidebar -->
+      <div id="sidebar-wrapper" class="bg-light">
+        <div class="list-group list-group-flush $sticky-top">
+          <nuxt-link
+            v-for="item in nav"
+            :key="item.link"
+            :to="item.link"
+            class="list-group-item list-group-item-action list-group-item"
+            exact
+          >
+            {{ item.label }}
+          </nuxt-link>
+        </div>
       </div>
-    </div>
-    <!-- /#sidebar-wrapper -->
-    <!-- Page Content -->
-    <div id="page-content-wrapper">
-      <!-- Navigation -->
-      <nav
-        id="nav"
-        class="navbar navbar-expand-lg navbar-light bg-light border-bottom sticky-top"
-      >
-        <span class="navbar-toggler-icon mx-1 px-3" @click="toggleNav" />
-        <a class="navbar-brand mr-auto" href="/">
-          <img
-            src="/images/icons/icon-32x32.png"
-            width="32"
-            height="32"
-            class="d-inline-block align-top rounded"
-            alt="PocketPasta"
-          />
-          <span class="mx-1">PocketPasta</span>
-        </a>
-      </nav>
-
-      <div class="container">
-        <nuxt />
+      <!-- /#sidebar-wrapper -->
+      <!-- Page Content -->
+      <div id="page-content-wrapper">
+        <div class="container">
+          <nuxt />
+        </div>
       </div>
+      <!-- /#page-content-wrapper -->
     </div>
-    <!-- /#page-content-wrapper -->
+    <!-- /#wrapper -->
   </div>
-  <!-- /#wrapper -->
 </template>
 
 <script>
