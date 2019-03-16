@@ -48,9 +48,11 @@ module.exports = {
   /*
    ** Customize the progress-bar color
    */
-  loading: {
-    color: '#fff',
-  },
+  // loading: {
+  //   color: '#000',
+  // },
+  // Disable loading bar since AMP will not generate a dynamic page
+  loading: false,
 
   /*
    ** Global CSS
