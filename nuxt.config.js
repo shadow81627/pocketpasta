@@ -29,28 +29,23 @@ module.exports = {
         type: 'image/png',
       },
       {
-        src: '/images/icons/icon-70x70.png',
-        sizes: '70x70',
-        type: 'image/png',
-      },
-      {
         src: '/images/icons/icon-72x72.png',
         sizes: '72x72',
         type: 'image/png',
       },
       {
-        src: '/images/icons/icon-96x196.png',
-        sizes: '96x196',
+        src: '/images/icons/icon-96x96.png',
+        sizes: '96x96',
+        type: 'image/png',
+      },
+      {
+        src: '/images/icons/icon-128x128.png',
+        sizes: '128x128',
         type: 'image/png',
       },
       {
         src: '/images/icons/icon-144x144.png',
         sizes: '144x144',
-        type: 'image/png',
-      },
-      {
-        src: '/images/icons/icon-150x150.png',
-        sizes: '150x150',
         type: 'image/png',
       },
       {
@@ -64,18 +59,23 @@ module.exports = {
         type: 'image/png',
       },
       {
-        src: '/images/icons/icon-310x150.png',
-        sizes: '310x150',
-        type: 'image/png',
-      },
-      {
-        src: '/images/icons/icon-310x310.png',
-        sizes: '310x310',
+        src: '/images/icons/icon-270x270.png',
+        sizes: '270x270',
         type: 'image/png',
       },
       {
         src: '/images/icons/icon-512x512.png',
         sizes: '512x512',
+        type: 'image/png',
+      },
+      {
+        src: '/images/icons/icon-588x270.png',
+        sizes: '588x270',
+        type: 'image/png',
+      },
+      {
+        src: '/images/icons/icon-588x588.png',
+        sizes: '588x588',
         type: 'image/png',
       },
     ],
