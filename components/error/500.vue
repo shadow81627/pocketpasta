@@ -5,6 +5,15 @@
       Uwu We make a fucky wucky!! A wittle fucko boingo! The code monkeys at our
       headquarters are working VEWY HAWD to fix this!
     </p>
+    <video
+      autoplay
+      width="640"
+      hieght="390"
+      data-alt="Stock Video Clip Stock Footage Video"
+      src="https://media.gettyimages.com/videos/medium-shot-baboon-pounding-on-laptop-keyboard-video-id712-54"
+      muted
+      loop
+    />
   </div>
 </template>
 
