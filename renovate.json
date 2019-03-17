@@ -7,7 +7,7 @@
   "devDependencies": {
     "automerge": true,
     "bumpVersion": null,
-    "commitBody": "[skip ci] Update devDependencies"
+    "commitBody": "Update devDependencies"
   },
   "bumpVersion": "patch",
   "labels": ["dependencies"],
