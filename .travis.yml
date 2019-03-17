@@ -1,12 +1,25 @@
 language: node_js
 #  latest stable Node.js release
 node_js: node
+# Cache node packages between jobs
+cache: npm
 branches:
   only:
   - master
   - production
 jobs:
   include:
+    - stage: test
+      name: "Dependency Security Audit"
+      script: npm audit
+
+    - script: npm run lint
+      name: "Lint Code"
+
+    - script: npm run test
+      name: "Unit Tests"
+
+    - stage: deploy
     - # require the branch name to be master
       if: branch = master
       env:
@@ -18,18 +31,6 @@ jobs:
       env:
       - FIREBASE_PROJECT=default
       - SENTRY_ENVIRONMENT=production
-
-    - stage: build
-      name: "Dependency Security Audit"
-      script: npm audit
-
-    - script: npm run lint
-      name: "Lint Code"
-
-    - script: npm run test
-      name: "Unit Tests"
-
-    - stage: deploy
       name: "Deploy to Firebase hosting"
       script:
       - npm run generate
@@ -46,10 +47,12 @@ jobs:
         project: $FIREBASE_PROJECT
         token:
           secure: L/UAkAWLM/+GPflHbpFh3cPa7475WgMVd9BFKeWo89dquWyMLbFaLFaxHxYXLcWcIgUMCVe5y1g1qbPpRChDb0kHUU5ATFMUNQBiWDsjOZq8FjrtW1rNgIWpo/so1iykQGhamALoOUiqsZkKuemDknRPEjI7IZqCaflHyPhkuDmSPqA+bqFOfd+eP4GOTA9gMLbTrV7oVs6kWYv0KwlPdW/B2blzLddfYBGcU+xphffDxkMgerqP4t+IHp44T4qKsvOBBNksqEiCc5DYSSh4OWiNSeC/SzRiVFGEvz1cA0clMbtT1pNgW5E3j2lGMuzFm3Wc7sBjNQuX9CYVsy8RcEzqJ+4g6cdVhVFYxRZD11/b8SlgieBs7YrGU60ByoyAB1XqLal+cZBARtqorEzs6JLVTHEcVd4zYa9ge5GvbD736Pg/2OuL272meZo2RW4clPatoLXb1DIHljij0SVI9ry7i8oCl+s0sgPm+MSvRXFvSL9pWGFJ4LjKcTGQzQEDk2Vkb9OZgJ6acT5sjfb7Rroj0XeyM7Y9lgTOD6b9JytpLe3jCEA0EXHy4HB6rRoT+JvA8DUmWuI17/ya5K9a5PMn699GeaUc2QK/7R+wNhovJof9E+fyXtBsufMm+62J6wCn42+o7G4jbPeX0DIf9mQ4XDixpSmrmgj/UjgDbY8=
+        on:
+          all_branches: true
+          condition: $TRAVIS_BRANCH =~ ^staging|production$
+      after_deploy:
+      - ./node_modules/.bin/sentry-cli releases deploys "$VERSION" new --env $SENTRY_ENVIRONMENT
 
-cache: npm
-after_success:
-- ./node_modules/.bin/sentry-cli releases deploys "$VERSION" new --env $SENTRY_ENVIRONMENT
 env:
   global:
   # FIREBASE_AUTH_TOKEN
@@ -60,6 +63,7 @@ env:
   - secure: M+A8ISnwOzaw+KeTTyPSlzBFS2eywDSGBUh0LoudNeVWJEl0Pql4PrQCYq2KlYAXF+fgLhmt44djA9zZP8X+fRU5V81x+63FSDm0pWDiiWzaacEb2nVLn1eaaNK6eqmTvWI27nS37O9vPWSMhcv+nxrIkvrxKNvhAhuD1SPUCv9ZIJj7fT0xia50pk8+/itMe/MMqBgm3W4FwSvKvSG+VBMLB+NX9A6TTthFuIPAdk3CE9SeWTcRDLnybwIiDtMuojwCUiTac9Sg9FmuyPHZupf2o6x6j9LxzxjJZ3lrD3nFhTM8g5nup77aMaykmOGwnZLqszW8A7Y105WdXK8oOsqi9Jt6zErUpkjc+kBf5s0nEZW0RD4uMJP2PP1TvWz8lcwZHwGWcx1C3d6Twvf6JvIAi4EyvNzL4yaoM4gCa7jLgRTgASgGRpvz3JtjxosS6irZUQ4TErfYtD57ZEUWjAJh1GgIC2y4CLCgn5nWlr8gXUtH5Hro/kk71+eHnCc6gjU3OiHA217J7zCXt1GRqKa+hr/NtKbDdI1oy4WQ/Gq9dS6cK0q7KzkxMXexgpLo9BUgt6MDewdDdYc3YVQCm6DP/i3GfHF8CWNNTvgwW2tklkJta7s5t+bWWL2I5QegEJVVTjSWH1vmVO0JPvZcAC1amj/oQse1rRRedT7C/Hg=
   - SENTRY_ORG=pocketpasta
   - SENTRY_PROJECT=pocketpasta
+
 notifications:
   email:
     recipients:
