@@ -9,7 +9,7 @@
       autoplay
       width="640"
       hieght="390"
-      data-alt="Stock Video Clip Stock Footage Video"
+      data-alt="Baboon pounding on laptop keyboard"
       src="https://media.gettyimages.com/videos/medium-shot-baboon-pounding-on-laptop-keyboard-video-id712-54"
       muted
       loop

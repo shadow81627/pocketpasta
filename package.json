@@ -2,7 +2,7 @@
   "name": "pocketpasta",
   "version": "0.0.5",
   "description": "PocketPasta is a collection of my demo apps that I build to practice my skills.",
-  "author": "Damien Robinson",
+  "author": "Damien Robinson <damien.robinson@pocketpasta.com>",
   "private": true,
   "scripts": {
     "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
@@ -25,7 +25,9 @@
     "bootstrap-vue": "2.0.0-rc.15",
     "cross-env": "5.2.0",
     "koa": "2.7.0",
-    "nuxt": "2.4.5"
+    "nuxt": "2.4.5",
+    "vuetify": "^1.5.5",
+    "vuetify-loader": "^1.2.1"
   },
   "devDependencies": {
     "@babel/core": "7.3.4",
@@ -56,6 +58,8 @@
     "jest": "24.5.0",
     "nodemon": "1.18.10",
     "prettier": "1.16.4",
-    "vue-jest": "3.0.4"
+    "vue-jest": "3.0.4",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2"
   }
 }
