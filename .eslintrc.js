@@ -10,12 +10,16 @@ module.exports = {
     parser: 'babel-eslint',
   },
   extends: [
+    'eslint:recommended',
+    'plugin:vue/recommended',
     '@nuxtjs',
+    'prettier/vue',
     'plugin:prettier/recommended',
   ],
   plugins: ['prettier'],
   // add your custom rules here
   rules: {
+    "vue/max-attributes-per-line": "off",
     'prettier/prettier': ['error', prettierrc],
     'vue/html-self-closing': [
       'error',
