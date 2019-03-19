@@ -17,7 +17,7 @@
 // @ is an alias to /src
 import linkData from '@/assets/link-data/pocketpasta.json';
 export default {
-  layout: 'vuetify',
+  layout: 'default',
   head() {
     return {
       script: [
