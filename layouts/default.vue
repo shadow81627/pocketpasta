@@ -27,7 +27,9 @@
               <v-list-tile>
                 <v-list-tile-content>
                   <v-list-tile-title
-                    ><a href="/settings">{{ item.text }}</a></v-list-tile-title
+                    ><nuxt-link :to="item.link ? item.link : ''">{{
+                      item.text
+                    }}</nuxt-link></v-list-tile-title
                   >
                 </v-list-tile-content>
               </v-list-tile>
@@ -37,8 +39,10 @@
                 <v-icon>{{ child.icon }}</v-icon>
               </v-list-tile-action>
               <v-list-tile-content>
-                <v-list-tile-title
-                  ><a href="/settings">{{ child.text }}</a></v-list-tile-title
+                <v-list-tile-title>
+                  <nuxt-link :to="item.link ? item.link : ''">{{
+                    child.text
+                  }}</nuxt-link></v-list-tile-title
                 >
               </v-list-tile-content>
             </v-list-tile>
@@ -58,16 +62,18 @@
         </template>
       </v-list>
     </v-navigation-drawer>
-    <v-toolbar
-      :clipped-left="$vuetify.breakpoint.lgAndUp"
-      color="blue darken-3"
-      dark
-      app
-      fixed
-    >
+    <v-toolbar :clipped-left="$vuetify.breakpoint.lgAndUp" app fixed>
       <v-toolbar-title style="width: 300px" class="ml-0 pl-3">
         <v-toolbar-side-icon @click.stop="drawer = !drawer" />
-        <span class="hidden-sm-and-down">Google Contacts</span>
+        <!-- <span class="hidden-sm-and-down">Google Contacts</span> -->
+        <img
+          src="/images/icons/icon-32x32.png"
+          width="32"
+          height="32"
+          class="d-inline-block rounded"
+          alt="PocketPasta"
+        />
+        <span class="mx-1 hidden-sm-and-down">PocketPasta</span>
       </v-toolbar-title>
       <v-text-field
         flat
@@ -86,10 +92,7 @@
       </v-btn>
       <v-btn icon large>
         <v-avatar size="32px" tile>
-          <img
-            src="https://cdn.vuetifyjs.com/images/logos/logo.svg"
-            alt="Vuetify"
-          />
+          <img src="/images/icons/icon-32x32.png" alt="PocketPasta" />
         </v-avatar>
       </v-btn>
     </v-toolbar>
@@ -100,9 +103,9 @@
         </v-layout>
       </v-container>
     </v-content>
-    <v-btn fab bottom right color="pink" dark fixed @click="dialog = !dialog">
+    <!-- <v-btn fab bottom right color="pink" dark fixed @click="dialog = !dialog">
       <v-icon>add</v-icon>
-    </v-btn>
+    </v-btn> -->
     <v-dialog v-model="dialog" width="800px">
       <v-card>
         <v-card-title class="grey lighten-4 py-4 title"
@@ -194,5 +197,10 @@ export default {
       // { icon: 'keyboard', text: 'Go to the old version' },
     ],
   }),
+  head() {
+    return {
+      link: [this.$store.getters.getCurrentTheme()],
+    };
+  },
 };
 </script>
