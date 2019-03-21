@@ -11,7 +11,7 @@
       novalidate
     >
       <div id="mc_embed_signup_scroll">
-        <h2>Subscribe to our mailing list</h2>
+        <h1>Subscribe to our mailing list</h1>
         <div class="indicates-required">
           <span class="asterisk">*</span> indicates required
         </div>
@@ -71,8 +71,4 @@
 
 <style>
 @import url('//cdn-images.mailchimp.com/embedcode/classic-10_7.css');
-#mc_embed_signup {
-  clear: left;
-  font: 14px Helvetica, Arial, sans-serif;
-}
 </style>

@@ -98,8 +98,8 @@
     </v-toolbar>
     <v-content>
       <v-container fluid fill-height>
-        <v-layout justify-center align-center>
-          <nuxt />
+        <v-layout justify-center>
+          <nuxt class="col-lg-12" />
         </v-layout>
       </v-container>
     </v-content>
@@ -117,7 +117,7 @@
               <v-layout align-center>
                 <v-avatar size="40px" class="mr-3">
                   <img
-                    src="//ssl.gstatic.com/s2/oz/images/sge/grey_silhouette.png"
+                    src="https://ssl.gstatic.com/s2/oz/images/sge/grey_silhouette.png"
                     alt
                   />
                 </v-avatar>
