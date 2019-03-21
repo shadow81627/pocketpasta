@@ -9,14 +9,6 @@ branches:
   - production
 jobs:
   include:
-    - stage: test
-    - script: npm run lint
-      name: "Lint Code"
-
-    - script: npm run test
-      name: "Unit Tests"
-
-    - stage: deploy
     - # require the branch name to be master
       if: branch = master
       env:
@@ -28,6 +20,15 @@ jobs:
       env:
       - FIREBASE_PROJECT=default
       - SENTRY_ENVIRONMENT=production
+
+    - stage: test
+      name: "Lint Code"
+    - script: npm run lint
+
+    - script: npm run test
+      name: "Unit Tests"
+
+    - stage: deploy
       name: "Deploy to Firebase hosting"
       script:
       - npm run generate
