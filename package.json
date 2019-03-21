@@ -1,6 +1,6 @@
 {
   "name": "pocketpasta",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "PocketPasta is a collection of my demo apps that I build to practice my skills.",
   "author": "Damien Robinson <damien.robinson@pocketpasta.com>",
   "private": true,
@@ -25,7 +25,7 @@
     "bootstrap-vue": "2.0.0-rc.15",
     "cross-env": "5.2.0",
     "koa": "2.7.0",
-    "nuxt": "2.5.0",
+    "nuxt": "2.5.1",
     "vuetify": "1.5.7",
     "vuetify-loader": "1.2.1"
   },
