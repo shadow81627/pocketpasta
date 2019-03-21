@@ -1,5 +1,5 @@
 <template>
-  <v-app id="inspire">
+  <v-app id="inspire" style="background: unset; color: unset;">
     <v-navigation-drawer
       v-model="drawer"
       :clipped="$vuetify.breakpoint.lgAndUp"
@@ -97,11 +97,9 @@
       </v-btn>
     </v-toolbar>
     <v-content>
-      <v-container fluid fill-height>
-        <v-layout justify-center>
-          <nuxt class="col-lg-12" />
-        </v-layout>
-      </v-container>
+      <div class="container">
+        <nuxt />
+      </div>
     </v-content>
     <!-- <v-btn fab bottom right color="pink" dark fixed @click="dialog = !dialog">
       <v-icon>add</v-icon>

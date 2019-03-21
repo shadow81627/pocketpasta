@@ -2,7 +2,15 @@
   <div class="recipe">
     <h1>{{ recipe.name }}</h1>
     <p>{{ recipe.description }}</p>
-    <img :src="recipe.image" class="img-fluid" />
+    <div v-if="recipe.video" class="embed-responsive embed-responsive-16by9">
+      <iframe
+        class="embed-responsive-item"
+        :src="recipe.video[0].contentUrl"
+        allowfullscreen
+        :poster="recipe.video[0].thumbnailUrl"
+      />
+    </div>
+    <img v-else :src="recipe.image" class="img-fluid" />
     <!-- <p>Author: {{ recipe.author }}</p> -->
     <!-- <p>Published: {{ recipe.datePublished }}</p> -->
     <p>
@@ -44,10 +52,10 @@
 import Keywords from '@/components/Keywords.vue';
 
 export default {
-  inheritAttrs: false,
   components: {
     Keywords,
   },
+  inheritAttrs: false,
   computed: {
     recipe() {
       // parse id param to int for id lookup

@@ -103,7 +103,8 @@ module.exports = {
       },
       {
         name: 'viewport',
-        content: 'width=device-width, initial-scale=1',
+        content:
+          'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui',
       },
       {
         hid: 'description',
@@ -165,6 +166,12 @@ module.exports = {
     '@nuxtjs/sentry',
     'bootstrap-vue/nuxt',
   ],
+
+  vuetify: {
+    treeShake: true,
+    css: false,
+    theme: false,
+  },
 
   googleAnalytics: {
     id: 'UA-125711214-1',
