@@ -84,13 +84,13 @@
         class="hidden-sm-and-down"
       />
       <v-spacer />
-      <v-btn icon>
+      <v-btn icon aria-label="apps">
         <v-icon>apps</v-icon>
       </v-btn>
-      <v-btn icon>
+      <v-btn icon aria-label="notifications">
         <v-icon>notifications</v-icon>
       </v-btn>
-      <v-btn icon large>
+      <v-btn icon large aria-label="avatar">
         <v-avatar size="32px" tile>
           <img src="/images/icons/icon-32x32.png" alt="PocketPasta" />
         </v-avatar>

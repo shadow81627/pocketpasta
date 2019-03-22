@@ -22,11 +22,11 @@
               RANKINGS :
               <span>8/10</span>
             </p>
-            <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <ul id="myTab" class="nav nav-tabs" role="tablist">
               <li class="nav-item">
                 <a
-                  class="nav-link active"
                   id="home-tab"
+                  class="nav-link active"
                   data-toggle="tab"
                   href="#home"
                   role="tab"
@@ -38,8 +38,8 @@
               </li>
               <li class="nav-item">
                 <a
-                  class="nav-link"
                   id="profile-tab"
+                  class="nav-link"
                   data-toggle="tab"
                   href="#profile"
                   role="tab"
@@ -84,10 +84,10 @@
           </div>
         </div>
         <div class="col-md-8">
-          <div class="tab-content profile-tab" id="myTabContent">
+          <div id="myTabContent" class="tab-content profile-tab">
             <div
-              class="tab-pane fade show active"
               id="home"
+              class="tab-pane fade show active"
               role="tabpanel"
               aria-labelledby="home-tab"
             >
@@ -133,8 +133,8 @@
               </div>
             </div>
             <div
-              class="tab-pane fade"
               id="profile"
+              class="tab-pane fade"
               role="tabpanel"
               aria-labelledby="profile-tab"
             >

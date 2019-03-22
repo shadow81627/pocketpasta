@@ -3,7 +3,12 @@
     <h1>Settings</h1>
     <div class="form-group">
       <label for="theme">Select a theme</label>
-      <select id="theme" name="theme" v-model="theme">
+      <select
+        id="theme"
+        v-model="currentTheme"
+        name="theme"
+        class="form-control"
+      >
         <option disabled value="">Please select a theme</option>
         <option
           v-for="theme in themes"
@@ -14,9 +19,8 @@
           {{ theme.value }}
         </option>
       </select>
-      <p>Current theme: {{ theme }}</p>
     </div>
-    <button class="btn btn-primary">A Button</button>
+    <!-- <button class="btn btn-primary">A Button</button> -->
   </form>
 </template>
 
@@ -113,7 +117,7 @@ export default {
     };
   },
   computed: {
-    theme: {
+    currentTheme: {
       get() {
         return this.$store.state.theme.name;
       },

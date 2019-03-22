@@ -103,8 +103,7 @@ module.exports = {
       },
       {
         name: 'viewport',
-        content:
-          'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui',
+        content: 'width=device-width, initial-scale=1, minimal-ui',
       },
       {
         hid: 'description',
@@ -137,6 +136,7 @@ module.exports = {
       '/',
       '/about',
       '/newsletter',
+      '/settings',
       '/recipes',
       '/recipes/detail/1',
       '/recipes/detail/2',

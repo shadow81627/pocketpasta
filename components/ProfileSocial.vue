@@ -130,11 +130,11 @@ import Keywords from '@/components/Keywords.vue';
 import KeyValue from '@/components/KeyValue.vue';
 
 export default {
-  inheritAttrs: false,
   components: {
     Keywords,
     KeyValue,
   },
+  inheritAttrs: false,
   props: {
     name: { type: String },
     description: { type: String },
