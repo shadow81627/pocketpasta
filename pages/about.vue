@@ -10,14 +10,58 @@
           PocketPasta is a collection of my demo apps that I build to practice
           my skills.
         </p>
-        <!-- <ul class="list-unstyled">
-        <li>Bootstrap 4.2.1</li>
-        <li>jQuery 3.3.1</li>
-        </ul>-->
+      </div>
+    </div>
+    <div class="row">
+      <div class="card bg-light card-body mb-3 profile">
+        <h2>We are all about the spathetti here</h2>
+        <p>
+          We eat
+          <a href="https://knowyourmeme.com/memes/spaghetti-stories"
+            >spagetti</a
+          >
+          to forgetti the regretti
+        </p>
+        <!-- <div class="embed-responsive embed-responsive-16by9">
+          <iframe
+            class="embed-responsive-item"
+            src="https://www.youtube.com/embed/SW-BU6keEUw"
+            allowfullscreen
+          />
+        </div> -->
+        <b-carousel
+          id="carousel-fade"
+          fade
+          indicators
+          controls
+          no-animation
+          :interval="0"
+          img-width="1024"
+          img-height="440"
+        >
+          <b-carousel-slide img-blank img-alt="Blank image"
+            ><div class="embed-responsive embed-responsive-16by9">
+              <iframe
+                class="embed-responsive-item"
+                src="https://www.youtube.com/embed/SW-BU6keEUw"
+                allowfullscreen
+              /></div
+          ></b-carousel-slide>
+          <b-carousel-slide img-blank img-alt="Blank image"
+            ><div class="embed-responsive embed-responsive-16by9">
+              <iframe
+                class="embed-responsive-item"
+                src="https://www.youtube.com/embed/hKWMrSGO6RQ"
+                allowfullscreen
+              /></div
+          ></b-carousel-slide>
+          <b-carousel-slide
+            img-src="https://i.kym-cdn.com/photos/images/original/001/182/064/60a.jpg"
+          />
+        </b-carousel>
       </div>
     </div>
     <div class="row justify-content-center">
-      <!-- <h2 class="mt-5">Pocket Pasta People</h2> -->
       <Profile v-bind="damien" />
     </div>
   </div>

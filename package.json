@@ -1,7 +1,7 @@
 {
   "name": "pocketpasta",
   "version": "0.0.9",
-  "description": "PocketPasta is a collection of my demo apps that I build to practice my skills.",
+  "description": "Eat spagetti to forgetti the regretti",
   "author": "Damien Robinson <damien.robinson@pocketpasta.com>",
   "private": true,
   "scripts": {
