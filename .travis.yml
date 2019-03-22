@@ -13,7 +13,7 @@ jobs:
       if: branch = master
       env:
       - FIREBASE_PROJECT=staging
-      - SENTRY_ENVIRONMENT=production
+      - SENTRY_ENVIRONMENT=staging
 
     - # require the branch name to be production
       if: branch = production
