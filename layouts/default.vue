@@ -64,8 +64,7 @@
     </v-navigation-drawer>
     <v-toolbar :clipped-left="$vuetify.breakpoint.lgAndUp" app fixed>
       <v-toolbar-title style="width: 300px" class="ml-0 pl-3">
-        <v-toolbar-side-icon @click.stop="drawer = !drawer" />
-        <!-- <span class="hidden-sm-and-down">Google Contacts</span> -->
+        <v-toolbar-side-icon aria-label="menu" @click.stop="drawer = !drawer" />
         <img
           src="/images/icons/icon-32x32.png"
           width="32"
