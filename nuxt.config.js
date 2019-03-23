@@ -83,7 +83,7 @@ module.exports = {
     start_url: '/?utm_source=a2hs',
     scope: '/',
     display: 'standalone',
-    background_color: '#000000',
+    background_color: '#4DBA87',
     theme_color: '#4DBA87',
   },
 
@@ -146,11 +146,11 @@ module.exports = {
   /*
    ** Customize the progress-bar color
    */
-  // loading: {
-  //   color: '#000',
-  // },
+  loading: {
+    color: '#4DBA87',
+  },
   // Disable loading bar since AMP will not generate a dynamic page
-  loading: false,
+  // loading: false,
 
   /*
    ** Global CSS
