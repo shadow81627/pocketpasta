@@ -10,13 +10,11 @@
     ],
     "headers": [
       {
-        "source": "**",
-        "headers": [
-          {
-            "key": "Strict-Transport-Security",
-            "value": "max-age=300; includeSubDomains; preload"
-          }
-        ]
+        "source": "**/*.@(jpg|jpeg|gif|png)",
+        "headers": [ {
+          "key": "Cache-Control",
+          "value": "max-age=7200"
+        } ]
       }, {
         "source": "/_nuxt/**",
         "headers": [ {
