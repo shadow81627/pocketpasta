@@ -8,83 +8,15 @@ module.exports = {
     name: pkg.name,
     short_name: 'pocketpasta',
     description: pkg.description,
-    icons: [
-      {
-        src: '/images/icons/icon-16x16.png',
-        sizes: '16x16',
-        type: 'image/png',
-      },
-      {
-        src: '/images/icons/icon-32x32.png',
-        sizes: '32x32',
-        type: 'image/png',
-      },
-      {
-        src: '/images/icons/icon-36x36.png',
-        sizes: '36x36',
-        type: 'image/png',
-      },
-      {
-        src: '/images/icons/icon-48x48.png',
-        sizes: '48x48',
-        type: 'image/png',
-      },
-      {
-        src: '/images/icons/icon-72x72.png',
-        sizes: '72x72',
-        type: 'image/png',
-      },
-      {
-        src: '/images/icons/icon-96x96.png',
-        sizes: '96x96',
-        type: 'image/png',
-      },
-      {
-        src: '/images/icons/icon-128x128.png',
-        sizes: '128x128',
-        type: 'image/png',
-      },
-      {
-        src: '/images/icons/icon-144x144.png',
-        sizes: '144x144',
-        type: 'image/png',
-      },
-      {
-        src: '/images/icons/icon-180x180.png',
-        sizes: '180x180',
-        type: 'image/png',
-      },
-      {
-        src: '/images/icons/icon-192x192.png',
-        sizes: '192x192',
-        type: 'image/png',
-      },
-      {
-        src: '/images/icons/icon-270x270.png',
-        sizes: '270x270',
-        type: 'image/png',
-      },
-      {
-        src: '/images/icons/icon-512x512.png',
-        sizes: '512x512',
-        type: 'image/png',
-      },
-      {
-        src: '/images/icons/icon-588x270.png',
-        sizes: '588x270',
-        type: 'image/png',
-      },
-      {
-        src: '/images/icons/icon-588x588.png',
-        sizes: '588x588',
-        type: 'image/png',
-      },
-    ],
-    start_url: '/?utm_source=a2hs',
+    start_url: '/?utm_source=a2hs&standalone=true',
     scope: '/',
     display: 'standalone',
     background_color: '#4DBA87',
     theme_color: '#4DBA87',
+  },
+
+  icon: {
+    sizes: [16, 32, 36, 48, 64, 72, 96, 120, 144, 152, 180, 192, 384, 512],
   },
 
   router: {
