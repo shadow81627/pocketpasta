@@ -89,6 +89,12 @@ export default {
         },
       ],
       __dangerouslyDisableSanitizers: ['script'],
+      link: [
+        {
+          rel: 'canonical',
+          href: 'https://pocketpasta.com/about',
+        },
+      ],
     };
   },
 };

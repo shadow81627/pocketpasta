@@ -52,22 +52,6 @@ module.exports = {
         type: 'image/x-icon',
         href: '/favicon.ico',
       },
-      {
-        rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css?family=Material+Icons',
-      },
-      {
-        rel: 'stylesheet',
-        href: 'https://unpkg.com/vuetify@0.14.11/dist/vuetify.min.css',
-      },
-      {
-        rel: 'stylesheet',
-        href:
-          'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css',
-        integrity:
-          'sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T',
-        crossorigin: 'anonymous',
-      },
     ],
   },
 
@@ -117,17 +101,9 @@ module.exports = {
     'bootstrap-vue/nuxt',
   ],
 
-  bootstrapVue: {
-    bootstrapCSS: false,
-    componentPlugins: [],
-    directivePlugins: [],
-  },
-
   vuetify: {
     treeShake: true,
-    css: false,
     theme: false,
-    materialIcons: false,
     // iconfont: 'md',
   },
 

@@ -6,6 +6,8 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
+<!-- http://www.google.com/ping?sitemap=https://pocketpasta.com/sitemap.xml -->
+
 
 <url>
   <loc>https://pocketpasta.com/</loc>

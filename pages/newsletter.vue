@@ -69,6 +69,21 @@
   <!--End mc_embed_signup-->
 </template>
 
+<script>
+export default {
+  head() {
+    return {
+      link: [
+        {
+          rel: 'canonical',
+          href: 'https://pocketpasta.com/newsletter',
+        },
+      ],
+    };
+  },
+};
+</script>
+
 <style>
 @import url('//cdn-images.mailchimp.com/embedcode/classic-10_7.css');
 </style>

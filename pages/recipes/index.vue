@@ -22,5 +22,15 @@ export default {
       return this.$store.state.recipes;
     },
   },
+  head() {
+    return {
+      link: [
+        {
+          rel: 'canonical',
+          href: 'https://pocketpasta.com/recipes',
+        },
+      ],
+    };
+  },
 };
 </script>

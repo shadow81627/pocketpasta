@@ -9,5 +9,15 @@ export default {
   components: {
     ThemeSelector,
   },
+  head() {
+    return {
+      link: [
+        {
+          rel: 'canonical',
+          href: 'https://pocketpasta.com/settings',
+        },
+      ],
+    };
+  },
 };
 </script>
