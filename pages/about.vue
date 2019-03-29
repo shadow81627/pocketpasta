@@ -29,7 +29,7 @@
             allowfullscreen
           />
         </div> -->
-        <b-carousel
+        <!-- <b-carousel
           id="carousel-fade"
           fade
           indicators
@@ -58,33 +58,31 @@
           <b-carousel-slide
             img-src="https://i.kym-cdn.com/photos/images/original/001/182/064/60a.jpg"
           />
-        </b-carousel>
+        </b-carousel> -->
       </div>
     </div>
     <div class="row justify-content-center">
-      <Profile v-bind="damien" />
+      <Profile v-bind="this.$store.state.damien" />
     </div>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import damien from '@/assets/link-data/damien.json';
-
 import Profile from '@/components/ProfileSocial.vue';
 
 export default {
   components: {
     Profile,
   },
-  data: () => ({
-    damien,
-  }),
+  data() {
+    return { damien: this.$store.state.damien };
+  },
   head() {
     return {
       script: [
         {
-          innerHTML: JSON.stringify(damien),
+          innerHTML: JSON.stringify(this.damien),
           type: 'application/ld+json',
         },
       ],

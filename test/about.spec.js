@@ -1,5 +1,5 @@
 import { shallowMount, createLocalVue, RouterLinkStub } from '@vue/test-utils';
-import recipeDetial from '@/pages/recipes/detail/_id.vue';
+import about from '@/pages/about.vue';
 import Vuex from 'vuex';
 import VueRouter from 'vue-router';
 
@@ -42,7 +42,7 @@ beforeEach(() => {
 });
 
 const factory = () =>
-  shallowMount(recipeDetial, {
+  shallowMount(about, {
     store,
     router,
     stubs: {
@@ -51,7 +51,7 @@ const factory = () =>
     localVue,
   });
 
-describe('recipeDetial', () => {
+describe('about', () => {
   test('mounts properly', () => {
     const wrapper = factory();
     expect(wrapper.isVueInstance()).toBeTruthy();
@@ -62,6 +62,6 @@ describe('recipeDetial', () => {
     expect(wrapper.html()).toMatchSnapshot();
   });
   test('head', () => {
-    expect(recipeDetial.head()).toBeTruthy();
+    expect(about.head()).toBeTruthy();
   });
 });

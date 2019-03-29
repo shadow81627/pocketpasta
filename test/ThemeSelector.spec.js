@@ -54,4 +54,10 @@ describe('ThemeSelector', () => {
     const wrapper = factory();
     expect(wrapper.html()).toMatchSnapshot();
   });
+
+  test('theme getter', () => {
+    const wrapper = factory();
+    wrapper.vm.currentTheme = 'darkly';
+    expect(wrapper.vm.currentTheme).toBeTruthy();
+  });
 });

@@ -1,9 +1,9 @@
 import { shallowMount } from '@vue/test-utils';
-import newsletter from '@/pages/newsletter.vue';
+import component from '@/components/error/404.vue';
 
-const factory = () => shallowMount(newsletter, {});
+const factory = () => shallowMount(component, {});
 
-describe('newsletter', () => {
+describe('404', () => {
   test('mounts properly', () => {
     const wrapper = factory();
     expect(wrapper.isVueInstance()).toBeTruthy();
@@ -14,6 +14,6 @@ describe('newsletter', () => {
     expect(wrapper.html()).toMatchSnapshot();
   });
   test('head', () => {
-    expect(newsletter.head()).toBeTruthy();
+    expect(component.head()).toBeTruthy();
   });
 });

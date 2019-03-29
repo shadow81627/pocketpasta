@@ -66,4 +66,8 @@ describe('recipes', () => {
   //   const wrapper = factory();
   //   expect(wrapper.find(RouterLinkStub).props().to).toBe('/subscribe');
   // });
+
+  test('head', () => {
+    expect(recipes.head()).toBeTruthy();
+  });
 });

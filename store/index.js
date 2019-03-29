@@ -1,5 +1,7 @@
 import recipe from '@/assets/link-data/spaghetti.json';
 
+import damien from '@/assets/link-data/damien.json';
+
 import pastaAglioEOlio from '@/assets/link-data/recipe/pasta_aglio_e_olio.json';
 
 export const state = () => ({
@@ -13,6 +15,7 @@ export const state = () => ({
     { id: 3 },
     { id: 4 },
   ],
+  damien,
 });
 
 export const getters = {

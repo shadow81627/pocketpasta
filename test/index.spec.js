@@ -29,4 +29,8 @@ describe('index', () => {
     const wrapper = factory();
     expect(wrapper.html()).toMatchSnapshot();
   });
+
+  test('head', () => {
+    expect(index.head()).toBeTruthy();
+  });
 });

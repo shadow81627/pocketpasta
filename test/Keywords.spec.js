@@ -1,17 +1,14 @@
-import { shallowMount, createLocalVue } from '@vue/test-utils';
+import { mount, createLocalVue } from '@vue/test-utils';
 import Keywords from '@/components/Keywords.vue';
 
 const localVue = createLocalVue();
 
 const factory = () =>
-  shallowMount(Keywords, {
+  mount(Keywords, {
     localVue,
-    propsData: {
-      tags: ['html5', 'css3', 'jquery', 'bootstrap4'],
-    },
   });
 
-describe('KeyValue', () => {
+describe('Keywords', () => {
   test('mounts properly', () => {
     const wrapper = factory();
     expect(wrapper.isVueInstance()).toBeTruthy();
@@ -20,5 +17,14 @@ describe('KeyValue', () => {
   test('renders properly', () => {
     const wrapper = factory();
     expect(wrapper.html()).toMatchSnapshot();
+  });
+
+  test('head', () => {
+    expect(Keywords.head()).toBeTruthy();
+  });
+
+  test('computes keywords', () => {
+    const wrapper = factory();
+    expect(wrapper.vm.keywords).toBe('');
   });
 });

@@ -1,9 +1,9 @@
 import { shallowMount } from '@vue/test-utils';
-import newsletter from '@/pages/newsletter.vue';
+import component from '@/components/AddToHomeScreen.vue';
 
-const factory = () => shallowMount(newsletter, {});
+describe('AddToHomeScreen', () => {
+  const factory = () => shallowMount(component, {});
 
-describe('newsletter', () => {
   test('mounts properly', () => {
     const wrapper = factory();
     expect(wrapper.isVueInstance()).toBeTruthy();
@@ -13,7 +13,10 @@ describe('newsletter', () => {
     const wrapper = factory();
     expect(wrapper.html()).toMatchSnapshot();
   });
-  test('head', () => {
-    expect(newsletter.head()).toBeTruthy();
+
+  test('events', () => {
+    const wrapper = factory();
+    wrapper.trigger('beforeinstallprompt');
+    wrapper.trigger('click');
   });
 });

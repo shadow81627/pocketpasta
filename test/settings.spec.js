@@ -13,4 +13,8 @@ describe('settings', () => {
     const wrapper = factory();
     expect(wrapper.html()).toMatchSnapshot();
   });
+
+  test('head', () => {
+    expect(settings.head()).toBeTruthy();
+  });
 });

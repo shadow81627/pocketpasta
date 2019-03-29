@@ -1,13 +1,3 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`KeyValue renders properly 1`] = `
-"<ul class=\\"list-inline\\"><strong>Tags:</strong> <li class=\\"list-inline-item tags\\">
-    html5
-  </li><li class=\\"list-inline-item tags\\">
-    css3
-  </li><li class=\\"list-inline-item tags\\">
-    jquery
-  </li><li class=\\"list-inline-item tags\\">
-    bootstrap4
-  </li></ul>"
-`;
+exports[`Keywords renders properly 1`] = `"<ul class=\\"list-inline\\"><strong>Tags:</strong> </ul>"`;

@@ -13,4 +13,7 @@ describe('damien', () => {
     const wrapper = factory();
     expect(wrapper.html()).toMatchSnapshot();
   });
+  test('head', () => {
+    expect(damien.head()).toBeTruthy();
+  });
 });
