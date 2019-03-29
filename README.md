@@ -26,3 +26,9 @@ $ npm run generate
 ```
 
 For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
+
+## Google Search
+
+```bash
+$ curl http://www.google.com/ping?sitemap=https://pocketpasta.com/sitemap.xml
+```
