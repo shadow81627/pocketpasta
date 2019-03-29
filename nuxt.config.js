@@ -1,5 +1,15 @@
 const pkg = require('./package');
 
+const routes = [
+  '/',
+  '/about',
+  '/newsletter',
+  '/settings',
+  '/recipes',
+  '/recipes/detail/1',
+  '/recipes/detail/2',
+];
+
 module.exports = {
   mode: 'universal',
 
@@ -58,15 +68,7 @@ module.exports = {
   generate: {
     // if you want to use '404.html' instead of the default '200.html'
     fallback: false,
-    routes: [
-      '/',
-      '/about',
-      '/newsletter',
-      '/settings',
-      '/recipes',
-      '/recipes/detail/1',
-      '/recipes/detail/2',
-    ],
+    routes,
   },
 
   /*
@@ -97,6 +99,7 @@ module.exports = {
     '@nuxtjs/google-analytics',
     '@nuxtjs/pwa',
     '@nuxtjs/sentry',
+    '@nuxtjs/sitemap',
     '@nuxtjs/vuetify',
     'bootstrap-vue/nuxt',
   ],
@@ -122,6 +125,14 @@ module.exports = {
       disabled: process.env.NODE_ENV !== 'production',
     },
   },
+
+  sitemap: {
+    hostname: 'https://pocketpasta.com',
+    routes,
+    gzip: true,
+    generate: true, // Enable me when using nuxt generate
+  },
+
   /*
    ** Axios module configuration
    */
