@@ -8,14 +8,14 @@
 /* eslint-disable no-console */
 export default {
   data: () => {
-    return { display: false, deferredPrompt: {} };
+    return { display: false, deferredPrompt: null };
   },
   mounted: function() {
     const vm = this;
     if (process.client) {
       window.addEventListener('beforeinstallprompt', (e) => {
         // Prevent Chrome 67 and earlier from automatically showing the prompt
-        // e.preventDefault();
+        e.preventDefault();
         // Stash the event so it can be triggered later.
         vm.deferredPrompt = e;
         // Update UI to notify the user they can add to home screen
