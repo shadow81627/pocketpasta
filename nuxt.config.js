@@ -69,6 +69,8 @@ module.exports = {
     // if you want to use '404.html' instead of the default '200.html'
     fallback: true,
     routes,
+    // middleware: ['router-auth'],
+    middleware: ['auth'],
   },
 
   /*
@@ -94,8 +96,8 @@ module.exports = {
    ** Nuxt.js modules
    */
   modules: [
-    // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
+    '@nuxtjs/auth',
     '@nuxtjs/google-analytics',
     '@nuxtjs/pwa',
     '@nuxtjs/sentry',
@@ -103,6 +105,15 @@ module.exports = {
     '@nuxtjs/vuetify',
     'bootstrap-vue/nuxt',
   ],
+
+  auth: {
+    strategies: {
+      auth0: {
+        domain: 'pocketpasta.auth0.com',
+        client_id: 'SU9fkdMw6bqMkqwEZ2pX7sk3SlxR3Qi8',
+      },
+    },
+  },
 
   vuetify: {
     treeShake: true,
