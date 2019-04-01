@@ -1,7 +1,18 @@
 <template>
   <div class="recipe">
-    <h1>{{ recipe.name }}</h1>
-    <p>{{ recipe.description }}</p>
+    <no-ssr placeholder="loading...">
+      <quill
+        placeholder="this is good"
+        :toolbar="[['bold', 'underline']]"
+        @change="textChanged"
+      >
+        <div slot="content">
+          <h1>{{ recipe.name }}</h1>
+          <p>{{ recipe.description }}</p>
+        </div>
+      </quill>
+    </no-ssr>
+
     <div v-if="recipe.video" class="embed-responsive embed-responsive-16by9">
       <iframe
         class="embed-responsive-item"
@@ -54,6 +65,7 @@ import Keywords from '@/components/Keywords.vue';
 export default {
   components: {
     Keywords,
+    Quill: () => import('@/components/Quill'),
   },
   inheritAttrs: false,
   computed: {
