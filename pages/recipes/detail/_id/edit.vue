@@ -1,5 +1,7 @@
 <template>
-  <Recipe />
+  <div v-quill:myQuillEditor="[['bold', 'underline']]">
+    <Recipe />
+  </div>
 </template>
 
 <script>
