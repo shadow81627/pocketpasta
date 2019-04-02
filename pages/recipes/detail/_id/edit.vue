@@ -26,7 +26,7 @@ export default {
       link: [
         {
           rel: 'canonical',
-          href: `https://pocketpasta.com/recipes/${this.id}`,
+          href: `https://pocketpasta.com/recipes/detail/${this.id}/edit`,
         },
       ],
     };

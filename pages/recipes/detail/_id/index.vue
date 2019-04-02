@@ -6,6 +6,7 @@
 import Recipe from '@/components/Recipe.vue';
 
 export default {
+  layout: 'edit',
   components: {
     Recipe,
   },
@@ -17,7 +18,7 @@ export default {
       link: [
         {
           rel: 'canonical',
-          href: `https://pocketpasta.com/recipes/${this.id}`,
+          href: `https://pocketpasta.com/recipes/detail/${this.id}`,
         },
       ],
     };
