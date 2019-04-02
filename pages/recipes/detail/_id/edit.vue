@@ -1,6 +1,13 @@
 <template>
-  <div v-quill:myQuillEditor="[['bold', 'underline']]">
-    <Recipe />
+  <div>
+    <div
+      v-quill:myQuillEditor="[
+        ['bold', 'italic', 'underline', 'strike'],
+        ['blockquote', 'code-block'],
+      ]"
+    >
+      <Recipe />
+    </div>
   </div>
 </template>
 
