@@ -35,7 +35,7 @@
     "vuetify-loader": "1.2.1"
   },
   "devDependencies": {
-    "@babel/core": "7.4.0",
+    "@babel/core": "7.4.3",
     "@nuxtjs/eslint-config": "0.0.1",
     "@storybook/addon-actions": "5.0.6",
     "@storybook/addon-links": "5.0.6",
