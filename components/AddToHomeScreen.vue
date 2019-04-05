@@ -1,5 +1,5 @@
 <template>
-  <v-btn icon aria-label="get app" :class="{ 'd-none': display }">
+  <v-btn icon aria-label="get app" :class="{ 'd-none': !display }">
     <v-icon>get_app</v-icon>
   </v-btn>
 </template>
