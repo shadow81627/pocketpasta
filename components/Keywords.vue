@@ -1,10 +1,15 @@
 <template>
-  <ul class="list-inline">
+  <div class="list-inline">
     <strong>{{ label }}:</strong>
-    <li v-for="tag in tags" :key="tag" class="list-inline-item tags">
-      {{ tag }}
-    </li>
-  </ul>
+    <a
+      v-for="tag in tags"
+      :key="tag"
+      href="#"
+      class="list-inline-item tags btn"
+      role="button"
+      >{{ tag.trim() }}
+    </a>
+  </div>
 </template>
 
 <script>
