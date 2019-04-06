@@ -81,6 +81,11 @@ export default {
       ],
     };
   },
+  methods: {
+    subscribe() {
+      this.$ga.event('Newsletter', 'Click', 'Subscribe');
+    },
+  },
 };
 </script>
 
