@@ -3,7 +3,10 @@
     <h1>{{ recipe.name }}</h1>
     <p>{{ recipe.description }}</p>
 
-    <div v-if="recipe.video" class="embed-responsive embed-responsive-16by9">
+    <div
+      v-if="recipe.video"
+      class="embed-responsive embed-responsive-16by9 d-print-none"
+    >
       <iframe
         class="embed-responsive-item"
         :src="recipe.video[0].contentUrl"
@@ -15,7 +18,7 @@
     <!-- <p>Author: {{ recipe.author }}</p> -->
     <!-- <p>Published: {{ recipe.datePublished }}</p> -->
 
-    <div class="sharethis-inline-share-buttons p-4" />
+    <div class="sharethis-inline-share-buttons p-4 d-print-none" />
 
     <p>
       <strong>Makes:</strong>
@@ -26,7 +29,6 @@
       <li
         v-for="ingredient in recipe.recipeIngredient"
         :key="ingredient"
-        style="/*display: list-item;*//*list-style-position: inside;*/"
         class="list-group-item"
       >
         {{ ingredient }}
