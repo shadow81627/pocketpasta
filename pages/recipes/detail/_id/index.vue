@@ -1,12 +1,24 @@
 <template>
-  <Recipe />
+  <div>
+    <Recipe />
+    <v-btn
+      fab
+      bottom
+      right
+      color="pink"
+      dark
+      fixed
+      :to="`${this.$route.path}/edit`"
+    >
+      <v-icon>edit</v-icon>
+    </v-btn>
+  </div>
 </template>
 
 <script>
 import Recipe from '@/components/Recipe.vue';
 
 export default {
-  layout: 'edit',
   components: {
     Recipe,
   },

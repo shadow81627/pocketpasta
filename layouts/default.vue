@@ -5,6 +5,7 @@
       :clipped="$vuetify.breakpoint.lgAndUp"
       fixed
       app
+      class="hidden-print-only"
     >
       <v-list dense>
         <template v-for="item in items">
@@ -62,7 +63,12 @@
         </template>
       </v-list>
     </v-navigation-drawer>
-    <v-toolbar :clipped-left="$vuetify.breakpoint.lgAndUp" app fixed>
+    <v-toolbar
+      :clipped-left="$vuetify.breakpoint.lgAndUp"
+      app
+      fixed
+      class="hidden-print-only"
+    >
       <v-toolbar-title style="width: 300px" class="ml-0 pl-3">
         <v-toolbar-side-icon aria-label="menu" @click.stop="drawer = !drawer" />
         <img
