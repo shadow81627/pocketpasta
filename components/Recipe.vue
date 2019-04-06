@@ -14,6 +14,9 @@
     <img v-else :src="recipe.image" class="img-fluid" />
     <!-- <p>Author: {{ recipe.author }}</p> -->
     <!-- <p>Published: {{ recipe.datePublished }}</p> -->
+
+    <div class="sharethis-inline-share-buttons p-4" />
+
     <p>
       <strong>Makes:</strong>
       <span>{{ recipe.recipeYield }}</span>

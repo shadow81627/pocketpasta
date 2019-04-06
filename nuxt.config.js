@@ -63,6 +63,14 @@ module.exports = {
         href: '/favicon.ico',
       },
     ],
+    script: [
+      {
+        type: 'text/javascript',
+        src:
+          'https://platform-api.sharethis.com/js/sharethis.js#property=5ca7eb82fbd80b0011b667ca&product=inline-share-buttons',
+        async: 'async',
+      },
+    ],
   },
 
   generate: {

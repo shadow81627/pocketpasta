@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Recipe renders properly 1`] = `
-"<div class=\\"recipe\\"><h1>Audrey Hepburn’s Spaghetti Al Pomodoro Recipe</h1> <p>Make Audrey Hepburn's spaghetti al pomodoro recipe. Hepburn liked her pasta smothered in tomato sauce.</p> <div class=\\"embed-responsive embed-responsive-16by9\\"><iframe src=\\"https://vid.tasty.co/output/97978/landscape_720/1528506768\\" allowfullscreen=\\"allowfullscreen\\" poster=\\"https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/162208.jpg\\" class=\\"embed-responsive-item\\"></iframe></div> <p><strong>Makes:</strong> <span>4 servings</span></p> <h2>Ingredients:</h2> <ol class=\\"list-group-flush\\"><li class=\\"list-group-item\\">
+"<div class=\\"recipe\\"><h1>Audrey Hepburn’s Spaghetti Al Pomodoro Recipe</h1> <p>Make Audrey Hepburn's spaghetti al pomodoro recipe. Hepburn liked her pasta smothered in tomato sauce.</p> <div class=\\"embed-responsive embed-responsive-16by9\\"><iframe src=\\"https://vid.tasty.co/output/97978/landscape_720/1528506768\\" allowfullscreen=\\"allowfullscreen\\" poster=\\"https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/162208.jpg\\" class=\\"embed-responsive-item\\"></iframe></div> <div class=\\"sharethis-inline-share-buttons p-4\\"></div> <p><strong>Makes:</strong> <span>4 servings</span></p> <h2>Ingredients:</h2> <ol class=\\"list-group-flush\\"><li class=\\"list-group-item\\">
       1 small onion, diced
     </li><li class=\\"list-group-item\\">
       2 cloves garlic, minced
