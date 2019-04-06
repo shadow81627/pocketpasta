@@ -17,7 +17,7 @@ module.exports = {
     name: pkg.name,
     short_name: 'pocketpasta',
     description: pkg.description,
-    start_url: '/?utm_source=a2hs&standalone=true',
+    start_url: '/?utm_source=a2hs&utm_medium=none&standalone=true',
     scope: '/',
     display: 'standalone',
     background_color: '#4DBA87',
