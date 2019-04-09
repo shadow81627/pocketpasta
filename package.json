@@ -4,6 +4,8 @@
   "description": "Eat spagetti to forgetti the regretti",
   "author": "Damien Robinson <damien.robinson@pocketpasta.com>",
   "private": true,
+  "repository": "shadow81627/pocketpasta",
+  "homepage": "https://pocketpasta.com",
   "scripts": {
     "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
     "build": "nuxt build",
