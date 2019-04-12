@@ -30,6 +30,7 @@ module.exports = {
 
   router: {
     linkActiveClass: 'active',
+    // middleware: ['auth'],
   },
 
   /*
@@ -78,7 +79,6 @@ module.exports = {
     fallback: true,
     routes,
     // middleware: ['router-auth'],
-    middleware: ['auth'],
   },
 
   /*

@@ -15,7 +15,7 @@
           />
         </v-avatar>
       </v-btn>
-      <v-btn v-else aria-label="login" nuxt to="login">
+      <v-btn v-else aria-label="login" @click="$auth.loginWith('auth0')">
         Login
       </v-btn>
     </template>
