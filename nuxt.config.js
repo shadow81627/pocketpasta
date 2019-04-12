@@ -125,6 +125,12 @@ module.exports = {
         client_id: 'SU9fkdMw6bqMkqwEZ2pX7sk3SlxR3Qi8',
       },
     },
+    redirect: {
+      login: '/login',
+      logout: '/',
+      callback: '/login/',
+      home: '/',
+    },
   },
 
   vuetify: {
