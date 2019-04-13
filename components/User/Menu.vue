@@ -52,5 +52,8 @@ export default {
   data: () => ({
     menu: false,
   }),
+  async fetch(context) {
+    await context.app.$auth.fetchUser();
+  },
 };
 </script>
