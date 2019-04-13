@@ -81,14 +81,14 @@
         />
         <span class="mx-1 hidden-sm-and-down">PocketPasta</span>
       </v-toolbar-title>
-      <v-text-field
+      <!-- <v-text-field
         flat
         solo-inverted
         hide-details
         prepend-inner-icon="search"
         label="Search"
         class="hidden-sm-and-down"
-      />
+      /> -->
       <v-spacer />
       <AddToHomeScreen />
       <v-btn icon aria-label="apps">
