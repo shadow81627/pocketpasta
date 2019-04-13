@@ -77,7 +77,7 @@
           height="32"
           class="rounded"
           alt="PocketPasta"
-          onerror="javascript:this.style.display = 'none !important'"
+          onerror="javascript:this.style.display = 'none'"
         />
         <span class="mx-1 hidden-sm-and-down">PocketPasta</span>
       </v-toolbar-title>
