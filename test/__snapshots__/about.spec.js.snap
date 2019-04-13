@@ -8,5 +8,5 @@ exports[`about renders properly 1`] = `
         We eat
         <a href=\\"https://knowyourmeme.com/memes/spaghetti-stories\\">spagetti</a>
         to forgetti the regretti
-      </p></div></div> <div class=\\"row justify-content-center\\"><profile-stub></profile-stub></div></div>"
+      </p></div></div> <div class=\\"row\\"><profile-stub></profile-stub></div></div>"
 `;

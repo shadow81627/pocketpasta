@@ -61,7 +61,7 @@
         </b-carousel> -->
       </div>
     </div>
-    <div class="row justify-content-center">
+    <div class="row">
       <Profile v-bind="this.$store.state.damien" />
     </div>
   </div>
