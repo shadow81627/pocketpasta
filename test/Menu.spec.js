@@ -6,7 +6,7 @@ const localVue = createLocalVue();
 
 localVue.use(Vuex);
 
-describe('Recipe', () => {
+describe('Menu', () => {
   let getters;
   let state;
   let store;
