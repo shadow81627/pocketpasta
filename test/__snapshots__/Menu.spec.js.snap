@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Recipe renders properly 1`] = `"<v-menu offset-y=\\"\\"> <v-card><v-list><v-list-tile avatar=\\"\\"><v-list-tile-avatar><img src=\\"https://s.gravatar.com/avatar/79fbbc24ccdcbed0a7408da53bb32c49?s=480&amp;r=pg&amp;d=https%3A%2F%2Fcdn.auth0.com%2Favatars%2Fod.png\\" alt=\\"avatar\\"></v-list-tile-avatar> <v-list-tile-content><v-list-tile-title>damien.robinson@pocketpasta.com</v-list-tile-title></v-list-tile-content></v-list-tile></v-list> <v-divider></v-divider> <v-list><v-list-tile><v-btn icon=\\"\\"><v-icon>directions_run</v-icon></v-btn> <v-list-tile-title>Logout</v-list-tile-title></v-list-tile></v-list></v-card></v-menu>"`;
