@@ -8,7 +8,7 @@
             :src="$auth.user.picture"
             width="32"
             height="32"
-            class="rounded"
+            class="rounded-circle"
             alt="avatar"
             onerror="javascript:this.style.display = 'none'"
           />
