@@ -13,12 +13,6 @@ const routes = [
 module.exports = {
   mode: 'spa',
 
-  vue: {
-    config: {
-      devtools: true,
-    },
-  },
-
   manifest: {
     name: pkg.name,
     short_name: 'pocketpasta',
