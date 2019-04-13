@@ -11,7 +11,7 @@ const routes = [
 ];
 
 module.exports = {
-  mode: 'universal',
+  mode: 'spa',
 
   vue: {
     config: {
@@ -125,6 +125,7 @@ module.exports = {
   ],
 
   auth: {
+    resetOnError: true,
     strategies: {
       auth0: {
         domain: 'pocketpasta.auth0.com',
