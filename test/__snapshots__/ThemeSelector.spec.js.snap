@@ -43,5 +43,7 @@ exports[`ThemeSelector renders properly 1`] = `
         untied
       </option><option class=\\"form-control\\" value=\\"yeti\\">
         yeti
-      </option></select></div></form>"
+      </option></select></div> <button class=\\"btn btn-primary\\">
+    Save theme
+  </button></form>"
 `;
