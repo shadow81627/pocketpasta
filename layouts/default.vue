@@ -104,6 +104,7 @@
         <nuxt />
       </div>
     </v-content>
+    <Footer />
     <!-- <v-btn fab bottom right color="pink" dark fixed @click="dialog = !dialog">
       <v-icon>add</v-icon>
     </v-btn> -->
@@ -161,10 +162,12 @@
 <script>
 import AddToHomeScreen from '@/components/AddToHomeScreen.vue';
 import UserMenu from '@/components/User/Menu.vue';
+import Footer from '@/components/Layout/Footer.vue';
 export default {
   components: {
     AddToHomeScreen,
     UserMenu,
+    Footer,
   },
   data: () => ({
     dialog: false,
