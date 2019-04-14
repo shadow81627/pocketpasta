@@ -30,7 +30,7 @@ module.exports = {
 
   router: {
     linkActiveClass: 'active',
-    // middleware: ['theme'],
+    middleware: ['theme'],
   },
 
   /*
