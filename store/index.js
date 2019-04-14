@@ -6,8 +6,9 @@ import pastaAglioEOlio from '@/assets/link-data/recipe/pasta_aglio_e_olio.json';
 
 export const state = () => ({
   theme: {
-    name: '',
-    href: '',
+    value: 'default',
+    href:
+      'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css',
   },
   recipes: [
     { ...recipe, id: 1 },

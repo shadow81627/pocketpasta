@@ -26,7 +26,7 @@ export default {
 };
 </script>
 
-<style media="screen">
+<style media="screen" scoped>
 body {
   background: #eceff1;
   color: rgba(0, 0, 0, 0.87);
