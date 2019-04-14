@@ -3,6 +3,7 @@
     <div class="row">
       <div class="col-lg-12 text-center">
         <h1 class="mt-5">PocketPasta</h1>
+        <p>Brisbane based open source vegan life style planner.</p>
         <img
           alt="Pocket Pasta logo"
           src="~/assets/logo.png"
