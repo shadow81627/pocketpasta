@@ -8,7 +8,7 @@
             :src="$auth.user.picture"
             width="32"
             height="32"
-            class="rounded-circle"
+            class="rounded"
             alt="avatar"
             onerror="javascript:this.style.display = 'none'"
           />
@@ -21,18 +21,20 @@
 
     <v-card v-if="$auth.loggedIn">
       <v-list>
-        <v-list-tile avatar>
-          <v-list-tile-avatar>
-            <img :src="$auth.user.picture" alt="avatar" />
-          </v-list-tile-avatar>
+        <nuxt-link to="/profile">
+          <v-list-tile avatar tile>
+            <v-list-tile-avatar>
+              <img :src="$auth.user.picture" alt="avatar" class="rounded" />
+            </v-list-tile-avatar>
 
-          <v-list-tile-content>
-            <v-list-tile-title v-if="$auth.user.name !== $auth.user.email">{{
-              $auth.user.name
-            }}</v-list-tile-title>
-            <v-list-tile-title>{{ $auth.user.email }}</v-list-tile-title>
-          </v-list-tile-content>
-        </v-list-tile>
+            <v-list-tile-content>
+              <v-list-tile-title v-if="$auth.user.name !== $auth.user.email">{{
+                $auth.user.name
+              }}</v-list-tile-title>
+              <v-list-tile-title>{{ $auth.user.email }}</v-list-tile-title>
+            </v-list-tile-content>
+          </v-list-tile>
+        </nuxt-link>
       </v-list>
 
       <v-divider />
