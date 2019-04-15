@@ -1,6 +1,6 @@
 {
   "name": "pocketpasta",
-  "version": "0.0.17",
+  "version": "0.0.18",
   "description": "Eat spagetti to forgetti the regretti",
   "author": "Damien Robinson <damien.robinson@pocketpasta.com>",
   "private": true,
@@ -34,7 +34,7 @@
     "koa": "2.7.0",
     "nuxt": "2.6.1",
     "vue-quill-editor": "3.0.6",
-    "vuetify-loader": "1.2.1"
+    "vuetify-loader": "1.2.2"
   },
   "devDependencies": {
     "@babel/core": "7.4.3",
