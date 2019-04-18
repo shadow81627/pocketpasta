@@ -171,7 +171,7 @@ export default {
   },
   data: () => ({
     dialog: false,
-    drawer: null,
+    drawer: false,
     items: [
       { icon: 'home', text: 'Home', link: '/' },
       { icon: 'info', text: 'About', link: '/about' },
@@ -211,15 +211,6 @@ export default {
     return {
       link: [this.$store.getters.getCurrentTheme()],
     };
-  },
-  methods: {
-    gravatar(email) {
-      const md5 = 'some md5';
-      const base = 'https://www.gravatar.com/avatar/';
-      const hash = md5(email.trim().toLowerCase());
-      const options = '?s=32&d=wavatar&r=pg';
-      return base + hash + options;
-    },
   },
 };
 </script>
