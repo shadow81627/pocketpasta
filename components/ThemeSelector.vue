@@ -1,7 +1,7 @@
 <template>
   <form
     @submit.prevent="
-      $auth.$storage.setUniversal('theme', $store.state.theme, 'isJson')
+      $auth.$storage.setUniversal('theme', $store.state.theme, true)
     "
   >
     <h1>Settings</h1>
