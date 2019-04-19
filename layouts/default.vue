@@ -79,7 +79,7 @@
           alt="PocketPasta"
           onerror="javascript:this.style.display = 'none'"
         />
-        <span class="mx-1 hidden-sm-and-down">PocketPasta</span>
+        <span class="brand mx-1 hidden-sm-and-down">PocketPasta</span>
       </v-toolbar-title>
       <!-- <v-text-field
         flat
@@ -100,9 +100,7 @@
       <UserMenu />
     </v-toolbar>
     <v-content>
-      <div class="container">
-        <nuxt />
-      </div>
+      <nuxt />
     </v-content>
     <Footer />
     <!-- <v-btn fab bottom right color="pink" dark fixed @click="dialog = !dialog">
@@ -214,3 +212,11 @@ export default {
   },
 };
 </script>
+
+<style>
+@import url('~/assets/css/font.css');
+
+.brand {
+  font-family: 'Comic Neue', sans-serif;
+}
+</style>

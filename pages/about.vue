@@ -1,35 +1,36 @@
 <template>
-  <div class="about">
-    <div class="row">
-      <div class="col-lg-12 $text-center">
-        <h1 class="mt-5">About Pocket Pasta</h1>
-        <p class="lead">
-          <!-- Pocket Pasta is a progressive web app for journaling your life.
+  <div class="container">
+    <div class="about">
+      <div class="row">
+        <div class="col-lg-12 $text-center">
+          <h1 class="mt-5">About Pocket Pasta</h1>
+          <p class="lead">
+            <!-- Pocket Pasta is a progressive web app for journaling your life.
         The aim is to have a multi module app that allows users to record how they live.
           Documenting how we live is the first step in planning how to live.-->
-          PocketPasta is a collection of my demo apps that I build to practice
-          my skills.
-        </p>
+            PocketPasta is a collection of my demo apps that I build to practice
+            my skills.
+          </p>
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="card bg-light card-body mb-3 profile">
-        <h2>We are all about the spathetti here</h2>
-        <p>
-          We eat
-          <a href="https://knowyourmeme.com/memes/spaghetti-stories"
-            >spagetti</a
-          >
-          to forgetti the regretti
-        </p>
-        <!-- <div class="embed-responsive embed-responsive-16by9">
+      <div class="row">
+        <div class="card bg-light card-body mb-3 profile">
+          <h2>We are all about the spathetti here</h2>
+          <p>
+            We eat
+            <a href="https://knowyourmeme.com/memes/spaghetti-stories"
+              >spagetti</a
+            >
+            to forgetti the regretti
+          </p>
+          <!-- <div class="embed-responsive embed-responsive-16by9">
           <iframe
             class="embed-responsive-item"
             src="https://www.youtube.com/embed/SW-BU6keEUw"
             allowfullscreen
           />
         </div> -->
-        <!-- <b-carousel
+          <!-- <b-carousel
           id="carousel-fade"
           fade
           indicators
@@ -59,10 +60,11 @@
             img-src="https://i.kym-cdn.com/photos/images/original/001/182/064/60a.jpg"
           />
         </b-carousel> -->
+        </div>
       </div>
-    </div>
-    <div class="row">
-      <Profile v-bind="this.$store.state.damien" />
+      <div class="row">
+        <Profile v-bind="this.$store.state.damien" />
+      </div>
     </div>
   </div>
 </template>

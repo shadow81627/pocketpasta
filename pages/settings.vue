@@ -1,5 +1,7 @@
 <template>
-  <theme-selector />
+  <div class="container">
+    <theme-selector />
+  </div>
 </template>
 
 <script>

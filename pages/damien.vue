@@ -1,6 +1,8 @@
 <template>
-  <div class="row">
-    <Profile />
+  <div class="container">
+    <div class="row">
+      <Profile />
+    </div>
   </div>
 </template>
 

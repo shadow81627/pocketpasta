@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container">
     <div
       v-quill:myQuillEditor="[
         ['bold', 'italic', 'underline', 'strike'],
