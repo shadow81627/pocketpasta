@@ -11,7 +11,7 @@ const routes = [
 ];
 
 module.exports = {
-  mode: 'spa',
+  mode: 'universal',
 
   manifest: {
     name: pkg.name,
