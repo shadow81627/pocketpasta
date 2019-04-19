@@ -10,6 +10,32 @@ const routes = [
   '/recipes/detail/2',
 ];
 
+const i18nSettings = {
+  defaultLocale: 'en',
+  vueI18n: {
+    fallbackLocale: 'en',
+  },
+  locales: [
+    {
+      code: 'en-au',
+      iso: 'en-AU',
+      file: 'en-AU.js',
+    },
+    {
+      code: 'en-gb',
+      iso: 'en-GB',
+      file: 'en-AU.js',
+    },
+    {
+      code: 'en-us',
+      iso: 'en-US',
+      file: 'en-AU.js',
+    },
+  ],
+  lazy: true,
+  langDir: 'lang/',
+};
+
 module.exports = {
   mode: 'spa',
 
@@ -121,6 +147,7 @@ module.exports = {
     '@nuxtjs/sitemap',
     '@nuxtjs/vuetify',
     'bootstrap-vue/nuxt',
+    ['nuxt-i18n', i18nSettings],
   ],
 
   auth: {

@@ -96,7 +96,7 @@
       /> -->
       <v-spacer />
       <AddToHomeScreen />
-      <v-btn icon aria-label="apps" style="background: unset; color: unset;">
+      <!-- <v-btn icon aria-label="apps" style="background: unset; color: unset;">
         <v-icon>apps</v-icon>
       </v-btn>
       <v-btn
@@ -105,7 +105,7 @@
         style="background: unset; color: unset;"
       >
         <v-icon>notifications</v-icon>
-      </v-btn>
+      </v-btn> -->
       <UserMenu />
     </v-toolbar>
     <v-content>
@@ -176,44 +176,62 @@ export default {
     UserMenu,
     Footer,
   },
-  data: () => ({
-    dialog: false,
-    drawer: false,
-    items: [
-      { icon: 'home', text: 'Home', link: '/' },
-      { icon: 'info', text: 'About', link: '/about' },
-      { icon: 'email', text: 'Newsletter', link: '/newsletter' },
-      { icon: 'book', text: 'Recipes', link: '/recipes' },
-      // { icon: 'contacts', text: 'Contacts' },
-      // { icon: 'history', text: 'Frequently contacted' },
-      // { icon: 'content_copy', text: 'Duplicates' },
-      // {
-      //   icon: 'keyboard_arrow_up',
-      //   'icon-alt': 'keyboard_arrow_down',
-      //   text: 'Labels',
-      //   model: true,
-      //   children: [{ icon: 'add', text: 'Create label' }],
-      // },
-      // {
-      //   icon: 'keyboard_arrow_up',
-      //   'icon-alt': 'keyboard_arrow_down',
-      //   text: 'More',
-      //   model: false,
-      //   children: [
-      //     { text: 'Import' },
-      //     { text: 'Export' },
-      //     { text: 'Print' },
-      //     { text: 'Undo changes' },
-      //     { text: 'Other contacts' },
-      //   ],
-      // },
-      { icon: 'settings', text: 'Settings', link: '/settings' },
-      // { icon: 'chat_bubble', text: 'Send feedback' },
-      // { icon: 'help', text: 'Help' },
-      // { icon: 'phonelink', text: 'App downloads' },
-      // { icon: 'keyboard', text: 'Go to the old version' },
-    ],
-  }),
+  data: function() {
+    return {
+      dialog: false,
+      drawer: false,
+      items: [
+        { icon: 'home', text: this.$t('layout.navigation.home'), link: '/' },
+        {
+          icon: 'info',
+          text: this.$t('layout.navigation.about'),
+          link: '/about',
+        },
+        {
+          icon: 'email',
+          text: this.$t('layout.navigation.newsletter'),
+          link: '/newsletter',
+        },
+        {
+          icon: 'book',
+          text: this.$t('layout.navigation.recipes'),
+          link: '/recipes',
+        },
+        // { icon: 'contacts', text: 'Contacts' },
+        // { icon: 'history', text: 'Frequently contacted' },
+        // { icon: 'content_copy', text: 'Duplicates' },
+        // {
+        //   icon: 'keyboard_arrow_up',
+        //   'icon-alt': 'keyboard_arrow_down',
+        //   text: 'Labels',
+        //   model: true,
+        //   children: [{ icon: 'add', text: 'Create label' }],
+        // },
+        // {
+        //   icon: 'keyboard_arrow_up',
+        //   'icon-alt': 'keyboard_arrow_down',
+        //   text: 'More',
+        //   model: false,
+        //   children: [
+        //     { text: 'Import' },
+        //     { text: 'Export' },
+        //     { text: 'Print' },
+        //     { text: 'Undo changes' },
+        //     { text: 'Other contacts' },
+        //   ],
+        // },
+        {
+          icon: 'settings',
+          text: this.$t('layout.navigation.settings'),
+          link: '/settings',
+        },
+        // { icon: 'chat_bubble', text: 'Send feedback' },
+        // { icon: 'help', text: 'Help' },
+        // { icon: 'phonelink', text: 'App downloads' },
+        // { icon: 'keyboard', text: 'Go to the old version' },
+      ],
+    };
+  },
   head() {
     return {
       link: [this.$store.getters.getCurrentTheme()],

@@ -15,7 +15,7 @@
         </v-avatar>
       </v-btn>
       <v-btn v-else aria-label="login" @click="$auth.loginWith('auth0')">
-        Login
+        {{ $t('layout.login') }}
       </v-btn>
     </template>
 
@@ -44,7 +44,7 @@
           <v-btn icon>
             <v-icon>directions_run</v-icon>
           </v-btn>
-          <v-list-tile-title>Logout</v-list-tile-title>
+          <v-list-tile-title>{{ $t('layout.logout') }}</v-list-tile-title>
         </v-list-tile>
       </v-list>
     </v-card>

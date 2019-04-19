@@ -12,7 +12,7 @@
             PocketPasta
           </h1>
           <div class="subheading mb-3 text-xs-center">
-            Eat spagetti to forgetti the regretti
+            {{ $t('landing.banner.subheading') }}
           </div>
           <!-- <v-btn
                 class="blue lighten-2 mt-5"
@@ -131,7 +131,7 @@
           <v-flex xs12 sm4>
             <v-card class="elevation-0 transparent">
               <v-card-title primary-title class="layout justify-center">
-                <div class="headline">Company info</div>
+                <div class="headline">{{ $t('landing.info.heading') }}</div>
               </v-card-title>
               <!-- <v-card-text>
                     Cras facilisis mi vitae nunc lobortis pharetra. Nulla
@@ -145,7 +145,7 @@
           <v-flex xs12 sm4 offset-sm1>
             <v-card class="elevation-0 transparent">
               <v-card-title primary-title class="layout justify-center">
-                <div class="headline">Contact us</div>
+                <div class="headline">{{ $t('landing.contact.heading') }}</div>
               </v-card-title>
               <!-- <v-card-text>
                     Cras facilisis mi vitae nunc lobortis pharetra. Nulla
@@ -168,7 +168,9 @@
                     <v-icon class="blue--text text--lighten-2">place</v-icon>
                   </v-list-tile-action>
                   <v-list-tile-content>
-                    <v-list-tile-title>Brisbane, Australia</v-list-tile-title>
+                    <v-list-tile-title>{{
+                      $t('landing.contact.location')
+                    }}</v-list-tile-title>
                   </v-list-tile-content>
                 </v-list-tile>
                 <v-list-tile>
@@ -176,9 +178,9 @@
                     <v-icon class="blue--text text--lighten-2">email</v-icon>
                   </v-list-tile-action>
                   <v-list-tile-content>
-                    <v-list-tile-title
-                      >damien.robinson@pocketpasta.com</v-list-tile-title
-                    >
+                    <v-list-tile-title>{{
+                      $t('landing.contact.email')
+                    }}</v-list-tile-title>
                   </v-list-tile-content>
                 </v-list-tile>
               </v-list>
