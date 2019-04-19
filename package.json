@@ -33,8 +33,7 @@
     "cross-env": "5.2.0",
     "koa": "2.7.0",
     "nuxt": "2.6.2",
-    "vue-quill-editor": "3.0.6",
-    "vuetify-loader": "1.2.2"
+    "vue-quill-editor": "3.0.6"
   },
   "devDependencies": {
     "@babel/core": "7.4.3",
@@ -67,6 +66,7 @@
     "prettier": "1.17.0",
     "stylus": "0.54.5",
     "stylus-loader": "3.0.2",
-    "vue-jest": "3.0.4"
+    "vue-jest": "3.0.4",
+    "vuetify-loader": "1.2.2"
   }
 }
