@@ -77,7 +77,7 @@
           @click.stop="drawer = !drawer"
         />
         <img
-          src="/images/icons/icon-32x32.png"
+          :src="$icon(32)"
           width="32"
           height="32"
           class="rounded"
