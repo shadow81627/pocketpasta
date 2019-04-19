@@ -72,24 +72,6 @@
       "text": "Taste the sauce and add salt, if desired. Serve pasta topped generously with sauce, grated Parmigiano-Reggiano cheese, and the reserved sliced basil leaves."
     }
   ],
-  "video": [
-    {
-      "name": "Audrey Hepburn’s Spaghetti Al Pomodoro Recipe by Tasty",
-      "description": "Here's what you need: extra virgin olive oil, small onion, celery, garlic, fresh basil, canned whole peeled tomato, salt, dried spathetti, freshly grated parmigiano-reggiano cheese, carrots",
-      "thumbnailUrl": "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/162208.jpg",
-      "uploadDate": "2018-06-08T23:54:54",
-      "duration": "PT15M37S",
-      "publisher": {
-        "@type": "Organization",
-        "name": "Tasty",
-        "logo": {
-          "@type": "ImageObject",
-          "url": "https://tasty.co/favicon.ico"
-        }
-      },
-      "contentUrl": "https://vid.tasty.co/output/97978/landscape_720/1528506768"
-    }
-  ],
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "90",
