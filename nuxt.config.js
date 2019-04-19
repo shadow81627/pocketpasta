@@ -11,6 +11,7 @@ const routes = [
 ];
 
 const i18nSettings = {
+  baseUrl: 'https://pocketpasta.com',
   defaultLocale: 'en',
   vueI18n: {
     fallbackLocale: 'en',
