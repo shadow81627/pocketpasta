@@ -17,19 +17,16 @@ const i18nSettings = {
   },
   locales: [
     {
-      code: 'en-au',
-      iso: 'en-AU',
-      file: 'en-AU.js',
-    },
-    {
-      code: 'en-gb',
-      iso: 'en-GB',
-      file: 'en-AU.js',
-    },
-    {
-      code: 'en-us',
+      code: 'en',
+      name: 'English',
       iso: 'en-US',
-      file: 'en-AU.js',
+      file: 'en-US.js',
+    },
+    {
+      code: 'fr',
+      name: 'Français',
+      iso: 'fr-FR',
+      file: 'fr-FR.js',
     },
   ],
   lazy: true,
