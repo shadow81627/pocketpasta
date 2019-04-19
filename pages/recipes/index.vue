@@ -31,6 +31,13 @@ export default {
   },
   head() {
     return {
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Easy pasta recipes made with simple ingredients.',
+        },
+      ],
       link: [
         {
           rel: 'canonical',
