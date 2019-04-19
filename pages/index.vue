@@ -1,7 +1,7 @@
 <template>
   <div>
     <section>
-      <v-parallax src="/images/hero_75.jpg" height="600">
+      <v-parallax :src="require('@/assets/images/hero_75.jpg')" height="600">
         <v-layout column align-center justify-center class="white--text">
           <!-- <img
                 src="/images/pocketpasta.png"
