@@ -29,9 +29,10 @@
               <v-list-tile>
                 <v-list-tile-content>
                   <v-list-tile-title
-                    ><nuxt-link :to="item.link ? item.link : ''">{{
-                      item.text
-                    }}</nuxt-link></v-list-tile-title
+                    ><nuxt-link
+                      :to="localePath(item.route ? item.route : {})"
+                      >{{ item.text }}</nuxt-link
+                    ></v-list-tile-title
                   >
                 </v-list-tile-content>
               </v-list-tile>
@@ -42,7 +43,7 @@
               </v-list-tile-action>
               <v-list-tile-content>
                 <v-list-tile-title>
-                  <nuxt-link :to="item.link ? item.link : ''">{{
+                  <nuxt-link :to="localePath(item.route ? item.route : {})">{{
                     child.text
                   }}</nuxt-link></v-list-tile-title
                 >
@@ -55,7 +56,7 @@
             </v-list-tile-action>
             <v-list-tile-content>
               <v-list-tile-title>
-                <nuxt-link :to="item.link ? item.link : ''">{{
+                <nuxt-link :to="localePath(item.route ? item.route : {})">{{
                   item.text
                 }}</nuxt-link>
               </v-list-tile-title>
@@ -106,6 +107,7 @@
       >
         <v-icon>notifications</v-icon>
       </v-btn> -->
+      <LangSwitcher />
       <UserMenu />
     </v-toolbar>
     <v-content>
@@ -170,32 +172,38 @@
 import AddToHomeScreen from '@/components/AddToHomeScreen.vue';
 import UserMenu from '@/components/User/Menu.vue';
 import Footer from '@/components/Layout/Footer.vue';
+import LangSwitcher from '@/components/Layout/LangSwitcher';
 export default {
   components: {
     AddToHomeScreen,
     UserMenu,
     Footer,
+    LangSwitcher,
   },
   data: function() {
     return {
       dialog: false,
       drawer: false,
       items: [
-        { icon: 'home', text: this.$t('layout.navigation.home'), link: '/' },
+        {
+          icon: 'home',
+          text: this.$t('layout.navigation.home'),
+          route: { name: 'index' },
+        },
         {
           icon: 'info',
           text: this.$t('layout.navigation.about'),
-          link: '/about',
+          route: { name: 'about' },
         },
         {
           icon: 'email',
           text: this.$t('layout.navigation.newsletter'),
-          link: '/newsletter',
+          route: { name: 'newsletter' },
         },
         {
           icon: 'book',
           text: this.$t('layout.navigation.recipes'),
-          link: '/recipes',
+          route: { name: 'recipes' },
         },
         // { icon: 'contacts', text: 'Contacts' },
         // { icon: 'history', text: 'Frequently contacted' },
@@ -223,7 +231,7 @@ export default {
         {
           icon: 'settings',
           text: this.$t('layout.navigation.settings'),
-          link: '/settings',
+          route: { name: 'settings' },
         },
         // { icon: 'chat_bubble', text: 'Send feedback' },
         // { icon: 'help', text: 'Help' },

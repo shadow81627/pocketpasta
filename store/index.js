@@ -10,12 +10,7 @@ export const state = () => ({
     href:
       'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css',
   },
-  recipes: [
-    { ...recipe, id: 1 },
-    { ...pastaAglioEOlio, id: 2 },
-    { id: 3 },
-    { id: 4 },
-  ],
+  recipes: [{ ...recipe, id: 1 }, { ...pastaAglioEOlio, id: 2 }],
   damien,
 });
 
