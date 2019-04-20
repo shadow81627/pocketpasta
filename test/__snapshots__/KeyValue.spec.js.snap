@@ -1,3 +1,3 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`KeyValue renders properly 1`] = `"<p><strong>Job Title:</strong> <span>Full Stack Web Developer</span></p>"`;
+exports[`KeyValue renders properly 1`] = `"<p><strong>Job Title:<span>&nbsp;</span></strong> <span>Full Stack Web Developer</span></p>"`;
