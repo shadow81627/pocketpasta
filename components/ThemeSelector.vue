@@ -4,9 +4,8 @@
       $auth.$storage.setUniversal('theme', $store.state.theme, true)
     "
   >
-    <h1>Settings</h1>
     <div class="form-group">
-      <label for="theme">Select a theme</label>
+      <label for="theme">Theme</label>
       <select
         id="theme"
         v-model="currentTheme"
@@ -25,7 +24,7 @@
       </select>
     </div>
     <button class="btn btn-primary">
-      Save theme
+      Save
     </button>
   </form>
 </template>

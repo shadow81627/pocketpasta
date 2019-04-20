@@ -1,3 +1,3 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`settings renders properly 1`] = `"<div class=\\"container\\"><theme-selector-stub></theme-selector-stub></div>"`;
+exports[`settings renders properly 1`] = `"<div class=\\"container\\"><h1>settings.heading</h1> <theme-selector-stub></theme-selector-stub></div>"`;

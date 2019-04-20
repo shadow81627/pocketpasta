@@ -42,6 +42,9 @@ export default () => {
       recipes: {
         heading: 'Recettes',
       },
+      settings: {
+        heading: 'Réglages',
+      },
     });
   });
 };
