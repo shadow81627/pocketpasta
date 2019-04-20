@@ -19,6 +19,10 @@ describe('ThemeSelector', () => {
           value: 'darky',
           href: 'https://bootswatch.com/4/darkly/bootstrap.min.css',
         },
+        {
+          value: 'united',
+          href: 'https://bootswatch.com/4/united/bootstrap.min.css',
+        },
       ],
       theme: {
         value: 'darky',
@@ -64,7 +68,7 @@ describe('ThemeSelector', () => {
 
   test('theme getter', () => {
     const wrapper = factory();
-    // wrapper.vm.currentTheme = 'darkly';
+    wrapper.vm.currentTheme = 'united';
     expect(wrapper.vm.currentTheme).toBeTruthy();
   });
 
