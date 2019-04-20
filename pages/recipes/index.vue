@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="recipes">
-      <h1>Recipes</h1>
+      <h1>{{ $t('recipes.heading') }}</h1>
       <ul class="list-group-flush" style="list-style-type: none; padding: 0;">
         <nuxt-link
           v-for="recipe in recipes"
