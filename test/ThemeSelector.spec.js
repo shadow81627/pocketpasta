@@ -60,4 +60,9 @@ describe('ThemeSelector', () => {
     wrapper.vm.currentTheme = 'darkly';
     expect(wrapper.vm.currentTheme).toBeTruthy();
   });
+
+  test('head', () => {
+    ThemeSelector.themes = ThemeSelector.data().themes;
+    expect(ThemeSelector.head()).toBeTruthy();
+  });
 });
