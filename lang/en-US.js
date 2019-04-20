@@ -25,6 +25,9 @@ export default () => {
           heading: 'Company info',
         },
       },
+      about: {
+        heading: 'About PocketPasta',
+      },
       newsletter: {
         heading: 'Subscribe to our mailing list',
         required: 'indicates required',

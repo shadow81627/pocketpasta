@@ -25,6 +25,9 @@ export default () => {
           heading: "Information d'entreprise",
         },
       },
+      about: {
+        heading: 'Sur PocketPasta',
+      },
       newsletter: {
         heading: 'Abonnez-vous à notre liste de diffusion',
         required: 'indique nécessaire',
