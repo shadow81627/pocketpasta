@@ -1,11 +1,11 @@
 <template>
   <div class="list-inline">
-    <strong>{{ label }}:</strong>
+    <strong class="btn tag">{{ label }}:</strong>
     <a
       v-for="tag in tags"
       :key="tag"
       href="#"
-      class="list-inline-item tags btn"
+      class="list-inline-item btn tag tag-primary"
       role="button"
       >{{ tag.trim() }}
     </a>
@@ -35,12 +35,15 @@ export default {
 </script>
 
 <style>
-.tags {
-  background: #1abc9c;
+.tag {
   border-radius: 2px;
-  color: #f5f5f5;
   font-weight: bold;
   padding: 2px 4px;
   margin-bottom: 0.5rem;
+}
+
+.tag-primary {
+  background: #1abc9c;
+  color: #f5f5f5;
 }
 </style>
