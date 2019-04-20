@@ -28,12 +28,6 @@ $ npm run generate
 
 For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
 
-## Google Search
-
-```bash
-$ curl http://www.google.com/ping?sitemap=https://pocketpasta.com/sitemap.xml
-```
-
 ## Code Scene
 
 [![](https://codescene.io/projects/4707/status.svg) Get more details at **codescene.io**.](https://codescene.io/projects/4707/jobs/latest-successful/results)
