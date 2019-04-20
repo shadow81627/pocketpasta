@@ -139,7 +139,7 @@ export default {
         {
           dark: false,
           value: 'united',
-          href: 'https://bootswatch.com/4/untied/bootstrap.min.css',
+          href: 'https://bootswatch.com/4/united/bootstrap.min.css',
         },
         {
           dark: false,
