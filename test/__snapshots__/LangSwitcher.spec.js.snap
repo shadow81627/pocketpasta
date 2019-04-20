@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LangSwitcher renders properly 1`] = `"<v-menu> <v-list><v-list-tile><v-list-tile-title><nuxt-link to=\\"en\\">English</nuxt-link></v-list-tile-title></v-list-tile></v-list></v-menu>"`;

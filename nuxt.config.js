@@ -197,7 +197,6 @@ module.exports = {
     hostname: 'https://pocketpasta.com',
     routes,
     gzip: true,
-    generate: true, // Enable me when using nuxt generate
   },
 
   /*
