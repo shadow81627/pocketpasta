@@ -3,11 +3,7 @@
     <section>
       <v-parallax :src="require('@/assets/images/hero_75.jpg')" height="600">
         <v-layout column align-center justify-center class="white--text">
-          <!-- <img
-                src="/images/pocketpasta.png"
-                alt="Vuetify.js"
-                height="200"
-              /> -->
+          <img :src="$icon(200)" alt="Vuetify.js" height="200" />
           <h1 class="brand white--text mb-2 text-xs-center">
             PocketPasta
           </h1>
@@ -178,9 +174,11 @@
                     <v-icon class="blue--text text--lighten-2">email</v-icon>
                   </v-list-tile-action>
                   <v-list-tile-content>
-                    <v-list-tile-title>{{
+                    <v-list-tile-title
+                      ><a :href="`mailto:${$t('landing.contact.email')}`">{{
                       $t('landing.contact.email')
-                    }}</v-list-tile-title>
+                      }}</a></v-list-tile-title
+                    >
                   </v-list-tile-content>
                 </v-list-tile>
               </v-list>
