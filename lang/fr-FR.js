@@ -14,7 +14,7 @@ export default () => {
       },
       landing: {
         banner: {
-          subheading: 'Manger des spaghettis pour oublier les regrettés',
+          subheading: 'Mangez des spaghettis pour oublier vos regrettés',
         },
         contact: {
           heading: 'Contactez nous',
@@ -38,6 +38,9 @@ export default () => {
         firstname: { label: 'Prénom', placeholder: 'John' },
         lastname: { label: 'Nom de famille', placeholder: 'Smith' },
         submit: 'Souscrire',
+      },
+      recipes: {
+        heading: 'Recettes',
       },
     });
   });

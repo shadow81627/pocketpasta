@@ -14,7 +14,7 @@ export default () => {
       },
       landing: {
         banner: {
-          subheading: 'Eat spagetti to forgetti the regretti',
+          subheading: 'Eat spagetti to forgetti your regretti',
         },
         contact: {
           heading: 'Contact us',
@@ -38,6 +38,9 @@ export default () => {
         firstname: { label: 'First Name', placeholder: 'John' },
         lastname: { label: 'Last Name', placeholder: 'Smith' },
         submit: 'Subscribe',
+      },
+      recipes: {
+        heading: 'Recipes',
       },
     });
   });
