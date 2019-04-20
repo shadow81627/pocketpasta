@@ -6,8 +6,8 @@ const routes = [
   '/newsletter',
   '/settings',
   '/recipes',
-  '/recipes/detail/1',
-  '/recipes/detail/2',
+  '/recipes/1',
+  '/recipes/2',
 ];
 
 const i18nSettings = {

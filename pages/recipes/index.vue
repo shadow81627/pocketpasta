@@ -9,7 +9,7 @@
           class="list-group-item"
           :to="
             localePath({
-              name: 'recipes-detail-id',
+              name: 'recipes-id',
               params: { id: recipe.id },
             })
           "
