@@ -31,9 +31,12 @@ export default () => {
       newsletter: {
         heading: 'Abonnez-vous à notre liste de diffusion',
         required: 'indique nécessaire',
-        email: 'Adresse électronique',
-        firstname: 'Prénom',
-        lastname: 'Nom de famille',
+        email: {
+          label: 'Adresse électronique',
+          placeholder: 'john.smith@example.com',
+        },
+        firstname: { label: 'Prénom', placeholder: 'John' },
+        lastname: { label: 'Nom de famille', placeholder: 'Smith' },
         submit: 'Souscrire',
       },
     });

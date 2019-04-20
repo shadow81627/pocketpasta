@@ -31,9 +31,12 @@ export default () => {
       newsletter: {
         heading: 'Subscribe to our mailing list',
         required: 'indicates required',
-        email: 'Email Address',
-        firstname: 'First Name',
-        lastname: 'Last Name',
+        email: {
+          label: 'Email Address',
+          placeholder: 'john.smith@example.com',
+        },
+        firstname: { label: 'First Name', placeholder: 'John' },
+        lastname: { label: 'Last Name', placeholder: 'Smith' },
         submit: 'Subscribe',
       },
     });

@@ -18,7 +18,7 @@
           </div>
           <div class="mc-field-group">
             <label for="mce-EMAIL">
-              {{ $t('newsletter.email') }}
+              {{ $t('newsletter.email.label') }}
               <span class="asterisk">*</span>
             </label>
             <input
@@ -26,15 +26,28 @@
               type="email"
               name="EMAIL"
               class="required email"
+              :placeholder="$t('newsletter.email.placeholder')"
             />
           </div>
           <div class="mc-field-group">
-            <label for="mce-FNAME">{{ $t('newsletter.firstname') }}</label>
-            <input id="mce-FNAME" type="text" name="FNAME" />
+            <label for="mce-FNAME">{{
+              $t('newsletter.firstname.label')
+            }}</label>
+            <input
+              id="mce-FNAME"
+              type="text"
+              name="FNAME"
+              :placeholder="$t('newsletter.firstname.placeholder')"
+            />
           </div>
           <div class="mc-field-group">
-            <label for="mce-LNAME">{{ $t('newsletter.lastname') }}</label>
-            <input id="mce-LNAME" type="text" name="LNAME" />
+            <label for="mce-LNAME">{{ $t('newsletter.lastname.label') }}</label>
+            <input
+              id="mce-LNAME"
+              type="text"
+              name="LNAME"
+              :placeholder="$t('newsletter.lastname.placeholder')"
+            />
           </div>
           <div id="mce-responses" class="clear">
             <div
