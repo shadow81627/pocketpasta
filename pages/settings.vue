@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <h1>{{ $t('settings.heading') }}</h1>
     <theme-selector />
   </div>
 </template>
