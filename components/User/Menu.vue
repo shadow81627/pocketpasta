@@ -15,9 +15,9 @@
         </v-avatar>
       </v-btn>
       <v-btn v-else aria-label="login" @click="$auth.loginWith('auth0')">
-        <span>{{ $t('layout.login') }}</span>
-        <span>&nbsp;</span>
         <v-icon>account_circle</v-icon>
+        <span>&nbsp;</span>
+        <span>{{ $t('layout.login') }}</span>
       </v-btn>
     </template>
 

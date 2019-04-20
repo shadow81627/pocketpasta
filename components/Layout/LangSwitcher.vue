@@ -2,8 +2,9 @@
   <v-menu>
     <template v-slot:activator="{ on }">
       <v-btn v-on="on">
+        <v-icon small>translate</v-icon>
+        <span>&nbsp;</span>
         <span>{{ currentLocale.name }}</span>
-        <v-icon>arrow_drop_down</v-icon>
       </v-btn>
     </template>
 
