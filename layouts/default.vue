@@ -91,8 +91,8 @@
         class="hidden-sm-and-down"
       /> -->
       <v-spacer />
-      <AddToHomeScreen />
-      <!-- <v-btn icon aria-label="apps" style="background: unset; color: unset;">
+      <AddToHomeScreen icon />
+      <!-- <v-btn icon aria-label="apps">
         <v-icon>apps</v-icon>
       </v-btn>
       <v-btn

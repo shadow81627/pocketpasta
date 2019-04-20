@@ -16,3 +16,5 @@ VueTestUtils.config.mocks.$i18n = {
 VueTestUtils.config.mocks.localePath = (route) => route;
 
 VueTestUtils.config.mocks.switchLocalePath = (lang) => lang;
+
+VueTestUtils.config.mocks.$icon = (size) => size;
