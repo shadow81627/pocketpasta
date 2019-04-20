@@ -1,8 +1,8 @@
 <template>
-  <div class="card bg-light card-body mb-3 profile">
+  <div class="mb-3 profile">
     <div class="col-md-12">
       <div class="$col-md-6">
-        <h2>{{ name }}</h2>
+        <h3>{{ name }}</h3>
         <KeyValue label="Job Title" :value="jobTitle" />
         <KeyValue label="About" :value="description" />
         <Keywords :tags="keywords ? keywords.split(',') : []" label="Skills" />

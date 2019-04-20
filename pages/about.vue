@@ -3,9 +3,9 @@
     <div class="about">
       <div class="row">
         <div class="col-lg-12 $text-center">
-          <h1 class="mt-5">About Pocket Pasta</h1>
+          <h1 class="mt-5">{{ $t('about.heading') }}</h1>
           <p class="lead">
-            <!-- Pocket Pasta is a progressive web app for journaling your life.
+            <!-- PocketPasta is a progressive web app for journaling your life.
         The aim is to have a multi module app that allows users to record how they live.
           Documenting how we live is the first step in planning how to live.-->
             PocketPasta is a collection of my demo apps that I build to practice
@@ -13,16 +13,39 @@
           </p>
         </div>
       </div>
+
+      <div class="row">
+        <Profile
+          class="card bg-light card-body"
+          v-bind="this.$store.state.damien"
+        />
+      </div>
+
       <div class="row">
         <div class="card bg-light card-body mb-3 profile">
-          <h2>We are all about the spathetti here</h2>
+          <h2>What's with the name?</h2>
           <p>
-            We eat
+            Our favorite food is pasta so we made a website about pasta. Our
+            second favorite thing is memes, so we decied to name our third
+            favorite thing after our other favorite things. The name comes form
+            4chan
             <a href="https://knowyourmeme.com/memes/spaghetti-stories"
-              >spagetti</a
+              >Spaghetti Stories</a
             >
-            to forgetti the regretti
+            a type of bait-and-switch copypasta posted under the pretext of
+            recounting a socially awkward or humiliating situation in
+            <a href="https://knowyourmeme.com/memes/greentext-stories"
+              >greentext</a
+            >. While the plot may vary from one to another, each story ends when
+            spaghetti suddenly falls out of one’s pocket or fanny pack, similar
+            to the twist in Fresh Prince of Bel-Air copypasta stories.
           </p>
+          <div>
+            <img
+              class="img-fluid mx-auto d-block"
+              src="https://i.kym-cdn.com/photos/images/original/001/182/064/60a.jpg"
+            />
+          </div>
           <!-- <div class="embed-responsive embed-responsive-16by9">
           <iframe
             class="embed-responsive-item"
@@ -61,9 +84,6 @@
           />
         </b-carousel> -->
         </div>
-      </div>
-      <div class="row">
-        <Profile v-bind="this.$store.state.damien" />
       </div>
     </div>
   </div>
