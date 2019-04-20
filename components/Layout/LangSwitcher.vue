@@ -2,7 +2,7 @@
   <v-menu>
     <template v-slot:activator="{ on }">
       <v-btn v-on="on">
-        <span>Lang</span>
+        <span>{{ currentLocale.name }}</span>
         <v-icon>arrow_drop_down</v-icon>
       </v-btn>
     </template>
@@ -24,6 +24,9 @@ export default {
   computed: {
     availableLocales() {
       return this.$i18n.locales.filter((i) => i.code !== this.$i18n.locale);
+    },
+    currentLocale() {
+      return this.$i18n.locales.find((i) => i.code === this.$i18n.locale);
     },
   },
 };
