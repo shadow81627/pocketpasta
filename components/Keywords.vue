@@ -1,6 +1,6 @@
 <template>
   <div class="list-inline">
-    <strong class="btn tag">{{ label }}:</strong>
+    <strong class="btn tag pl-0 font-weight-bold">{{ label }}:</strong>
     <a
       v-for="tag in tags"
       :key="tag"
