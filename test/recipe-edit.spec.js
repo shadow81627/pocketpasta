@@ -1,5 +1,5 @@
 import { shallowMount, createLocalVue, RouterLinkStub } from '@vue/test-utils';
-import component from '@/pages/recipes/detail/_id/edit.vue';
+import component from '@/pages/recipes/_id/edit.vue';
 import Vuex from 'vuex';
 import VueRouter from 'vue-router';
 
