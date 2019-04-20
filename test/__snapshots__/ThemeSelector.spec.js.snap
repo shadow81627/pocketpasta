@@ -41,8 +41,8 @@ exports[`ThemeSelector renders properly 1`] = `
         spacelab
       </option><option class=\\"form-control\\" value=\\"superhero\\">
         superhero
-      </option><option class=\\"form-control\\" value=\\"untied\\">
-        untied
+      </option><option class=\\"form-control\\" value=\\"united\\">
+        united
       </option><option class=\\"form-control\\" value=\\"yeti\\">
         yeti
       </option></select></div> <button class=\\"btn btn-primary\\">

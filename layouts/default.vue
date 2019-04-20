@@ -1,12 +1,11 @@
 <template>
-  <v-app id="inspire" style="background: unset; color: unset;">
+  <v-app id="inspire" :dark="isDark">
     <v-navigation-drawer
       v-model="drawer"
       :clipped="$vuetify.breakpoint.lgAndUp"
       fixed
       app
       class="hidden-print-only"
-      style="background: unset; color: unset;"
     >
       <v-list dense>
         <template v-for="item in items">
@@ -72,11 +71,7 @@
       class="hidden-print-only"
     >
       <v-toolbar-title style="width: 300px" class="ml-0 pl-3">
-        <v-toolbar-side-icon
-          aria-label="menu"
-          style="background: unset; color: unset;"
-          @click.stop="drawer = !drawer"
-        />
+        <v-toolbar-side-icon aria-label="menu" @click.stop="drawer = !drawer" />
         <img
           :src="$icon(32)"
           width="32"
@@ -103,7 +98,6 @@
       <v-btn
         icon
         aria-label="notifications"
-        style="background: unset; color: unset;"
       >
         <v-icon>notifications</v-icon>
       </v-btn> -->
@@ -113,7 +107,7 @@
     <v-content>
       <nuxt />
     </v-content>
-    <Footer style="background: unset; color: unset;" />
+    <Footer />
     <!-- <v-btn fab bottom right color="pink" dark fixed @click="dialog = !dialog">
       <v-icon>add</v-icon>
     </v-btn> -->
@@ -239,6 +233,11 @@ export default {
         // { icon: 'keyboard', text: 'Go to the old version' },
       ],
     };
+  },
+  computed: {
+    isDark: function() {
+      return this.$store.getters.getCurrentTheme().dark;
+    },
   },
   head() {
     return {

@@ -1,12 +1,14 @@
 <template>
-  <v-btn icon aria-label="get app" :class="{ 'd-none': !display }">
-    <v-icon>get_app</v-icon>
+  <v-btn aria-label="get app" :class="{ 'd-none': !display }" v-bind="$attrs">
+    <slot>
+      <v-icon>get_app</v-icon>
+    </slot>
   </v-btn>
 </template>
 
 <script>
-/* eslint-disable no-console */
 export default {
+  inheritAttrs: false,
   data: () => {
     return { display: false, deferredPrompt: null };
   },
