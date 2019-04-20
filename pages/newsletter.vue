@@ -81,6 +81,7 @@ export default {
     return {
       link: [
         {
+          hid: 'canonical',
           rel: 'canonical',
           href: 'https://pocketpasta.com/newsletter',
         },

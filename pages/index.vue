@@ -208,6 +208,7 @@ export default {
       __dangerouslyDisableSanitizers: ['script'],
       link: [
         {
+          hid: 'canonical',
           rel: 'canonical',
           href: 'https://pocketpasta.com',
         },

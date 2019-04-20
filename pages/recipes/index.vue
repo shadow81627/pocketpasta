@@ -40,6 +40,7 @@ export default {
       ],
       link: [
         {
+          hid: 'canonical',
           rel: 'canonical',
           href: 'https://pocketpasta.com/recipes',
         },
