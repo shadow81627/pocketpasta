@@ -3,6 +3,7 @@ import VueTestUtils from '@vue/test-utils';
 VueTestUtils.config.mocks.$t = (msg) => msg;
 
 VueTestUtils.config.mocks.$i18n = {
+  locale: 'en',
   locales: [
     {
       code: 'en',

@@ -18,4 +18,9 @@ describe('LangSwitcher', () => {
     const wrapper = factory();
     expect(wrapper.html()).toMatchSnapshot();
   });
+
+  test('currentLocale', () => {
+    const wrapper = factory();
+    expect(wrapper.vm.currentLocale).toBeTruthy();
+  });
 });
