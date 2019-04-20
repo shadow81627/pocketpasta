@@ -18,7 +18,7 @@
       "labels": ["eslint"],
       "groupName": "eslint",
       "schedule": ["before 2am on monday"],
-      "automerge": false
+      "automerge": true
     }
   ],
   "extends": [
