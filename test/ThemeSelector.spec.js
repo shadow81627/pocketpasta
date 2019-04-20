@@ -14,8 +14,14 @@ describe('ThemeSelector', () => {
 
   beforeEach(() => {
     state = {
+      themes: [
+        {
+          value: 'darky',
+          href: 'https://bootswatch.com/4/darkly/bootstrap.min.css',
+        },
+      ],
       theme: {
-        name: 'darky',
+        value: 'darky',
         href: 'https://bootswatch.com/4/darkly/bootstrap.min.css',
       },
     };
@@ -23,11 +29,12 @@ describe('ThemeSelector', () => {
     getters = {
       clicks: () => 2,
       inputValue: () => 'input',
+      getThemeById: (state) => (value) =>
+        state.themes.find((theme) => theme.value === value),
     };
 
     mutations = {
       setTheme(currentState, theme) {
-        // const newState = { ...currentState };
         currentState.theme = theme;
       },
     };
@@ -57,12 +64,12 @@ describe('ThemeSelector', () => {
 
   test('theme getter', () => {
     const wrapper = factory();
-    wrapper.vm.currentTheme = 'darkly';
+    // wrapper.vm.currentTheme = 'darkly';
     expect(wrapper.vm.currentTheme).toBeTruthy();
   });
 
   test('head', () => {
-    ThemeSelector.themes = ThemeSelector.data().themes;
+    ThemeSelector.$store = store;
     expect(ThemeSelector.head()).toBeTruthy();
   });
 });

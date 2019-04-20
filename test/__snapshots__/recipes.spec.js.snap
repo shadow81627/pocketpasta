@@ -1,3 +1,3 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`recipes renders properly 1`] = `"<div class=\\"container\\"><div class=\\"recipes\\"><h1>Recipes</h1> <ul class=\\"list-group-flush\\" style=\\"list-style-type: none; padding: 0px;\\"><li class=\\"list-group-item\\"><a>Audrey Hepburn’s Spaghetti Al Pomodoro Recipe</a></li><li class=\\"list-group-item\\"><a>Recipe: 2</a></li><li class=\\"list-group-item\\"><a>Recipe: 3</a></li><li class=\\"list-group-item\\"><a>Recipe: 4</a></li></ul></div></div>"`;
+exports[`recipes renders properly 1`] = `"<div class=\\"container\\"><div class=\\"recipes\\"><h1>recipes.heading</h1> <ul class=\\"list-group-flush\\" style=\\"list-style-type: none; padding: 0px;\\"><li class=\\"list-group-item\\"><a>Audrey Hepburn’s Spaghetti Al Pomodoro Recipe</a></li><li class=\\"list-group-item\\"><a>Recipe: 2</a></li><li class=\\"list-group-item\\"><a>Recipe: 3</a></li><li class=\\"list-group-item\\"><a>Recipe: 4</a></li></ul></div></div>"`;
