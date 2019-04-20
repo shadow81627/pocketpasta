@@ -167,8 +167,8 @@ export default {
   head() {
     return {
       link: this.themes.map((theme) => ({
-        hid: `theme-${theme.name}`,
-        disabled: !this.$store.getters.getCurrentTheme(),
+        hid: `theme-${theme.value}`,
+        disabled: 'disabled',
         href: theme.href,
         rel: 'preload',
         as: 'style',
