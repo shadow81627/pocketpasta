@@ -12,30 +12,29 @@
         novalidate
       >
         <div id="mc_embed_signup_scroll">
-          <h1>Subscribe to our mailing list</h1>
+          <h1>{{ $t('newsletter.heading') }}</h1>
           <div class="indicates-required">
-            <span class="asterisk">*</span> indicates required
+            <span class="asterisk">*</span> {{ $t('newsletter.required') }}
           </div>
           <div class="mc-field-group">
             <label for="mce-EMAIL">
-              Email Address
+              {{ $t('newsletter.email') }}
               <span class="asterisk">*</span>
             </label>
             <input
               id="mce-EMAIL"
               type="email"
-              value
               name="EMAIL"
               class="required email"
             />
           </div>
           <div class="mc-field-group">
-            <label for="mce-FNAME">First Name</label>
-            <input id="mce-FNAME" type="text" value name="FNAME" class />
+            <label for="mce-FNAME">{{ $t('newsletter.firstname') }}</label>
+            <input id="mce-FNAME" type="text" name="FNAME" />
           </div>
           <div class="mc-field-group">
-            <label for="mce-LNAME">Last Name</label>
-            <input id="mce-LNAME" type="text" value name="LNAME" class />
+            <label for="mce-LNAME">{{ $t('newsletter.lastname') }}</label>
+            <input id="mce-LNAME" type="text" name="LNAME" />
           </div>
           <div id="mce-responses" class="clear">
             <div
@@ -63,7 +62,7 @@
             <input
               id="mc-embedded-subscribe"
               type="submit"
-              value="Subscribe"
+              :value="$t('newsletter.submit')"
               name="subscribe"
               class="button"
             />

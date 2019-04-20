@@ -25,6 +25,14 @@ export default () => {
           heading: 'Company info',
         },
       },
+      newsletter: {
+        heading: 'Subscribe to our mailing list',
+        required: 'indicates required',
+        email: 'Email Address',
+        firstname: 'First Name',
+        lastname: 'Last Name',
+        submit: 'Subscribe',
+      },
     });
   });
 };
