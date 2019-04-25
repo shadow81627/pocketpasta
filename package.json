@@ -1,6 +1,6 @@
 {
   "name": "pocketpasta",
-  "version": "0.0.23",
+  "version": "0.0.24",
   "description": "Eat spagetti to forgetti your regretti",
   "author": "Damien Robinson <damien.robinson@pocketpasta.com>",
   "private": true,
@@ -33,7 +33,7 @@
     "cross-env": "5.2.0",
     "koa": "2.7.0",
     "nuxt": "2.6.3",
-    "nuxt-i18n": "5.8.5",
+    "nuxt-i18n": "5.9.0",
     "vue-quill-editor": "3.0.6"
   },
   "devDependencies": {
