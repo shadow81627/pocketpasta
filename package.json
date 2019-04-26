@@ -37,7 +37,7 @@
     "vue-quill-editor": "3.0.6"
   },
   "devDependencies": {
-    "@babel/core": "7.4.3",
+    "@babel/core": "7.4.4",
     "@nuxtjs/eslint-config": "0.0.1",
     "@storybook/addon-actions": "5.0.10",
     "@storybook/addon-links": "5.0.10",
