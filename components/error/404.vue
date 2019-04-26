@@ -1,12 +1,13 @@
 <template>
   <div id="message" class="card bg-light card-body">
     <h2>404</h2>
-    <h1>Page Not Found</h1>
+    <h1>{{ $t('error.404.heading') }}</h1>
     <p>
-      The specified file was not found on this website. Please check the URL for
-      mistakes and try again.
+      {{ $t('error.404.description') }}
     </p>
-    <nuxt-link to="/" class="btn btn-primary">Home page</nuxt-link>
+    <nuxt-link :to="localePath('index')" class="btn btn-primary">{{
+      $t('layout.navigation.home')
+    }}</nuxt-link>
   </div>
 </template>
 
@@ -20,7 +21,14 @@ export default {
   },
   head() {
     return {
-      title: 'Page Not Found',
+      title: this.$t('error.404.heading'),
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.$t('error.404.description'),
+        },
+      ],
     };
   },
 };
@@ -34,13 +42,11 @@ export default {
   border-radius: 3px;
 }
 #message h3 {
-  /* color: #888; */
   font-weight: normal;
   font-size: 16px;
   margin: 16px 0 12px;
 }
 #message h2 {
-  /* color: #4dba87; */
   font-weight: bold;
   font-size: 16px;
   margin: 0 0 8px;
@@ -48,7 +54,6 @@ export default {
 #message h1 {
   font-size: 22px;
   font-weight: 300;
-  /* color: rgba(0, 0, 0, 0.6); */
   margin: 0 0 16px;
 }
 #message p {
@@ -59,10 +64,8 @@ export default {
 #message a {
   display: block;
   text-align: center;
-  /* background: #039be5; */
   text-transform: uppercase;
   text-decoration: none;
-  /* color: white; */
   padding: 16px;
   border-radius: 4px;
 }

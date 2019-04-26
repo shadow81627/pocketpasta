@@ -1,6 +1,19 @@
 export default () => {
   return new Promise(function(resolve) {
     resolve({
+      error: {
+        404: {
+          heading: 'Page Not Found',
+          description:
+            'The specified file was not found on this website. Please check the URL for mistakes and try again.',
+        },
+        500: {
+          heading: 'OOPSIE WOOPSIE!!',
+          description:
+            "Uwu Nous faisons un fucky wucky !! Un boingo fucko d'esprit! Les singes de code de notre siège travaillent avec VEWY HAWD pour résoudre ce problème!",
+        },
+      },
+
       layout: {
         login: "S'identifier",
         logout: 'Connectez - Out',
