@@ -49,16 +49,16 @@
               </v-list-tile-content>
             </v-list-tile>
           </v-list-group>
-          <v-list-tile v-else :key="item.text">
+          <v-list-tile
+            v-else
+            :key="item.text"
+            :to="localePath(item.route ? item.route : {})"
+          >
             <v-list-tile-action>
               <v-icon>{{ item.icon }}</v-icon>
             </v-list-tile-action>
             <v-list-tile-content>
-              <v-list-tile-title>
-                <nuxt-link :to="localePath(item.route ? item.route : {})">{{
-                  item.text
-                }}</nuxt-link>
-              </v-list-tile-title>
+              <v-list-tile-title>{{ item.text }}</v-list-tile-title>
             </v-list-tile-content>
           </v-list-tile>
         </template>
@@ -82,25 +82,8 @@
         />
         <span class="brand mx-1 hidden-sm-and-down">PocketPasta</span>
       </v-toolbar-title>
-      <!-- <v-text-field
-        flat
-        solo-inverted
-        hide-details
-        prepend-inner-icon="search"
-        label="Search"
-        class="hidden-sm-and-down"
-      /> -->
       <v-spacer />
       <AddToHomeScreen icon />
-      <!-- <v-btn icon aria-label="apps">
-        <v-icon>apps</v-icon>
-      </v-btn>
-      <v-btn
-        icon
-        aria-label="notifications"
-      >
-        <v-icon>notifications</v-icon>
-      </v-btn> -->
       <LangSwitcher />
       <UserMenu />
     </v-toolbar>
@@ -108,57 +91,6 @@
       <nuxt />
     </v-content>
     <Footer />
-    <!-- <v-btn fab bottom right color="pink" dark fixed @click="dialog = !dialog">
-      <v-icon>add</v-icon>
-    </v-btn> -->
-    <v-dialog v-model="dialog" width="800px">
-      <v-card>
-        <v-card-title class="grey lighten-4 py-4 title"
-          >Create contact</v-card-title
-        >
-        <v-container grid-list-sm class="pa-4">
-          <v-layout row wrap>
-            <v-flex xs12 align-center justify-space-between>
-              <v-layout align-center>
-                <v-avatar size="40px" class="mr-3">
-                  <img
-                    src="https://ssl.gstatic.com/s2/oz/images/sge/grey_silhouette.png"
-                    alt
-                  />
-                </v-avatar>
-                <v-text-field placeholder="Name" />
-              </v-layout>
-            </v-flex>
-            <v-flex xs6>
-              <v-text-field prepend-icon="business" placeholder="Company" />
-            </v-flex>
-            <v-flex xs6>
-              <v-text-field placeholder="Job title" />
-            </v-flex>
-            <v-flex xs12>
-              <v-text-field prepend-icon="mail" placeholder="Email" />
-            </v-flex>
-            <v-flex xs12>
-              <v-text-field
-                type="tel"
-                prepend-icon="phone"
-                placeholder="(000) 000 - 0000"
-                mask="phone"
-              />
-            </v-flex>
-            <v-flex xs12>
-              <v-text-field prepend-icon="notes" placeholder="Notes" />
-            </v-flex>
-          </v-layout>
-        </v-container>
-        <v-card-actions>
-          <v-btn flat color="primary">More</v-btn>
-          <v-spacer />
-          <v-btn flat color="primary" @click="dialog = false">Cancel</v-btn>
-          <v-btn flat @click="dialog = false">Save</v-btn>
-        </v-card-actions>
-      </v-card>
-    </v-dialog>
   </v-app>
 </template>
 
@@ -199,38 +131,11 @@ export default {
           text: this.$t('layout.navigation.recipes'),
           route: { name: 'recipes' },
         },
-        // { icon: 'contacts', text: 'Contacts' },
-        // { icon: 'history', text: 'Frequently contacted' },
-        // { icon: 'content_copy', text: 'Duplicates' },
-        // {
-        //   icon: 'keyboard_arrow_up',
-        //   'icon-alt': 'keyboard_arrow_down',
-        //   text: 'Labels',
-        //   model: true,
-        //   children: [{ icon: 'add', text: 'Create label' }],
-        // },
-        // {
-        //   icon: 'keyboard_arrow_up',
-        //   'icon-alt': 'keyboard_arrow_down',
-        //   text: 'More',
-        //   model: false,
-        //   children: [
-        //     { text: 'Import' },
-        //     { text: 'Export' },
-        //     { text: 'Print' },
-        //     { text: 'Undo changes' },
-        //     { text: 'Other contacts' },
-        //   ],
-        // },
         {
           icon: 'settings',
           text: this.$t('layout.navigation.settings'),
           route: { name: 'settings' },
         },
-        // { icon: 'chat_bubble', text: 'Send feedback' },
-        // { icon: 'help', text: 'Help' },
-        // { icon: 'phonelink', text: 'App downloads' },
-        // { icon: 'keyboard', text: 'Go to the old version' },
       ],
     };
   },
