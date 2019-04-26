@@ -43,6 +43,7 @@
         <template #column-2>
           <img
             class="img-fluid mx-auto d-block"
+            alt="Spaghetti suddenly falls out Pepe"
             src="https://i.kym-cdn.com/photos/images/original/001/182/064/60a.jpg"
           />
         </template>
