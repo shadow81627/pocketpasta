@@ -21,6 +21,7 @@ describe('404', () => {
     const wrapper = factory();
     expect(wrapper.html()).toMatchSnapshot();
   });
+
   test('head', () => {
     component.$t = (m) => m;
     expect(component.head()).toBeTruthy();

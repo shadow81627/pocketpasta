@@ -1,8 +1,8 @@
 import { shallowMount } from '@vue/test-utils';
-import ProfileSocial from '@/components/ProfileSocial.vue';
+import component from '@/components/ProfileSocial';
 
 const factory = () =>
-  shallowMount(ProfileSocial, {
+  shallowMount(component, {
     propsData: {
       description:
         'Programmer and full stack web developer at XCOM Media, Griffith University graduate. Aspiring entrepreneur with a passion for startup weekends and hackathons.',
@@ -34,5 +34,9 @@ describe('ProfileSocial', () => {
   test('renders properly', () => {
     const wrapper = factory();
     expect(wrapper.html()).toMatchSnapshot();
+  });
+
+  test('head', () => {
+    expect(component.head()).toBeTruthy();
   });
 });
