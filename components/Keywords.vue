@@ -41,9 +41,4 @@ export default {
   padding: 2px 4px;
   margin-bottom: 0.5rem;
 }
-
-.tag-primary {
-  background: #1abc9c;
-  color: #f5f5f5;
-}
 </style>
