@@ -5,7 +5,7 @@
       v-for="tag in tags"
       :key="tag"
       href="#"
-      class="list-inline-item btn tag tag-primary"
+      class="list-inline-item btn tag btn-primary"
       role="button"
       >{{ tag.trim() }}
     </a>
