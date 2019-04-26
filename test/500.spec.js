@@ -1,17 +1,17 @@
 import { shallowMount } from '@vue/test-utils';
-import component from '@/components/error/404.vue';
+import component from '@/components/error/500';
 
 const factory = () =>
   shallowMount(component, {
     propsData: {
       error: {
-        statusCode: 404,
-        message: 'Page not Found',
+        statusCode: 500,
+        message: 'Error',
       },
     },
   });
 
-describe('404', () => {
+describe('500', () => {
   test('mounts properly', () => {
     const wrapper = factory();
     expect(wrapper.isVueInstance()).toBeTruthy();
