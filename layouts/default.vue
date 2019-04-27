@@ -53,6 +53,10 @@
             v-else
             :key="item.text"
             :to="localePath(item.route ? item.route : {})"
+            active-class="btn-primary pointer-events-none"
+            nuxt
+            exact
+            class="text-decoration-none"
           >
             <v-list-tile-action>
               <v-icon>{{ item.icon }}</v-icon>
@@ -157,5 +161,15 @@ export default {
 
 .brand {
   font-family: 'Comic Neue', sans-serif;
+}
+
+/* no pointer events */
+.pointer-events-none {
+  pointer-events: none;
+}
+
+/* navbar links no underline, can't add class to a element since it is added in js */
+.text-decoration-none a {
+  text-decoration: none !important;
 }
 </style>
