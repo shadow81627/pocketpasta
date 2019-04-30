@@ -66,6 +66,9 @@
             </v-list-tile-content>
           </v-list-tile>
         </template>
+        <v-list-tile>
+          <small>version: {{ version }}</small>
+        </v-list-tile>
       </v-list>
     </v-navigation-drawer>
     <v-toolbar
@@ -87,6 +90,7 @@
         <span class="brand mx-1 hidden-sm-and-down">PocketPasta</span>
       </v-toolbar-title>
       <v-spacer />
+      <small>version: {{ version }}</small>
       <AddToHomeScreen icon />
       <LangSwitcher />
       <UserMenu />
@@ -112,6 +116,7 @@ export default {
   },
   data: function() {
     return {
+      version: process.env.VERSION,
       dialog: false,
       drawer: false,
       items: [

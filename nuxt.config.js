@@ -57,6 +57,10 @@ module.exports = {
     middleware: ['theme'],
   },
 
+  env: {
+    VERSION: pkg.version,
+  },
+
   /*
    ** Headers of the page
    */
@@ -79,6 +83,10 @@ module.exports = {
       {
         name: 'google-site-verification',
         content: 'LqVnUnYGR8NrvXrhnFgW5RjNJVChZp2j2OEP55xjE30',
+      },
+      {
+        name: 'version',
+        content: pkg.version,
       },
     ],
     link: [
