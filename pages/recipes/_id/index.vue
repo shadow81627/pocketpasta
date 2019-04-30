@@ -9,6 +9,7 @@
       dark
       fixed
       :to="`${this.$route.path}/edit`"
+      class="hidden-print-only"
     >
       <v-icon>edit</v-icon>
     </v-btn>
