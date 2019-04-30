@@ -1,7 +1,14 @@
 <template>
   <v-menu v-model="menu" :close-on-content-click="false" offset-y>
     <template v-slot:activator="{ on }">
-      <v-btn v-if="$auth.loggedIn" icon large aria-label="avatar" v-on="on">
+      <v-btn
+        v-if="$auth.loggedIn"
+        icon
+        large
+        aria-label="avatar"
+        outline
+        v-on="on"
+      >
         <v-avatar size="32px" tile>
           <img
             v-if="$auth.user.picture"
@@ -14,7 +21,12 @@
           />
         </v-avatar>
       </v-btn>
-      <v-btn v-else aria-label="login" @click="$auth.loginWith('auth0')">
+      <v-btn
+        v-else
+        aria-label="login"
+        outline
+        @click="$auth.loginWith('auth0')"
+      >
         <v-icon>account_circle</v-icon>
         <span>&nbsp;</span>
         <span>{{ $t('layout.login') }}</span>
