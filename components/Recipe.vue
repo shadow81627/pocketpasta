@@ -18,7 +18,7 @@
     <!-- <p>Author: {{ recipe.author }}</p> -->
     <!-- <p>Published: {{ recipe.datePublished }}</p> -->
 
-    <div class="sharethis-inline-share-buttons p-4 d-print-none" />
+    <Share class="py-4" />
 
     <p>
       <strong>Makes:</strong>
@@ -56,10 +56,12 @@
 
 <script>
 import Keywords from '@/components/Keywords.vue';
+import Share from '@/components/Social/Share';
 
 export default {
   components: {
     Keywords,
+    Share,
   },
   inheritAttrs: false,
   computed: {
