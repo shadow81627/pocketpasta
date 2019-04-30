@@ -9,7 +9,6 @@
     <a class="a2a_button_linkedin" />
     <a class="a2a_button_copy_link" />
     <a class="a2a_button_print" />
-    <a class="a2a_button_printfriendly" />
   </div>
 </template>
 
