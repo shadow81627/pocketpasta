@@ -65,18 +65,11 @@
     },
     {
       "@type": "HowToStep",
-      "text": "While the sauce is simmering, fill another large pot with water and bring to a boil. Add salt, if desired. Cook the spaghetti until al dente. Drain and rinse the pasta with lukewarm water to prevent sticking."
+      "text": "While the sauce is simmering, fill another large pot with water and bring to a boil. Add salt, if desired. Cook the spaghetti until al dente. Drain the pasta."
     },
     {
       "@type": "HowToStep",
       "text": "Taste the sauce and add salt, if desired. Serve pasta topped generously with sauce, grated Parmigiano-Reggiano cheese, and the reserved sliced basil leaves."
     }
-  ],
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "90",
-    "ratingCount": "93",
-    "bestRating": "100",
-    "worstRating": "0"
-  }
+  ]
 }
