@@ -1,14 +1,7 @@
 <template>
   <v-menu v-model="menu" :close-on-content-click="false" offset-y>
     <template v-slot:activator="{ on }">
-      <v-btn
-        v-if="$auth.loggedIn"
-        icon
-        large
-        aria-label="avatar"
-        outline
-        v-on="on"
-      >
+      <v-btn v-if="$auth.loggedIn" icon large aria-label="avatar" v-on="on">
         <v-avatar size="32px" tile>
           <img
             v-if="$auth.user.picture"
