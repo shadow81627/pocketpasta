@@ -37,6 +37,10 @@ const i18nSettings = {
 module.exports = {
   mode: 'spa',
 
+  workbox: {
+    offlineAnalytics: true,
+  },
+
   manifest: {
     name: pkg.name,
     short_name: 'pocketpasta',
