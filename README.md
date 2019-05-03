@@ -10,6 +10,8 @@
 
 > PocketPasta is a collection of my demo apps that I build to practice my skills.
 
+[📖 **Release Notes**](./CHANGELOG.md)
+
 ## Build Setup
 
 ``` bash
