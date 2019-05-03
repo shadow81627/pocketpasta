@@ -13,6 +13,7 @@
           <!-- <v-btn class="blue lighten-2 mt-5" dark large href="/pre-made-themes">
             Get Started
           </v-btn> -->
+          <Credit style="position:absolute;right:0;bottom:0;" />
         </v-layout>
       </v-parallax>
     </section>
@@ -186,10 +187,14 @@
 </template>
 
 <script>
+import Credit from '@/components/Layout/Credit/landing-hero-image-credit';
 // @ is an alias to /src
 import linkData from '@/assets/link-data/pocketpasta.json';
 export default {
   layout: 'default',
+  components: {
+    Credit,
+  },
   head() {
     return {
       script: [
