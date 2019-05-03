@@ -9,7 +9,7 @@
     "bumpVersion": null,
     "commitBody": "Update devDependencies"
   },
-  "bumpVersion": "patch",
+  "bumpVersion": null,
   "labels": ["dependencies"],
   "prHourlyLimit": 1,
   "packageRules": [
