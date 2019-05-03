@@ -70,7 +70,7 @@ module.exports = {
    */
   head: {
     htmlAttrs: { 'data-vue-meta-server-rendered': '' },
-    title: pkg.name,
+    title: 'PocketPasta',
     meta: [
       {
         charset: 'utf-8',
