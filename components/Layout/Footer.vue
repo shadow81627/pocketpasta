@@ -1,6 +1,6 @@
 <template>
   <v-footer class="pa-3 hidden-print-only" xinset app absolute>
-    <small>version: {{ version }}</small>
+    <small class="text-muted">version: {{ version }}</small>
     <v-spacer />
     <small class="text-muted"
       >This site is protected by reCAPTCHA and the Google
