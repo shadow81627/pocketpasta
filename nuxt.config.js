@@ -99,6 +99,14 @@ module.exports = {
         type: 'image/x-icon',
         href: '/favicon.ico',
       },
+      {
+        rel: 'preconnect',
+        href: 'https://pocketpasta.auth0.com',
+      },
+      {
+        rel: 'preconnect',
+        href: 'https://stackpath.bootstrapcdn.com',
+      },
     ],
     script: [
       {
