@@ -1,5 +1,3 @@
-const path = require('path');
-const glob = require('glob-all');
 const pkg = require('./package');
 
 const routes = [
@@ -153,6 +151,9 @@ module.exports = {
     '@nuxtjs/vuetify',
     'bootstrap-vue/nuxt',
     ['nuxt-i18n', i18nSettings],
+    'nuxt-webfontloader',
+
+    // keep sitemap last
     '@nuxtjs/sitemap',
   ],
 
@@ -211,6 +212,12 @@ module.exports = {
     //   lastmod: new Date(),
     //   lastmodrealtime: true,
     // },
+  },
+
+  webfontloader: {
+    custom: {
+      families: ['Comic Neue'],
+    },
   },
 
   /*
