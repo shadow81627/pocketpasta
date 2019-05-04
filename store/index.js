@@ -36,6 +36,7 @@ export const getters = {
 export const mutations = {
   setTheme(currentState, theme) {
     currentState.theme = theme;
+    this.$auth.$storage.setUniversal('theme', theme, true);
   },
 };
 
