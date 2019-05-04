@@ -5,11 +5,12 @@
       <h2 class="subheading card-header text-uppercase">Style</h2>
       <ul class="list-group list-group-flush">
         <setting
+          id="theme-label"
           icon="style"
           label="Theme"
           description="Choose a bootstrap CSS theme to style the app your way."
         >
-          <theme-selector />
+          <theme-selector aria-labelledby="theme-label" />
         </setting>
       </ul>
     </div>

@@ -1,5 +1,10 @@
 <template>
-  <b-form-select id="theme" v-model="currentTheme" name="theme">
+  <b-form-select
+    id="theme"
+    v-model="currentTheme"
+    name="theme"
+    aria-label="theme"
+  >
     <template slot="first">
       <option disabled value="">Please select a theme</option>
     </template>
