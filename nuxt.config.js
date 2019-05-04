@@ -148,10 +148,11 @@ module.exports = {
     '@nuxtjs/google-analytics',
     '@nuxtjs/pwa',
     '@nuxtjs/sentry',
-    '@nuxtjs/sitemap',
     '@nuxtjs/vuetify',
     'bootstrap-vue/nuxt',
     ['nuxt-i18n', i18nSettings],
+    'nuxt-purgecss',
+    '@nuxtjs/sitemap',
   ],
 
   auth: {
@@ -203,6 +204,10 @@ module.exports = {
     hostname: 'https://pocketpasta.com',
     routes,
     gzip: true,
+  },
+
+  purgeCSS: {
+    mode: 'postcss',
   },
 
   /*
