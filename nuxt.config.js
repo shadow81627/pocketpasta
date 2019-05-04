@@ -129,6 +129,7 @@ module.exports = {
    ** Global CSS
    */
   css: [
+    { src: '@/assets/css/font.css' },
     'quill/dist/quill.snow.css',
     'quill/dist/quill.bubble.css',
     'quill/dist/quill.core.css',
@@ -217,7 +218,6 @@ module.exports = {
   webfontloader: {
     custom: {
       families: ['Comic Neue'],
-      urls: ['@/assets/css/fonts.css'],
     },
   },
 
