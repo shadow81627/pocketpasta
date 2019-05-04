@@ -99,6 +99,10 @@ module.exports = {
         type: 'image/x-icon',
         href: '/favicon.ico',
       },
+      {
+        rel: 'stylesheet',
+        href: 'https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.min.css',
+      },
     ],
     script: [
       {
@@ -204,6 +208,12 @@ module.exports = {
     hostname: 'https://pocketpasta.com',
     routes,
     gzip: true,
+    // defaults: {
+    //   changefreq: 'daily',
+    //   priority: 1,
+    //   lastmod: new Date(),
+    //   lastmodrealtime: true,
+    // },
   },
 
   purgeCSS: {
@@ -221,6 +231,8 @@ module.exports = {
    ** Build configuration
    */
   build: {
+    // move component styles into css files
+    // extractCSS: true,
     /*
      ** You can extend webpack config here
      */
