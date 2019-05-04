@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Setting renders properly 1`] = `
+"<li class=\\"list-group-item\\"><div class=\\"row\\"><div class=\\"col-md-6\\"><v-list-tile><v-list-tile-action><v-icon></v-icon></v-list-tile-action> <v-list-tile-content><v-list-tile-title><label></label></v-list-tile-title> <span class=\\"form-text text-muted\\">
+            
+          </span></v-list-tile-content></v-list-tile></div> <div class=\\"col-md-6 align-self-center\\"><input type=\\"text\\" placeholder=\\"placeholder\\" class=\\"form-control\\"></div></div></li>"
+`;
