@@ -106,6 +106,7 @@ module.exports = {
         src:
           'https://www.google.com/recaptcha/api.js?render=6LdQk5wUAAAAACVF6pTOxBSQ50_ZcNJ8EM94hBYc',
         async: 'async',
+        crossorigin: 'crossorigin',
       },
     ],
   },
