@@ -217,6 +217,7 @@ module.exports = {
   webfontloader: {
     custom: {
       families: ['Comic Neue'],
+      urls: ['@/assets/css/fonts.css'],
     },
   },
 
