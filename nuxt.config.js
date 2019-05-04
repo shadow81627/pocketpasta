@@ -102,10 +102,32 @@ module.exports = {
       {
         rel: 'preconnect',
         href: 'https://pocketpasta.auth0.com',
+        crossorigin: 'crossorigin',
       },
       {
         rel: 'preconnect',
         href: 'https://stackpath.bootstrapcdn.com',
+        crossorigin: 'crossorigin',
+      },
+      {
+        rel: 'preconnect',
+        href: 'https://stats.g.doubleclick.net',
+        crossorigin: 'crossorigin',
+      },
+      {
+        rel: 'preconnect',
+        href: 'https://www.google.com.au',
+        crossorigin: 'crossorigin',
+      },
+      {
+        rel: 'preconnect',
+        href: 'https://www.google-analytics.com',
+        crossorigin: 'crossorigin',
+      },
+      {
+        rel: 'preconnect',
+        href: 'https://www.google.com',
+        crossorigin: 'crossorigin',
       },
     ],
     script: [
