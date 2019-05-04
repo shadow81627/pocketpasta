@@ -1,3 +1,5 @@
+const path = require('path');
+const glob = require('glob-all');
 const pkg = require('./package');
 
 const routes = [
@@ -99,10 +101,6 @@ module.exports = {
         type: 'image/x-icon',
         href: '/favicon.ico',
       },
-      {
-        rel: 'stylesheet',
-        href: 'https://cdn.jsdelivr.net/npm/vuetify/dist/vuetify.min.css',
-      },
     ],
     script: [
       {
@@ -155,7 +153,6 @@ module.exports = {
     '@nuxtjs/vuetify',
     'bootstrap-vue/nuxt',
     ['nuxt-i18n', i18nSettings],
-    'nuxt-purgecss',
     '@nuxtjs/sitemap',
   ],
 
@@ -214,10 +211,6 @@ module.exports = {
     //   lastmod: new Date(),
     //   lastmodrealtime: true,
     // },
-  },
-
-  purgeCSS: {
-    mode: 'postcss',
   },
 
   /*
