@@ -25,7 +25,7 @@ export const getters = {
     state.themes.find((theme) => theme.value === value),
   getCurrentTheme: (state) => () => {
     return {
-      hid: state.theme.name,
+      hid: 'theme',
       href: state.theme.href,
       rel: 'stylesheet',
       dark: state.theme.dark,
