@@ -1,8 +1,8 @@
 <template>
   <div class="container">
     <h1>{{ $t('settings.heading') }}</h1>
-    <div class="card">
-      <div class="card-header text-uppercase">Style</div>
+    <div class="card mb-3">
+      <h2 class="subheading card-header text-uppercase">Style</h2>
       <ul class="list-group list-group-flush">
         <setting
           icon="style"
@@ -11,6 +11,11 @@
         >
           <theme-selector />
         </setting>
+      </ul>
+    </div>
+    <div class="card mb-3">
+      <h2 class="subheading card-header text-uppercase">Content</h2>
+      <ul class="list-group list-group-flush">
         <setting
           icon="language"
           label="Language"

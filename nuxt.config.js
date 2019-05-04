@@ -182,7 +182,7 @@ module.exports = {
   bootstrapVue: {
     bootstrapCSS: false, // or `css`
     bootstrapVueCSS: true, // or `bvCSS`
-    componentPlugins: ['Image'],
+    componentPlugins: ['Image', 'FormSelect '],
     directivePlugins: ['Tooltip'],
   },
 

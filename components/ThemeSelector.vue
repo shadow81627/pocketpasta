@@ -1,15 +1,16 @@
 <template>
-  <select id="theme" v-model="currentTheme" name="theme" class="form-control">
-    <option disabled value="">Please select a theme</option>
+  <b-form-select id="theme" v-model="currentTheme" name="theme">
+    <template slot="first">
+      <option disabled value="">Please select a theme</option>
+    </template>
     <option
       v-for="theme in $store.state.themes"
       :key="theme.value"
       :value="theme.value"
-      class="form-control"
     >
       {{ theme.value }}
     </option>
-  </select>
+  </b-form-select>
 </template>
 
 <script>

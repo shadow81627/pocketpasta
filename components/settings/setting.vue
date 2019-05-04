@@ -1,22 +1,18 @@
 <template>
   <li class="list-group-item">
     <div class="row">
-      <div class="col-md-6">
-        <v-list-tile>
-          <v-list-tile-action>
-            <v-icon>{{ icon }}</v-icon>
-          </v-list-tile-action>
-          <v-list-tile-content>
-            <v-list-tile-title>
-              <label>{{ label }}</label>
-            </v-list-tile-title>
-            <span class="form-text text-muted">
-              {{ description }}
-            </span>
-          </v-list-tile-content>
-        </v-list-tile>
+      <div class="col-sm-6">
+        <v-card flat color="transparent">
+          <v-card-title primary-title>
+            <v-icon left>{{ icon }}</v-icon>
+            <span class="title font-weight-light">{{ label }}</span>
+          </v-card-title>
+          <v-card-text class="subheading form-text text-muted pt-0">{{
+            description
+          }}</v-card-text>
+        </v-card>
       </div>
-      <div class="col-md-6 align-self-center">
+      <div class="col-sm-6 align-self-center">
         <slot>
           <input type="text" class="form-control" placeholder="placeholder" />
         </slot>

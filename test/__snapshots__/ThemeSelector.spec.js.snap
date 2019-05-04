@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`ThemeSelector renders properly 1`] = `
-"<select id=\\"theme\\" name=\\"theme\\" class=\\"form-control\\"><option disabled=\\"disabled\\" value=\\"\\">Please select a theme</option> <option class=\\"form-control\\" value=\\"darky\\">
+"<b-form-select id=\\"theme\\" name=\\"theme\\"><template></template> <option value=\\"darky\\">
     darky
-  </option><option class=\\"form-control\\" value=\\"united\\">
+  </option><option value=\\"united\\">
     united
-  </option></select>"
+  </option></b-form-select>"
 `;
