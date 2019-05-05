@@ -130,15 +130,6 @@ module.exports = {
         crossorigin: 'crossorigin',
       },
     ],
-    script: [
-      {
-        type: 'text/javascript',
-        src:
-          'https://www.google.com/recaptcha/api.js?render=6LdQk5wUAAAAACVF6pTOxBSQ50_ZcNJ8EM94hBYc',
-        async: 'async',
-        crossorigin: 'crossorigin',
-      },
-    ],
   },
 
   generate: {
@@ -178,6 +169,7 @@ module.exports = {
     '@nuxtjs/auth',
     '@nuxtjs/google-analytics',
     '@nuxtjs/pwa',
+    '@nuxtjs/recaptcha',
     '@nuxtjs/sentry',
     '@nuxtjs/vuetify',
     'bootstrap-vue/nuxt',
@@ -187,6 +179,14 @@ module.exports = {
     // keep sitemap last
     '@nuxtjs/sitemap',
   ],
+
+  recaptcha: {
+    // Hide badge element (v3)
+    hideBadge: true,
+    // Site key for requests
+    siteKey: '6LdQk5wUAAAAACVF6pTOxBSQ50_ZcNJ8EM94hBYc',
+    version: 3,
+  },
 
   auth: {
     resetOnError: true,
