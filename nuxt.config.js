@@ -160,7 +160,6 @@ module.exports = {
    ** Global CSS
    */
   css: [
-    { src: '@/assets/css/font.css' },
     'quill/dist/quill.snow.css',
     'quill/dist/quill.bubble.css',
     'quill/dist/quill.core.css',
@@ -238,12 +237,6 @@ module.exports = {
     hostname: 'https://pocketpasta.com',
     routes,
     gzip: true,
-    // defaults: {
-    //   changefreq: 'daily',
-    //   priority: 1,
-    //   lastmod: new Date(),
-    //   lastmodrealtime: true,
-    // },
   },
 
   webfontloader: {
