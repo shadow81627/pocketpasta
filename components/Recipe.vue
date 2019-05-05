@@ -14,7 +14,12 @@
         :poster="recipe.video[0].thumbnailUrl"
       />
     </div>
-    <img v-else :src="recipe.image" class="img-fluid" :alt="recipe.name" />
+    <img
+      v-else
+      :src="recipe.image"
+      class="img-fluid mx-auto d-block"
+      :alt="recipe.name"
+    />
     <!-- <p>Author: {{ recipe.author }}</p> -->
     <!-- <p>Published: {{ recipe.datePublished }}</p> -->
 
