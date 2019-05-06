@@ -7,6 +7,8 @@ import spaghetti from '@/assets/link-data/spaghetti.json';
 
 const localVue = createLocalVue();
 
+const recipe = delete spaghetti['@context'];
+
 localVue.use(Vuex);
 
 localVue.use(VueRouter);
@@ -20,7 +22,7 @@ let mutations;
 
 beforeEach(() => {
   state = {
-    recipes: [{ ...spaghetti, id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }],
+    recipes: [{ ...recipe, id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }],
   };
 
   getters = {

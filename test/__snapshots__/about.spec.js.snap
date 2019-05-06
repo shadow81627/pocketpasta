@@ -4,5 +4,5 @@ exports[`about renders properly 1`] = `
 "<div class=\\"container\\"><div class=\\"about\\"><div class=\\"row\\"><div class=\\"col-12\\"><h1>about.heading</h1> <p class=\\"lead\\">
           PocketPasta is a collection of my demo apps that I build to practice
           my skills.
-        </p></div></div> <div class=\\"row\\"><profile-stub class=\\"card bg-light card-body\\"></profile-stub></div> <twobyone-stub></twobyone-stub> <twobyone-stub></twobyone-stub></div></div>"
+        </p></div></div> <twobyone-stub></twobyone-stub> <twobyone-stub></twobyone-stub> <twobyone-stub></twobyone-stub></div></div>"
 `;
