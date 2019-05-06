@@ -20,7 +20,7 @@
             <b-card-title>{{ name }}</b-card-title>
           </header>
           <b-card-text>
-            {{ description }}
+            {{ description | truncate }}
           </b-card-text>
         </b-card-body>
       </div>
@@ -30,6 +30,11 @@
 
 <script>
 export default {
+  filters: {
+    truncate: function(text, stop = 150, clamp = ' ...') {
+      return `${text.slice(0, stop)}${stop < text.length ? clamp : ''}`;
+    },
+  },
   inheritAttrs: false,
   props: {
     id: { type: [String, Number], required: true },
