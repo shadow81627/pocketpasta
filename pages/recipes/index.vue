@@ -2,31 +2,47 @@
   <div class="container">
     <div class="recipes">
       <h1>{{ $t('recipes.heading') }}</h1>
-      <ul class="list-group-flush" style="list-style-type: none; padding: 0;">
-        <nuxt-link
-          v-for="recipe in recipes"
-          :key="recipe.id"
-          class="list-group-item"
-          :to="
-            localePath({
-              name: 'recipes-id',
-              params: { id: recipe.id },
-            })
-          "
-          tag="li"
-        >
-          <a>{{ recipe.name || `Recipe: ${recipe.id}` }}</a>
-        </nuxt-link>
-      </ul>
+      <div class="row justify-content-end">
+        <ViewSwitcher v-model="layout" />
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="card-layout" :class="layoutClass">
+            <RecipeCard
+              v-for="recipe in recipes"
+              :key="recipe.id"
+              v-bind="recipe"
+              :layout="layout"
+            />
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
+import ViewSwitcher from '@/components/List/ViewSwitcher';
+import RecipeCard from '@/components/Recipe/RecipeCard';
 export default {
+  components: {
+    ViewSwitcher,
+    RecipeCard,
+  },
+  data: () => ({
+    layout: 'columns',
+  }),
   computed: {
     recipes() {
       return this.$store.state.recipes;
+    },
+    layoutClass() {
+      // list layout is no class
+      return {
+        'card-group': this.layout === 'group',
+        'card-deck': this.layout === 'deck',
+        'card-columns': this.layout === 'columns',
+      };
     },
   },
   head() {
