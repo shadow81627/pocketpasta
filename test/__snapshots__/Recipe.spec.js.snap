@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Recipe renders properly 1`] = `
-"<div class=\\"recipe\\"><h1>Audrey Hepburn’s Spaghetti Al Pomodoro Recipe</h1> <p>Make Audrey Hepburn's spaghetti al pomodoro recipe. Hepburn liked her pasta smothered in tomato sauce.</p> <img src=\\"https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/162208.jpg\\" alt=\\"Audrey Hepburn’s Spaghetti Al Pomodoro Recipe\\" class=\\"img-fluid\\"> <share-stub class=\\"py-4\\"></share-stub> <p><strong>Makes:</strong> <span>4 servings</span></p> <h2>Ingredients:</h2> <ol class=\\"list-group-flush\\"><li class=\\"list-group-item\\">
+"<div class=\\"recipe\\"><h1>Audrey Hepburn’s Spaghetti Al Pomodoro Recipe</h1> <p>Make Audrey Hepburn's spaghetti al pomodoro recipe. Hepburn liked her pasta smothered in tomato sauce.</p> <img src=\\"https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/162208.jpg\\" alt=\\"Audrey Hepburn’s Spaghetti Al Pomodoro Recipe\\" class=\\"img-fluid mx-auto d-block\\"> <share-stub class=\\"py-4\\"></share-stub> <p><strong>Makes:</strong> <span>4 servings</span></p> <h2>Ingredients:</h2> <ol class=\\"list-group-flush\\"><li class=\\"list-group-item\\">
       1 small onion, diced
     </li><li class=\\"list-group-item\\">
       2 cloves garlic, minced
