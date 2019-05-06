@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import Recipe from '@/components/Recipe.vue';
+import Recipe from '@/components/Recipe/Recipe';
 
 export default {
   components: {
