@@ -1,0 +1,47 @@
+<template>
+  <nuxt-link
+    :to="
+      localePath({
+        name: 'recipes-id',
+        params: { id: id },
+      })
+    "
+    tag="b-card"
+    no-body
+    class="overflow-hidden rounded-0"
+  >
+    <div class="row no-gutters">
+      <div v-if="image" :class="{ 'col-md-6': layout === null }">
+        <b-card-img-lazy :src="image" class="rounded-0" />
+      </div>
+      <div class="col">
+        <b-card-body>
+          <header>
+            <b-card-title>{{ name }}</b-card-title>
+          </header>
+          <b-card-text>
+            {{ description }}
+          </b-card-text>
+        </b-card-body>
+      </div>
+    </div>
+  </nuxt-link>
+</template>
+
+<script>
+export default {
+  inheritAttrs: false,
+  props: {
+    id: { type: [String, Number], required: true },
+    name: {
+      type: String,
+      default: function() {
+        return `Recipe: ${this.id}`;
+      },
+    },
+    description: { type: String, default: null },
+    image: { type: String, default: null },
+    layout: { type: String, default: null },
+  },
+};
+</script>
