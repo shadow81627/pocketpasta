@@ -14,12 +14,18 @@
         </div>
       </div>
 
-      <div class="row">
-        <Profile
-          class="card bg-light card-body"
-          v-bind="this.$store.state.damien"
-        />
-      </div>
+      <TwoByOne>
+        <template #column-1>
+          <img
+            class="img-fluid mx-auto d-block"
+            alt="Typing monkey"
+            src="https://cdn-images-1.medium.com/max/600/1*6BIIyDspOhlLYW5ZiK6b1Q.jpeg"
+          />
+        </template>
+        <template #column-2>
+          <Profile v-bind="$store.state.damien" />
+        </template>
+      </TwoByOne>
 
       <TwoByOne>
         <template #column-1>
