@@ -2,7 +2,7 @@
   "id": 1,
   "@context": "http://schema.org/",
   "@type": "Recipe",
-  "name": "Salad Lasagna",
+  "name": "Dick Chmeller's Salad Lasagna",
   "suitableForDiet": "https://schema.org/VegetarianDiet",
   "image": "https://web.archive.org/web/20190502152625im_/https://media4.s-nbcnews.com/j/newscms/2019_18/1430923/salad-lasagna-today-main-190429_f69fca6a6a0e8f39c1c7fbebcc0575fe.fit-760w.jpg",
   "author": {
@@ -13,7 +13,7 @@
   "description": "If you’ve ever wondered how to trick a pasta-loving kid (or perhaps even a carb-obsessed adult) into eating more vegetables, then a “lasagna salad” may just be the very green answer to your prayers. This virtually carb-free creation consists of seven layers of vitamin-rich veggies including a base of iceberg lettuce, layers of sliced onion and slivers of red tomatoes.",
   "prepTime": "PT10M",
   "cookTime": "PT0M",
-  "totalTime": "PT32M",
+  "totalTime": "PT10M",
   "keywords": "Salad Lasagna, Dick Chmeller",
   "recipeYield": "2 servings",
   "recipeCategory": "Dinner",
