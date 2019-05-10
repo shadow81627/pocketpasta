@@ -30,7 +30,7 @@ export default {
     RecipeCard,
   },
   data: () => ({
-    layout: 'columns',
+    layout: null,
   }),
   computed: {
     recipes() {
