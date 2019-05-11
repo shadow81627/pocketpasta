@@ -114,7 +114,11 @@ export default {
     return {
       dialog: false,
       drawer: false,
-      items: [
+    };
+  },
+  computed: {
+    items: function() {
+      return [
         {
           icon: 'home',
           text: this.$t('layout.navigation.home'),
@@ -140,10 +144,8 @@ export default {
           text: this.$t('layout.navigation.settings'),
           route: { name: 'settings' },
         },
-      ],
-    };
-  },
-  computed: {
+      ];
+    },
     isDark: function() {
       return this.$store.getters.getCurrentTheme().dark;
     },
