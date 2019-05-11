@@ -23,7 +23,7 @@
 
 <script>
 import ViewSwitcher from '@/components/List/ViewSwitcher';
-import RecipeCard from '@/components/Recipe/RecipeCard';
+import RecipeCard from '@/components/List/Card';
 export default {
   components: {
     ViewSwitcher,
