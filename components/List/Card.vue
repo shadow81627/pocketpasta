@@ -1,11 +1,6 @@
 <template>
   <nuxt-link
-    :to="
-      localePath({
-        name: 'recipes-id',
-        params: { id: id },
-      })
-    "
+    :to="localePath(link)"
     tag="b-card"
     no-body
     class="overflow-hidden rounded-0"
@@ -13,7 +8,7 @@
     <div class="row no-gutters">
       <div
         v-if="image"
-        :class="{ 'col-md-6': layout === null || layout === 'list' }"
+        :class="{ 'col-md-4': layout === null || layout === 'list' }"
       >
         <b-card-img-lazy
           fluid
@@ -59,6 +54,15 @@ export default {
     description: { type: String, default: null },
     image: { type: String, default: null },
     layout: { type: String, default: null },
+    link: {
+      type: Object,
+      default: function() {
+        return {
+          name: 'recipes-id',
+          params: { id: this.id },
+        };
+      },
+    },
   },
 };
 </script>

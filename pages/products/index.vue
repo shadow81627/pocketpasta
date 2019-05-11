@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <List v-bind="{ list }" />
+    <List v-bind="{ list, layout: 'columns' }" />
   </div>
 </template>
 
@@ -21,14 +21,14 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: 'Easy pasta recipes made with simple ingredients.',
+          content: 'Find the best palce to buy pasta ingredients.',
         },
       ],
       link: [
         {
           hid: 'canonical',
           rel: 'canonical',
-          href: 'https://pocketpasta.com/recipes',
+          href: 'https://pocketpasta.com/products',
         },
       ],
     };

@@ -12,6 +12,7 @@
             :key="item.id"
             v-bind="item"
             :layout="layout"
+            :link="{ name: 'products-id', params: { id: item.id } }"
           />
         </div>
       </div>
@@ -30,10 +31,8 @@ export default {
   props: {
     heading: { type: String, default: '' },
     list: { type: Array, default: () => [] },
+    layout: { type: String, default: null },
   },
-  data: () => ({
-    layout: null,
-  }),
   computed: {
     layoutClass() {
       // list layout is no class
