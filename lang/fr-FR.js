@@ -22,6 +22,7 @@ export default () => {
           about: 'Sur',
           newsletter: 'Bulletin',
           recipes: 'Recettes',
+          products: 'Boutique',
           settings: 'Réglages',
         },
       },
@@ -54,6 +55,9 @@ export default () => {
       },
       recipes: {
         heading: 'Recettes',
+      },
+      products: {
+        heading: 'Des produits',
       },
       settings: {
         heading: 'Réglages',

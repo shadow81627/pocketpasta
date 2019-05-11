@@ -140,6 +140,11 @@ export default {
           route: { name: 'recipes' },
         },
         {
+          icon: 'store',
+          text: this.$t('layout.navigation.products'),
+          route: { name: 'products' },
+        },
+        {
           icon: 'settings',
           text: this.$t('layout.navigation.settings'),
           route: { name: 'settings' },

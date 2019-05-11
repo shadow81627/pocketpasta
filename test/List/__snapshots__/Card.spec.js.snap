@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Setting renders properly 1`] = `
+"<b-card-stub bodytag=\\"div\\" title=\\"\\" titletag=\\"h4\\" subtitle=\\"\\" subtitletag=\\"h6\\" subtitletextvariant=\\"muted\\" headertag=\\"div\\" footertag=\\"div\\" tag=\\"div\\" no-body=\\"\\" class=\\"overflow-hidden rounded-0\\"><div class=\\"row no-gutters\\"><!----> <div class=\\"col\\"><b-card-body-stub bodytag=\\"div\\" title=\\"\\" titletag=\\"h4\\" subtitle=\\"\\" subtitletag=\\"h6\\" subtitletextvariant=\\"muted\\"><header><b-card-title-stub title=\\"\\" titletag=\\"h4\\">Recipe: undefined</b-card-title-stub></header> <b-card-text-stub texttag=\\"p\\">
+          
+        </b-card-text-stub></b-card-body-stub></div></div></b-card-stub>"
+`;

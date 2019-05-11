@@ -22,6 +22,7 @@ export default () => {
           about: 'About',
           newsletter: 'Newsletter',
           recipes: 'Recipes',
+          products: 'Shop',
           settings: 'Settings',
         },
       },
@@ -54,6 +55,9 @@ export default () => {
       },
       recipes: {
         heading: 'Recipes',
+      },
+      products: {
+        heading: 'Products',
       },
       settings: {
         heading: 'Settings',

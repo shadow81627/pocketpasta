@@ -1,0 +1,18 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Product",
+  "image": "https://shop.coles.com.au/wcsstore/Coles-CAS/images/9/0/9/9093215.jpg",
+  "name": "Italian Whole Peeled Tomatoes",
+  "offers": {
+    "@type": "AggregateOffer",
+    "highPrice": "$0.80",
+    "lowPrice": "$0.80",
+    "offerCount": "1",
+    "offers": [
+      {
+        "@type": "Offer",
+        "url": "https://shop.coles.com.au/a/a-national/product/coles-tomatoes-whole-peeled-italian"
+      }
+    ]
+  }
+}
