@@ -1,8 +1,14 @@
-import { shallowMount } from '@vue/test-utils';
+import { shallowMount, createLocalVue } from '@vue/test-utils';
 import newsletter from '@/pages/newsletter.vue';
+import Vuetify from 'vuetify';
+
+const localVue = createLocalVue();
+
+localVue.use(Vuetify);
 
 const factory = () =>
   shallowMount(newsletter, {
+    localVue,
     mocks: {
       $ga: { event: () => true },
     },

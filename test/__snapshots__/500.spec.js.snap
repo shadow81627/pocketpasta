@@ -3,5 +3,5 @@
 exports[`500 renders properly 1`] = `
 "<div id=\\"message\\" class=\\"card bg-light card-body\\"><h2>500</h2> <h1>error.500.heading</h1> <p>
     error.500.description
-  </p> <video autoplay=\\"autoplay\\" width=\\"640\\" data-alt=\\"Baboon pounding on laptop keyboard\\" src=\\"https://media.gettyimages.com/videos/medium-shot-baboon-pounding-on-laptop-keyboard-video-id712-54\\" muted=\\"muted\\" loop=\\"loop\\"></video> <nuxt-link to=\\"index\\" class=\\"btn btn-primary\\">layout.navigation.home</nuxt-link></div>"
+  </p> <video autoplay=\\"autoplay\\" width=\\"640\\" data-alt=\\"Baboon pounding on laptop keyboard\\" src=\\"https://media.gettyimages.com/videos/medium-shot-baboon-pounding-on-laptop-keyboard-video-id712-54\\" muted=\\"muted\\" loop=\\"loop\\"></video> <a class=\\"btn btn-primary\\">layout.navigation.home</a></div>"
 `;

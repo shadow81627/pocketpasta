@@ -1,3 +1,3 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`AddToHomeScreen renders properly 1`] = `"<v-btn aria-label=\\"get app\\" class=\\"d-none\\"><v-icon>get_app</v-icon></v-btn>"`;
+exports[`AddToHomeScreen renders properly 1`] = `"<v-btn-stub activeclass=\\"v-btn--active\\" tag=\\"button\\" type=\\"button\\" aria-label=\\"get app\\" class=\\"d-none\\"><v-icon-stub>get_app</v-icon-stub></v-btn-stub>"`;

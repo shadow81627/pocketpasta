@@ -2,6 +2,8 @@ import { shallowMount, createLocalVue, RouterLinkStub } from '@vue/test-utils';
 import recipes from '@/pages/recipes/index.vue';
 import Vuex from 'vuex';
 import VueRouter from 'vue-router';
+import Vuetify from 'vuetify';
+import BootstrapVue from 'bootstrap-vue';
 
 import spaghetti from '@/assets/link-data/spaghetti.json';
 
@@ -10,8 +12,9 @@ const localVue = createLocalVue();
 const recipe = delete spaghetti['@context'];
 
 localVue.use(Vuex);
-
 localVue.use(VueRouter);
+localVue.use(Vuetify);
+localVue.use(BootstrapVue);
 
 const router = new VueRouter();
 

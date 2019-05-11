@@ -3,5 +3,5 @@
 exports[`404 renders properly 1`] = `
 "<div id=\\"message\\" class=\\"card bg-light card-body\\"><h2>404</h2> <h1>error.404.heading</h1> <p>
     error.404.description
-  </p> <nuxt-link to=\\"index\\" class=\\"btn btn-primary\\">layout.navigation.home</nuxt-link></div>"
+  </p> <a class=\\"btn btn-primary\\">layout.navigation.home</a></div>"
 `;

@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Footer renders properly 1`] = `
-"<v-footer inset=\\"\\" app=\\"\\" absolute=\\"\\" height=\\"auto\\" class=\\"px-3 hidden-print-only\\"><v-card flat=\\"\\" color=\\"transparent\\"><v-card-text class=\\"text-muted\\">version: </v-card-text></v-card> <v-spacer></v-spacer> <v-card flat=\\"\\" color=\\"transparent\\"><v-card-text class=\\"text-muted\\">This site is protected by reCAPTCHA and the Google
+"<v-footer-stub absolute=\\"true\\" app=\\"true\\" height=\\"auto\\" inset=\\"true\\" class=\\"px-3 hidden-print-only\\"><v-card-stub tag=\\"div\\" color=\\"transparent\\" flat=\\"true\\"><v-card-text-stub class=\\"text-muted\\">version: </v-card-text-stub></v-card-stub> <v-spacer-stub></v-spacer-stub> <v-card-stub tag=\\"div\\" color=\\"transparent\\" flat=\\"true\\"><v-card-text-stub class=\\"text-muted\\">This site is protected by reCAPTCHA and the Google
       <a href=\\"https://policies.google.com/privacy\\">Privacy Policy</a> and
       <a href=\\"https://policies.google.com/terms\\">Terms of Service</a> apply.
-    </v-card-text></v-card></v-footer>"
+    </v-card-text-stub></v-card-stub></v-footer-stub>"
 `;

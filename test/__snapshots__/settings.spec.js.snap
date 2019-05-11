@@ -1,3 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`settings renders properly 1`] = `"<div class=\\"container\\"><h1>settings.heading</h1> <div class=\\"card mb-3\\"><h2 class=\\"subheading card-header text-uppercase\\">Style</h2> <ul class=\\"list-group list-group-flush\\"><setting-stub icon=\\"style\\" label=\\"Theme\\" description=\\"Choose a bootstrap CSS theme to style the app your way.\\" id=\\"theme-label\\"><theme-selector-stub aria-labelledby=\\"theme-label\\"></theme-selector-stub></setting-stub></ul></div> <div class=\\"card mb-3\\"><h2 class=\\"subheading card-header text-uppercase\\">Content</h2> <ul class=\\"list-group list-group-flush\\"><setting-stub icon=\\"language\\" label=\\"Language\\" description=\\"What language do you speak?\\"><langswitcher-stub></langswitcher-stub></setting-stub></ul></div></div>"`;
+exports[`settings renders properly 1`] = `
+"<div class=\\"container\\"><h1>settings.heading</h1> <div class=\\"card mb-3\\"><h2 class=\\"subheading card-header text-uppercase\\">
+      settings.style.heading
+    </h2> <ul class=\\"list-group list-group-flush\\"><setting-stub><theme-selector-stub aria-labelledby=\\"theme-label\\"></theme-selector-stub></setting-stub></ul></div> <div class=\\"card mb-3\\"><h2 class=\\"subheading card-header text-uppercase\\">
+      settings.content.heading
+    </h2> <ul class=\\"list-group list-group-flush\\"><setting-stub><langswitcher-stub></langswitcher-stub></setting-stub></ul></div></div>"
+`;

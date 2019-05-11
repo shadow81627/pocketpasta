@@ -1,4 +1,4 @@
-import { shallowMount } from '@vue/test-utils';
+import { shallowMount, RouterLinkStub } from '@vue/test-utils';
 import component from '@/components/error/404.vue';
 
 const factory = () =>
@@ -8,6 +8,9 @@ const factory = () =>
         statusCode: 404,
         message: 'Page not Found',
       },
+    },
+    stubs: {
+      NuxtLink: RouterLinkStub,
     },
   });
 
