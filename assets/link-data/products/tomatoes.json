@@ -1,17 +1,36 @@
 {
   "@context": "http://schema.org",
   "@type": "Product",
-  "image": "https://shop.coles.com.au/wcsstore/Coles-CAS/images/9/0/9/9093215.jpg",
-  "name": "Italian Whole Peeled Tomatoes",
+  "image": "https://cdn0.woolworths.media/content/wowproductimages/large/037810.jpg",
+  "name": "Peeled Tomatoes",
+  "brand": "Annalisa",
+  "description": "Italian peeled tomatoes in tomato juice",
   "offers": {
     "@type": "AggregateOffer",
     "highPrice": "$0.80",
-    "lowPrice": "$0.80",
-    "offerCount": "1",
+    "lowPrice": "$1.40",
+    "offerCount": "2",
+    "weight": { "value": 400, "unitText": "grams", "unitCode": "GRM" },
     "offers": [
       {
         "@type": "Offer",
-        "url": "https://shop.coles.com.au/a/a-national/product/coles-tomatoes-whole-peeled-italian"
+        "offeredBy": "Coles",
+        "name": "Peeled Tomatoes",
+        "description": "Italian peeled tomatoes in tomato juice",
+        "brand": "Annalisa",
+        "price": "$1.40",
+        "priceCurrency": "AUD",
+        "url": "https://shop.coles.com.au/a/a-national/product/annalisa-tomatoes-peeled"
+      },
+      {
+        "@type": "Offer",
+        "offeredBy": "Woolworths",
+        "name": "Peeled Tomatoes",
+        "description": "Italian peeled tomatoes in tomato juice",
+        "brand": "Annalisa",
+        "price": "$1.40",
+        "priceCurrency": "AUD",
+        "url": "https://www.woolworths.com.au/shop/productdetails/37810/annalisa-tomatoes-peeled"
       }
     ]
   }
