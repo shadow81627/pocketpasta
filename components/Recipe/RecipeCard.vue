@@ -11,8 +11,18 @@
     class="overflow-hidden rounded-0"
   >
     <div class="row no-gutters">
-      <div v-if="image" :class="{ 'col-md-6': layout === null || 'list' }">
-        <b-card-img-lazy :src="image" class="rounded-0" />
+      <div
+        v-if="image"
+        :class="{ 'col-md-6': layout === null || layout === 'list' }"
+      >
+        <b-card-img-lazy
+          fluid
+          center
+          fluid-grow
+          blank
+          :src="image"
+          rounded="0"
+        />
       </div>
       <div class="col">
         <b-card-body>
