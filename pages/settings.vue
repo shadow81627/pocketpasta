@@ -2,26 +2,22 @@
   <div class="container">
     <h1>{{ $t('settings.heading') }}</h1>
     <div class="card mb-3">
-      <h2 class="subheading card-header text-uppercase">Style</h2>
+      <h2 class="subheading card-header text-uppercase">
+        {{ $t('settings.style.heading') }}
+      </h2>
       <ul class="list-group list-group-flush">
-        <setting
-          id="theme-label"
-          icon="style"
-          label="Theme"
-          description="Choose a bootstrap CSS theme to style the app your way."
-        >
+        <setting v-bind="$t('settings.style.theme-label')">
           <theme-selector aria-labelledby="theme-label" />
         </setting>
       </ul>
     </div>
+
     <div class="card mb-3">
-      <h2 class="subheading card-header text-uppercase">Content</h2>
+      <h2 class="subheading card-header text-uppercase">
+        {{ $t('settings.content.heading') }}
+      </h2>
       <ul class="list-group list-group-flush">
-        <setting
-          icon="language"
-          label="Language"
-          description="What language do you speak?"
-        >
+        <setting v-bind="$t('settings.content.language')">
           <LangSwitcher />
         </setting>
       </ul>

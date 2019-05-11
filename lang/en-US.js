@@ -57,6 +57,24 @@ export default () => {
       },
       settings: {
         heading: 'Settings',
+        style: {
+          heading: 'Style',
+          'theme-label': {
+            id: 'theme-label',
+            icon: 'style',
+            label: 'Theme',
+            description:
+              'Choose a bootstrap CSS theme to style the app your way.',
+          },
+        },
+        content: {
+          heading: 'Content',
+          language: {
+            icon: 'language',
+            label: 'Language',
+            description: 'What language do you speak?',
+          },
+        },
       },
     });
   });
