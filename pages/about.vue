@@ -16,7 +16,7 @@
 
       <TwoByOne>
         <template #column-1>
-          <img
+          <b-img-lazy
             class="img-fluid mx-auto d-block"
             alt="Typing monkey"
             src="https://cdn-images-1.medium.com/max/600/1*6BIIyDspOhlLYW5ZiK6b1Q.jpeg"
@@ -43,11 +43,15 @@
               >greentext</a
             >. While the plot may vary from one to another, each story ends when
             spaghetti suddenly falls out of one’s pocket or fanny pack, similar
-            to the twist in Fresh Prince of Bel-Air copypasta stories.
+            to the twist in
+            <a href="https://knowyourmeme.com/memes/bel-air-fresh-prince"
+              >Fresh Prince of Bel-Air</a
+            >
+            copypasta stories.
           </p>
         </template>
         <template #column-2>
-          <img
+          <b-img-lazy
             class="img-fluid mx-auto d-block"
             alt="Spaghetti suddenly falls out Pepe"
             src="https://i.kym-cdn.com/photos/images/original/001/182/064/60a.jpg"
