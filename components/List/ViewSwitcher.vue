@@ -1,21 +1,25 @@
 <template>
   <div>
-    <span>View as:</span>
+    <span>View as: </span>
     <v-menu left offset-y>
       <template v-slot:activator="{ on }">
         <v-btn icon v-on="on">
-          <v-icon>list</v-icon>
+          <v-icon>{{ currentLayout.icon }}</v-icon>
         </v-btn>
       </template>
 
       <v-card>
         <v-list dense>
-          <v-list-tile @click="() => $emit('input', 'columns')">
+          <v-list-tile
+            v-for="layout in availableLayouts"
+            :key="layout.value"
+            @click="() => $emit('input', layout.value)"
+          >
             <v-list-tile-content>
-              <v-list-tile-title>Grid</v-list-tile-title>
+              <v-list-tile-title>{{ layout.label }}</v-list-tile-title>
             </v-list-tile-content>
             <v-list-tile-action>
-              <v-icon>view_comfy</v-icon>
+              <v-icon>{{ layout.icon }}</v-icon>
             </v-list-tile-action>
           </v-list-tile>
         </v-list>
@@ -25,9 +29,11 @@
 </template>
 
 <script>
+const defaultLayout = 'list';
+
 export default {
   props: {
-    value: { type: String, default: null },
+    value: { type: String, default: 'list' },
     layouts: {
       type: Array,
       default: () => [
@@ -37,6 +43,18 @@ export default {
     },
   },
   computed: {
+    currentLayout() {
+      const vm = this;
+      return vm.layouts.find((layout) => {
+        return (vm.value || defaultLayout) === layout.value;
+      });
+    },
+    availableLayouts() {
+      const vm = this;
+      return vm.layouts.filter(
+        (layout) => (vm.value || defaultLayout) !== layout.value,
+      );
+    },
     inputListeners() {
       // Allow other events to be bound
       const vm = this;

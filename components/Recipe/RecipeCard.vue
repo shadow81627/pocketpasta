@@ -11,7 +11,7 @@
     class="overflow-hidden rounded-0"
   >
     <div class="row no-gutters">
-      <div v-if="image" :class="{ 'col-md-6': layout === null }">
+      <div v-if="image" :class="{ 'col-md-6': layout === null || 'list' }">
         <b-card-img-lazy :src="image" class="rounded-0" />
       </div>
       <div class="col">
@@ -31,7 +31,7 @@
 <script>
 export default {
   filters: {
-    truncate: function(text, stop = 150, clamp = ' ...') {
+    truncate: function(text, stop = 150, clamp = '...') {
       return `${text.slice(0, stop)}${stop < text.length ? clamp : ''}`;
     },
   },
