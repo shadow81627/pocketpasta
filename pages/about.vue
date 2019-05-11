@@ -31,9 +31,7 @@
         <template #column-1>
           <h2>What's with the name?</h2>
           <p>
-            Our favorite food is pasta so we made a website about pasta. Our
-            second favorite thing is memes, so we name our third favorite thing
-            after our other favorite things. The name comes form 4chan
+            The name comes form 4chan
             <a href="https://knowyourmeme.com/memes/spaghetti-stories"
               >Spaghetti Stories</a
             >
