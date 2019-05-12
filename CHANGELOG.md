@@ -2,6 +2,42 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.4.0](https://github.com/shadow81627/pocketpasta/compare/v0.3.0...v0.4.0) (2019-05-12)
+
+### Bug Fixes
+
+- **card:** make route route relative ([8563003](https://github.com/shadow81627/pocketpasta/commit/8563003))
+- **deps:** update dependency @nuxtjs/sitemap to v1.2.0 ([84c2673](https://github.com/shadow81627/pocketpasta/commit/84c2673))
+- **deps:** update dependency nuxt-i18n to v5.12.0 ([30479fe](https://github.com/shadow81627/pocketpasta/commit/30479fe))
+- **deps:** update dependency nuxt-i18n to v5.12.1 ([b20e849](https://github.com/shadow81627/pocketpasta/commit/b20e849))
+- **deps:** update dependency nuxt-i18n to v5.12.2 ([f945004](https://github.com/shadow81627/pocketpasta/commit/f945004))
+- **navigation:** allow menu items to be dynamic ([a92691b](https://github.com/shadow81627/pocketpasta/commit/a92691b))
+- **product:** display product data ([d14d41c](https://github.com/shadow81627/pocketpasta/commit/d14d41c))
+- **recipe card:** display image full width on grid layout ([bb00ac5](https://github.com/shadow81627/pocketpasta/commit/bb00ac5))
+- **recipes:** update recipe authors ([f4b0e05](https://github.com/shadow81627/pocketpasta/commit/f4b0e05))
+
+### Features
+
+- **bootstrap:** add custom bootstrap overides ([81cea5f](https://github.com/shadow81627/pocketpasta/commit/81cea5f))
+- **product:** make grid default layout ([39ef2a6](https://github.com/shadow81627/pocketpasta/commit/39ef2a6))
+- **products:** add heading ([ac2c06a](https://github.com/shadow81627/pocketpasta/commit/ac2c06a))
+- add list layout switcher ([a4d7342](https://github.com/shadow81627/pocketpasta/commit/a4d7342))
+- **products:** add product detail page ([4fa9911](https://github.com/shadow81627/pocketpasta/commit/4fa9911))
+- **products:** add products page ([09d90ea](https://github.com/shadow81627/pocketpasta/commit/09d90ea))
+- **recipe:** add recipe card for list page ([7e0e564](https://github.com/shadow81627/pocketpasta/commit/7e0e564))
+- **recipe:** add truncate filter ([d5a369f](https://github.com/shadow81627/pocketpasta/commit/d5a369f))
+- **recipes:** add view switcher ([6861dc7](https://github.com/shadow81627/pocketpasta/commit/6861dc7))
+- **settings:** translate settings ([1c12628](https://github.com/shadow81627/pocketpasta/commit/1c12628))
+- **view switcher:** add view switching ([4c79edc](https://github.com/shadow81627/pocketpasta/commit/4c79edc))
+
+### Tests
+
+- **recipe:** remove [@context](https://github.com/context) from recipe ([7ac190d](https://github.com/shadow81627/pocketpasta/commit/7ac190d))
+- add bootstrap and vuetify ([f8dbde0](https://github.com/shadow81627/pocketpasta/commit/f8dbde0))
+- **recipe:** update snapshot ([c64e0cc](https://github.com/shadow81627/pocketpasta/commit/c64e0cc))
+- **recipes:** update snapshot ([ae888c9](https://github.com/shadow81627/pocketpasta/commit/ae888c9))
+- add tests ([4e16b32](https://github.com/shadow81627/pocketpasta/commit/4e16b32))
+
 ## [0.3.0](https://github.com/shadow81627/pocketpasta/compare/v0.1.0...v0.3.0) (2019-05-06)
 
 ### Bug Fixes
