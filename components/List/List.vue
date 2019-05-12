@@ -12,7 +12,6 @@
             :key="item.id"
             v-bind="item"
             :layout="layout"
-            :link="{ name: 'products-id', params: { id: item.id } }"
           />
         </div>
       </div>

@@ -1,9 +1,10 @@
 <template>
   <nuxt-link
-    :to="localePath(link)"
+    :to="localePath({ path: id })"
     tag="b-card"
     no-body
     class="overflow-hidden rounded-0"
+    append
   >
     <div class="row no-gutters">
       <div
@@ -54,15 +55,6 @@ export default {
     description: { type: String, default: null },
     image: { type: String, default: null },
     layout: { type: String, default: null },
-    link: {
-      type: Object,
-      default: function() {
-        return {
-          name: 'recipes-id',
-          params: { id: this.id },
-        };
-      },
-    },
   },
 };
 </script>
