@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Recipe renders properly 1`] = `
+"<div class=\\"recipe\\"><h1>Audrey Hepburn’s Spaghetti Al Pomodoro Recipe</h1> <p>Make Audrey Hepburn's spaghetti al pomodoro recipe. Hepburn liked her pasta smothered in tomato sauce.</p> <img src=\\"https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/162208.jpg\\" alt=\\"Audrey Hepburn’s Spaghetti Al Pomodoro Recipe\\" class=\\"img-fluid mx-auto d-block\\"> <share-stub class=\\"py-4\\"></share-stub> <p><strong>Makes:</strong> <span>4 servings</span></p> <h2>Ingredients:</h2> <ol class=\\"list-group-flush\\"><li class=\\"list-group-item\\">
+      1 small onion, diced
+    </li><li class=\\"list-group-item\\">
+      2 cloves garlic, minced
+    </li><li class=\\"list-group-item\\">
+      2 carrots, diced small
+    </li><li class=\\"list-group-item\\">
+      2 stalks celery, diced small
+    </li><li class=\\"list-group-item\\">
+      2 large cans (28 oz. each) peeled Italian Roma tomatoes
+    </li><li class=\\"list-group-item\\">
+      1 large bunch fresh basil, washed
+    </li><li class=\\"list-group-item\\">
+      2 tbsp extra virgin olive oil
+    </li><li class=\\"list-group-item\\">
+      1 lb. spaghetti pasta
+    </li><li class=\\"list-group-item\\">
+      Salt to taste
+    </li><li class=\\"list-group-item\\">
+      Freshly grated Parmigiano-Reggiano cheese
+    </li></ol> <h2>Instructions:</h2> <ol class=\\"list-group-flush\\"><li class=\\"list-group-item\\">
+      Dice the carrots, onion, and celery. Thinly slice half of the basil leaves. Set aside.
+    </li><li class=\\"list-group-item\\">
+      Heat the olive oil in a large pot over medium heat. Add the onion, carrots, celery, and garlic. Cook until softened but not brown.
+    </li><li class=\\"list-group-item\\">
+      Add in the whole basil leaves, garlic, and tomatoes. Bring the sauce to a simmer, cover, and cook for 45 minutes, stirring occasionally and breaking apart the larger tomatoes as they cook.
+    </li><li class=\\"list-group-item\\">
+      After 45 minutes, or when the vegetables are tender, remove the sauce from the heat and let rest for 15 minutes.
+    </li><li class=\\"list-group-item\\">
+      While the sauce is simmering, fill another large pot with water and bring to a boil. Add salt, if desired. Cook the spaghetti until al dente. Drain the pasta.
+    </li><li class=\\"list-group-item\\">
+      Taste the sauce and add salt, if desired. Serve pasta topped generously with sauce, grated Parmigiano-Reggiano cheese, and the reserved sliced basil leaves.
+    </li></ol> <keywords-stub label=\\"Tags\\" tags=\\"Audrey Hepburn, recipe, Pasta Recipes, Sauce Recipes, Audrey, Hepburn, spaghetti, spathetti, pomodoro, pasta, history, sauce\\"></keywords-stub></div>"
+`;

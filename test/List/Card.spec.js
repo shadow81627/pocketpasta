@@ -8,7 +8,7 @@ const localVue = createLocalVue();
 localVue.use(Vuex);
 localVue.use(BootstrapVue);
 
-describe('Setting', () => {
+describe('List Card', () => {
   const factory = () =>
     shallowMount(Component, {
       localVue,
@@ -20,6 +20,10 @@ describe('Setting', () => {
   test('mounts properly', () => {
     const wrapper = factory();
     expect(wrapper.isVueInstance()).toBeTruthy();
+  });
+
+  test('filter truncate', () => {
+    expect(Component.filters.truncate('text', 2, '....')).toEqual('te....');
   });
 
   test('renders properly', () => {

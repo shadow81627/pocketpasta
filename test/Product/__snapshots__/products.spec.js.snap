@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`recipes renders properly 1`] = `"<div class=\\"container\\"><list-stub heading=\\"products.heading\\" list=\\"\\" layout=\\"columns\\"></list-stub></div>"`;

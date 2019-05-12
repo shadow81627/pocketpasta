@@ -1,3 +1,3 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Setting renders properly 1`] = `"<div><h1></h1> <div class=\\"row justify-content-end\\"><viewswitcher-stub layouts=\\"[object Object],[object Object]\\"></viewswitcher-stub></div> <div class=\\"row\\"><div class=\\"col-12\\"><div class=\\"card-layout\\"></div></div></div></div>"`;
+exports[`List renders properly 1`] = `"<div><h1></h1> <div class=\\"row justify-content-end\\"><viewswitcher-stub layouts=\\"[object Object],[object Object]\\"></viewswitcher-stub></div> <div class=\\"row\\"><div class=\\"col-12\\"><div class=\\"card-layout\\"></div></div></div></div>"`;

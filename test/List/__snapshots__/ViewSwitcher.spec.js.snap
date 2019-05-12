@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ViewSwitcher renders properly 1`] = `"<div><span>View as: </span> <v-menu left=\\"\\" offset-y=\\"\\"> <v-card><v-list dense=\\"\\"><v-list-tile><v-list-tile-content><v-list-tile-title>Grid</v-list-tile-title></v-list-tile-content> <v-list-tile-action><v-icon>view_comfy</v-icon></v-list-tile-action></v-list-tile></v-list></v-card></v-menu></div>"`;

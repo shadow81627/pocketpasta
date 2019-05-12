@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`product detail renders properly 1`] = `"<div class=\\"container\\"><product-stub></product-stub></div>"`;
