@@ -28,6 +28,8 @@ export const state = () => ({
 export const getters = {
   getRecipeById: (state) => (id) =>
     state.recipes.find((recipe) => recipe.id === id),
+  getProductById: (state) => (id) =>
+    state.products.find((product) => product.id === id),
   getThemeById: (state) => (value) =>
     state.themes.find((theme) => theme.value === value),
   getCurrentTheme: (state) => () => {
