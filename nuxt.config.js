@@ -130,6 +130,23 @@ module.exports = {
         crossorigin: 'crossorigin',
       },
     ],
+    scripts: [
+      {
+        type: 'text/javascript',
+        body: true,
+        innerHTML: `perfMetrics.onFirstInputDelay(function(delay, evt) {
+          ga('send', 'event', {
+            eventCategory: 'Perf Metrics',
+            eventAction: 'first-input-delay',
+            eventLabel: evt.type,
+            // Event values must be an integer.
+            eventValue: Math.round(delay),
+            // Exclude this event from bounce rate calculations.
+            nonInteraction: true,
+          });
+        });`,
+      },
+    ],
   },
 
   generate: {
@@ -159,7 +176,10 @@ module.exports = {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [{ src: '~plugins/nuxt-quill-plugin.js', ssr: false }],
+  plugins: [
+    { src: '~plugins/nuxt-quill-plugin.js', ssr: false },
+    { src: '~/plugins/firebase.js', ssr: false },
+  ],
 
   /*
    ** Nuxt.js modules
