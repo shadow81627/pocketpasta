@@ -17,7 +17,6 @@ if (!firebase.apps.length) {
     appId: process.env.FIREBASE_API_ID || '1:216453269763:web:71a3fe1ca24500bb',
   };
   firebase.initializeApp(config);
-  firebase.firestore().settings({ timestampsInSnapshots: true });
 }
 const firestore = firebase.firestore();
 // Initialize Performance Monitoring and get a reference to the service
