@@ -2,6 +2,36 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.6.0](https://github.com/shadow81627/pocketpasta/compare/v0.4.0...v0.6.0) (2019-05-15)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxtjs/sentry to v3 ([03c3307](https://github.com/shadow81627/pocketpasta/commit/03c3307))
+- **deps:** update dependency bootstrap-vue to v2.0.0-rc.20 ([a370916](https://github.com/shadow81627/pocketpasta/commit/a370916))
+- **deps:** update dependency nuxt to v2.7.1 ([08d9b8e](https://github.com/shadow81627/pocketpasta/commit/08d9b8e))
+- **deps:** update dependency nuxt-i18n to v5.12.3 ([b6abda6](https://github.com/shadow81627/pocketpasta/commit/b6abda6))
+- **deps:** update dependency nuxt-webfontloader to v1.1.0 ([d4b7e1f](https://github.com/shadow81627/pocketpasta/commit/d4b7e1f))
+- **firebase:** remove depricated settings ([7f0a450](https://github.com/shadow81627/pocketpasta/commit/7f0a450))
+
+### Features
+
+- **performance:** firebase performance monitoring ([feaf0d6](https://github.com/shadow81627/pocketpasta/commit/feaf0d6))
+
+## [0.5.0](https://github.com/shadow81627/pocketpasta/compare/v0.4.0...v0.5.0) (2019-05-15)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxtjs/sentry to v3 ([03c3307](https://github.com/shadow81627/pocketpasta/commit/03c3307))
+- **deps:** update dependency bootstrap-vue to v2.0.0-rc.20 ([a370916](https://github.com/shadow81627/pocketpasta/commit/a370916))
+- **deps:** update dependency nuxt to v2.7.1 ([08d9b8e](https://github.com/shadow81627/pocketpasta/commit/08d9b8e))
+- **deps:** update dependency nuxt-i18n to v5.12.3 ([b6abda6](https://github.com/shadow81627/pocketpasta/commit/b6abda6))
+- **deps:** update dependency nuxt-webfontloader to v1.1.0 ([d4b7e1f](https://github.com/shadow81627/pocketpasta/commit/d4b7e1f))
+- **firebase:** remove depricated settings ([7f0a450](https://github.com/shadow81627/pocketpasta/commit/7f0a450))
+
+### Features
+
+- **performance:** firebase performance monitoring ([feaf0d6](https://github.com/shadow81627/pocketpasta/commit/feaf0d6))
+
 ## [0.4.0](https://github.com/shadow81627/pocketpasta/compare/v0.3.0...v0.4.0) (2019-05-12)
 
 ### Bug Fixes
