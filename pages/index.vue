@@ -3,7 +3,12 @@
     <section>
       <v-parallax :src="require('@/assets/images/hero_75.jpg')" height="600">
         <v-layout column align-center justify-center class="white--text">
-          <img :src="$icon(200)" alt="Vuetify.js" height="200" />
+          <b-img-lazy
+            :src="$icon(200)"
+            alt="Vuetify.js"
+            height="200"
+            width="200"
+          />
           <h1 class="brand white--text mb-2 text-xs-center">
             PocketPasta
           </h1>
