@@ -10,17 +10,22 @@
     ],
     "headers": [
       {
-        "source": "**/*.@(jpg|jpeg|gif|png)",
-        "headers": [ {
-          "key": "Cache-Control",
-          "value": "max-age=7200"
-        } ]
-      }, {
+        "source": "**/*.@(jpg|jpeg|gif|png|ico)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "max-age=7200"
+          }
+        ]
+      },
+      {
         "source": "/_nuxt/**",
-        "headers": [ {
-          "key": "Cache-Control",
-          "value": "max-age=31536000"
-        } ]
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "max-age=31536000"
+          }
+        ]
       }
     ]
   }
