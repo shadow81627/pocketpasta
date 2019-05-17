@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`index renders properly 1`] = `
-"<div label=\\"Job Title\\" value=\\"Full Stack Web Developer\\"><section><v-parallax src=\\"hero_75.jpg\\" height=\\"600\\"><v-layout column=\\"\\" align-center=\\"\\" justify-center=\\"\\" class=\\"white--text\\"><img src=\\"200\\" alt=\\"Vuetify.js\\" height=\\"200\\"> <h1 class=\\"brand white--text mb-2 text-xs-center\\">
+"<div label=\\"Job Title\\" value=\\"Full Stack Web Developer\\"><section><v-parallax src=\\"hero_75.jpg\\" height=\\"600\\"><v-layout column=\\"\\" align-center=\\"\\" justify-center=\\"\\" class=\\"white--text\\"><b-img-lazy src=\\"200\\" alt=\\"Vuetify.js\\" height=\\"200\\" width=\\"200\\"></b-img-lazy> <h1 class=\\"brand white--text mb-2 text-xs-center\\">
           PocketPasta
         </h1> <div class=\\"subheading mb-3 text-xs-center\\">
           landing.banner.subheading
