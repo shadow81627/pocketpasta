@@ -162,6 +162,7 @@ module.exports = {
   plugins: [
     { src: '~plugins/nuxt-quill-plugin.js', ssr: false },
     { src: '~/plugins/firebase.js', ssr: false },
+    { src: '~/plugins/quicklink', ssr: false },
   ],
 
   /*
