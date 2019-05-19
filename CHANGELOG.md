@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.7.0](https://github.com/shadow81627/pocketpasta/compare/v0.6.0...v0.7.0) (2019-05-19)
+
+### Bug Fixes
+
+- **config:** set crossorigin="anonymous" ([23e8711](https://github.com/shadow81627/pocketpasta/commit/23e8711))
+- **index:** set image width attribute ([ee1f85b](https://github.com/shadow81627/pocketpasta/commit/ee1f85b))
+
+### Features
+
+- **deps:** add quicklinks for prefetch ([d71f904](https://github.com/shadow81627/pocketpasta/commit/d71f904))
+
+### Tests
+
+- update snapshots ([6d2da05](https://github.com/shadow81627/pocketpasta/commit/6d2da05))
+- **social profile:** update snapshot ([fdccb69](https://github.com/shadow81627/pocketpasta/commit/fdccb69))
+
 ## [0.6.0](https://github.com/shadow81627/pocketpasta/compare/v0.4.0...v0.6.0) (2019-05-15)
 
 ### Bug Fixes
