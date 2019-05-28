@@ -36,7 +36,7 @@
     "@nuxtjs/vuetify": "0.5.5",
     "bootstrap-vue": "2.0.0-rc.21",
     "cross-env": "5.2.0",
-    "firebase": "6.0.4",
+    "firebase": "6.1.0",
     "koa": "2.7.0",
     "nuxt": "2.7.1",
     "nuxt-i18n": "5.12.3",
