@@ -47,6 +47,9 @@ script:
   - ./node_modules/.bin/sentry-cli releases new -p pocketpasta $VERSION
   # Associate commits with the release
   - ./node_modules/.bin/sentry-cli releases set-commits "$VERSION" --auto
+
+before_deploy:
+  - npm run release
 deploy:
   # Keep dist folder for deploy
   skip_cleanup: true
