@@ -38,7 +38,7 @@
     "cross-env": "5.2.0",
     "firebase": "6.1.0",
     "koa": "2.7.0",
-    "nuxt": "2.7.1",
+    "nuxt": "2.8.0",
     "nuxt-i18n": "5.12.3",
     "nuxt-webfontloader": "1.1.0",
     "quicklink": "1.0.0",
