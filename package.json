@@ -34,7 +34,7 @@
     "@nuxtjs/sentry": "3.0.0",
     "@nuxtjs/sitemap": "1.2.0",
     "@nuxtjs/vuetify": "0.5.5",
-    "bootstrap-vue": "2.0.0-rc.21",
+    "bootstrap-vue": "2.0.0-rc.22",
     "cross-env": "5.2.0",
     "firebase": "6.1.0",
     "koa": "2.7.0",
