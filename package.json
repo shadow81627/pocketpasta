@@ -23,7 +23,7 @@
     "test-update": "jest -u",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "release": "standard-version && git push --follow-tags"
+    "semantic-release": "semantic-release"
   },
   "dependencies": {
     "@nuxtjs/auth": "4.6.3",
@@ -49,6 +49,8 @@
     "@commitlint/cli": "7.6.1",
     "@commitlint/config-conventional": "7.6.0",
     "@nuxtjs/eslint-config": "0.0.1",
+    "@semantic-release/changelog": "^3.0.2",
+    "@semantic-release/git": "^7.0.8",
     "@storybook/addon-actions": "5.0.11",
     "@storybook/addon-links": "5.0.11",
     "@storybook/addons": "5.0.11",
@@ -80,6 +82,7 @@
     "prettier": "1.17.1",
     "pretty-quick": "1.11.0",
     "sass-loader": "7.1.0",
+    "semantic-release": "15.13.12",
     "standard-version": "6.0.1",
     "stylus": "0.54.5",
     "stylus-loader": "3.0.2",

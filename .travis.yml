@@ -48,8 +48,8 @@ script:
   # Associate commits with the release
   - ./node_modules/.bin/sentry-cli releases set-commits "$VERSION" --auto
 
-# before_deploy:
-#   - npm run release
+before_deploy:
+  - npx semantic-release
 deploy:
   # Keep dist folder for deploy
   skip_cleanup: true
