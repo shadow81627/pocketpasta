@@ -1,28 +1,10 @@
 {
   "assignees": ["shadow81627"],
   "automerge": true,
+  "bumpVersion": null,
   "major": {
     "automerge": false
   },
-  "devDependencies": {
-    "automerge": true,
-    "bumpVersion": null,
-    "commitBody": "Update devDependencies"
-  },
-  "bumpVersion": null,
   "labels": ["dependencies"],
-  "prHourlyLimit": 1,
-  "packageRules": [
-    {
-      "packagePatterns": [ "eslint" ],
-      "labels": ["eslint"],
-      "groupName": "eslint",
-      "schedule": ["before 2am on monday"],
-      "automerge": true
-    }
-  ],
-  "extends": [
-    "config:base",
-    ":semanticCommits"
-  ]
+  "extends": ["config:base", ":semanticCommits"]
 }
