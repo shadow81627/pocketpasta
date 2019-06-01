@@ -1,3 +1,29 @@
+## [0.7.1](https://github.com/shadow81627/pocketpasta/compare/v0.7.0...v0.7.1) (2019-06-01)
+
+
+### Bug Fixes
+
+* **deps:** roll back dependency firebase to 6.0.3-canary.412cff9 ([7a58877](https://github.com/shadow81627/pocketpasta/commit/7a58877))
+* **deps:** update dependency @nuxtjs/auth to v4.6.0 ([902554b](https://github.com/shadow81627/pocketpasta/commit/902554b))
+* **deps:** update dependency @nuxtjs/auth to v4.6.1 ([aa51208](https://github.com/shadow81627/pocketpasta/commit/aa51208))
+* **deps:** update dependency @nuxtjs/auth to v4.6.3 ([78a605d](https://github.com/shadow81627/pocketpasta/commit/78a605d))
+* **deps:** update dependency @nuxtjs/axios to v5.4.2 ([c851527](https://github.com/shadow81627/pocketpasta/commit/c851527))
+* **deps:** update dependency @nuxtjs/axios to v5.5.0 ([190d87d](https://github.com/shadow81627/pocketpasta/commit/190d87d))
+* **deps:** update dependency @nuxtjs/axios to v5.5.1 ([2eeb5a7](https://github.com/shadow81627/pocketpasta/commit/2eeb5a7))
+* **deps:** update dependency @nuxtjs/axios to v5.5.2 ([c48977f](https://github.com/shadow81627/pocketpasta/commit/c48977f))
+* **deps:** update dependency @nuxtjs/axios to v5.5.3 ([5be8858](https://github.com/shadow81627/pocketpasta/commit/5be8858))
+* **deps:** update dependency bootstrap-vue to v2.0.0-rc.21 ([070152f](https://github.com/shadow81627/pocketpasta/commit/070152f))
+* **deps:** update dependency bootstrap-vue to v2.0.0-rc.22 ([ca09e23](https://github.com/shadow81627/pocketpasta/commit/ca09e23))
+* **deps:** update dependency firebase to v6.0.3 ([ab68978](https://github.com/shadow81627/pocketpasta/commit/ab68978))
+* **deps:** update dependency firebase to v6.0.4 ([3ddf6f0](https://github.com/shadow81627/pocketpasta/commit/3ddf6f0))
+* **deps:** update dependency firebase to v6.1.0 ([4d1fd3a](https://github.com/shadow81627/pocketpasta/commit/4d1fd3a))
+* **deps:** update dependency nuxt to v2.8.0 ([faf068f](https://github.com/shadow81627/pocketpasta/commit/faf068f))
+
+
+### Performance Improvements
+
+* **logo:** set font display swap ([357ac06](https://github.com/shadow81627/pocketpasta/commit/357ac06))
+
 # Changelog
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
