@@ -50,6 +50,7 @@ script:
 
 before_deploy:
   - npx semantic-release
+  - npm run generate:modern
 deploy:
   # Keep dist folder for deploy
   skip_cleanup: true
