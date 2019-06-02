@@ -1,5 +1,7 @@
 const pkg = require('./package');
 
+require('dotenv').config();
+
 const routes = [
   '/',
   '/about',
@@ -171,6 +173,7 @@ module.exports = {
   modules: [
     '@nuxtjs/axios',
     '@nuxtjs/auth',
+    '@nuxtjs/dotenv',
     '@nuxtjs/google-analytics',
     '@nuxtjs/pwa',
     '@nuxtjs/recaptcha',
