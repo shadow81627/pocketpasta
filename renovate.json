@@ -2,9 +2,6 @@
   "assignees": ["shadow81627"],
   "automerge": true,
   "bumpVersion": null,
-  "major": {
-    "automerge": false
-  },
   "labels": ["dependencies"],
   "extends": ["config:base", ":semanticCommits"]
 }
