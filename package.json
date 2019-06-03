@@ -26,7 +26,7 @@
     "semantic-release": "semantic-release"
   },
   "dependencies": {
-    "@nuxtjs/auth": "4.6.3",
+    "@nuxtjs/auth": "4.6.4",
     "@nuxtjs/axios": "5.5.3",
     "@nuxtjs/google-analytics": "2.2.0",
     "@nuxtjs/pwa": "2.6.0",
