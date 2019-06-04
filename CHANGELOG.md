@@ -1,3 +1,10 @@
+## [0.7.6](https://github.com/shadow81627/pocketpasta/compare/v0.7.5...v0.7.6) (2019-06-04)
+
+
+### Bug Fixes
+
+* **deps:** update dependency nuxt to v2.8.1 ([f460a44](https://github.com/shadow81627/pocketpasta/commit/f460a44))
+
 ## [0.7.5](https://github.com/shadow81627/pocketpasta/compare/v0.7.4...v0.7.5) (2019-06-04)
 
 
