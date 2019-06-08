@@ -1,3 +1,10 @@
+## [0.7.10](https://github.com/shadow81627/pocketpasta/compare/v0.7.9...v0.7.10) (2019-06-08)
+
+
+### Performance Improvements
+
+* **home:** add cloudinary image cdn ([bd78b78](https://github.com/shadow81627/pocketpasta/commit/bd78b78))
+
 ## [0.7.9](https://github.com/shadow81627/pocketpasta/compare/v0.7.8...v0.7.9) (2019-06-07)
 
 
