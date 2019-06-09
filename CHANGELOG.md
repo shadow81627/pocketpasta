@@ -1,3 +1,10 @@
+## [0.7.11](https://github.com/shadow81627/pocketpasta/compare/v0.7.10...v0.7.11) (2019-06-09)
+
+
+### Performance Improvements
+
+* **index:** cloudinary image cdn for logo ([40ae50b](https://github.com/shadow81627/pocketpasta/commit/40ae50b))
+
 ## [0.7.10](https://github.com/shadow81627/pocketpasta/compare/v0.7.9...v0.7.10) (2019-06-08)
 
 
