@@ -7,9 +7,8 @@
       >
         <v-layout column align-center justify-center class="white--text">
           <b-img-lazy
-            :src="$icon(200)"
+            src="https://res.cloudinary.com/pocketpasta/image/upload/c_fit,f_auto,q_auto,w_200/v1560038491/logo_vlqvdr.png"
             alt="Pasta on a sheet of paper"
-            height="200"
             width="200"
           />
           <h1 class="brand white--text mb-2 text-xs-center">
