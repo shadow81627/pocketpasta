@@ -3,8 +3,6 @@ import about from '@/pages/about.vue';
 import Vuex from 'vuex';
 import VueRouter from 'vue-router';
 
-import spaghetti from '@/assets/link-data/spaghetti.json';
-
 const localVue = createLocalVue();
 
 localVue.use(Vuex);
@@ -19,15 +17,6 @@ let store;
 let mutations;
 
 beforeEach(() => {
-  state = {
-    recipes: [{ ...spaghetti, id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }],
-  };
-
-  getters = {
-    getRecipeById: (state) => (id) =>
-      state.recipes.find((recipe) => recipe.id === id),
-  };
-
   mutations = {
     setTheme(currentState, theme) {
       currentState.theme = theme;

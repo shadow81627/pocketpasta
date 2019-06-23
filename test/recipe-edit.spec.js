@@ -3,7 +3,7 @@ import component from '@/pages/recipes/_id/edit.vue';
 import Vuex from 'vuex';
 import VueRouter from 'vue-router';
 
-import spaghetti from '@/assets/link-data/spaghetti.json';
+import spaghetti from '@/assets/link-data/recipes/spaghetti.json';
 
 const localVue = createLocalVue();
 

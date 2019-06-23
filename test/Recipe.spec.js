@@ -3,7 +3,7 @@ import Recipe from '@/components/Recipe/Recipe';
 import Vuex from 'vuex';
 // import VueRouter from 'vue-router';
 
-import recipe from '@/assets/link-data/spaghetti.json';
+import recipe from '@/assets/link-data/recipes/spaghetti.json';
 
 const localVue = createLocalVue();
 

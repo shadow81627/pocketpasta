@@ -5,7 +5,7 @@ import VueRouter from 'vue-router';
 import Vuetify from 'vuetify';
 import BootstrapVue from 'bootstrap-vue';
 
-import spaghetti from '@/assets/link-data/spaghetti.json';
+import spaghetti from '@/assets/link-data/recipes/spaghetti.json';
 
 const localVue = createLocalVue();
 
