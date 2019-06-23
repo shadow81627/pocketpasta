@@ -1,3 +1,16 @@
+# [0.8.0](https://github.com/shadow81627/pocketpasta/compare/v0.7.21...v0.8.0) (2019-06-23)
+
+
+### Bug Fixes
+
+* **recipe:** only show image if there is one ([b434b29](https://github.com/shadow81627/pocketpasta/commit/b434b29))
+* **recipe:** update total cook time ([6ce312e](https://github.com/shadow81627/pocketpasta/commit/6ce312e))
+
+
+### Features
+
+* **recipes:** add roast potatoes ([971bc4c](https://github.com/shadow81627/pocketpasta/commit/971bc4c))
+
 ## [0.7.21](https://github.com/shadow81627/pocketpasta/compare/v0.7.20...v0.7.21) (2019-06-22)
 
 
