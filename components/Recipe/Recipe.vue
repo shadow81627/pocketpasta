@@ -15,7 +15,7 @@
       />
     </div>
     <img
-      v-else
+      v-else-if="recipe.image"
       :src="recipe.image"
       class="img-fluid mx-auto d-block"
       :alt="recipe.name"
