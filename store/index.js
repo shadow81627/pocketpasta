@@ -1,8 +1,6 @@
 import damien from '@/assets/link-data/damien.json';
 
-import recipe from '@/assets/link-data/spaghetti.json';
-import pastaAglioEOlio from '@/assets/link-data/recipe/pasta_aglio_e_olio.json';
-import lasagnaSalad from '@/assets/link-data/recipe/lasagna-salad.json';
+import recipes from '@/assets/link-data/recipes';
 
 import tomatoes from '@/assets/link-data/products/tomatoes.json';
 
@@ -16,11 +14,7 @@ export const state = () => ({
     href:
       'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css',
   },
-  recipes: [
-    { ...recipe, id: 1 },
-    { ...pastaAglioEOlio, id: 2 },
-    { ...lasagnaSalad, id: 3 },
-  ],
+  recipes,
   products: [{ ...tomatoes, id: 1 }],
   damien,
 });
