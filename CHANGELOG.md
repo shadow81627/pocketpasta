@@ -1,3 +1,10 @@
+## [0.8.3](https://github.com/shadow81627/pocketpasta/compare/v0.8.2...v0.8.3) (2019-06-24)
+
+
+### Bug Fixes
+
+* **deps:** update dependency firebase to v6.2.3 ([02163b8](https://github.com/shadow81627/pocketpasta/commit/02163b8))
+
 ## [0.8.2](https://github.com/shadow81627/pocketpasta/compare/v0.8.1...v0.8.2) (2019-06-24)
 
 
