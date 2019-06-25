@@ -1,12 +1,12 @@
 import { shallowMount, createLocalVue } from '@vue/test-utils';
 import component from '@/components/AddToHomeScreen.vue';
 import Vuetify from 'vuetify';
-import BootstrapVue from 'bootstrap-vue';
+import BootstrapVuePlugin from 'bootstrap-vue';
 
 const localVue = createLocalVue();
 
 localVue.use(Vuetify);
-localVue.use(BootstrapVue);
+localVue.use(BootstrapVuePlugin);
 
 describe('AddToHomeScreen', () => {
   const factory = () => shallowMount(component, { localVue });
