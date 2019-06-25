@@ -3,7 +3,7 @@ import recipes from '@/pages/products/index.vue';
 import Vuex from 'vuex';
 import VueRouter from 'vue-router';
 import Vuetify from 'vuetify';
-import BootstrapVue from 'bootstrap-vue';
+import BootstrapVuePlugin from 'bootstrap-vue';
 
 import spaghetti from '@/assets/link-data/recipes/spaghetti.json';
 
@@ -14,7 +14,7 @@ const recipe = delete spaghetti['@context'];
 localVue.use(Vuex);
 localVue.use(VueRouter);
 localVue.use(Vuetify);
-localVue.use(BootstrapVue);
+localVue.use(BootstrapVuePlugin);
 
 const router = new VueRouter();
 

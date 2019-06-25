@@ -1,12 +1,12 @@
 import { shallowMount, createLocalVue, RouterLinkStub } from '@vue/test-utils';
 import Component from '@/components/List/Card';
 import Vuex from 'vuex';
-import BootstrapVue from 'bootstrap-vue';
+import BootstrapVuePlugin from 'bootstrap-vue';
 
 const localVue = createLocalVue();
 
 localVue.use(Vuex);
-localVue.use(BootstrapVue);
+localVue.use(BootstrapVuePlugin);
 
 describe('List Card', () => {
   const factory = () =>
