@@ -10,6 +10,7 @@
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg)](https://conventionalcommits.org)
 [![Renovate enabled](https://img.shields.io/badge/renovate-enabled-brightgreen.svg)](https://renovatebot.com/)
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fshadow81627%2Fpocketpasta.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fshadow81627%2Fpocketpasta?ref=badge_shield)
 
 > PocketPasta is a collection of my demo apps that I build to practice my skills.
 
@@ -37,3 +38,7 @@ For detailed explanation on how things work, checkout [Nuxt.js docs](https://nux
 ## Code Scene
 
 [![](https://codescene.io/projects/4707/status.svg)Get more details at **codescene.io**.](https://codescene.io/projects/4707/jobs/latest-successful/results)
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fshadow81627%2Fpocketpasta.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fshadow81627%2Fpocketpasta?ref=badge_large)
