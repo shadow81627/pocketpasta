@@ -41,14 +41,14 @@ script:
   - npm run lint
   - npm run test
   - npm run generate:modern
+
+before_deploy:
   # Propose release version
   - VERSION=$(./node_modules/.bin/sentry-cli releases propose-version)
   # Create a release
   - ./node_modules/.bin/sentry-cli releases new -p pocketpasta $VERSION
   # Associate commits with the release
   - ./node_modules/.bin/sentry-cli releases set-commits "$VERSION" --auto
-
-before_deploy:
   - npx semantic-release
   - npm run generate:modern
 deploy:
