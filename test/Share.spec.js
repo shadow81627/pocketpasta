@@ -1,6 +1,6 @@
 import { shallowMount, createLocalVue } from '@vue/test-utils';
-import Component from '@/components/Social/Share';
 import Vuex from 'vuex';
+import Component from '@/components/Social/Share';
 
 const localVue = createLocalVue();
 

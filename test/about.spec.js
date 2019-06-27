@@ -1,7 +1,7 @@
 import { shallowMount, createLocalVue, RouterLinkStub } from '@vue/test-utils';
-import about from '@/pages/about.vue';
 import Vuex from 'vuex';
 import VueRouter from 'vue-router';
+import about from '@/pages/about.vue';
 
 const localVue = createLocalVue();
 

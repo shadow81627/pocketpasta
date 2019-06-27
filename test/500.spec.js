@@ -1,6 +1,6 @@
 import { shallowMount, createLocalVue, RouterLinkStub } from '@vue/test-utils';
-import component from '@/components/error/500';
 import Vuetify from 'vuetify';
+import component from '@/components/error/500';
 
 const localVue = createLocalVue();
 

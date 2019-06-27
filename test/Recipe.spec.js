@@ -1,6 +1,6 @@
 import { shallowMount, createLocalVue } from '@vue/test-utils';
-import Recipe from '@/components/Recipe/Recipe';
 import Vuex from 'vuex';
+import Recipe from '@/components/Recipe/Recipe';
 // import VueRouter from 'vue-router';
 
 import recipe from '@/assets/link-data/recipes/spaghetti.json';

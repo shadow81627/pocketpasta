@@ -1,6 +1,6 @@
 import { shallowMount, createLocalVue } from '@vue/test-utils';
-import Component from '@/components/Product/Product';
 import Vuex from 'vuex';
+import Component from '@/components/Product/Product';
 
 import product from '@/assets/link-data/recipes/spaghetti.json';
 

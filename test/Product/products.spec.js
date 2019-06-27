@@ -1,9 +1,9 @@
 import { shallowMount, createLocalVue, RouterLinkStub } from '@vue/test-utils';
-import recipes from '@/pages/products/index.vue';
 import Vuex from 'vuex';
 import VueRouter from 'vue-router';
 import Vuetify from 'vuetify';
 import BootstrapVuePlugin from 'bootstrap-vue';
+import recipes from '@/pages/products/index.vue';
 
 import spaghetti from '@/assets/link-data/recipes/spaghetti.json';
 

@@ -1,7 +1,7 @@
 import { shallowMount, createLocalVue } from '@vue/test-utils';
-import Component from '@/components/Layout/LangSwitcher';
 import Vuex from 'vuex';
 import Vuetify from 'vuetify';
+import Component from '@/components/Layout/LangSwitcher';
 
 const localVue = createLocalVue();
 
