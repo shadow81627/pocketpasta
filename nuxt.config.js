@@ -10,6 +10,8 @@ const routes = [
   '/recipes',
   '/recipes/1',
   '/recipes/2',
+  '/recipes/3',
+  '/recipes/4',
 ];
 
 const i18nSettings = {
