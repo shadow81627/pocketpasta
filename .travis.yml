@@ -15,13 +15,13 @@ jobs:
         - FIREBASE_PROJECT=staging
         - SENTRY_ENVIRONMENT=staging
         # firebase
-        - FIREBASE_API_KEY=AIzaSyDG_OMeMaXVIHJqZpTzkY_DAWV9ylNwlXM,
-        - FIREBASE_AUTH_DOMAIN=staging-pocketpasta.firebaseapp.com,
-        - FIREBASE_DATABASE_URL=https://staging-pocketpasta.firebaseio.com,
-        - FIREBASE_PROJECT_ID=staging-pocketpasta,
-        - FIREBASE_STORAGE_BUCKET=staging-pocketpasta.appspot.com,
-        - FIREBASE_MESSAGING_SENDER_ID=216453269763,
-        - FIREBASE_APP_ID=1:216453269763:web:71a3fe1ca24500bb,
+        - FIREBASE_API_KEY=AIzaSyDG_OMeMaXVIHJqZpTzkY_DAWV9ylNwlXM
+        - FIREBASE_AUTH_DOMAIN=staging-pocketpasta.firebaseapp.com
+        - FIREBASE_DATABASE_URL=https://staging-pocketpasta.firebaseio.com
+        - FIREBASE_PROJECT_ID=staging-pocketpasta
+        - FIREBASE_STORAGE_BUCKET=staging-pocketpasta.appspot.com
+        - FIREBASE_MESSAGING_SENDER_ID=216453269763
+        - FIREBASE_APP_ID=1:216453269763:web:71a3fe1ca24500bb
 
     - # require the branch name to be production
       if: branch = production
@@ -29,18 +29,25 @@ jobs:
         - FIREBASE_PROJECT=default
         - SENTRY_ENVIRONMENT=production
         # firebase
-        - FIREBASE_API_KEY=AIzaSyB-2aw2OIfQzirEE6tv4YTWLMEuG6aWpbk,
-        - FIREBASE_AUTH_DOMAIN=pocketpasta-46ac6.firebaseapp.com,
-        - FIREBASE_DATABASE_URL=https://pocketpasta-46ac6.firebaseio.com,
-        - FIREBASE_PROJECT_ID=pocketpasta-46ac6,
-        - FIREBASE_STORAGE_BUCKET=pocketpasta-46ac6.appspot.com,
-        - FIREBASE_MESSAGING_SENDER_ID=904516376213,
-        - FIREBASE_APP_ID=1:904516376213:web:b2f6a99e9607f076,
+        - FIREBASE_API_KEY=AIzaSyB-2aw2OIfQzirEE6tv4YTWLMEuG6aWpbk
+        - FIREBASE_AUTH_DOMAIN=pocketpasta-46ac6.firebaseapp.com
+        - FIREBASE_DATABASE_URL=https://pocketpasta-46ac6.firebaseio.com
+        - FIREBASE_PROJECT_ID=pocketpasta-46ac6
+        - FIREBASE_STORAGE_BUCKET=pocketpasta-46ac6.appspot.com
+        - FIREBASE_MESSAGING_SENDER_ID=904516376213
+        - FIREBASE_APP_ID=1:904516376213:web:b2f6a99e9607f076
+
+before_script:
+  - "curl -H 'Cache-Control: no-cache' https://raw.githubusercontent.com/fossas/fossa-cli/master/install.sh | sudo bash"
 
 script:
   - npm run lint
   - npm run test
   - npm run generate:modern
+
+after_script:
+  - fossa init
+  - fossa analyze
 
 before_deploy:
   # Propose release version
