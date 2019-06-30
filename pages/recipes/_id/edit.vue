@@ -1,23 +1,9 @@
 <template>
-  <div class="container">
-    <div
-      v-quill:myQuillEditor="[
-        ['bold', 'italic', 'underline', 'strike'],
-        ['blockquote', 'code-block'],
-      ]"
-    >
-      <Recipe />
-    </div>
-  </div>
+  <div class="container" />
 </template>
 
 <script>
-import Recipe from '@/components/Recipe/Recipe';
-
 export default {
-  components: {
-    Recipe,
-  },
   data() {
     return { id: this.$route.params.id };
   },

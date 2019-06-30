@@ -41,8 +41,7 @@
     "nuxt": "2.8.1",
     "nuxt-i18n": "5.12.7",
     "nuxt-webfontloader": "1.1.0",
-    "quicklink": "1.0.0",
-    "vue-quill-editor": "3.0.6"
+    "quicklink": "1.0.0"
   },
   "devDependencies": {
     "@babel/core": "7.4.5",

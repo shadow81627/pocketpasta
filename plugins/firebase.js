@@ -1,5 +1,5 @@
 import firebase from 'firebase/app';
-import 'firebase/firestore';
+// import 'firebase/firestore';
 import 'firebase/performance';
 if (!firebase.apps.length) {
   const config = {
@@ -18,7 +18,7 @@ if (!firebase.apps.length) {
   };
   firebase.initializeApp(config);
 }
-const firestore = firebase.firestore();
+// const firestore = firebase.firestore();
 // Initialize Performance Monitoring and get a reference to the service
 const performance = firebase.performance();
-export { firestore, performance };
+export { performance };
