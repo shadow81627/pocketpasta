@@ -1,3 +1,10 @@
+## [0.8.7](https://github.com/shadow81627/pocketpasta/compare/v0.8.6...v0.8.7) (2019-06-30)
+
+
+### Bug Fixes
+
+* storeis remove eslint rules ([b5722ae](https://github.com/shadow81627/pocketpasta/commit/b5722ae))
+
 ## [0.8.6](https://github.com/shadow81627/pocketpasta/compare/v0.8.5...v0.8.6) (2019-06-30)
 
 
