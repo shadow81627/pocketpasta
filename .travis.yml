@@ -83,6 +83,8 @@ env:
     - SENTRY_PROJECT=pocketpasta
 
 notifications:
+  webhooks:
+    - https://app.fossa.io/hooks/travisci
   email:
     recipients:
       - damien.robinson@pocketpasta.com
