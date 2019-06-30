@@ -39,6 +39,6 @@ For detailed explanation on how things work, checkout [Nuxt.js docs](https://nux
 
 [![](https://codescene.io/projects/4707/status.svg)Get more details at **codescene.io**.](https://codescene.io/projects/4707/jobs/latest-successful/results)
 
-
 ## License
+
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fshadow81627%2Fpocketpasta.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fshadow81627%2Fpocketpasta?ref=badge_large)
