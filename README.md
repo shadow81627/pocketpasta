@@ -37,7 +37,7 @@ For detailed explanation on how things work, checkout [Nuxt.js docs](https://nux
 
 ## Code Scene
 
-[![](https://codescene.io/projects/4707/status.svg)Get more details at **codescene.io**.](https://codescene.io/projects/4707/jobs/latest-successful/results)
+[![Code Scene](https://codescene.io/projects/4707/status.svg)Get more details at **codescene.io**.](https://codescene.io/projects/4707/jobs/latest-successful/results)
 
 ## License
 
