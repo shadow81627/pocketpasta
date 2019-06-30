@@ -1,3 +1,10 @@
+## [0.8.6](https://github.com/shadow81627/pocketpasta/compare/v0.8.5...v0.8.6) (2019-06-30)
+
+
+### Performance Improvements
+
+* remove quill and firestore ([5f81f24](https://github.com/shadow81627/pocketpasta/commit/5f81f24))
+
 ## [0.8.5](https://github.com/shadow81627/pocketpasta/compare/v0.8.4...v0.8.5) (2019-06-28)
 
 
