@@ -12,6 +12,7 @@ jobs:
     - # require the branch name to be master
       if: branch = master
       env:
+        - APP_URL=https://staging.pocketpasta.com
         - FIREBASE_PROJECT=staging
         - SENTRY_ENVIRONMENT=staging
         # firebase
@@ -26,6 +27,7 @@ jobs:
     - # require the branch name to be production
       if: branch = production
       env:
+        - APP_URL=https://pocketpasta.com
         - FIREBASE_PROJECT=default
         - SENTRY_ENVIRONMENT=production
         # firebase
@@ -70,6 +72,7 @@ deploy:
     condition: $TRAVIS_BRANCH =~ ^master|production$
 after_deploy:
   - ./node_modules/.bin/sentry-cli releases deploys "$VERSION" new --env $SENTRY_ENVIRONMENT
+  - npm run lh -- $APP_URL
 
 env:
   global:
