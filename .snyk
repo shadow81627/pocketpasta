@@ -1,0 +1,44 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.5
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-450202:
+    - nuxt > @nuxt/webpack > @babel/core > @babel/types > lodash:
+        patched: '2019-07-03T23:25:11.741Z'
+    - '@nuxtjs/auth > lodash':
+        patched: '2019-07-03T23:25:11.741Z'
+    - '@nuxtjs/sitemap > sitemap > lodash':
+        patched: '2019-07-03T23:25:11.741Z'
+    - nuxt > @nuxt/builder > lodash:
+        patched: '2019-07-03T23:25:11.741Z'
+    - '@nuxtjs/axios > @nuxtjs/proxy > http-proxy-middleware > lodash':
+        patched: '2019-07-03T23:25:11.741Z'
+    - nuxt > @nuxt/webpack > webpack-bundle-analyzer > lodash:
+        patched: '2019-07-03T23:25:11.741Z'
+    - nuxt > @nuxt/webpack > html-webpack-plugin > lodash:
+        patched: '2019-07-03T23:25:11.741Z'
+    - nuxt > @nuxt/webpack > hard-source-webpack-plugin > lodash:
+        patched: '2019-07-03T23:25:11.741Z'
+    - nuxt > @nuxt/webpack > @babel/core > lodash:
+        patched: '2019-07-03T23:25:11.741Z'
+    - '@nuxtjs/pwa > @nuxtjs/workbox > lodash':
+        patched: '2019-07-03T23:25:11.741Z'
+    - nuxt > @nuxt/webpack > optimize-css-assets-webpack-plugin > last-call-webpack-plugin > lodash:
+        patched: '2019-07-03T23:25:11.741Z'
+    - '@nuxtjs/auth > @nuxtjs/axios > @nuxtjs/proxy > http-proxy-middleware > lodash':
+        patched: '2019-07-03T23:25:11.741Z'
+    - nuxt > @nuxt/webpack > @babel/core > @babel/generator > @babel/types > lodash:
+        patched: '2019-07-03T23:25:11.741Z'
+    - nuxt > @nuxt/webpack > @nuxt/babel-preset-app > @babel/preset-env > @babel/plugin-proposal-unicode-property-regex > @babel/helper-regex > lodash:
+        patched: '2019-07-03T23:25:11.741Z'
+    - nuxt > @nuxt/webpack > @nuxt/babel-preset-app > @vue/babel-preset-jsx > @vue/babel-plugin-transform-vue-jsx > @babel/helper-module-imports > @babel/types > lodash:
+        patched: '2019-07-03T23:25:11.741Z'
+    - nuxt > @nuxt/webpack > @nuxt/babel-preset-app > @babel/preset-env > @babel/plugin-transform-classes > @babel/helper-replace-supers > @babel/helper-member-expression-to-functions > @babel/types > lodash:
+        patched: '2019-07-03T23:25:11.741Z'
+    - nuxt > @nuxt/webpack > @nuxt/babel-preset-app > @babel/preset-env > @babel/plugin-transform-parameters > @babel/helper-call-delegate > @babel/traverse > @babel/helper-split-export-declaration > @babel/types > lodash:
+        patched: '2019-07-03T23:25:11.741Z'
+    - nuxt > @nuxt/webpack > @nuxt/babel-preset-app > @babel/preset-env > @babel/plugin-transform-object-super > @babel/helper-replace-supers > @babel/traverse > @babel/helper-function-name > @babel/template > @babel/types > lodash:
+        patched: '2019-07-03T23:25:11.741Z'
+    - nuxt > @nuxt/webpack > @nuxt/babel-preset-app > @babel/preset-env > @babel/plugin-transform-async-to-generator > @babel/helper-remap-async-to-generator > @babel/helper-wrap-function > @babel/traverse > @babel/helper-function-name > @babel/template > @babel/types > lodash:
+        patched: '2019-07-03T23:25:11.741Z'
