@@ -1,3 +1,11 @@
+## [0.8.10](https://github.com/shadow81627/pocketpasta/compare/v0.8.9...v0.8.10) (2019-07-04)
+
+
+### Bug Fixes
+
+* **deps:** pin dependency snyk to 1.189.0 ([d797ec4](https://github.com/shadow81627/pocketpasta/commit/d797ec4))
+* **deps:** pin dependency snyk to 1.189.0 ([0774455](https://github.com/shadow81627/pocketpasta/commit/0774455))
+
 ## [0.8.9](https://github.com/shadow81627/pocketpasta/compare/v0.8.8...v0.8.9) (2019-07-04)
 
 
