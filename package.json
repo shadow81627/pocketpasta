@@ -24,7 +24,9 @@
     "test:update": "jest -u",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
     "@nuxtjs/auth": "4.8.1",
@@ -42,7 +44,8 @@
     "nuxt": "2.8.1",
     "nuxt-i18n": "5.12.7",
     "nuxt-webfontloader": "1.1.0",
-    "quicklink": "1.0.0"
+    "quicklink": "1.0.0",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "@babel/core": "7.4.5",
@@ -89,5 +92,6 @@
     "stylus-loader": "3.0.2",
     "vue-jest": "3.0.4",
     "vuetify-loader": "1.2.2"
-  }
+  },
+  "snyk": true
 }
