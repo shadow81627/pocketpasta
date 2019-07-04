@@ -1,3 +1,10 @@
+## [0.8.9](https://github.com/shadow81627/pocketpasta/compare/v0.8.8...v0.8.9) (2019-07-04)
+
+
+### Bug Fixes
+
+* .snyk, package.json & package-lock.json to reduce vulnerabilities ([1f57054](https://github.com/shadow81627/pocketpasta/commit/1f57054))
+
 ## [0.8.8](https://github.com/shadow81627/pocketpasta/compare/v0.8.7...v0.8.8) (2019-07-01)
 
 
