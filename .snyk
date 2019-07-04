@@ -42,3 +42,25 @@ patch:
         patched: '2019-07-03T23:25:11.741Z'
     - nuxt > @nuxt/webpack > @nuxt/babel-preset-app > @babel/preset-env > @babel/plugin-transform-async-to-generator > @babel/helper-remap-async-to-generator > @babel/helper-wrap-function > @babel/traverse > @babel/helper-function-name > @babel/template > @babel/types > lodash:
         patched: '2019-07-03T23:25:11.741Z'
+    - snyk > inquirer > lodash:
+        patched: '2019-07-04T11:52:14.160Z'
+    - snyk > lodash:
+        patched: '2019-07-04T11:52:14.160Z'
+    - snyk > snyk-nodejs-lockfile-parser > lodash:
+        patched: '2019-07-04T11:52:14.160Z'
+    - snyk > snyk-mvn-plugin > lodash:
+        patched: '2019-07-04T11:52:14.160Z'
+    - snyk > snyk-config > lodash:
+        patched: '2019-07-04T11:52:14.160Z'
+    - snyk > @snyk/dep-graph > lodash:
+        patched: '2019-07-04T11:52:14.160Z'
+    - snyk > snyk-nuget-plugin > lodash:
+        patched: '2019-07-04T11:52:14.160Z'
+    - snyk > snyk-php-plugin > @snyk/composer-lockfile-parser > lodash:
+        patched: '2019-07-04T11:52:14.160Z'
+    - snyk > snyk-nodejs-lockfile-parser > graphlib > lodash:
+        patched: '2019-07-04T11:52:14.160Z'
+    - snyk > snyk-go-plugin > graphlib > lodash:
+        patched: '2019-07-04T11:52:14.160Z'
+    - snyk > @snyk/dep-graph > graphlib > lodash:
+        patched: '2019-07-04T11:52:14.160Z'
