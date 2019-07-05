@@ -64,3 +64,9 @@ patch:
         patched: '2019-07-04T11:52:14.160Z'
     - snyk > @snyk/dep-graph > graphlib > lodash:
         patched: '2019-07-04T11:52:14.160Z'
+    - nuxt > @nuxt/webpack > extract-css-chunks-webpack-plugin > webpack-external-import > babel-traverse > lodash:
+        patched: '2019-07-05T12:29:31.796Z'
+    - nuxt > @nuxt/webpack > extract-css-chunks-webpack-plugin > webpack-external-import > babel-traverse > babel-types > lodash:
+        patched: '2019-07-05T12:29:31.796Z'
+    - nuxt > @nuxt/webpack > extract-css-chunks-webpack-plugin > webpack-external-import > @babel/helper-module-imports > @babel/types > lodash:
+        patched: '2019-07-05T12:29:31.796Z'
