@@ -74,6 +74,9 @@ after_deploy:
   - ./node_modules/.bin/sentry-cli releases deploys "$VERSION" new --env $SENTRY_ENVIRONMENT
   - npm run lh -- $APP_URL
 
+after_success:
+  - snyk monitor
+
 env:
   global:
     # FIREBASE_AUTH_TOKEN
