@@ -110,14 +110,14 @@ export default {
     Footer,
     LangSwitcher,
   },
-  data: function() {
+  data() {
     return {
       dialog: false,
       drawer: false,
     };
   },
   computed: {
-    items: function() {
+    items() {
       return [
         {
           icon: 'home',
@@ -151,7 +151,7 @@ export default {
         },
       ];
     },
-    isDark: function() {
+    isDark() {
       return this.$store.getters.getCurrentTheme().dark;
     },
   },

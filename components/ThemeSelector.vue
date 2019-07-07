@@ -29,7 +29,7 @@ export default {
         this.$store.commit('setTheme', this.$store.getters.getThemeById(value));
       },
     },
-    themeMeta: function() {
+    themeMeta() {
       return this.$store.state.themes.map((theme) => {
         const themeLink = {
           hid: `theme-${theme.value}`,

@@ -12,7 +12,7 @@ export default {
   data: () => {
     return { display: false, deferredPrompt: null };
   },
-  mounted: function() {
+  mounted() {
     const vm = this;
     if (process.client) {
       window.addEventListener('beforeinstallprompt', (e) => {

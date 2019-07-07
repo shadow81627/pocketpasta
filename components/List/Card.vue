@@ -37,7 +37,7 @@
 <script>
 export default {
   filters: {
-    truncate: function(text, stop = 150, clamp = '...') {
+    truncate(text, stop = 150, clamp = '...') {
       if (text) {
         return `${text.slice(0, stop)}${stop < text.length ? clamp : ''}`;
       }
@@ -48,7 +48,7 @@ export default {
     id: { type: [String, Number], required: true },
     name: {
       type: String,
-      default: function() {
+      default() {
         return `Recipe: ${this.id}`;
       },
     },
