@@ -3,5 +3,6 @@
   "automerge": true,
   "bumpVersion": null,
   "labels": ["dependencies"],
-  "extends": ["config:base", ":semanticCommits"]
+  "lockFileMaintenance": { "enabled": true },
+  "extends": ["config:base", ":semanticCommits", ":pinSkipCi"]
 }
