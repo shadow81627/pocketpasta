@@ -1,3 +1,10 @@
+## [0.8.19](https://github.com/shadow81627/pocketpasta/compare/v0.8.18...v0.8.19) (2019-07-08)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @nuxtjs/recaptcha to v0.5.2 ([1221c14](https://github.com/shadow81627/pocketpasta/commit/1221c14))
+
 ## [0.8.18](https://github.com/shadow81627/pocketpasta/compare/v0.8.17...v0.8.18) (2019-07-06)
 
 
