@@ -133,6 +133,11 @@ module.exports = {
         href: 'https://www.google.com',
         crossorigin: 'anonymous',
       },
+      {
+        rel: 'preconnect',
+        href: 'https://res.cloudinary.com',
+        crossorigin: 'anonymous',
+      },
     ],
   },
 
