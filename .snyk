@@ -70,3 +70,25 @@ patch:
         patched: '2019-07-05T12:29:31.796Z'
     - nuxt > @nuxt/webpack > extract-css-chunks-webpack-plugin > webpack-external-import > @babel/helper-module-imports > @babel/types > lodash:
         patched: '2019-07-05T12:29:31.796Z'
+    - nuxt > @nuxt/webpack > extract-css-chunks-webpack-plugin > snyk > snyk-nodejs-lockfile-parser > lodash:
+        patched: '2019-07-08T01:46:51.879Z'
+    - nuxt > @nuxt/webpack > extract-css-chunks-webpack-plugin > snyk > lodash:
+        patched: '2019-07-08T01:46:51.879Z'
+    - nuxt > @nuxt/webpack > extract-css-chunks-webpack-plugin > snyk > snyk-config > lodash:
+        patched: '2019-07-08T01:46:51.879Z'
+    - nuxt > @nuxt/webpack > extract-css-chunks-webpack-plugin > snyk > @snyk/dep-graph > lodash:
+        patched: '2019-07-08T01:46:51.879Z'
+    - nuxt > @nuxt/webpack > extract-css-chunks-webpack-plugin > snyk > snyk-mvn-plugin > lodash:
+        patched: '2019-07-08T01:46:51.879Z'
+    - nuxt > @nuxt/webpack > extract-css-chunks-webpack-plugin > snyk > snyk-nuget-plugin > lodash:
+        patched: '2019-07-08T01:46:51.879Z'
+    - nuxt > @nuxt/webpack > extract-css-chunks-webpack-plugin > snyk > inquirer > lodash:
+        patched: '2019-07-08T01:46:51.879Z'
+    - nuxt > @nuxt/webpack > extract-css-chunks-webpack-plugin > snyk > snyk-nodejs-lockfile-parser > graphlib > lodash:
+        patched: '2019-07-08T01:46:51.879Z'
+    - nuxt > @nuxt/webpack > extract-css-chunks-webpack-plugin > snyk > snyk-go-plugin > graphlib > lodash:
+        patched: '2019-07-08T01:46:51.879Z'
+    - nuxt > @nuxt/webpack > extract-css-chunks-webpack-plugin > snyk > @snyk/dep-graph > graphlib > lodash:
+        patched: '2019-07-08T01:46:51.879Z'
+    - nuxt > @nuxt/webpack > extract-css-chunks-webpack-plugin > snyk > snyk-php-plugin > @snyk/composer-lockfile-parser > lodash:
+        patched: '2019-07-08T01:46:51.879Z'

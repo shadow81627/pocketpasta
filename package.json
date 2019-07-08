@@ -53,7 +53,7 @@
     "nuxt-i18n": "5.12.7",
     "nuxt-webfontloader": "1.1.0",
     "quicklink": "1.0.0",
-    "snyk": "1.192.3"
+    "snyk": "^1.192.3"
   },
   "devDependencies": {
     "@babel/core": "7.5.0",
