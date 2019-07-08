@@ -1,3 +1,10 @@
+## [0.8.20](https://github.com/shadow81627/pocketpasta/compare/v0.8.19...v0.8.20) (2019-07-08)
+
+
+### Performance Improvements
+
+* add cloudinary preconnect ([fa02958](https://github.com/shadow81627/pocketpasta/commit/fa02958))
+
 ## [0.8.19](https://github.com/shadow81627/pocketpasta/compare/v0.8.18...v0.8.19) (2019-07-08)
 
 
