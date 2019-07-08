@@ -1,3 +1,10 @@
+## [0.8.21](https://github.com/shadow81627/pocketpasta/compare/v0.8.20...v0.8.21) (2019-07-08)
+
+
+### Bug Fixes
+
+* **semantic-release:** add package-lock to assets ([a91b699](https://github.com/shadow81627/pocketpasta/commit/a91b699))
+
 ## [0.8.20](https://github.com/shadow81627/pocketpasta/compare/v0.8.19...v0.8.20) (2019-07-08)
 
 
