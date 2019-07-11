@@ -1,3 +1,10 @@
+## [0.8.25](https://github.com/shadow81627/pocketpasta/compare/v0.8.24...v0.8.25) (2019-07-11)
+
+
+### Bug Fixes
+
+* **deps:** update dependency snyk to v1.193.0 ([eebe595](https://github.com/shadow81627/pocketpasta/commit/eebe595))
+
 ## [0.8.24](https://github.com/shadow81627/pocketpasta/compare/v0.8.23...v0.8.24) (2019-07-10)
 
 
