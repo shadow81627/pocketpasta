@@ -45,13 +45,18 @@
       <li
         v-for="instruction in recipe.recipeInstructions"
         :key="instruction.text"
-        style="/*display: list-item;*//*list-style-position: inside;*/"
         class="list-group-item"
       >
         {{ instruction.text }}
       </li>
     </ol>
-    <!-- <p>Tags: {{ recipe.keywords }}</p> -->
+
+    <NutritionFactTable
+      v-if="recipe.nutrition"
+      v-bind="recipe.nutrition"
+      class=""
+    />
+
     <Keywords
       :tags="recipe.keywords ? recipe.keywords.split(',') : []"
       label="Tags"
@@ -62,11 +67,13 @@
 <script>
 import Keywords from '@/components/Keywords.vue';
 import Share from '@/components/Social/Share';
+import NutritionFactTable from '@/components/Recipe/NutritionFactTable';
 
 export default {
   components: {
     Keywords,
     Share,
+    NutritionFactTable,
   },
   inheritAttrs: false,
   computed: {
