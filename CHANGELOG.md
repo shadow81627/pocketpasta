@@ -1,3 +1,10 @@
+# [0.9.0](https://github.com/shadow81627/pocketpasta/compare/v0.8.32...v0.9.0) (2019-07-19)
+
+
+### Features
+
+* **recipe:** add nutrition facts table ([53ed069](https://github.com/shadow81627/pocketpasta/commit/53ed069))
+
 ## [0.8.32](https://github.com/shadow81627/pocketpasta/compare/v0.8.31...v0.8.32) (2019-07-19)
 
 
