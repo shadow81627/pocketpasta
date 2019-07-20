@@ -17,7 +17,7 @@
         <tr>
           <th colspan="2">
             <b>Calories</b>
-            <span>{{ fiberContent }}</span>
+            <span>{{ calories }}</span>
           </th>
           <td>
             Calories from Fat <span>{{ fiberContent }}</span>
