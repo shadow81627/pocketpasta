@@ -1,3 +1,16 @@
+## [0.9.4](https://github.com/shadow81627/pocketpasta/compare/v0.9.3...v0.9.4) (2019-07-20)
+
+
+### Bug Fixes
+
+* **nutrition:** display calories ([c5f3576](https://github.com/shadow81627/pocketpasta/commit/c5f3576))
+* **recipe:** add space around nutrition facts table ([4220a21](https://github.com/shadow81627/pocketpasta/commit/4220a21))
+
+
+### Performance Improvements
+
+* **css:** remove duplicate bootstrap import ([aab825f](https://github.com/shadow81627/pocketpasta/commit/aab825f))
+
 ## [0.9.3](https://github.com/shadow81627/pocketpasta/compare/v0.9.2...v0.9.3) (2019-07-20)
 
 
