@@ -24,7 +24,7 @@ jobs:
         - FIREBASE_APP_ID=1:216453269763:web:71a3fe1ca24500bb
 
     - # require the branch name to be production
-      if: tag IS present
+      if: (tag =~ ^v) AND (branch = master)
       env:
         - APP_URL=https://pocketpasta.com
         - FIREBASE_PROJECT=default
