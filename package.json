@@ -53,8 +53,7 @@
     "nuxt": "2.8.1",
     "nuxt-i18n": "5.12.7",
     "nuxt-webfontloader": "1.1.0",
-    "quicklink": "1.0.0",
-    "snyk": "1.195.1"
+    "quicklink": "1.0.0"
   },
   "devDependencies": {
     "@babel/core": "7.5.5",
@@ -100,6 +99,7 @@
     "pretty-quick": "1.11.1",
     "sass-loader": "7.1.0",
     "semantic-release": "15.13.18",
+    "snyk": "1.195.1",
     "stylus": "0.54.5",
     "stylus-loader": "3.0.2",
     "vue-jest": "3.0.4",
