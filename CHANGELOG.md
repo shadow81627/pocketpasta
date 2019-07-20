@@ -1,3 +1,10 @@
+## [0.9.5](https://github.com/shadow81627/pocketpasta/compare/v0.9.4...v0.9.5) (2019-07-20)
+
+
+### Bug Fixes
+
+* **deps:** update dependency nuxt-i18n to v6 ([efc7298](https://github.com/shadow81627/pocketpasta/commit/efc7298))
+
 ## [0.9.4](https://github.com/shadow81627/pocketpasta/compare/v0.9.3...v0.9.4) (2019-07-20)
 
 
