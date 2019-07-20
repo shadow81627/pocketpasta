@@ -54,7 +54,7 @@
     <NutritionFactTable
       v-if="recipe.nutrition"
       v-bind="recipe.nutrition"
-      class=""
+      class="my-4"
     />
 
     <Keywords
