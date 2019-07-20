@@ -1,3 +1,10 @@
+## [0.9.3](https://github.com/shadow81627/pocketpasta/compare/v0.9.2...v0.9.3) (2019-07-20)
+
+
+### Performance Improvements
+
+* **deps:** move snyk cli to devDependencies ([7d90156](https://github.com/shadow81627/pocketpasta/commit/7d90156))
+
 ## [0.9.2](https://github.com/shadow81627/pocketpasta/compare/v0.9.1...v0.9.2) (2019-07-19)
 
 
