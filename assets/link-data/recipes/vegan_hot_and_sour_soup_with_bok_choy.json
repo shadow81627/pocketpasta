@@ -4,6 +4,7 @@
   "@context": "http://schema.org/",
   "@type": "Recipe",
   "name": "Vegan Hot and Sour Soup with Bok Choy",
+  "suitableForDiet": "https://schema.org/VegetarianDiet",
   "author": { "@type": "Person", "name": "Alissa" },
   "description": "This vegan hot and sour soup is made with crispy tofu, bok choy and shiitake mushrooms, simmered up in a spicy, gingery broth.",
   "datePublished": "2017-02-13T10:47:00+00:00",
@@ -75,10 +76,5 @@
     "fiberContent": "3.8 g",
     "sugarContent": "7.6 g",
     "servingSize": "1 serving"
-  },
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.95",
-    "ratingCount": "19"
   }
 }
