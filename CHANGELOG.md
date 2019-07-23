@@ -1,3 +1,10 @@
+## [0.9.7](https://github.com/shadow81627/pocketpasta/compare/v0.9.6...v0.9.7) (2019-07-23)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @nuxtjs/vuetify to v0.5.7 ([ce39398](https://github.com/shadow81627/pocketpasta/commit/ce39398))
+
 ## [0.9.6](https://github.com/shadow81627/pocketpasta/compare/v0.9.5...v0.9.6) (2019-07-22)
 
 
