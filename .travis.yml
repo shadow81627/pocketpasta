@@ -14,7 +14,7 @@ branches:
 jobs:
   include:
     - # require the branch name to be master
-      if: tag IS blank OR branch = staging OR branch = trying
+      if: tag IS blank OR branch IN (staging, trying)
       env:
         - APP_URL=https://staging.pocketpasta.com
         - FIREBASE_PROJECT=staging
