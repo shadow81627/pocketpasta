@@ -37,35 +37,35 @@
         "priceCurrency": "AUD",
         "url": "https://www.woolworths.com.au/shop/productdetails/37810/annalisa-tomatoes-peeled"
       }
-    ],
-    "additionalProperty": [
-      {
-        "@type": "PropertyValue",
-        "name": "ingredients",
-        "value": ["Peeled tomatoes", "tomato juice"]
-      },
-      {
-        "@type": "PropertyValue",
-        "name": "servingSize",
-        "value": "3.0"
-      },
-      {
-        "@type": "PropertyValue",
-        "name": "Country Of Origin",
-        "value": "Product of Italy"
-      },
-      {
-        "@type": "NutritionInformation",
-        "name": "nutrition",
-        "calories": "108 kJ",
-        "carbohydrateContent": "4.1 g",
-        "proteinContent": "1.5 g",
-        "fatContent": "0.5 g",
-        "saturatedFatContent": "0 g",
-        "sodiumContent": "19 mg",
-        "sugarContent": "3.9 g",
-        "servingSize": "133 g"
-      }
     ]
-  }
+  },
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "ingredients",
+      "value": ["Peeled tomatoes", "tomato juice"]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "servingSize",
+      "value": "3.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Country Of Origin",
+      "value": "Product of Italy"
+    },
+    {
+      "@type": "NutritionInformation",
+      "name": "nutrition",
+      "calories": "108 kJ",
+      "carbohydrateContent": "4.1 g",
+      "proteinContent": "1.5 g",
+      "fatContent": "0.5 g",
+      "saturatedFatContent": "0 g",
+      "sodiumContent": "19 mg",
+      "sugarContent": "3.9 g",
+      "servingSize": "133 g"
+    }
+  ]
 }
