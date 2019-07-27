@@ -1,3 +1,18 @@
+# [0.10.0](https://github.com/shadow81627/pocketpasta/compare/v0.9.9...v0.10.0) (2019-07-27)
+
+
+### Bug Fixes
+
+* **product:** move additionalProterty to top level ([713e3e4](https://github.com/shadow81627/pocketpasta/commit/713e3e4))
+* **recipe:** remove $ from price ([8a3c63b](https://github.com/shadow81627/pocketpasta/commit/8a3c63b))
+* **recipies:** add diet ([6920101](https://github.com/shadow81627/pocketpasta/commit/6920101))
+
+
+### Features
+
+* **nutrition:** add microdata ([ca7f821](https://github.com/shadow81627/pocketpasta/commit/ca7f821))
+* **product:** add nutrition facts table ([7bc161d](https://github.com/shadow81627/pocketpasta/commit/7bc161d))
+
 ## [0.9.9](https://github.com/shadow81627/pocketpasta/compare/v0.9.8...v0.9.9) (2019-07-26)
 
 
