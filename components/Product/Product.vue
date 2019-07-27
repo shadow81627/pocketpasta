@@ -1,38 +1,25 @@
 <template>
-  <div class="recipe">
-    <h1>{{ recipe.name }}</h1>
-    <p>{{ recipe.description }}</p>
+  <div class="product">
+    <h1>{{ product.name }}</h1>
+    <p>{{ product.description }}</p>
 
-    <div
-      v-if="recipe.video"
-      class="embed-responsive embed-responsive-16by9 d-print-none"
-    >
-      <iframe
-        class="embed-responsive-item"
-        :src="recipe.video[0].contentUrl"
-        allowfullscreen
-        :poster="recipe.video[0].thumbnailUrl"
-      />
-    </div>
     <img
-      v-else
-      :src="recipe.image"
+      v-if="product.image"
+      :src="product.image"
       class="img-fluid mx-auto d-block"
-      :alt="recipe.name"
+      :alt="product.name"
     />
-    <!-- <p>Author: {{ recipe.author }}</p> -->
-    <!-- <p>Published: {{ recipe.datePublished }}</p> -->
 
     <Share class="py-4" />
 
     <p>
-      <strong>Makes:</strong>
-      <span>{{ recipe.recipeYield }}</span>
+      <strong>Servings:</strong>
+      <span>{{ product.recipeYield }}</span>
     </p>
     <h2>Ingredients:</h2>
     <ol class="list-group-flush">
       <li
-        v-for="ingredient in recipe.recipeIngredient"
+        v-for="ingredient in product.ingredient"
         :key="ingredient"
         class="list-group-item"
       >
@@ -40,18 +27,23 @@
       </li>
     </ol>
 
-    <h2>Instructions:</h2>
-    <ol class="list-group-flush">
-      <li
-        v-for="instruction in recipe.recipeInstructions"
-        :key="instruction.text"
-        class="list-group-item"
-      >
-        {{ instruction.text }}
-      </li>
-    </ol>
+    <NutritionFactTable
+      v-if="
+        product.additionalProperty &&
+          product.additionalProperty.find(
+            (property) => property.name === 'nutrition',
+          )
+      "
+      v-bind="
+        product.additionalProperty.find(
+          (property) => property.name === 'nutrition',
+        )
+      "
+      class="my-4"
+    />
+
     <Keywords
-      :tags="recipe.keywords ? recipe.keywords.split(',') : []"
+      :tags="product.keywords ? product.keywords.split(',') : []"
       label="Tags"
     />
   </div>
@@ -60,15 +52,17 @@
 <script>
 import Keywords from '@/components/Keywords.vue';
 import Share from '@/components/Social/Share';
+import NutritionFactTable from '@/components/Recipe/NutritionFactTable';
 
 export default {
   components: {
     Keywords,
     Share,
+    NutritionFactTable,
   },
   inheritAttrs: false,
   computed: {
-    recipe() {
+    product() {
       // parse id param to int for id lookup
       const id = parseInt(this.$route.params.id, 10);
       return this.$store.getters.getProductById(id);
@@ -78,7 +72,7 @@ export default {
     return {
       script: [
         {
-          innerHTML: JSON.stringify(this.recipe),
+          innerHTML: JSON.stringify(this.product),
           type: 'application/ld+json',
         },
       ],
