@@ -1,7 +1,10 @@
 <template>
   <v-footer class="px-3 hidden-print-only" inset app absolute height="auto">
     <v-card flat color="transparent">
-      <v-card-text class="text-muted">version: {{ version }}</v-card-text>
+      <v-card-text class="text-muted">
+        <span>Version: {{ version }}</span>
+        <span> {{ commit }}</span>
+      </v-card-text>
     </v-card>
     <v-spacer />
     <v-card flat color="transparent">
@@ -18,6 +21,7 @@
 export default {
   data: () => ({
     version: process.env.VERSION,
+    commit: process.env.COMMIT,
   }),
 };
 </script>
