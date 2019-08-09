@@ -164,7 +164,7 @@
 
                 <v-list-item>
                   <v-list-item-action>
-                    <v-icon class="blue--text text--lighten-2">place</v-icon>
+                    <v-icon class="text-primary">place</v-icon>
                   </v-list-item-action>
                   <v-list-item-content>
                     <v-list-item-title>{{
@@ -174,7 +174,7 @@
                 </v-list-item>
                 <v-list-item>
                   <v-list-item-action>
-                    <v-icon class="blue--text text--lighten-2">email</v-icon>
+                    <v-icon class="text-primary">email</v-icon>
                   </v-list-item-action>
                   <v-list-item-content>
                     <v-list-item-title
