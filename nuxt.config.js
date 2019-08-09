@@ -1,6 +1,7 @@
+const env = require('dotenv').config();
 const pkg = require('./package');
 
-require('dotenv').config();
+console.log(env);
 
 const routes = [
   '/',
