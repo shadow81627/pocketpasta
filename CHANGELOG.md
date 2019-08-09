@@ -1,3 +1,10 @@
+## [0.10.4](https://github.com/shadow81627/pocketpasta/compare/v0.10.3...v0.10.4) (2019-08-09)
+
+
+### Bug Fixes
+
+* **contact:** set primary text for contrast ([98d7c87](https://github.com/shadow81627/pocketpasta/commit/98d7c87))
+
 ## [0.10.3](https://github.com/shadow81627/pocketpasta/compare/v0.10.2...v0.10.3) (2019-08-09)
 
 
