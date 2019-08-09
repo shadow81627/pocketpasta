@@ -1,3 +1,10 @@
+## [0.10.2](https://github.com/shadow81627/pocketpasta/compare/v0.10.1...v0.10.2) (2019-08-09)
+
+
+### Bug Fixes
+
+* **deps:** update dependency firebase to v6.3.5 ([9ad618b](https://github.com/shadow81627/pocketpasta/commit/9ad618b))
+
 ## [0.10.1](https://github.com/shadow81627/pocketpasta/compare/v0.10.0...v0.10.1) (2019-08-01)
 
 
