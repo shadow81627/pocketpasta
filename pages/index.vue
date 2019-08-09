@@ -151,39 +151,39 @@
                     volutpat tincidunt ornare.
                   </v-card-text> -->
               <v-list class="transparent">
-                <!-- <v-list-tile>
-                      <v-list-tile-action>
+                <!-- <v-list-item>
+                      <v-list-item-action>
                         <v-icon class="blue--text text--lighten-2"
                           >phone</v-icon
                         >
-                      </v-list-tile-action>
-                      <v-list-tile-content>
-                        <v-list-tile-title>777-867-5309</v-list-tile-title>
-                      </v-list-tile-content>
-                    </v-list-tile> -->
+                      </v-list-item-action>
+                      <v-list-item-content>
+                        <v-list-item-title>777-867-5309</v-list-item-title>
+                      </v-list-item-content>
+                    </v-list-item> -->
 
-                <v-list-tile>
-                  <v-list-tile-action>
+                <v-list-item>
+                  <v-list-item-action>
                     <v-icon class="blue--text text--lighten-2">place</v-icon>
-                  </v-list-tile-action>
-                  <v-list-tile-content>
-                    <v-list-tile-title>{{
+                  </v-list-item-action>
+                  <v-list-item-content>
+                    <v-list-item-title>{{
                       $t('landing.contact.location')
-                    }}</v-list-tile-title>
-                  </v-list-tile-content>
-                </v-list-tile>
-                <v-list-tile>
-                  <v-list-tile-action>
+                    }}</v-list-item-title>
+                  </v-list-item-content>
+                </v-list-item>
+                <v-list-item>
+                  <v-list-item-action>
                     <v-icon class="blue--text text--lighten-2">email</v-icon>
-                  </v-list-tile-action>
-                  <v-list-tile-content>
-                    <v-list-tile-title
+                  </v-list-item-action>
+                  <v-list-item-content>
+                    <v-list-item-title
                       ><a :href="`mailto:${$t('landing.contact.email')}`">{{
                         $t('landing.contact.email')
-                      }}</a></v-list-tile-title
+                      }}</a></v-list-item-title
                     >
-                  </v-list-tile-content>
-                </v-list-tile>
+                  </v-list-item-content>
+                </v-list-item>
               </v-list>
             </v-card>
           </v-flex>
