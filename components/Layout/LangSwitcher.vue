@@ -1,7 +1,7 @@
 <template>
   <v-menu>
     <template v-slot:activator="{ on }">
-      <v-btn outline v-on="on">
+      <v-btn outlined v-on="on">
         <v-icon small>translate</v-icon>
         <span>&nbsp;</span>
         <span>{{ currentLocale.name }}</span>
@@ -9,13 +9,13 @@
     </template>
 
     <v-list>
-      <v-list-tile v-for="locale in availableLocales" :key="locale.code">
-        <v-list-tile-title
+      <v-list-item v-for="locale in availableLocales" :key="locale.code">
+        <v-list-item-title
           ><nuxt-link :to="switchLocalePath(locale.code)">{{
             locale.name
-          }}</nuxt-link></v-list-tile-title
+          }}</nuxt-link></v-list-item-title
         >
-      </v-list-tile>
+      </v-list-item>
     </v-list>
   </v-menu>
 </template>

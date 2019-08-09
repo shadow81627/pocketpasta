@@ -1,9 +1,8 @@
 <template>
-  <v-app id="inspire" :dark="isDark">
+  <v-app id="inspire" :dark="isDark" clipped-left>
     <v-navigation-drawer
       v-model="drawer"
       :clipped="$vuetify.breakpoint.lgAndUp"
-      fixed
       app
       class="hidden-print-only"
     >
@@ -25,31 +24,31 @@
             append-icon
           >
             <template v-slot:activator>
-              <v-list-tile>
-                <v-list-tile-content>
-                  <v-list-tile-title
+              <v-list-item>
+                <v-list-item-content>
+                  <v-list-item-title
                     ><nuxt-link
                       :to="localePath(item.route ? item.route : {})"
                       >{{ item.text }}</nuxt-link
-                    ></v-list-tile-title
+                    ></v-list-item-title
                   >
-                </v-list-tile-content>
-              </v-list-tile>
+                </v-list-item-content>
+              </v-list-item>
             </template>
-            <v-list-tile v-for="(child, i) in item.children" :key="i">
-              <v-list-tile-action v-if="child.icon">
+            <v-list-item v-for="(child, i) in item.children" :key="i">
+              <v-list-item-action v-if="child.icon">
                 <v-icon>{{ child.icon }}</v-icon>
-              </v-list-tile-action>
-              <v-list-tile-content>
-                <v-list-tile-title>
+              </v-list-item-action>
+              <v-list-item-content>
+                <v-list-item-title>
                   <nuxt-link :to="localePath(item.route ? item.route : {})">{{
                     child.text
-                  }}</nuxt-link></v-list-tile-title
+                  }}</nuxt-link></v-list-item-title
                 >
-              </v-list-tile-content>
-            </v-list-tile>
+              </v-list-item-content>
+            </v-list-item>
           </v-list-group>
-          <v-list-tile
+          <v-list-item
             v-else
             :key="item.text"
             :to="localePath(item.route ? item.route : {})"
@@ -58,24 +57,24 @@
             exact
             class="text-decoration-none"
           >
-            <v-list-tile-action>
+            <v-list-item-action>
               <v-icon>{{ item.icon }}</v-icon>
-            </v-list-tile-action>
-            <v-list-tile-content>
-              <v-list-tile-title>{{ item.text }}</v-list-tile-title>
-            </v-list-tile-content>
-          </v-list-tile>
+            </v-list-item-action>
+            <v-list-item-content>
+              <v-list-item-title>{{ item.text }}</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
         </template>
       </v-list>
     </v-navigation-drawer>
-    <v-toolbar
+    <v-app-bar
       :clipped-left="$vuetify.breakpoint.lgAndUp"
       app
       fixed
       class="hidden-print-only"
     >
-      <v-toolbar-title style="width: 300px" class="ml-0 pl-3">
-        <v-toolbar-side-icon aria-label="menu" @click.stop="drawer = !drawer" />
+      <v-toolbar-title style="width: 256px" class="ml-0 pl-3">
+        <v-app-bar-nav-icon aria-label="menu" @click.stop="drawer = !drawer" />
         <img
           :src="$icon(32)"
           width="32"
@@ -88,13 +87,12 @@
       </v-toolbar-title>
       <v-spacer />
       <AddToHomeScreen icon />
-      <LangSwitcher />
       <UserMenu />
-    </v-toolbar>
+    </v-app-bar>
     <v-content>
-      <nuxt />
+      <nuxt style="min-height: 100vh;" />
+      <Footer />
     </v-content>
-    <Footer />
   </v-app>
 </template>
 
@@ -102,13 +100,11 @@
 import AddToHomeScreen from '@/components/AddToHomeScreen.vue';
 import UserMenu from '@/components/User/Menu.vue';
 import Footer from '@/components/Layout/Footer.vue';
-import LangSwitcher from '@/components/Layout/LangSwitcher';
 export default {
   components: {
     AddToHomeScreen,
     UserMenu,
     Footer,
-    LangSwitcher,
   },
   data() {
     return {

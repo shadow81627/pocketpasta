@@ -17,7 +17,7 @@
       <v-btn
         v-else
         aria-label="login"
-        outline
+        outlined
         @click="$auth.loginWith('auth0')"
       >
         <v-icon>account_circle</v-icon>
@@ -29,30 +29,30 @@
     <v-card v-if="$auth.loggedIn">
       <v-list>
         <nuxt-link to="/profile">
-          <v-list-tile avatar tile>
-            <v-list-tile-avatar>
+          <v-list-item avatar tile>
+            <v-list-item-avatar>
               <img :src="$auth.user.picture" alt="avatar" class="rounded" />
-            </v-list-tile-avatar>
+            </v-list-item-avatar>
 
-            <v-list-tile-content>
-              <v-list-tile-title v-if="$auth.user.name !== $auth.user.email">{{
+            <v-list-item-content>
+              <v-list-item-title v-if="$auth.user.name !== $auth.user.email">{{
                 $auth.user.name
-              }}</v-list-tile-title>
-              <v-list-tile-title>{{ $auth.user.email }}</v-list-tile-title>
-            </v-list-tile-content>
-          </v-list-tile>
+              }}</v-list-item-title>
+              <v-list-item-title>{{ $auth.user.email }}</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
         </nuxt-link>
       </v-list>
 
       <v-divider />
 
       <v-list>
-        <v-list-tile @click="$auth.logout()">
+        <v-list-item @click="$auth.logout()">
           <v-btn icon>
             <v-icon>directions_run</v-icon>
           </v-btn>
-          <v-list-tile-title>{{ $t('layout.logout') }}</v-list-tile-title>
-        </v-list-tile>
+          <v-list-item-title>{{ $t('layout.logout') }}</v-list-item-title>
+        </v-list-item>
       </v-list>
     </v-card>
   </v-menu>
