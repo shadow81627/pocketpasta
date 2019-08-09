@@ -8,11 +8,17 @@
 //   });
 // });
 
-import { shallowMount } from '@vue/test-utils';
+import { shallowMount, createLocalVue } from '@vue/test-utils';
+import Vuetify from 'vuetify';
 import index from '@/pages/index.vue';
+
+const localVue = createLocalVue();
+
+localVue.use(Vuetify);
 
 const factory = () =>
   shallowMount(index, {
+    localVue,
     propsData: {
       label: 'Job Title',
       value: 'Full Stack Web Developer',

@@ -40,6 +40,7 @@ export const mutations = {
   setTheme(currentState, theme) {
     currentState.theme = theme;
     this.$auth.$storage.setUniversal('theme', theme, true);
+    this.app.vuetify.framework.theme.dark = theme.dark;
   },
 };
 

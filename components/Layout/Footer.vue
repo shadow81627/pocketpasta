@@ -1,5 +1,5 @@
 <template>
-  <v-footer class="px-3 hidden-print-only" inset app absolute height="auto">
+  <v-footer class="hidden-print-only" height="auto">
     <v-card flat color="transparent">
       <v-card-text class="text-muted">
         <span>Version: {{ version }}</span>

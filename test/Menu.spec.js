@@ -1,10 +1,12 @@
 import { shallowMount, createLocalVue } from '@vue/test-utils';
 import Vuex from 'vuex';
+import Vuetify from 'vuetify';
 import Component from '@/components/User/Menu';
 
 const localVue = createLocalVue();
 
 localVue.use(Vuex);
+localVue.use(Vuetify);
 
 describe('Menu', () => {
   let getters;

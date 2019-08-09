@@ -1,7 +1,6 @@
-const env = require('dotenv').config();
 const pkg = require('./package');
 
-console.log(env);
+require('dotenv').config();
 
 const routes = [
   '/',
@@ -181,13 +180,17 @@ module.exports = {
     '@nuxtjs/pwa',
     '@nuxtjs/recaptcha',
     '@nuxtjs/sentry',
-    '@nuxtjs/vuetify',
     'bootstrap-vue/nuxt',
     ['nuxt-i18n', i18nSettings],
     'nuxt-webfontloader',
 
     // keep sitemap last
     '@nuxtjs/sitemap',
+  ],
+
+  devModules: [
+    // Simple usage
+    '@nuxtjs/vuetify',
   ],
 
   recaptcha: {
@@ -215,9 +218,11 @@ module.exports = {
   },
 
   vuetify: {
-    treeShake: true,
-    theme: false,
-    // iconfont: 'md',
+    theme: {},
+    defaultAssets: {
+      font: false,
+      icons: 'md',
+    },
   },
 
   bootstrapVue: {
