@@ -218,7 +218,7 @@ module.exports = {
   },
 
   vuetify: {
-    theme: {},
+    theme: { disable: true },
     defaultAssets: {
       font: false,
       icons: 'md',
