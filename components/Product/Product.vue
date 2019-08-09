@@ -10,7 +10,7 @@
       :alt="product.name"
     />
 
-    <Share class="py-4" />
+    <share class="py-4" />
 
     <p>
       <strong>Servings:</strong>
@@ -27,7 +27,7 @@
       </li>
     </ol>
 
-    <NutritionFactTable
+    <nutrition-fact-table
       v-if="
         product.additionalProperty &&
           product.additionalProperty.find(
@@ -42,7 +42,7 @@
       class="my-4"
     />
 
-    <Keywords
+    <keywords
       :tags="product.keywords ? product.keywords.split(',') : []"
       label="Tags"
     />

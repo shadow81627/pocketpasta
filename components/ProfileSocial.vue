@@ -3,9 +3,9 @@
     <div class="col-md-12">
       <div class="$col-md-6">
         <h2>{{ name }}</h2>
-        <KeyValue label="Job Title" :value="jobTitle" />
-        <KeyValue label="About" :value="description" />
-        <Keywords :tags="keywords ? keywords.split(',') : []" label="Skills" />
+        <key-value label="Job Title" :value="jobTitle" />
+        <key-value label="About" :value="description" />
+        <keywords :tags="keywords ? keywords.split(',') : []" label="Skills" />
         <div class="py-2 list-inline">
           <div
             class="list-inline-item a2a_kit a2a_kit_size_32 a2a_default_style a2a_follow"

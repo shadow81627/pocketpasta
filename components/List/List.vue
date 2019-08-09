@@ -2,12 +2,12 @@
   <div>
     <h1>{{ heading }}</h1>
     <div class="row justify-content-end">
-      <ViewSwitcher v-model="layout" />
+      <view-switcher v-model="layout" />
     </div>
     <div class="row">
       <div class="col-12">
         <div class="card-layout" :class="layoutClass">
-          <Card
+          <card
             v-for="item in list"
             :key="item.id"
             v-bind="item"

@@ -18,7 +18,7 @@
       </h2>
       <ul class="list-group list-group-flush">
         <setting v-bind="$t('settings.content.language')">
-          <LangSwitcher />
+          <lang-switcher />
         </setting>
       </ul>
     </div>

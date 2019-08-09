@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <Recipe />
+    <recipe />
     <v-btn
       fab
       bottom

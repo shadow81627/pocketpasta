@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <List v-bind="{ heading: $t('recipes.heading'), list, layout: 'list' }" />
+    <list v-bind="{ heading: $t('recipes.heading'), list, layout: 'list' }" />
   </div>
 </template>
 

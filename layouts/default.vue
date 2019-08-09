@@ -86,12 +86,12 @@
         <span class="brand mx-1 hidden-sm-and-down">PocketPasta</span>
       </v-toolbar-title>
       <v-spacer />
-      <AddToHomeScreen icon />
-      <UserMenu />
+      <add-to-home-screen icon />
+      <user-menu />
     </v-app-bar>
     <v-content>
       <nuxt style="min-height: 100vh;" />
-      <Footer />
+      <the-footer />
     </v-content>
   </v-app>
 </template>
@@ -99,12 +99,12 @@
 <script>
 import AddToHomeScreen from '@/components/AddToHomeScreen.vue';
 import UserMenu from '@/components/User/Menu.vue';
-import Footer from '@/components/Layout/Footer.vue';
+import TheFooter from '@/components/Layout/the-footer.vue';
 export default {
   components: {
     AddToHomeScreen,
     UserMenu,
-    Footer,
+    TheFooter,
   },
   data() {
     return {

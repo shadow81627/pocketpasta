@@ -14,7 +14,7 @@
         </div>
       </div>
 
-      <TwoByOne>
+      <two-by-one>
         <template #column-1>
           <b-img-lazy
             class="img-fluid mx-auto d-block"
@@ -23,11 +23,11 @@
           />
         </template>
         <template #column-2>
-          <Profile v-bind="$store.state.damien" />
+          <profile v-bind="$store.state.damien" />
         </template>
-      </TwoByOne>
+      </two-by-one>
 
-      <TwoByOne>
+      <two-by-one>
         <template #column-1>
           <h2>What's with the name?</h2>
           <p>
@@ -55,8 +55,8 @@
             src="https://i.kym-cdn.com/photos/images/original/001/182/064/60a.jpg"
           />
         </template>
-      </TwoByOne>
-      <TwoByOne />
+      </two-by-one>
+      <two-by-one />
 
       <!-- <div class="row">
         <div class="card bg-light card-body mb-3 profile">

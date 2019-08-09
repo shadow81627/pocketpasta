@@ -20,7 +20,7 @@
           <!-- <v-btn class="blue lighten-2 mt-5" dark large href="/pre-made-themes">
             Get Started
           </v-btn> -->
-          <Credit style="position:absolute;right:0;bottom:0;" />
+          <credit style="position:absolute;right:0;bottom:0;" />
         </v-layout>
       </v-parallax>
     </section>

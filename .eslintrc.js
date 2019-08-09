@@ -13,14 +13,15 @@ module.exports = {
     'eslint:recommended',
     'plugin:vue/recommended',
     '@nuxtjs',
+    'vuetify',
     'prettier/vue',
     'plugin:prettier/recommended',
   ],
   plugins: ['prettier'],
   // add your custom rules here
   rules: {
-    "no-console": "off",
-    "vue/max-attributes-per-line": "off",
+    'no-console': 'off',
+    'vue/max-attributes-per-line': 'off',
     'prettier/prettier': ['error', prettierrc],
     'vue/html-self-closing': [
       'error',

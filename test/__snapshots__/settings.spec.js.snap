@@ -5,5 +5,5 @@ exports[`settings renders properly 1`] = `
       settings.style.heading
     </h2> <ul class=\\"list-group list-group-flush\\"><setting-stub><theme-selector-stub aria-labelledby=\\"theme-label\\"></theme-selector-stub></setting-stub></ul></div> <div class=\\"card mb-3\\"><h2 class=\\"subheading card-header text-uppercase\\">
       settings.content.heading
-    </h2> <ul class=\\"list-group list-group-flush\\"><setting-stub><langswitcher-stub></langswitcher-stub></setting-stub></ul></div></div>"
+    </h2> <ul class=\\"list-group list-group-flush\\"><setting-stub><lang-switcher-stub></lang-switcher-stub></setting-stub></ul></div></div>"
 `;

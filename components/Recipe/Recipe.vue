@@ -23,7 +23,7 @@
     <!-- <p>Author: {{ recipe.author }}</p> -->
     <!-- <p>Published: {{ recipe.datePublished }}</p> -->
 
-    <Share class="py-4" />
+    <share class="py-4" />
 
     <p>
       <strong>Makes:</strong>
@@ -51,13 +51,13 @@
       </li>
     </ol>
 
-    <NutritionFactTable
+    <nutrition-fact-table
       v-if="recipe.nutrition"
       v-bind="recipe.nutrition"
       class="my-4"
     />
 
-    <Keywords
+    <keywords
       :tags="recipe.keywords ? recipe.keywords.split(',') : []"
       label="Tags"
     />
