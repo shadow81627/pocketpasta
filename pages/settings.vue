@@ -1,6 +1,10 @@
 <template>
   <div class="container">
-    <h1>{{ $t('settings.heading') }}</h1>
+    <div class="row">
+      <div class="col">
+        <h1>{{ $t('settings.heading') }}</h1>
+      </div>
+    </div>
     <div class="card mb-3">
       <h2 class="subheading card-header text-uppercase">
         {{ $t('settings.style.heading') }}

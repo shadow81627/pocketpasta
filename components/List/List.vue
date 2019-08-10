@@ -1,8 +1,10 @@
 <template>
   <div>
-    <h1>{{ heading }}</h1>
-    <div class="row justify-content-end">
-      <view-switcher v-model="layout" />
+    <div class="row">
+      <div class="col-auto mr-auto">
+        <h1>{{ heading }}</h1>
+      </div>
+      <div class="col-auto"><view-switcher v-model="layout" /></div>
     </div>
     <div class="row">
       <div class="col-12">

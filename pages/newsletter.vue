@@ -1,5 +1,10 @@
 <template>
   <div class="container">
+    <div class="row">
+      <div class="col">
+        <h1>{{ $t('newsletter.heading') }}</h1>
+      </div>
+    </div>
     <!-- Begin MailChimp Signup Form -->
     <div id="mc_embed_signup">
       <form
@@ -12,7 +17,6 @@
         novalidate
       >
         <div id="mc_embed_signup_scroll">
-          <h1>{{ $t('newsletter.heading') }}</h1>
           <div class="indicates-required text-right">
             <span class="asterisk text-danger">*</span>
             {{ $t('newsletter.required') }}
