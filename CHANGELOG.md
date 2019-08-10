@@ -1,3 +1,10 @@
+## [0.10.5](https://github.com/shadow81627/pocketpasta/compare/v0.10.4...v0.10.5) (2019-08-10)
+
+
+### Bug Fixes
+
+* **headings:** wrap h1 in column ([9fb8176](https://github.com/shadow81627/pocketpasta/commit/9fb8176))
+
 ## [0.10.4](https://github.com/shadow81627/pocketpasta/compare/v0.10.3...v0.10.4) (2019-08-09)
 
 
