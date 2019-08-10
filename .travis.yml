@@ -11,6 +11,7 @@ branches:
     - trying
     # enable building pull requests.
     - master
+    - production
 jobs:
   include:
     - # require the branch name to be master
