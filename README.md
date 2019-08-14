@@ -12,6 +12,7 @@
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fshadow81627%2Fpocketpasta.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fshadow81627%2Fpocketpasta?ref=badge_shield)
 [![Known Vulnerabilities](https://snyk.io/test/github/shadow81627/pocketpasta/badge.svg)](https://snyk.io/test/github/shadow81627/pocketpasta)
+[![Bors enabled](https://bors.tech/images/badge_small.svg)](https://app.bors.tech/repositories/3)
 
 > PocketPasta is a collection of my demo apps that I build to practice my skills.
 
