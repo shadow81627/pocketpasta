@@ -1,8 +1,12 @@
 import { shallowMount, createLocalVue } from '@vue/test-utils';
 import Vuex from 'vuex';
+import { removeKeys } from '@/utils';
 import Component from '@/components/Product/Product';
 
-import product from '@/assets/link-data/recipes/spaghetti.json';
+import product from '@/assets/link-data/products/tomatoes.json';
+
+// JSDOM complains about this attribute
+removeKeys(product, '@type');
 
 const localVue = createLocalVue();
 
@@ -15,7 +19,7 @@ const $route = {
   name: 'products-detail-id',
 };
 
-describe('Recipe', () => {
+describe('Product', () => {
   let getters;
   let state;
   let store;

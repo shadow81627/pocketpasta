@@ -3,13 +3,13 @@ import Vuex from 'vuex';
 import VueRouter from 'vue-router';
 import Vuetify from 'vuetify';
 import BootstrapVuePlugin from 'bootstrap-vue';
-import recipes from '@/pages/products/index.vue';
+import Component from '@/pages/products/index.vue';
 
-import spaghetti from '@/assets/link-data/recipes/spaghetti.json';
+import productData from '@/assets/link-data/products/tomatoes.json';
 
 const localVue = createLocalVue();
 
-const recipe = delete spaghetti['@context'];
+const product = delete productData['@context'];
 
 localVue.use(Vuex);
 localVue.use(VueRouter);
@@ -25,12 +25,12 @@ let mutations;
 
 beforeEach(() => {
   state = {
-    recipes: [{ ...recipe, id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }],
+    products: [{ ...product, id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }],
   };
 
   getters = {
-    getRecipeById: (state) => (id) =>
-      state.recipes.find((recipe) => recipe.id === id),
+    getProductById: (state) => (id) =>
+      state.products.find((product) => product.id === id),
   };
 
   mutations = {
@@ -47,7 +47,7 @@ beforeEach(() => {
 });
 
 const factory = () =>
-  shallowMount(recipes, {
+  shallowMount(Component, {
     store,
     router,
     stubs: {
@@ -56,7 +56,7 @@ const factory = () =>
     localVue,
   });
 
-describe('recipes', () => {
+describe('products page', () => {
   test('mounts properly', () => {
     const wrapper = factory();
     expect(wrapper.isVueInstance()).toBeTruthy();
@@ -68,6 +68,6 @@ describe('recipes', () => {
   });
 
   test('head', () => {
-    expect(recipes.head()).toBeTruthy();
+    expect(Component.head()).toBeTruthy();
   });
 });
