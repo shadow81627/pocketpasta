@@ -3,7 +3,7 @@
     <h1>{{ product.name }}</h1>
     <p>{{ product.description }}</p>
 
-    <img
+    <b-img-lazy
       v-if="product.image"
       :src="product.image"
       class="img-fluid mx-auto d-block"

@@ -14,7 +14,7 @@
         :poster="recipe.video[0].thumbnailUrl"
       />
     </div>
-    <img
+    <b-img-lazy
       v-else-if="recipe.image"
       :src="recipe.image"
       class="img-fluid mx-auto d-block"

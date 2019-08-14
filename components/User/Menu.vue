@@ -3,7 +3,7 @@
     <template v-slot:activator="{ on }">
       <v-btn v-if="$auth.loggedIn" icon large aria-label="avatar" v-on="on">
         <v-avatar size="32px" tile>
-          <img
+          <b-img-lazy
             v-if="$auth.user.picture"
             :src="$auth.user.picture"
             width="32"
@@ -31,7 +31,11 @@
         <nuxt-link to="/profile">
           <v-list-item avatar tile>
             <v-list-item-avatar>
-              <img :src="$auth.user.picture" alt="avatar" class="rounded" />
+              <b-img-lazy
+                :src="$auth.user.picture"
+                alt="avatar"
+                class="rounded"
+              />
             </v-list-item-avatar>
 
             <v-list-item-content>

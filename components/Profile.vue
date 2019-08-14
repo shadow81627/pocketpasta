@@ -2,7 +2,7 @@
   <v-list>
     <v-list-tile avatar>
       <v-list-tile-avatar tile>
-        <img :src="$auth.user.picture" alt="avatar" class="rounded" />
+        <b-img-lazy :src="$auth.user.picture" alt="avatar" class="rounded" />
       </v-list-tile-avatar>
 
       <v-list-tile-content>
