@@ -7,67 +7,58 @@
 
 ## [0.10.7](https://github.com/shadow81627/pocketpasta/compare/v0.10.6...v0.10.7) (2019-08-13)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency nuxt-i18n to v6.0.1 ([33a90f7](https://github.com/shadow81627/pocketpasta/commit/33a90f7))
+- **deps:** update dependency nuxt-i18n to v6.0.1 ([33a90f7](https://github.com/shadow81627/pocketpasta/commit/33a90f7))
 
 ## [0.10.6](https://github.com/shadow81627/pocketpasta/compare/v0.10.5...v0.10.6) (2019-08-12)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency bootstrap-vue to v2.0.0-rc.28 ([e97cc3f](https://github.com/shadow81627/pocketpasta/commit/e97cc3f))
+- **deps:** update dependency bootstrap-vue to v2.0.0-rc.28 ([e97cc3f](https://github.com/shadow81627/pocketpasta/commit/e97cc3f))
 
 ## [0.10.5](https://github.com/shadow81627/pocketpasta/compare/v0.10.4...v0.10.5) (2019-08-10)
 
-
 ### Bug Fixes
 
-* **headings:** wrap h1 in column ([9fb8176](https://github.com/shadow81627/pocketpasta/commit/9fb8176))
+- **headings:** wrap h1 in column ([9fb8176](https://github.com/shadow81627/pocketpasta/commit/9fb8176))
 
 ## [0.10.4](https://github.com/shadow81627/pocketpasta/compare/v0.10.3...v0.10.4) (2019-08-09)
 
-
 ### Bug Fixes
 
-* **contact:** set primary text for contrast ([98d7c87](https://github.com/shadow81627/pocketpasta/commit/98d7c87))
+- **contact:** set primary text for contrast ([98d7c87](https://github.com/shadow81627/pocketpasta/commit/98d7c87))
 
 ## [0.10.3](https://github.com/shadow81627/pocketpasta/compare/v0.10.2...v0.10.3) (2019-08-09)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency @nuxtjs/vuetify to v1 ([#272](https://github.com/shadow81627/pocketpasta/issues/272)) ([d3ccdd0](https://github.com/shadow81627/pocketpasta/commit/d3ccdd0))
+- **deps:** update dependency @nuxtjs/vuetify to v1 ([#272](https://github.com/shadow81627/pocketpasta/issues/272)) ([d3ccdd0](https://github.com/shadow81627/pocketpasta/commit/d3ccdd0))
 
 ## [0.10.2](https://github.com/shadow81627/pocketpasta/compare/v0.10.1...v0.10.2) (2019-08-09)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency firebase to v6.3.5 ([9ad618b](https://github.com/shadow81627/pocketpasta/commit/9ad618b))
+- **deps:** update dependency firebase to v6.3.5 ([9ad618b](https://github.com/shadow81627/pocketpasta/commit/9ad618b))
 
 ## [0.10.1](https://github.com/shadow81627/pocketpasta/compare/v0.10.0...v0.10.1) (2019-08-01)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency firebase to v6.3.4 ([a3ba02d](https://github.com/shadow81627/pocketpasta/commit/a3ba02d))
+- **deps:** update dependency firebase to v6.3.4 ([a3ba02d](https://github.com/shadow81627/pocketpasta/commit/a3ba02d))
 
 # [0.10.0](https://github.com/shadow81627/pocketpasta/compare/v0.9.9...v0.10.0) (2019-07-27)
 
-
 ### Bug Fixes
 
-* **product:** move additionalProterty to top level ([713e3e4](https://github.com/shadow81627/pocketpasta/commit/713e3e4))
-* **recipe:** remove $ from price ([8a3c63b](https://github.com/shadow81627/pocketpasta/commit/8a3c63b))
-* **recipies:** add diet ([6920101](https://github.com/shadow81627/pocketpasta/commit/6920101))
-
+- **product:** move additionalProterty to top level ([713e3e4](https://github.com/shadow81627/pocketpasta/commit/713e3e4))
+- **recipe:** remove \$ from price ([8a3c63b](https://github.com/shadow81627/pocketpasta/commit/8a3c63b))
+- **recipies:** add diet ([6920101](https://github.com/shadow81627/pocketpasta/commit/6920101))
 
 ### Features
 
-* **nutrition:** add microdata ([ca7f821](https://github.com/shadow81627/pocketpasta/commit/ca7f821))
-* **product:** add nutrition facts table ([7bc161d](https://github.com/shadow81627/pocketpasta/commit/7bc161d))
+- **nutrition:** add microdata ([ca7f821](https://github.com/shadow81627/pocketpasta/commit/ca7f821))
+- **product:** add nutrition facts table ([7bc161d](https://github.com/shadow81627/pocketpasta/commit/7bc161d))
 
 ## [0.9.9](https://github.com/shadow81627/pocketpasta/compare/v0.9.8...v0.9.9) (2019-07-26)
 
