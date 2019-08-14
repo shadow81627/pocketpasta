@@ -1,3 +1,10 @@
+# [0.11.0](https://github.com/shadow81627/pocketpasta/compare/v0.10.7...v0.11.0) (2019-08-14)
+
+
+### Features
+
+* **product:** add offers ([819cee7](https://github.com/shadow81627/pocketpasta/commit/819cee7))
+
 ## [0.10.7](https://github.com/shadow81627/pocketpasta/compare/v0.10.6...v0.10.7) (2019-08-13)
 
 
