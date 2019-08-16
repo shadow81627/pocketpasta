@@ -46,7 +46,7 @@
         class="list-group-flush"
       >
         <span class="list-group-item">
-          <a :href="offer.url" target="_blank" itemprop="url">
+          <a :href="offer.url" target="_blank" itemprop="url" rel="noopener">
             <span itemprop="offeredBy">{{ offer.offeredBy }}</span></a
           >
           <span itemprop="price">{{
