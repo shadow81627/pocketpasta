@@ -1,3 +1,10 @@
+## [0.11.2](https://github.com/shadow81627/pocketpasta/compare/v0.11.1...v0.11.2) (2019-08-16)
+
+
+### Performance Improvements
+
+* **product:** add rel="noopener" for ([b0f42e9](https://github.com/shadow81627/pocketpasta/commit/b0f42e9))
+
 ## [0.11.1](https://github.com/shadow81627/pocketpasta/compare/v0.11.0...v0.11.1) (2019-08-15)
 
 
