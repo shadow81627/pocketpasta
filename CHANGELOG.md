@@ -1,3 +1,10 @@
+## [0.11.5](https://github.com/shadow81627/pocketpasta/compare/v0.11.4...v0.11.5) (2019-08-17)
+
+
+### Bug Fixes
+
+* **deps:** update dependency quicklink to v1.0.1 ([5330e09](https://github.com/shadow81627/pocketpasta/commit/5330e09))
+
 ## [0.11.4](https://github.com/shadow81627/pocketpasta/compare/v0.11.3...v0.11.4) (2019-08-17)
 
 
