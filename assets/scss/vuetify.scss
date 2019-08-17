@@ -1,0 +1,13 @@
+// assets/variables.scss
+@import '~vuetify/src/styles/styles.sass';
+
+$grid-breakpoints: map-merge(
+  $grid-breakpoints,
+  (
+    'xs': 0,
+    'sm': 576px,
+    'md': 768px,
+    'lg': 992px,
+    'xl': 1200px,
+  )
+);
