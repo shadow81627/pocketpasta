@@ -1,3 +1,10 @@
+## [0.11.4](https://github.com/shadow81627/pocketpasta/compare/v0.11.3...v0.11.4) (2019-08-17)
+
+
+### Bug Fixes
+
+* **list view select:** align right center ([2b92d1c](https://github.com/shadow81627/pocketpasta/commit/2b92d1c))
+
 ## [0.11.3](https://github.com/shadow81627/pocketpasta/compare/v0.11.2...v0.11.3) (2019-08-17)
 
 
