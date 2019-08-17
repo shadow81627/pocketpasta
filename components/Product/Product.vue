@@ -1,15 +1,26 @@
 <template>
   <div class="product" itemscope itemtype="http://schema.org/Product">
-    <h1 itemprop="name">{{ product.name }}</h1>
-    <p>{{ product.description }}</p>
-
-    <b-img-lazy
-      v-if="product.image"
-      :src="product.image"
-      class="img-fluid mx-auto d-block"
-      :alt="product.name"
-      itemprop="image"
-    />
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <h1 itemprop="name">{{ product.name }}</h1>
+        <p itemprop="description">{{ product.description }}</p>
+      </div>
+      <div class="col-12 col-md-6">
+        <b-img-lazy
+          v-if="product.image"
+          :src="product.image"
+          class="img-fluid mx-auto d-block"
+          :alt="product.name"
+          itemprop="image"
+        />
+      </div>
+    </div>
+    <!-- <div class="row d-block d-md-none">
+      <div class="col-12">
+        <h1 itemprop="name">{{ product.name }}</h1>
+        <p itemprop="description">{{ product.description }}</p>
+      </div>
+    </div> -->
 
     <share class="py-4" />
 
