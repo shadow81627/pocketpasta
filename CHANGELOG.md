@@ -1,3 +1,10 @@
+## [0.11.3](https://github.com/shadow81627/pocketpasta/compare/v0.11.2...v0.11.3) (2019-08-17)
+
+
+### Bug Fixes
+
+* **vuetify:** set breakpoints same as bootstrap ([ff1b297](https://github.com/shadow81627/pocketpasta/commit/ff1b297))
+
 ## [0.11.2](https://github.com/shadow81627/pocketpasta/compare/v0.11.1...v0.11.2) (2019-08-16)
 
 
