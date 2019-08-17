@@ -4,7 +4,9 @@
       <div class="col-auto mr-auto">
         <h1>{{ heading }}</h1>
       </div>
-      <div class="col-auto"><view-switcher v-model="layout" /></div>
+      <div class="col-auto ml-auto my-auto">
+        <view-switcher v-model="layout" />
+      </div>
     </div>
     <div class="row">
       <div class="col-12">
