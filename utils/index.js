@@ -7,24 +7,22 @@
  * @param keys An array of property names (strings) to remove
  */
 function removeKeys(obj, keys) {
-  let index;
-  for (const prop in obj) {
+  for (const property in obj) {
     // important check that this is objects own property
     // not from prototype prop inherited
-    if (Object.prototype.hasOwnProperty.call(obj, prop)) {
-      switch (typeof obj[prop]) {
+    const hasProperty = Object.prototype.hasOwnProperty.call(obj, property);
+    if (hasProperty) {
+      switch (typeof obj[property]) {
         case 'string':
-          index = keys.indexOf(prop);
-          if (index > -1) {
-            delete obj[prop];
+          if (keys.includes(property)) {
+            delete obj[property];
           }
           break;
         case 'object':
-          index = keys.indexOf(prop);
-          if (index > -1) {
-            delete obj[prop];
+          if (keys.includes(property)) {
+            delete obj[property];
           } else {
-            removeKeys(obj[prop], keys);
+            removeKeys(obj[property], keys);
           }
           break;
       }
