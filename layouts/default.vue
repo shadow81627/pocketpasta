@@ -159,11 +159,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
-@import url('~/assets/css/font.css');
-
-@import '~/assets/scss/custom.scss';
-
+<style>
 .brand {
   font-family: 'Comic Neue', sans-serif;
 }

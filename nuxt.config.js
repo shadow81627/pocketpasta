@@ -161,7 +161,7 @@ module.exports = {
   /*
    ** Global CSS
    */
-  css: [],
+  css: ['~/assets/scss/custom.scss', '~/assets/css/font.css'],
 
   /*
    ** Plugins to load before mounting the App
@@ -274,7 +274,7 @@ module.exports = {
    */
   build: {
     // move component styles into css files
-    // extractCSS: true,
+    extractCSS: true,
     /*
      ** You can extend webpack config here
      */
