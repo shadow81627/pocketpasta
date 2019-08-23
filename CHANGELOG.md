@@ -1,3 +1,10 @@
+## [0.11.12](https://github.com/shadow81627/pocketpasta/compare/v0.11.11...v0.11.12) (2019-08-23)
+
+
+### Bug Fixes
+
+* **css:** remove vuetify.scss ([a9576fd](https://github.com/shadow81627/pocketpasta/commit/a9576fd))
+
 ## [0.11.11](https://github.com/shadow81627/pocketpasta/compare/v0.11.10...v0.11.11) (2019-08-23)
 
 
