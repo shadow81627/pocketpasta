@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`index renders properly 1`] = `
-"<div label=\\"Job Title\\" value=\\"Full Stack Web Developer\\"><section><v-parallax-stub height=\\"600\\" alt=\\"\\" src=\\"https://res.cloudinary.com/pocketpasta/image/upload/c_fit,f_auto,q_auto,w_2200/v1559982334/hero_rko6us.jpg\\"><v-layout-stub tag=\\"div\\" column=\\"\\" align-center=\\"\\" justify-center=\\"\\" class=\\"white--text\\"><b-img-lazy src=\\"https://res.cloudinary.com/pocketpasta/image/upload/c_fit,f_auto,q_auto,w_200/v1560038491/logo_vlqvdr.png\\" alt=\\"Pasta on a sheet of paper\\" width=\\"200\\"></b-img-lazy> <h1 class=\\"brand white--text mb-2 text-xs-center\\">
+"<div label=\\"Job Title\\" value=\\"Full Stack Web Developer\\"><section><v-parallax-stub height=\\"600\\" alt=\\"\\" src=\\"https://res.cloudinary.com/pocketpasta/image/upload/c_fit,f_auto,q_auto,w_2200/v1559982334/hero_rko6us.jpg\\"><v-layout-stub tag=\\"div\\" column=\\"\\" align-center=\\"\\" justify-center=\\"\\" class=\\"white--text\\"><b-img-lazy-stub src=\\"https://res.cloudinary.com/pocketpasta/image/upload/c_fit,f_auto,q_auto,w_200/v1560038491/logo_vlqvdr.png\\" alt=\\"Pasta on a sheet of paper\\" width=\\"200\\" blankcolor=\\"transparent\\" offset=\\"360\\" throttle=\\"100\\"></b-img-lazy-stub> <h1 class=\\"brand white--text mb-2 text-xs-center\\">
           PocketPasta
         </h1> <div class=\\"subheading mb-3 text-xs-center\\">
           landing.banner.subheading
