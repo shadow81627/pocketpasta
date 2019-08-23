@@ -220,8 +220,8 @@ module.exports = {
   },
 
   vuetify: {
-    optionsPath: '~/vuetify.options.js',
-    customVariables: ['~/assets/scss/vuetify.scss'],
+    // optionsPath: '~/vuetify.options.js',
+    // customVariables: ['~/assets/scss/vuetify.scss'],
     treeShake: true,
     theme: { disable: true },
     defaultAssets: {
