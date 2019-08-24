@@ -178,6 +178,7 @@ module.exports = {
     '@nuxtjs/axios',
     '@nuxtjs/auth',
     '@nuxtjs/dotenv',
+    '@nuxtjs/eslint-module',
     '@nuxtjs/google-analytics',
     '@nuxtjs/pwa',
     '@nuxtjs/recaptcha',
@@ -194,6 +195,11 @@ module.exports = {
     // Simple usage
     '@nuxtjs/vuetify',
   ],
+
+  eslint: {
+    /* module options */
+    cache: true,
+  },
 
   recaptcha: {
     // Hide badge element (v3)
