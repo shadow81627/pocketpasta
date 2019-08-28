@@ -8,14 +8,14 @@
     >
       <v-list dense>
         <template v-for="item in items">
-          <v-layout v-if="item.heading" :key="item.heading" row align-center>
-            <v-flex xs6>
+          <v-row v-if="item.heading" :key="item.heading" align="center">
+            <v-col col="6">
               <v-subheader v-if="item.heading">{{ item.heading }}</v-subheader>
-            </v-flex>
-            <v-flex xs6 class="text-xs-center">
+            </v-col>
+            <v-col col="6" class="text-center">
               <a href="#!" class="body-2 black--text">EDIT</a>
-            </v-flex>
-          </v-layout>
+            </v-col>
+          </v-row>
           <v-list-group
             v-else-if="item.children"
             :key="item.text"

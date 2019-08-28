@@ -11,13 +11,13 @@
             alt="Pasta on a sheet of paper"
             width="200"
           />
-          <h1 class="brand white--text mb-2 text-xs-center">
+          <h1 class="brand white--text mb-2 text-center">
             PocketPasta
           </h1>
-          <div class="subheading mb-3 text-xs-center">
+          <div class="subheading mb-3 text-center">
             {{ $t('landing.banner.subheading') }}
           </div>
-          <!-- <v-btn class="blue lighten-2 mt-5" dark large href="/pre-made-themes">
+          <!-- <v-btn class="mt-5" dark large href="/pre-made-themes">
             Get Started
           </v-btn> -->
           <credit style="position:absolute;right:0;bottom:0;" />
@@ -28,7 +28,7 @@
     <!-- <section>
       <v-layout column wrap class="my-5" align-center>
         <v-flex xs12 sm4 class="my-3">
-          <div class="text-xs-center">
+          <div class="text-center">
             <h2 class="headline">The best way to start developing</h2>
             <span class="subheading">
               Cras facilisis mi vitae nunc
@@ -40,13 +40,13 @@
             <v-layout row wrap align-center>
               <v-flex xs12 md4>
                 <v-card class="elevation-0 transparent">
-                  <v-card-text class="text-xs-center">
+                  <v-card-text class="text-center">
                     <v-icon x-large class="blue--text text--lighten-2"
                       >color_lens</v-icon
                     >
                   </v-card-text>
                   <v-card-title primary-title class="layout justify-center">
-                    <div class="headline text-xs-center">
+                    <div class="headline text-center">
                       Material Design
                     </div>
                   </v-card-title>
@@ -61,7 +61,7 @@
               </v-flex>
               <v-flex xs12 md4>
                 <v-card class="elevation-0 transparent">
-                  <v-card-text class="text-xs-center">
+                  <v-card-text class="text-center">
                     <v-icon x-large class="blue--text text--lighten-2"
                       >flash_on</v-icon
                     >
@@ -80,13 +80,13 @@
               </v-flex>
               <v-flex xs12 md4>
                 <v-card class="elevation-0 transparent">
-                  <v-card-text class="text-xs-center">
+                  <v-card-text class="text-center">
                     <v-icon x-large class="blue--text text--lighten-2"
                       >build</v-icon
                     >
                   </v-card-text>
                   <v-card-title primary-title class="layout justify-center">
-                    <div class="headline text-xs-center">
+                    <div class="headline text-center">
                       Completely Open Sourced
                     </div>
                   </v-card-title>
@@ -105,63 +105,15 @@
       </v-layout>
     </section> -->
 
-    <!-- <section>
-          <v-parallax src="/images/hero_75.jpg" height="380">
-            <v-layout column align-center justify-center>
-              <div class="headline white--text mb-3 text-xs-center">
-                Web development has never been easier
-              </div>
-              <em>Kick-start your application today</em>
-              <v-btn
-                class="blue lighten-2 mt-5"
-                dark
-                large
-                href="/pre-made-themes"
-              >
-                Get Started
-              </v-btn>
-            </v-layout>
-          </v-parallax>
-        </section> -->
-
     <section>
       <v-container grid-list-xl>
-        <v-layout row wrap justify-center class="my-5">
-          <v-flex xs12 sm4>
-            <v-card class="elevation-0 transparent">
-              <v-card-title primary-title class="layout justify-center">
-                <div class="headline">{{ $t('landing.info.heading') }}</div>
-              </v-card-title>
-              <!-- <v-card-text>
-                    Cras facilisis mi vitae nunc lobortis pharetra. Nulla
-                    volutpat tincidunt ornare. Pellentesque habitant morbi
-                    tristique senectus et netus et malesuada fames ac turpis
-                    egestas. Nullam in aliquet odio. Aliquam eu est vitae tellus
-                    bibendum tincidunt. Suspendisse potenti.
-                  </v-card-text> -->
-            </v-card>
-          </v-flex>
-          <v-flex xs12 sm4 offset-sm1>
+        <v-row wrap justify="center" class="my-5">
+          <v-col col="12" align-self="center">
             <v-card class="elevation-0 transparent">
               <v-card-title primary-title class="layout justify-center">
                 <div class="headline">{{ $t('landing.contact.heading') }}</div>
               </v-card-title>
-              <!-- <v-card-text>
-                    Cras facilisis mi vitae nunc lobortis pharetra. Nulla
-                    volutpat tincidunt ornare.
-                  </v-card-text> -->
               <v-list class="transparent">
-                <!-- <v-list-item>
-                      <v-list-item-action>
-                        <v-icon class="blue--text text--lighten-2"
-                          >phone</v-icon
-                        >
-                      </v-list-item-action>
-                      <v-list-item-content>
-                        <v-list-item-title>777-867-5309</v-list-item-title>
-                      </v-list-item-content>
-                    </v-list-item> -->
-
                 <v-list-item>
                   <v-list-item-action>
                     <v-icon class="text-primary">place</v-icon>
@@ -186,8 +138,8 @@
                 </v-list-item>
               </v-list>
             </v-card>
-          </v-flex>
-        </v-layout>
+          </v-col>
+        </v-row>
       </v-container>
     </section>
   </div>
@@ -195,8 +147,8 @@
 
 <script>
 import Credit from '@/components/Layout/Credit/landing-hero-image-credit';
-// @ is an alias to /src
 import linkData from '@/assets/link-data/pocketpasta.json';
+
 export default {
   layout: 'default',
   components: {
