@@ -1,3 +1,10 @@
+## [0.11.15](https://github.com/shadow81627/pocketpasta/compare/v0.11.14...v0.11.15) (2019-08-28)
+
+
+### Bug Fixes
+
+* **layout:** add padding to page content container ([b77476b](https://github.com/shadow81627/pocketpasta/commit/b77476b))
+
 ## [0.11.14](https://github.com/shadow81627/pocketpasta/compare/v0.11.13...v0.11.14) (2019-08-27)
 
 
