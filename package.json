@@ -102,7 +102,7 @@
     "prettier": "1.18.2",
     "pretty-quick": "1.11.1",
     "sass": "1.22.10",
-    "sass-loader": "7.3.1",
+    "sass-loader": "8.0.0",
     "semantic-release": "15.13.24",
     "snyk": "1.221.1",
     "vue-jest": "3.0.4",
