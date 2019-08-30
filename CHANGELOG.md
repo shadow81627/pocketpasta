@@ -1,3 +1,10 @@
+## [0.11.18](https://github.com/shadow81627/pocketpasta/compare/v0.11.17...v0.11.18) (2019-08-30)
+
+
+### Bug Fixes
+
+* **layout:** set cols on nav item heading ([011dae8](https://github.com/shadow81627/pocketpasta/commit/011dae8))
+
 ## [0.11.17](https://github.com/shadow81627/pocketpasta/compare/v0.11.16...v0.11.17) (2019-08-29)
 
 
