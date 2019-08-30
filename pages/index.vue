@@ -106,7 +106,7 @@
     </section> -->
 
     <section>
-      <v-container grid-list-xl>
+      <v-container>
         <v-row wrap justify="center" class="my-5">
           <v-col col="12" align-self="center">
             <v-card class="elevation-0 transparent">
