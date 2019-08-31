@@ -1,9 +1,9 @@
-const config = require('dotenv').config({
-  debug: true,
-});
+// const config = require('dotenv').config({
+//   debug: true,
+// });
 const pkg = require('./package');
 
-console.log(config);
+// console.log(config);
 
 const routes = [
   '/',
