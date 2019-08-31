@@ -256,7 +256,7 @@ module.exports = {
     // Enter your project's DSN here
     dsn: 'https://46d059ea02a240dfbb89bfaa4926f463@sentry.io/1411042',
     // enable sentry-webpack-plugin used to send releases to Sentry
-    publishRelease: true,
+    // publishRelease: true,
     disabled: process.env.NODE_ENV !== 'production',
   },
 
