@@ -2,7 +2,7 @@ import damien from '@/assets/link-data/damien.json';
 
 import recipes from '@/assets/link-data/recipes';
 
-import tomatoes from '@/assets/link-data/products/tomatoes.json';
+import products from '@/assets/link-data/products';
 
 import themes from '@/assets/themes';
 
@@ -15,7 +15,7 @@ export const state = () => ({
       'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css',
   },
   recipes,
-  products: [{ ...tomatoes, id: 1 }],
+  products,
   damien,
 });
 
