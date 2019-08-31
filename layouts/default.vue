@@ -54,7 +54,6 @@
             :to="localePath(item.route ? item.route : {})"
             active-class="btn-primary pointer-events-none"
             nuxt
-            exact
             class="text-decoration-none"
           >
             <v-list-item-action>
@@ -115,11 +114,11 @@ export default {
   computed: {
     items() {
       return [
-        {
-          icon: 'home',
-          text: this.$t('layout.navigation.home'),
-          route: { name: 'index' },
-        },
+        // {
+        //   icon: 'home',
+        //   text: this.$t('layout.navigation.home'),
+        //   route: { name: 'index' },
+        // },
         {
           icon: 'info',
           text: this.$t('layout.navigation.about'),
