@@ -1,8 +1,9 @@
+const config = require('dotenv').config({
+  debug: true,
+});
 const pkg = require('./package');
 
-require('dotenv').config();
-
-console.log(process.env.NODE_ENV);
+console.log(config);
 
 const routes = [
   '/',
@@ -199,6 +200,10 @@ module.exports = {
     // Simple usage
     '@nuxtjs/vuetify',
   ],
+
+  dotenv: {
+    systemvars: true,
+  },
 
   eslint: {
     /* module options */

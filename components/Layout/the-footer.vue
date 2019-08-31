@@ -21,7 +21,7 @@
 export default {
   data: () => ({
     version: process.env.VERSION,
-    commit: process.env.COMMIT,
+    commit: process.env.COMMIT || process.env.TRAVIS_COMMIT,
   }),
 };
 </script>
