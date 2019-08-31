@@ -1,3 +1,10 @@
+## [0.11.19](https://github.com/shadow81627/pocketpasta/compare/v0.11.18...v0.11.19) (2019-08-31)
+
+
+### Bug Fixes
+
+* **product:** update spaghetti protein ([e000b68](https://github.com/shadow81627/pocketpasta/commit/e000b68))
+
 ## [0.11.18](https://github.com/shadow81627/pocketpasta/compare/v0.11.17...v0.11.18) (2019-08-30)
 
 
