@@ -5,23 +5,26 @@
         src="https://res.cloudinary.com/pocketpasta/image/upload/c_fit,f_auto,q_auto,w_2200/v1559982334/hero_rko6us.jpg"
         height="600"
       >
-        <v-layout column align-center justify-center class="white--text">
-          <b-img-lazy
-            src="https://res.cloudinary.com/pocketpasta/image/upload/c_fit,f_auto,q_auto,w_200/v1560038491/logo_vlqvdr.png"
-            alt="Pasta on a sheet of paper"
-            width="200"
-          />
-          <h1 class="brand white--text mb-2 text-center">
-            PocketPasta
-          </h1>
-          <div class="subheading mb-3 text-center">
-            {{ $t('landing.banner.subheading') }}
-          </div>
-          <!-- <v-btn class="mt-5" dark large href="/pre-made-themes">
+        <v-row align="center" justify="center" class="white--text">
+          <v-col>
+            <b-img-lazy
+              src="https://res.cloudinary.com/pocketpasta/image/upload/c_fit,f_auto,q_auto,w_200/v1560038491/logo_vlqvdr.png"
+              alt="Pasta on a sheet of paper"
+              width="200"
+              center
+            />
+            <h1 class="brand white--text mb-2 text-center">
+              PocketPasta
+            </h1>
+            <div class="subheading mb-3 text-center">
+              {{ $t('landing.banner.subheading') }}
+            </div>
+            <!-- <v-btn class="mt-5" dark large href="/pre-made-themes">
             Get Started
           </v-btn> -->
+          </v-col>
           <credit style="position:absolute;right:0;bottom:0;" />
-        </v-layout>
+        </v-row>
       </v-parallax>
     </section>
 
@@ -107,8 +110,8 @@
 
     <section>
       <v-container>
-        <v-row wrap justify="center" class="my-5">
-          <v-col col="12" align-self="center">
+        <v-row justify="center" class="my-5">
+          <v-col cols="12" align-self="center">
             <v-card class="elevation-0 transparent">
               <v-card-title primary-title class="layout justify-center">
                 <div class="headline">{{ $t('landing.contact.heading') }}</div>
