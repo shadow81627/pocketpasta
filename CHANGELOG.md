@@ -1,3 +1,10 @@
+## [0.11.21](https://github.com/shadow81627/pocketpasta/compare/v0.11.20...v0.11.21) (2019-09-01)
+
+
+### Bug Fixes
+
+* **deps:** update dependency nuxt to v2.9.2 ([b986e3e](https://github.com/shadow81627/pocketpasta/commit/b986e3e))
+
 ## [0.11.20](https://github.com/shadow81627/pocketpasta/compare/v0.11.19...v0.11.20) (2019-08-31)
 
 
