@@ -1,5 +1,6 @@
 import { shallowMount, createLocalVue } from '@vue/test-utils';
 import Vuex from 'vuex';
+import BootstrapVuePlugin from 'bootstrap-vue';
 import Recipe from '@/components/Recipe/Recipe';
 // import VueRouter from 'vue-router';
 
@@ -9,6 +10,7 @@ const localVue = createLocalVue();
 
 localVue.use(Vuex);
 // localVue.use(VueRouter);
+localVue.use(BootstrapVuePlugin);
 
 // const router = new VueRouter();
 
