@@ -1,3 +1,10 @@
+## [0.11.23](https://github.com/shadow81627/pocketpasta/compare/v0.11.22...v0.11.23) (2019-09-05)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @nuxtjs/auth to v4.8.2 ([4010172](https://github.com/shadow81627/pocketpasta/commit/4010172))
+
 ## [0.11.22](https://github.com/shadow81627/pocketpasta/compare/v0.11.21...v0.11.22) (2019-09-04)
 
 
