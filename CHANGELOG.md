@@ -1,3 +1,10 @@
+## [0.11.25](https://github.com/shadow81627/pocketpasta/compare/v0.11.24...v0.11.25) (2019-09-06)
+
+
+### Bug Fixes
+
+* add X-Frame-Options header to avoid clickjacking attacks ([2b71b37](https://github.com/shadow81627/pocketpasta/commit/2b71b37))
+
 ## [0.11.24](https://github.com/shadow81627/pocketpasta/compare/v0.11.23...v0.11.24) (2019-09-06)
 
 
