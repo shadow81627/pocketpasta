@@ -12,6 +12,7 @@
               alt="Pasta on a sheet of paper"
               width="200"
               center
+              throttle="100"
             />
             <h1 class="brand white--text mb-2 text-center">
               PocketPasta

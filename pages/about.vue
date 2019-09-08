@@ -20,6 +20,7 @@
             class="img-fluid mx-auto d-block"
             alt="Typing monkey"
             src="https://cdn-images-1.medium.com/max/600/1*6BIIyDspOhlLYW5ZiK6b1Q.jpeg"
+            throttle="100"
           />
         </template>
         <template #column-2>
@@ -53,6 +54,7 @@
             class="img-fluid mx-auto d-block"
             alt="Spaghetti suddenly falls out Pepe"
             src="https://i.kym-cdn.com/photos/images/original/001/182/064/60a.jpg"
+            throttle="100"
           />
         </template>
       </two-by-one>

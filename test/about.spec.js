@@ -1,12 +1,13 @@
 import { shallowMount, createLocalVue, RouterLinkStub } from '@vue/test-utils';
 import Vuex from 'vuex';
+import BootstrapVuePlugin from 'bootstrap-vue';
 import VueRouter from 'vue-router';
 import about from '@/pages/about.vue';
 
 const localVue = createLocalVue();
 
 localVue.use(Vuex);
-
+localVue.use(BootstrapVuePlugin);
 localVue.use(VueRouter);
 
 const router = new VueRouter();

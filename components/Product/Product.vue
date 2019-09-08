@@ -12,6 +12,7 @@
           class="img-fluid mx-auto d-block"
           :alt="product.name"
           itemprop="image"
+          throttle="100"
         />
       </div>
     </div>
