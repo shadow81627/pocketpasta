@@ -1,12 +1,18 @@
-import { shallowMount, createLocalVue } from '@vue/test-utils';
+import { shallowMount, createLocalVue, RouterLinkStub } from '@vue/test-utils';
 import Vuex from 'vuex';
+import BootstrapVuePlugin from 'bootstrap-vue';
 import Vuetify from 'vuetify';
+import VueRouter from 'vue-router';
 import Component from '@/components/User/Menu';
 
 const localVue = createLocalVue();
 
 localVue.use(Vuex);
+localVue.use(BootstrapVuePlugin);
 localVue.use(Vuetify);
+localVue.use(VueRouter);
+
+const router = new VueRouter();
 
 describe('Menu', () => {
   let getters;
@@ -37,6 +43,10 @@ describe('Menu', () => {
     shallowMount(Component, {
       store,
       localVue,
+      router,
+      stubs: {
+        NuxtLink: RouterLinkStub,
+      },
       mocks: {
         $auth: {
           loggedIn: () => true,

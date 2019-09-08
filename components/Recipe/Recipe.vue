@@ -19,8 +19,8 @@
       :src="recipe.image"
       class="img-fluid mx-auto d-block"
       :alt="recipe.name"
-      itemprop="image"
       throttle="100"
+      itemprop="image"
     />
     <!-- <p>Author: {{ recipe.author }}</p> -->
     <!-- <p>Published: {{ recipe.datePublished }}</p> -->
