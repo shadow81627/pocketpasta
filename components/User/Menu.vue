@@ -35,6 +35,7 @@
               <b-img-lazy
                 :src="$auth.user.picture"
                 alt="avatar"
+                throttle="100"
                 class="rounded"
               />
             </v-list-item-avatar>
