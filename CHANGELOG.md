@@ -1,3 +1,15 @@
+## [0.11.27](https://github.com/shadow81627/pocketpasta/compare/v0.11.26...v0.11.27) (2019-09-08)
+
+
+### Bug Fixes
+
+* **viewport:** add shrink-to-fit=no ([787266f](https://github.com/shadow81627/pocketpasta/commit/787266f))
+
+
+### Performance Improvements
+
+* **bootstrap:** remove default style cdn ([9d65c6d](https://github.com/shadow81627/pocketpasta/commit/9d65c6d))
+
 ## [0.11.26](https://github.com/shadow81627/pocketpasta/compare/v0.11.25...v0.11.26) (2019-09-08)
 
 
