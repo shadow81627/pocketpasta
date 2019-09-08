@@ -2,7 +2,8 @@
 @import '~bootstrap/scss/variables';
 @import '~bootstrap/scss/mixins';
 
-// @import '~bootstrap/scss/bootstrap.scss';
+// Include Bootstrap and BootstrapVue SCSS files
+@import '~bootstrap/scss/bootstrap.scss';
 @import '~bootstrap-vue/src/index.scss';
 
 @import '~bootstrap/scss/mixins/_breakpoints';

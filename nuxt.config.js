@@ -114,11 +114,6 @@ module.exports = {
       },
       {
         rel: 'preconnect',
-        href: 'https://stackpath.bootstrapcdn.com',
-        crossorigin: 'anonymous',
-      },
-      {
-        rel: 'preconnect',
         href: 'https://stats.g.doubleclick.net',
         crossorigin: 'anonymous',
       },
@@ -248,7 +243,7 @@ module.exports = {
 
   bootstrapVue: {
     bootstrapCSS: false, // or `css`
-    bootstrapVueCSS: true, // or `bvCSS`
+    bootstrapVueCSS: false, // or `bvCSS`
     componentPlugins: ['Image', 'FormSelect', 'Card'],
     directivePlugins: ['Tooltip'],
   },

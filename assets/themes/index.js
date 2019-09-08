@@ -2,8 +2,7 @@ export default [
   {
     dark: false,
     value: 'default',
-    href:
-      'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css',
+    href: '',
   },
   {
     dark: false,
