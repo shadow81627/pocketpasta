@@ -23,11 +23,10 @@ export default {
     return {
       script: [
         {
-          innerHTML: JSON.stringify(damien),
+          json: damien,
           type: 'application/ld+json',
         },
       ],
-      __dangerouslyDisableSanitizers: ['script'],
     };
   },
 };

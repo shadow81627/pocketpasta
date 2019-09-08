@@ -100,11 +100,10 @@ export default {
     return {
       script: [
         {
-          innerHTML: JSON.stringify(this.damien),
+          json: this.damien,
           type: 'application/ld+json',
         },
       ],
-      __dangerouslyDisableSanitizers: ['script'],
       link: [
         {
           hid: 'canonical',

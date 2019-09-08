@@ -116,11 +116,10 @@ export default {
     return {
       script: [
         {
-          innerHTML: JSON.stringify(this.product),
+          json: this.product,
           type: 'application/ld+json',
         },
       ],
-      __dangerouslyDisableSanitizers: ['script'],
     };
   },
 };

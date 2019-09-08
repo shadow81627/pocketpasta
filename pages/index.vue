@@ -162,11 +162,10 @@ export default {
     return {
       script: [
         {
-          innerHTML: JSON.stringify(linkData),
+          json: linkData,
           type: 'application/ld+json',
         },
       ],
-      __dangerouslyDisableSanitizers: ['script'],
       link: [
         {
           hid: 'canonical',

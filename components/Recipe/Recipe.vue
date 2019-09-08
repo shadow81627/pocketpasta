@@ -89,11 +89,10 @@ export default {
     return {
       script: [
         {
-          innerHTML: JSON.stringify(this.recipe),
+          json: this.recipe,
           type: 'application/ld+json',
         },
       ],
-      __dangerouslyDisableSanitizers: ['script'],
     };
   },
 };
