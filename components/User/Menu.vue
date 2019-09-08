@@ -11,6 +11,7 @@
             class="rounded"
             alt="avatar"
             onerror="javascript:this.style.display = 'none'"
+            throttle="100"
           />
         </v-avatar>
       </v-btn>
