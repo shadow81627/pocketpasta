@@ -48,7 +48,7 @@
     "firebase": "6.6.1",
     "koa": "2.8.1",
     "nuxt": "2.9.2",
-    "nuxt-i18n": "6.2.0",
+    "nuxt-i18n": "6.2.1",
     "nuxt-webfontloader": "1.1.0",
     "quicklink": "1.0.1"
   },
