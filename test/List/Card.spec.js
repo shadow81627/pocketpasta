@@ -3,6 +3,8 @@ import Vuex from 'vuex';
 import BootstrapVuePlugin from 'bootstrap-vue';
 import Component from '@/components/List/Card';
 
+import recipe from '@/assets/link-data/recipes/spaghetti.json';
+
 const localVue = createLocalVue();
 
 localVue.use(Vuex);
@@ -11,6 +13,7 @@ localVue.use(BootstrapVuePlugin);
 describe('List Card', () => {
   const factory = () =>
     shallowMount(Component, {
+      propsData: { ...recipe },
       localVue,
       stubs: {
         NuxtLink: RouterLinkStub,
