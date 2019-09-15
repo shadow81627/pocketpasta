@@ -1,3 +1,10 @@
+## [0.11.35](https://github.com/shadow81627/pocketpasta/compare/v0.11.34...v0.11.35) (2019-09-15)
+
+
+### Bug Fixes
+
+* **list card:** set link path append id as string ([d4774eb](https://github.com/shadow81627/pocketpasta/commit/d4774eb))
+
 ## [0.11.34](https://github.com/shadow81627/pocketpasta/compare/v0.11.33...v0.11.34) (2019-09-15)
 
 
