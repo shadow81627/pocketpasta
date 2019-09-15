@@ -1,3 +1,10 @@
+## [0.11.34](https://github.com/shadow81627/pocketpasta/compare/v0.11.33...v0.11.34) (2019-09-15)
+
+
+### Bug Fixes
+
+* **list card:** use params for link ([49523f5](https://github.com/shadow81627/pocketpasta/commit/49523f5))
+
 ## [0.11.33](https://github.com/shadow81627/pocketpasta/compare/v0.11.32...v0.11.33) (2019-09-13)
 
 
