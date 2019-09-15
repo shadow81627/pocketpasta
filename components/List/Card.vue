@@ -1,6 +1,6 @@
 <template>
   <nuxt-link
-    :to="localePath({ params: { id } })"
+    :to="{ path: `${id}` }"
     tag="b-card"
     no-body
     class="overflow-hidden rounded-0"
