@@ -192,7 +192,7 @@ module.exports = {
     '@nuxtjs/sitemap',
   ],
 
-  devModules: [
+  buildModules: [
     // Simple usage
     '@nuxtjs/vuetify',
   ],
