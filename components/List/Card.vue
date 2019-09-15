@@ -1,6 +1,6 @@
 <template>
   <nuxt-link
-    :to="localePath({ path: id })"
+    :to="localePath({ params: { id } })"
     tag="b-card"
     no-body
     class="overflow-hidden rounded-0"
@@ -46,12 +46,7 @@ export default {
   inheritAttrs: false,
   props: {
     id: { type: [String, Number], required: true },
-    name: {
-      type: String,
-      default() {
-        return `Recipe: ${this.id}`;
-      },
-    },
+    name: { type: String, default: null },
     description: { type: String, default: null },
     image: { type: String, default: null },
     layout: { type: String, default: null },
