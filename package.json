@@ -54,8 +54,8 @@
   },
   "devDependencies": {
     "@babel/core": "7.6.0",
-    "@commitlint/cli": "8.1.0",
-    "@commitlint/config-conventional": "8.1.0",
+    "@commitlint/cli": "8.2.0",
+    "@commitlint/config-conventional": "8.2.0",
     "@nuxtjs/dotenv": "1.4.1",
     "@nuxtjs/eslint-config": "1.1.2",
     "@nuxtjs/eslint-module": "1.1.0",
