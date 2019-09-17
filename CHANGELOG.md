@@ -1,3 +1,10 @@
+## [0.11.36](https://github.com/shadow81627/pocketpasta/compare/v0.11.35...v0.11.36) (2019-09-17)
+
+
+### Bug Fixes
+
+* **deps:** update dependency cross-env to v6 ([6418042](https://github.com/shadow81627/pocketpasta/commit/6418042))
+
 ## [0.11.35](https://github.com/shadow81627/pocketpasta/compare/v0.11.34...v0.11.35) (2019-09-15)
 
 
