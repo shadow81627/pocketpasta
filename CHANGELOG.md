@@ -1,3 +1,15 @@
+## [0.11.38](https://github.com/shadow81627/pocketpasta/compare/v0.11.37...v0.11.38) (2019-09-19)
+
+
+### Bug Fixes
+
+* **nav:** add active class to active link ([361016f](https://github.com/shadow81627/pocketpasta/commit/361016f))
+
+
+### Performance Improvements
+
+* **theme:** remove duplicate bootstrap ([f02a731](https://github.com/shadow81627/pocketpasta/commit/f02a731))
+
 ## [0.11.37](https://github.com/shadow81627/pocketpasta/compare/v0.11.36...v0.11.37) (2019-09-17)
 
 
