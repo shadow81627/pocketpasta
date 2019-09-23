@@ -53,7 +53,7 @@
     "quicklink": "1.0.1"
   },
   "devDependencies": {
-    "@babel/core": "7.6.0",
+    "@babel/core": "7.6.2",
     "@commitlint/cli": "8.2.0",
     "@commitlint/config-conventional": "8.2.0",
     "@nuxtjs/dotenv": "1.4.1",
