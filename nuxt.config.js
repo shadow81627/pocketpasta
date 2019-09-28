@@ -70,6 +70,7 @@ module.exports = {
 
   env: {
     VERSION: pkg.version,
+    COMMIT: process.env.npm_package_gitHead,
   },
 
   /*
@@ -171,6 +172,7 @@ module.exports = {
     { src: '~/plugins/firebase.js', ssr: false },
     // { src: '~/plugins/firebase_auth.js', ssr: false },
     { src: '~/plugins/quicklink', ssr: false },
+    { src: '~/plugins/debug.js', ssr: false },
   ],
 
   /*
