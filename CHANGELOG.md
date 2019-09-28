@@ -1,3 +1,10 @@
+## [0.11.44](https://github.com/shadow81627/pocketpasta/compare/v0.11.43...v0.11.44) (2019-09-28)
+
+
+### Bug Fixes
+
+* **deps:** update dependency koa to v2.8.2 ([2f2cea7](https://github.com/shadow81627/pocketpasta/commit/2f2cea7))
+
 ## [0.11.43](https://github.com/shadow81627/pocketpasta/compare/v0.11.42...v0.11.43) (2019-09-28)
 
 
