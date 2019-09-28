@@ -69,6 +69,8 @@ module.exports = {
   },
 
   env: {
+    HOST: process.env.HOST,
+    PORT: process.env.PORT,
     VERSION: pkg.version,
     COMMIT: process.env.npm_package_gitHead,
   },
