@@ -2,6 +2,7 @@ import firebase from 'firebase/app';
 // import 'firebase/firestore';
 import 'firebase/performance';
 // import 'firebase/auth';
+import 'firebase/analytics';
 
 export default async ({ $axios, isDev }) => {
   if (!firebase.apps.length) {
@@ -19,6 +20,7 @@ export default async ({ $axios, isDev }) => {
       storageBucket:
         process.env.FIREBASE_STORAGE_BUCKET ||
         'staging-pocketpasta.appspot.com',
+      measurementId: 'G-M7TXCJEKSQ',
       messagingSenderId:
         process.env.FIREBASE_MESSAGE_SENDER_ID || '216453269763',
       appId:
@@ -28,7 +30,10 @@ export default async ({ $axios, isDev }) => {
     if (!isDev) {
       await $axios('/__/firebase/init.json')
         .then((response) => {
-          firebase.initializeApp(response.data || config);
+          firebase.initializeApp({
+            ...(response.data || config),
+            measurementId: 'G-M7TXCJEKSQ',
+          });
         })
         .catch((error) => {
           console.error("Can't fetch firebase config: ", error);
@@ -42,5 +47,6 @@ export default async ({ $axios, isDev }) => {
   // Initialize Performance Monitoring and get a reference to the service
   const performance = firebase.performance();
   // const auth = firebase.auth();
-  return { performance };
+  const analytics = firebase.analytics();
+  return { performance, analytics };
 };
