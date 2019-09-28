@@ -1,3 +1,10 @@
+## [0.11.43](https://github.com/shadow81627/pocketpasta/compare/v0.11.42...v0.11.43) (2019-09-28)
+
+
+### Bug Fixes
+
+* **axios:** https true ([ea43ace](https://github.com/shadow81627/pocketpasta/commit/ea43ace))
+
 ## [0.11.42](https://github.com/shadow81627/pocketpasta/compare/v0.11.41...v0.11.42) (2019-09-26)
 
 
