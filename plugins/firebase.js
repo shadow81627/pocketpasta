@@ -1,10 +1,10 @@
 import firebase from 'firebase/app';
 // import 'firebase/firestore';
 import 'firebase/performance';
-// import 'firebase/auth';
+import 'firebase/auth';
 import 'firebase/analytics';
 
-export default async ({ $axios, isDev }) => {
+export default async ({ $axios, isDev }, inject) => {
   if (!firebase.apps.length) {
     const config = {
       apiKey:
@@ -46,7 +46,9 @@ export default async ({ $axios, isDev }) => {
   // const firestore = firebase.firestore();
   // Initialize Performance Monitoring and get a reference to the service
   const performance = firebase.performance();
-  // const auth = firebase.auth();
+  const auth = firebase.auth;
   const analytics = firebase.analytics();
-  return { performance, analytics };
+
+  await inject('firebase', { performance, analytics, auth });
+  return { performance, analytics, auth };
 };
