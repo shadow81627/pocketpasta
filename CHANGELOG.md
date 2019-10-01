@@ -1,3 +1,10 @@
+## [0.11.45](https://github.com/shadow81627/pocketpasta/compare/v0.11.44...v0.11.45) (2019-10-01)
+
+
+### Bug Fixes
+
+* **profile:** rename v-list-tile to v-list-item ([00e5b31](https://github.com/shadow81627/pocketpasta/commit/00e5b31))
+
 ## [0.11.44](https://github.com/shadow81627/pocketpasta/compare/v0.11.43...v0.11.44) (2019-09-28)
 
 
