@@ -1,12 +1,12 @@
-import { auth } from '~/plugins/firebase.js';
-
 export default (context) => {
-  const { store } = context;
+  const { store, app } = context;
 
   return new Promise((resolve, reject) => {
-    auth.onAuthStateChanged((user) => {
+    app.$firebase.auth().onAuthStateChanged((user) => {
       if (user) {
-        return resolve(store.commit('setUser', user));
+        // return resolve(console.log(user));
+        store.dispatch('setUser', user);
+        resolve();
       }
       return resolve();
     });

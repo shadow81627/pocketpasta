@@ -7,6 +7,7 @@ import products from '@/assets/link-data/products';
 import themes from '@/assets/themes';
 
 export const state = () => ({
+  user: null,
   themes,
   theme: {
     dark: false,
@@ -33,6 +34,9 @@ export const getters = {
       dark: state.theme.dark,
     };
   },
+  getUser: (state) => {
+    return state.user;
+  },
 };
 
 export const mutations = {
@@ -41,6 +45,14 @@ export const mutations = {
     this.$auth.$storage.setUniversal('theme', theme, true);
     this.app.vuetify.framework.theme.dark = theme.dark;
   },
+  setUser(currentState, user) {
+    // stupid hack to clone the object since something is modifying it
+    return (currentState.user = JSON.parse(JSON.stringify(user)));
+  },
 };
 
-export const actions = {};
+export const actions = {
+  setUser: (context, user) => {
+    return context.commit('setUser', user);
+  },
+};

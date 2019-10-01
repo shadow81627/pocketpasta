@@ -172,7 +172,7 @@ module.exports = {
    */
   plugins: [
     { src: '~/plugins/firebase.js', ssr: false },
-    // { src: '~/plugins/firebase_auth.js', ssr: false },
+    { src: '~/plugins/firebase_auth.js', ssr: false },
     { src: '~/plugins/quicklink', ssr: false },
     { src: '~/plugins/debug.js', ssr: false },
   ],
