@@ -1,3 +1,10 @@
+## [0.11.47](https://github.com/shadow81627/pocketpasta/compare/v0.11.46...v0.11.47) (2019-10-01)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @nuxtjs/sitemap to v2 ([2f1c7bb](https://github.com/shadow81627/pocketpasta/commit/2f1c7bb))
+
 ## [0.11.46](https://github.com/shadow81627/pocketpasta/compare/v0.11.45...v0.11.46) (2019-10-01)
 
 
