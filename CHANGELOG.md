@@ -1,3 +1,10 @@
+## [0.11.48](https://github.com/shadow81627/pocketpasta/compare/v0.11.47...v0.11.48) (2019-10-03)
+
+
+### Performance Improvements
+
+* add gtm and firebase preconnect meta ([e353d9c](https://github.com/shadow81627/pocketpasta/commit/e353d9c))
+
 ## [0.11.47](https://github.com/shadow81627/pocketpasta/compare/v0.11.46...v0.11.47) (2019-10-01)
 
 
