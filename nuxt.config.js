@@ -137,6 +137,16 @@ module.exports = {
       },
       {
         rel: 'preconnect',
+        href: 'https://www.googletagmanager.com',
+        crossorigin: 'anonymous',
+      },
+      {
+        rel: 'preconnect',
+        href: 'https://firebaseinstallations.googleapis.com',
+        crossorigin: 'anonymous',
+      },
+      {
+        rel: 'preconnect',
         href: 'https://res.cloudinary.com',
         crossorigin: 'anonymous',
       },
