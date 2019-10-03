@@ -70,3 +70,8 @@ patch:
         patched: '2019-07-05T12:29:31.796Z'
     - nuxt > @nuxt/webpack > extract-css-chunks-webpack-plugin > webpack-external-import > @babel/helper-module-imports > @babel/types > lodash:
         patched: '2019-07-05T12:29:31.796Z'
+  SNYK-JS-HTTPSPROXYAGENT-469131:
+    - '@nuxtjs/sentry > @sentry/node > https-proxy-agent':
+        patched: '2019-10-03T23:25:11.372Z'
+    - '@nuxtjs/sentry > @sentry/webpack-plugin > @sentry/cli > https-proxy-agent':
+        patched: '2019-10-03T23:25:11.372Z'
