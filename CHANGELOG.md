@@ -1,3 +1,10 @@
+## [0.11.50](https://github.com/shadow81627/pocketpasta/compare/v0.11.49...v0.11.50) (2019-10-04)
+
+
+### Bug Fixes
+
+* **deps:** update dependency firebase to v7.1.0 ([4136986](https://github.com/shadow81627/pocketpasta/commit/4136986))
+
 ## [0.11.49](https://github.com/shadow81627/pocketpasta/compare/v0.11.48...v0.11.49) (2019-10-04)
 
 
