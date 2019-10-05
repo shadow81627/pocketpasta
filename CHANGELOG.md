@@ -1,3 +1,10 @@
+## [0.11.51](https://github.com/shadow81627/pocketpasta/compare/v0.11.50...v0.11.51) (2019-10-05)
+
+
+### Bug Fixes
+
+* **deps:** update dependency bootstrap-vue to v2.0.3 ([78a3fba](https://github.com/shadow81627/pocketpasta/commit/78a3fba))
+
 ## [0.11.50](https://github.com/shadow81627/pocketpasta/compare/v0.11.49...v0.11.50) (2019-10-04)
 
 
