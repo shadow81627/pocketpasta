@@ -14,9 +14,15 @@
       loop
     />
 
-    <nuxt-link :to="localePath('index')" class="btn btn-primary">{{
-      $t('layout.navigation.home')
-    }}</nuxt-link>
+    <a href="javascript:location.reload();" class="btn btn-primary btn-block"
+      >Try again</a
+    >
+    <nuxt-link
+      :to="localePath('index')"
+      class="btn btn-primary btn-block"
+      exact
+      >{{ $t('layout.navigation.home') }}</nuxt-link
+    >
   </div>
 </template>
 
