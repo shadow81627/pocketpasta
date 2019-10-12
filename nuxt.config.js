@@ -232,6 +232,18 @@ module.exports = {
   auth: {
     resetOnError: true,
     strategies: {
+      custom: {
+        _scheme: '~/plugins/customStrategy.js',
+        endpoints: {
+          login: {
+            url: '/api/auth/login',
+            method: 'post',
+            propertyName: 'token',
+          },
+          logout: { url: '/api/auth/logout', method: 'post' },
+          user: { url: '/api/auth/user', method: 'get', propertyName: 'user' },
+        },
+      },
       auth0: {
         domain: 'pocketpasta.auth0.com',
         client_id: 'SU9fkdMw6bqMkqwEZ2pX7sk3SlxR3Qi8',
@@ -240,8 +252,8 @@ module.exports = {
     redirect: {
       login: '/login',
       logout: '/',
-      callback: '/login/',
-      home: '/',
+      callback: '/profile',
+      home: '/profile',
     },
   },
 

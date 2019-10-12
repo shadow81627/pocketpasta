@@ -7,6 +7,7 @@
 <script>
 import Profile from '@/components/Profile';
 export default {
+  middleware: 'auth',
   components: {
     Profile,
   },

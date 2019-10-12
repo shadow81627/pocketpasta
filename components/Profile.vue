@@ -1,6 +1,7 @@
 <template>
   <v-list v-if="$auth.loggedIn">
-    <v-list-item avatar>
+    <h1>Profile</h1>
+    <v-list-item>
       <v-list-item-avatar>
         <b-img-lazy :src="$auth.user.picture" alt="avatar" class="rounded" />
       </v-list-item-avatar>
@@ -10,26 +11,6 @@
           $auth.user.name
         }}</v-list-item-title>
         <v-list-item-title>{{ $auth.user.email }}</v-list-item-title>
-      </v-list-item-content>
-    </v-list-item>
-  </v-list>
-
-  <v-list v-else-if="$store.state.user">
-    <v-list-item avatar>
-      <v-list-item-avatar>
-        <b-img-lazy
-          :src="$store.state.user.photoURL"
-          alt="avatar"
-          class="rounded"
-        />
-      </v-list-item-avatar>
-
-      <v-list-item-content>
-        <v-list-item-title
-          v-if="$store.state.user.displayName !== $store.state.user.email"
-          >{{ $store.state.user.displayName }}</v-list-item-title
-        >
-        <v-list-item-title>{{ $store.state.user.email }}</v-list-item-title>
       </v-list-item-content>
     </v-list-item>
   </v-list>

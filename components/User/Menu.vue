@@ -19,7 +19,7 @@
         v-else
         aria-label="login"
         outlined
-        @click="$auth.loginWith('auth0')"
+        @click="$auth.loginWith('custom')"
       >
         <v-icon>account_circle</v-icon>
         <span>&nbsp;</span>

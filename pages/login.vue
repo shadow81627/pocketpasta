@@ -12,6 +12,8 @@
 const firebaseui = require('firebaseui');
 
 export default {
+  middleware: 'auth',
+  auth: 'guest',
   mounted() {
     // Initialize the FirebaseUI Widget using Firebase.
     const ui = new firebaseui.auth.AuthUI(this.$firebase.auth());
