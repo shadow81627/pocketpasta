@@ -1,3 +1,10 @@
+## [0.12.5](https://github.com/shadow81627/pocketpasta/compare/v0.12.4...v0.12.5) (2019-10-12)
+
+
+### Bug Fixes
+
+* **deps:** update dependency koa to v2.10.0 ([74301ca](https://github.com/shadow81627/pocketpasta/commit/74301ca))
+
 ## [0.12.4](https://github.com/shadow81627/pocketpasta/compare/v0.12.3...v0.12.4) (2019-10-12)
 
 
