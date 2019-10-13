@@ -1,14 +1,20 @@
 # Releases
 
 ### [0.13.1](https://github.com/shadow81627/pocketpasta/compare/v0.13.0...v0.13.1) (2019-10-13)
+
 #### Bug Fixes
--  **changelog:** make title a heading 1 ([](https://github.com/shadow81627/pocketpasta/commit/25e4981))-  **changelog:** template title heading level on isPatch ([](https://github.com/shadow81627/pocketpasta/commit/6134907))
+
+- **changelog:** make title a heading 1 ([](https://github.com/shadow81627/pocketpasta/commit/25e4981))
+- **changelog:** template title heading level on isPatch ([](https://github.com/shadow81627/pocketpasta/commit/6134907))
 
 ## [0.13.0](https://github.com/shadow81627/pocketpasta/compare/v0.12.6...v0.13.0) (2019-10-13)
 
 ### Bug Fixes
 
-- **about:** update pitch video to version 2 ([](https://github.com/shadow81627/pocketpasta/commit/dfe0284))### Features
+- **about:** update pitch video to version 2 ([](https://github.com/shadow81627/pocketpasta/commit/dfe0284))
+
+### Features
+
 - **about:** add pitch video ([](https://github.com/shadow81627/pocketpasta/commit/a497b10))
 
 ## [0.12.6](https://github.com/shadow81627/pocketpasta/compare/v0.12.5...v0.12.6) (2019-10-13)

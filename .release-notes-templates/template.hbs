@@ -1,4 +1,5 @@
 {{> header}}
+
 {{#each commitGroups}}
 {{#if title}}
 {{#if @root.isPatch~}}
@@ -7,6 +8,7 @@
   ###
 {{~/if}} {{title}}
 {{/if}}
+
 {{#each commits}}
 {{> commit root=@root}}
 {{/each}}
