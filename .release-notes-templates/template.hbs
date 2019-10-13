@@ -2,11 +2,7 @@
 
 {{#each commitGroups}}
 {{#if title}}
-{{#if @root.isPatch~}}
-  ####
-{{~else~}}
-  ###
-{{~/if}} {{title}}
+  ### {{title}}
 {{/if}}
 
 {{#each commits}}
