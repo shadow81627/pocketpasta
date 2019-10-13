@@ -4,5 +4,5 @@ exports[`about renders properly 1`] = `
 "<div class=\\"container\\"><div class=\\"about\\"><div class=\\"row\\"><div class=\\"col-12\\"><h1>about.heading</h1> <p class=\\"lead\\">
           PocketPasta is a collection of my demo apps that I build to practice
           my skills.
-        </p></div></div> <two-by-one-stub></two-by-one-stub> <two-by-one-stub></two-by-one-stub> <two-by-one-stub></two-by-one-stub></div></div>"
+        </p></div></div> <two-by-one-stub></two-by-one-stub> <two-by-one-stub></two-by-one-stub> <two-by-one-stub></two-by-one-stub> <div class=\\"row\\"><div class=\\"col\\"><h2>The Pitch</h2> <div class=\\"embed-responsive embed-responsive-16by9 d-print-none\\"><iframe width=\\"560\\" height=\\"315\\" src=\\"https://www.youtube.com/embed/W0StMCfs5Ew\\" frameborder=\\"0\\" allow=\\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\\" allowfullscreen=\\"allowfullscreen\\" class=\\"embed-responsive-item\\"></iframe></div></div></div></div></div>"
 `;
