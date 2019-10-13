@@ -2,9 +2,11 @@
 
 ## [0.13.2](https://github.com/shadow81627/pocketpasta/compare/v0.13.1...v0.13.2) (2019-10-13)
 
-  ### Bug Fixes
+### Bug Fixes
 
--  **changelog:** add new line after header ([](https://github.com/shadow81627/pocketpasta/commit/74ad3cb))-  **changelog:** make heading level ignore isPatch ([](https://github.com/shadow81627/pocketpasta/commit/a5dc1bb))-  **changelog:** remove endif ([](https://github.com/shadow81627/pocketpasta/commit/63ad4f2))
+- **changelog:** add new line after header ([](https://github.com/shadow81627/pocketpasta/commit/74ad3cb)
+- **changelog:** make heading level ignore isPatch ([](https://github.com/shadow81627/pocketpasta/commit/a5dc1bb))
+- **changelog:** remove endif ([](https://github.com/shadow81627/pocketpasta/commit/63ad4f2))
 
 ### [0.13.1](https://github.com/shadow81627/pocketpasta/compare/v0.13.0...v0.13.1) (2019-10-13)
 
