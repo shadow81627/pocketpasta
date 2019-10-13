@@ -1,3 +1,10 @@
+## [0.12.6](https://github.com/shadow81627/pocketpasta/compare/v0.12.5...v0.12.6) (2019-10-13)
+
+
+### Bug Fixes
+
+* package-lock.json & .snyk to reduce vulnerabilities ([ede32f8](https://github.com/shadow81627/pocketpasta/commit/ede32f8))
+
 ## [0.12.5](https://github.com/shadow81627/pocketpasta/compare/v0.12.4...v0.12.5) (2019-10-12)
 
 
