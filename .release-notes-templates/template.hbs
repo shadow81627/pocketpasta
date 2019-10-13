@@ -1,11 +1,14 @@
 {{> header}}
 {{#each commitGroups}}
 {{#if title}}
-{{#if isPatch~}}
+{{#if @root.isPatch~}}
   ####
 {{~else~}}
   ###
 {{~/if}} {{title}}
 {{/if}}
-{{#each commits}}{{> commit root=@root}}{{/each}}{{/each}}
+{{#each commits}}
+{{> commit root=@root}}
+{{/each}}
+{{/each}}
 {{> footer}}
