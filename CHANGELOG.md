@@ -1,426 +1,367 @@
-## [0.12.6](https://github.com/shadow81627/pocketpasta/compare/v0.12.5...v0.12.6) (2019-10-13)
+# Releases
 
+## [0.12.6](https://github.com/shadow81627/pocketpasta/compare/v0.12.5...v0.12.6) (2019-10-13)
 
 ### Bug Fixes
 
-* package-lock.json & .snyk to reduce vulnerabilities ([ede32f8](https://github.com/shadow81627/pocketpasta/commit/ede32f8))
+- package-lock.json & .snyk to reduce vulnerabilities ([ede32f8](https://github.com/shadow81627/pocketpasta/commit/ede32f8))
 
 ## [0.12.5](https://github.com/shadow81627/pocketpasta/compare/v0.12.4...v0.12.5) (2019-10-12)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency koa to v2.10.0 ([74301ca](https://github.com/shadow81627/pocketpasta/commit/74301ca))
+- **deps:** update dependency koa to v2.10.0 ([74301ca](https://github.com/shadow81627/pocketpasta/commit/74301ca))
 
 ## [0.12.4](https://github.com/shadow81627/pocketpasta/compare/v0.12.3...v0.12.4) (2019-10-12)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency koa to v2.9.0 ([61e41be](https://github.com/shadow81627/pocketpasta/commit/61e41be))
+- **deps:** update dependency koa to v2.9.0 ([61e41be](https://github.com/shadow81627/pocketpasta/commit/61e41be))
 
 ## [0.12.3](https://github.com/shadow81627/pocketpasta/compare/v0.12.2...v0.12.3) (2019-10-11)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency bootstrap-vue to v2.0.4 ([7d23a4e](https://github.com/shadow81627/pocketpasta/commit/7d23a4e))
+- **deps:** update dependency bootstrap-vue to v2.0.4 ([7d23a4e](https://github.com/shadow81627/pocketpasta/commit/7d23a4e))
 
 ## [0.12.2](https://github.com/shadow81627/pocketpasta/compare/v0.12.1...v0.12.2) (2019-10-11)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency nuxt to v2.10.1 ([1caeef1](https://github.com/shadow81627/pocketpasta/commit/1caeef1))
+- **deps:** update dependency nuxt to v2.10.1 ([1caeef1](https://github.com/shadow81627/pocketpasta/commit/1caeef1))
 
 ## [0.12.1](https://github.com/shadow81627/pocketpasta/compare/v0.12.0...v0.12.1) (2019-10-10)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency firebase to v7.2.0 ([591c2ac](https://github.com/shadow81627/pocketpasta/commit/591c2ac))
+- **deps:** update dependency firebase to v7.2.0 ([591c2ac](https://github.com/shadow81627/pocketpasta/commit/591c2ac))
 
-# [0.12.0](https://github.com/shadow81627/pocketpasta/compare/v0.11.51...v0.12.0) (2019-10-06)
-
+## [0.12.0](https://github.com/shadow81627/pocketpasta/compare/v0.11.51...v0.12.0) (2019-10-06)
 
 ### Features
 
-* **500:** add try again button ([08ddf0d](https://github.com/shadow81627/pocketpasta/commit/08ddf0d))
-* **create:** add create page ([7ea80e8](https://github.com/shadow81627/pocketpasta/commit/7ea80e8))
+- **500:** add try again button ([08ddf0d](https://github.com/shadow81627/pocketpasta/commit/08ddf0d))
+- **create:** add create page ([7ea80e8](https://github.com/shadow81627/pocketpasta/commit/7ea80e8))
 
 ## [0.11.51](https://github.com/shadow81627/pocketpasta/compare/v0.11.50...v0.11.51) (2019-10-05)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency bootstrap-vue to v2.0.3 ([78a3fba](https://github.com/shadow81627/pocketpasta/commit/78a3fba))
+- **deps:** update dependency bootstrap-vue to v2.0.3 ([78a3fba](https://github.com/shadow81627/pocketpasta/commit/78a3fba))
 
 ## [0.11.50](https://github.com/shadow81627/pocketpasta/compare/v0.11.49...v0.11.50) (2019-10-04)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency firebase to v7.1.0 ([4136986](https://github.com/shadow81627/pocketpasta/commit/4136986))
+- **deps:** update dependency firebase to v7.1.0 ([4136986](https://github.com/shadow81627/pocketpasta/commit/4136986))
 
 ## [0.11.49](https://github.com/shadow81627/pocketpasta/compare/v0.11.48...v0.11.49) (2019-10-04)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency cross-env to v6.0.3 ([e920476](https://github.com/shadow81627/pocketpasta/commit/e920476))
+- **deps:** update dependency cross-env to v6.0.3 ([e920476](https://github.com/shadow81627/pocketpasta/commit/e920476))
 
 ## [0.11.48](https://github.com/shadow81627/pocketpasta/compare/v0.11.47...v0.11.48) (2019-10-03)
 
-
 ### Performance Improvements
 
-* add gtm and firebase preconnect meta ([e353d9c](https://github.com/shadow81627/pocketpasta/commit/e353d9c))
+- add gtm and firebase preconnect meta ([e353d9c](https://github.com/shadow81627/pocketpasta/commit/e353d9c))
 
 ## [0.11.47](https://github.com/shadow81627/pocketpasta/compare/v0.11.46...v0.11.47) (2019-10-01)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency @nuxtjs/sitemap to v2 ([2f1c7bb](https://github.com/shadow81627/pocketpasta/commit/2f1c7bb))
+- **deps:** update dependency @nuxtjs/sitemap to v2 ([2f1c7bb](https://github.com/shadow81627/pocketpasta/commit/2f1c7bb))
 
 ## [0.11.46](https://github.com/shadow81627/pocketpasta/compare/v0.11.45...v0.11.46) (2019-10-01)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency cross-env to v6.0.2 ([2ea458f](https://github.com/shadow81627/pocketpasta/commit/2ea458f))
+- **deps:** update dependency cross-env to v6.0.2 ([2ea458f](https://github.com/shadow81627/pocketpasta/commit/2ea458f))
 
 ## [0.11.45](https://github.com/shadow81627/pocketpasta/compare/v0.11.44...v0.11.45) (2019-10-01)
 
-
 ### Bug Fixes
 
-* **profile:** rename v-list-tile to v-list-item ([00e5b31](https://github.com/shadow81627/pocketpasta/commit/00e5b31))
+- **profile:** rename v-list-tile to v-list-item ([00e5b31](https://github.com/shadow81627/pocketpasta/commit/00e5b31))
 
 ## [0.11.44](https://github.com/shadow81627/pocketpasta/compare/v0.11.43...v0.11.44) (2019-09-28)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency koa to v2.8.2 ([2f2cea7](https://github.com/shadow81627/pocketpasta/commit/2f2cea7))
+- **deps:** update dependency koa to v2.8.2 ([2f2cea7](https://github.com/shadow81627/pocketpasta/commit/2f2cea7))
 
 ## [0.11.43](https://github.com/shadow81627/pocketpasta/compare/v0.11.42...v0.11.43) (2019-09-28)
 
-
 ### Bug Fixes
 
-* **axios:** https true ([ea43ace](https://github.com/shadow81627/pocketpasta/commit/ea43ace))
+- **axios:** https true ([ea43ace](https://github.com/shadow81627/pocketpasta/commit/ea43ace))
 
 ## [0.11.42](https://github.com/shadow81627/pocketpasta/compare/v0.11.41...v0.11.42) (2019-09-26)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency nuxt-i18n to v6.3.0 ([7a167de](https://github.com/shadow81627/pocketpasta/commit/7a167de))
+- **deps:** update dependency nuxt-i18n to v6.3.0 ([7a167de](https://github.com/shadow81627/pocketpasta/commit/7a167de))
 
 ## [0.11.41](https://github.com/shadow81627/pocketpasta/compare/v0.11.40...v0.11.41) (2019-09-25)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency firebase to v7 ([1eac1bb](https://github.com/shadow81627/pocketpasta/commit/1eac1bb))
+- **deps:** update dependency firebase to v7 ([1eac1bb](https://github.com/shadow81627/pocketpasta/commit/1eac1bb))
 
 ## [0.11.40](https://github.com/shadow81627/pocketpasta/compare/v0.11.39...v0.11.40) (2019-09-20)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency bootstrap-vue to v2.0.2 ([82cb53e](https://github.com/shadow81627/pocketpasta/commit/82cb53e))
+- **deps:** update dependency bootstrap-vue to v2.0.2 ([82cb53e](https://github.com/shadow81627/pocketpasta/commit/82cb53e))
 
 ## [0.11.39](https://github.com/shadow81627/pocketpasta/compare/v0.11.38...v0.11.39) (2019-09-19)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency firebase to v6.6.2 ([d5c5277](https://github.com/shadow81627/pocketpasta/commit/d5c5277))
+- **deps:** update dependency firebase to v6.6.2 ([d5c5277](https://github.com/shadow81627/pocketpasta/commit/d5c5277))
 
 ## [0.11.38](https://github.com/shadow81627/pocketpasta/compare/v0.11.37...v0.11.38) (2019-09-19)
 
-
 ### Bug Fixes
 
-* **nav:** add active class to active link ([361016f](https://github.com/shadow81627/pocketpasta/commit/361016f))
-
+- **nav:** add active class to active link ([361016f](https://github.com/shadow81627/pocketpasta/commit/361016f))
 
 ### Performance Improvements
 
-* **theme:** remove duplicate bootstrap ([f02a731](https://github.com/shadow81627/pocketpasta/commit/f02a731))
+- **theme:** remove duplicate bootstrap ([f02a731](https://github.com/shadow81627/pocketpasta/commit/f02a731))
 
 ## [0.11.37](https://github.com/shadow81627/pocketpasta/compare/v0.11.36...v0.11.37) (2019-09-17)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency @nuxtjs/sitemap to v1.3.1 ([fb48333](https://github.com/shadow81627/pocketpasta/commit/fb48333))
+- **deps:** update dependency @nuxtjs/sitemap to v1.3.1 ([fb48333](https://github.com/shadow81627/pocketpasta/commit/fb48333))
 
 ## [0.11.36](https://github.com/shadow81627/pocketpasta/compare/v0.11.35...v0.11.36) (2019-09-17)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency cross-env to v6 ([6418042](https://github.com/shadow81627/pocketpasta/commit/6418042))
+- **deps:** update dependency cross-env to v6 ([6418042](https://github.com/shadow81627/pocketpasta/commit/6418042))
 
 ## [0.11.35](https://github.com/shadow81627/pocketpasta/compare/v0.11.34...v0.11.35) (2019-09-15)
 
-
 ### Bug Fixes
 
-* **list card:** set link path append id as string ([d4774eb](https://github.com/shadow81627/pocketpasta/commit/d4774eb))
+- **list card:** set link path append id as string ([d4774eb](https://github.com/shadow81627/pocketpasta/commit/d4774eb))
 
 ## [0.11.34](https://github.com/shadow81627/pocketpasta/compare/v0.11.33...v0.11.34) (2019-09-15)
 
-
 ### Bug Fixes
 
-* **list card:** use params for link ([49523f5](https://github.com/shadow81627/pocketpasta/commit/49523f5))
+- **list card:** use params for link ([49523f5](https://github.com/shadow81627/pocketpasta/commit/49523f5))
 
 ## [0.11.33](https://github.com/shadow81627/pocketpasta/compare/v0.11.32...v0.11.33) (2019-09-13)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency bootstrap-vue to v2.0.1 ([9b3feac](https://github.com/shadow81627/pocketpasta/commit/9b3feac))
+- **deps:** update dependency bootstrap-vue to v2.0.1 ([9b3feac](https://github.com/shadow81627/pocketpasta/commit/9b3feac))
 
 ## [0.11.32](https://github.com/shadow81627/pocketpasta/compare/v0.11.31...v0.11.32) (2019-09-13)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency nuxt-i18n to v6.2.1 ([e50f2ee](https://github.com/shadow81627/pocketpasta/commit/e50f2ee))
+- **deps:** update dependency nuxt-i18n to v6.2.1 ([e50f2ee](https://github.com/shadow81627/pocketpasta/commit/e50f2ee))
 
 ## [0.11.31](https://github.com/shadow81627/pocketpasta/compare/v0.11.30...v0.11.31) (2019-09-13)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency nuxt-i18n to v6.2.0 ([e067c33](https://github.com/shadow81627/pocketpasta/commit/e067c33))
+- **deps:** update dependency nuxt-i18n to v6.2.0 ([e067c33](https://github.com/shadow81627/pocketpasta/commit/e067c33))
 
 ## [0.11.30](https://github.com/shadow81627/pocketpasta/compare/v0.11.29...v0.11.30) (2019-09-12)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency firebase to v6.6.1 ([41b737e](https://github.com/shadow81627/pocketpasta/commit/41b737e))
+- **deps:** update dependency firebase to v6.6.1 ([41b737e](https://github.com/shadow81627/pocketpasta/commit/41b737e))
 
 ## [0.11.29](https://github.com/shadow81627/pocketpasta/compare/v0.11.28...v0.11.29) (2019-09-12)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency @nuxtjs/auth to v4.8.4 ([e14aece](https://github.com/shadow81627/pocketpasta/commit/e14aece))
+- **deps:** update dependency @nuxtjs/auth to v4.8.4 ([e14aece](https://github.com/shadow81627/pocketpasta/commit/e14aece))
 
 ## [0.11.28](https://github.com/shadow81627/pocketpasta/compare/v0.11.27...v0.11.28) (2019-09-10)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency @nuxtjs/auth to v4.8.3 ([fe01d03](https://github.com/shadow81627/pocketpasta/commit/fe01d03))
+- **deps:** update dependency @nuxtjs/auth to v4.8.3 ([fe01d03](https://github.com/shadow81627/pocketpasta/commit/fe01d03))
 
 ## [0.11.27](https://github.com/shadow81627/pocketpasta/compare/v0.11.26...v0.11.27) (2019-09-08)
 
-
 ### Bug Fixes
 
-* **viewport:** add shrink-to-fit=no ([787266f](https://github.com/shadow81627/pocketpasta/commit/787266f))
-
+- **viewport:** add shrink-to-fit=no ([787266f](https://github.com/shadow81627/pocketpasta/commit/787266f))
 
 ### Performance Improvements
 
-* **bootstrap:** remove default style cdn ([9d65c6d](https://github.com/shadow81627/pocketpasta/commit/9d65c6d))
+- **bootstrap:** remove default style cdn ([9d65c6d](https://github.com/shadow81627/pocketpasta/commit/9d65c6d))
 
 ## [0.11.26](https://github.com/shadow81627/pocketpasta/compare/v0.11.25...v0.11.26) (2019-09-08)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency bootstrap-vue to v2.0.0 ([822fff9](https://github.com/shadow81627/pocketpasta/commit/822fff9))
+- **deps:** update dependency bootstrap-vue to v2.0.0 ([822fff9](https://github.com/shadow81627/pocketpasta/commit/822fff9))
 
 ## [0.11.25](https://github.com/shadow81627/pocketpasta/compare/v0.11.24...v0.11.25) (2019-09-06)
 
-
 ### Bug Fixes
 
-* add X-Frame-Options header to avoid clickjacking attacks ([2b71b37](https://github.com/shadow81627/pocketpasta/commit/2b71b37))
+- add X-Frame-Options header to avoid clickjacking attacks ([2b71b37](https://github.com/shadow81627/pocketpasta/commit/2b71b37))
 
 ## [0.11.24](https://github.com/shadow81627/pocketpasta/compare/v0.11.23...v0.11.24) (2019-09-06)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency firebase to v6.6.0 ([9d4f204](https://github.com/shadow81627/pocketpasta/commit/9d4f204))
+- **deps:** update dependency firebase to v6.6.0 ([9d4f204](https://github.com/shadow81627/pocketpasta/commit/9d4f204))
 
 ## [0.11.23](https://github.com/shadow81627/pocketpasta/compare/v0.11.22...v0.11.23) (2019-09-05)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency @nuxtjs/auth to v4.8.2 ([4010172](https://github.com/shadow81627/pocketpasta/commit/4010172))
+- **deps:** update dependency @nuxtjs/auth to v4.8.2 ([4010172](https://github.com/shadow81627/pocketpasta/commit/4010172))
 
 ## [0.11.22](https://github.com/shadow81627/pocketpasta/compare/v0.11.21...v0.11.22) (2019-09-04)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency nuxt-i18n to v6.1.3 ([d7ae97d](https://github.com/shadow81627/pocketpasta/commit/d7ae97d))
+- **deps:** update dependency nuxt-i18n to v6.1.3 ([d7ae97d](https://github.com/shadow81627/pocketpasta/commit/d7ae97d))
 
 ## [0.11.21](https://github.com/shadow81627/pocketpasta/compare/v0.11.20...v0.11.21) (2019-09-01)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency nuxt to v2.9.2 ([b986e3e](https://github.com/shadow81627/pocketpasta/commit/b986e3e))
+- **deps:** update dependency nuxt to v2.9.2 ([b986e3e](https://github.com/shadow81627/pocketpasta/commit/b986e3e))
 
 ## [0.11.20](https://github.com/shadow81627/pocketpasta/compare/v0.11.19...v0.11.20) (2019-08-31)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency cross-env to v5.2.1 ([1e4ac6c](https://github.com/shadow81627/pocketpasta/commit/1e4ac6c))
+- **deps:** update dependency cross-env to v5.2.1 ([1e4ac6c](https://github.com/shadow81627/pocketpasta/commit/1e4ac6c))
 
 ## [0.11.19](https://github.com/shadow81627/pocketpasta/compare/v0.11.18...v0.11.19) (2019-08-31)
 
-
 ### Bug Fixes
 
-* **product:** update spaghetti protein ([e000b68](https://github.com/shadow81627/pocketpasta/commit/e000b68))
+- **product:** update spaghetti protein ([e000b68](https://github.com/shadow81627/pocketpasta/commit/e000b68))
 
 ## [0.11.18](https://github.com/shadow81627/pocketpasta/compare/v0.11.17...v0.11.18) (2019-08-30)
 
-
 ### Bug Fixes
 
-* **layout:** set cols on nav item heading ([011dae8](https://github.com/shadow81627/pocketpasta/commit/011dae8))
+- **layout:** set cols on nav item heading ([011dae8](https://github.com/shadow81627/pocketpasta/commit/011dae8))
 
 ## [0.11.17](https://github.com/shadow81627/pocketpasta/compare/v0.11.16...v0.11.17) (2019-08-29)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency firebase to v6.5.0 ([974cbc5](https://github.com/shadow81627/pocketpasta/commit/974cbc5))
+- **deps:** update dependency firebase to v6.5.0 ([974cbc5](https://github.com/shadow81627/pocketpasta/commit/974cbc5))
 
 ## [0.11.16](https://github.com/shadow81627/pocketpasta/compare/v0.11.15...v0.11.16) (2019-08-29)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency nuxt-i18n to v6.1.1 ([76520ba](https://github.com/shadow81627/pocketpasta/commit/76520ba))
+- **deps:** update dependency nuxt-i18n to v6.1.1 ([76520ba](https://github.com/shadow81627/pocketpasta/commit/76520ba))
 
 ## [0.11.15](https://github.com/shadow81627/pocketpasta/compare/v0.11.14...v0.11.15) (2019-08-28)
 
-
 ### Bug Fixes
 
-* **layout:** add padding to page content container ([b77476b](https://github.com/shadow81627/pocketpasta/commit/b77476b))
+- **layout:** add padding to page content container ([b77476b](https://github.com/shadow81627/pocketpasta/commit/b77476b))
 
 ## [0.11.14](https://github.com/shadow81627/pocketpasta/compare/v0.11.13...v0.11.14) (2019-08-27)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency nuxt-i18n to v6.1.0 ([971f311](https://github.com/shadow81627/pocketpasta/commit/971f311))
+- **deps:** update dependency nuxt-i18n to v6.1.0 ([971f311](https://github.com/shadow81627/pocketpasta/commit/971f311))
 
 ## [0.11.13](https://github.com/shadow81627/pocketpasta/compare/v0.11.12...v0.11.13) (2019-08-24)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency firebase to v6.4.2 ([43654e9](https://github.com/shadow81627/pocketpasta/commit/43654e9))
+- **deps:** update dependency firebase to v6.4.2 ([43654e9](https://github.com/shadow81627/pocketpasta/commit/43654e9))
 
 ## [0.11.12](https://github.com/shadow81627/pocketpasta/compare/v0.11.11...v0.11.12) (2019-08-23)
 
-
 ### Bug Fixes
 
-* **css:** remove vuetify.scss ([a9576fd](https://github.com/shadow81627/pocketpasta/commit/a9576fd))
+- **css:** remove vuetify.scss ([a9576fd](https://github.com/shadow81627/pocketpasta/commit/a9576fd))
 
 ## [0.11.11](https://github.com/shadow81627/pocketpasta/compare/v0.11.10...v0.11.11) (2019-08-23)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency firebase to v6.4.1 ([fae2e21](https://github.com/shadow81627/pocketpasta/commit/fae2e21))
+- **deps:** update dependency firebase to v6.4.1 ([fae2e21](https://github.com/shadow81627/pocketpasta/commit/fae2e21))
 
 ## [0.11.10](https://github.com/shadow81627/pocketpasta/compare/v0.11.9...v0.11.10) (2019-08-23)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency @nuxtjs/sitemap to v1.3.0 ([18a6e2c](https://github.com/shadow81627/pocketpasta/commit/18a6e2c))
+- **deps:** update dependency @nuxtjs/sitemap to v1.3.0 ([18a6e2c](https://github.com/shadow81627/pocketpasta/commit/18a6e2c))
 
 ## [0.11.9](https://github.com/shadow81627/pocketpasta/compare/v0.11.8...v0.11.9) (2019-08-20)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency nuxt-i18n to v6.0.2 ([16a7040](https://github.com/shadow81627/pocketpasta/commit/16a7040))
+- **deps:** update dependency nuxt-i18n to v6.0.2 ([16a7040](https://github.com/shadow81627/pocketpasta/commit/16a7040))
 
 ## [0.11.8](https://github.com/shadow81627/pocketpasta/compare/v0.11.7...v0.11.8) (2019-08-20)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency @nuxtjs/axios to v5.6.0 ([3be7226](https://github.com/shadow81627/pocketpasta/commit/3be7226))
+- **deps:** update dependency @nuxtjs/axios to v5.6.0 ([3be7226](https://github.com/shadow81627/pocketpasta/commit/3be7226))
 
 ## [0.11.7](https://github.com/shadow81627/pocketpasta/compare/v0.11.6...v0.11.7) (2019-08-19)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency koa to v2.8.1 ([0dafe3a](https://github.com/shadow81627/pocketpasta/commit/0dafe3a))
+- **deps:** update dependency koa to v2.8.1 ([0dafe3a](https://github.com/shadow81627/pocketpasta/commit/0dafe3a))
 
 ## [0.11.6](https://github.com/shadow81627/pocketpasta/compare/v0.11.5...v0.11.6) (2019-08-19)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency koa to v2.8.0 ([c951ec3](https://github.com/shadow81627/pocketpasta/commit/c951ec3))
+- **deps:** update dependency koa to v2.8.0 ([c951ec3](https://github.com/shadow81627/pocketpasta/commit/c951ec3))
 
 ## [0.11.5](https://github.com/shadow81627/pocketpasta/compare/v0.11.4...v0.11.5) (2019-08-17)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency quicklink to v1.0.1 ([5330e09](https://github.com/shadow81627/pocketpasta/commit/5330e09))
+- **deps:** update dependency quicklink to v1.0.1 ([5330e09](https://github.com/shadow81627/pocketpasta/commit/5330e09))
 
 ## [0.11.4](https://github.com/shadow81627/pocketpasta/compare/v0.11.3...v0.11.4) (2019-08-17)
 
-
 ### Bug Fixes
 
-* **list view select:** align right center ([2b92d1c](https://github.com/shadow81627/pocketpasta/commit/2b92d1c))
+- **list view select:** align right center ([2b92d1c](https://github.com/shadow81627/pocketpasta/commit/2b92d1c))
 
 ## [0.11.3](https://github.com/shadow81627/pocketpasta/compare/v0.11.2...v0.11.3) (2019-08-17)
 
-
 ### Bug Fixes
 
-* **vuetify:** set breakpoints same as bootstrap ([ff1b297](https://github.com/shadow81627/pocketpasta/commit/ff1b297))
+- **vuetify:** set breakpoints same as bootstrap ([ff1b297](https://github.com/shadow81627/pocketpasta/commit/ff1b297))
 
 ## [0.11.2](https://github.com/shadow81627/pocketpasta/compare/v0.11.1...v0.11.2) (2019-08-16)
 
-
 ### Performance Improvements
 
-* **product:** add rel="noopener" for ([b0f42e9](https://github.com/shadow81627/pocketpasta/commit/b0f42e9))
+- **product:** add rel="noopener" for ([b0f42e9](https://github.com/shadow81627/pocketpasta/commit/b0f42e9))
 
 ## [0.11.1](https://github.com/shadow81627/pocketpasta/compare/v0.11.0...v0.11.1) (2019-08-15)
 
-
 ### Bug Fixes
 
-* **deps:** update dependency firebase to v6.4.0 ([557a76b](https://github.com/shadow81627/pocketpasta/commit/557a76b))
+- **deps:** update dependency firebase to v6.4.0 ([557a76b](https://github.com/shadow81627/pocketpasta/commit/557a76b))
 
-# [0.11.0](https://github.com/shadow81627/pocketpasta/compare/v0.10.7...v0.11.0) (2019-08-14)
-
+## [0.11.0](https://github.com/shadow81627/pocketpasta/compare/v0.10.7...v0.11.0) (2019-08-14)
 
 ### Features
 
-* **product:** add offers ([819cee7](https://github.com/shadow81627/pocketpasta/commit/819cee7))
+- **product:** add offers ([819cee7](https://github.com/shadow81627/pocketpasta/commit/819cee7))
 
 ## [0.10.7](https://github.com/shadow81627/pocketpasta/compare/v0.10.6...v0.10.7) (2019-08-13)
 
@@ -464,7 +405,7 @@
 
 - **deps:** update dependency firebase to v6.3.4 ([a3ba02d](https://github.com/shadow81627/pocketpasta/commit/a3ba02d))
 
-# [0.10.0](https://github.com/shadow81627/pocketpasta/compare/v0.9.9...v0.10.0) (2019-07-27)
+## [0.10.0](https://github.com/shadow81627/pocketpasta/compare/v0.9.9...v0.10.0) (2019-07-27)
 
 ### Bug Fixes
 
@@ -536,7 +477,7 @@
 
 - **deps:** update dependency @nuxtjs/recaptcha to v0.5.3 ([b53c801](https://github.com/shadow81627/pocketpasta/commit/b53c801))
 
-# [0.9.0](https://github.com/shadow81627/pocketpasta/compare/v0.8.32...v0.9.0) (2019-07-19)
+## [0.9.0](https://github.com/shadow81627/pocketpasta/compare/v0.8.32...v0.9.0) (2019-07-19)
 
 ### Features
 
@@ -735,7 +676,7 @@
 
 - **deps:** update dependency @nuxtjs/auth to v4.8.0 ([7518f78](https://github.com/shadow81627/pocketpasta/commit/7518f78))
 
-# [0.8.0](https://github.com/shadow81627/pocketpasta/compare/v0.7.21...v0.8.0) (2019-06-23)
+## [0.8.0](https://github.com/shadow81627/pocketpasta/compare/v0.7.21...v0.8.0) (2019-06-23)
 
 ### Bug Fixes
 
@@ -890,10 +831,6 @@
 
 - **logo:** set font display swap ([357ac06](https://github.com/shadow81627/pocketpasta/commit/357ac06))
 
-# Changelog
-
-All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
-
 ## [0.7.0](https://github.com/shadow81627/pocketpasta/compare/v0.6.0...v0.7.0) (2019-05-19)
 
 ### Bug Fixes
@@ -1022,7 +959,7 @@ All notable changes to this project will be documented in this file. See [standa
 - **footer:** update snapshot ([20140e7](https://github.com/shadow81627/pocketpasta/commit/20140e7))
 - **snapshots:** update footer and recipe ([79d886e](https://github.com/shadow81627/pocketpasta/commit/79d886e))
 
-# [0.1.0](https://github.com/shadow81627/pocketpasta/compare/v0.0.28...v0.1.0) (2019-05-04)
+## [0.1.0](https://github.com/shadow81627/pocketpasta/compare/v0.0.28...v0.1.0) (2019-05-04)
 
 ### Bug Fixes
 
