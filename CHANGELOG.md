@@ -1,5 +1,15 @@
 # Releases
 
+## [0.15.0](https://github.com/shadow81627/pocketpasta/compare/v0.14.0...v0.15.0) (2019-10-16)
+
+### Bug Fixes
+
+- **changelog:** add line above title if not first ([7f7c572](https://github.com/shadow81627/pocketpasta/commit/7f7c5727097b40975624dd23e2f3b1cf9cb5b8da))- **changelog:** add missing ) ([08471dc](https://github.com/shadow81627/pocketpasta/commit/08471dc3853174cfaf61a70a81fd146c7a5d9e83))
+
+### Features
+
+- **footer:** add short hash filter ([62fd7b2](https://github.com/shadow81627/pocketpasta/commit/62fd7b2aa7f0f0ff342861ef55c06245f83c361e))
+
 ## [0.14.0](https://github.com/shadow81627/pocketpasta/compare/v0.13.5...v0.14.0) (2019-10-16)
 
 ### Bug Fixes
