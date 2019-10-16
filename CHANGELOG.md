@@ -4,7 +4,8 @@
 
 ### Bug Fixes
 
-- **changelog:** add line above title if not first ([7f7c572](https://github.com/shadow81627/pocketpasta/commit/7f7c5727097b40975624dd23e2f3b1cf9cb5b8da))- **changelog:** add missing ) ([08471dc](https://github.com/shadow81627/pocketpasta/commit/08471dc3853174cfaf61a70a81fd146c7a5d9e83))
+- **changelog:** add line above title if not first ([7f7c572](https://github.com/shadow81627/pocketpasta/commit/7f7c5727097b40975624dd23e2f3b1cf9cb5b8da))
+- **changelog:** add missing ) ([08471dc](https://github.com/shadow81627/pocketpasta/commit/08471dc3853174cfaf61a70a81fd146c7a5d9e83))
 
 ### Features
 
