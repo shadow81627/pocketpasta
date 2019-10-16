@@ -1,5 +1,14 @@
 # Releases
 
+## [0.14.0](https://github.com/shadow81627/pocketpasta/compare/v0.13.5...v0.14.0) (2019-10-16)
+
+### Bug Fixes
+
+- **changelog:** set short hash ([d91a3f6](https://github.com/shadow81627/pocketpasta/commit/d91a3f6405488a36e39581bfa0a4cb1f8a4a59fe))
+### Features
+
+- **pages:** add releases page ([52c09a3](https://github.com/shadow81627/pocketpasta/commit/52c09a331ad6175ad38f3123d2b6fa865ca4cc9d))
+
 ## [0.13.5](https://github.com/shadow81627/pocketpasta/compare/v0.13.4...v0.13.5) (2019-10-14)
 
 ### Bug Fixes
