@@ -1,5 +1,11 @@
 # Releases
 
+## [0.15.1](https://github.com/shadow81627/pocketpasta/compare/v0.15.0...v0.15.1) (2019-10-16)
+
+### Bug Fixes
+
+- **changelog:** add line after commit if not first ([8d5d0e6](https://github.com/shadow81627/pocketpasta/commit/8d5d0e69c1a64993761679e8baee6f44ef1449d6))
+
 ## [0.15.0](https://github.com/shadow81627/pocketpasta/compare/v0.14.0...v0.15.0) (2019-10-16)
 
 ### Bug Fixes
