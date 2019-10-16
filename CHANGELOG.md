@@ -31,7 +31,7 @@
 
 ### Bug Fixes
 
-- **changelog:** add new line after header ([74ad3cb](https://github.com/shadow81627/pocketpasta/commit/74ad3cb)
+- **changelog:** add new line after header ([74ad3cb](https://github.com/shadow81627/pocketpasta/commit/74ad3cb))
 - **changelog:** make heading level ignore isPatch ([a5dc1bb](https://github.com/shadow81627/pocketpasta/commit/a5dc1bb))
 - **changelog:** remove endif ([63ad4f2](https://github.com/shadow81627/pocketpasta/commit/63ad4f2))
 
