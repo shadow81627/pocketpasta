@@ -196,6 +196,7 @@ module.exports = {
     '@nuxtjs/dotenv',
     '@nuxtjs/eslint-module',
     '@nuxtjs/google-analytics',
+    '@nuxtjs/markdownit',
     '@nuxtjs/pwa',
     '@nuxtjs/recaptcha',
     '@nuxtjs/sentry',
