@@ -1,5 +1,11 @@
 # Releases
 
+## [0.16.1](https://github.com/shadow81627/pocketpasta/compare/v0.16.0...v0.16.1) (2019-10-18)
+
+### Bug Fixes
+
+- **deps:** update dependency firebase to v7.2.1 ([8804c0c](https://github.com/shadow81627/pocketpasta/commit/8804c0cd620ff2c435106804c75be745fe5a5e11))
+
 ## [0.16.0](https://github.com/shadow81627/pocketpasta/compare/v0.15.1...v0.16.0) (2019-10-18)
 
 ### Features
