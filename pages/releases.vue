@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import 'github-markdown-css';
+import 'github-markdown-css/github-markdown.css';
 
 import content from '@/CHANGELOG.md';
 
