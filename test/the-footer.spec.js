@@ -25,7 +25,7 @@ describe('Footer', () => {
 
   test('renders properly', () => {
     const wrapper = factory();
-    wrapper.setData({ lastModified: '2019-10-19 19:11:49' });
+    wrapper.setData({ lastModified: 'Sat 19 Oct 2019 09:11:49 GMT+0000' });
     expect(wrapper.html()).toMatchSnapshot();
   });
 
