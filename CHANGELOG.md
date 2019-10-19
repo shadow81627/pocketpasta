@@ -1,5 +1,11 @@
 # Releases
 
+## [0.17.0](https://github.com/shadow81627/pocketpasta/compare/v0.16.1...v0.17.0) (2019-10-19)
+
+### Features
+
+- **footer:** add label to commit hash ([7134ba1](https://github.com/shadow81627/pocketpasta/commit/7134ba1fc1cb5ee2e3985f617a402227c127af55))- add print styling ([4cd7978](https://github.com/shadow81627/pocketpasta/commit/4cd797801a789984a652b88c89b3be44081c72f5))
+
 ## [0.16.1](https://github.com/shadow81627/pocketpasta/compare/v0.16.0...v0.16.1) (2019-10-18)
 
 ### Bug Fixes
