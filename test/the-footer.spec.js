@@ -25,6 +25,13 @@ describe('Footer', () => {
 
   test('renders properly', () => {
     const wrapper = factory();
+    wrapper.setData({ lastModified: '2019-10-19 19:11:49' });
+    expect(wrapper.html()).toMatchSnapshot();
+  });
+
+  test('renders properly without lastModified', () => {
+    const wrapper = factory();
+    wrapper.setData({ lastModified: null });
     expect(wrapper.html()).toMatchSnapshot();
   });
 });
