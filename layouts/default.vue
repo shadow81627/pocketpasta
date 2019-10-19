@@ -162,6 +162,7 @@ export default {
 .brand {
   font-family: 'Comic Neue', sans-serif;
   font-size: 1.5rem;
+  font-weight: 400;
   vertical-align: middle;
 }
 
