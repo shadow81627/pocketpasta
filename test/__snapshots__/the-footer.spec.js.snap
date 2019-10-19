@@ -9,7 +9,7 @@ exports[`Footer renders properly 1`] = `
             <a href=\\"https://policies.google.com/terms\\">Terms of Service</a>
             apply.
           </v-card-text-stub></v-card-stub></v-col-stub></v-row-stub> <v-row-stub tag=\\"div\\" nogutters=\\"true\\"><v-col-stub tag=\\"div\\"><v-card-stub loaderheight=\\"4\\" tag=\\"div\\" color=\\"transparent\\" tile=\\"true\\" flat=\\"true\\"><v-card-text-stub class=\\"py-2 text-left\\"><span>Made with <!----><span>🍝</span> in
-              Brisbane, Australia</span><br> <span>© 2015 | PocketPasta</span></v-card-text-stub></v-card-stub></v-col-stub> <v-spacer-stub></v-spacer-stub> <v-col-stub cols=\\"auto\\" tag=\\"div\\"><v-card-stub loaderheight=\\"4\\" tag=\\"div\\" color=\\"transparent\\" tile=\\"true\\" flat=\\"true\\"><v-card-text-stub class=\\"py-2\\"><span>Last modified: Sat Oct 19 2019 19:11:49 GMT+1000 (Australian Eastern Standard Time)</span></v-card-text-stub></v-card-stub></v-col-stub></v-row-stub></div></v-footer-stub>"
+              Brisbane, Australia</span><br> <span>© 2015 | PocketPasta</span></v-card-text-stub></v-card-stub></v-col-stub> <v-spacer-stub></v-spacer-stub> <v-col-stub cols=\\"auto\\" tag=\\"div\\"><v-card-stub loaderheight=\\"4\\" tag=\\"div\\" color=\\"transparent\\" tile=\\"true\\" flat=\\"true\\"><v-card-text-stub class=\\"py-2\\"><span>Last modified: Sat, 19 Oct 2019 09:11:49 GMT</span></v-card-text-stub></v-card-stub></v-col-stub></v-row-stub></div></v-footer-stub>"
 `;
 
 exports[`Footer renders properly without lastModified 1`] = `

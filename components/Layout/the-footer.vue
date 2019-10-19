@@ -43,7 +43,9 @@
         <v-col v-if="lastModified" cols="auto">
           <v-card flat tile color="transparent">
             <v-card-text class="py-2">
-              <span>Last modified: {{ new Date(lastModified) }}</span>
+              <span
+                >Last modified: {{ new Date(lastModified).toUTCString() }}</span
+              >
             </v-card-text>
           </v-card>
         </v-col>
