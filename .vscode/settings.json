@@ -1,4 +1,3 @@
-
 {
   "eslint.validate": [
     {
@@ -16,5 +15,12 @@
   ],
   "eslint.autoFixOnSave": true,
   "editor.formatOnSave": false,
-  "vetur.validation.template": false
+  "vetur.validation.template": false,
+  "files.exclude": {
+    "**/node_modules/**": true,
+    "**/dist/**": true,
+    "**/coverage/**": true,
+    "**/.nuxt/**": true,
+    "**/.firebase/**": true
+  }
 }
