@@ -1,5 +1,16 @@
 # Releases
 
+## [0.18.0](https://github.com/shadow81627/pocketpasta/compare/v0.17.0...v0.18.0) (2019-10-19)
+
+### Bug Fixes
+
+- **logo:** remove margin set vertical align increase font size ([e774343](https://github.com/shadow81627/pocketpasta/commit/e774343fbad22bd7139d06ce8df590e33ac68811))- **logo:** set font weight 400 ([b19c074](https://github.com/shadow81627/pocketpasta/commit/b19c07481cd90c72c42fcc44fec3898d8607c3e5))
+
+
+### Features
+
+- **footer:** add last modified ([7310c86](https://github.com/shadow81627/pocketpasta/commit/7310c8675d406fa87330e8d17b50227e1eb81960))
+
 ## [0.17.0](https://github.com/shadow81627/pocketpasta/compare/v0.16.1...v0.17.0) (2019-10-19)
 
 ### Features
