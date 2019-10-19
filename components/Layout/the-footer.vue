@@ -3,6 +3,8 @@
     <v-card flat color="transparent">
       <v-card-text class="text-muted">
         <span>Version: {{ version }}</span>
+        <br />
+        <span>Commit: </span>
         <nuxt-link :to="localePath({ name: 'releases' })"
           ><span> {{ commit | shortHash }}</span></nuxt-link
         >
