@@ -82,7 +82,7 @@
           alt="PocketPasta"
           onerror="javascript:this.style.display = 'none'"
         />
-        <span class="brand mx-1 hidden-sm-and-down">PocketPasta</span>
+        <span class="brand d-none d-sm-inline">PocketPasta</span>
       </v-toolbar-title>
       <v-spacer />
       <add-to-home-screen icon />
@@ -161,6 +161,8 @@ export default {
 <style>
 .brand {
   font-family: 'Comic Neue', sans-serif;
+  font-size: 1.5rem;
+  vertical-align: middle;
 }
 
 /* no pointer events */
