@@ -48,7 +48,7 @@
     "cross-env": "6.0.3",
     "firebase": "7.2.1",
     "firebaseui": "4.2.0",
-    "github-markdown-css": "^3.0.1",
+    "github-markdown-css": "3.0.1",
     "koa": "2.10.0",
     "nuxt": "2.10.1",
     "nuxt-i18n": "6.3.0",
