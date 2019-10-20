@@ -1,5 +1,11 @@
 # Releases
 
+## [0.18.2](https://github.com/shadow81627/pocketpasta/compare/v0.18.1...v0.18.2) (2019-10-20)
+
+### Bug Fixes
+
+- **footer:** remove text-muted class ([b746510](https://github.com/shadow81627/pocketpasta/commit/b746510589737999bdaf37c704e93d876bef9248))
+
 ## [0.18.1](https://github.com/shadow81627/pocketpasta/compare/v0.18.0...v0.18.1) (2019-10-20)
 
 ### Bug Fixes
