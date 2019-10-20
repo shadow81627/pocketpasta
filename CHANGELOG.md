@@ -1,5 +1,11 @@
 # Releases
 
+## [0.18.4](https://github.com/shadow81627/pocketpasta/compare/v0.18.3...v0.18.4) (2019-10-20)
+
+### Bug Fixes
+
+- **firestoe rules:** add document id to recipes rule ([262871c](https://github.com/shadow81627/pocketpasta/commit/262871c369adacb63e65b326e96e3b83662f534b))
+
 ## [0.18.3](https://github.com/shadow81627/pocketpasta/compare/v0.18.2...v0.18.3) (2019-10-20)
 
 ### Bug Fixes
