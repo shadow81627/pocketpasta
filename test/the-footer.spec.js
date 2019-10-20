@@ -15,6 +15,7 @@ describe('Footer', () => {
       data: () => ({
         version: '0.11.19',
         commit: 'a95a529a01ab4fe627cc276b35ed8f5e0c6f45d9',
+        utc: true,
       }),
     });
 

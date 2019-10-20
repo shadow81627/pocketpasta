@@ -44,7 +44,12 @@
           <v-card flat tile color="transparent">
             <v-card-text class="py-2">
               <span
-                >Last modified: {{ new Date(lastModified).toUTCString() }}</span
+                >Last modified:
+                {{
+                  utc
+                    ? new Date(lastModified).toUTCString()
+                    : new Date(lastModified)
+                }}</span
               >
             </v-card-text>
           </v-card>
@@ -63,6 +68,7 @@ export default {
     version: process.env.VERSION,
     commit: process.env.COMMIT || process.env.TRAVIS_COMMIT,
     lastModified: document ? document.lastModified : null,
+    utc: false,
   }),
 };
 </script>
