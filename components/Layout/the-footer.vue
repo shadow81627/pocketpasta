@@ -4,9 +4,9 @@
       <v-row no-gutters>
         <v-col cols="auto">
           <v-card flat color="transparent">
-            <v-card-text class="text-muted">
+            <v-card-text>
               <span>Version: {{ version }}</span>
-              |
+              <span>|</span>
               <span>Commit: </span>
               <nuxt-link :to="localePath({ name: 'releases' })"
                 ><span> {{ commit | shortHash }}</span></nuxt-link
@@ -17,12 +17,12 @@
         <v-spacer />
         <v-col cols="auto">
           <v-card flat color="transparent">
-            <v-card-text class="text-muted"
-              >This site is protected by reCAPTCHA and the Google
+            <v-card-text>
+              <span>This site is protected by reCAPTCHA and the Google</span>
               <a href="https://policies.google.com/privacy">Privacy Policy</a>
-              and
+              <span>and</span>
               <a href="https://policies.google.com/terms">Terms of Service</a>
-              apply.
+              <span>apply.</span>
             </v-card-text>
           </v-card>
         </v-col>
@@ -31,10 +31,10 @@
         <v-col>
           <v-card flat tile color="transparent">
             <v-card-text class="py-2 text-left">
-              <span
-                >Made with <span v-if="false">🌭</span><span>🍝</span> in
-                Brisbane, Australia</span
-              ><br />
+              <span>Made with </span>
+              <span>🍝</span>
+              <span> in Brisbane, Australia</span>
+              <br />
               <span>© 2015 | PocketPasta</span>
             </v-card-text>
           </v-card>
