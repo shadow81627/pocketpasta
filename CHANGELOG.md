@@ -4,8 +4,8 @@
 
 ### Bug Fixes
 
-- **logo:** remove margin set vertical align increase font size ([e774343](https://github.com/shadow81627/pocketpasta/commit/e774343fbad22bd7139d06ce8df590e33ac68811))- **logo:** set font weight 400 ([b19c074](https://github.com/shadow81627/pocketpasta/commit/b19c07481cd90c72c42fcc44fec3898d8607c3e5))
-
+- **logo:** remove margin set vertical align increase font size ([e774343](https://github.com/shadow81627/pocketpasta/commit/e774343fbad22bd7139d06ce8df590e33ac68811))
+- **logo:** set font weight 400 ([b19c074](https://github.com/shadow81627/pocketpasta/commit/b19c07481cd90c72c42fcc44fec3898d8607c3e5))
 
 ### Features
 
