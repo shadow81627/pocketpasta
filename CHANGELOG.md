@@ -1,5 +1,11 @@
 # Releases
 
+## [0.18.1](https://github.com/shadow81627/pocketpasta/compare/v0.18.0...v0.18.1) (2019-10-20)
+
+### Bug Fixes
+
+- **releases:** add new line before commit ([376e06e](https://github.com/shadow81627/pocketpasta/commit/376e06e40e846ecebf379a79263c35f958585c8b))
+
 ## [0.18.0](https://github.com/shadow81627/pocketpasta/compare/v0.17.0...v0.18.0) (2019-10-19)
 
 ### Bug Fixes
