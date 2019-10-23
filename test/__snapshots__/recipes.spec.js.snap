@@ -1,3 +1,3 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`recipes renders properly 1`] = `"<div class=\\"container\\"><list-stub heading=\\"recipes.heading\\" list=\\"[object Object],[object Object],[object Object],[object Object]\\" layout=\\"list\\"></list-stub></div>"`;
+exports[`recipes renders properly 1`] = `"<div class=\\"container\\"><list-stub heading=\\"recipes.heading\\" list=\\"\\" layout=\\"list\\"></list-stub></div>"`;
