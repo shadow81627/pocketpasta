@@ -10,11 +10,7 @@ export default {
   components: {
     List,
   },
-  computed: {
-    list() {
-      return this.$store.state.recipes;
-    },
-  },
+  data: () => ({ list: [] }),
   head() {
     return {
       meta: [
@@ -32,6 +28,28 @@ export default {
         },
       ],
     };
+  },
+  async asyncData(context) {
+    const list = await context.app.$firebase.firestore
+      .collection('recipes')
+      .get()
+      .then(function(querySnapshot) {
+        return querySnapshot.docs.map((doc) => doc.data());
+      });
+
+    // Thanks for the array merge function
+    // https://codeburst.io/javascript-array-distinct-5edc93501dc4
+    list.push(context.store.state.recipes);
+    const result = [];
+    const map = new Map();
+    for (const item of list) {
+      if (!map.has(item.id)) {
+        map.set(item.id, true); // set any value to Map
+        result.push(item);
+      }
+    }
+
+    return { list: result };
   },
 };
 </script>
