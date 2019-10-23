@@ -1,5 +1,12 @@
 # Releases
 
+## [0.19.0](https://github.com/shadow81627/pocketpasta/compare/v0.18.7...v0.19.0) (2019-10-23)
+
+### Features
+
+- **recipes:** add data from database ([77ce10b](https://github.com/shadow81627/pocketpasta/commit/77ce10b9a75f614b852afeca2e518992b23f79d4))
+- **recipes:** add recipes from database ([e2a2ec8](https://github.com/shadow81627/pocketpasta/commit/e2a2ec857439fc3d0945bed75c57d3a1d6d73f04))
+
 ## [0.18.7](https://github.com/shadow81627/pocketpasta/compare/v0.18.6...v0.18.7) (2019-10-22)
 
 ### Bug Fixes
