@@ -30,7 +30,7 @@ export default {
     };
   },
   async asyncData(context) {
-    const list = await context.app.$firebase.firestore
+    let list = await context.app.$firebase.firestore
       .collection('recipes')
       .get()
       .then(function(querySnapshot) {
@@ -39,7 +39,7 @@ export default {
 
     // Thanks for the array merge function
     // https://codeburst.io/javascript-array-distinct-5edc93501dc4
-    list.push(context.store.state.recipes);
+    list = [...context.store.state.recipes, ...list];
     const result = [];
     const map = new Map();
     for (const item of list) {
