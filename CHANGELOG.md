@@ -1,5 +1,11 @@
 # Releases
 
+## [0.19.3](https://github.com/shadow81627/pocketpasta/compare/v0.19.2...v0.19.3) (2019-10-23)
+
+### Bug Fixes
+
+- **deps:** update https-proxy-agent to 3.0.1 ([7526642](https://github.com/shadow81627/pocketpasta/commit/75266426445e738a1040d2f3d74587ad985399a3))
+
 ## [0.19.2](https://github.com/shadow81627/pocketpasta/compare/v0.19.1...v0.19.2) (2019-10-23)
 
 ### Bug Fixes
