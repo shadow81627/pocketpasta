@@ -1,5 +1,11 @@
 # Releases
 
+## [0.19.4](https://github.com/shadow81627/pocketpasta/compare/v0.19.3...v0.19.4) (2019-10-24)
+
+### Bug Fixes
+
+- **deps:** update dependency firebase to v7.2.2 ([4b64d35](https://github.com/shadow81627/pocketpasta/commit/4b64d353656d3372cac624c416b303a4fef50f53))
+
 ## [0.19.3](https://github.com/shadow81627/pocketpasta/compare/v0.19.2...v0.19.3) (2019-10-23)
 
 ### Bug Fixes
