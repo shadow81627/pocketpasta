@@ -1,5 +1,11 @@
 # Releases
 
+## [0.19.5](https://github.com/shadow81627/pocketpasta/compare/v0.19.4...v0.19.5) (2019-10-25)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxtjs/google-analytics to v2.2.1 ([6271623](https://github.com/shadow81627/pocketpasta/commit/62716233fa3e9b03c28930675bc3a1573cc53b46))
+
 ## [0.19.4](https://github.com/shadow81627/pocketpasta/compare/v0.19.3...v0.19.4) (2019-10-24)
 
 ### Bug Fixes
