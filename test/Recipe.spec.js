@@ -1,6 +1,7 @@
 import { shallowMount, createLocalVue } from '@vue/test-utils';
 import Vuex from 'vuex';
 import BootstrapVuePlugin from 'bootstrap-vue';
+import VueMeta from 'vue-meta';
 import Recipe from '@/components/Recipe/Recipe';
 // import VueRouter from 'vue-router';
 
@@ -11,6 +12,13 @@ const localVue = createLocalVue();
 localVue.use(Vuex);
 // localVue.use(VueRouter);
 localVue.use(BootstrapVuePlugin);
+localVue.use(VueMeta, {
+  keyName: 'head',
+  attribute: 'data-vue-meta',
+  ssrAttribute: 'data-vue-meta-server-rendered',
+  tagIDKeyName: 'hid',
+  refreshOnceOnNavigation: true,
+});
 
 // const router = new VueRouter();
 
@@ -71,6 +79,7 @@ describe('Recipe', () => {
   });
 
   test('head', () => {
-    expect(Recipe.head()).toBeTruthy();
+    const wrapper = factory();
+    expect(wrapper.vm.$metaInfo).toBeTruthy();
   });
 });

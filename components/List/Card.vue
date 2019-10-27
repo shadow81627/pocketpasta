@@ -12,12 +12,28 @@
         :class="{ 'col-md-4': layout === null || layout === 'list' }"
       >
         <b-card-img-lazy
+          v-if="
+            typeof image === 'object' && image !== null && !Array.isArray(image)
+          "
+          fluid
+          center
+          fluid-grow
+          blank
+          :src="image.url"
+          rounded="0"
+          :height="image.height"
+          :width="image.width"
+          itemprop="image"
+        />
+        <b-card-img-lazy
+          v-else
           fluid
           center
           fluid-grow
           blank
           :src="image"
           rounded="0"
+          itemprop="image"
         />
       </div>
       <div class="col">
@@ -48,7 +64,7 @@ export default {
     id: { type: [String, Number], required: true },
     name: { type: String, default: null },
     description: { type: String, default: null },
-    image: { type: String, default: null },
+    image: { type: [String, Object, Array], default: null },
     layout: { type: String, default: null },
   },
 };

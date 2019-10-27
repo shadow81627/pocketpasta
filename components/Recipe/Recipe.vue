@@ -8,20 +8,33 @@
       class="embed-responsive embed-responsive-16by9 d-print-none"
     >
       <iframe
+        v-if="Array.isArray(recipe.video)"
         class="embed-responsive-item"
         :src="recipe.video[0].contentUrl"
         allowfullscreen
         :poster="recipe.video[0].thumbnailUrl"
       />
     </div>
-    <b-img-lazy
-      v-else-if="recipe.image"
-      :src="recipe.image"
-      class="img-fluid mx-auto d-block"
-      :alt="recipe.name"
-      throttle="100"
-      itemprop="image"
-    />
+    <div v-else-if="recipe.image">
+      <b-img-lazy
+        v-if="typeof recipe.image === 'object' && recipe.image !== null"
+        :src="recipe.image.url"
+        class="img-fluid mx-auto d-block"
+        :alt="recipe.name"
+        throttle="100"
+        itemprop="image"
+        :height="recipe.image.height"
+        :width="recipe.image.width"
+      />
+      <b-img-lazy
+        v-else
+        :src="recipe.image"
+        class="img-fluid mx-auto d-block"
+        :alt="recipe.name"
+        throttle="100"
+        itemprop="image"
+      />
+    </div>
     <!-- <p>Author: {{ recipe.author }}</p> -->
     <!-- <p>Published: {{ recipe.datePublished }}</p> -->
 
@@ -31,27 +44,35 @@
       <strong>Makes:</strong>
       <span>{{ recipe.recipeYield }}</span>
     </p>
-    <h2>Ingredients:</h2>
-    <ol class="list-group-flush">
-      <li
-        v-for="ingredient in recipe.recipeIngredient"
-        :key="ingredient"
-        class="list-group-item"
-      >
-        {{ ingredient }}
-      </li>
-    </ol>
+    <section v-if="recipe.recipeIngredient">
+      <h2>Ingredients:</h2>
+      <ol class="list-group-flush">
+        <li
+          v-for="ingredient in recipe.recipeIngredient"
+          :key="ingredient"
+          class="list-group-item"
+        >
+          {{ ingredient }}
+        </li>
+      </ol>
+    </section>
 
-    <h2>Instructions:</h2>
-    <ol class="list-group-flush">
-      <li
-        v-for="instruction in recipe.recipeInstructions"
-        :key="instruction.text"
-        class="list-group-item"
+    <section v-if="recipe.recipeInstructions">
+      <h2>Instructions:</h2>
+      <ol
+        v-if="Array.isArray(recipe.recipeInstructions)"
+        class="list-group-flush"
       >
-        {{ instruction.text }}
-      </li>
-    </ol>
+        <li
+          v-for="instruction in recipe.recipeInstructions"
+          :key="instruction.text"
+          class="list-group-item"
+        >
+          {{ instruction.text }}
+        </li>
+      </ol>
+      <p v-else>{{ recipe.recipeInstructions }}</p>
+    </section>
 
     <nutrition-fact-table
       v-if="recipe.nutrition"
@@ -82,11 +103,29 @@ export default {
     recipe() {
       // parse id param to int for id lookup
       const id = parseInt(this.$route.params.id, 10);
-      return this.$store.getters.getRecipeById(id);
+      const recipe = JSON.parse(
+        JSON.stringify(this.$store.getters.getRecipeById(id)),
+      );
+      recipe.recipeIngredient = [...new Set(recipe.recipeIngredient)];
+
+      return recipe;
     },
   },
   head() {
+    // console.log(this);
     return {
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.recipe.description,
+        },
+        {
+          hid: 'og:description',
+          name: 'og:description',
+          content: this.recipe.description,
+        },
+      ],
       script: [
         {
           json: this.recipe,
