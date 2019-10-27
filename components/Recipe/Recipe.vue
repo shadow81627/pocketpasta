@@ -46,7 +46,7 @@
     </p>
     <section v-if="recipe.recipeIngredient">
       <h2>Ingredients:</h2>
-      <ol class="list-group-flush">
+      <ol class="list-group-flush  pl-0">
         <li
           v-for="ingredient in recipe.recipeIngredient"
           :key="ingredient"
@@ -61,7 +61,7 @@
       <h2>Instructions:</h2>
       <ol
         v-if="Array.isArray(recipe.recipeInstructions)"
-        class="list-group-flush"
+        class="list-group-flush pl-0"
       >
         <li
           v-for="instruction in recipe.recipeInstructions"
@@ -80,10 +80,31 @@
       class="my-4"
     />
 
-    <keywords
-      :tags="recipe.keywords ? recipe.keywords.split(',') : []"
-      label="Tags"
-    />
+    <section class="mb-2">
+      <h2 class="h4">Tags</h2>
+      <div class="list-group-flush">
+        <keywords
+          :tags="recipe.keywords ? recipe.keywords.split(',') : []"
+          :label="null"
+          class="list-group-item"
+        />
+      </div>
+    </section>
+
+    <section v-if="recipe.sameAs">
+      <h2 class="h4">References</h2>
+      <div class="list-group-flush">
+        <span
+          v-for="reference in recipe.sameAs"
+          :key="reference"
+          class="list-group-item"
+        >
+          <a :href="reference" target="_blank" itemprop="url" rel="noopener">{{
+            reference
+          }}</a>
+        </span>
+      </div>
+    </section>
   </div>
 </template>
 
