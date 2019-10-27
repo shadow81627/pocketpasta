@@ -1,5 +1,11 @@
 # Releases
 
+## [0.21.0](https://github.com/shadow81627/pocketpasta/compare/v0.20.1...v0.21.0) (2019-10-27)
+
+### Features
+
+- **recipe:** add references section ([98ddf99](https://github.com/shadow81627/pocketpasta/commit/98ddf99e9759dcb72f33d8fbabb0f7fc1fe66702))
+
 ## [0.20.1](https://github.com/shadow81627/pocketpasta/compare/v0.20.0...v0.20.1) (2019-10-27)
 
 ### Bug Fixes
