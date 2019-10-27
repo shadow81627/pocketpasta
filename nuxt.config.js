@@ -299,6 +299,13 @@ module.exports = {
     hostname: 'https://pocketpasta.com',
     routes,
     gzip: true,
+    xslUrl: '/sitemap.xsl',
+    defaults: {
+      changefreq: 'weekly',
+      // priority: 0.5,
+      lastmod: new Date(),
+      // lastmodrealtime: true,
+    },
   },
 
   webfontloader: {
