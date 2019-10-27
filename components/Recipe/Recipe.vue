@@ -112,8 +112,8 @@ export default {
     },
   },
   head() {
-    // console.log(this);
     return {
+      title: this.recipe.name,
       meta: [
         {
           hid: 'description',

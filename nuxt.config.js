@@ -80,7 +80,10 @@ module.exports = {
    */
   head: {
     htmlAttrs: { 'data-vue-meta-server-rendered': '' },
-    title: 'PocketPasta',
+    titleTemplate: (titleChunk) => {
+      // If undefined or blank then we don't need the hyphen
+      return titleChunk ? `${titleChunk} - PocketPasta` : 'PocketPasta';
+    },
     meta: [
       {
         charset: 'utf-8',
@@ -89,6 +92,11 @@ module.exports = {
         name: 'viewport',
         content:
           'width=device-width, initial-scale=1, shrink-to-fit=no, minimal-ui',
+      },
+      {
+        property: 'og:title',
+        template: (chunk) => `${chunk} - PocketPasta`,
+        vmid: 'og:title',
       },
       {
         hid: 'description',
