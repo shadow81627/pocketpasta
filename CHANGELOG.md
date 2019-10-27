@@ -1,5 +1,12 @@
 # Releases
 
+## [0.20.0](https://github.com/shadow81627/pocketpasta/compare/v0.19.5...v0.20.0) (2019-10-27)
+
+### Features
+
+- **recipes:** add trash can nachos ([86cc296](https://github.com/shadow81627/pocketpasta/commit/86cc296afa9fa35c612cfbbea030414c8b646d2f))
+- **sitemap:** add last modified ([a2cf112](https://github.com/shadow81627/pocketpasta/commit/a2cf1121ed6ac39878d2b1e2438fc88fe313cfd1))
+
 ## [0.19.5](https://github.com/shadow81627/pocketpasta/compare/v0.19.4...v0.19.5) (2019-10-25)
 
 ### Bug Fixes
