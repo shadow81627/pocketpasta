@@ -1,5 +1,12 @@
 # Releases
 
+## [0.20.1](https://github.com/shadow81627/pocketpasta/compare/v0.20.0...v0.20.1) (2019-10-27)
+
+### Bug Fixes
+
+- **meta:** add title template ([cbff69b](https://github.com/shadow81627/pocketpasta/commit/cbff69bf7f8e5a45e42227537300557052c4ea72))
+- **recipes:** remove &nbsp; ([b120920](https://github.com/shadow81627/pocketpasta/commit/b120920e4ea7019e21b1244b910cf0f628339919))
+
 ## [0.20.0](https://github.com/shadow81627/pocketpasta/compare/v0.19.5...v0.20.0) (2019-10-27)
 
 ### Features
