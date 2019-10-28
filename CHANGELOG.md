@@ -1,5 +1,11 @@
 # Releases
 
+## [0.21.1](https://github.com/shadow81627/pocketpasta/compare/v0.21.0...v0.21.1) (2019-10-28)
+
+### Bug Fixes
+
+- **deps:** update dependency koa to v2.11.0 ([27219ca](https://github.com/shadow81627/pocketpasta/commit/27219ca45fa3bb7adbcefe2c42588caf5303287e))
+
 ## [0.21.0](https://github.com/shadow81627/pocketpasta/compare/v0.20.1...v0.21.0) (2019-10-27)
 
 ### Features
