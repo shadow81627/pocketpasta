@@ -1,5 +1,12 @@
 # Releases
 
+## [0.22.2](https://github.com/shadow81627/pocketpasta/compare/v0.22.1...v0.22.2) (2019-11-03)
+
+### Bug Fixes
+
+- **meta:** og title chunk undefined or blank then don't template ([5c50b18](https://github.com/shadow81627/pocketpasta/commit/5c50b180bb8e2e7265a532f566ed36494cdbd184))
+- **shoppinglist:** clear changes only on successful save ([be23c56](https://github.com/shadow81627/pocketpasta/commit/be23c568435edf5a1fc140d65e1eb2b951a07964))
+
 ## [0.22.1](https://github.com/shadow81627/pocketpasta/compare/v0.22.0...v0.22.1) (2019-11-03)
 
 ### Bug Fixes
