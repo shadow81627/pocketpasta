@@ -134,7 +134,7 @@ export default {
 
   mounted() {
     const vm = this;
-    const debouncedSave = debounce(vm.save, 500);
+    const debouncedSave = debounce(vm.save, 5000);
     const editor = new Quill('#editor', {
       modules: {
         toolbar: [
