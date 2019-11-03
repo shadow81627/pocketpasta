@@ -1,5 +1,16 @@
 # Releases
 
+## [0.22.0](https://github.com/shadow81627/pocketpasta/compare/v0.21.2...v0.22.0) (2019-11-03)
+
+### Bug Fixes
+
+- **deps:** merge semantic release update ([37249f5](https://github.com/shadow81627/pocketpasta/commit/37249f5623e4546050260c4f2b8a2949cca9f67a))
+
+### Features
+
+- **notes:** add notes list page ([aa221f2](https://github.com/shadow81627/pocketpasta/commit/aa221f2c3a5407f42529d476d7ef0549ab54fe8c))
+- **shoppinglist:** add shopping list page ([b3304c2](https://github.com/shadow81627/pocketpasta/commit/b3304c2a692139ca7f6c46731742f2395fca4010))
+
 ## [0.21.2](https://github.com/shadow81627/pocketpasta/compare/v0.21.1...v0.21.2) (2019-10-31)
 
 ### Bug Fixes
