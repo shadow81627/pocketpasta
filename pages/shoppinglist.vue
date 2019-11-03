@@ -166,36 +166,18 @@ export default {
     save() {
       const vm = this;
       if (vm.change && vm.change.length() > 0) {
-        console.log('Saving changes', vm.change);
-        /*
-    Send partial changes
-    $.post('/your-endpoint', {
-      partial: JSON.stringify(change)
-    });
-
-    Send entire document
-    $.post('/your-endpoint', {
-      doc: JSON.stringify(quill.getContents())
-    });
-    */
-
         vm.document = JSON.parse(JSON.stringify(vm.editor.getContents()));
-
-        console.log(vm.document);
 
         vm.$firebase.firestore
           .collection('shoppinglists')
           .doc(vm.$auth.user.uid)
           .set(vm.document)
           .then(function() {
-            console.log('Document successfully written!');
-            // vm.document = null;
+            vm.change = new Delta();
           })
           .catch(function(error) {
             console.error('Error writing document: ', error);
           });
-
-        vm.change = new Delta();
       }
     },
   },
