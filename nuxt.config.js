@@ -95,7 +95,10 @@ module.exports = {
       },
       {
         property: 'og:title',
-        template: (chunk) => `${chunk} - PocketPasta`,
+        template: (titleChunk) => {
+          // If undefined or blank then we don't need the hyphen
+          return titleChunk ? `${titleChunk} - PocketPasta` : 'PocketPasta';
+        },
         vmid: 'og:title',
       },
       {
