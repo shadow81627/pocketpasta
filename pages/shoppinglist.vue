@@ -115,16 +115,14 @@ export default {
         .collection('shoppinglists')
         .doc(context.$auth.user.uid)
         .get()
-        .then(function(querySnapshot) {
-          return querySnapshot.docs.map((doc) => {
-            if (doc.exists) {
-              console.log('Document data:', doc.data());
-              doc.data();
-            } else {
-              // doc.data() will be undefined in this case
-              console.log('No such document!');
-            }
-          });
+        .then((doc) => {
+          if (doc.exists) {
+            console.log('Document data:', doc.data());
+            return doc.data();
+          } else {
+            // doc.data() will be undefined in this case
+            console.log('No such document!');
+          }
         })
         .catch(function(error) {
           console.error('Error getting document: ', error);
@@ -147,6 +145,8 @@ export default {
       },
       theme: 'snow',
     });
+
+    editor.setContents(vm.document);
     vm.editor = editor;
     // Store accumulated changes
     editor.on('text-change', function(delta) {
@@ -179,7 +179,7 @@ export default {
     });
     */
 
-        vm.document = JSON.stringify(vm.editor.getContents());
+        vm.document = JSON.parse(JSON.stringify(vm.editor.getContents()));
 
         console.log(vm.document);
 
