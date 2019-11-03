@@ -59,6 +59,9 @@ export default () => {
       products: {
         heading: 'Products',
       },
+      notes: {
+        heading: 'Notes',
+      },
       settings: {
         heading: 'Settings',
         style: {
