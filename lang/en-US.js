@@ -23,6 +23,7 @@ export default () => {
           newsletter: 'Newsletter',
           recipes: 'Recipes',
           products: 'Shop',
+          shoppinglist: 'Shopping List',
           settings: 'Settings',
         },
       },

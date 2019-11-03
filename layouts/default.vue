@@ -140,6 +140,11 @@ export default {
           route: { name: 'products' },
         },
         {
+          icon: 'notes',
+          text: this.$t('layout.navigation.shoppinglist'),
+          route: { name: 'shoppinglist' },
+        },
+        {
           icon: 'settings',
           text: this.$t('layout.navigation.settings'),
           route: { name: 'settings' },

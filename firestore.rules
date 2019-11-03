@@ -8,6 +8,9 @@ service cloud.firestore {
       allow read, update, delete: if request.auth.uid == userId;
       allow create: if request.auth.uid != null;
     }
+    match /shoppinglists/{userId} {
+      allow create, read, update, delete: if request.auth.uid == userId;
+    }
     match /recipes/{recipe} {
       allow read: if true;
     }
