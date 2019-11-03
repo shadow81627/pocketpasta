@@ -1,5 +1,11 @@
 # Releases
 
+## [0.22.1](https://github.com/shadow81627/pocketpasta/compare/v0.22.0...v0.22.1) (2019-11-03)
+
+### Bug Fixes
+
+- **shoppinglist:** save and load data ([90fc072](https://github.com/shadow81627/pocketpasta/commit/90fc0722fc68e55edca96c0ccc5906cbfe41a476))
+
 ## [0.22.0](https://github.com/shadow81627/pocketpasta/compare/v0.21.2...v0.22.0) (2019-11-03)
 
 ### Bug Fixes
