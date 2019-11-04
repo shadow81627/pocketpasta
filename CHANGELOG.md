@@ -1,5 +1,15 @@
 # Releases
 
+## [0.23.0](https://github.com/shadow81627/pocketpasta/compare/v0.22.2...v0.23.0) (2019-11-04)
+
+### Bug Fixes
+
+- **shoppinglist:** set colors to work in dark mode ([86c0990](https://github.com/shadow81627/pocketpasta/commit/86c0990720e55b7b5a72c6f759aa9d2209d92f53))
+
+### Features
+
+- **shoppinglsit:** add more toolbar options ([796947d](https://github.com/shadow81627/pocketpasta/commit/796947de991d96cece3723fef5fe58437a4d6e7e))
+
 ## [0.22.2](https://github.com/shadow81627/pocketpasta/compare/v0.22.1...v0.22.2) (2019-11-03)
 
 ### Bug Fixes
