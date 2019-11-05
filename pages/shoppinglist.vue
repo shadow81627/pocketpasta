@@ -97,6 +97,7 @@
 
 <script>
 import Quill from 'quill';
+
 const debounce = require('lodash/debounce');
 const Delta = Quill.import('delta');
 export default {
@@ -133,29 +134,56 @@ export default {
   },
 
   mounted() {
+    // raw svg inline because nuxt wants to base64 them, which doesn't work as HTML
+    const icons = Quill.import('ui/icons');
+    icons.undo = `<svg viewbox="0 0 18 18">
+  <polygon class="ql-fill ql-stroke" points="6 10 4 12 2 10 6 10"></polygon>
+  <path class="ql-stroke" d="M8.09,13.91A4.6,4.6,0,0,0,9,14,5,5,0,1,0,4,9"></path>
+</svg>`;
+    icons.redo = `<svg viewbox="0 0 18 18">
+  <polygon class="ql-fill ql-stroke" points="12 10 14 12 16 10 12 10"></polygon>
+  <path class="ql-stroke" d="M9.91,13.91A4.6,4.6,0,0,1,9,14a5,5,0,1,1,5-5"></path>
+</svg>`;
+
     const vm = this;
     const debouncedSave = debounce(vm.save, 5000);
     const editor = new Quill('#editor', {
       modules: {
-        toolbar: [
-          ['bold', 'italic', 'underline', 'strike'], // toggled buttons
-          ['link', 'blockquote', 'image'],
+        toolbar: {
+          container: [
+            ['undo', 'redo'],
+            ['bold', 'italic', 'underline', 'strike'], // toggled buttons
+            ['link', 'blockquote', 'image'],
 
-          [{ header: 1 }, { header: 2 }], // custom button values
-          [{ list: 'ordered' }, { list: 'bullet' }, { list: 'check' }],
-          [{ script: 'sub' }, { script: 'super' }], // superscript/subscript
-          [{ indent: '-1' }, { indent: '+1' }], // outdent/indent
-          [{ direction: 'rtl' }], // text direction
+            [{ header: 1 }, { header: 2 }], // custom button values
+            [{ list: 'ordered' }, { list: 'bullet' }, { list: 'check' }],
+            [{ script: 'sub' }, { script: 'super' }], // superscript/subscript
+            [{ indent: '-1' }, { indent: '+1' }], // outdent/indent
+            [{ direction: 'rtl' }], // text direction
 
-          [{ size: ['small', false, 'large', 'huge'] }], // custom dropdown
-          // [{ header: [1, 2, 3, 4, 5, 6, false] }],
+            [{ size: ['small', false, 'large', 'huge'] }], // custom dropdown
+            // [{ header: [1, 2, 3, 4, 5, 6, false] }],
 
-          [{ color: [] }, { background: [] }], // dropdown with defaults from theme
-          [{ font: [] }],
-          [{ align: [] }],
+            [{ color: [] }, { background: [] }], // dropdown with defaults from theme
+            [{ font: [] }],
+            [{ align: [] }],
 
-          ['clean'],
-        ],
+            ['clean'],
+          ],
+          handlers: {
+            redo() {
+              vm.editor.history.redo();
+            },
+            undo() {
+              vm.editor.history.undo();
+            },
+          },
+        },
+      },
+      history: {
+        delay: 1000,
+        maxStack: 100,
+        userOnly: false,
       },
       theme: 'snow',
     });
@@ -222,6 +250,14 @@ export default {
 @import '~/node_modules/quill/dist/quill.core.css';
 @import '~/node_modules/quill/dist/quill.bubble.css';
 @import '~/node_modules/quill/dist/quill.snow.css';
+
+.ql-undo {
+  background: no-repeat scroll 50% 50% transparent !important;
+  background-image: url('~quill/assets/icons/undo.svg') !important;
+  text-align: center;
+
+  color: purple;
+}
 
 .ql-snow .ql-fill,
 .ql-snow .ql-stroke.ql-fill {
