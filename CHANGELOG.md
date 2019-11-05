@@ -1,5 +1,11 @@
 # Releases
 
+## [0.24.0](https://github.com/shadow81627/pocketpasta/compare/v0.23.0...v0.24.0) (2019-11-05)
+
+### Features
+
+- **shoppinglist:** add undo and redo ([3e78745](https://github.com/shadow81627/pocketpasta/commit/3e78745fd8528b5971584adc2f602bd33faec544))
+
 ## [0.23.0](https://github.com/shadow81627/pocketpasta/compare/v0.22.2...v0.23.0) (2019-11-04)
 
 ### Bug Fixes
