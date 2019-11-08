@@ -1,4 +1,4 @@
-import tomatoes from '@/assets/link-data/products/tomatoes.json';
-import spaghetti from '@/assets/link-data/products/spaghetti.json';
+import tomatoes from './tomatoes.json';
+import spaghetti from './spaghetti.json';
 
 export default [tomatoes, spaghetti];
