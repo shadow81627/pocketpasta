@@ -1,5 +1,11 @@
 # Releases
 
+## [0.24.2](https://github.com/shadow81627/pocketpasta/compare/v0.24.1...v0.24.2) (2019-11-08)
+
+### Bug Fixes
+
+- **routes:** generate dynamic routes from data ([672236e](https://github.com/shadow81627/pocketpasta/commit/672236e01451fc594e9fb7b87e5789fb5aef9798))
+
 ## [0.24.1](https://github.com/shadow81627/pocketpasta/compare/v0.24.0...v0.24.1) (2019-11-08)
 
 ### Bug Fixes
