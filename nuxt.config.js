@@ -1,24 +1,44 @@
 // const config = require('dotenv').config({
 //   debug: true,
 // });
+// import axios from 'axios';
+
+import recipes from './assets/link-data/recipes';
+import products from './assets/link-data/products';
+
+// const recipes = require('./assets/link-data/recipes');
+// const products = require('./assets/link-data/products');
+
 const pkg = require('./package');
 
 // console.log(config);
 
-const routes = [
-  '/',
-  '/about',
-  '/newsletter',
-  '/settings',
-  '/recipes',
-  '/recipes/1',
-  '/recipes/2',
-  '/recipes/3',
-  '/recipes/4',
-];
+const routes = (callback) => {
+  // axios
+  //   .get(
+  //     'https://firestore.googleapis.com/v1/projects/staging-pocketpasta/databases/(default)/documents/recipes',
+  //   )
+  //   .then((res) => {
+  //     const routes = res.data.documents.map((recipe) => {
+  //       return '/recipes/' + recipe.id;
+  //     });
+  //     callback(null, routes);
+  //   })
+  //   .catch(callback);
+
+  const recipeRoutes = recipes.map((recipe) => {
+    return { route: `/recipes/${recipe.id}` };
+  });
+  const productRoutes = products.map((product) => {
+    return { route: `/products/${product.id}` };
+  });
+  const routes = [...recipeRoutes, ...productRoutes];
+  callback(null, routes);
+};
 
 const i18nSettings = {
   baseUrl: 'https://pocketpasta.com',
+  seo: true,
   defaultLocale: 'en',
   vueI18n: {
     fallbackLocale: 'en',
