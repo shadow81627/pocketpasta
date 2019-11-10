@@ -96,6 +96,11 @@
 
 <script>
 export default {
+  methods: {
+    subscribe() {
+      this.$ga.event('Newsletter', 'Click', 'Subscribe');
+    },
+  },
   head() {
     return {
       link: [
@@ -106,11 +111,6 @@ export default {
         },
       ],
     };
-  },
-  methods: {
-    subscribe() {
-      this.$ga.event('Newsletter', 'Click', 'Subscribe');
-    },
   },
 };
 </script>

@@ -23,25 +23,6 @@ export default {
   components: {
     List,
   },
-  data: () => ({ list: [] }),
-  head() {
-    return {
-      meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content: 'Write stuff down with PocketPasta notes.',
-        },
-      ],
-      link: [
-        {
-          hid: 'canonical',
-          rel: 'canonical',
-          href: 'https://pocketpasta.com/notes',
-        },
-      ],
-    };
-  },
   async asyncData(context) {
     let list = await context.app.$firebase.firestore
       .collection('recipes')
@@ -63,6 +44,25 @@ export default {
     }
 
     return { list: result };
+  },
+  data: () => ({ list: [] }),
+  head() {
+    return {
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Write stuff down with PocketPasta notes.',
+        },
+      ],
+      link: [
+        {
+          hid: 'canonical',
+          rel: 'canonical',
+          href: 'https://pocketpasta.com/notes',
+        },
+      ],
+    };
   },
 };
 </script>
