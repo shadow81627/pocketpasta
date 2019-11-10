@@ -102,13 +102,6 @@ const debounce = require('lodash/debounce');
 const Delta = Quill.import('delta');
 export default {
   middleware: 'auth',
-  data() {
-    return {
-      document: {},
-      editor: null,
-      change: new Delta(),
-    };
-  },
 
   async asyncData(context) {
     if (context.$auth.user.uid) {
@@ -131,6 +124,13 @@ export default {
 
       return { document };
     }
+  },
+  data() {
+    return {
+      document: {},
+      editor: null,
+      change: new Delta(),
+    };
   },
 
   mounted() {
