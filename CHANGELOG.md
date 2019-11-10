@@ -1,5 +1,12 @@
 # Releases
 
+## [0.24.3](https://github.com/shadow81627/pocketpasta/compare/v0.24.2...v0.24.3) (2019-11-10)
+
+### Bug Fixes
+
+- **link data:** import as node style to allow proper import in config ([2a04d50](https://github.com/shadow81627/pocketpasta/commit/2a04d506f41018e87fdb22353bc2b0f8c66e7ec6))
+- **meta:** remove data-vue-meta-server-rendered ([8fe503e](https://github.com/shadow81627/pocketpasta/commit/8fe503ef6279cc1d6dfdfd8535353377cd871801))
+
 ## [0.24.2](https://github.com/shadow81627/pocketpasta/compare/v0.24.1...v0.24.2) (2019-11-08)
 
 ### Bug Fixes
