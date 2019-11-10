@@ -1,4 +1,6 @@
-import tomatoes from './tomatoes.json';
-import spaghetti from './spaghetti.json';
+// import tomatoes from './tomatoes.json';
+// import spaghetti from './spaghetti.json';
+const tomatoes = require('./tomatoes.json');
+const spaghetti = require('./spaghetti.json');
 
-export default [tomatoes, spaghetti];
+module.exports = [tomatoes, spaghetti];

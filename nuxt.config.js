@@ -3,11 +3,11 @@
 // });
 // import axios from 'axios';
 
-import recipes from './assets/link-data/recipes';
-import products from './assets/link-data/products';
+// import recipes from './assets/link-data/recipes';
+// import products from './assets/link-data/products';
 
-// const recipes = require('./assets/link-data/recipes');
-// const products = require('./assets/link-data/products');
+const recipes = require('./assets/link-data/recipes');
+const products = require('./assets/link-data/products');
 
 const pkg = require('./package');
 
