@@ -99,7 +99,7 @@ module.exports = {
    ** Headers of the page
    */
   head: {
-    htmlAttrs: { 'data-vue-meta-server-rendered': '' },
+    // htmlAttrs: { 'data-vue-meta-server-rendered': '' },
     titleTemplate: (titleChunk) => {
       // If undefined or blank then we don't need the hyphen
       return titleChunk ? `${titleChunk} - PocketPasta` : 'PocketPasta';
