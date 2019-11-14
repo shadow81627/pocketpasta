@@ -21,7 +21,7 @@
         outlined
         @click="$auth.loginWith('custom')"
       >
-        <v-icon>account_circle</v-icon>
+        <v-icon>$account_circle</v-icon>
         <span>&nbsp;</span>
         <span>{{ $t('layout.login') }}</span>
       </v-btn>
@@ -55,7 +55,7 @@
       <v-list>
         <v-list-item @click="$auth.logout()">
           <v-btn icon>
-            <v-icon>directions_run</v-icon>
+            <v-icon>$run</v-icon>
           </v-btn>
           <v-list-item-title>{{ $t('layout.logout') }}</v-list-item-title>
         </v-list-item>

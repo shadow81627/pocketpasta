@@ -290,14 +290,11 @@ module.exports = {
   },
 
   vuetify: {
-    // optionsPath: '~/vuetify.options.js',
+    optionsPath: './vuetify.options.js',
     // customVariables: ['~/assets/scss/vuetify.scss'],
     treeShake: true,
     theme: { disable: true },
-    defaultAssets: {
-      font: false,
-      icons: 'md',
-    },
+    defaultAssets: false,
   },
 
   bootstrapVue: {

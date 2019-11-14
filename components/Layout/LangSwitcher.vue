@@ -2,7 +2,7 @@
   <v-menu>
     <template v-slot:activator="{ on }">
       <v-btn outlined v-on="on">
-        <v-icon small>translate</v-icon>
+        <v-icon small>$translate</v-icon>
         <span>&nbsp;</span>
         <span>{{ currentLocale.name }}</span>
       </v-btn>

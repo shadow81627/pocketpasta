@@ -4,7 +4,7 @@
       <div class="col-sm-6">
         <v-card flat color="transparent">
           <v-card-title primary-title>
-            <v-icon left>{{ icon }}</v-icon>
+            <v-icon left>${{ icon }}</v-icon>
             <span :id="id" class="title font-weight-light">{{ label }}</span>
           </v-card-title>
           <v-card-text class="subheading form-text text-muted pt-0">{{

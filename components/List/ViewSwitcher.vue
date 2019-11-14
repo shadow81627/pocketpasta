@@ -4,7 +4,7 @@
     <v-menu left offset-y>
       <template v-slot:activator="{ on }">
         <v-btn icon v-on="on">
-          <v-icon>{{ currentLayout.icon }}</v-icon>
+          <v-icon>${{ currentLayout.icon }}</v-icon>
         </v-btn>
       </template>
 
@@ -19,7 +19,7 @@
               <v-list-item-title>{{ layout.label }}</v-list-item-title>
             </v-list-item-content>
             <v-list-item-action>
-              <v-icon>{{ layout.icon }}</v-icon>
+              <v-icon>${{ layout.icon }}</v-icon>
             </v-list-item-action>
           </v-list-item>
         </v-list>
