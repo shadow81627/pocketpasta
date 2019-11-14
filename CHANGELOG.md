@@ -1,5 +1,11 @@
 # Releases
 
+## [0.24.7](https://github.com/shadow81627/pocketpasta/compare/v0.24.6...v0.24.7) (2019-11-14)
+
+### Bug Fixes
+
+- **deps:** update dependency firebase to v7.4.0 ([898e065](https://github.com/shadow81627/pocketpasta/commit/898e065a709daf88d3c67b76b20e786359d2adb0))
+
 ## [0.24.6](https://github.com/shadow81627/pocketpasta/compare/v0.24.5...v0.24.6) (2019-11-14)
 
 ### Performance Improvements
