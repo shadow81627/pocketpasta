@@ -1,5 +1,11 @@
 # Releases
 
+## [0.24.6](https://github.com/shadow81627/pocketpasta/compare/v0.24.5...v0.24.6) (2019-11-14)
+
+### Performance Improvements
+
+- **icons:** update vuetify icons to mdi svg ([633e699](https://github.com/shadow81627/pocketpasta/commit/633e6990f6ce0c54dbd4b22c7c74542364ed3194))
+
 ## [0.24.5](https://github.com/shadow81627/pocketpasta/compare/v0.24.4...v0.24.5) (2019-11-12)
 
 ### Bug Fixes
