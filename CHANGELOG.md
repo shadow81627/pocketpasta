@@ -1,5 +1,11 @@
 # Releases
 
+## [0.24.8](https://github.com/shadow81627/pocketpasta/compare/v0.24.7...v0.24.8) (2019-11-15)
+
+### Bug Fixes
+
+- **deps:** update dependency firebaseui to v4.3.0 ([f945797](https://github.com/shadow81627/pocketpasta/commit/f9457977aeb1e2b904a07612d3d5d88d696aa80e))
+
 ## [0.24.7](https://github.com/shadow81627/pocketpasta/compare/v0.24.6...v0.24.7) (2019-11-14)
 
 ### Bug Fixes
