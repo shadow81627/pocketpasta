@@ -1,5 +1,11 @@
 # Releases
 
+## [0.24.9](https://github.com/shadow81627/pocketpasta/compare/v0.24.8...v0.24.9) (2019-11-18)
+
+### Performance Improvements
+
+- server side render pages ([b22c1a3](https://github.com/shadow81627/pocketpasta/commit/b22c1a38c6bb5f8c6bca4623cace34e752b618a8))
+
 ## [0.24.8](https://github.com/shadow81627/pocketpasta/compare/v0.24.7...v0.24.8) (2019-11-15)
 
 ### Bug Fixes
