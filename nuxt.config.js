@@ -62,7 +62,7 @@ const i18nSettings = {
 };
 
 module.exports = {
-  mode: 'spa',
+  mode: 'universal',
 
   workbox: {
     offlineAnalytics: true,

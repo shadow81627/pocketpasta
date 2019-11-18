@@ -1,21 +1,23 @@
 <template>
-  <b-form-select
-    id="theme"
-    v-model="currentTheme"
-    name="theme"
-    aria-label="theme"
-  >
-    <template slot="first">
-      <option disabled value="">Please select a theme</option>
-    </template>
-    <option
-      v-for="theme in $store.state.themes"
-      :key="theme.value"
-      :value="theme.value"
+  <client-only>
+    <b-form-select
+      id="theme"
+      v-model="currentTheme"
+      name="theme"
+      aria-label="theme"
     >
-      {{ theme.value }}
-    </option>
-  </b-form-select>
+      <template slot="first">
+        <option disabled value="">Please select a theme</option>
+      </template>
+      <option
+        v-for="theme in $store.state.themes"
+        :key="theme.value"
+        :value="theme.value"
+      >
+        {{ theme.value }}
+      </option>
+    </b-form-select>
+  </client-only>
 </template>
 
 <script>

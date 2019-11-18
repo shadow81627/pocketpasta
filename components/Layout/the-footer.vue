@@ -40,32 +40,24 @@
           </v-card>
         </v-col>
         <v-spacer />
-        <v-col v-if="lastModified" cols="auto">
-          <v-card flat tile color="transparent">
-            <v-card-text class="py-2">
-              <span>Last modified: </span>
-              <span>{{
-                utc
-                  ? new Date(lastModified).toUTCString()
-                  : new Date(lastModified)
-              }}</span>
-            </v-card-text>
-          </v-card>
-        </v-col>
+        <lastModified v-bind="{ utc }" />
       </v-row>
     </div>
   </v-footer>
 </template>
 
 <script>
+import lastModified from './lastModified';
 export default {
+  components: {
+    lastModified,
+  },
   filters: {
     shortHash: (value) => (value ? value.substring(0, 7) : null),
   },
   data: () => ({
     version: process.env.VERSION,
     commit: process.env.COMMIT || process.env.TRAVIS_COMMIT,
-    lastModified: document ? document.lastModified : null,
     utc: false,
   }),
 };
