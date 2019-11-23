@@ -1,5 +1,11 @@
 # Releases
 
+## [0.24.10](https://github.com/shadow81627/pocketpasta/compare/v0.24.9...v0.24.10) (2019-11-23)
+
+### Bug Fixes
+
+- **login:** display user profile if there is data ([0523af4](https://github.com/shadow81627/pocketpasta/commit/0523af4f43fcdeffc6ac917cbb437394fe39bce4))
+
 ## [0.24.9](https://github.com/shadow81627/pocketpasta/compare/v0.24.8...v0.24.9) (2019-11-18)
 
 ### Performance Improvements
