@@ -13,8 +13,8 @@
 <script>
 import Auth from '@/components/firebaseui/auth';
 export default {
-  // middleware: 'auth',
-  // auth: 'guest',
+  middleware: ['auth'],
+  auth: 'guest',
   components: {
     Auth,
   },

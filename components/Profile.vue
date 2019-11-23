@@ -1,5 +1,5 @@
 <template>
-  <v-list v-if="$auth.loggedIn">
+  <v-list v-if="$auth.loggedIn || $auth.user">
     <h1>Profile</h1>
     <v-list-item>
       <v-list-item-avatar>

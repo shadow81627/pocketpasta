@@ -101,7 +101,7 @@ import Quill from 'quill';
 const debounce = require('lodash/debounce');
 const Delta = Quill.import('delta');
 export default {
-  middleware: 'auth',
+  middleware: ['auth'],
 
   async asyncData(context) {
     if (context.$auth.user.uid) {

@@ -266,15 +266,15 @@ module.exports = {
     strategies: {
       custom: {
         _scheme: '~/plugins/customStrategy.js',
-        endpoints: {
-          login: {
-            url: '/api/auth/login',
-            method: 'post',
-            propertyName: 'token',
-          },
-          logout: { url: '/api/auth/logout', method: 'post' },
-          user: { url: '/api/auth/user', method: 'get', propertyName: 'user' },
-        },
+        // endpoints: {
+        //   login: {
+        //     url: '/api/auth/login',
+        //     method: 'post',
+        //     propertyName: 'token',
+        //   },
+        //   logout: { url: '/api/auth/logout', method: 'post' },
+        //   user: { url: '/api/auth/user', method: 'get', propertyName: 'user' },
+        // },
       },
       auth0: {
         domain: 'pocketpasta.auth0.com',
