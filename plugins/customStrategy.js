@@ -21,7 +21,7 @@ export default class CustomScheme {
 
     await this.$auth.redirect('login', false);
 
-    // return this.fetchUser();
+    return this.fetchUser();
   }
 
   async setUserToken() {

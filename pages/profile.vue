@@ -1,6 +1,8 @@
 <template>
   <div class="container">
-    <profile />
+    <client-only>
+      <profile />
+    </client-only>
   </div>
 </template>
 
