@@ -1,5 +1,11 @@
 # Releases
 
+## [0.24.14](https://github.com/shadow81627/pocketpasta/compare/v0.24.13...v0.24.14) (2019-11-24)
+
+### Bug Fixes
+
+- **profile:** add client only wrapper ([4d7d128](https://github.com/shadow81627/pocketpasta/commit/4d7d1287aa2950e6b1fbb8f630f104a67e1c8d17))
+
 ## [0.24.13](https://github.com/shadow81627/pocketpasta/compare/v0.24.12...v0.24.13) (2019-11-24)
 
 ### Bug Fixes
