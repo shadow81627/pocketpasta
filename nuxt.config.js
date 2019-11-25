@@ -262,7 +262,9 @@ module.exports = {
   },
 
   auth: {
+    // cookie: false,
     resetOnError: true,
+    defaultStrategy: 'custom',
     strategies: {
       custom: {
         _scheme: '~/plugins/customStrategy.js',
