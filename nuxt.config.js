@@ -308,6 +308,8 @@ module.exports = {
       'Card',
       'ButtonPlugin',
       'FormTextareaPlugin',
+      'FormGroupPlugin',
+      'FormInputPlugin',
     ],
     directivePlugins: ['Tooltip'],
   },
