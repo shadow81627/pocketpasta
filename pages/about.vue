@@ -60,22 +60,30 @@
       </two-by-one>
       <two-by-one />
 
-      <div class="row">
-        <div class="col">
-          <h2>The Pitch</h2>
-          <div class="embed-responsive embed-responsive-16by9 d-print-none">
-            <iframe
-              width="560"
-              height="315"
-              class="embed-responsive-item"
-              src="https://www.youtube.com/embed/W0StMCfs5Ew"
-              frameborder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            />
+      <v-lazy
+        :options="{
+          threshold: 0.5,
+        }"
+        min-height="315"
+        transition="fade-transition"
+      >
+        <div class="row">
+          <div class="col">
+            <h2>The Pitch</h2>
+            <div class="embed-responsive embed-responsive-16by9 d-print-none">
+              <iframe
+                width="560"
+                height="315"
+                class="embed-responsive-item"
+                src="https://www.youtube.com/embed/W0StMCfs5Ew"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              />
+            </div>
           </div>
         </div>
-      </div>
+      </v-lazy>
 
       <!-- <div class="row">
         <div class="card bg-light card-body mb-3 profile">
