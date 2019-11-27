@@ -1,5 +1,11 @@
 # Releases
 
+## [0.25.1](https://github.com/shadow81627/pocketpasta/compare/v0.25.0...v0.25.1) (2019-11-27)
+
+### Performance Improvements
+
+- **about:** lazy load pitch youtube video ([4561525](https://github.com/shadow81627/pocketpasta/commit/4561525aa3aa6a78a30e5a16db422af16321f5a6))
+
 ## [0.25.0](https://github.com/shadow81627/pocketpasta/compare/v0.24.14...v0.25.0) (2019-11-27)
 
 ### Features
