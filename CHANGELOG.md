@@ -1,5 +1,11 @@
 # Releases
 
+## [0.25.0](https://github.com/shadow81627/pocketpasta/compare/v0.24.14...v0.25.0) (2019-11-27)
+
+### Features
+
+- **contact:** add contact us form ([a338982](https://github.com/shadow81627/pocketpasta/commit/a3389826a11329892e678e2069fd95381564a77f))
+
 ## [0.24.14](https://github.com/shadow81627/pocketpasta/compare/v0.24.13...v0.24.14) (2019-11-24)
 
 ### Bug Fixes
