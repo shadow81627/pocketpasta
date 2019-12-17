@@ -1,5 +1,11 @@
 # Releases
 
+## [0.25.7](https://github.com/shadow81627/pocketpasta/compare/v0.25.6...v0.25.7) (2019-12-17)
+
+### Bug Fixes
+
+- **deps:** update dependency nuxt to v2.11.0 ([fbf7690](https://github.com/shadow81627/pocketpasta/commit/fbf7690c2db12ba45612b99c504af1c58265afc4))
+
 ## [0.25.6](https://github.com/shadow81627/pocketpasta/compare/v0.25.5...v0.25.6) (2019-12-12)
 
 ### Bug Fixes
