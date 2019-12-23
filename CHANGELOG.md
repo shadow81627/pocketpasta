@@ -1,5 +1,41 @@
 # Releases
 
+## [0.25.10](https://github.com/shadow81627/pocketpasta/compare/v0.25.9...v0.25.10) (2019-12-19)
+
+### Bug Fixes
+
+- **deps:** update dependency firebaseui to v4.4.0 ([c3b0a7c](https://github.com/shadow81627/pocketpasta/commit/c3b0a7cfea0c5c6989bd65797b41a47f709c7c6e))
+
+## [0.25.9](https://github.com/shadow81627/pocketpasta/compare/v0.25.8...v0.25.9) (2019-12-19)
+
+### Bug Fixes
+
+- **deps:** update dependency firebase to v7.6.1 ([508af7e](https://github.com/shadow81627/pocketpasta/commit/508af7e5eb2ecdf597f6f1ee83470db99d0029ed))
+
+## [0.25.8](https://github.com/shadow81627/pocketpasta/compare/v0.25.7...v0.25.8) (2019-12-17)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxtjs/axios to v5.9.0 ([7410568](https://github.com/shadow81627/pocketpasta/commit/7410568eecd9d4542ddfe86a4004a4d483401c67))
+
+## [0.25.7](https://github.com/shadow81627/pocketpasta/compare/v0.25.6...v0.25.7) (2019-12-17)
+
+### Bug Fixes
+
+- **deps:** update dependency nuxt to v2.11.0 ([fbf7690](https://github.com/shadow81627/pocketpasta/commit/fbf7690c2db12ba45612b99c504af1c58265afc4))
+
+## [0.25.6](https://github.com/shadow81627/pocketpasta/compare/v0.25.5...v0.25.6) (2019-12-12)
+
+### Bug Fixes
+
+- **deps:** update dependency firebase to v7.6.0 ([2108250](https://github.com/shadow81627/pocketpasta/commit/2108250beee291d5ac2230c0bcbf68e31a68c90f))
+
+## [0.25.5](https://github.com/shadow81627/pocketpasta/compare/v0.25.4...v0.25.5) (2019-12-09)
+
+### Bug Fixes
+
+- **deps:** update dependency firebase to v7.5.2 ([d46a613](https://github.com/shadow81627/pocketpasta/commit/d46a6137746404a3007d15a86dedd2773ea0a057))
+
 ## [0.25.4](https://github.com/shadow81627/pocketpasta/compare/v0.25.3...v0.25.4) (2019-12-06)
 
 ### Bug Fixes
