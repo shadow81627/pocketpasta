@@ -1,5 +1,11 @@
 # Releases
 
+## [0.25.12](https://github.com/shadow81627/pocketpasta/compare/v0.25.11...v0.25.12) (2019-12-27)
+
+### Bug Fixes
+
+- **vscode:** update format on save settings ([189fedc](https://github.com/shadow81627/pocketpasta/commit/189fedc7def806e355f0ed022688200ea39b96f5))
+
 ## [0.25.11](https://github.com/shadow81627/pocketpasta/compare/v0.25.10...v0.25.11) (2019-12-27)
 
 ### Bug Fixes
