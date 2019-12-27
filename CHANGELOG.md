@@ -1,5 +1,11 @@
 # Releases
 
+## [0.26.0](https://github.com/shadow81627/pocketpasta/compare/v0.25.12...v0.26.0) (2019-12-27)
+
+### Features
+
+- **shoppinglist:** add clear button ([92f2605](https://github.com/shadow81627/pocketpasta/commit/92f2605c29c82ec5c0e1356c01b40939fc03251d))
+
 ## [0.25.12](https://github.com/shadow81627/pocketpasta/compare/v0.25.11...v0.25.12) (2019-12-27)
 
 ### Bug Fixes
