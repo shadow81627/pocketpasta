@@ -15,7 +15,7 @@
   "bugs": "https://github.com/shadow81627/pocketpasta/issues",
   "homepage": "https://pocketpasta.com",
   "scripts": {
-    "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
+    "dev": "nuxt",
     "build": "nuxt build",
     "analyze": "nuxt build --analyze",
     "start": "cross-env NODE_ENV=production node server/index.js",
