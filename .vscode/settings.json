@@ -1,19 +1,5 @@
 {
-  "eslint.validate": [
-    {
-      "language": "vue",
-      "autoFix": true
-    },
-    {
-      "language": "javascript",
-      "autoFix": true
-    },
-    {
-      "language": "javascriptreact",
-      "autoFix": true
-    }
-  ],
-  "eslint.autoFixOnSave": true,
+  "eslint.validate": ["vue", "javascript", "javascriptreact"],
   "editor.formatOnSave": false,
   "vetur.validation.template": false,
   "files.exclude": {
@@ -21,6 +7,10 @@
     "**/dist/**": true,
     "**/coverage/**": true,
     "**/.nuxt/**": true,
+    "**/sw.js": true,
     "**/.firebase/**": true
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
   }
 }
