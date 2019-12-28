@@ -88,7 +88,7 @@ after_deploy:
   - ./node_modules/.bin/sentry-cli releases deploys "$VERSION" new --env $SENTRY_ENVIRONMENT
 
 after_success:
-  - npm run lh -- $APP_URL
+  - npm run lhci:autorun
 
 env:
   global:
