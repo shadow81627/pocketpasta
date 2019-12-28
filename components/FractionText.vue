@@ -16,21 +16,19 @@
       >{{ part }}</span
     ></span
   >
-  <span v-else-if="Array.isArray(text.split(numberRegex))">
-    <span
-      v-for="part in text.split(numberRegex)"
-      :key="part"
-      :class="{
-        'font-weight-bold': part.search(numberRegex) !== -1,
-      }"
-      >{{ part }}</span
-    ></span
-  >
+  <number-text
+    v-else-if="Array.isArray(text.split(numberRegex))"
+    :text="text"
+  />
   <span v-else>{{ text }}</span>
 </template>
 
 <script>
+import NumberText from '@/components/text/NumberText';
 export default {
+  components: {
+    NumberText,
+  },
   props: {
     text: {
       type: String,
@@ -45,3 +43,9 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.frac {
+  font-size: 1.3rem;
+}
+</style>

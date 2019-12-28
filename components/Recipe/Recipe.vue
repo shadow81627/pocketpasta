@@ -41,8 +41,8 @@
     <share class="py-4" />
 
     <p>
-      <strong>Makes:</strong>
-      <span>{{ recipe.recipeYield }}</span>
+      <!-- <span>Makes:</span> -->
+      <number-text :text="recipe.recipeYield" />
     </p>
     <section v-if="recipe.recipeIngredient">
       <h2>Ingredients:</h2>
@@ -109,6 +109,7 @@
 </template>
 
 <script>
+import NumberText from '@/components/text/NumberText';
 import FractionText from '@/components/FractionText';
 import Keywords from '@/components/Keywords';
 import Share from '@/components/Social/Share';
@@ -116,6 +117,7 @@ import NutritionFactTable from '@/components/Recipe/NutritionFactTable';
 
 export default {
   components: {
+    NumberText,
     FractionText,
     Keywords,
     Share,
