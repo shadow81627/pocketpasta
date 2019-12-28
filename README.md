@@ -13,6 +13,8 @@
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fshadow81627%2Fpocketpasta.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fshadow81627%2Fpocketpasta?ref=badge_shield)
 [![Known Vulnerabilities](https://snyk.io/test/github/shadow81627/pocketpasta/badge.svg)](https://snyk.io/test/github/shadow81627/pocketpasta)
 [![Bors enabled](https://bors.tech/images/badge_small.svg)](https://app.bors.tech/repositories/3)
+[![Total alerts](https://img.shields.io/lgtm/alerts/g/shadow81627/pocketpasta.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/shadow81627/pocketpasta/alerts/)
+[![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/shadow81627/pocketpasta.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/shadow81627/pocketpasta/context:javascript)
 
 > PocketPasta is a collection of my demo apps that I build to practice my skills.
 
@@ -22,17 +24,17 @@
 
 ```bash
 # install dependencies
-$ npm install
+npm install
 
 # serve with hot reload at localhost:3000
-$ npm run dev
+npm run dev
 
 # build for production and launch server
-$ npm run build
-$ npm start
+npm run build
+npm start
 
 # generate static project
-$ npm run generate
+npm run generate
 ```
 
 For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
