@@ -62,6 +62,7 @@
     "@babel/core": "7.7.7",
     "@commitlint/cli": "8.2.0",
     "@commitlint/config-conventional": "8.2.0",
+    "@lhci/cli": "^0.3.7",
     "@mdi/js": "4.7.95",
     "@nuxtjs/dotenv": "1.4.1",
     "@nuxtjs/eslint-config": "2.0.0",
