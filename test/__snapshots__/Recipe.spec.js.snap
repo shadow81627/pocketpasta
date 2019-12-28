@@ -12,36 +12,16 @@ exports[`Recipe renders properly 1`] = `
   <section>
     <h2>Ingredients:</h2>
     <ol class=\\"list-group-flush  pl-0\\">
-      <li class=\\"list-group-item\\">
-        1 small onion, diced
-      </li>
-      <li class=\\"list-group-item\\">
-        2 cloves garlic, minced
-      </li>
-      <li class=\\"list-group-item\\">
-        2 carrots, diced small
-      </li>
-      <li class=\\"list-group-item\\">
-        2 stalks celery, diced small
-      </li>
-      <li class=\\"list-group-item\\">
-        2 large cans (28 oz. each) peeled Italian Roma tomatoes
-      </li>
-      <li class=\\"list-group-item\\">
-        1 large bunch fresh basil, washed
-      </li>
-      <li class=\\"list-group-item\\">
-        2 tbsp extra virgin olive oil
-      </li>
-      <li class=\\"list-group-item\\">
-        1 lb. spaghetti pasta
-      </li>
-      <li class=\\"list-group-item\\">
-        Salt to taste
-      </li>
-      <li class=\\"list-group-item\\">
-        Freshly grated Parmigiano-Reggiano cheese
-      </li>
+      <li class=\\"list-group-item\\"><span>1 small onion, diced</span></li>
+      <li class=\\"list-group-item\\"><span>2 cloves garlic, minced</span></li>
+      <li class=\\"list-group-item\\"><span>2 carrots, diced small</span></li>
+      <li class=\\"list-group-item\\"><span>2 stalks celery, diced small</span></li>
+      <li class=\\"list-group-item\\"><span>2 large cans (28 oz. each) peeled Italian Roma tomatoes</span></li>
+      <li class=\\"list-group-item\\"><span>1 large bunch fresh basil, washed</span></li>
+      <li class=\\"list-group-item\\"><span>2 tbsp extra virgin olive oil</span></li>
+      <li class=\\"list-group-item\\"><span>1 lb. spaghetti pasta</span></li>
+      <li class=\\"list-group-item\\"><span>Salt to taste</span></li>
+      <li class=\\"list-group-item\\"><span>Freshly grated Parmigiano-Reggiano cheese</span></li>
     </ol>
   </section>
   <section>

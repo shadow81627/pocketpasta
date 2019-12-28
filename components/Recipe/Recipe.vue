@@ -52,7 +52,7 @@
           :key="ingredient"
           class="list-group-item"
         >
-          {{ ingredient }}
+          <span v-html="splitFraction(ingredient)" />
         </li>
       </ol>
     </section>
@@ -130,6 +130,35 @@ export default {
       recipe.recipeIngredient = [...new Set(recipe.recipeIngredient)];
 
       return recipe;
+    },
+  },
+  methods: {
+    splitFraction(value, sep = '/') {
+      if (!value) return '';
+      value = value.toString();
+      const split = value.split(sep);
+      if (Array.isArray(split) && split.length >= 2) {
+        const combined = split.reduce((accumulator, currentValue) => {
+          const last = accumulator.slice(-1);
+
+          if (parseInt(last) && parseInt(currentValue)) {
+            return (
+              accumulator.substring(0, accumulator.length - 1) +
+              '<span class="frac">' +
+              last +
+              '/' +
+              currentValue.charAt(0) +
+              '</span>' +
+              currentValue.substr(1)
+            );
+          } else {
+            return accumulator + currentValue;
+          }
+        });
+
+        return combined;
+      }
+      return value;
     },
   },
   head() {

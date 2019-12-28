@@ -1,7 +1,7 @@
 {
   "eslint.validate": ["vue", "javascript", "javascriptreact"],
-  "editor.formatOnSave": false,
-  "vetur.validation.template": false,
+  "editor.formatOnSave": true,
+  "vetur.validation.template": true,
   "files.exclude": {
     "**/node_modules/**": true,
     "**/dist/**": true,
