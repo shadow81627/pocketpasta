@@ -1,3 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`products page renders properly 1`] = `"<div class=\\"container\\"><list-stub heading=\\"products.heading\\" list=\\"[object Object],[object Object],[object Object],[object Object]\\" layout=\\"columns\\"></list-stub></div>"`;
+exports[`products page renders properly 1`] = `
+"<div class=\\"container\\">
+  <list-stub heading=\\"products.heading\\" list=\\"[object Object],[object Object],[object Object],[object Object]\\" layout=\\"columns\\"></list-stub>
+</div>"
+`;

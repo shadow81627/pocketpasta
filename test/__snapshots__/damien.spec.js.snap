@@ -1,3 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`damien renders properly 1`] = `"<div class=\\"container\\"><div class=\\"row\\"><profile-stub></profile-stub></div></div>"`;
+exports[`damien renders properly 1`] = `
+"<div class=\\"container\\">
+  <div class=\\"row\\">
+    <profile-stub></profile-stub>
+  </div>
+</div>"
+`;

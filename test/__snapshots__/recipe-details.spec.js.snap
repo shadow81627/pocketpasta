@@ -1,3 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`recipeDetial renders properly 1`] = `"<div class=\\"container\\"><recipe-stub></recipe-stub> <v-btn-stub color=\\"pink\\" dark=\\"true\\" tag=\\"button\\" activeclass=\\"\\" to=\\"//edit\\" bottom=\\"true\\" fixed=\\"true\\" right=\\"true\\" fab=\\"true\\" type=\\"button\\" class=\\"hidden-print-only\\"><v-icon-stub>$edit</v-icon-stub></v-btn-stub></div>"`;
+exports[`recipeDetial renders properly 1`] = `
+"<div class=\\"container\\">
+  <recipe-stub></recipe-stub>
+  <v-btn-stub color=\\"pink\\" dark=\\"true\\" tag=\\"button\\" activeclass=\\"\\" to=\\"//edit\\" bottom=\\"true\\" fixed=\\"true\\" right=\\"true\\" fab=\\"true\\" type=\\"button\\" class=\\"hidden-print-only\\">
+    <v-icon-stub>$edit</v-icon-stub>
+  </v-btn-stub>
+</div>"
+`;
