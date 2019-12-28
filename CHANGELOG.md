@@ -1,5 +1,16 @@
 # Releases
 
+## [0.27.0](https://github.com/shadow81627/pocketpasta/compare/v0.26.0...v0.27.0) (2019-12-28)
+
+### Bug Fixes
+
+- **recipe:** remove v-html ([fef4d89](https://github.com/shadow81627/pocketpasta/commit/fef4d89476a8b389b1d1481cd2d9a389a54bce10))
+
+### Features
+
+- **fraction-text:** bold numbers ([da7c1e5](https://github.com/shadow81627/pocketpasta/commit/da7c1e54aaaaf195834340ffbddfceb639cefa12))
+- **recipe:** add diagonal fractions to recipe ingredients ([a7e3f3c](https://github.com/shadow81627/pocketpasta/commit/a7e3f3cd930d2f7fa6aeb55e4e36972630fbd8fc))
+
 ## [0.26.0](https://github.com/shadow81627/pocketpasta/compare/v0.25.12...v0.26.0) (2019-12-27)
 
 ### Features
