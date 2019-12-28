@@ -1,6 +1,10 @@
 language: node_js
 #  latest stable Node.js release
 node_js: lts/*
+
+addons:
+  chrome: stable
+
 # Cache node packages between jobs
 cache: npm
 branches:
