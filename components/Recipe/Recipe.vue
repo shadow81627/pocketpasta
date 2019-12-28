@@ -52,7 +52,7 @@
           :key="ingredient"
           class="list-group-item"
         >
-          <span v-html="splitFraction(ingredient)" />
+          <fraction-text :text="ingredient" />
         </li>
       </ol>
     </section>
@@ -68,7 +68,7 @@
           :key="instruction.text"
           class="list-group-item"
         >
-          {{ instruction.text }}
+          <fraction-text :text="instruction.text" />
         </li>
       </ol>
       <p v-else>{{ recipe.recipeInstructions }}</p>
@@ -109,12 +109,14 @@
 </template>
 
 <script>
-import Keywords from '@/components/Keywords.vue';
+import FractionText from '@/components/FractionText';
+import Keywords from '@/components/Keywords';
 import Share from '@/components/Social/Share';
 import NutritionFactTable from '@/components/Recipe/NutritionFactTable';
 
 export default {
   components: {
+    FractionText,
     Keywords,
     Share,
     NutritionFactTable,
@@ -130,35 +132,6 @@ export default {
       recipe.recipeIngredient = [...new Set(recipe.recipeIngredient)];
 
       return recipe;
-    },
-  },
-  methods: {
-    splitFraction(value, sep = '/') {
-      if (!value) return '';
-      value = value.toString();
-      const split = value.split(sep);
-      if (Array.isArray(split) && split.length >= 2) {
-        const combined = split.reduce((accumulator, currentValue) => {
-          const last = accumulator.slice(-1);
-
-          if (parseInt(last) && parseInt(currentValue)) {
-            return (
-              accumulator.substring(0, accumulator.length - 1) +
-              '<span class="frac">' +
-              last +
-              '/' +
-              currentValue.charAt(0) +
-              '</span>' +
-              currentValue.substr(1)
-            );
-          } else {
-            return accumulator + currentValue;
-          }
-        });
-
-        return combined;
-      }
-      return value;
     },
   },
   head() {
