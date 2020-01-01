@@ -1,5 +1,11 @@
 # Releases
 
+## [0.28.0](https://github.com/shadow81627/pocketpasta/compare/v0.27.0...v0.28.0) (2020-01-01)
+
+### Features
+
+- **meta:** add canonical from env in default layout ([#703](https://github.com/shadow81627/pocketpasta/issues/703)) ([a90bee1](https://github.com/shadow81627/pocketpasta/commit/a90bee1cdbf13f9fd8b835bca2e2c5d56d341b5c))
+
 ## [0.27.0](https://github.com/shadow81627/pocketpasta/compare/v0.26.0...v0.27.0) (2019-12-28)
 
 ### Bug Fixes
