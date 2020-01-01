@@ -42,13 +42,7 @@ export default {
           content: 'Easy pasta recipes made with simple ingredients.',
         },
       ],
-      link: [
-        {
-          hid: 'canonical',
-          rel: 'canonical',
-          href: 'https://pocketpasta.com/recipes',
-        },
-      ],
+      link: [],
     };
   },
 };

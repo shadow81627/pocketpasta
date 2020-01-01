@@ -157,7 +157,14 @@ export default {
   },
   head() {
     return {
-      link: [this.$store.getters.getCurrentTheme()],
+      link: [
+        this.$store.getters.getCurrentTheme(),
+        {
+          hid: 'canonical',
+          rel: 'canonical',
+          href: `${this.baseUrl}${this.$route.path}`,
+        },
+      ],
     };
   },
 };
