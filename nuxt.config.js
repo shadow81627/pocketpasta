@@ -2,6 +2,7 @@
 //   debug: true,
 // });
 // import axios from 'axios';
+import purgecss from '@fullhuman/postcss-purgecss';
 
 // import recipes from './assets/link-data/recipes';
 // import products from './assets/link-data/products';
@@ -400,7 +401,7 @@ module.exports = {
    */
   build: {
     // move component styles into css files
-    extractCSS: true,
+    // extractCSS: true,
     /*
      ** You can extend webpack config here
      */
@@ -414,6 +415,18 @@ module.exports = {
           exclude: /(node_modules)/,
         });
       }
+    },
+    postcss: {
+      plugins: [
+        purgecss({
+          content: [
+            './pages/**/*.vue',
+            './layouts/**/*.vue',
+            './components/**/*.vue',
+          ],
+          whitelist: ['html', 'body'],
+        }),
+      ],
     },
   },
 };
