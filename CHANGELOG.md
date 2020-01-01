@@ -1,5 +1,11 @@
 # Releases
 
+## [0.28.1](https://github.com/shadow81627/pocketpasta/compare/v0.28.0...v0.28.1) (2020-01-01)
+
+### Bug Fixes
+
+- **firebase:** console log rather than console error for config request ([#704](https://github.com/shadow81627/pocketpasta/issues/704)) ([5a1b503](https://github.com/shadow81627/pocketpasta/commit/5a1b503ab6cbef56a87cba62a6c17781f3bfc1b5))
+
 ## [0.28.0](https://github.com/shadow81627/pocketpasta/compare/v0.27.0...v0.28.0) (2020-01-01)
 
 ### Features
