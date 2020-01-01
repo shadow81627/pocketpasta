@@ -36,7 +36,7 @@ export default async ({ $axios, isDev }, inject) => {
           });
         })
         .catch((error) => {
-          console.error("Can't fetch firebase config: ", error);
+          console.log("Can't fetch firebase config: ", error);
           firebase.initializeApp(config);
         });
     } else {
