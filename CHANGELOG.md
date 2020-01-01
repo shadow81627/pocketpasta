@@ -1,5 +1,11 @@
 # Releases
 
+## [0.28.2](https://github.com/shadow81627/pocketpasta/compare/v0.28.1...v0.28.2) (2020-01-01)
+
+### Performance Improvements
+
+- **video:** use plyr js ([#706](https://github.com/shadow81627/pocketpasta/issues/706)) ([59ccc71](https://github.com/shadow81627/pocketpasta/commit/59ccc718e1131197212bd2b0ad5b25bc49a9bc4b))
+
 ## [0.28.1](https://github.com/shadow81627/pocketpasta/compare/v0.28.0...v0.28.1) (2020-01-01)
 
 ### Bug Fixes

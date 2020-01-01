@@ -226,12 +226,14 @@ module.exports = {
     '~/assets/scss/custom.scss',
     '~/assets/css/font.css',
     '~/assets/css/custom.css',
+    'plyr/dist/plyr.css',
   ],
 
   /*
    ** Plugins to load before mounting the App
    */
   plugins: [
+    { src: '~/plugins/vue-plyr' },
     { src: '~/plugins/firebase.js', ssr: false },
     { src: '~/plugins/firebase_auth.js', ssr: false },
     // { src: '~/plugins/quicklink', ssr: false },

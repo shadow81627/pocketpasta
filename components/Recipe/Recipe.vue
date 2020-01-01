@@ -3,18 +3,18 @@
     <h1>{{ recipe.name }}</h1>
     <p>{{ recipe.description }}</p>
 
-    <div
-      v-if="recipe.video"
-      class="embed-responsive embed-responsive-16by9 d-print-none"
-    >
-      <iframe
-        v-if="Array.isArray(recipe.video)"
-        class="embed-responsive-item"
-        :src="recipe.video[0].contentUrl"
-        allowfullscreen
-        :poster="recipe.video[0].thumbnailUrl"
+    <vue-plyr v-if="recipe.video && Array.isArray(recipe.video)">
+      <div
+        v-if="recipe.video[0].contentUrl.includes('youtube')"
+        data-plyr-provider="youtube"
+        :data-plyr-embed-id="
+          recipe.video[0].contentUrl
+            .split('/')
+            .slice(-1)
+            .pop()
+        "
       />
-    </div>
+    </vue-plyr>
     <div v-else-if="recipe.image">
       <b-img-lazy
         v-if="typeof recipe.image === 'object' && recipe.image !== null"

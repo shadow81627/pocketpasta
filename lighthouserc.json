@@ -7,6 +7,12 @@
     "assert": {
       "preset": "lighthouse:recommended",
       "assertions": {
+        "errors-in-console": "off",
+        "offscreen-images": "off",
+        "total-byte-weight": "off",
+        "uses-rel-preconnect": "off",
+        "uses-optimized-images": "off",
+
         "color-contrast": "off",
         "unused-css-rules": "off",
         "uses-http2": "off"
