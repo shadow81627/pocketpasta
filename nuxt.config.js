@@ -182,41 +182,6 @@ module.exports = {
       },
       {
         rel: 'preconnect',
-        href: 'https://pocketpasta.auth0.com',
-        crossorigin: 'anonymous',
-      },
-      {
-        rel: 'preconnect',
-        href: 'https://stats.g.doubleclick.net',
-        crossorigin: 'anonymous',
-      },
-      {
-        rel: 'preconnect',
-        href: 'https://www.google.com.au',
-        crossorigin: 'anonymous',
-      },
-      {
-        rel: 'preconnect',
-        href: 'https://www.google-analytics.com',
-        crossorigin: 'anonymous',
-      },
-      {
-        rel: 'preconnect',
-        href: 'https://www.google.com',
-        crossorigin: 'anonymous',
-      },
-      {
-        rel: 'preconnect',
-        href: 'https://www.googletagmanager.com',
-        crossorigin: 'anonymous',
-      },
-      {
-        rel: 'preconnect',
-        href: 'https://firebaseinstallations.googleapis.com',
-        crossorigin: 'anonymous',
-      },
-      {
-        rel: 'preconnect',
         href: 'https://res.cloudinary.com',
         crossorigin: 'anonymous',
       },
