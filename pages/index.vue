@@ -166,13 +166,7 @@ export default {
           type: 'application/ld+json',
         },
       ],
-      link: [
-        {
-          hid: 'canonical',
-          rel: 'canonical',
-          href: 'https://pocketpasta.com',
-        },
-      ],
+      link: [],
     };
   },
 };

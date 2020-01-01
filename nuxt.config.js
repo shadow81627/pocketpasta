@@ -13,6 +13,11 @@ const pkg = require('./package');
 
 // console.log(config);
 
+const HOST = process.env.HOST || '0.0.0.0';
+const PORT = process.env.PORT || '3000';
+const BASE_URL =
+  process.env.BASE_URL || `http${PORT === 433 ? 's' : ''}://${HOST}:${PORT}`;
+
 const routes = (callback) => {
   // axios
   //   .get(
@@ -37,7 +42,7 @@ const routes = (callback) => {
 };
 
 const i18nSettings = {
-  baseUrl: 'https://pocketpasta.com',
+  baseUrl: BASE_URL,
   seo: true,
   defaultLocale: 'en',
   vueI18n: {
@@ -89,10 +94,44 @@ module.exports = {
   },
 
   env: {
-    HOST: process.env.HOST,
-    PORT: process.env.PORT,
+    HOST,
+    PORT,
+    BASE_URL,
     VERSION: pkg.version,
     COMMIT: process.env.npm_package_gitHead,
+  },
+
+  server: {
+    timing: {
+      total: true,
+    },
+  },
+
+  render: {
+    bundleRenderer: {
+      shouldPreload: (file, type) => {
+        // type is inferred based on the file extension.
+        // https://fetch.spec.whatwg.org/#concept-request-destination
+        if (type === 'script' || type === 'style') {
+          return true;
+        }
+        if (type === 'font') {
+          // only preload woff2 fonts
+          return /\.woff2$/.test(file);
+        }
+        // if (type === 'image') {
+        //   // only preload important images
+        //   return file === 'header-bg.jpg';
+        // }
+      },
+    },
+    http2: {
+      push: true,
+      pushAssets: (req, res, publicPath, preloadFiles) =>
+        preloadFiles.map(
+          (f) => `<${publicPath}${f.file}>; rel=preload; as=${f.asType}`,
+        ),
+    },
   },
 
   /*
@@ -328,7 +367,7 @@ module.exports = {
   },
 
   sitemap: {
-    hostname: 'https://pocketpasta.com',
+    hostname: BASE_URL,
     routes,
     gzip: true,
     xslUrl: '/sitemap.xsl',
