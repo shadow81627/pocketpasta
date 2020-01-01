@@ -66,6 +66,17 @@ const i18nSettings = {
   langDir: 'lang/',
 };
 
+const preconnectLinks = [
+  'https://pocketpasta.com',
+  'https://res.cloudinary.com',
+  'https://www.google-analytics.com',
+  'https://firebaseinstallations.googleapis.com',
+  'https://www.google.com',
+  'https://www.googletagmanager.com',
+  'https://stats.g.doubleclick.net',
+  'https://www.googletagmanager.com',
+];
+
 module.exports = {
   mode: 'universal',
 
@@ -185,6 +196,11 @@ module.exports = {
         href: 'https://res.cloudinary.com',
         crossorigin: 'anonymous',
       },
+      ...preconnectLinks.map((href) => ({
+        rel: 'preconnect',
+        href,
+        crossorigin: 'anonymous',
+      })),
     ],
   },
 
