@@ -1,5 +1,11 @@
 # Releases
 
+## [0.28.3](https://github.com/shadow81627/pocketpasta/compare/v0.28.2...v0.28.3) (2020-01-02)
+
+### Performance Improvements
+
+- **preconnect:** remove unused preconnect links ([e2d2820](https://github.com/shadow81627/pocketpasta/commit/e2d2820e35487e34fd35ee58256b647c1102c610))
+
 ## [0.28.2](https://github.com/shadow81627/pocketpasta/compare/v0.28.1...v0.28.2) (2020-01-01)
 
 ### Performance Improvements
