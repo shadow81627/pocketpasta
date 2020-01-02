@@ -265,6 +265,7 @@ export default {
   buildModules: [
     // Simple usage
     '@nuxtjs/vuetify',
+    'nuxt-purgecss',
   ],
 
   dotenv: {
