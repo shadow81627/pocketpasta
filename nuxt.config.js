@@ -2,8 +2,7 @@
 //   debug: true,
 // });
 // import axios from 'axios';
-// import purgecss from '@fullhuman/postcss-purgecss';
-const purgecss = require('@fullhuman/postcss-purgecss');
+import purgecss from '@fullhuman/postcss-purgecss';
 
 // import recipes from './assets/link-data/recipes';
 // import products from './assets/link-data/products';
@@ -79,7 +78,7 @@ const preconnectLinks = [
   'https://www.googletagmanager.com',
 ];
 
-module.exports = {
+export default {
   mode: 'universal',
 
   workbox: {
@@ -406,6 +405,7 @@ module.exports = {
             './layouts/**/*.vue',
             './components/**/*.vue',
             './node_modules/vuetify/src/**/*.ts',
+            './node_modules/plyr/src/**/*.js',
           ],
           whitelist: ['html', 'body'],
         }),
