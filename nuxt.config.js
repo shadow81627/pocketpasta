@@ -68,6 +68,17 @@ const i18nSettings = {
   langDir: 'lang/',
 };
 
+const preconnectLinks = [
+  'https://pocketpasta.com',
+  'https://res.cloudinary.com',
+  'https://www.google-analytics.com',
+  'https://firebaseinstallations.googleapis.com',
+  'https://www.google.com',
+  'https://www.googletagmanager.com',
+  'https://stats.g.doubleclick.net',
+  'https://www.googletagmanager.com',
+];
+
 module.exports = {
   mode: 'universal',
 
@@ -184,44 +195,14 @@ module.exports = {
       },
       {
         rel: 'preconnect',
-        href: 'https://pocketpasta.auth0.com',
-        crossorigin: 'anonymous',
-      },
-      {
-        rel: 'preconnect',
-        href: 'https://stats.g.doubleclick.net',
-        crossorigin: 'anonymous',
-      },
-      {
-        rel: 'preconnect',
-        href: 'https://www.google.com.au',
-        crossorigin: 'anonymous',
-      },
-      {
-        rel: 'preconnect',
-        href: 'https://www.google-analytics.com',
-        crossorigin: 'anonymous',
-      },
-      {
-        rel: 'preconnect',
-        href: 'https://www.google.com',
-        crossorigin: 'anonymous',
-      },
-      {
-        rel: 'preconnect',
-        href: 'https://www.googletagmanager.com',
-        crossorigin: 'anonymous',
-      },
-      {
-        rel: 'preconnect',
-        href: 'https://firebaseinstallations.googleapis.com',
-        crossorigin: 'anonymous',
-      },
-      {
-        rel: 'preconnect',
         href: 'https://res.cloudinary.com',
         crossorigin: 'anonymous',
       },
+      ...preconnectLinks.map((href) => ({
+        rel: 'preconnect',
+        href,
+        crossorigin: 'anonymous',
+      })),
     ],
   },
 
