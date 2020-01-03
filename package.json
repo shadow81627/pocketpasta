@@ -109,7 +109,7 @@
     "sass": "1.24.1",
     "sass-loader": "8.0.0",
     "semantic-release": "15.14.0",
-    "snyk": "1.271.0",
+    "snyk": "1.272.0",
     "vue-jest": "3.0.5",
     "vuetify-loader": "1.4.3"
   },
