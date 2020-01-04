@@ -106,7 +106,7 @@
     "nodemon": "2.0.2",
     "prettier": "1.19.1",
     "pretty-quick": "2.0.1",
-    "sass": "1.24.1",
+    "sass": "1.24.2",
     "sass-loader": "8.0.0",
     "semantic-release": "15.14.0",
     "snyk": "1.272.0",
