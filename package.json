@@ -71,7 +71,7 @@
     "@nuxtjs/eslint-module": "1.1.0",
     "@nuxtjs/vuetify": "1.9.1",
     "@semantic-release/changelog": "3.0.6",
-    "@semantic-release/git": "7.0.18",
+    "@semantic-release/git": "8.0.0",
     "@vue/test-utils": "1.0.0-beta.30",
     "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "10.0.3",
@@ -108,7 +108,7 @@
     "pretty-quick": "2.0.1",
     "sass": "1.24.3",
     "sass-loader": "8.0.0",
-    "semantic-release": "15.14.0",
+    "semantic-release": "16.0.0",
     "snyk": "1.277.3",
     "vue-jest": "3.0.5",
     "vuetify-loader": "1.4.3"
