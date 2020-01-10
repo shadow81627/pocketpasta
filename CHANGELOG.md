@@ -6,6 +6,12 @@
 
 - **deps:** update dependency @nuxtjs/google-analytics to v2.2.3 ([ff0a45c](https://github.com/shadow81627/pocketpasta/commit/ff0a45c0fbdc37991b720439829c4464eda85297))
 
+## [0.28.7](https://github.com/shadow81627/pocketpasta/compare/v0.28.6...v0.28.7) (2020-01-10)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxtjs/google-analytics to v2.2.3 ([ff0a45c](https://github.com/shadow81627/pocketpasta/commit/ff0a45c0fbdc37991b720439829c4464eda85297))
+
 ## [0.28.6](https://github.com/shadow81627/pocketpasta/compare/v0.28.5...v0.28.6) (2020-01-10)
 
 ### Bug Fixes
