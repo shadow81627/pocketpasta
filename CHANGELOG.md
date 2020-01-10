@@ -6,6 +6,12 @@
 
 - **deps:** update dependency firebase to v7.6.2 ([2edb4e3](https://github.com/shadow81627/pocketpasta/commit/2edb4e328f0802f248b2695af405673a20c3765a))
 
+## [0.28.6](https://github.com/shadow81627/pocketpasta/compare/v0.28.5...v0.28.6) (2020-01-10)
+
+### Bug Fixes
+
+- **deps:** update dependency firebase to v7.6.2 ([2edb4e3](https://github.com/shadow81627/pocketpasta/commit/2edb4e328f0802f248b2695af405673a20c3765a))
+
 ## [0.28.5](https://github.com/shadow81627/pocketpasta/compare/v0.28.4...v0.28.5) (2020-01-09)
 
 ### Bug Fixes
