@@ -102,7 +102,7 @@
     "jest": "24.9.0",
     "lighthousebot": "git+https://github.com/ebidel/lighthousebot.git",
     "mutation-observer": "1.0.3",
-    "node-sass": "4.13.0",
+    "node-sass": "4.13.1",
     "nodemon": "2.0.2",
     "prettier": "1.19.1",
     "pretty-quick": "2.0.1",
