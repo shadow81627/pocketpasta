@@ -34,7 +34,8 @@
     "semantic-release": "semantic-release",
     "snyk-protect": "snyk protect",
     "prepare": "npm run snyk-protect",
-    "git-cz": "git-cz"
+    "git-cz": "git-cz",
+    "now-build": "npm run generate:modern"
   },
   "dependencies": {
     "@nuxtjs/auth": "4.8.5",
