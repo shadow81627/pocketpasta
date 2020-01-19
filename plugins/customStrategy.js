@@ -33,7 +33,7 @@ export default class CustomScheme {
 
   async fetchUser() {
     const stringUser = await JSON.parse(
-      JSON.stringify(this.$auth.ctx.app.$firebase.auth().currentUser),
+      JSON.stringify(this.$auth.ctx.app.$fireAuth.currentUser),
     );
     return this.$auth.setUser({
       name: stringUser.displayName,
@@ -55,8 +55,7 @@ export default class CustomScheme {
   }
 
   async logout() {
-    await this.$auth.ctx.app.$firebase
-      .auth()
+    await this.$auth.ctx.app.$fireAuth
       .signOut()
       .then(function() {
         // Sign-out successful.
