@@ -1,5 +1,65 @@
 # Releases
 
+## [0.28.9](https://github.com/shadow81627/pocketpasta/compare/v0.28.8...v0.28.9) (2020-01-17)
+
+### Bug Fixes
+
+- **deps:** update dependency firebase to v7.7.0 ([883f103](https://github.com/shadow81627/pocketpasta/commit/883f1035fdb68d36b8b02ec0b574a24284571536))
+
+## [0.28.8](https://github.com/shadow81627/pocketpasta/compare/v0.28.7...v0.28.8) (2020-01-11)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxtjs/axios to v5.9.3 ([8ffc98b](https://github.com/shadow81627/pocketpasta/commit/8ffc98b3f8b174fa265cec1ce1d8a95b37340a6e))
+
+## [0.28.8](https://github.com/shadow81627/pocketpasta/compare/v0.28.7...v0.28.8) (2020-01-11)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxtjs/axios to v5.9.3 ([8ffc98b](https://github.com/shadow81627/pocketpasta/commit/8ffc98b3f8b174fa265cec1ce1d8a95b37340a6e))
+
+## [0.28.7](https://github.com/shadow81627/pocketpasta/compare/v0.28.6...v0.28.7) (2020-01-10)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxtjs/google-analytics to v2.2.3 ([ff0a45c](https://github.com/shadow81627/pocketpasta/commit/ff0a45c0fbdc37991b720439829c4464eda85297))
+
+## [0.28.7](https://github.com/shadow81627/pocketpasta/compare/v0.28.6...v0.28.7) (2020-01-10)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxtjs/google-analytics to v2.2.3 ([ff0a45c](https://github.com/shadow81627/pocketpasta/commit/ff0a45c0fbdc37991b720439829c4464eda85297))
+
+## [0.28.6](https://github.com/shadow81627/pocketpasta/compare/v0.28.5...v0.28.6) (2020-01-10)
+
+### Bug Fixes
+
+- **deps:** update dependency firebase to v7.6.2 ([2edb4e3](https://github.com/shadow81627/pocketpasta/commit/2edb4e328f0802f248b2695af405673a20c3765a))
+
+## [0.28.6](https://github.com/shadow81627/pocketpasta/compare/v0.28.5...v0.28.6) (2020-01-10)
+
+### Bug Fixes
+
+- **deps:** update dependency firebase to v7.6.2 ([2edb4e3](https://github.com/shadow81627/pocketpasta/commit/2edb4e328f0802f248b2695af405673a20c3765a))
+
+## [0.28.5](https://github.com/shadow81627/pocketpasta/compare/v0.28.4...v0.28.5) (2020-01-09)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxtjs/recaptcha to v0.6.2 ([651dcdc](https://github.com/shadow81627/pocketpasta/commit/651dcdcf0d43c00e5468205b8b91d3e186201c0b))
+
+## [0.28.4](https://github.com/shadow81627/pocketpasta/compare/v0.28.3...v0.28.4) (2020-01-02)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxtjs/axios to v5.9.2 ([1d09221](https://github.com/shadow81627/pocketpasta/commit/1d09221b8806284a9293d3d39f093728a87193c1))
+
+## [0.28.3](https://github.com/shadow81627/pocketpasta/compare/v0.28.2...v0.28.3) (2020-01-02)
+
+### Performance Improvements
+
+- **preconnect:** remove unused preconnect links ([e2d2820](https://github.com/shadow81627/pocketpasta/commit/e2d2820e35487e34fd35ee58256b647c1102c610))
+
 ## [0.28.2](https://github.com/shadow81627/pocketpasta/compare/v0.28.1...v0.28.2) (2020-01-01)
 
 ### Performance Improvements
