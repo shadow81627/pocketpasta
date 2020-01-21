@@ -16,7 +16,7 @@ export default {
   },
   async asyncData(context) {
     if (context.$auth.user.uid) {
-      const document = await context.app.$firebase.firestore
+      const document = await context.app.$fireStore
         .collection('shoppinglists')
         .doc(context.$auth.user.uid)
         .get()
@@ -45,7 +45,7 @@ export default {
     save() {
       const vm = this;
 
-      vm.$firebase.firestore
+      vm.$fireStore
         .collection('shoppinglists')
         .doc(vm.$auth.user.uid)
         .set(vm.document)

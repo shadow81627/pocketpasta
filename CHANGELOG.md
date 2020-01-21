@@ -1,5 +1,17 @@
 # Releases
 
+## [0.28.12](https://github.com/shadow81627/pocketpasta/compare/v0.28.11...v0.28.12) (2020-01-21)
+
+### Bug Fixes
+
+- **deps:** update dependency nuxt-fire to v3.5.5 ([0cf89b4](https://github.com/shadow81627/pocketpasta/commit/0cf89b4931ab475e20aaad625fef0361cb2d6e9e))
+
+## [0.28.11](https://github.com/shadow81627/pocketpasta/compare/v0.28.10...v0.28.11) (2020-01-21)
+
+### Bug Fixes
+
+- **auth:** use nuxt fire for handling firebase integration with nuxt ([#769](https://github.com/shadow81627/pocketpasta/issues/769)) ([9c77d02](https://github.com/shadow81627/pocketpasta/commit/9c77d0275a7d4f7507c1f135e43ccc907de01612))
+
 ## [0.28.10](https://github.com/shadow81627/pocketpasta/compare/v0.28.9...v0.28.10) (2020-01-20)
 
 ### Bug Fixes

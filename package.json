@@ -1,6 +1,6 @@
 {
   "name": "pocketpasta",
-  "version": "0.28.10",
+  "version": "0.28.12",
   "description": "Eat spagetti to forgetti your regretti",
   "author": {
     "name": "Damien Robinson",
@@ -53,6 +53,7 @@
     "github-markdown-css": "3.0.1",
     "koa": "2.11.0",
     "nuxt": "2.11.0",
+    "nuxt-fire": "3.5.5",
     "nuxt-i18n": "6.5.0",
     "nuxt-webfontloader": "1.1.0",
     "plyr": "3.5.6",
