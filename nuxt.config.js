@@ -234,8 +234,8 @@ module.exports = {
    */
   plugins: [
     { src: '~/plugins/vue-plyr' },
-    { src: '~/plugins/firebase.js', ssr: false },
-    { src: '~/plugins/firebase_auth.js', ssr: false },
+    // { src: '~/plugins/firebase.js', ssr: false },
+    // { src: '~/plugins/firebase_auth.js', ssr: false },
     // { src: '~/plugins/quicklink', ssr: false },
     { src: '~/plugins/debug.js', ssr: false },
   ],
@@ -255,6 +255,7 @@ module.exports = {
     '@nuxtjs/sentry',
     'bootstrap-vue/nuxt',
     ['nuxt-i18n', i18nSettings],
+    'nuxt-fire',
     'nuxt-webfontloader',
 
     // keep sitemap last
@@ -310,6 +311,44 @@ module.exports = {
       logout: '/',
       callback: '/profile',
       home: '/profile',
+    },
+  },
+
+  fire: {
+    config: {
+      apiKey:
+        process.env.FIREBASE_API_KEY ||
+        'AIzaSyDG_OMeMaXVIHJqZpTzkY_DAWV9ylNwlXM',
+      authDomain:
+        process.env.FIREBASE_AUTH_DOMAIN ||
+        'staging-pocketpasta.firebaseapp.com',
+      databaseURL:
+        process.env.FIREBASE_DATABASE_URL ||
+        'https://staging-pocketpasta.firebaseio.com',
+      projectId: process.env.FIREBASE_PROJECT_ID || 'staging-pocketpasta',
+      storageBucket:
+        process.env.FIREBASE_STORAGE_BUCKET ||
+        'staging-pocketpasta.appspot.com',
+      measurementId: 'G-M7TXCJEKSQ',
+      messagingSenderId:
+        process.env.FIREBASE_MESSAGE_SENDER_ID || '216453269763',
+      appId:
+        process.env.FIREBASE_API_ID || '1:216453269763:web:71a3fe1ca24500bb',
+    },
+    services: {
+      auth: {
+        initialize: {
+          onSuccessMutation: 'setUser',
+          onSuccessAction: 'setUser',
+        },
+      },
+      firestore: { enablePersistence: true },
+      performance: true,
+      analytics: true,
+      // messaging: {
+      //   createServiceWorker: true,
+      //   onFirebaseHosting: true,
+      // },
     },
   },
 
