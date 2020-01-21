@@ -1,5 +1,11 @@
 # Releases
 
+## [0.28.12](https://github.com/shadow81627/pocketpasta/compare/v0.28.11...v0.28.12) (2020-01-21)
+
+### Bug Fixes
+
+- **deps:** update dependency nuxt-fire to v3.5.5 ([0cf89b4](https://github.com/shadow81627/pocketpasta/commit/0cf89b4931ab475e20aaad625fef0361cb2d6e9e))
+
 ## [0.28.11](https://github.com/shadow81627/pocketpasta/compare/v0.28.10...v0.28.11) (2020-01-21)
 
 ### Bug Fixes
