@@ -207,7 +207,7 @@ export default {
       if (vm.change && vm.change.length() > 0) {
         vm.document = JSON.parse(JSON.stringify(vm.editor.getContents()));
 
-        // vm.$firebase.firestore
+        // vm.$fireStore
         //   .collection('shoppinglists')
         //   .doc(vm.$auth.user.uid)
         //   .set(vm.document)

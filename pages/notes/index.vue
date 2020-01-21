@@ -24,7 +24,7 @@ export default {
     List,
   },
   async asyncData(context) {
-    let list = await context.app.$firebase.firestore
+    let list = await context.app.$fireStore
       .collection('recipes')
       .get()
       .then(function(querySnapshot) {

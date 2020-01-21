@@ -66,7 +66,7 @@ export default {
     },
     submit(event) {
       event.preventDefault();
-      this.$firebase.firestore
+      this.$fireStore
         .collection(this.collection)
         .doc(this.id)
         .set(this.document)
