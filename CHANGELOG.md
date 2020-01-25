@@ -1,5 +1,11 @@
 # Releases
 
+## [0.28.13](https://github.com/shadow81627/pocketpasta/compare/v0.28.12...v0.28.13) (2020-01-25)
+
+### Bug Fixes
+
+- **deps:** update dependency cross-env to v7 ([43c44e3](https://github.com/shadow81627/pocketpasta/commit/43c44e3307c0a6c8df4383952a1e8890422e15a4))
+
 ## [0.28.12](https://github.com/shadow81627/pocketpasta/compare/v0.28.11...v0.28.12) (2020-01-21)
 
 ### Bug Fixes
