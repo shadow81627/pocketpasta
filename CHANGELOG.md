@@ -1,5 +1,11 @@
 # Releases
 
+## [0.28.14](https://github.com/shadow81627/pocketpasta/compare/v0.28.13...v0.28.14) (2020-01-29)
+
+### Bug Fixes
+
+- **add-to-home-screen:** add get app svg ([547cecd](https://github.com/shadow81627/pocketpasta/commit/547cecd800cc2dec3fa9bc0a6b86b1706b8bc2c6))
+
 ## [0.28.13](https://github.com/shadow81627/pocketpasta/compare/v0.28.12...v0.28.13) (2020-01-25)
 
 ### Bug Fixes
