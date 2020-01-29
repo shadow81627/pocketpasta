@@ -1,5 +1,11 @@
 # Releases
 
+## [0.28.15](https://github.com/shadow81627/pocketpasta/compare/v0.28.14...v0.28.15) (2020-01-29)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxtjs/sentry to v3.1.0 ([8993687](https://github.com/shadow81627/pocketpasta/commit/899368789ce0cea40fde844a58f1643da8e3b49a))
+
 ## [0.28.14](https://github.com/shadow81627/pocketpasta/compare/v0.28.13...v0.28.14) (2020-01-29)
 
 ### Bug Fixes
