@@ -1,5 +1,47 @@
 # Releases
 
+## [0.28.19](https://github.com/shadow81627/pocketpasta/compare/v0.28.18...v0.28.19) (2020-01-31)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxtjs/sentry to v3.2.1 ([41bf782](https://github.com/shadow81627/pocketpasta/commit/41bf782bdcb75db32dec6272255fe709e688b2ee))
+
+## [0.28.18](https://github.com/shadow81627/pocketpasta/compare/v0.28.17...v0.28.18) (2020-01-31)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxtjs/sentry to v3.2.0 ([e49d9bf](https://github.com/shadow81627/pocketpasta/commit/e49d9bfd02a59aa7422008d3d5f952f97e2627f4))
+
+## [0.28.17](https://github.com/shadow81627/pocketpasta/compare/v0.28.16...v0.28.17) (2020-01-30)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxtjs/axios to v5.9.4 ([1bf19f8](https://github.com/shadow81627/pocketpasta/commit/1bf19f8cb850d84d6017e466be05287c49c72923))
+
+## [0.28.16](https://github.com/shadow81627/pocketpasta/compare/v0.28.15...v0.28.16) (2020-01-30)
+
+### Bug Fixes
+
+- **deps:** update dependency firebase to v7.8.0 ([25911fe](https://github.com/shadow81627/pocketpasta/commit/25911fe1f1faa689ce02bbb158502c7f7cfd7b09))
+
+## [0.28.15](https://github.com/shadow81627/pocketpasta/compare/v0.28.14...v0.28.15) (2020-01-29)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxtjs/sentry to v3.1.0 ([8993687](https://github.com/shadow81627/pocketpasta/commit/899368789ce0cea40fde844a58f1643da8e3b49a))
+
+## [0.28.14](https://github.com/shadow81627/pocketpasta/compare/v0.28.13...v0.28.14) (2020-01-29)
+
+### Bug Fixes
+
+- **add-to-home-screen:** add get app svg ([547cecd](https://github.com/shadow81627/pocketpasta/commit/547cecd800cc2dec3fa9bc0a6b86b1706b8bc2c6))
+
+## [0.28.13](https://github.com/shadow81627/pocketpasta/compare/v0.28.12...v0.28.13) (2020-01-25)
+
+### Bug Fixes
+
+- **deps:** update dependency cross-env to v7 ([43c44e3](https://github.com/shadow81627/pocketpasta/commit/43c44e3307c0a6c8df4383952a1e8890422e15a4))
+
 ## [0.28.12](https://github.com/shadow81627/pocketpasta/compare/v0.28.11...v0.28.12) (2020-01-21)
 
 ### Bug Fixes

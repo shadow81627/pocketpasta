@@ -106,6 +106,7 @@ env:
     - SENTRY_ORG=pocketpasta
     - SENTRY_PROJECT=pocketpasta
     - BASE_URL=https://pocketpasta.com
+    - FIREBASE_HOSTING=true
 
 notifications:
   webhooks:

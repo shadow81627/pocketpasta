@@ -2,6 +2,6 @@
 
 exports[`AddToHomeScreen renders properly 1`] = `
 "<v-btn-stub tag=\\"button\\" activeclass=\\"\\" type=\\"button\\" aria-label=\\"get app\\" class=\\"d-none\\">
-  <v-icon-stub>get_app</v-icon-stub>
+  <v-icon-stub>$get_app</v-icon-stub>
 </v-btn-stub>"
 `;

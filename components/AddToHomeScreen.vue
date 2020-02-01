@@ -1,7 +1,7 @@
 <template>
   <v-btn aria-label="get app" :class="{ 'd-none': !display }" v-bind="$attrs">
     <slot>
-      <v-icon>get_app</v-icon>
+      <v-icon>$get_app</v-icon>
     </slot>
   </v-btn>
 </template>
