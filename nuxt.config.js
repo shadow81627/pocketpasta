@@ -335,6 +335,7 @@ module.exports = {
       appId:
         process.env.FIREBASE_API_ID || '1:216453269763:web:71a3fe1ca24500bb',
     },
+    onFirebaseHosting: process.env.FIREBASE_HOSTING || false,
     services: {
       auth: {
         initialize: {
