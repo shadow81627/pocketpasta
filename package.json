@@ -39,7 +39,7 @@
   },
   "dependencies": {
     "@nuxtjs/auth": "4.8.5",
-    "@nuxtjs/axios": "5.9.4",
+    "@nuxtjs/axios": "5.9.5",
     "@nuxtjs/google-analytics": "2.2.3",
     "@nuxtjs/markdownit": "1.2.7",
     "@nuxtjs/pwa": "2.6.0",
