@@ -1,5 +1,11 @@
 # Releases
 
+## [0.28.25](https://github.com/shadow81627/pocketpasta/compare/v0.28.24...v0.28.25) (2020-02-09)
+
+### Bug Fixes
+
+- **deps:** update dependency plyr to v3.5.7 ([8b1768a](https://github.com/shadow81627/pocketpasta/commit/8b1768a91748586ac10d88a5fddd0c2eab0d194a))
+
 ## [0.28.24](https://github.com/shadow81627/pocketpasta/compare/v0.28.23...v0.28.24) (2020-02-07)
 
 ### Bug Fixes
