@@ -110,7 +110,7 @@
     "pretty-quick": "2.0.1",
     "sass": "1.25.0",
     "sass-loader": "8.0.2",
-    "semantic-release": "17.0.2",
+    "semantic-release": "17.0.3",
     "snyk": "1.291.0",
     "vue-jest": "3.0.5",
     "vuetify-loader": "1.4.3"
