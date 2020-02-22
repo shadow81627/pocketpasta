@@ -1,5 +1,11 @@
 # Releases
 
+## [0.28.35](https://github.com/shadow81627/pocketpasta/compare/v0.28.34...v0.28.35) (2020-02-22)
+
+### Bug Fixes
+
+- **deps:** update dependency github-markdown-css to v4 ([69edb8f](https://github.com/shadow81627/pocketpasta/commit/69edb8fcdeeb91063fff0468e31206a958518cc4))
+
 ## [0.28.34](https://github.com/shadow81627/pocketpasta/compare/v0.28.33...v0.28.34) (2020-02-21)
 
 ### Bug Fixes
