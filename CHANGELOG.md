@@ -1,5 +1,11 @@
 # Releases
 
+## [0.28.38](https://github.com/shadow81627/pocketpasta/compare/v0.28.37...v0.28.38) (2020-02-26)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxtjs/markdownit to v1.2.9 ([4ec5e7b](https://github.com/shadow81627/pocketpasta/commit/4ec5e7b6a2c87c41ad8f18776eb30003fdc51113))
+
 ## [0.28.37](https://github.com/shadow81627/pocketpasta/compare/v0.28.36...v0.28.37) (2020-02-26)
 
 ### Bug Fixes
