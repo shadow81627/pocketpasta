@@ -1,5 +1,11 @@
 # Releases
 
+## [0.28.40](https://github.com/shadow81627/pocketpasta/compare/v0.28.39...v0.28.40) (2020-02-28)
+
+### Bug Fixes
+
+- **deps:** update dependency firebase to v7.9.2 ([b64678b](https://github.com/shadow81627/pocketpasta/commit/b64678bfb6a38ca00a6b370edbb58f3c0b3df1f5))
+
 ## [0.28.39](https://github.com/shadow81627/pocketpasta/compare/v0.28.38...v0.28.39) (2020-02-27)
 
 ### Bug Fixes
