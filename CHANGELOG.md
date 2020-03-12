@@ -1,5 +1,11 @@
 # Releases
 
+## [0.28.48](https://github.com/shadow81627/pocketpasta/compare/v0.28.47...v0.28.48) (2020-03-12)
+
+### Bug Fixes
+
+- **nav:** update settings icon import for mdi 5 ([dd276e0](https://github.com/shadow81627/pocketpasta/commit/dd276e0277d909c3494f560028a8de2723ce306b))
+
 ## [0.28.47](https://github.com/shadow81627/pocketpasta/compare/v0.28.46...v0.28.47) (2020-03-07)
 
 ### Bug Fixes
