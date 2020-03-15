@@ -1,5 +1,11 @@
 # Releases
 
+## [0.28.52](https://github.com/shadow81627/pocketpasta/compare/v0.28.51...v0.28.52) (2020-03-15)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxtjs/auth to v4.9.0 ([4e5d26d](https://github.com/shadow81627/pocketpasta/commit/4e5d26d4776a4c444e874600b0ff3a3d5f45a5a1))
+
 ## [0.28.51](https://github.com/shadow81627/pocketpasta/compare/v0.28.50...v0.28.51) (2020-03-14)
 
 ### Bug Fixes
