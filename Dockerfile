@@ -7,4 +7,4 @@ COPY package*.json ./
 RUN npm ci
 COPY . .
 RUN npm run build:modern
-CMD npm start
+CMD ["npm" "start"]
