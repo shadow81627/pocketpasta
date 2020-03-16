@@ -1,5 +1,11 @@
 # Releases
 
+## [0.28.54](https://github.com/shadow81627/pocketpasta/compare/v0.28.53...v0.28.54) (2020-03-16)
+
+### Bug Fixes
+
+- **docker:** add volumes ([629056a](https://github.com/shadow81627/pocketpasta/commit/629056a24a38f7829df7915bb7a0a3e220b8a84e))
+
 ## [0.28.53](https://github.com/shadow81627/pocketpasta/compare/v0.28.52...v0.28.53) (2020-03-16)
 
 ### Bug Fixes
