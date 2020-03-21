@@ -355,8 +355,8 @@ module.exports = {
     services: {
       auth: {
         initialize: {
-          onSuccessMutation: 'setUser',
-          onSuccessAction: 'setUser',
+          onAuthStateChangedMutation: 'setUser',
+          onAuthStateChangedAction: 'setUser',
         },
       },
       firestore: { enablePersistence: true },
