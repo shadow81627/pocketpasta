@@ -264,6 +264,7 @@ module.exports = {
     '@nuxtjs/auth',
     '@nuxtjs/dotenv',
     '@nuxtjs/eslint-module',
+    '@nuxtjs/firebase',
     '@nuxtjs/google-analytics',
     '@nuxtjs/markdownit',
     '@nuxtjs/pwa',
@@ -271,7 +272,6 @@ module.exports = {
     '@nuxtjs/sentry',
     'bootstrap-vue/nuxt',
     ['nuxt-i18n', i18nSettings],
-    'nuxt-fire',
     'nuxt-webfontloader',
 
     // keep sitemap last
@@ -330,7 +330,7 @@ module.exports = {
     },
   },
 
-  fire: {
+  firebase: {
     config: {
       apiKey:
         process.env.FIREBASE_API_KEY ||
@@ -355,8 +355,8 @@ module.exports = {
     services: {
       auth: {
         initialize: {
-          onSuccessMutation: 'setUser',
-          onSuccessAction: 'setUser',
+          onAuthStateChangedMutation: 'setUser',
+          onAuthStateChangedAction: 'setUser',
         },
       },
       firestore: { enablePersistence: true },
