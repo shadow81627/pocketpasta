@@ -1,5 +1,11 @@
 # Releases
 
+## [0.28.59](https://github.com/shadow81627/pocketpasta/compare/v0.28.58...v0.28.59) (2020-03-25)
+
+### Bug Fixes
+
+- **deps:** nuxt-fire to @nuxtjs/firebase ([#928](https://github.com/shadow81627/pocketpasta/issues/928)) ([3fdaeed](https://github.com/shadow81627/pocketpasta/commit/3fdaeed9109d6b56de846d362dccb598315e35b9))
+
 ## [0.28.58](https://github.com/shadow81627/pocketpasta/compare/v0.28.57...v0.28.58) (2020-03-24)
 
 ### Bug Fixes
