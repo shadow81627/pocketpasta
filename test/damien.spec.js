@@ -1,5 +1,5 @@
-import { shallowMount } from '@vue/test-utils';
 import damien from '@/pages/damien.vue';
+import { shallowMount } from '@vue/test-utils';
 
 const factory = () => shallowMount(damien, {});
 

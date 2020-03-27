@@ -59,7 +59,7 @@ export default async ({ $axios, isDev }, inject) => {
   firebase
     .firestore()
     .enablePersistence()
-    .catch(function(err) {
+    .catch(function (err) {
       if (err.code === 'failed-precondition') {
         // Multiple tabs open, persistence can only be enabled
         // in one tab at a a time.

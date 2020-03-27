@@ -1,7 +1,7 @@
+import Component from '@/components/List/List';
 import { shallowMount, createLocalVue, RouterLinkStub } from '@vue/test-utils';
 import Vuex from 'vuex';
 import BootstrapVuePlugin from 'bootstrap-vue';
-import Component from '@/components/List/List';
 
 const localVue = createLocalVue();
 

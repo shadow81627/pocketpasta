@@ -2,7 +2,7 @@
   <span
     v-if="
       Array.isArray(text.split(fractionsRegex)) &&
-        text.split(fractionsRegex).length > 1
+      text.split(fractionsRegex).length > 1
     "
   >
     <span

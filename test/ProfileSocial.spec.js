@@ -1,5 +1,5 @@
-import { shallowMount } from '@vue/test-utils';
 import component from '@/components/ProfileSocial';
+import { shallowMount } from '@vue/test-utils';
 
 const factory = () =>
   shallowMount(component, {

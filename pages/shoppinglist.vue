@@ -29,7 +29,7 @@ export default {
             console.log('No such document!');
           }
         })
-        .catch(function(error) {
+        .catch(function (error) {
           console.error('Error getting document: ', error);
         });
 
@@ -49,11 +49,11 @@ export default {
         .collection('shoppinglists')
         .doc(vm.$auth.user.uid)
         .set(vm.document)
-        .then(function() {
+        .then(function () {
           // const Delta = vm.editor.import('delta');
           // vm.change = new Delta();
         })
-        .catch(function(error) {
+        .catch(function (error) {
           console.error('Error writing document: ', error);
         });
     },

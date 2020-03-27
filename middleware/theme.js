@@ -1,4 +1,4 @@
-export default function(context) {
+export default function (context) {
   try {
     let theme;
     if (context.route.query.theme) {

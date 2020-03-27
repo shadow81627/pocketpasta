@@ -82,13 +82,13 @@ export default {
   methods: {
     edit(event) {
       this.formData = event.target.value;
-      setTimeout(function() {
+      setTimeout(function () {
         event.target.style.height = 0;
         event.target.style.height = event.target.scrollHeight + 'px';
       });
     },
     autoSize(event) {
-      setTimeout(function() {
+      setTimeout(function () {
         event.target.style.height = 0;
         event.target.style.height = event.target.scrollHeight + 'px';
       });

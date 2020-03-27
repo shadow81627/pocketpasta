@@ -1,11 +1,10 @@
+import Component from '@/pages/products/index.vue';
+import productData from '@/assets/link-data/products/tomatoes.json';
 import { shallowMount, createLocalVue, RouterLinkStub } from '@vue/test-utils';
 import Vuex from 'vuex';
 import VueRouter from 'vue-router';
 import Vuetify from 'vuetify';
 import BootstrapVuePlugin from 'bootstrap-vue';
-import Component from '@/pages/products/index.vue';
-
-import productData from '@/assets/link-data/products/tomatoes.json';
 
 const localVue = createLocalVue();
 

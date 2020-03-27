@@ -1,8 +1,8 @@
+import Component from '@/components/List/ViewSwitcher';
 import { shallowMount, createLocalVue, RouterLinkStub } from '@vue/test-utils';
 import Vuex from 'vuex';
 import Vuetify from 'vuetify';
 import BootstrapVuePlugin from 'bootstrap-vue';
-import Component from '@/components/List/ViewSwitcher';
 
 const localVue = createLocalVue();
 

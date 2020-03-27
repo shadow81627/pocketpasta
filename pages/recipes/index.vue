@@ -14,7 +14,7 @@ export default {
     let list = await context.app.$fireStore
       .collection('recipes')
       .get()
-      .then(function(querySnapshot) {
+      .then(function (querySnapshot) {
         return querySnapshot.docs.map((doc) => doc.data());
       });
 

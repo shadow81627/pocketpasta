@@ -186,7 +186,7 @@ export default {
     editor.setContents(vm.document);
     vm.editor = editor;
     // Store accumulated changes
-    editor.on('text-change', function(delta) {
+    editor.on('text-change', function (delta) {
       vm.change = vm.change.compose(delta);
       // debouncedSave();
       vm.save();
@@ -194,7 +194,7 @@ export default {
     });
 
     // Check for unsaved data
-    window.onbeforeunload = function() {
+    window.onbeforeunload = function () {
       if (vm.change.length() > 0) {
         return 'There are unsaved changes. Are you sure you want to leave?';
       }

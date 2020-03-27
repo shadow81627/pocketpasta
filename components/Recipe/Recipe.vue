@@ -8,10 +8,7 @@
         v-if="recipe.video[0].contentUrl.includes('youtube')"
         data-plyr-provider="youtube"
         :data-plyr-embed-id="
-          recipe.video[0].contentUrl
-            .split('/')
-            .slice(-1)
-            .pop()
+          recipe.video[0].contentUrl.split('/').slice(-1).pop()
         "
       />
     </vue-plyr>
@@ -46,7 +43,7 @@
     </p>
     <section v-if="recipe.recipeIngredient">
       <h2>Ingredients:</h2>
-      <ol class="list-group-flush  pl-0">
+      <ol class="list-group-flush pl-0">
         <li
           v-for="ingredient in recipe.recipeIngredient"
           :key="ingredient"

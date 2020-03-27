@@ -1,6 +1,6 @@
+import newsletter from '@/pages/newsletter.vue';
 import { shallowMount, createLocalVue } from '@vue/test-utils';
 import Vuetify from 'vuetify';
-import newsletter from '@/pages/newsletter.vue';
 
 const localVue = createLocalVue();
 

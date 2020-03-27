@@ -24,7 +24,7 @@
             Get Started
           </v-btn> -->
           </v-col>
-          <credit style="position:absolute;right:0;bottom:0;" />
+          <credit style="position: absolute; right: 0; bottom: 0;" />
         </v-row>
       </v-parallax>
     </section>

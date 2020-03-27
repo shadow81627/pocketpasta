@@ -1,7 +1,7 @@
+import Component from '@/components/settings/setting';
 import { shallowMount, createLocalVue } from '@vue/test-utils';
 import Vuex from 'vuex';
 import Vuetify from 'vuetify';
-import Component from '@/components/settings/setting';
 
 const localVue = createLocalVue();
 

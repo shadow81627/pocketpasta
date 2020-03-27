@@ -1,6 +1,6 @@
+import Component from '@/components/Layout/Credit/landing-hero-image-credit';
 import { shallowMount, createLocalVue } from '@vue/test-utils';
 import Vuex from 'vuex';
-import Component from '@/components/Layout/Credit/landing-hero-image-credit';
 
 const localVue = createLocalVue();
 
