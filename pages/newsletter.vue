@@ -60,12 +60,12 @@
             <div
               id="mce-error-response"
               class="response"
-              style="display:none"
+              style="display: none;"
             />
             <div
               id="mce-success-response"
               class="response"
-              style="display:none"
+              style="display: none;"
             />
           </div>
           <!-- real people should not fill this in and expect good things

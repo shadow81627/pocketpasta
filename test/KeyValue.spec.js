@@ -1,5 +1,5 @@
-import { shallowMount } from '@vue/test-utils';
 import KeyValue from '@/components/KeyValue.vue';
+import { shallowMount } from '@vue/test-utils';
 
 const factory = () =>
   shallowMount(KeyValue, {

@@ -1,5 +1,5 @@
-import { mount, createLocalVue } from '@vue/test-utils';
 import Keywords from '@/components/Keywords.vue';
+import { mount, createLocalVue } from '@vue/test-utils';
 
 const localVue = createLocalVue();
 

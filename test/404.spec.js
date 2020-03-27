@@ -1,5 +1,5 @@
-import { shallowMount, RouterLinkStub } from '@vue/test-utils';
 import component from '@/components/error/404.vue';
+import { shallowMount, RouterLinkStub } from '@vue/test-utils';
 
 const factory = () =>
   shallowMount(component, {

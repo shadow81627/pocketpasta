@@ -1,11 +1,10 @@
+import recipes from '@/pages/recipes/index.vue';
+import spaghetti from '@/assets/link-data/recipes/spaghetti.json';
 import { shallowMount, createLocalVue, RouterLinkStub } from '@vue/test-utils';
 import Vuex from 'vuex';
 import VueRouter from 'vue-router';
 import Vuetify from 'vuetify';
 import BootstrapVuePlugin from 'bootstrap-vue';
-import recipes from '@/pages/recipes/index.vue';
-
-import spaghetti from '@/assets/link-data/recipes/spaghetti.json';
 
 const localVue = createLocalVue();
 

@@ -1,9 +1,8 @@
+import Recipe from '@/components/Recipe/NutritionFactTable';
+import recipe from '@/assets/link-data/recipes/spaghetti.json';
 import { shallowMount, createLocalVue } from '@vue/test-utils';
 import Vuex from 'vuex';
-import Recipe from '@/components/Recipe/NutritionFactTable';
 // import VueRouter from 'vue-router';
-
-import recipe from '@/assets/link-data/recipes/spaghetti.json';
 
 const localVue = createLocalVue();
 

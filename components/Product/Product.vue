@@ -74,9 +74,9 @@
     <nutrition-fact-table
       v-if="
         product.additionalProperty &&
-          product.additionalProperty.find(
-            (property) => property.name === 'nutrition',
-          )
+        product.additionalProperty.find(
+          (property) => property.name === 'nutrition',
+        )
       "
       v-bind="
         product.additionalProperty.find(

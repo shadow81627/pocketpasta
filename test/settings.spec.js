@@ -1,5 +1,5 @@
-import { shallowMount } from '@vue/test-utils';
 import settings from '@/pages/settings.vue';
+import { shallowMount } from '@vue/test-utils';
 
 const factory = () => shallowMount(settings, {});
 

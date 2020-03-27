@@ -8,10 +8,10 @@
 //   });
 // });
 
+import index from '@/pages/index.vue';
 import { shallowMount, createLocalVue } from '@vue/test-utils';
 import Vuetify from 'vuetify';
 import BootstrapVuePlugin from 'bootstrap-vue';
-import index from '@/pages/index.vue';
 
 const localVue = createLocalVue();
 

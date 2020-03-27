@@ -1,10 +1,9 @@
+import { removeKeys } from '@/utils';
+import Component from '@/components/Product/Product';
+import product from '@/assets/link-data/products/tomatoes.json';
 import { shallowMount, createLocalVue } from '@vue/test-utils';
 import Vuex from 'vuex';
 import BootstrapVuePlugin from 'bootstrap-vue';
-import { removeKeys } from '@/utils';
-import Component from '@/components/Product/Product';
-
-import product from '@/assets/link-data/products/tomatoes.json';
 
 // JSDOM complains about this attribute
 removeKeys(product, ['@type']);

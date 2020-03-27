@@ -72,7 +72,7 @@
       fixed
       class="hidden-print-only"
     >
-      <v-toolbar-title style="width: 256px" class="ml-0 pl-3">
+      <v-toolbar-title style="width: 256px;" class="ml-0 pl-3">
         <v-app-bar-nav-icon aria-label="menu" @click.stop="drawer = !drawer" />
         <b-img-lazy
           :src="$icon(32)"

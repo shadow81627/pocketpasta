@@ -1,7 +1,7 @@
+import Page from '@/pages/profile.vue';
 import { shallowMount, createLocalVue } from '@vue/test-utils';
 import Vuetify from 'vuetify';
 import BootstrapVuePlugin from 'bootstrap-vue';
-import Page from '@/pages/profile.vue';
 
 const localVue = createLocalVue();
 

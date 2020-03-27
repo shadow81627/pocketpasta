@@ -57,11 +57,11 @@ export default class CustomScheme {
   async logout() {
     await this.$auth.ctx.app.$fireAuth
       .signOut()
-      .then(function() {
+      .then(function () {
         // Sign-out successful.
         console.log('logged out');
       })
-      .catch(function(error) {
+      .catch(function (error) {
         // An error happened.
         console.log(error);
       });

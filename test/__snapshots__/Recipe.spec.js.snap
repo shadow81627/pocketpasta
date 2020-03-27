@@ -13,7 +13,7 @@ exports[`Recipe renders properly 1`] = `
   </p>
   <section>
     <h2>Ingredients:</h2>
-    <ol class=\\"list-group-flush  pl-0\\">
+    <ol class=\\"list-group-flush pl-0\\">
       <li class=\\"list-group-item\\">
         <fraction-text-stub text=\\"1 small onion, diced\\"></fraction-text-stub>
       </li>
