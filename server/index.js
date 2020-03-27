@@ -1,7 +1,7 @@
-const config = require('../nuxt.config.js');
 const Koa = require('koa');
 const consola = require('consola');
 const { Nuxt, Builder } = require('nuxt');
+const config = require('../nuxt.config.js');
 
 const app = new Koa();
 
