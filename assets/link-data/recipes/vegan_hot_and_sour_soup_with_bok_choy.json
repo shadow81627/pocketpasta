@@ -1,6 +1,5 @@
 {
   "id": 5,
-  "@id": "https://www.connoisseurusveg.com/hot-and-sour-soup-with-bok-choy/#recipe",
   "@context": "http://schema.org/",
   "@type": "Recipe",
   "name": "Vegan Hot and Sour Soup with Bok Choy",
@@ -76,5 +75,8 @@
     "fiberContent": "3.8 g",
     "sugarContent": "7.6 g",
     "servingSize": "1 serving"
-  }
+  },
+  "sameAs": [
+    "https://www.connoisseurusveg.com/hot-and-sour-soup-with-bok-choy/#recipe"
+  ]
 }
