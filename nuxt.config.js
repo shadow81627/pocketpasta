@@ -124,8 +124,8 @@ module.exports = {
       process.env.FIREBASE_STORAGE_BUCKET || 'staging-pocketpasta.appspot.com',
     FIREBASE_MESSAGE_SENDER_ID:
       process.env.FIREBASE_MESSAGE_SENDER_ID || '216453269763',
-    FIREBASE_API_ID:
-      process.env.FIREBASE_API_ID || '1:216453269763:web:71a3fe1ca24500bb',
+    FIREBASE_APP_ID:
+      process.env.FIREBASE_APP_ID || '1:216453269763:web:71a3fe1ca24500bb',
   },
 
   server: {
@@ -349,7 +349,7 @@ module.exports = {
       messagingSenderId:
         process.env.FIREBASE_MESSAGE_SENDER_ID || '216453269763',
       appId:
-        process.env.FIREBASE_API_ID || '1:216453269763:web:71a3fe1ca24500bb',
+        process.env.FIREBASE_APP_ID || '1:216453269763:web:71a3fe1ca24500bb',
     },
     onFirebaseHosting: process.env.FIREBASE_HOSTING || false,
     services: {
