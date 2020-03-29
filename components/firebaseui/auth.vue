@@ -4,12 +4,17 @@
 
 <script>
 export default {
+  data() {
+    return { ui: null };
+  },
   mounted() {
     if (process.client) {
       const firebaseui = require('firebaseui');
+      if (!this.ui) {
+        this.ui = new firebaseui.auth.AuthUI(this.$fireAuth);
+      }
       // Initialize the FirebaseUI Widget using Firebase.
-      const ui = new firebaseui.auth.AuthUI(this.$fireAuth);
-      ui.start('#firebaseui-auth-container', {
+      this.ui.start('#firebaseui-auth-container', {
         signInSuccessUrl: '/profile',
         signInOptions: [
           {
