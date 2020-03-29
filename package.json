@@ -28,7 +28,7 @@
     "eslint-check": "eslint --print-config . | eslint-config-prettier-check",
     "lint:fix": "eslint --ext .js,.vue --ignore-path .gitignore . --fix",
     "lh": "lighthousebot",
-    "lhci:autorun": "lhci autorun",
+    "lhci:autorun": "cross-env FIREBASE_HOSTING=false lhci autorun",
     "test": "jest && codecov",
     "test:update": "jest -u",
     "semantic-release": "semantic-release",
