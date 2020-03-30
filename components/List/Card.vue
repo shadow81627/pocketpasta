@@ -31,7 +31,7 @@
           center
           fluid-grow
           blank
-          :src="image"
+          :src="Array.isArray(image) ? image[0] : image"
           rounded="0"
           itemprop="image"
         />
