@@ -1,5 +1,11 @@
 # Releases
 
+## [0.28.74](https://github.com/shadow81627/pocketpasta/compare/v0.28.73...v0.28.74) (2020-04-01)
+
+### Performance Improvements
+
+- **card-image:** cloudinary fetch for external images ([#968](https://github.com/shadow81627/pocketpasta/issues/968)) ([1a53d83](https://github.com/shadow81627/pocketpasta/commit/1a53d8380af0683f1777c35c5026067e255cd425))
+
 ## [0.28.73](https://github.com/shadow81627/pocketpasta/compare/v0.28.72...v0.28.73) (2020-04-01)
 
 ### Bug Fixes
