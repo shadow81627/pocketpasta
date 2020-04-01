@@ -1,5 +1,11 @@
 # Releases
 
+## [0.28.73](https://github.com/shadow81627/pocketpasta/compare/v0.28.72...v0.28.73) (2020-04-01)
+
+### Bug Fixes
+
+- **list-card:** handle image array ([#961](https://github.com/shadow81627/pocketpasta/issues/961)) ([2ad67f0](https://github.com/shadow81627/pocketpasta/commit/2ad67f0194d8fe4efb31f63a7375f1a9c334db7c))
+
 ## [0.28.72](https://github.com/shadow81627/pocketpasta/compare/v0.28.71...v0.28.72) (2020-03-31)
 
 ### Bug Fixes
