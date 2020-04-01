@@ -1,5 +1,41 @@
 # Releases
 
+## [0.28.72](https://github.com/shadow81627/pocketpasta/compare/v0.28.71...v0.28.72) (2020-03-31)
+
+### Bug Fixes
+
+- **deps:** update dependency nuxt to v2.12.2 ([d19096d](https://github.com/shadow81627/pocketpasta/commit/d19096dd262498d977b96269d6ffaa2518362a74))
+
+## [0.28.71](https://github.com/shadow81627/pocketpasta/compare/v0.28.70...v0.28.71) (2020-03-31)
+
+### Bug Fixes
+
+- **deps:** update dependency nuxt-i18n to v6.7.2 ([c8f8985](https://github.com/shadow81627/pocketpasta/commit/c8f8985abd0c6ace1f266a781f91e0b971bd89c9))
+
+## [0.28.70](https://github.com/shadow81627/pocketpasta/compare/v0.28.69...v0.28.70) (2020-03-30)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxtjs/axios to v5.9.7 ([8798f00](https://github.com/shadow81627/pocketpasta/commit/8798f00dedf3e423f670744a306dcc0e3ff29a4b))
+
+## [0.28.69](https://github.com/shadow81627/pocketpasta/compare/v0.28.68...v0.28.69) (2020-03-30)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxtjs/firebase to v5.0.6 ([f83fe01](https://github.com/shadow81627/pocketpasta/commit/f83fe011ecd0e6b854c63ab9592e17a179f24eaa))
+
+## [0.28.68](https://github.com/shadow81627/pocketpasta/compare/v0.28.67...v0.28.68) (2020-03-30)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxtjs/firebase to v5.0.5 ([c1dc956](https://github.com/shadow81627/pocketpasta/commit/c1dc956a31ea1e7ce071a8b123bb743417bda30e))
+
+## [0.28.67](https://github.com/shadow81627/pocketpasta/compare/v0.28.66...v0.28.67) (2020-03-30)
+
+### Bug Fixes
+
+- **deps:** update dependency nuxt-i18n to v6.7.1 ([b2bce39](https://github.com/shadow81627/pocketpasta/commit/b2bce39e618cafb427c4c755aad72d732c56422d))
+
 ## [0.28.66](https://github.com/shadow81627/pocketpasta/compare/v0.28.65...v0.28.66) (2020-03-28)
 
 ### Bug Fixes
