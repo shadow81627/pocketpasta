@@ -3,10 +3,10 @@
 exports[`List Card renders properly 1`] = `
 "<b-card-stub bodytag=\\"div\\" title=\\"\\" titletag=\\"h4\\" subtitle=\\"\\" subtitletag=\\"h6\\" subtitletextvariant=\\"muted\\" headertag=\\"div\\" footertag=\\"div\\" tag=\\"div\\" no-body=\\"\\" class=\\"overflow-hidden rounded-0\\">
   <div class=\\"row no-gutters\\">
-    <div class=\\"col-md-4\\">
-      <b-card-img-lazy-stub src=\\"https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/162208.jpg\\" blankcolor=\\"transparent\\" offset=\\"360\\" fluid=\\"\\" center=\\"\\" fluid-grow=\\"\\" blank=\\"\\" rounded=\\"0\\" itemprop=\\"image\\"></b-card-img-lazy-stub>
-    </div>
-    <div class=\\"col\\">
+    <div style=\\"min-width: 128px;\\">
+      <b-card-img-lazy-stub src=\\"https://res.cloudinary.com/pocketpasta/image/fetch/w_128,h_128,c_fill,f_auto,q_auto/https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/162208.jpg\\" alt=\\"\\" width=\\"128\\" height=\\"128\\" blankcolor=\\"transparent\\" offset=\\"360\\" xfluid=\\"\\" center=\\"\\" blank=\\"\\" rounded=\\"0\\" itemprop=\\"image\\" class=\\"mx-auto d-block\\"></b-card-img-lazy-stub>
+    </div> <br>
+    <div class=\\"col overflow-hidden\\" style=\\"min-width: 220px;\\">
       <b-card-body-stub bodytag=\\"div\\" title=\\"\\" titletag=\\"h4\\" subtitle=\\"\\" subtitletag=\\"h6\\" subtitletextvariant=\\"muted\\">
         <header>
           <b-card-title-stub title=\\"\\" titletag=\\"h4\\">Audrey Hepburn’s Spaghetti Al Pomodoro Recipe</b-card-title-stub>
