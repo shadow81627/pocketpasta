@@ -200,6 +200,10 @@ module.exports = {
         name: 'version',
         content: pkg.version,
       },
+      {
+        'http-equiv': 'Accept-CH',
+        content: 'DPR, Viewport-Width, Width',
+      },
     ],
     link: [
       {
