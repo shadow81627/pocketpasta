@@ -25,7 +25,7 @@ describe('List Card', () => {
   });
 
   test('filter truncate', () => {
-    expect(Component.filters.truncate('text', 2, '....')).toEqual('te....');
+    expect(Component.methods.truncate('text', 2, '....')).toEqual('te....');
   });
 
   test('renders properly', () => {
