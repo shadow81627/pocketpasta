@@ -31,7 +31,7 @@
           center
           fluid-grow
           blank
-          :src="image"
+          :src="Array.isArray(image) ? image[0] : image"
           rounded="0"
           itemprop="image"
         />
@@ -41,9 +41,7 @@
           <header>
             <b-card-title>{{ name }}</b-card-title>
           </header>
-          <b-card-text>
-            {{ description | truncate }}
-          </b-card-text>
+          <b-card-text>{{ truncate(description) }}</b-card-text>
         </b-card-body>
       </div>
     </div>
@@ -52,13 +50,6 @@
 
 <script>
 export default {
-  filters: {
-    truncate(text, stop = 150, clamp = '...') {
-      if (text) {
-        return `${text.slice(0, stop)}${stop < text.length ? clamp : ''}`;
-      }
-    },
-  },
   inheritAttrs: false,
   props: {
     id: { type: [String, Number], required: true },
@@ -66,6 +57,13 @@ export default {
     description: { type: String, default: null },
     image: { type: [String, Object, Array], default: null },
     layout: { type: String, default: null },
+  },
+  methods: {
+    truncate(text, stop = 150, clamp = '...') {
+      if (text) {
+        return `${text.slice(0, stop)}${stop < text.length ? clamp : ''}`;
+      }
+    },
   },
 };
 </script>

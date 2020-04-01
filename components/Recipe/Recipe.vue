@@ -14,7 +14,11 @@
     </vue-plyr>
     <div v-else-if="recipe.image">
       <b-img-lazy
-        v-if="typeof recipe.image === 'object' && recipe.image !== null"
+        v-if="
+          typeof recipe.image === 'object' &&
+          recipe.image !== null &&
+          !Array.isArray(recipe.image)
+        "
         :src="recipe.image.url"
         class="img-fluid mx-auto d-block"
         :alt="recipe.name"
@@ -25,7 +29,7 @@
       />
       <b-img-lazy
         v-else
-        :src="recipe.image"
+        :src="Array.isArray(recipe.image) ? recipe.image[0] : recipe.image"
         class="img-fluid mx-auto d-block"
         :alt="recipe.name"
         throttle="100"

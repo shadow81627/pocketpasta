@@ -11,9 +11,7 @@ exports[`List Card renders properly 1`] = `
         <header>
           <b-card-title-stub title=\\"\\" titletag=\\"h4\\">Audrey Hepburn’s Spaghetti Al Pomodoro Recipe</b-card-title-stub>
         </header>
-        <b-card-text-stub texttag=\\"p\\">
-          Make Audrey Hepburn's spaghetti al pomodoro recipe. Hepburn liked her pasta smothered in tomato sauce.
-        </b-card-text-stub>
+        <b-card-text-stub texttag=\\"p\\">Make Audrey Hepburn's spaghetti al pomodoro recipe. Hepburn liked her pasta smothered in tomato sauce.</b-card-text-stub>
       </b-card-body-stub>
     </div>
   </div>
