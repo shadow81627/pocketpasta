@@ -12,28 +12,15 @@
         "
       />
     </vue-plyr>
-    <div v-else-if="recipe.image">
+    <div v-else-if="imageData.url">
       <b-img-lazy
-        v-if="
-          typeof recipe.image === 'object' &&
-          recipe.image !== null &&
-          !Array.isArray(recipe.image)
-        "
-        :src="recipe.image.url"
+        :src="imageData.url"
         class="img-fluid mx-auto d-block"
         :alt="recipe.name"
         throttle="100"
         itemprop="image"
-        :height="recipe.image.height"
-        :width="recipe.image.width"
-      />
-      <b-img-lazy
-        v-else
-        :src="Array.isArray(recipe.image) ? recipe.image[0] : recipe.image"
-        class="img-fluid mx-auto d-block"
-        :alt="recipe.name"
-        throttle="100"
-        itemprop="image"
+        :width="640"
+        :height="360"
       />
     </div>
     <!-- <p>Author: {{ recipe.author }}</p> -->
@@ -136,7 +123,33 @@ export default {
 
       return recipe;
     },
+    imageData() {
+      function cloudinaryify(image) {
+        if (!image.startsWith('https://res.cloudinary.com')) {
+          return `https://res.cloudinary.com/pocketpasta/image/fetch/w_640,h_360,ar_16:9,c_fill,f_auto,q_auto/${image}`;
+        } else {
+          return image;
+        }
+      }
+      if (this.recipe.image) {
+        if (
+          typeof this.recipe.image === 'object' &&
+          this.recipe.image !== null &&
+          !Array.isArray(this.recipe.image)
+        ) {
+          const { url, width, height } = this.recipe.image;
+          return { url: cloudinaryify(url), width, height };
+        } else if (Array.isArray(this.recipe.image)) {
+          return { url: cloudinaryify(this.recipe.image[0]) };
+        } else {
+          return { url: cloudinaryify(this.recipe.image) };
+        }
+      } else {
+        return null;
+      }
+    },
   },
+
   head() {
     return {
       title: this.recipe.name,
