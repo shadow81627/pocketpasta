@@ -12,7 +12,7 @@
         "
       />
     </vue-plyr>
-    <div v-else-if="imageData.url">
+    <div v-else-if="imageData && imageData.url">
       <b-img-lazy
         :src="imageData.url"
         class="img-fluid mx-auto d-block"
