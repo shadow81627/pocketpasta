@@ -1,5 +1,11 @@
 # Releases
 
+## [0.28.78](https://github.com/shadow81627/pocketpasta/compare/v0.28.77...v0.28.78) (2020-04-04)
+
+### Performance Improvements
+
+- **recipe:** cloudinary fetch image ([#973](https://github.com/shadow81627/pocketpasta/issues/973)) ([bf08059](https://github.com/shadow81627/pocketpasta/commit/bf08059cc834ed946cc1862ac125dbf7c3f0027a))
+
 ## [0.28.77](https://github.com/shadow81627/pocketpasta/compare/v0.28.76...v0.28.77) (2020-04-03)
 
 ### Bug Fixes
