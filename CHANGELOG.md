@@ -1,5 +1,17 @@
 # Releases
 
+## [0.28.77](https://github.com/shadow81627/pocketpasta/compare/v0.28.76...v0.28.77) (2020-04-03)
+
+### Bug Fixes
+
+- **deps:** update dependency nuxt-i18n to v6.8.1 ([b6179d2](https://github.com/shadow81627/pocketpasta/commit/b6179d2fa387f3edd640129b2d8ca98a216bc29f))
+
+## [0.28.76](https://github.com/shadow81627/pocketpasta/compare/v0.28.75...v0.28.76) (2020-04-02)
+
+### Bug Fixes
+
+- **deps:** update dependency firebase to v7.13.2 ([d005a25](https://github.com/shadow81627/pocketpasta/commit/d005a254dfa00717bcd54beca6d6a9dfc7de144f))
+
 ## [0.28.75](https://github.com/shadow81627/pocketpasta/compare/v0.28.74...v0.28.75) (2020-04-02)
 
 ### Bug Fixes
