@@ -1,5 +1,11 @@
 # Releases
 
+## [0.28.80](https://github.com/shadow81627/pocketpasta/compare/v0.28.79...v0.28.80) (2020-04-06)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxtjs/firebase to v5.0.7 ([172e436](https://github.com/shadow81627/pocketpasta/commit/172e436fc0fc4c6668e6d89de638df567de563a4))
+
 ## [0.28.79](https://github.com/shadow81627/pocketpasta/compare/v0.28.78...v0.28.79) (2020-04-05)
 
 ### Bug Fixes
