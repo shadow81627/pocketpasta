@@ -67,7 +67,7 @@
     "@commitlint/cli": "8.3.5",
     "@commitlint/config-conventional": "8.3.4",
     "@lhci/cli": "0.3.12",
-    "@mdi/js": "5.0.45",
+    "@mdi/js": "5.1.45",
     "@nuxtjs/dotenv": "1.4.1",
     "@nuxtjs/eslint-config": "2.0.2",
     "@nuxtjs/eslint-module": "1.1.0",
