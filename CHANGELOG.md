@@ -1,5 +1,11 @@
 # Releases
 
+## [0.28.87](https://github.com/shadow81627/pocketpasta/compare/v0.28.86...v0.28.87) (2020-04-21)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxtjs/axios to v5.10.0 ([cdf2fd4](https://github.com/shadow81627/pocketpasta/commit/cdf2fd49d53ad4706e64652af77cd23d5310a252))
+
 ## [0.28.86](https://github.com/shadow81627/pocketpasta/compare/v0.28.85...v0.28.86) (2020-04-16)
 
 ### Bug Fixes
