@@ -39,7 +39,7 @@
   },
   "dependencies": {
     "@nuxtjs/auth": "4.9.1",
-    "@nuxtjs/axios": "5.9.7",
+    "@nuxtjs/axios": "5.10.0",
     "@nuxtjs/firebase": "5.0.7",
     "@nuxtjs/google-analytics": "2.2.3",
     "@nuxtjs/markdownit": "1.2.9",
