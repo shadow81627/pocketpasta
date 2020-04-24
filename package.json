@@ -70,7 +70,7 @@
     "@mdi/js": "5.1.45",
     "@nuxtjs/dotenv": "1.4.1",
     "@nuxtjs/eslint-config": "2.0.2",
-    "@nuxtjs/eslint-module": "1.1.0",
+    "@nuxtjs/eslint-module": "1.2.0",
     "@nuxtjs/vuetify": "1.11.0",
     "@semantic-release/changelog": "5.0.1",
     "@semantic-release/git": "9.0.0",
