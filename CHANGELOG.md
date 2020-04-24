@@ -1,5 +1,11 @@
 # Releases
 
+## [0.28.94](https://github.com/shadow81627/pocketpasta/compare/v0.28.93...v0.28.94) (2020-04-24)
+
+### Bug Fixes
+
+- **deps:** update dependency firebase to v7.14.2 ([5e62408](https://github.com/shadow81627/pocketpasta/commit/5e62408b5ac0fffaa0aa59b815d62e78ea2a663a))
+
 ## [0.28.93](https://github.com/shadow81627/pocketpasta/compare/v0.28.92...v0.28.93) (2020-04-24)
 
 ### Bug Fixes
