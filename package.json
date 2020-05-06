@@ -47,7 +47,7 @@
     "@nuxtjs/recaptcha": "0.6.2",
     "@nuxtjs/sentry": "4.0.3",
     "@nuxtjs/sitemap": "2.2.1",
-    "bootstrap-vue": "2.9.0",
+    "bootstrap-vue": "2.13.1",
     "cross-env": "7.0.2",
     "firebase": "7.14.2",
     "firebaseui": "4.5.0",
