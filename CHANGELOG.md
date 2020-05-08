@@ -1,5 +1,11 @@
 # Releases
 
+## [0.28.103](https://github.com/shadow81627/pocketpasta/compare/v0.28.102...v0.28.103) (2020-05-08)
+
+### Bug Fixes
+
+- **deps:** update dependency quicklink to v2 ([cf4cd32](https://github.com/shadow81627/pocketpasta/commit/cf4cd32a01643b6e1878f7415a3a8964a1cf2f32))
+
 ## [0.28.102](https://github.com/shadow81627/pocketpasta/compare/v0.28.101...v0.28.102) (2020-05-08)
 
 ### Bug Fixes
