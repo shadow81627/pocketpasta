@@ -73,7 +73,13 @@
       class="hidden-print-only"
     >
       <v-toolbar-title style="width: 256px;" class="ml-0 pl-3">
-        <v-app-bar-nav-icon aria-label="menu" @click.stop="drawer = !drawer" />
+        <v-app-bar-nav-icon aria-label="menu" @click.stop="drawer = !drawer"
+          ><v-progress-circular
+            v-if="loading"
+            indeterminate
+            size="24"
+            width="2"
+        /></v-app-bar-nav-icon>
         <b-img-lazy
           :src="$icon(32)"
           width="32"
@@ -107,6 +113,7 @@ export default {
   },
   data() {
     return {
+      loading: true,
       dialog: false,
       drawer: false,
     };
@@ -154,6 +161,9 @@ export default {
     isDark() {
       return this.$store.getters.getCurrentTheme().dark;
     },
+  },
+  mounted() {
+    this.loading = false;
   },
   head() {
     return {
