@@ -1,6 +1,11 @@
 <template>
   <div class="container">
-    <editor v-model="document" @submit="save" @input="debouncedSave" />
+    <editor
+      v-model="document"
+      :loading="loading"
+      @submit="debouncedSave"
+      @input="debouncedInput"
+    />
   </div>
 </template>
 
@@ -39,11 +44,13 @@ export default {
   data() {
     return {
       document: {},
+      loading: false,
     };
   },
   methods: {
     save() {
       const vm = this;
+      vm.loading = true;
 
       vm.$fireStore
         .collection('shoppinglists')
@@ -55,11 +62,23 @@ export default {
         })
         .catch(function (error) {
           console.error('Error writing document: ', error);
+        })
+        .finally(function () {
+          vm.loading = false;
         });
     },
-    debouncedSave() {
-      debounce(this.save, 5000);
-    },
+    debouncedSave: debounce(
+      function (e) {
+        console.log('save');
+        this.save();
+      },
+      1000,
+      { leading: true, trailing: false, maxWait: 1000 },
+    ),
+    debouncedInput: debounce(function (e) {
+      console.log('save');
+      this.save();
+    }, 5000),
   },
 };
 </script>
