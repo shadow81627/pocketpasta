@@ -8,7 +8,9 @@ export default {
     if (process.client) {
       const firebaseui = require('firebaseui');
       // Initialize the FirebaseUI Widget using Firebase.
-      const ui = new firebaseui.auth.AuthUI(this.$fireAuth);
+      const ui =
+        firebaseui.auth.AuthUI.getInstance() ||
+        new firebaseui.auth.AuthUI(this.$fireAuth);
       ui.start('#firebaseui-auth-container', {
         signInSuccessUrl: '/profile',
         signInOptions: [
