@@ -340,4 +340,8 @@ export default {
 span.ql-picker-label::before {
   color: #4dba87;
 }
+
+.ql-editor ul > li {
+  font-size: 24px;
+}
 </style>
