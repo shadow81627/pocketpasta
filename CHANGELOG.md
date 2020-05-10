@@ -1,5 +1,11 @@
 # Releases
 
+## [0.29.0](https://github.com/shadow81627/pocketpasta/compare/v0.28.103...v0.29.0) (2020-05-09)
+
+### Features
+
+- **editor:** add save button loading spinner ([09f4cc7](https://github.com/shadow81627/pocketpasta/commit/09f4cc776732b607d16fc0a78e4f732b757b5962))
+
 ## [0.28.103](https://github.com/shadow81627/pocketpasta/compare/v0.28.102...v0.28.103) (2020-05-08)
 
 ### Bug Fixes
