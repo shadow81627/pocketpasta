@@ -1,5 +1,11 @@
 # Releases
 
+## [0.29.2](https://github.com/shadow81627/pocketpasta/compare/v0.29.1...v0.29.2) (2020-05-10)
+
+### Bug Fixes
+
+- **auth:** add get authUI instance ([#1075](https://github.com/shadow81627/pocketpasta/issues/1075)) ([ea6bb36](https://github.com/shadow81627/pocketpasta/commit/ea6bb36e5c52bfdbd2f4e81ecb440708643f669e))
+
 ## [0.29.1](https://github.com/shadow81627/pocketpasta/compare/v0.29.0...v0.29.1) (2020-05-10)
 
 ### Bug Fixes
