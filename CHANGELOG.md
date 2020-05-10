@@ -1,5 +1,11 @@
 # Releases
 
+## [0.29.1](https://github.com/shadow81627/pocketpasta/compare/v0.29.0...v0.29.1) (2020-05-10)
+
+### Bug Fixes
+
+- **shopping-list:** increase list item size to 24 pixels ([#1074](https://github.com/shadow81627/pocketpasta/issues/1074)) ([50f0ffa](https://github.com/shadow81627/pocketpasta/commit/50f0ffae515b3188230821063b9471726839585f))
+
 ## [0.29.0](https://github.com/shadow81627/pocketpasta/compare/v0.28.103...v0.29.0) (2020-05-09)
 
 ### Features
