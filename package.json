@@ -69,7 +69,7 @@
     "@lhci/cli": "0.3.14",
     "@mdi/js": "5.1.45",
     "@nuxtjs/dotenv": "1.4.1",
-    "@nuxtjs/eslint-config": "2.0.2",
+    "@nuxtjs/eslint-config": "3.0.0",
     "@nuxtjs/eslint-module": "2.0.0",
     "@nuxtjs/vuetify": "1.11.2",
     "@semantic-release/changelog": "5.0.1",
