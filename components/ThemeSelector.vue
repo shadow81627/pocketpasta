@@ -29,7 +29,14 @@ export default {
       },
       set(value) {
         this.$colorMode.preference = value;
-        this.$vuetify.theme.dark = this.$store.getters.getThemeById(value).dark;
+        // timeout required to wait for color mode to be set.
+        setTimeout(
+          () =>
+            (this.$vuetify.theme.dark = this.$store.getters.getThemeById(
+              this.$colorMode.value,
+            ).dark),
+          100,
+        );
       },
     },
     themeMeta() {

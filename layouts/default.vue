@@ -156,10 +156,6 @@ export default {
     this.$vuetify.theme.dark = this.$store.getters.getThemeById(
       this.$colorMode.value,
     ).dark;
-
-    if (!this.$store.getters.getThemeById(this.$colorMode.value).dark) {
-      this.$vuetify.theme.disabled = true;
-    }
   },
   head() {
     return {
