@@ -1,5 +1,11 @@
 # Releases
 
+## [0.29.6](https://github.com/shadow81627/pocketpasta/compare/v0.29.5...v0.29.6) (2020-05-14)
+
+### Bug Fixes
+
+- **theme:** use @nuxtjs/color-mode ([#1088](https://github.com/shadow81627/pocketpasta/issues/1088)) ([e6f6f80](https://github.com/shadow81627/pocketpasta/commit/e6f6f8092170eadd31bff35e614463bb42e10514))
+
 ## [0.29.5](https://github.com/shadow81627/pocketpasta/compare/v0.29.4...v0.29.5) (2020-05-12)
 
 ### Bug Fixes
