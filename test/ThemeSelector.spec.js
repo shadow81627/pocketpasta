@@ -16,7 +16,16 @@ describe('ThemeSelector', () => {
   let store;
   let mutations;
 
+  let vuetify;
+
   beforeEach(() => {
+    vuetify = new Vuetify({
+      mocks: {
+        $vuetify: {
+          theme: {},
+        },
+      },
+    });
     state = {
       themes: [
         {
@@ -57,6 +66,7 @@ describe('ThemeSelector', () => {
   const factory = () =>
     shallowMount(ThemeSelector, {
       store,
+      vuetify,
       localVue,
     });
 
