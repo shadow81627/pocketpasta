@@ -7,6 +7,7 @@ body {
   font-weight: 400;
   font-size: 1em;
   line-height: 1.5;
+
   /* Enable a font's kerning: http://stackoverflow.com/questions/15160897/font-feature-settings-what-is-the-correct-syntax */
   font-feature-settings: 'kern';
   -moz-font-feature-settings: 'kern';
@@ -38,9 +39,10 @@ body {
    FONT STACK
    ========================================================================== */
 
-/*	@font-face format credit to Chris Coyier http://css-tricks.com/snippets/css/using-font-face/ */
-/*	And John, Kevin & Sven Read http://www.newnet-soft.com/blog/csstypography */
-/*	An old but still great article on @font-face performance http://www.stevesouders.com/blog/2009/10/13/font-face-and-performance/ */
+/*	@font-face format credit to Chris Coyier http://css-tricks.com/snippets/css/using-font-face/
+ *	And John, Kevin & Sven Read http://www.newnet-soft.com/blog/csstypography
+ *	An old but still great article on @font-face performance http://www.stevesouders.com/blog/2009/10/13/font-face-and-performance/
+ */
 
 @font-face {
   font-family: 'Comic Neue';

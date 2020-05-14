@@ -35,7 +35,8 @@
     "snyk-protect": "snyk protect",
     "prepare": "npm run snyk-protect",
     "git-cz": "git-cz",
-    "now-build": "nuxt generate --modern"
+    "now-build": "nuxt generate --modern",
+    "stylelint:fix": "npx stylelint **/*.css !**/node_modules/** !**/dist/** !**/coverage/** --fix"
   },
   "dependencies": {
     "@nuxtjs/auth": "4.9.1",
@@ -113,6 +114,7 @@
     "sass-loader": "8.0.2",
     "semantic-release": "17.0.7",
     "snyk": "1.320.3",
+    "stylelint-config-prettier": "8.0.1",
     "vue-jest": "3.0.5",
     "vuetify-loader": "1.4.3"
   },
