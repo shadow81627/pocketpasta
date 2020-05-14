@@ -1,5 +1,5 @@
 <template>
-  <v-app id="inspire" :dark="isDark" clipped-left>
+  <v-app id="inspire" clipped-left>
     <v-navigation-drawer
       v-model="drawer"
       :clipped="$vuetify.breakpoint.lgAndUp"
@@ -151,14 +151,36 @@ export default {
         },
       ];
     },
-    isDark() {
-      return this.$store.getters.getCurrentTheme().dark;
-    },
+  },
+  mounted() {
+    this.$vuetify.theme.dark = this.$store.getters.getThemeById(
+      this.$colorMode.value,
+    ).dark;
   },
   head() {
     return {
       link: [
-        this.$store.getters.getCurrentTheme(),
+        {
+          hid: 'theme-preload',
+          rel: 'preload',
+          as: 'style',
+          href: this.$store.getters.getThemeById(this.$colorMode.value).href,
+          skip:
+            this.$store.getters.getThemeById(this.$colorMode.value).href ===
+              '' ||
+            !this.$store.getters.getThemeById(this.$colorMode.value).href,
+        },
+        {
+          // stylesheet is valid in the body, needed because default css is loading first this allows theme to overide default.
+          pbody: true,
+          hid: 'theme',
+          rel: 'stylesheet',
+          href: this.$store.getters.getThemeById(this.$colorMode.value).href,
+          skip:
+            this.$store.getters.getThemeById(this.$colorMode.value).href ===
+              '' ||
+            !this.$store.getters.getThemeById(this.$colorMode.value).href,
+        },
         {
           hid: 'canonical',
           rel: 'canonical',

@@ -101,7 +101,7 @@ module.exports = {
 
   router: {
     linkActiveClass: 'active',
-    middleware: ['theme'],
+    middleware: [],
   },
 
   env: {
@@ -285,6 +285,7 @@ module.exports = {
   buildModules: [
     // Simple usage
     '@nuxtjs/vuetify',
+    '@nuxtjs/color-mode',
   ],
 
   dotenv: {

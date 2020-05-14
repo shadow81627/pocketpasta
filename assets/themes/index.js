@@ -1,8 +1,18 @@
 export default [
   {
     dark: false,
-    value: 'default',
+    value: 'system',
     href: '',
+  },
+  {
+    dark: false,
+    value: 'light',
+    href: '',
+  },
+  {
+    dark: true,
+    value: 'dark',
+    href: 'https://bootswatch.com/4/darkly/bootstrap.min.css',
   },
   {
     dark: false,
@@ -18,11 +28,6 @@ export default [
     dark: true,
     value: 'cyborg',
     href: 'https://bootswatch.com/4/cyborg/bootstrap.min.css',
-  },
-  {
-    dark: true,
-    value: 'darkly',
-    href: 'https://bootswatch.com/4/darkly/bootstrap.min.css',
   },
   {
     dark: false,
