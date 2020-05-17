@@ -1,5 +1,11 @@
 # Releases
 
+## [0.29.8](https://github.com/shadow81627/pocketpasta/compare/v0.29.7...v0.29.8) (2020-05-17)
+
+### Bug Fixes
+
+- **about:** remove name section ([#1095](https://github.com/shadow81627/pocketpasta/issues/1095)) ([4045d83](https://github.com/shadow81627/pocketpasta/commit/4045d832fe8912fe9ad17b5415ac7de66d1f177d))
+
 ## [0.29.7](https://github.com/shadow81627/pocketpasta/compare/v0.29.6...v0.29.7) (2020-05-15)
 
 ### Bug Fixes
