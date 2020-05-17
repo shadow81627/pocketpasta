@@ -1,5 +1,11 @@
 # Releases
 
+## [0.29.9](https://github.com/shadow81627/pocketpasta/compare/v0.29.8...v0.29.9) (2020-05-17)
+
+### Bug Fixes
+
+- **video:** add 16:9 padding ([#1096](https://github.com/shadow81627/pocketpasta/issues/1096)) ([d40c4a8](https://github.com/shadow81627/pocketpasta/commit/d40c4a8f63a676b1fcaddc6760a9afb5f5c91d4b))
+
 ## [0.29.8](https://github.com/shadow81627/pocketpasta/compare/v0.29.7...v0.29.8) (2020-05-17)
 
 ### Bug Fixes
