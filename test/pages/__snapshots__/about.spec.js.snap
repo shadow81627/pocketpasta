@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`about renders properly 1`] = `
+"<b-container-stub tag=\\"div\\">
+  <b-row-stub tag=\\"div\\">
+    <b-col-stub tag=\\"div\\">
+      <h1>about.heading</h1>
+      <p class=\\"lead\\">
+        PocketPasta is a collection of my demo apps that I build to practice
+        my skills.
+      </p>
+      <vue-plyr class=\\"d-print-none\\">
+        <div data-plyr-provider=\\"youtube\\" data-plyr-embed-id=\\"W0StMCfs5Ew\\"></div>
+      </vue-plyr>
+    </b-col-stub>
+  </b-row-stub>
+  <b-row-stub tag=\\"div\\" alignv=\\"center\\">
+    <b-col-stub tag=\\"div\\">
+      <b-img-lazy-stub src=\\"https://res.cloudinary.com/pocketpasta/image/fetch/https://cdn-images-1.medium.com/max/600/1*6BIIyDspOhlLYW5ZiK6b1Q.jpeg\\" alt=\\"Typing monkey\\" blankcolor=\\"transparent\\" offset=\\"360\\" throttle=\\"100\\" class=\\"img-fluid mx-auto d-block\\"></b-img-lazy-stub>
+    </b-col-stub>
+    <!---->
+  </b-row-stub>
+</b-container-stub>"
+`;
