@@ -10,8 +10,12 @@
           PocketPasta is a collection of my demo apps that I build to practice
           my skills.
         </p>
-        <vue-plyr class="d-print-none">
-          <div data-plyr-provider="youtube" data-plyr-embed-id="W0StMCfs5Ew" />
+        <vue-plyr>
+          <div
+            data-plyr-provider="youtube"
+            data-plyr-embed-id="W0StMCfs5Ew"
+            style="padding-top: 56.25%;"
+          />
         </vue-plyr>
       </b-col>
     </b-row>
@@ -23,6 +27,8 @@
           alt="Typing monkey"
           src="https://res.cloudinary.com/pocketpasta/image/fetch/https://cdn-images-1.medium.com/max/600/1*6BIIyDspOhlLYW5ZiK6b1Q.jpeg"
           throttle="100"
+          width="310"
+          height="360"
         />
       </b-col>
       <b-col v-if="damien">

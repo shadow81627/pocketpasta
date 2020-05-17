@@ -10,6 +10,7 @@
         :data-plyr-embed-id="
           recipe.video[0].contentUrl.split('/').slice(-1).pop()
         "
+        style="padding-top: 56.25%;"
       />
     </vue-plyr>
     <div v-else-if="imageData && imageData.url">
