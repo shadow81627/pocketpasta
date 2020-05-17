@@ -30,38 +30,63 @@
     <share class="py-4" />
 
     <p>
-      <!-- <span>Makes:</span> -->
       <number-text :text="recipe.recipeYield" />
     </p>
-    <section v-if="recipe.recipeIngredient">
-      <h2>Ingredients:</h2>
-      <ol class="list-group-flush pl-0">
-        <li
-          v-for="ingredient in recipe.recipeIngredient"
-          :key="ingredient"
-          class="list-group-item"
+    <b-card v-if="recipe.recipeIngredient" no-body tag="section" class="mb-4">
+      <b-card-header header-tag="header" class="p-1 text-left" role="tab">
+        <b-button
+          v-b-toggle:collapse-ingredient
+          block
+          variant="none"
+          squared
+          class="text-left"
+          ><h2>Ingredients</h2></b-button
         >
-          <fraction-text :text="ingredient" />
-        </li>
-      </ol>
-    </section>
+      </b-card-header>
+      <b-collapse id="collapse-ingredient" visible>
+        <b-card-body>
+          <ol class="list-group-flush pl-0 mb-0">
+            <li
+              v-for="ingredient in recipe.recipeIngredient"
+              :key="ingredient"
+              class="list-group-item"
+            >
+              <fraction-text :text="ingredient" />
+            </li>
+          </ol>
+        </b-card-body>
+      </b-collapse>
+    </b-card>
 
-    <section v-if="recipe.recipeInstructions">
-      <h2>Instructions:</h2>
-      <ol
-        v-if="Array.isArray(recipe.recipeInstructions)"
-        class="list-group-flush pl-0"
-      >
-        <li
-          v-for="instruction in recipe.recipeInstructions"
-          :key="instruction.text"
-          class="list-group-item"
+    <b-card v-if="recipe.recipeInstructions" no-body tag="section" class="mb-4">
+      <b-card-header header-tag="header" class="p-1" role="tab">
+        <b-button
+          v-b-toggle:collapse-instructions
+          block
+          variant="none"
+          squared
+          class="text-left"
+          ><h2>Instructions</h2></b-button
         >
-          <fraction-text :text="instruction.text" />
-        </li>
-      </ol>
-      <p v-else>{{ recipe.recipeInstructions }}</p>
-    </section>
+      </b-card-header>
+      <b-collapse id="collapse-instructions" visible>
+        <b-card-body>
+          <ol
+            v-if="Array.isArray(recipe.recipeInstructions)"
+            class="list-group-flush pl-0 mb-0"
+          >
+            <li
+              v-for="instruction in recipe.recipeInstructions"
+              :key="instruction.text"
+              class="list-group-item"
+            >
+              <fraction-text :text="instruction.text" />
+            </li>
+          </ol>
+          <p v-else>{{ recipe.recipeInstructions }}</p>
+        </b-card-body>
+      </b-collapse>
+    </b-card>
 
     <nutrition-fact-table
       v-if="recipe.nutrition"
@@ -103,6 +128,7 @@ import FractionText from '@/components/FractionText';
 import Keywords from '@/components/Keywords';
 import Share from '@/components/Social/Share';
 import NutritionFactTable from '@/components/Recipe/NutritionFactTable';
+import { BCollapse, VBToggle } from 'bootstrap-vue';
 
 export default {
   components: {
@@ -111,7 +137,9 @@ export default {
     Keywords,
     Share,
     NutritionFactTable,
+    BCollapse,
   },
+  directives: { 'b-toggle': VBToggle },
   inheritAttrs: false,
   computed: {
     recipe() {

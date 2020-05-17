@@ -25,7 +25,7 @@
         <b-img-lazy
           class="img-fluid mx-auto d-block"
           alt="Typing monkey"
-          src="https://res.cloudinary.com/pocketpasta/image/fetch/https://cdn-images-1.medium.com/max/600/1*6BIIyDspOhlLYW5ZiK6b1Q.jpeg"
+          src="https://res.cloudinary.com/pocketpasta/image/fetch/f_auto,q_auto/https://cdn-images-1.medium.com/max/600/1*6BIIyDspOhlLYW5ZiK6b1Q.jpeg"
           throttle="100"
           width="310"
           height="360"
