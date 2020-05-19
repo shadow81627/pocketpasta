@@ -14,24 +14,27 @@
           <div
             data-plyr-provider="youtube"
             data-plyr-embed-id="W0StMCfs5Ew"
-            style="padding-top: 56.25%;"
+            style="
+              padding-top: 56.25%;
+              background-image: url('https://i.ytimg.com/vi/W0StMCfs5Ew/maxresdefault.jpg');
+            "
           />
         </vue-plyr>
       </b-col>
     </b-row>
 
     <b-row align-v="center">
-      <b-col>
+      <b-col cols="12" md="6">
         <b-img-lazy
           class="img-fluid mx-auto d-block"
           alt="Typing monkey"
-          src="https://res.cloudinary.com/pocketpasta/image/fetch/https://cdn-images-1.medium.com/max/600/1*6BIIyDspOhlLYW5ZiK6b1Q.jpeg"
+          src="https://res.cloudinary.com/pocketpasta/image/fetch/f_auto,q_auto/https://cdn-images-1.medium.com/max/600/1*6BIIyDspOhlLYW5ZiK6b1Q.jpeg"
           throttle="100"
           width="310"
           height="360"
         />
       </b-col>
-      <b-col v-if="damien">
+      <b-col v-if="damien" cols="12" md="6">
         <h2>{{ damien.name }}</h2>
         <p>
           <strong>Job Title:<span>&nbsp;</span></strong>
