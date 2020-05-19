@@ -89,7 +89,7 @@
     "eslint": "7.0.0",
     "eslint-config-prettier": "6.11.0",
     "eslint-config-standard": "14.1.1",
-    "eslint-config-vuetify": "0.6.0",
+    "eslint-config-vuetify": "0.6.1",
     "eslint-loader": "4.0.2",
     "eslint-plugin-import": "2.20.2",
     "eslint-plugin-jest": "23.13.1",
