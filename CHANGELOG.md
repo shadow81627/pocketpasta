@@ -1,5 +1,11 @@
 # Releases
 
+## [0.30.0](https://github.com/shadow81627/pocketpasta/compare/v0.29.9...v0.30.0) (2020-05-19)
+
+### Features
+
+- **recipe:** collapsable sections ([#1099](https://github.com/shadow81627/pocketpasta/issues/1099)) ([68846f0](https://github.com/shadow81627/pocketpasta/commit/68846f0e3d48020ea18363846dd4d06eb9869197))
+
 ## [0.29.9](https://github.com/shadow81627/pocketpasta/compare/v0.29.8...v0.29.9) (2020-05-17)
 
 ### Bug Fixes
