@@ -1,5 +1,11 @@
 # Releases
 
+## [0.31.0](https://github.com/shadow81627/pocketpasta/compare/v0.30.1...v0.31.0) (2020-05-20)
+
+### Features
+
+- **recipe:** two col ingredients and instructions ([613bde2](https://github.com/shadow81627/pocketpasta/commit/613bde243b158482db54eedd699477d0dc126ffd))
+
 ## [0.30.1](https://github.com/shadow81627/pocketpasta/compare/v0.30.0...v0.30.1) (2020-05-19)
 
 ### Bug Fixes
