@@ -11,80 +11,86 @@ exports[`Recipe renders properly 1`] = `
   <p>
     <number-text-stub text=\\"4 servings\\"></number-text-stub>
   </p>
-  <b-card-stub bodytag=\\"div\\" titletag=\\"h4\\" subtitletag=\\"h6\\" subtitletextvariant=\\"muted\\" headertag=\\"div\\" footertag=\\"div\\" tag=\\"section\\" nobody=\\"true\\" class=\\"mb-4\\">
-    <b-card-header-stub headertag=\\"header\\" role=\\"tab\\" class=\\"p-1 text-left\\">
-      <b-button-stub target=\\"_self\\" event=\\"click\\" routertag=\\"a\\" block=\\"true\\" variant=\\"none\\" type=\\"button\\" tag=\\"button\\" squared=\\"true\\" class=\\"text-left\\">
-        <h2>Ingredients</h2>
-      </b-button-stub>
-    </b-card-header-stub>
-    <b-collapse-stub id=\\"collapse-ingredient\\" visible=\\"true\\" tag=\\"div\\">
-      <b-card-body-stub bodytag=\\"div\\" titletag=\\"h4\\" subtitletag=\\"h6\\" subtitletextvariant=\\"muted\\">
-        <ol class=\\"list-group-flush pl-0 mb-0\\">
-          <li class=\\"list-group-item\\">
-            <fraction-text-stub text=\\"1 small onion, diced\\"></fraction-text-stub>
-          </li>
-          <li class=\\"list-group-item\\">
-            <fraction-text-stub text=\\"2 cloves garlic, minced\\"></fraction-text-stub>
-          </li>
-          <li class=\\"list-group-item\\">
-            <fraction-text-stub text=\\"2 carrots, diced small\\"></fraction-text-stub>
-          </li>
-          <li class=\\"list-group-item\\">
-            <fraction-text-stub text=\\"2 stalks celery, diced small\\"></fraction-text-stub>
-          </li>
-          <li class=\\"list-group-item\\">
-            <fraction-text-stub text=\\"2 large cans (28 oz. each) peeled Italian Roma tomatoes\\"></fraction-text-stub>
-          </li>
-          <li class=\\"list-group-item\\">
-            <fraction-text-stub text=\\"1 large bunch fresh basil, washed\\"></fraction-text-stub>
-          </li>
-          <li class=\\"list-group-item\\">
-            <fraction-text-stub text=\\"2 tbsp extra virgin olive oil\\"></fraction-text-stub>
-          </li>
-          <li class=\\"list-group-item\\">
-            <fraction-text-stub text=\\"1 lb. spaghetti pasta\\"></fraction-text-stub>
-          </li>
-          <li class=\\"list-group-item\\">
-            <fraction-text-stub text=\\"Salt to taste\\"></fraction-text-stub>
-          </li>
-          <li class=\\"list-group-item\\">
-            <fraction-text-stub text=\\"Freshly grated Parmigiano-Reggiano cheese\\"></fraction-text-stub>
-          </li>
-        </ol>
-      </b-card-body-stub>
-    </b-collapse-stub>
-  </b-card-stub>
-  <b-card-stub bodytag=\\"div\\" titletag=\\"h4\\" subtitletag=\\"h6\\" subtitletextvariant=\\"muted\\" headertag=\\"div\\" footertag=\\"div\\" tag=\\"section\\" nobody=\\"true\\" class=\\"mb-4\\">
-    <b-card-header-stub headertag=\\"header\\" role=\\"tab\\" class=\\"p-1\\">
-      <b-button-stub target=\\"_self\\" event=\\"click\\" routertag=\\"a\\" block=\\"true\\" variant=\\"none\\" type=\\"button\\" tag=\\"button\\" squared=\\"true\\" class=\\"text-left\\">
-        <h2>Instructions</h2>
-      </b-button-stub>
-    </b-card-header-stub>
-    <b-collapse-stub id=\\"collapse-instructions\\" visible=\\"true\\" tag=\\"div\\">
-      <b-card-body-stub bodytag=\\"div\\" titletag=\\"h4\\" subtitletag=\\"h6\\" subtitletextvariant=\\"muted\\">
-        <ol class=\\"list-group-flush pl-0 mb-0\\">
-          <li class=\\"list-group-item\\">
-            <fraction-text-stub text=\\"Dice the carrots, onion, and celery. Thinly slice half of the basil leaves. Set aside.\\"></fraction-text-stub>
-          </li>
-          <li class=\\"list-group-item\\">
-            <fraction-text-stub text=\\"Heat the olive oil in a large pot over medium heat. Add the onion, carrots, celery, and garlic. Cook until softened but not brown.\\"></fraction-text-stub>
-          </li>
-          <li class=\\"list-group-item\\">
-            <fraction-text-stub text=\\"Add in the whole basil leaves, garlic, and tomatoes. Bring the sauce to a simmer, cover, and cook for 45 minutes, stirring occasionally and breaking apart the larger tomatoes as they cook.\\"></fraction-text-stub>
-          </li>
-          <li class=\\"list-group-item\\">
-            <fraction-text-stub text=\\"After 45 minutes, or when the vegetables are tender, remove the sauce from the heat and let rest for 15 minutes.\\"></fraction-text-stub>
-          </li>
-          <li class=\\"list-group-item\\">
-            <fraction-text-stub text=\\"While the sauce is simmering, fill another large pot with water and bring to a boil. Add salt, if desired. Cook the spaghetti until al dente. Drain the pasta.\\"></fraction-text-stub>
-          </li>
-          <li class=\\"list-group-item\\">
-            <fraction-text-stub text=\\"Taste the sauce and add salt, if desired. Serve pasta topped generously with sauce, grated Parmigiano-Reggiano cheese, and the reserved sliced basil leaves.\\"></fraction-text-stub>
-          </li>
-        </ol>
-      </b-card-body-stub>
-    </b-collapse-stub>
-  </b-card-stub>
+  <b-row-stub tag=\\"div\\">
+    <b-col-stub md=\\"6\\" tag=\\"div\\">
+      <b-card-stub bodytag=\\"div\\" titletag=\\"h4\\" subtitletag=\\"h6\\" subtitletextvariant=\\"muted\\" headertag=\\"div\\" footertag=\\"div\\" tag=\\"section\\" nobody=\\"true\\" class=\\"mb-4\\">
+        <b-card-header-stub headertag=\\"header\\" role=\\"tab\\" class=\\"p-1 text-left\\">
+          <b-button-stub target=\\"_self\\" event=\\"click\\" routertag=\\"a\\" block=\\"true\\" variant=\\"none\\" type=\\"button\\" tag=\\"button\\" squared=\\"true\\" class=\\"text-left\\">
+            <h2>Ingredients</h2>
+          </b-button-stub>
+        </b-card-header-stub>
+        <b-collapse-stub id=\\"collapse-ingredient\\" visible=\\"true\\" tag=\\"div\\">
+          <b-card-body-stub bodytag=\\"div\\" titletag=\\"h4\\" subtitletag=\\"h6\\" subtitletextvariant=\\"muted\\">
+            <ol class=\\"list-group-flush pl-0 mb-0\\">
+              <li class=\\"list-group-item\\">
+                <fraction-text-stub text=\\"1 small onion, diced\\"></fraction-text-stub>
+              </li>
+              <li class=\\"list-group-item\\">
+                <fraction-text-stub text=\\"2 cloves garlic, minced\\"></fraction-text-stub>
+              </li>
+              <li class=\\"list-group-item\\">
+                <fraction-text-stub text=\\"2 carrots, diced small\\"></fraction-text-stub>
+              </li>
+              <li class=\\"list-group-item\\">
+                <fraction-text-stub text=\\"2 stalks celery, diced small\\"></fraction-text-stub>
+              </li>
+              <li class=\\"list-group-item\\">
+                <fraction-text-stub text=\\"2 large cans (28 oz. each) peeled Italian Roma tomatoes\\"></fraction-text-stub>
+              </li>
+              <li class=\\"list-group-item\\">
+                <fraction-text-stub text=\\"1 large bunch fresh basil, washed\\"></fraction-text-stub>
+              </li>
+              <li class=\\"list-group-item\\">
+                <fraction-text-stub text=\\"2 tbsp extra virgin olive oil\\"></fraction-text-stub>
+              </li>
+              <li class=\\"list-group-item\\">
+                <fraction-text-stub text=\\"1 lb. spaghetti pasta\\"></fraction-text-stub>
+              </li>
+              <li class=\\"list-group-item\\">
+                <fraction-text-stub text=\\"Salt to taste\\"></fraction-text-stub>
+              </li>
+              <li class=\\"list-group-item\\">
+                <fraction-text-stub text=\\"Freshly grated Parmigiano-Reggiano cheese\\"></fraction-text-stub>
+              </li>
+            </ol>
+          </b-card-body-stub>
+        </b-collapse-stub>
+      </b-card-stub>
+    </b-col-stub>
+    <b-col-stub md=\\"6\\" tag=\\"div\\">
+      <b-card-stub bodytag=\\"div\\" titletag=\\"h4\\" subtitletag=\\"h6\\" subtitletextvariant=\\"muted\\" headertag=\\"div\\" footertag=\\"div\\" tag=\\"section\\" nobody=\\"true\\" class=\\"mb-4\\">
+        <b-card-header-stub headertag=\\"header\\" role=\\"tab\\" class=\\"p-1\\">
+          <b-button-stub target=\\"_self\\" event=\\"click\\" routertag=\\"a\\" block=\\"true\\" variant=\\"none\\" type=\\"button\\" tag=\\"button\\" squared=\\"true\\" class=\\"text-left\\">
+            <h2>Instructions</h2>
+          </b-button-stub>
+        </b-card-header-stub>
+        <b-collapse-stub id=\\"collapse-instructions\\" visible=\\"true\\" tag=\\"div\\">
+          <b-card-body-stub bodytag=\\"div\\" titletag=\\"h4\\" subtitletag=\\"h6\\" subtitletextvariant=\\"muted\\">
+            <ol class=\\"list-group-flush pl-0 mb-0\\">
+              <li class=\\"list-group-item\\">
+                <fraction-text-stub text=\\"Dice the carrots, onion, and celery. Thinly slice half of the basil leaves. Set aside.\\"></fraction-text-stub>
+              </li>
+              <li class=\\"list-group-item\\">
+                <fraction-text-stub text=\\"Heat the olive oil in a large pot over medium heat. Add the onion, carrots, celery, and garlic. Cook until softened but not brown.\\"></fraction-text-stub>
+              </li>
+              <li class=\\"list-group-item\\">
+                <fraction-text-stub text=\\"Add in the whole basil leaves, garlic, and tomatoes. Bring the sauce to a simmer, cover, and cook for 45 minutes, stirring occasionally and breaking apart the larger tomatoes as they cook.\\"></fraction-text-stub>
+              </li>
+              <li class=\\"list-group-item\\">
+                <fraction-text-stub text=\\"After 45 minutes, or when the vegetables are tender, remove the sauce from the heat and let rest for 15 minutes.\\"></fraction-text-stub>
+              </li>
+              <li class=\\"list-group-item\\">
+                <fraction-text-stub text=\\"While the sauce is simmering, fill another large pot with water and bring to a boil. Add salt, if desired. Cook the spaghetti until al dente. Drain the pasta.\\"></fraction-text-stub>
+              </li>
+              <li class=\\"list-group-item\\">
+                <fraction-text-stub text=\\"Taste the sauce and add salt, if desired. Serve pasta topped generously with sauce, grated Parmigiano-Reggiano cheese, and the reserved sliced basil leaves.\\"></fraction-text-stub>
+              </li>
+            </ol>
+          </b-card-body-stub>
+        </b-collapse-stub>
+      </b-card-stub>
+    </b-col-stub>
+  </b-row-stub>
   <!---->
   <section class=\\"mb-2\\">
     <h2 class=\\"h4\\">Tags</h2>
