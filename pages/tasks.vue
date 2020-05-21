@@ -156,7 +156,13 @@ import { DateTime } from 'luxon';
 
 export default {
   middleware: ['auth'],
-  components: { BCol, BRow, BContainer, VDataTable, BButton },
+  components: {
+    BCol,
+    BRow,
+    BContainer,
+    VDataTable,
+    BButton,
+  },
   directives: {
     Ripple,
   },
