@@ -1,5 +1,11 @@
 # Releases
 
+## [0.31.1](https://github.com/shadow81627/pocketpasta/compare/v0.31.0...v0.31.1) (2020-05-20)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxtjs/google-analytics to v2.3.0 ([e625da0](https://github.com/shadow81627/pocketpasta/commit/e625da01e5c68f679375c5686f9e50adda6e5213))
+
 ## [0.31.0](https://github.com/shadow81627/pocketpasta/compare/v0.30.1...v0.31.0) (2020-05-20)
 
 ### Features

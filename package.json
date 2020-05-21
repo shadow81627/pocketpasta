@@ -1,6 +1,6 @@
 {
   "name": "pocketpasta",
-  "version": "0.31.0",
+  "version": "0.31.1",
   "description": "Eat spagetti to forgetti your regretti",
   "author": {
     "name": "Damien Robinson",
@@ -42,7 +42,7 @@
     "@nuxtjs/auth": "4.9.1",
     "@nuxtjs/axios": "5.10.3",
     "@nuxtjs/firebase": "5.2.0",
-    "@nuxtjs/google-analytics": "2.2.3",
+    "@nuxtjs/google-analytics": "2.3.0",
     "@nuxtjs/markdownit": "1.2.9",
     "@nuxtjs/pwa": "2.6.0",
     "@nuxtjs/recaptcha": "0.6.2",
@@ -114,7 +114,7 @@
     "sass": "1.26.5",
     "sass-loader": "8.0.2",
     "semantic-release": "17.0.7",
-    "snyk": "1.323.0",
+    "snyk": "1.323.1",
     "stylelint-config-prettier": "8.0.1",
     "vue-jest": "3.0.5",
     "vuetify-loader": "1.4.3"
