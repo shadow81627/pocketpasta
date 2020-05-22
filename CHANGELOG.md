@@ -1,5 +1,11 @@
 # Releases
 
+## [0.31.3](https://github.com/shadow81627/pocketpasta/compare/v0.31.2...v0.31.3) (2020-05-22)
+
+### Bug Fixes
+
+- **footer:** add cols auto for made with text ([#1111](https://github.com/shadow81627/pocketpasta/issues/1111)) ([20d198e](https://github.com/shadow81627/pocketpasta/commit/20d198ed9bce059b18d20506ea4dc9e2b129cf95))
+
 ## [0.31.2](https://github.com/shadow81627/pocketpasta/compare/v0.31.1...v0.31.2) (2020-05-21)
 
 ### Bug Fixes
