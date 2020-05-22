@@ -177,7 +177,7 @@ module.exports = {
       {
         name: 'viewport',
         content:
-          'width=device-width, initial-scale=1, shrink-to-fit=no, minimal-ui',
+          'width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, shrink-to-fit=no, minimal-ui',
       },
       {
         property: 'og:title',
