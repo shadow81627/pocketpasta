@@ -5,7 +5,7 @@ exports[`Tasks page renders properly 1`] = `
   <b-row-stub tag=\\"div\\">
     <b-col-stub tag=\\"div\\">
       <h1>Tasks</h1>
-      <v-data-table headers=\\"[object Object],[object Object],[object Object],[object Object]\\" items=\\"[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]\\" search=\\"\\" sort-by=\\"due\\" item-key=\\"name\\" class=\\"elevation-1\\"></v-data-table>
+      <v-data-table headers=\\"[object Object],[object Object],[object Object],[object Object]\\" items=\\"[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]\\" search=\\"\\" sort-by=\\"due\\" class=\\"elevation-1\\"></v-data-table>
     </b-col-stub>
   </b-row-stub>
 </b-container-stub>"

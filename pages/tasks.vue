@@ -8,7 +8,6 @@
           :items="desserts"
           :search="search"
           sort-by="due"
-          item-key="name"
           class="elevation-1"
         >
           <template v-slot:item.done="{ item }">
@@ -61,16 +60,17 @@
               </v-dialog>
             </v-toolbar>
           </template>
-          <template v-slot:item.name="props">
-            <v-edit-dialog :return-value.sync="props.item.name">
-              {{ props.item.name }}
+          <template v-slot:item.name="{ item }">
+            <v-edit-dialog :return-value.sync="item.name" large>
+              {{ item.name }}
               <template v-slot:input>
                 <v-text-field
-                  v-model="props.item.name"
-                  :rules="[(v) => v.length <= 25 || 'Input too long!']"
+                  v-model="item.name"
                   label="Name"
                   single-line
                   counter
+                  clearable
+                  autofocus
                 />
               </template>
             </v-edit-dialog>
@@ -85,46 +85,7 @@
                 )
               }}
               <template v-slot:input>
-                <v-date-picker v-model="props.item.due" no-title scrollable />
-                <!-- <v-menu
-                  ref="menu"
-                  :close-on-content-click="false"
-                  :return-value.sync="props.item.due"
-                  transition="scale-transition"
-                  offset-y
-                  min-width="290px"
-                >
-                  <template v-slot:activator="{ on }">
-                    <v-text-field
-                      :value="
-                        DateTime.fromISO(props.item.due).toLocaleString(
-                          DateTime.DATE_FULL,
-                        )
-                      "
-                      label="Picker in menu"
-                      :prepend-icon="icons.mdiCalendar"
-                      v-on="on"
-                    />
-                  </template>
-                  <v-date-picker
-                    v-model="props.item.due"
-                    :xvalue="props.item.due"
-                    no-title
-                    scrollable
-                    change="test"
-                  >
-                    <v-spacer />
-                    <v-btn text color="primary" click="menu = false"
-                      >Cancel</v-btn
-                    >
-                    <v-btn
-                      text
-                      color="primary"
-                      @click="$refs.menu.save(props.item.due)"
-                      >OK</v-btn
-                    >
-                  </v-date-picker>
-                </v-menu> -->
+                <v-date-picker v-model="props.item.due" scrollable />
               </template>
             </v-edit-dialog>
           </template>
@@ -151,7 +112,7 @@
 import { BCol, BRow, BContainer, BButton } from 'bootstrap-vue';
 import { VDataTable } from 'vuetify/lib';
 import { Ripple } from 'vuetify/lib/directives';
-import { mdiPencil, mdiDelete, mdiMagnify, mdiCalendar } from '@mdi/js';
+import { mdiPencil, mdiDelete, mdiMagnify } from '@mdi/js';
 import { DateTime } from 'luxon';
 
 export default {
@@ -169,7 +130,7 @@ export default {
   data: () => ({
     DateTime,
     search: '',
-    icons: { mdiPencil, mdiDelete, mdiMagnify, mdiCalendar },
+    icons: { mdiPencil, mdiDelete, mdiMagnify },
     dialog: false,
     headers: [
       { value: 'done', align: 'start', width: 1 },
@@ -217,9 +178,6 @@ export default {
   },
 
   methods: {
-    test(value) {
-      console.log(value);
-    },
     initialize() {
       this.desserts = [
         {
@@ -234,73 +192,41 @@ export default {
         },
         {
           name: 'Eclair',
-          calories: 262,
-          fat: 16.0,
-          carbs: 23,
-          protein: 6.0,
           done: false,
           due: DateTime.local().plus({ days: 7 }).toISODate(),
         },
         {
           name: 'Cupcake',
-          calories: 305,
-          fat: 3.7,
-          carbs: 67,
-          protein: 4.3,
           done: false,
           due: DateTime.local().plus({ days: 3 }).toISODate(),
         },
         {
           name: 'Gingerbread',
-          calories: 356,
-          fat: 16.0,
-          carbs: 49,
-          protein: 3.9,
           done: false,
           due: DateTime.local().minus({ days: 3 }).toISODate(),
         },
         {
           name: 'Jelly bean',
-          calories: 375,
-          fat: 0.0,
-          carbs: 94,
-          protein: 0.0,
           done: true,
           due: DateTime.local().toISODate(),
         },
         {
           name: 'Lollipop',
-          calories: 392,
-          fat: 0.2,
-          carbs: 98,
-          protein: 0,
           done: false,
           due: DateTime.local().toISODate(),
         },
         {
           name: 'Honeycomb',
-          calories: 408,
-          fat: 3.2,
-          carbs: 87,
-          protein: 6.5,
           done: false,
           due: DateTime.local().toISODate(),
         },
         {
           name: 'Donut',
-          calories: 452,
-          fat: 25.0,
-          carbs: 51,
-          protein: 4.9,
           done: false,
           due: DateTime.local().toISODate(),
         },
         {
           name: 'KitKat',
-          calories: 518,
-          fat: 26.0,
-          carbs: 65,
-          protein: 7,
           done: false,
           due: DateTime.local().toISODate(),
         },
