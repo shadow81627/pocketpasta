@@ -19,7 +19,12 @@
 
         "font-display": "warn",
         "uses-passive-event-listeners": "warn",
-        "dom-size": "warn"
+        "dom-size": "warn",
+
+        "unused-javascript": "warn",
+        "meta-viewport": "warn",
+        "maskable-icon": "warn",
+        "image-size-responsive": "warn"
       }
     },
     "upload": {
