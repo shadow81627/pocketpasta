@@ -86,6 +86,7 @@ module.exports = {
 
   meta: {
     nativeUI: true,
+    lang: undefined,
   },
 
   manifest: {
@@ -174,10 +175,8 @@ module.exports = {
       // If undefined or blank then we don't need the hyphen
       return titleChunk ? `${titleChunk} - PocketPasta` : 'PocketPasta';
     },
+    noscript: [{ innerHTML: 'This website requires JavaScript.' }],
     meta: [
-      {
-        charset: 'utf-8',
-      },
       {
         property: 'og:title',
         template: (titleChunk) => {
@@ -185,11 +184,6 @@ module.exports = {
           return titleChunk ? `${titleChunk} - PocketPasta` : 'PocketPasta';
         },
         vmid: 'og:title',
-      },
-      {
-        hid: 'description',
-        name: 'description',
-        content: pkg.description,
       },
       {
         name: 'google-site-verification',
