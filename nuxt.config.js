@@ -84,6 +84,10 @@ module.exports = {
     offlineAnalytics: true,
   },
 
+  meta: {
+    nativeUI: true,
+  },
+
   manifest: {
     name: pkg.name,
     short_name: 'pocketpasta',
@@ -173,11 +177,6 @@ module.exports = {
     meta: [
       {
         charset: 'utf-8',
-      },
-      {
-        name: 'viewport',
-        content:
-          'width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, shrink-to-fit=no, minimal-ui',
       },
       {
         property: 'og:title',
