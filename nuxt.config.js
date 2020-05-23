@@ -87,6 +87,8 @@ module.exports = {
   meta: {
     nativeUI: true,
     lang: undefined,
+    viewport:
+      'width=device-width, initial-scale=1, maximum-scale=5, minimal-ui',
   },
 
   manifest: {
