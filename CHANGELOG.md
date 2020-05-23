@@ -1,5 +1,11 @@
 # Releases
 
+## [0.31.8](https://github.com/shadow81627/pocketpasta/compare/v0.31.7...v0.31.8) (2020-05-23)
+
+### Performance Improvements
+
+- **meta:** move i18n seo into layout ([#1115](https://github.com/shadow81627/pocketpasta/issues/1115)) ([705bded](https://github.com/shadow81627/pocketpasta/commit/705bded2ae46493de2ab78f0b0240fede23fb70f))
+
 ## [0.31.7](https://github.com/shadow81627/pocketpasta/compare/v0.31.6...v0.31.7) (2020-05-23)
 
 ### Bug Fixes
