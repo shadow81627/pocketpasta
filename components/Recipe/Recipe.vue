@@ -147,7 +147,7 @@ import Keywords from '@/components/Keywords';
 import Share from '@/components/Social/Share';
 import NutritionFactTable from '@/components/Recipe/NutritionFactTable';
 import { BCollapse, VBToggle, BRow, BCol } from 'bootstrap-vue';
-
+import VuePlyr from 'vue-plyr/dist/vue-plyr.ssr.js';
 export default {
   components: {
     NumberText,
@@ -158,6 +158,7 @@ export default {
     BCollapse,
     BRow,
     BCol,
+    VuePlyr,
   },
   directives: { 'b-toggle': VBToggle },
   inheritAttrs: false,

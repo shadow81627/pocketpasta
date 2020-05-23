@@ -43,7 +43,7 @@ const routes = (callback) => {
 
 const i18nSettings = {
   baseUrl: BASE_URL,
-  seo: true,
+  seo: false,
   defaultLocale: 'en',
   vueI18n: {
     fallbackLocale: 'en',
@@ -178,7 +178,7 @@ module.exports = {
       // If undefined or blank then we don't need the hyphen
       return titleChunk ? `${titleChunk} - PocketPasta` : 'PocketPasta';
     },
-    noscript: [{ innerHTML: 'This website requires JavaScript.' }],
+    noscript: [{ innerHTML: 'This website requires JavaScript.', once: true }],
     meta: [
       {
         property: 'og:title',
@@ -189,33 +189,33 @@ module.exports = {
         vmid: 'og:title',
       },
       {
+        once: true,
         name: 'google-site-verification',
         content: 'LqVnUnYGR8NrvXrhnFgW5RjNJVChZp2j2OEP55xjE30',
       },
       {
+        once: true,
         name: 'version',
         content: pkg.version,
       },
       {
+        once: true,
         'http-equiv': 'Accept-CH',
         content: 'DPR, Viewport-Width, Width',
       },
     ],
     link: [
       {
+        once: true,
         rel: 'icon',
         type: 'image/x-icon',
         href: '/favicon.ico',
-      },
-      {
-        rel: 'preconnect',
-        href: 'https://res.cloudinary.com',
-        crossorigin: 'anonymous',
       },
       ...preconnectLinks.map((href) => ({
         rel: 'preconnect',
         href,
         crossorigin: 'anonymous',
+        once: true,
       })),
     ],
   },
@@ -242,14 +242,14 @@ module.exports = {
     '~/assets/scss/custom.scss',
     '~/assets/css/font.css',
     '~/assets/css/custom.css',
-    'plyr/dist/plyr.css',
+    // 'plyr/dist/plyr.css',
   ],
 
   /*
    ** Plugins to load before mounting the App
    */
   plugins: [
-    { src: '~/plugins/vue-plyr' },
+    // { src: '~/plugins/vue-plyr' },
     // { src: '~/plugins/firebase.js', ssr: false },
     // { src: '~/plugins/firebase_auth.js', ssr: false },
     // { src: '~/plugins/quicklink', ssr: false },

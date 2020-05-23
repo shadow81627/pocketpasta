@@ -158,8 +158,22 @@ export default {
     ).dark;
   },
   head() {
+    const i18nSeo = this.$nuxtI18nSeo();
     return {
+      htmlAttrs: {
+        ...i18nSeo.htmlAttrs,
+      },
+      meta: [
+        ...i18nSeo.meta,
+        {
+          hid: 'og:url',
+          name: 'og:url',
+          property: 'og:url',
+          content: `${process.env.BASE_URL}${this.$route.path}`,
+        },
+      ],
       link: [
+        ...i18nSeo.link,
         {
           hid: 'theme-preload',
           rel: 'preload',
@@ -184,7 +198,7 @@ export default {
         {
           hid: 'canonical',
           rel: 'canonical',
-          href: `${this.baseUrl}${this.$route.path}`,
+          href: `${process.env.BASE_URL}${this.$route.path}`,
         },
       ],
     };

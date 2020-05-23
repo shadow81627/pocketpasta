@@ -9,9 +9,9 @@ exports[`about renders properly 1`] = `
         PocketPasta is a collection of my demo apps that I build to practice
         my skills.
       </p>
-      <vue-plyr>
+      <vue-plyr-stub options=\\"[object Object]\\" emit=\\"\\">
         <div data-plyr-provider=\\"youtube\\" data-plyr-embed-id=\\"W0StMCfs5Ew\\" style=\\"padding-top: 56.25%; background-image: url(https://i.ytimg.com/vi/W0StMCfs5Ew/maxresdefault.jpg);\\"></div>
-      </vue-plyr>
+      </vue-plyr-stub>
     </b-col-stub>
   </b-row-stub>
   <b-row-stub tag=\\"div\\" alignv=\\"center\\">
