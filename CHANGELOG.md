@@ -1,5 +1,11 @@
 # Releases
 
+## [0.31.7](https://github.com/shadow81627/pocketpasta/compare/v0.31.6...v0.31.7) (2020-05-23)
+
+### Bug Fixes
+
+- **og:url:** add ogHost ([efdc2e9](https://github.com/shadow81627/pocketpasta/commit/efdc2e9e3fdc415e45ee523f76da66849cc3298b))
+
 ## [0.31.6](https://github.com/shadow81627/pocketpasta/compare/v0.31.5...v0.31.6) (2020-05-23)
 
 ### Bug Fixes
