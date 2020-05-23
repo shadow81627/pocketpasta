@@ -1,5 +1,11 @@
 # Releases
 
+## [0.31.6](https://github.com/shadow81627/pocketpasta/compare/v0.31.5...v0.31.6) (2020-05-23)
+
+### Bug Fixes
+
+- **viewport:** maximum-scale=5 ([792457a](https://github.com/shadow81627/pocketpasta/commit/792457ae688d80aa37dfbb3d8a6dbeb76bf94629))
+
 ## [0.31.5](https://github.com/shadow81627/pocketpasta/compare/v0.31.4...v0.31.5) (2020-05-23)
 
 ### Bug Fixes
