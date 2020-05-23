@@ -1,5 +1,12 @@
 # Releases
 
+## [0.31.5](https://github.com/shadow81627/pocketpasta/compare/v0.31.4...v0.31.5) (2020-05-23)
+
+### Bug Fixes
+
+- **lang:** remove lang from pwa meta ([ea31cbe](https://github.com/shadow81627/pocketpasta/commit/ea31cbecde19794e22e649f26da8c7656979d875))
+- **links:** 14px AAA contrasts ratio ([2ca481b](https://github.com/shadow81627/pocketpasta/commit/2ca481b76c1eef8ad5892ebdc5137d511c508ba5))
+
 ## [0.31.4](https://github.com/shadow81627/pocketpasta/compare/v0.31.3...v0.31.4) (2020-05-23)
 
 ### Bug Fixes
