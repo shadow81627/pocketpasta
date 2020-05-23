@@ -169,7 +169,7 @@ export default {
           hid: 'og:url',
           name: 'og:url',
           property: 'og:url',
-          content: `${process.env.BASE_URL}${this.$route.path}`,
+          content: `${this.baseUrl}${this.$route.path}`,
         },
       ],
       link: [
@@ -198,7 +198,7 @@ export default {
         {
           hid: 'canonical',
           rel: 'canonical',
-          href: `${process.env.BASE_URL}${this.$route.path}`,
+          href: `${this.baseUrl}${this.$route.path}`,
         },
       ],
     };
