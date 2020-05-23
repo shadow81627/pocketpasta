@@ -158,8 +158,22 @@ export default {
     ).dark;
   },
   head() {
+    const i18nSeo = this.$nuxtI18nSeo();
     return {
+      htmlAttrs: {
+        ...i18nSeo.htmlAttrs,
+      },
+      meta: [
+        ...i18nSeo.meta,
+        {
+          hid: 'og:url',
+          name: 'og:url',
+          property: 'og:url',
+          content: `${this.baseUrl}${this.$route.path}`,
+        },
+      ],
       link: [
+        ...i18nSeo.link,
         {
           hid: 'theme-preload',
           rel: 'preload',
