@@ -1,5 +1,11 @@
 # Releases
 
+## [0.31.10](https://github.com/shadow81627/pocketpasta/compare/v0.31.9...v0.31.10) (2020-05-24)
+
+### Performance Improvements
+
+- **fonts:** remove custom font ([#1116](https://github.com/shadow81627/pocketpasta/issues/1116)) ([bc2f137](https://github.com/shadow81627/pocketpasta/commit/bc2f137519dc68e7e45eae8bf792e84e76e3a4b5))
+
 ## [0.31.9](https://github.com/shadow81627/pocketpasta/compare/v0.31.8...v0.31.9) (2020-05-23)
 
 ### Bug Fixes
