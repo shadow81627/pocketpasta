@@ -1,5 +1,11 @@
 # Releases
 
+## [0.31.11](https://github.com/shadow81627/pocketpasta/compare/v0.31.10...v0.31.11) (2020-05-24)
+
+### Bug Fixes
+
+- **video:** add missing plyr css ([#1119](https://github.com/shadow81627/pocketpasta/issues/1119)) ([3da5145](https://github.com/shadow81627/pocketpasta/commit/3da514592bb6bc452f6b2eb55be066cab3fe4157))
+
 ## [0.31.10](https://github.com/shadow81627/pocketpasta/compare/v0.31.9...v0.31.10) (2020-05-24)
 
 ### Performance Improvements
