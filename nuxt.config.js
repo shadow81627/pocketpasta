@@ -140,23 +140,6 @@ module.exports = {
   },
 
   render: {
-    bundleRenderer: {
-      shouldPreload: (file, type) => {
-        // type is inferred based on the file extension.
-        // https://fetch.spec.whatwg.org/#concept-request-destination
-        if (type === 'script' || type === 'style') {
-          return true;
-        }
-        if (type === 'font') {
-          // only preload woff2 fonts
-          return /\.woff2$/.test(file);
-        }
-        // if (type === 'image') {
-        //   // only preload important images
-        //   return file === 'header-bg.jpg';
-        // }
-      },
-    },
     http2: {
       push: true,
       pushAssets: (req, res, publicPath, preloadFiles) =>
@@ -237,7 +220,6 @@ module.exports = {
    */
   css: [
     '~/assets/scss/custom.scss',
-    '~/assets/css/font.css',
     '~/assets/css/custom.css',
     // 'plyr/dist/plyr.css',
   ],
@@ -269,7 +251,6 @@ module.exports = {
     '@nuxtjs/sentry',
     'bootstrap-vue/nuxt',
     ['nuxt-i18n', i18nSettings],
-    'nuxt-webfontloader',
 
     // keep sitemap last
     '@nuxtjs/sitemap',
@@ -413,12 +394,6 @@ module.exports = {
       // priority: 0.5,
       lastmod: new Date(),
       // lastmodrealtime: true,
-    },
-  },
-
-  webfontloader: {
-    custom: {
-      families: ['Comic Neue'],
     },
   },
 
