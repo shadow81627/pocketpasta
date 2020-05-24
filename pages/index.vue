@@ -2,17 +2,18 @@
   <div>
     <section>
       <v-parallax
-        src="https://res.cloudinary.com/pocketpasta/image/upload/c_fit,f_auto,q_auto,w_2200/v1559982334/hero_rko6us.jpg"
+        src="https://res.cloudinary.com/pocketpasta/image/upload/c_fit,f_auto,q_auto,w_2200,dpr_auto/v1559982334/hero_rko6us.jpg"
         height="600"
       >
         <v-row align="center" justify="center" class="white--text">
           <v-col>
             <b-img-lazy
-              src="https://res.cloudinary.com/pocketpasta/image/upload/c_fit,f_auto,q_auto,w_200/v1560038491/logo_vlqvdr.png"
+              src="https://res.cloudinary.com/pocketpasta/image/upload/c_fit,f_auto,q_auto,w_200,dpr_auto/v1560038491/logo_vlqvdr.png"
               alt="Pasta on a sheet of paper"
               width="200"
               center
               throttle="100"
+              sizes="100vw"
             />
             <h1 class="brand white--text mb-2 text-center">
               PocketPasta

@@ -76,6 +76,7 @@
         <v-app-bar-nav-icon aria-label="menu" @click.stop="drawer = !drawer" />
         <b-img-lazy
           :src="$icon(32)"
+          :srcset="`${$icon(32)} 1x, ${$icon(64)} 2x`"
           width="32"
           height="32"
           class="rounded"
