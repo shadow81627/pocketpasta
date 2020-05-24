@@ -3,10 +3,10 @@
 exports[`index renders properly 1`] = `
 "<div label=\\"Job Title\\" value=\\"Full Stack Web Developer\\">
   <section>
-    <v-parallax-stub height=\\"600\\" alt=\\"\\" src=\\"https://res.cloudinary.com/pocketpasta/image/upload/c_fit,f_auto,q_auto,w_2200/v1559982334/hero_rko6us.jpg\\">
+    <v-parallax-stub height=\\"600\\" alt=\\"\\" src=\\"https://res.cloudinary.com/pocketpasta/image/upload/c_fit,f_auto,q_auto,w_2200,dpr_auto/v1559982334/hero_rko6us.jpg\\">
       <v-row-stub tag=\\"div\\" align=\\"center\\" justify=\\"center\\" class=\\"white--text\\">
         <v-col-stub tag=\\"div\\">
-          <b-img-lazy-stub src=\\"https://res.cloudinary.com/pocketpasta/image/upload/c_fit,f_auto,q_auto,w_200/v1560038491/logo_vlqvdr.png\\" alt=\\"Pasta on a sheet of paper\\" width=\\"200\\" blankcolor=\\"transparent\\" center=\\"true\\" offset=\\"360\\" throttle=\\"100\\"></b-img-lazy-stub>
+          <b-img-lazy-stub src=\\"https://res.cloudinary.com/pocketpasta/image/upload/c_fit,f_auto,q_auto,w_200,dpr_auto/v1560038491/logo_vlqvdr.png\\" sizes=\\"100vw\\" alt=\\"Pasta on a sheet of paper\\" width=\\"200\\" blankcolor=\\"transparent\\" center=\\"true\\" offset=\\"360\\" throttle=\\"100\\"></b-img-lazy-stub>
           <h1 class=\\"brand white--text mb-2 text-center\\">
             PocketPasta
           </h1>
