@@ -1,14 +1,53 @@
 <template>
   <div>
     <section>
-      <v-parallax
-        src="https://res.cloudinary.com/pocketpasta/image/upload/c_fit,f_auto,q_auto,w_2200/v1559982334/hero_rko6us.jpg"
+      <div
+        class="position-relative overflow-hidden p-3 p-md-5 xm-md-3 text-center bg-dark text-light text-shadow banner-image-background"
+        style="
+          background-size: cover;
+          background-image: url('https://res.cloudinary.com/pocketpasta/image/upload/fl_progressive/ar_16:9,c_fill,f_auto,q_auto,dpr_auto,g_south,w_auto/c_limit,w_1920/v1559982334/hero_rko6us.jpg');
+        "
+      >
+        <div class="product-device shadow-sm d-none d-md-block" />
+        <div
+          class="product-device product-device-2 shadow-sm d-none d-md-block"
+        />
+        <div class="col-md-5 p-lg-5 mx-auto my-5">
+          <b-img
+            src="https://res.cloudinary.com/pocketpasta/image/upload/fl_progressive/c_fit,f_auto,q_auto,w_200,h_176,dpr_auto/v1560038491/logo_vlqvdr.png"
+            srcset="
+                https://res.cloudinary.com/pocketpasta/image/upload/fl_progressive/c_fit,f_auto,q_auto,w_200,h_176,dpr_auto/v1560038491/logo_vlqvdr.png 1x,
+                https://res.cloudinary.com/pocketpasta/image/upload/fl_progressive/c_fit,f_auto,q_auto,w_200,h_176,dpr_2.0/v1560038491/logo_vlqvdr.png 2x,
+                https://res.cloudinary.com/pocketpasta/image/upload/fl_progressive/c_fit,f_auto,q_auto,w_200,h_176,dpr_3.0/v1560038491/logo_vlqvdr.png 3x
+              "
+            alt="Pasta on a sheet of paper"
+            width="200"
+            height="176"
+            center
+          />
+          <h1 class="text-centers">
+            PocketPasta
+          </h1>
+          <p class="lead font-weight-normal">
+            {{ $t('landing.banner.subheading') }}
+          </p>
+          <!-- <a class="btn btn-outline-secondary" href="#">Coming soon</a> -->
+        </div>
+        <credit style="position: absolute; right: 0; bottom: 0;" />
+      </div>
+      <!-- <v-parallax
+        src="https://res.cloudinary.com/pocketpasta/image/upload/fl_progressive/c_fit,f_auto,q_auto,w_auto,dpr_auto/c_limit,w_2200/v1559982334/hero_rko6us.jpg"
         height="600"
       >
         <v-row align="center" justify="center" class="white--text">
           <v-col>
             <b-img-lazy
-              src="https://res.cloudinary.com/pocketpasta/image/upload/c_fit,f_auto,q_auto,w_200/v1560038491/logo_vlqvdr.png"
+              src="https://res.cloudinary.com/pocketpasta/image/upload/c_fit,f_auto,q_auto,w_auto,dpr_auto/c_limit,w_200/v1560038491/logo_vlqvdr.png"
+              srcset="
+                https://res.cloudinary.com/pocketpasta/image/upload/c_fit,f_auto,q_auto,w_200,dpr_auto/c_limit,w_200/v1560038491/logo_vlqvdr.png 1x,
+                https://res.cloudinary.com/pocketpasta/image/upload/c_fit,f_auto,q_auto,w_200,dpr_2.0/c_limit,w_200/v1560038491/logo_vlqvdr.png 2x,
+                https://res.cloudinary.com/pocketpasta/image/upload/c_fit,f_auto,q_auto,w_200,dpr_3.0/c_limit,w_200/v1560038491/logo_vlqvdr.png 3x
+              "
               alt="Pasta on a sheet of paper"
               width="200"
               center
@@ -20,13 +59,10 @@
             <div class="subheading mb-3 text-center">
               {{ $t('landing.banner.subheading') }}
             </div>
-            <!-- <v-btn class="mt-5" dark large href="/pre-made-themes">
-            Get Started
-          </v-btn> -->
           </v-col>
           <credit style="position: absolute; right: 0; bottom: 0;" />
         </v-row>
-      </v-parallax>
+      </v-parallax> -->
     </section>
 
     <!-- <section>
@@ -171,3 +207,49 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.banner-image-background {
+  background-size: cover;
+  background-image: url('https://res.cloudinary.com/pocketpasta/image/upload/fl_progressive/ar_16:9,c_fill,f_auto,q_auto,dpr_auto,g_south,w_auto/c_limit,w_1920/v1559982334/hero_rko6us.jpg');
+}
+
+/*
+ * Dummy devices (replace them with your own or something else entirely!)
+ */
+
+.product-device {
+  position: absolute;
+  right: 10%;
+  bottom: -30%;
+  width: 300px;
+  height: 540px;
+  background-color: #333;
+  border-radius: 21px;
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+
+.product-device::before {
+  position: absolute;
+  top: 10%;
+  right: 10px;
+  bottom: 10%;
+  left: 10px;
+  content: '';
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+}
+
+.product-device-2 {
+  top: -25%;
+  right: auto;
+  bottom: 0;
+  left: 5%;
+  /* background-color: #e5e5e5; */
+}
+
+.text-shadow {
+  text-shadow: #000 0.1em 0.1em 0.2em;
+}
+</style>
