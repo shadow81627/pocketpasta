@@ -68,7 +68,7 @@
     "@commitlint/cli": "8.3.5",
     "@commitlint/config-conventional": "8.3.4",
     "@lhci/cli": "0.4.0",
-    "@mdi/js": "5.2.45",
+    "@mdi/js": "5.3.45",
     "@nuxtjs/color-mode": "1.0.0",
     "@nuxtjs/dotenv": "1.4.1",
     "@nuxtjs/eslint-config": "3.0.0",
