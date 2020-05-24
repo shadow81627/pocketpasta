@@ -3,12 +3,14 @@
     <section>
       <v-parallax
         src="https://res.cloudinary.com/pocketpasta/image/upload/c_fit,f_auto,q_auto,w_2200,dpr_auto/v1559982334/hero_rko6us.jpg"
+        srcset="https://res.cloudinary.com/pocketpasta/image/upload/c_fit,f_auto,q_auto,w_2200,dpr_auto/v1559982334/hero_rko6us.jpg 1x, https://res.cloudinary.com/pocketpasta/image/upload/c_fit,f_auto,q_auto,w_2200,dpr_2.0/v1559982334/hero_rko6us.jpg 2x"
         height="600"
       >
         <v-row align="center" justify="center" class="white--text">
           <v-col>
             <b-img-lazy
               src="https://res.cloudinary.com/pocketpasta/image/upload/c_fit,f_auto,q_auto,w_200,dpr_auto/v1560038491/logo_vlqvdr.png"
+              srcset="https://res.cloudinary.com/pocketpasta/image/upload/c_fit,f_auto,q_auto,w_200,dpr_auto/v1560038491/logo_vlqvdr.png 1x, https://res.cloudinary.com/pocketpasta/image/upload/c_fit,f_auto,q_auto,w_200,dpr_2.0/v1560038491/logo_vlqvdr.png 2x"
               alt="Pasta on a sheet of paper"
               width="200"
               center
