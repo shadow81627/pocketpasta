@@ -85,10 +85,7 @@ module.exports = {
   },
 
   meta: {
-    nativeUI: true,
     lang: undefined,
-    viewport:
-      'width=device-width, initial-scale=1, shrink-to-fit=no, minimal-ui',
     ogHost: 'https://pocketpasta.com',
   },
 
