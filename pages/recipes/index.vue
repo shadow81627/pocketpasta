@@ -3,7 +3,7 @@
     <list v-bind="{ heading: $t('recipes.heading'), list, layout: 'list' }" />
     <div class="overflow-auto">
       <b-pagination-nav
-        :value="$route.query.page"
+        :value="page"
         :link-gen="linkGen"
         use-router
         align="center"
@@ -22,21 +22,17 @@ export default {
     BPaginationNav,
   },
   async fetch() {
-    const page = this.$route.query.page || 0;
+    this.page = parseInt(this.$route.query.page, 10) || 1;
     this.list = await this.$content('recipes')
       .only(['id', 'slug', 'name', 'description', 'image'])
       .sortBy('updatedAt')
-      .skip((page - 1) * this.limit)
+      .skip((this.page - 1) * this.limit)
       .limit(this.limit)
       .fetch();
+
+    this.pages = this.page + (this.list.length === this.limit ? 1 : 0);
   },
-  data: () => ({ list: [], limit: 5 }),
-  computed: {
-    pages() {
-      const page = parseInt(this.$route.query.page, 10) || 1;
-      return page + (this.list.length === this.limit ? 1 : 0);
-    },
-  },
+  data: () => ({ list: [], limit: 5, pages: 1, page: 1 }),
   watch: {
     '$route.query': '$fetch',
   },
