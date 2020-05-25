@@ -24,7 +24,7 @@ export default {
   async fetch() {
     const page = this.$route.query.page || 0;
     this.list = await this.$content('recipes')
-      .only(['id', 'name', 'description', 'image'])
+      .only(['id', 'slug', 'name', 'description', 'image'])
       .sortBy('updatedAt')
       .skip((page - 1) * this.limit)
       .limit(this.limit)
