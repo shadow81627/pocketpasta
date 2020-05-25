@@ -65,6 +65,7 @@ describe('Recipe', () => {
       mocks: {
         $route,
       },
+      propData: recipe,
     });
 
   test('mounts properly', () => {

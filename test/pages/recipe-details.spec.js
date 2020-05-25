@@ -4,12 +4,18 @@ import { shallowMount, createLocalVue, RouterLinkStub } from '@vue/test-utils';
 import Vuex from 'vuex';
 import Vuetify from 'vuetify';
 import VueRouter from 'vue-router';
+import VueMeta from 'vue-meta';
+
+import { removeKeys } from '@/utils';
+
+const recipe = removeKeys(spaghetti, ['@type']);
 
 const localVue = createLocalVue();
 
 localVue.use(Vuex);
 localVue.use(Vuetify);
 localVue.use(VueRouter);
+localVue.use(VueMeta, { keyName: 'head' });
 
 const router = new VueRouter();
 
@@ -20,7 +26,7 @@ let mutations;
 
 beforeEach(() => {
   state = {
-    recipes: [{ ...spaghetti, id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }],
+    recipes: [{ ...recipe, id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }],
   };
 
   getters = {
@@ -62,6 +68,8 @@ describe('recipeDetial', () => {
     expect(wrapper.html()).toMatchSnapshot();
   });
   test('head', () => {
-    expect(recipeDetial.head()).toBeTruthy();
+    const wrapper = factory();
+    // wrapper.setData({ recipe });
+    expect(wrapper.vm.$metaInfo).toBeTruthy();
   });
 });

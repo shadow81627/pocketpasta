@@ -50,7 +50,7 @@ export default {
     imageData() {
       function cloudinaryify(image) {
         if (!image.startsWith('https://res.cloudinary.com')) {
-          return `https://res.cloudinary.com/pocketpasta/image/fetch/w_128,h_128,c_fill,f_auto,q_auto/${image}`;
+          return `https://res.cloudinary.com/pocketpasta/image/fetch/fl_progressive/w_128,h_128,c_fill,f_auto,q_auto/${image}`;
         } else {
           return image;
         }

@@ -239,6 +239,7 @@ module.exports = {
    ** Nuxt.js modules
    */
   modules: [
+    '@nuxt/content',
     '@nuxtjs/axios',
     '@nuxtjs/auth',
     '@nuxtjs/dotenv',
