@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`recipes renders properly 1`] = `
-"<div class=\\"container\\">
+"<div class=\\"container\\"><button>Refresh</button> <span style=\\"display: none;\\">Pending: </span> <span style=\\"display: none;\\">Error: </span>
   <list-stub heading=\\"recipes.heading\\" list=\\"\\" layout=\\"list\\"></list-stub>
   <div class=\\"overflow-auto\\">
     <b-pagination-nav-stub value=\\"1\\" limit=\\"5\\" align=\\"center\\" arialabel=\\"Pagination\\" labelfirstpage=\\"Go to first page\\" firsttext=\\"«\\" labelprevpage=\\"Go to previous page\\" prevtext=\\"‹\\" labelnextpage=\\"Go to next page\\" nexttext=\\"›\\" labellastpage=\\"Go to last page\\" lasttext=\\"»\\" labelpage=\\"Go to page\\" ellipsistext=\\"…\\" numberofpages=\\"1\\" baseurl=\\"/\\" userouter=\\"true\\" linkgen=\\"function () { [native code] }\\" target=\\"_self\\"></b-pagination-nav-stub>

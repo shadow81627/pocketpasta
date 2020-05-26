@@ -1,5 +1,8 @@
 <template>
   <div class="container">
+    <button @click="$fetch">Refresh</button>
+    <span v-show="false">Pending: {{ $fetchState.pending }}</span>
+    <span v-show="$fetchState.error">Error: {{ $fetchState.error }}</span>
     <list v-bind="{ heading: $t('recipes.heading'), list, layout: 'list' }" />
     <div class="overflow-auto">
       <b-pagination-nav
@@ -32,6 +35,7 @@ export default {
 
     this.pages = this.page + (this.list.length === this.limit ? 1 : 0);
   },
+  fetchOnServer: false,
   data: () => ({ list: [], limit: 5, pages: 1, page: 1 }),
   watch: {
     '$route.query': '$fetch',
