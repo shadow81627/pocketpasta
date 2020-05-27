@@ -26,11 +26,38 @@
     <!-- <p>Author: {{ author }}</p> -->
     <!-- <p>Published: {{ datePublished }}</p> -->
 
-    <share class="py-4" />
-
-    <p>
-      <number-text :text="recipeYield" />
-    </p>
+    <section>
+      <b-row>
+        <b-col>
+          <v-chip label readonly style="background: none; padding: 0;">
+            <label for="rating" class="sr-only">Rating</label>
+            <b-form-rating
+              id="rating"
+              :value="aggregateRating.ratingValue"
+              readonly
+              inline
+              no-border
+              style="background: none;"
+              variant="primary"
+            />
+          </v-chip>
+          <v-chip label style="background: none;"
+            ><number-text :text="recipeYield"
+          /></v-chip>
+          <v-chip v-if="suitableForDiet" label style="background: none;">
+            {{
+              suitableForDiet.replace(/https:\/\/schema.org\/(.*?)Diet/, '$1')
+            }}
+          </v-chip>
+          <v-chip
+            label
+            style="background: none; overflow: visible; padding: 0;"
+          >
+            <share class="d-inline-block" />
+          </v-chip>
+        </b-col>
+      </b-row>
+    </section>
     <b-row>
       <b-col md="6">
         <b-card v-if="recipeIngredient" no-body tag="section" class="mb-4">
@@ -52,7 +79,8 @@
                   :key="ingredient"
                   class="list-group-item"
                 >
-                  <fraction-text :text="ingredient" />
+                  {{ ingredient }}
+                  <!-- <fraction-text :text="ingredient" /> -->
                 </li>
               </ol>
             </b-card-body>
@@ -82,7 +110,8 @@
                   :key="instruction.text"
                   class="list-group-item"
                 >
-                  <fraction-text :text="instruction.text" />
+                  {{ instruction.text }}
+                  <!-- <fraction-text :text="instruction.text" /> -->
                 </li>
               </ol>
               <p v-else>{{ recipeInstructions }}</p>
@@ -124,17 +153,18 @@
 
 <script>
 import NumberText from '@/components/text/NumberText';
-import FractionText from '@/components/FractionText';
+// import FractionText from '@/components/FractionText';
 import Keywords from '@/components/Keywords';
 import Share from '@/components/Social/Share';
 import NutritionFactTable from '@/components/Recipe/NutritionFactTable';
-import { BCollapse, VBToggle, BRow, BCol } from 'bootstrap-vue';
+import { BCollapse, VBToggle, BRow, BCol, BFormRating } from 'bootstrap-vue';
 import VuePlyr from 'vue-plyr/dist/vue-plyr.ssr.js';
 import 'plyr/dist/plyr.css';
+import { VChip } from 'vuetify';
 export default {
   components: {
     NumberText,
-    FractionText,
+    // FractionText,
     Keywords,
     Share,
     NutritionFactTable,
@@ -142,6 +172,8 @@ export default {
     BRow,
     BCol,
     VuePlyr,
+    BFormRating,
+    VChip,
   },
   directives: { 'b-toggle': VBToggle },
   inheritAttrs: false,
@@ -164,6 +196,15 @@ export default {
     recipeCuisine: { type: String, required: true },
     image: { type: Array, required: true },
     sameAs: { type: Array, required: false },
+    aggregateRating: {
+      type: Object,
+      default: () => ({
+        '@type': 'AggregateRating',
+        ratingValue: 4.93,
+        ratingCount: 1,
+      }),
+    },
+    // updatedAt: { type: Date, default: () => new Date() },
   },
   computed: {
     imageData() {
@@ -191,13 +232,21 @@ export default {
         return null;
       }
     },
+    linkData() {
+      return {
+        ...this.$props,
+        '@type': 'Recipe',
+        // dateModified: this.updatedAt.toISOString(),
+        // updatedAt: undefined,
+      };
+    },
   },
 
   head() {
     return {
       script: [
         {
-          json: { ...this.$props, '@type': 'Recipe' },
+          json: this.linkData,
           type: 'application/ld+json',
         },
       ],

@@ -2,7 +2,7 @@
   "@context": "http://schema.org/",
   "@type": "Recipe",
   "name": "Audrey Hepburn’s Spaghetti Al Pomodoro Recipe",
-  "suitableForDiet": "https://schema.org/VegetarianDiet",
+  "suitableForDiet": "https://schema.org/VeganDiet",
   "image": "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/162208.jpg",
   "description": "Make Audrey Hepburn's spaghetti al pomodoro recipe. Hepburn liked her pasta smothered in tomato sauce.",
   "keywords": "Audrey Hepburn, recipe, Pasta Recipes, Sauce Recipes, Audrey, Hepburn, spaghetti, spathetti, pomodoro, pasta, history, sauce",
@@ -35,8 +35,7 @@
     "1 large bunch fresh basil, washed",
     "2 tbsp extra virgin olive oil",
     "1 lb. spaghetti pasta",
-    "Salt to taste",
-    "Freshly grated Parmigiano-Reggiano cheese"
+    "Salt to taste"
   ],
   "recipeInstructions": [
     {
@@ -61,7 +60,7 @@
     },
     {
       "@type": "HowToStep",
-      "text": "Taste the sauce and add salt, if desired. Serve pasta topped generously with sauce, grated Parmigiano-Reggiano cheese, and the reserved sliced basil leaves."
+      "text": "Taste the sauce and add salt, if desired. Serve pasta topped generously with sauce, and the reserved sliced basil leaves."
     }
   ]
 }

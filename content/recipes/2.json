@@ -2,7 +2,7 @@
   "@context": "http://schema.org/",
   "@type": "Recipe",
   "name": "Binging with Babish: Pasta Aglio e Olio from \"Chef\"",
-  "suitableForDiet": "https://schema.org/VegetarianDiet",
+  "suitableForDiet": "https://schema.org/VeganDiet",
   "author": {
     "@type": "Person",
     "name": "Binging with Babish"

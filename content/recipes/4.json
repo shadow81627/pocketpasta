@@ -2,7 +2,7 @@
   "@context": "http://schema.org/",
   "@type": "Recipe",
   "name": "Roast Taters",
-  "suitableForDiet": "https://schema.org/VegetarianDiet",
+  "suitableForDiet": "https://schema.org/VeganDiet",
   "author": {
     "@type": "Person",
     "name": "Kandice Long"

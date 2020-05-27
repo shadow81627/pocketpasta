@@ -1,10 +1,7 @@
 <template>
   <div class="container">
-    <button @click="$fetch">Refresh</button>
-    <span v-show="false">Pending: {{ $fetchState.pending }}</span>
-    <span v-show="$fetchState.error">Error: {{ $fetchState.error }}</span>
     <list v-bind="{ heading: $t('recipes.heading'), list, layout: 'list' }" />
-    <div class="overflow-auto">
+    <div v-show="list && list.length > 0" class="overflow-auto">
       <b-pagination-nav
         :value="page"
         :link-gen="linkGen"
@@ -12,6 +9,9 @@
         align="center"
         :number-of-pages="pages"
       />
+      <button v-show="false" @click="$fetch">Refresh</button>
+      <span v-show="false">Pending: {{ $fetchState.pending }}</span>
+      <span v-show="$fetchState.error">Error: {{ $fetchState.error }}</span>
     </div>
   </div>
 </template>
@@ -28,7 +28,7 @@ export default {
     this.page = parseInt(this.$route.query.page, 10) || 1;
     this.list = await this.$content('recipes')
       .only(['id', 'slug', 'name', 'description', 'image'])
-      .sortBy('updatedAt')
+      .sortBy('updatedAt', 'desc')
       .skip((this.page - 1) * this.limit)
       .limit(this.limit)
       .fetch();

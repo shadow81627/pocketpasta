@@ -1,7 +1,6 @@
 {
   "@context": "http://schema.org",
   "@type": "Recipe",
-  "mainEntityOfPage": true,
   "name": "Trash Can Nachos",
   "description": "Trash Can Nachos reci̇pe courtesy of Guy Fi̇eri̇ from Food Network Magazine.",
   "url": "https://www.foodnetwork.com/recipes/guy-fieri/trash-can-nachos-3582107",

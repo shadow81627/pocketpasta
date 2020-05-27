@@ -2,6 +2,6 @@
 
 exports[`recipeDetial renders properly 1`] = `
 "<div class=\\"container\\">
-  <recipe-stub></recipe-stub>
+  <recipe-stub aggregaterating=\\"[object Object]\\"></recipe-stub>
 </div>"
 `;
