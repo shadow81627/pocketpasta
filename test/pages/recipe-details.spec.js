@@ -67,6 +67,11 @@ describe('recipeDetial', () => {
     const wrapper = factory();
     expect(wrapper.html()).toMatchSnapshot();
   });
+  test('fetch', () => {
+    const wrapper = factory();
+    expect(wrapper.vm.$options.asyncData()).toBeTruthy();
+  });
+
   test('head', () => {
     const wrapper = factory();
     // wrapper.setData({ recipe });

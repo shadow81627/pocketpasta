@@ -78,6 +78,18 @@ describe('Recipe', () => {
     expect(wrapper.html()).toMatchSnapshot();
   });
 
+  test('imageData with cloudinary image does not modify url', () => {
+    const wrapper = factory();
+    const image = {
+      url: 'https://res.cloudinary.com/pocketpasta/image/fetch/',
+    };
+    wrapper.setProps({
+      ...recipe,
+      image,
+    });
+    expect(wrapper.vm.imageData).toEqual(image);
+  });
+
   test('head', () => {
     const wrapper = factory();
     expect(wrapper.vm.$metaInfo).toBeTruthy();
