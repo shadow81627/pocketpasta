@@ -18,16 +18,16 @@
           height="128"
           width="128"
           itemprop="image"
-          alt=" "
+          :alt="name"
           class="mx-auto d-block"
           style="width: auto;"
         />
       </div>
       <br />
       <div class="col overflow-hidden" style="min-width: 220px;">
-        <b-card-body style="padding-bottom: 0;">
+        <b-card-body>
           <header>
-            <b-card-title title-tag="h2" class="xh4">{{ name }}</b-card-title>
+            <b-card-title title-tag="h2" class="h4">{{ name }}</b-card-title>
           </header>
           <b-card-text>{{ truncate(description) }}</b-card-text>
         </b-card-body>
