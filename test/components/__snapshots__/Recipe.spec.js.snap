@@ -14,7 +14,7 @@ exports[`Recipe renders properly 1`] = `
   <b-row-stub tag=\\"div\\">
     <b-col-stub md=\\"6\\" tag=\\"div\\">
       <b-card-stub bodytag=\\"div\\" titletag=\\"h4\\" subtitletag=\\"h6\\" subtitletextvariant=\\"muted\\" headertag=\\"div\\" footertag=\\"div\\" tag=\\"section\\" nobody=\\"true\\" class=\\"mb-4\\">
-        <b-card-header-stub headertag=\\"header\\" role=\\"tab\\" class=\\"p-1 text-left\\">
+        <b-card-header-stub headertag=\\"header\\" class=\\"p-1 text-left\\">
           <b-button-stub block=\\"true\\" variant=\\"none\\" type=\\"button\\" tag=\\"button\\" squared=\\"true\\" target=\\"_self\\" class=\\"text-left\\">
             <h2>Ingredients</h2>
           </b-button-stub>
@@ -59,7 +59,7 @@ exports[`Recipe renders properly 1`] = `
     </b-col-stub>
     <b-col-stub md=\\"6\\" tag=\\"div\\">
       <b-card-stub bodytag=\\"div\\" titletag=\\"h4\\" subtitletag=\\"h6\\" subtitletextvariant=\\"muted\\" headertag=\\"div\\" footertag=\\"div\\" tag=\\"section\\" nobody=\\"true\\" class=\\"mb-4\\">
-        <b-card-header-stub headertag=\\"header\\" role=\\"tab\\" class=\\"p-1\\">
+        <b-card-header-stub headertag=\\"header\\" class=\\"p-1\\">
           <b-button-stub block=\\"true\\" variant=\\"none\\" type=\\"button\\" tag=\\"button\\" squared=\\"true\\" target=\\"_self\\" class=\\"text-left\\">
             <h2>Instructions</h2>
           </b-button-stub>

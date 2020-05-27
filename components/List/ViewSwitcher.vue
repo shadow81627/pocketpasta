@@ -3,7 +3,7 @@
     <span>View as: </span>
     <v-menu left offset-y>
       <template v-slot:activator="{ on }">
-        <v-btn icon v-on="on">
+        <v-btn icon aria-label="View as" v-on="on">
           <v-icon>${{ currentLayout.icon }}</v-icon>
         </v-btn>
       </template>
