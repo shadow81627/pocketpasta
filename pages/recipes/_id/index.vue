@@ -38,7 +38,7 @@ export default {
         {
           hid: 'canonical',
           rel: 'canonical',
-          href: `https://pocketpasta.com/recipes/${this.id}`,
+          href: `${this.baseUrl}/recipes/${this.id}`,
         },
       ],
       meta: [

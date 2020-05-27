@@ -18,7 +18,7 @@
           height="128"
           width="128"
           itemprop="image"
-          alt=""
+          :alt="name"
           class="mx-auto d-block"
           style="width: auto;"
         />
@@ -27,7 +27,7 @@
       <div class="col overflow-hidden" style="min-width: 220px;">
         <b-card-body>
           <header>
-            <b-card-title>{{ name }}</b-card-title>
+            <b-card-title title-tag="h2" class="h4">{{ name }}</b-card-title>
           </header>
           <b-card-text>{{ truncate(description) }}</b-card-text>
         </b-card-body>

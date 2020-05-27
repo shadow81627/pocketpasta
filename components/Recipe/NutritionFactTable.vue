@@ -6,7 +6,7 @@
     itemscope
     itemtype="http://schema.org/NutritionInformation"
   >
-    <b-card-header header-tag="header" class="p-1" role="tab">
+    <b-card-header header-tag="header" class="p-1">
       <b-button
         v-b-toggle:collapse-performance-facts
         block

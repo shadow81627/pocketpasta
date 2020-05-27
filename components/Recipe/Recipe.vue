@@ -61,7 +61,7 @@
     <b-row>
       <b-col md="6">
         <b-card v-if="recipeIngredient" no-body tag="section" class="mb-4">
-          <b-card-header header-tag="header" class="p-1 text-left" role="tab">
+          <b-card-header header-tag="header" class="p-1 text-left">
             <b-button
               v-b-toggle:collapse-ingredient
               block
@@ -89,7 +89,7 @@
       </b-col>
       <b-col md="6">
         <b-card v-if="recipeInstructions" no-body tag="section" class="mb-4">
-          <b-card-header header-tag="header" class="p-1" role="tab">
+          <b-card-header header-tag="header" class="p-1">
             <b-button
               v-b-toggle:collapse-instructions
               block

@@ -2,7 +2,7 @@
 
 exports[`Recipe renders properly 1`] = `
 "<b-card no-body=\\"\\" tag=\\"section\\" itemscope=\\"\\" itemtype=\\"http://schema.org/NutritionInformation\\" class=\\"performance-facts\\">
-  <b-card-header header-tag=\\"header\\" role=\\"tab\\" class=\\"p-1\\">
+  <b-card-header header-tag=\\"header\\" class=\\"p-1\\">
     <b-button block=\\"\\" variant=\\"none\\" squared=\\"\\" class=\\"text-left collapsed\\" role=\\"button\\" tabindex=\\"0\\" aria-expanded=\\"false\\" aria-controls=\\"collapse-performance-facts\\">
       <h2>Nutrition Facts</h2>
     </b-button>
