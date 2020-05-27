@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <recipe />
-    <v-btn
+    <!-- <v-btn
       fab
       bottom
       right
@@ -12,7 +12,7 @@
       class="hidden-print-only"
     >
       <v-icon>$edit</v-icon>
-    </v-btn>
+    </v-btn> -->
   </div>
 </template>
 
@@ -32,7 +32,7 @@ export default {
         {
           hid: 'canonical',
           rel: 'canonical',
-          href: `https://pocketpasta.com/recipes/${this.id}`,
+          href: `${this.baseUrl}/recipes/${this.id}`,
         },
       ],
     };

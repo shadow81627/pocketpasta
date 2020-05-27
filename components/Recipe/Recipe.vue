@@ -43,7 +43,7 @@
           tag="section"
           class="mb-4"
         >
-          <b-card-header header-tag="header" class="p-1 text-left" role="tab">
+          <b-card-header header-tag="header" class="p-1 text-left">
             <b-button
               v-b-toggle:collapse-ingredient
               block
@@ -75,7 +75,7 @@
           tag="section"
           class="mb-4"
         >
-          <b-card-header header-tag="header" class="p-1" role="tab">
+          <b-card-header header-tag="header" class="p-1">
             <b-button
               v-b-toggle:collapse-instructions
               block

@@ -2,7 +2,7 @@
   <div>
     <span>View as: </span>
     <v-menu left offset-y>
-      <template v-slot:activator="{ on }">
+      <template v-slot:activator="{ on }" aria-label="View as">
         <v-btn icon v-on="on">
           <v-icon>${{ currentLayout.icon }}</v-icon>
         </v-btn>
