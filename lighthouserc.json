@@ -2,7 +2,12 @@
   "ci": {
     "collect": {
       "numberOfRuns": 5,
-      "url": ["http://localhost:3000/", "http://localhost:3000/about"]
+      "url": [
+        "http://localhost:3000/",
+        "http://localhost:3000/about",
+        "http://localhost:3000/recipes",
+        "http://localhost:3000/recipes/2"
+      ]
     },
     "assert": {
       "preset": "lighthouse:recommended",
