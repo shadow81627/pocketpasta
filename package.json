@@ -39,7 +39,7 @@
     "stylelint:fix": "npx stylelint **/*.css !**/node_modules/** !**/dist/** !**/coverage/** --fix"
   },
   "dependencies": {
-    "@nuxt/content": "1.0.2",
+    "@nuxt/content": "1.2.0",
     "@nuxtjs/auth": "4.9.1",
     "@nuxtjs/axios": "5.10.3",
     "@nuxtjs/firebase": "5.2.0",
