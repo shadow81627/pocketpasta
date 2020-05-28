@@ -2,12 +2,14 @@
   <div class="container">
     <list v-bind="{ heading: $t('recipes.heading'), list, layout: 'list' }" />
     <div v-show="list && list.length > 0" class="overflow-auto">
-      <b-pagination-nav
-        :value="page"
+      <b-pagination
+        v-model="page"
         :link-gen="linkGen"
         use-router
         align="center"
         :number-of-pages="pages"
+        :total-rows="pages"
+        :per-page="1"
       />
       <button v-show="false" @click="$fetch">Refresh</button>
       <span v-show="false">Pending: {{ $fetchState.pending }}</span>
@@ -18,11 +20,11 @@
 
 <script>
 import List from '@/components/List/List';
-import { BPaginationNav } from 'bootstrap-vue';
+import { BPagination } from 'bootstrap-vue';
 export default {
   components: {
     List,
-    BPaginationNav,
+    BPagination,
   },
   async fetch() {
     this.page = parseInt(this.$route.query.page, 10) || 1;
@@ -36,7 +38,17 @@ export default {
     this.pages = this.page + (this.list.length === this.limit ? 1 : 0);
   },
   fetchOnServer: false,
-  data: () => ({ list: [], limit: 5, pages: 1, page: 1 }),
+  data: () => ({ list: [], limit: 5, pages: 1 }),
+  computed: {
+    page: {
+      get() {
+        return parseInt(this.$route.query.page, 10) || 1;
+      },
+      set(page) {
+        this.$router.push({ query: { page } });
+      },
+    },
+  },
   watch: {
     '$route.query': '$fetch',
   },
