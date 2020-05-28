@@ -1,5 +1,11 @@
 # Releases
 
+## [0.32.0](https://github.com/shadow81627/pocketpasta/compare/v0.31.12...v0.32.0) (2020-05-28)
+
+### Features
+
+- **recipe:** add pagination ([#1124](https://github.com/shadow81627/pocketpasta/issues/1124)) ([6877baa](https://github.com/shadow81627/pocketpasta/commit/6877baadb97e0158d163cf49f2f038ea4a832fd4))
+
 ## [0.31.12](https://github.com/shadow81627/pocketpasta/compare/v0.31.11...v0.31.12) (2020-05-25)
 
 ### Bug Fixes
