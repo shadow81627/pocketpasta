@@ -30,7 +30,6 @@
       <b-row>
         <b-col>
           <v-chip label readonly style="background: none; padding: 0;">
-            <label for="rating" class="sr-only">Rating</label>
             <b-form-rating
               id="rating"
               :value="aggregateRating.ratingValue"
@@ -39,6 +38,8 @@
               no-border
               style="background: none;"
               variant="primary"
+              name="rating"
+              aria-label="rating"
             />
           </v-chip>
           <v-chip label style="background: none;"
