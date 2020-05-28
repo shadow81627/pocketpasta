@@ -10,6 +10,7 @@
         :number-of-pages="pages"
         :total-rows="pages"
         :per-page="1"
+        size="lg"
       />
       <button v-show="false" @click="$fetch">Refresh</button>
       <span v-show="false">Pending: {{ $fetchState.pending }}</span>
