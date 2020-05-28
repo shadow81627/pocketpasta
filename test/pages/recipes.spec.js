@@ -47,6 +47,9 @@ beforeEach(() => {
 
 const factory = () =>
   shallowMount(recipes, {
+    mocks: {
+      $fetchState: {},
+    },
     store,
     router,
     stubs: {

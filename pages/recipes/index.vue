@@ -1,38 +1,63 @@
 <template>
   <div class="container">
     <list v-bind="{ heading: $t('recipes.heading'), list, layout: 'list' }" />
+    <div v-show="list && list.length > 0" class="overflow-auto">
+      <b-pagination
+        v-model="page"
+        :link-gen="linkGen"
+        use-router
+        align="center"
+        :number-of-pages="pages"
+        :total-rows="pages"
+        :per-page="1"
+        size="lg"
+      />
+      <button v-show="false" @click="$fetch">Refresh</button>
+      <span v-show="false">Pending: {{ $fetchState.pending }}</span>
+      <span v-show="$fetchState.error">Error: {{ $fetchState.error }}</span>
+    </div>
   </div>
 </template>
 
 <script>
 import List from '@/components/List/List';
+import { BPagination } from 'bootstrap-vue';
 export default {
   components: {
     List,
+    BPagination,
   },
-  async asyncData(context) {
-    let list = await context.app.$fireStore
-      .collection('recipes')
-      .get()
-      .then(function (querySnapshot) {
-        return querySnapshot.docs.map((doc) => doc.data());
-      });
+  async fetch() {
+    this.page = parseInt(this.$route.query.page, 10) || 1;
+    this.list = await this.$content('recipes')
+      .only(['id', 'slug', 'name', 'description', 'image'])
+      .sortBy('updatedAt', 'desc')
+      .skip((this.page - 1) * this.limit)
+      .limit(this.limit)
+      .fetch();
 
-    // Thanks for the array merge function
-    // https://codeburst.io/javascript-array-distinct-5edc93501dc4
-    list = [...context.store.state.recipes, ...list];
-    const result = [];
-    const map = new Map();
-    for (const item of list) {
-      if (!map.has(item.id)) {
-        map.set(item.id, true); // set any value to Map
-        result.push(item);
-      }
-    }
-
-    return { list: result };
+    this.pages = this.page + (this.list.length === this.limit ? 1 : 0);
   },
-  data: () => ({ list: [] }),
+  fetchOnServer: false,
+  data: () => ({ list: [], limit: 5, pages: 1 }),
+  computed: {
+    page: {
+      get() {
+        return parseInt(this.$route.query.page, 10) || 1;
+      },
+      set(page) {
+        this.$router.push({ query: { page } });
+      },
+    },
+  },
+  watch: {
+    '$route.query': '$fetch',
+  },
+  methods: {
+    linkGen(pageNum) {
+      return pageNum === 1 ? '?' : `?page=${pageNum}`;
+    },
+  },
   head() {
     return {
       meta: [

@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <recipe />
+    <recipe v-bind="recipe" />
     <!-- <v-btn
       fab
       bottom
@@ -23,16 +23,39 @@ export default {
   components: {
     Recipe,
   },
+  async asyncData(context) {
+    const id = parseInt(context.route.params.id, 10);
+    const recipe = await context.$content('recipes', id).fetch();
+    return { id, recipe };
+  },
   data() {
-    return { id: this.$route.params.id };
+    return { id: 0, recipe: {} };
   },
   head() {
     return {
+      title: this.recipe.name,
       link: [
         {
           hid: 'canonical',
           rel: 'canonical',
           href: `${this.baseUrl}/recipes/${this.id}`,
+        },
+      ],
+      meta: [
+        {
+          hid: 'og:title',
+          name: 'og:title',
+          content: this.recipe.name,
+        },
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.recipe.description,
+        },
+        {
+          hid: 'og:description',
+          name: 'og:description',
+          content: this.recipe.description,
         },
       ],
     };

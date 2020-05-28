@@ -1,6 +1,6 @@
 <template>
   <nuxt-link
-    :to="{ path: `${id}` }"
+    :to="{ path: `${id || slug}` }"
     tag="b-card"
     no-body
     class="overflow-hidden rounded-0"
@@ -41,6 +41,7 @@ export default {
   inheritAttrs: false,
   props: {
     id: { type: [String, Number], required: true },
+    slug: { type: [String, Number], required: false },
     name: { type: String, default: null },
     description: { type: String, default: null },
     image: { type: [String, Object, Array], default: null },
@@ -50,7 +51,7 @@ export default {
     imageData() {
       function cloudinaryify(image) {
         if (!image.startsWith('https://res.cloudinary.com')) {
-          return `https://res.cloudinary.com/pocketpasta/image/fetch/w_128,h_128,c_fill,f_auto,q_auto/${image}`;
+          return `https://res.cloudinary.com/pocketpasta/image/fetch/fl_progressive/w_128,h_128,c_fill,f_auto,q_auto/${image}`;
         } else {
           return image;
         }
