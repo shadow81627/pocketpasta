@@ -161,7 +161,7 @@ import NutritionFactTable from '@/components/Recipe/NutritionFactTable';
 import { BCollapse, VBToggle, BRow, BCol, BFormRating } from 'bootstrap-vue';
 import VuePlyr from 'vue-plyr/dist/vue-plyr.ssr.js';
 import 'plyr/dist/plyr.css';
-import { VChip } from 'vuetify';
+import { VChip } from 'vuetify/lib';
 export default {
   components: {
     NumberText,

@@ -14,15 +14,6 @@
         ]
       },
       {
-        "source": "**/*.@(jpg|jpeg|gif|png|ico)",
-        "headers": [
-          {
-            "key": "Cache-Control",
-            "value": "max-age=7200"
-          }
-        ]
-      },
-      {
         "source": "**",
         "headers": [
           {
@@ -45,7 +36,7 @@
         "headers": [
           {
             "key": "Cache-Control",
-            "value": "public, max-age=0, no-cache"
+            "value": "no-cache, no-store, must-revalidate"
           }
         ]
       }
