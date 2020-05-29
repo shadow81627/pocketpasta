@@ -1,13 +1,16 @@
 import Recipe from '@/components/Recipe/Recipe';
-import recipe from '@/assets/link-data/recipes/spaghetti.json';
-import { shallowMount, createLocalVue } from '@vue/test-utils';
+import recipe from '@/content/recipes/2.json';
+import { shallowMount, createLocalVue, RouterLinkStub } from '@vue/test-utils';
 import Vuex from 'vuex';
 import BootstrapVuePlugin from 'bootstrap-vue';
 import VueMeta from 'vue-meta';
 // import VueRouter from 'vue-router';
+import Vue from 'vue';
+import Vuetify from 'vuetify';
 
 const localVue = createLocalVue();
 
+Vue.use(Vuetify);
 localVue.use(Vuex);
 // localVue.use(VueRouter);
 localVue.use(BootstrapVuePlugin);
@@ -33,8 +36,11 @@ describe('Recipe', () => {
   let state;
   let store;
   let mutations;
+  let vuetify;
 
   beforeEach(() => {
+    vuetify = new Vuetify();
+
     state = {
       recipes: [{ ...recipe, id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }],
     };
@@ -62,10 +68,14 @@ describe('Recipe', () => {
       store,
       // router,
       localVue,
+      vuetify,
+      stubs: {
+        NuxtLink: RouterLinkStub,
+      },
       mocks: {
         $route,
       },
-      propData: { ...recipe },
+      propData: recipe,
     });
 
   test('mounts properly', () => {
@@ -78,17 +88,17 @@ describe('Recipe', () => {
     expect(wrapper.html()).toMatchSnapshot();
   });
 
-  test('imageData with cloudinary image does not modify url', () => {
-    const wrapper = factory();
-    const image = {
-      url: 'https://res.cloudinary.com/pocketpasta/image/fetch/',
-    };
-    wrapper.setProps({
-      ...recipe,
-      image,
-    });
-    expect(wrapper.vm.imageData).toEqual(image);
-  });
+  // test('imageData with cloudinary image does not modify url', () => {
+  //   const wrapper = factory();
+  //   const image = {
+  //     url: 'https://res.cloudinary.com/pocketpasta/image/fetch/',
+  //   };
+  //   wrapper.setProps({
+  //     ...recipe,
+  //     image,
+  //   });
+  //   expect(wrapper.vm.imageData).toEqual(image);
+  // });
 
   test('head', () => {
     const wrapper = factory();

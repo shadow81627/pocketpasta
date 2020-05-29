@@ -4,12 +4,13 @@ import Vuex from 'vuex';
 import BootstrapVuePlugin from 'bootstrap-vue';
 import Vuetify from 'vuetify';
 import VueRouter from 'vue-router';
+import Vue from 'vue';
 
 const localVue = createLocalVue();
 
 localVue.use(Vuex);
 localVue.use(BootstrapVuePlugin);
-localVue.use(Vuetify);
+Vue.use(Vuetify);
 localVue.use(VueRouter);
 
 const router = new VueRouter();
@@ -19,8 +20,11 @@ describe('Menu', () => {
   let state;
   let store;
   let mutations;
+  let vuetify;
 
   beforeEach(() => {
+    vuetify = new Vuetify();
+
     getters = {
       getRecipeById: (state) => (id) =>
         state.recipes.find((recipe) => recipe.id === id),
@@ -43,6 +47,7 @@ describe('Menu', () => {
     shallowMount(Component, {
       store,
       localVue,
+      vuetify,
       router,
       stubs: {
         NuxtLink: RouterLinkStub,

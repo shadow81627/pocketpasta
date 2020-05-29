@@ -3,10 +3,12 @@ import recipe from '@/assets/link-data/recipes/spaghetti.json';
 import { shallowMount, createLocalVue } from '@vue/test-utils';
 import Vuex from 'vuex';
 // import VueRouter from 'vue-router';
+import BootstrapVuePlugin from 'bootstrap-vue';
 
 const localVue = createLocalVue();
 
 localVue.use(Vuex);
+localVue.use(BootstrapVuePlugin);
 // localVue.use(VueRouter);
 
 // const router = new VueRouter();

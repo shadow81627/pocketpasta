@@ -12,15 +12,18 @@ import index from '@/pages/index.vue';
 import { shallowMount, createLocalVue } from '@vue/test-utils';
 import Vuetify from 'vuetify';
 import BootstrapVuePlugin from 'bootstrap-vue';
+import Vue from 'vue';
 
 const localVue = createLocalVue();
+let vuetify;
 
-localVue.use(Vuetify);
+Vue.use(Vuetify);
 localVue.use(BootstrapVuePlugin);
 
 const factory = () =>
   shallowMount(index, {
     localVue,
+    vuetify,
     propsData: {
       label: 'Job Title',
       value: 'Full Stack Web Developer',

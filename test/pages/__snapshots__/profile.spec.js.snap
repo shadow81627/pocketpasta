@@ -1,9 +1,3 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`profile renders properly 1`] = `
-"<div class=\\"container\\">
-  <client-only>
-    <profile-stub></profile-stub>
-  </client-only>
-</div>"
-`;
+exports[`profile renders properly 1`] = `"<div class=\\"container\\"><span><profile-stub></profile-stub></span></div>"`;
