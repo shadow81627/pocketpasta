@@ -34,7 +34,36 @@
     "3/4 c. frozen peas, thawed",
     "2 tbsp. chopped fresh parsley"
   ],
-  "recipeInstructions": "In a medium saucepan over medium heat, bring chicken broth to a simmer. Reduce heat to low. In a large pot or Dutch oven, heat oil. Add onion and cook, stirring often, until translucent, about 5 minutes. Add 1 tablespoon butter, garlic, mushrooms, bay leaf and thyme. Cook until the mushrooms have softened and are golden, about 4 more minutes, then season with salt and pepper. Remove mixture from the pot.  Melt remaining tablespoon butter in the pot and add the arborio rice, stirring quickly. Cook until the grains are well-coated and smell slightly toasty, about 2 minutes. Add the wine and cook until the wine has mostly absorbed. With a ladle, add about 1 cup hot broth. Stirring often, cook until the rice has mostly absorbed liquid. Add remaining broth about 1 cup at a time, continuing to allow the rice to absorb each addition of broth before adding more. Stir often and cook until the risotto is al dente and creamy, not mushy. (You might not need all the broth.) Add the mushroom mixture back into the rice.  Stir in Parmesan and peas then garnish with parsley. Serve warm.",
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "In a medium saucepan over medium heat, bring chicken broth to a simmer. Reduce heat to low."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "In a large pot or Dutch oven, heat oil. Add onion and cook, stirring often, until translucent, about 5 minutes. Add 1 tablespoon butter, garlic, mushrooms, bay leaf and thyme. Cook until the mushrooms have softened and are golden, about 4 more minutes, then season with salt and pepper. Remove mixture from the pot."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Melt remaining tablespoon butter in the pot and add the arborio rice, stirring quickly. Cook until the grains are well-coated and smell slightly toasty, about 2 minutes. Add the wine and cook until the wine has mostly absorbed."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Melt remaining tablespoon butter in the pot and add the arborio rice, stirring quickly. Cook until the grains are well-coated and smell slightly toasty, about 2 minutes. Add the wine and cook until the wine has mostly absorbed."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "With a ladle, add about 1 cup hot broth. Stirring often, cook until the rice has mostly absorbed liquid. Add remaining broth about 1 cup at a time, continuing to allow the rice to absorb each addition of broth before adding more. Stir often and cook until the risotto is al dente and creamy, not mushy. (You might not need all the broth.)"
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Add the mushroom mixture back into the rice."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Stir in Parmesan and peas then garnish with parsley. Serve warm."
+    }
+  ],
   "video": {
     "@type": "VideoObject",
     "contentUrl": "",
