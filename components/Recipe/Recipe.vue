@@ -2,11 +2,11 @@
   <div class="recipe">
     <h1>{{ name }}</h1>
     <p>
-      <b-collapse id="recipe__description--summary" visible>
+      <b-collapse id="recipe__description__summary" visible>
         <span>{{ truncate(description, 120) }}</span>
         <nuxt-link
           v-if="description && description.length > 150"
-          v-b-toggle="['recipe__description--summary', 'recipe__description']"
+          v-b-toggle="['recipe__description__summary', 'recipe__description']"
           to=""
           >Read more</nuxt-link
         >
@@ -14,7 +14,7 @@
       <b-collapse id="recipe__description">
         <span>{{ description }}</span>
         <nuxt-link
-          v-b-toggle="['recipe__description--summary', 'recipe__description']"
+          v-b-toggle="['recipe__description__summary', 'recipe__description']"
           to=""
           >Read less</nuxt-link
         >
