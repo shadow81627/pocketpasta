@@ -84,5 +84,8 @@
   "recipeCategory": ["date night", "dinner"],
   "recipeYield": "4 servings",
   "description": "This Mushroom Risotto from Delish.com is worth every bit of stirring. ",
-  "keywords": "mushroom risotto recipe, weeknight dinner recipes, easy italian recipes, risotto recipe, how to make risotto, arborio rice"
+  "keywords": "mushroom risotto recipe, weeknight dinner recipes, easy italian recipes, risotto recipe, how to make risotto, arborio rice",
+  "sameAs": [
+    "https://www.delish.com/cooking/recipe-ideas/recipes/a55215/easy-mushroom-risotto-recipe/"
+  ]
 }
