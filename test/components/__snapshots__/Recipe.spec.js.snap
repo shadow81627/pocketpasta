@@ -3,11 +3,9 @@
 exports[`Recipe renders properly 1`] = `
 "<div class=\\"recipe\\">
   <h1></h1>
-  <p>
-    <b-collapse-stub id=\\"recipe__description__summary\\" visible=\\"true\\" tag=\\"div\\"><span></span>
-      <!---->
-    </b-collapse-stub>
-    <b-collapse-stub id=\\"recipe__description\\" tag=\\"div\\"><span></span> <a class=\\"collapsed\\" aria-expanded=\\"false\\" aria-controls=\\"recipe__description__summary recipe__description\\">Read less</a></b-collapse-stub>
+  <p><span><span></span>
+    <!----></span>
+    <!---->
   </p>
   <!---->
   <section>

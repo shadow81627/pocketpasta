@@ -2,23 +2,23 @@
   <div class="recipe">
     <h1>{{ name }}</h1>
     <p>
-      <b-collapse id="recipe__description__summary" visible>
+      <span v-if="!showDescription">
         <span>{{ truncate(description, 120) }}</span>
-        <nuxt-link
-          v-if="description && description.length > 150"
-          v-b-toggle="['recipe__description__summary', 'recipe__description']"
-          to=""
-          >Read more</nuxt-link
+        <b-link
+          v-if="description && description.length > 120"
+          class="text-primary"
+          @click.prevent="showDescription = !showDescription"
+          >Read more</b-link
         >
-      </b-collapse>
-      <b-collapse id="recipe__description">
+      </span>
+      <span v-if="showDescription">
         <span>{{ description }}</span>
-        <nuxt-link
-          v-b-toggle="['recipe__description__summary', 'recipe__description']"
-          to=""
-          >Read less</nuxt-link
+        <b-link
+          class="text-primary"
+          @click.prevent="showDescription = !showDescription"
+          >Read less</b-link
         >
-      </b-collapse>
+      </span>
     </p>
 
     <vue-plyr
@@ -227,6 +227,7 @@ export default {
     },
     // updatedAt: { type: Date, default: () => new Date() },
   },
+  data: () => ({ showDescription: false }),
   computed: {
     imageData() {
       function cloudinaryify(image) {
