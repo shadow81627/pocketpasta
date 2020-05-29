@@ -3,7 +3,14 @@
 exports[`Recipe renders properly 1`] = `
 "<div class=\\"recipe\\">
   <h1></h1>
-  <p></p>
+  <p>
+    <b-collapse-stub id=\\"recipe__description--summary\\" visible=\\"true\\" tag=\\"div\\"><span></span>
+      <!---->
+    </b-collapse-stub>
+    <b-collapse-stub id=\\"recipe__description\\" tag=\\"div\\"><span></span>
+      <nuxt-link to=\\"\\" role=\\"button\\" tabindex=\\"0\\" class=\\"collapsed\\" aria-expanded=\\"false\\" aria-controls=\\"recipe__description--summary recipe__description\\">Read less</nuxt-link>
+    </b-collapse-stub>
+  </p>
   <!---->
   <section>
     <b-row-stub tag=\\"div\\">

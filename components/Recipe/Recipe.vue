@@ -1,7 +1,25 @@
 <template>
   <div class="recipe">
     <h1>{{ name }}</h1>
-    <p>{{ description }}</p>
+    <p>
+      <b-collapse id="recipe__description--summary" visible>
+        <span>{{ truncate(description, 120) }}</span>
+        <nuxt-link
+          v-if="description && description.length > 150"
+          v-b-toggle="['recipe__description--summary', 'recipe__description']"
+          to=""
+          >Read more</nuxt-link
+        >
+      </b-collapse>
+      <b-collapse id="recipe__description">
+        <span>{{ description }}</span>
+        <nuxt-link
+          v-b-toggle="['recipe__description--summary', 'recipe__description']"
+          to=""
+          >Read less</nuxt-link
+        >
+      </b-collapse>
+    </p>
 
     <vue-plyr
       v-if="video && video.embedUrl && video.embedUrl.includes('youtube')"
@@ -21,6 +39,8 @@
         itemprop="image"
         :width="640"
         :height="360"
+        fluid
+        xfluid-grow
       />
     </div>
     <!-- <p>Author: {{ author }}</p> -->
@@ -141,7 +161,7 @@
         <span
           v-for="reference in sameAs"
           :key="reference"
-          class="list-group-item"
+          class="list-group-item text-truncate"
         >
           <a :href="reference" target="_blank" itemprop="url" rel="noopener">{{
             reference
@@ -240,6 +260,14 @@ export default {
         // dateModified: this.updatedAt.toISOString(),
         // updatedAt: undefined,
       };
+    },
+  },
+
+  methods: {
+    truncate(text, stop = 150, clamp = '...') {
+      if (text) {
+        return `${text.slice(0, stop)}${stop < text.length ? clamp : ''}`;
+      }
     },
   },
 
