@@ -1,5 +1,5 @@
 import Recipe from '@/components/Recipe/Recipe';
-import recipe from '@/content/recipes/2.json';
+import recipe from '@/content/recipes/1.json';
 import { shallowMount, createLocalVue, RouterLinkStub } from '@vue/test-utils';
 import Vuex from 'vuex';
 import BootstrapVuePlugin from 'bootstrap-vue';
@@ -25,9 +25,9 @@ localVue.use(VueMeta, {
 // const router = new VueRouter();
 
 const $route = {
-  path: '/recipes/detail/1',
+  path: '/recipes/1',
   params: { id: '1' },
-  fullPath: '/recipes/detail/1',
+  fullPath: '/recipes/1',
   name: 'recipes-detail-id',
 };
 
@@ -88,17 +88,44 @@ describe('Recipe', () => {
     expect(wrapper.html()).toMatchSnapshot();
   });
 
-  // test('imageData with cloudinary image does not modify url', () => {
-  //   const wrapper = factory();
-  //   const image = {
-  //     url: 'https://res.cloudinary.com/pocketpasta/image/fetch/',
-  //   };
-  //   wrapper.setProps({
-  //     ...recipe,
-  //     image,
-  //   });
-  //   expect(wrapper.vm.imageData).toEqual(image);
-  // });
+  test('imageData with cloudinary image does not modify url', () => {
+    const wrapper = factory();
+    const image = {
+      url: 'https://res.cloudinary.com/pocketpasta/image/fetch/',
+    };
+    wrapper.setProps({
+      ...recipe,
+      image,
+    });
+    expect(wrapper.vm.imageData).toEqual(image);
+  });
+
+  test('imageData convet to cloudinaty url', () => {
+    const wrapper = factory();
+    wrapper.setProps({
+      ...recipe,
+    });
+    expect(wrapper.vm.imageData).toEqual({
+      url: `https://res.cloudinary.com/pocketpasta/image/fetch/w_640,h_360,ar_16:9,c_fill,f_auto,q_auto/${recipe.image}`,
+    });
+  });
+
+  test('imageData handle array', () => {
+    const wrapper = factory();
+    wrapper.setProps({
+      ...recipe,
+      image: ['https://res.cloudinary.com/pocketpasta/image/fetch/'],
+    });
+    expect(wrapper.vm.imageData).toEqual({
+      url: `https://res.cloudinary.com/pocketpasta/image/fetch/`,
+    });
+  });
+
+  test('truncate', () => {
+    const wrapper = factory();
+    const text = `${'a'.repeat(151)}`;
+    expect(wrapper.vm.truncate(text)).toEqual(`${'a'.repeat(150)}...`);
+  });
 
   test('head', () => {
     const wrapper = factory();
