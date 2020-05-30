@@ -1,5 +1,11 @@
 # Releases
 
+## [0.32.4](https://github.com/shadow81627/pocketpasta/compare/v0.32.3...v0.32.4) (2020-05-30)
+
+### Bug Fixes
+
+- **recipes:** no page query string for first page ([#1140](https://github.com/shadow81627/pocketpasta/issues/1140)) ([d1ee733](https://github.com/shadow81627/pocketpasta/commit/d1ee733fa044bff715dac2552f93d2b6b2349ee7))
+
 ## [0.32.3](https://github.com/shadow81627/pocketpasta/compare/v0.32.2...v0.32.3) (2020-05-29)
 
 ### Bug Fixes
