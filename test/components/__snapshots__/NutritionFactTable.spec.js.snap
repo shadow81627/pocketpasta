@@ -1,14 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Recipe renders properly 1`] = `
-"<b-card no-body=\\"\\" tag=\\"section\\" itemscope=\\"\\" itemtype=\\"http://schema.org/NutritionInformation\\" class=\\"performance-facts\\">
-  <b-card-header header-tag=\\"header\\" class=\\"p-1\\">
-    <b-button block=\\"\\" variant=\\"none\\" squared=\\"\\" class=\\"text-left collapsed\\" role=\\"button\\" tabindex=\\"0\\" aria-expanded=\\"false\\" aria-controls=\\"collapse-performance-facts\\">
+"<b-card-stub bodytag=\\"div\\" titletag=\\"h4\\" subtitletag=\\"h6\\" subtitletextvariant=\\"muted\\" headertag=\\"div\\" footertag=\\"div\\" tag=\\"section\\" nobody=\\"true\\" itemscope=\\"\\" itemtype=\\"http://schema.org/NutritionInformation\\" class=\\"performance-facts\\">
+  <b-card-header-stub headertag=\\"header\\" class=\\"p-1\\">
+    <b-button-stub block=\\"true\\" variant=\\"none\\" type=\\"button\\" tag=\\"button\\" squared=\\"true\\" target=\\"_self\\" class=\\"text-left\\">
       <h2>Nutrition Facts</h2>
-    </b-button>
-  </b-card-header>
+    </b-button-stub>
+  </b-card-header-stub>
   <b-collapse-stub id=\\"collapse-performance-facts\\" visible=\\"true\\" tag=\\"div\\">
-    <b-card-body>
+    <b-card-body-stub bodytag=\\"div\\" titletag=\\"h4\\" subtitletag=\\"h6\\" subtitletextvariant=\\"muted\\">
       <header class=\\"performance-facts__header\\">
         <p itemprop=\\"servingSize\\">Serving Size: </p>
       </header>
@@ -84,7 +84,7 @@ exports[`Recipe renders properly 1`] = `
         * Percent Daily Values are based on a 2,000 calorie diet. Your daily
         values may be higher or lower depending on your calorie needs:
       </p>
-    </b-card-body>
+    </b-card-body-stub>
   </b-collapse-stub>
-</b-card>"
+</b-card-stub>"
 `;

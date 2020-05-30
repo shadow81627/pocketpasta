@@ -3,21 +3,24 @@
 exports[`Recipe renders properly 1`] = `
 "<div class=\\"recipe\\">
   <h1></h1>
-  <p></p>
+  <p><span><span></span>
+    <!----></span>
+    <!---->
+  </p>
   <!---->
   <section>
     <b-row-stub tag=\\"div\\">
       <b-col-stub tag=\\"div\\">
-        <v-chip label=\\"\\" readonly=\\"\\" style=\\"background: none; padding: 0px;\\">
+        <v-chip-stub activeclass=\\"\\" tag=\\"span\\" active=\\"true\\" closeicon=\\"$delete\\" filtericon=\\"$complete\\" label=\\"true\\" readonly=\\"\\" style=\\"background: none; padding: 0px;\\">
           <b-form-rating-stub id=\\"rating\\" value=\\"4.93\\" stars=\\"5\\" variant=\\"primary\\" readonly=\\"true\\" name=\\"rating\\" noborder=\\"true\\" inline=\\"true\\" iconempty=\\"star\\" iconhalf=\\"star-half\\" iconfull=\\"star-fill\\" iconclear=\\"x\\" aria-label=\\"rating\\" style=\\"background: none;\\"></b-form-rating-stub>
-        </v-chip>
-        <v-chip label=\\"\\" style=\\"background: none;\\">
+        </v-chip-stub>
+        <v-chip-stub activeclass=\\"\\" tag=\\"span\\" active=\\"true\\" closeicon=\\"$delete\\" filtericon=\\"$complete\\" label=\\"true\\" style=\\"background: none;\\">
           <number-text-stub></number-text-stub>
-        </v-chip>
+        </v-chip-stub>
         <!---->
-        <v-chip label=\\"\\" style=\\"background: none; overflow: visible; padding: 0px;\\">
+        <v-chip-stub activeclass=\\"\\" tag=\\"span\\" active=\\"true\\" closeicon=\\"$delete\\" filtericon=\\"$complete\\" label=\\"true\\" style=\\"background: none; overflow: visible; padding: 0px;\\">
           <share-stub class=\\"d-inline-block\\"></share-stub>
-        </v-chip>
+        </v-chip-stub>
       </b-col-stub>
     </b-row-stub>
   </section>

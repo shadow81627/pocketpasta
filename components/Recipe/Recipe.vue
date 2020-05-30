@@ -1,7 +1,25 @@
 <template>
   <div class="recipe">
     <h1>{{ name }}</h1>
-    <p>{{ description }}</p>
+    <p>
+      <span v-if="!showDescription">
+        <span>{{ truncate(description, 120) }}</span>
+        <b-link
+          v-if="description && description.length > 120"
+          class="text-primary"
+          @click.prevent="showDescription = !showDescription"
+          >Read more</b-link
+        >
+      </span>
+      <span v-if="showDescription">
+        <span>{{ description }}</span>
+        <b-link
+          class="text-primary"
+          @click.prevent="showDescription = !showDescription"
+          >Read less</b-link
+        >
+      </span>
+    </p>
 
     <vue-plyr
       v-if="video && video.embedUrl && video.embedUrl.includes('youtube')"
@@ -21,6 +39,8 @@
         itemprop="image"
         :width="640"
         :height="360"
+        fluid
+        xfluid-grow
       />
     </div>
     <!-- <p>Author: {{ author }}</p> -->
@@ -141,7 +161,7 @@
         <span
           v-for="reference in sameAs"
           :key="reference"
-          class="list-group-item"
+          class="list-group-item text-truncate"
         >
           <a :href="reference" target="_blank" itemprop="url" rel="noopener">{{
             reference
@@ -161,7 +181,7 @@ import NutritionFactTable from '@/components/Recipe/NutritionFactTable';
 import { BCollapse, VBToggle, BRow, BCol, BFormRating } from 'bootstrap-vue';
 import VuePlyr from 'vue-plyr/dist/vue-plyr.ssr.js';
 import 'plyr/dist/plyr.css';
-import { VChip } from 'vuetify';
+// import { VChip } from 'vuetify/lib';
 export default {
   components: {
     NumberText,
@@ -174,28 +194,28 @@ export default {
     BCol,
     VuePlyr,
     BFormRating,
-    VChip,
+    // VChip,
   },
   directives: { 'b-toggle': VBToggle },
   inheritAttrs: false,
   props: {
-    name: { type: String, required: true },
-    description: { type: String, required: true },
-    suitableForDiet: { type: String, required: true },
+    name: { type: String, required: false },
+    description: { type: String, required: false },
+    suitableForDiet: { type: String, required: false },
     author: { type: Object, required: false },
     nutrition: { type: Object, required: false },
-    datePublished: { type: String, required: true },
-    keywords: { type: String, required: true },
-    recipeIngredient: { type: Array, required: true },
-    recipeInstructions: { type: Array, required: true },
-    prepTime: { type: String, required: true },
-    cookTime: { type: String, required: true },
-    totalTime: { type: String, required: true },
+    datePublished: { type: String, required: false },
+    keywords: { type: String, required: false },
+    recipeIngredient: { type: Array, required: false },
+    recipeInstructions: { type: Array, required: false },
+    prepTime: { type: String, required: false },
+    cookTime: { type: String, required: false },
+    totalTime: { type: String, required: false },
     video: { type: Object, required: false },
-    recipeYield: { type: String, required: true },
-    recipeCategory: { type: String, required: true },
-    recipeCuisine: { type: String, required: true },
-    image: { type: Array, required: true },
+    recipeYield: { type: String, required: false },
+    recipeCategory: { type: String, required: false },
+    recipeCuisine: { type: String, required: false },
+    image: { type: [Array, String], required: false },
     sameAs: { type: Array, required: false },
     aggregateRating: {
       type: Object,
@@ -207,6 +227,7 @@ export default {
     },
     // updatedAt: { type: Date, default: () => new Date() },
   },
+  data: () => ({ showDescription: false }),
   computed: {
     imageData() {
       function cloudinaryify(image) {
@@ -240,6 +261,14 @@ export default {
         // dateModified: this.updatedAt.toISOString(),
         // updatedAt: undefined,
       };
+    },
+  },
+
+  methods: {
+    truncate(text, stop = 150, clamp = '...') {
+      if (text) {
+        return `${text.slice(0, stop)}${stop < text.length ? clamp : ''}`;
+      }
     },
   },
 

@@ -3,10 +3,11 @@ import { shallowMount, createLocalVue } from '@vue/test-utils';
 import Vuex from 'vuex';
 import Vuetify from 'vuetify';
 import BootstrapVuePlugin from 'bootstrap-vue';
+import Vue from 'vue';
 
 const localVue = createLocalVue();
 
-localVue.use(Vuetify);
+Vue.use(Vuetify);
 localVue.use(BootstrapVuePlugin);
 localVue.use(Vuex);
 

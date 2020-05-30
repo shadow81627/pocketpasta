@@ -28,7 +28,7 @@ export default {
     BPagination,
   },
   async fetch() {
-    this.page = parseInt(this.$route.query.page, 10) || 1;
+    // this.page = parseInt(this.$route.query.page, 10) || 1;
     this.list = await this.$content('recipes')
       .only(['id', 'slug', 'name', 'description', 'image'])
       .sortBy('updatedAt', 'desc')
@@ -46,7 +46,11 @@ export default {
         return parseInt(this.$route.query.page, 10) || 1;
       },
       set(page) {
-        this.$router.push({ query: { page } });
+        if (page === 1) {
+          this.$router.push({ query: { page: undefined } });
+        } else {
+          this.$router.push({ query: { page } });
+        }
       },
     },
   },

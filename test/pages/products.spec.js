@@ -5,6 +5,7 @@ import Vuex from 'vuex';
 import VueRouter from 'vue-router';
 import Vuetify from 'vuetify';
 import BootstrapVuePlugin from 'bootstrap-vue';
+import Vue from 'vue';
 
 const localVue = createLocalVue();
 
@@ -12,7 +13,7 @@ const product = delete productData['@context'];
 
 localVue.use(Vuex);
 localVue.use(VueRouter);
-localVue.use(Vuetify);
+Vue.use(Vuetify);
 localVue.use(BootstrapVuePlugin);
 
 const router = new VueRouter();
@@ -21,8 +22,10 @@ let getters;
 let state;
 let store;
 let mutations;
+let vuetify;
 
 beforeEach(() => {
+  vuetify = new Vuetify();
   state = {
     products: [{ ...product, id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }],
   };
@@ -49,6 +52,7 @@ const factory = () =>
   shallowMount(Component, {
     store,
     router,
+    vuetify,
     stubs: {
       NuxtLink: RouterLinkStub,
     },

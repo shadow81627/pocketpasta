@@ -1,21 +1,32 @@
 import Component from '@/components/Layout/the-footer';
-import { shallowMount, createLocalVue } from '@vue/test-utils';
+import { shallowMount, createLocalVue, RouterLinkStub } from '@vue/test-utils';
 import Vuex from 'vuex';
 import Vuetify from 'vuetify';
+import Vue from 'vue';
 
 const localVue = createLocalVue();
+let vuetify;
 
 localVue.use(Vuex);
-localVue.use(Vuetify);
+Vue.use(Vuetify);
 
 describe('Footer', () => {
+  beforeEach(() => {
+    vuetify = new Vuetify();
+  });
+
   const factory = () =>
     shallowMount(Component, {
       localVue,
+      vuetify,
+      stubs: {
+        NuxtLink: RouterLinkStub,
+      },
       data: () => ({
         version: '0.11.19',
         commit: 'a95a529a01ab4fe627cc276b35ed8f5e0c6f45d9',
         utc: true,
+        lastModified: null,
       }),
     });
 
@@ -32,7 +43,6 @@ describe('Footer', () => {
 
   test('renders properly without lastModified', () => {
     const wrapper = factory();
-    wrapper.setData({ lastModified: null });
     expect(wrapper.html()).toMatchSnapshot();
   });
 });

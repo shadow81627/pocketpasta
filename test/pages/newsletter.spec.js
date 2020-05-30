@@ -1,20 +1,28 @@
 import newsletter from '@/pages/newsletter.vue';
 import { shallowMount, createLocalVue } from '@vue/test-utils';
 import Vuetify from 'vuetify';
+import Vue from 'vue';
 
 const localVue = createLocalVue();
 
-localVue.use(Vuetify);
+Vue.use(Vuetify);
+
+let vuetify;
 
 const factory = () =>
   shallowMount(newsletter, {
     localVue,
+    vuetify,
     mocks: {
       $ga: { event: () => true },
     },
   });
 
 describe('newsletter', () => {
+  beforeEach(() => {
+    vuetify = new Vuetify();
+  });
+
   test('mounts properly', () => {
     const wrapper = factory();
     expect(wrapper.isVueInstance()).toBeTruthy();

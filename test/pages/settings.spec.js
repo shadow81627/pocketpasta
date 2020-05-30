@@ -1,9 +1,21 @@
 import settings from '@/pages/settings.vue';
-import { shallowMount } from '@vue/test-utils';
+import { shallowMount, createLocalVue } from '@vue/test-utils';
+import Vuetify from 'vuetify';
+import Vue from 'vue';
 
-const factory = () => shallowMount(settings, {});
+const localVue = createLocalVue();
+
+Vue.use(Vuetify);
+
+let vuetify;
+
+const factory = () => shallowMount(settings, { localVue, vuetify });
 
 describe('settings', () => {
+  beforeEach(() => {
+    vuetify = new Vuetify();
+  });
+
   test('mounts properly', () => {
     const wrapper = factory();
     expect(wrapper.isVueInstance()).toBeTruthy();

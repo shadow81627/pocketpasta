@@ -1,13 +1,16 @@
 import Recipe from '@/components/Recipe/Recipe';
-import recipe from '@/assets/link-data/recipes/spaghetti.json';
-import { shallowMount, createLocalVue } from '@vue/test-utils';
+import recipe from '@/content/recipes/1.json';
+import { shallowMount, createLocalVue, RouterLinkStub } from '@vue/test-utils';
 import Vuex from 'vuex';
 import BootstrapVuePlugin from 'bootstrap-vue';
 import VueMeta from 'vue-meta';
 // import VueRouter from 'vue-router';
+import Vue from 'vue';
+import Vuetify from 'vuetify';
 
 const localVue = createLocalVue();
 
+Vue.use(Vuetify);
 localVue.use(Vuex);
 // localVue.use(VueRouter);
 localVue.use(BootstrapVuePlugin);
@@ -22,9 +25,9 @@ localVue.use(VueMeta, {
 // const router = new VueRouter();
 
 const $route = {
-  path: '/recipes/detail/1',
+  path: '/recipes/1',
   params: { id: '1' },
-  fullPath: '/recipes/detail/1',
+  fullPath: '/recipes/1',
   name: 'recipes-detail-id',
 };
 
@@ -33,8 +36,11 @@ describe('Recipe', () => {
   let state;
   let store;
   let mutations;
+  let vuetify;
 
   beforeEach(() => {
+    vuetify = new Vuetify();
+
     state = {
       recipes: [{ ...recipe, id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }],
     };
@@ -62,6 +68,10 @@ describe('Recipe', () => {
       store,
       // router,
       localVue,
+      vuetify,
+      stubs: {
+        NuxtLink: RouterLinkStub,
+      },
       mocks: {
         $route,
       },
@@ -88,6 +98,33 @@ describe('Recipe', () => {
       image,
     });
     expect(wrapper.vm.imageData).toEqual(image);
+  });
+
+  test('imageData convet to cloudinaty url', () => {
+    const wrapper = factory();
+    wrapper.setProps({
+      ...recipe,
+    });
+    expect(wrapper.vm.imageData).toEqual({
+      url: `https://res.cloudinary.com/pocketpasta/image/fetch/w_640,h_360,ar_16:9,c_fill,f_auto,q_auto/${recipe.image}`,
+    });
+  });
+
+  test('imageData handle array', () => {
+    const wrapper = factory();
+    wrapper.setProps({
+      ...recipe,
+      image: ['https://res.cloudinary.com/pocketpasta/image/fetch/'],
+    });
+    expect(wrapper.vm.imageData).toEqual({
+      url: `https://res.cloudinary.com/pocketpasta/image/fetch/`,
+    });
+  });
+
+  test('truncate', () => {
+    const wrapper = factory();
+    const text = `${'a'.repeat(151)}`;
+    expect(wrapper.vm.truncate(text)).toEqual(`${'a'.repeat(150)}...`);
   });
 
   test('head', () => {
