@@ -76,6 +76,7 @@
         <v-app-bar-nav-icon aria-label="menu" @click.stop="drawer = !drawer" />
         <b-img-lazy
           :src="$icon(32)"
+          :srcset="`${$icon(32)} 1x, ${$icon(64)} 2x`"
           width="32"
           height="32"
           class="rounded"
@@ -89,7 +90,7 @@
       <user-menu />
     </v-app-bar>
     <v-content>
-      <nuxt style="min-height: 100vh;" />
+      <nuxt style="min-height: 100vh;" keep-alive />
       <the-footer />
     </v-content>
   </v-app>
@@ -163,8 +164,22 @@ export default {
     ).dark;
   },
   head() {
+    const i18nSeo = this.$nuxtI18nSeo();
     return {
+      htmlAttrs: {
+        ...i18nSeo.htmlAttrs,
+      },
+      meta: [
+        ...i18nSeo.meta,
+        {
+          hid: 'og:url',
+          name: 'og:url',
+          property: 'og:url',
+          content: `${this.baseUrl}${this.$route.path}`,
+        },
+      ],
       link: [
+        ...i18nSeo.link,
         {
           hid: 'theme-preload',
           rel: 'preload',
@@ -199,7 +214,6 @@ export default {
 
 <style>
 .brand {
-  font-family: 'Comic Neue', sans-serif;
   font-size: 1.5rem;
   font-weight: 400;
   vertical-align: middle;

@@ -118,6 +118,8 @@
 <script>
 import Keywords from '@/components/Keywords';
 import { BRow, BCol, BContainer } from 'bootstrap-vue';
+import VuePlyr from 'vue-plyr/dist/vue-plyr.ssr.js';
+import 'plyr/dist/plyr.css';
 
 export default {
   components: {
@@ -125,6 +127,7 @@ export default {
     BRow,
     BCol,
     BContainer,
+    VuePlyr,
   },
   data() {
     return { damien: this.$store.state.damien };

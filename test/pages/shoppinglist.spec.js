@@ -6,20 +6,24 @@ import Component from '@/pages/shoppinglist.vue';
 import { createLocalVue, mount } from '@vue/test-utils';
 import Vuetify from 'vuetify';
 import BootstrapVuePlugin from 'bootstrap-vue';
+import Vue from 'vue';
 
 const localVue = createLocalVue();
+let vuetify;
 
-localVue.use(Vuetify);
+Vue.use(Vuetify);
 localVue.use(BootstrapVuePlugin);
 
 const factory = () =>
   mount(Component, {
+    vuetify,
     attachToDocument: true,
     // localVue,
   });
 
 describe('shoppinglist page', () => {
   beforeEach(() => {
+    vuetify = new Vuetify();
     document.getSelection = () => {
       return {
         removeAllRanges: () => {},

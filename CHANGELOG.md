@@ -1,5 +1,102 @@
 # Releases
 
+## [0.32.4](https://github.com/shadow81627/pocketpasta/compare/v0.32.3...v0.32.4) (2020-05-30)
+
+### Bug Fixes
+
+- **recipes:** no page query string for first page ([#1140](https://github.com/shadow81627/pocketpasta/issues/1140)) ([d1ee733](https://github.com/shadow81627/pocketpasta/commit/d1ee733fa044bff715dac2552f93d2b6b2349ee7))
+
+## [0.32.3](https://github.com/shadow81627/pocketpasta/compare/v0.32.2...v0.32.3) (2020-05-29)
+
+### Bug Fixes
+
+- **deps:** update dependency firebase to v7.14.6 ([12d79c2](https://github.com/shadow81627/pocketpasta/commit/12d79c2f78ec9ea6f709553371a003b440cd74f6))
+
+## [0.32.2](https://github.com/shadow81627/pocketpasta/compare/v0.32.1...v0.32.2) (2020-05-29)
+
+### Bug Fixes
+
+- **deps:** update dependency nuxt-i18n to v6.12.1 ([e9598b6](https://github.com/shadow81627/pocketpasta/commit/e9598b6b25d4671eb685fe9f7794a426010ce28f))
+
+## [0.32.1](https://github.com/shadow81627/pocketpasta/compare/v0.32.0...v0.32.1) (2020-05-28)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxt/content to v1.2.0 ([978974f](https://github.com/shadow81627/pocketpasta/commit/978974f4bc858a4ffedbfbe3ce25e8fd3b364859))
+
+## [0.32.0](https://github.com/shadow81627/pocketpasta/compare/v0.31.12...v0.32.0) (2020-05-28)
+
+### Features
+
+- **recipe:** add pagination ([#1124](https://github.com/shadow81627/pocketpasta/issues/1124)) ([6877baa](https://github.com/shadow81627/pocketpasta/commit/6877baadb97e0158d163cf49f2f038ea4a832fd4))
+
+## [0.31.12](https://github.com/shadow81627/pocketpasta/compare/v0.31.11...v0.31.12) (2020-05-25)
+
+### Bug Fixes
+
+- **deps:** update dependency nuxt-i18n to v6.12.0 ([e64f0dd](https://github.com/shadow81627/pocketpasta/commit/e64f0dd4c559c7fe64074ee6bb26363a875a8a5c))
+
+## [0.31.11](https://github.com/shadow81627/pocketpasta/compare/v0.31.10...v0.31.11) (2020-05-24)
+
+### Bug Fixes
+
+- **video:** add missing plyr css ([#1119](https://github.com/shadow81627/pocketpasta/issues/1119)) ([3da5145](https://github.com/shadow81627/pocketpasta/commit/3da514592bb6bc452f6b2eb55be066cab3fe4157))
+
+## [0.31.10](https://github.com/shadow81627/pocketpasta/compare/v0.31.9...v0.31.10) (2020-05-24)
+
+### Performance Improvements
+
+- **fonts:** remove custom font ([#1116](https://github.com/shadow81627/pocketpasta/issues/1116)) ([bc2f137](https://github.com/shadow81627/pocketpasta/commit/bc2f137519dc68e7e45eae8bf792e84e76e3a4b5))
+
+## [0.31.9](https://github.com/shadow81627/pocketpasta/compare/v0.31.8...v0.31.9) (2020-05-23)
+
+### Bug Fixes
+
+- **deps:** update dependency bootstrap-vue to v2.15.0 ([#1113](https://github.com/shadow81627/pocketpasta/issues/1113)) ([609d94d](https://github.com/shadow81627/pocketpasta/commit/609d94de4f8aab136827ee38026882540a0cda73))
+
+## [0.31.8](https://github.com/shadow81627/pocketpasta/compare/v0.31.7...v0.31.8) (2020-05-23)
+
+### Performance Improvements
+
+- **meta:** move i18n seo into layout ([#1115](https://github.com/shadow81627/pocketpasta/issues/1115)) ([705bded](https://github.com/shadow81627/pocketpasta/commit/705bded2ae46493de2ab78f0b0240fede23fb70f))
+
+## [0.31.7](https://github.com/shadow81627/pocketpasta/compare/v0.31.6...v0.31.7) (2020-05-23)
+
+### Bug Fixes
+
+- **og:url:** add ogHost ([efdc2e9](https://github.com/shadow81627/pocketpasta/commit/efdc2e9e3fdc415e45ee523f76da66849cc3298b))
+
+## [0.31.6](https://github.com/shadow81627/pocketpasta/compare/v0.31.5...v0.31.6) (2020-05-23)
+
+### Bug Fixes
+
+- **viewport:** maximum-scale=5 ([792457a](https://github.com/shadow81627/pocketpasta/commit/792457ae688d80aa37dfbb3d8a6dbeb76bf94629))
+
+## [0.31.5](https://github.com/shadow81627/pocketpasta/compare/v0.31.4...v0.31.5) (2020-05-23)
+
+### Bug Fixes
+
+- **lang:** remove lang from pwa meta ([ea31cbe](https://github.com/shadow81627/pocketpasta/commit/ea31cbecde19794e22e649f26da8c7656979d875))
+- **links:** 14px AAA contrasts ratio ([2ca481b](https://github.com/shadow81627/pocketpasta/commit/2ca481b76c1eef8ad5892ebdc5137d511c508ba5))
+
+## [0.31.4](https://github.com/shadow81627/pocketpasta/compare/v0.31.3...v0.31.4) (2020-05-23)
+
+### Bug Fixes
+
+- **viewport:** use pwa native ui ([b5fe39e](https://github.com/shadow81627/pocketpasta/commit/b5fe39e56a8adf51a63f7d5115fdee85a64cfa33))
+
+## [0.31.3](https://github.com/shadow81627/pocketpasta/compare/v0.31.2...v0.31.3) (2020-05-22)
+
+### Bug Fixes
+
+- **footer:** add cols auto for made with text ([#1111](https://github.com/shadow81627/pocketpasta/issues/1111)) ([20d198e](https://github.com/shadow81627/pocketpasta/commit/20d198ed9bce059b18d20506ea4dc9e2b129cf95))
+
+## [0.31.2](https://github.com/shadow81627/pocketpasta/compare/v0.31.1...v0.31.2) (2020-05-21)
+
+### Bug Fixes
+
+- **deps:** update dependency firebase to v7.14.5 ([9d93b2c](https://github.com/shadow81627/pocketpasta/commit/9d93b2c886fe2770a81e8d7c1a2303ed89c51125))
+
 ## [0.31.1](https://github.com/shadow81627/pocketpasta/compare/v0.31.0...v0.31.1) (2020-05-20)
 
 ### Bug Fixes

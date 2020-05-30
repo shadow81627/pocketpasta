@@ -5,6 +5,7 @@ import Vuex from 'vuex';
 import VueRouter from 'vue-router';
 import Vuetify from 'vuetify';
 import BootstrapVuePlugin from 'bootstrap-vue';
+import Vue from 'vue';
 
 const localVue = createLocalVue();
 
@@ -12,7 +13,7 @@ const recipe = delete spaghetti['@context'];
 
 localVue.use(Vuex);
 localVue.use(VueRouter);
-localVue.use(Vuetify);
+Vue.use(Vuetify);
 localVue.use(BootstrapVuePlugin);
 
 const router = new VueRouter();
@@ -21,6 +22,7 @@ let getters;
 let state;
 let store;
 let mutations;
+let vuetify;
 
 beforeEach(() => {
   state = {
@@ -47,6 +49,10 @@ beforeEach(() => {
 
 const factory = () =>
   shallowMount(recipes, {
+    vuetify,
+    mocks: {
+      $fetchState: {},
+    },
     store,
     router,
     stubs: {
@@ -57,6 +63,10 @@ const factory = () =>
   });
 
 describe('recipes', () => {
+  beforeEach(() => {
+    vuetify = new Vuetify();
+  });
+
   test('mounts properly', () => {
     const wrapper = factory();
     expect(wrapper.isVueInstance()).toBeTruthy();

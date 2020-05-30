@@ -2,100 +2,41 @@
 
 exports[`Recipe renders properly 1`] = `
 "<div class=\\"recipe\\">
-  <h1>Audrey Hepburn’s Spaghetti Al Pomodoro Recipe</h1>
-  <p>Make Audrey Hepburn's spaghetti al pomodoro recipe. Hepburn liked her pasta smothered in tomato sauce.</p>
-  <div>
-    <b-img-lazy-stub src=\\"https://res.cloudinary.com/pocketpasta/image/fetch/w_640,h_360,ar_16:9,c_fill,f_auto,q_auto/https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/162208.jpg\\" alt=\\"Audrey Hepburn’s Spaghetti Al Pomodoro Recipe\\" width=\\"640\\" height=\\"360\\" blankcolor=\\"transparent\\" offset=\\"360\\" throttle=\\"100\\" itemprop=\\"image\\" class=\\"img-fluid mx-auto d-block\\"></b-img-lazy-stub>
-  </div>
-  <share-stub class=\\"py-4\\"></share-stub>
-  <p>
-    <number-text-stub text=\\"4 servings\\"></number-text-stub>
+  <h1></h1>
+  <p><span><span></span>
+    <!----></span>
+    <!---->
   </p>
+  <!---->
+  <section>
+    <b-row-stub tag=\\"div\\">
+      <b-col-stub tag=\\"div\\">
+        <v-chip-stub activeclass=\\"\\" tag=\\"span\\" active=\\"true\\" closeicon=\\"$delete\\" filtericon=\\"$complete\\" label=\\"true\\" readonly=\\"\\" style=\\"background: none; padding: 0px;\\">
+          <b-form-rating-stub id=\\"rating\\" value=\\"4.93\\" stars=\\"5\\" variant=\\"primary\\" readonly=\\"true\\" name=\\"rating\\" noborder=\\"true\\" inline=\\"true\\" iconempty=\\"star\\" iconhalf=\\"star-half\\" iconfull=\\"star-fill\\" iconclear=\\"x\\" aria-label=\\"rating\\" style=\\"background: none;\\"></b-form-rating-stub>
+        </v-chip-stub>
+        <v-chip-stub activeclass=\\"\\" tag=\\"span\\" active=\\"true\\" closeicon=\\"$delete\\" filtericon=\\"$complete\\" label=\\"true\\" style=\\"background: none;\\">
+          <number-text-stub></number-text-stub>
+        </v-chip-stub>
+        <!---->
+        <v-chip-stub activeclass=\\"\\" tag=\\"span\\" active=\\"true\\" closeicon=\\"$delete\\" filtericon=\\"$complete\\" label=\\"true\\" style=\\"background: none; overflow: visible; padding: 0px;\\">
+          <share-stub class=\\"d-inline-block\\"></share-stub>
+        </v-chip-stub>
+      </b-col-stub>
+    </b-row-stub>
+  </section>
   <b-row-stub tag=\\"div\\">
     <b-col-stub md=\\"6\\" tag=\\"div\\">
-      <b-card-stub bodytag=\\"div\\" titletag=\\"h4\\" subtitletag=\\"h6\\" subtitletextvariant=\\"muted\\" headertag=\\"div\\" footertag=\\"div\\" tag=\\"section\\" nobody=\\"true\\" class=\\"mb-4\\">
-        <b-card-header-stub headertag=\\"header\\" role=\\"tab\\" class=\\"p-1 text-left\\">
-          <b-button-stub target=\\"_self\\" event=\\"click\\" routertag=\\"a\\" block=\\"true\\" variant=\\"none\\" type=\\"button\\" tag=\\"button\\" squared=\\"true\\" class=\\"text-left\\">
-            <h2>Ingredients</h2>
-          </b-button-stub>
-        </b-card-header-stub>
-        <b-collapse-stub id=\\"collapse-ingredient\\" visible=\\"true\\" tag=\\"div\\">
-          <b-card-body-stub bodytag=\\"div\\" titletag=\\"h4\\" subtitletag=\\"h6\\" subtitletextvariant=\\"muted\\">
-            <ol class=\\"list-group-flush pl-0 mb-0\\">
-              <li class=\\"list-group-item\\">
-                <fraction-text-stub text=\\"1 small onion, diced\\"></fraction-text-stub>
-              </li>
-              <li class=\\"list-group-item\\">
-                <fraction-text-stub text=\\"2 cloves garlic, minced\\"></fraction-text-stub>
-              </li>
-              <li class=\\"list-group-item\\">
-                <fraction-text-stub text=\\"2 carrots, diced small\\"></fraction-text-stub>
-              </li>
-              <li class=\\"list-group-item\\">
-                <fraction-text-stub text=\\"2 stalks celery, diced small\\"></fraction-text-stub>
-              </li>
-              <li class=\\"list-group-item\\">
-                <fraction-text-stub text=\\"2 large cans (28 oz. each) peeled Italian Roma tomatoes\\"></fraction-text-stub>
-              </li>
-              <li class=\\"list-group-item\\">
-                <fraction-text-stub text=\\"1 large bunch fresh basil, washed\\"></fraction-text-stub>
-              </li>
-              <li class=\\"list-group-item\\">
-                <fraction-text-stub text=\\"2 tbsp extra virgin olive oil\\"></fraction-text-stub>
-              </li>
-              <li class=\\"list-group-item\\">
-                <fraction-text-stub text=\\"1 lb. spaghetti pasta\\"></fraction-text-stub>
-              </li>
-              <li class=\\"list-group-item\\">
-                <fraction-text-stub text=\\"Salt to taste\\"></fraction-text-stub>
-              </li>
-              <li class=\\"list-group-item\\">
-                <fraction-text-stub text=\\"Freshly grated Parmigiano-Reggiano cheese\\"></fraction-text-stub>
-              </li>
-            </ol>
-          </b-card-body-stub>
-        </b-collapse-stub>
-      </b-card-stub>
+      <!---->
     </b-col-stub>
     <b-col-stub md=\\"6\\" tag=\\"div\\">
-      <b-card-stub bodytag=\\"div\\" titletag=\\"h4\\" subtitletag=\\"h6\\" subtitletextvariant=\\"muted\\" headertag=\\"div\\" footertag=\\"div\\" tag=\\"section\\" nobody=\\"true\\" class=\\"mb-4\\">
-        <b-card-header-stub headertag=\\"header\\" role=\\"tab\\" class=\\"p-1\\">
-          <b-button-stub target=\\"_self\\" event=\\"click\\" routertag=\\"a\\" block=\\"true\\" variant=\\"none\\" type=\\"button\\" tag=\\"button\\" squared=\\"true\\" class=\\"text-left\\">
-            <h2>Instructions</h2>
-          </b-button-stub>
-        </b-card-header-stub>
-        <b-collapse-stub id=\\"collapse-instructions\\" visible=\\"true\\" tag=\\"div\\">
-          <b-card-body-stub bodytag=\\"div\\" titletag=\\"h4\\" subtitletag=\\"h6\\" subtitletextvariant=\\"muted\\">
-            <ol class=\\"list-group-flush pl-0 mb-0\\">
-              <li class=\\"list-group-item\\">
-                <fraction-text-stub text=\\"Dice the carrots, onion, and celery. Thinly slice half of the basil leaves. Set aside.\\"></fraction-text-stub>
-              </li>
-              <li class=\\"list-group-item\\">
-                <fraction-text-stub text=\\"Heat the olive oil in a large pot over medium heat. Add the onion, carrots, celery, and garlic. Cook until softened but not brown.\\"></fraction-text-stub>
-              </li>
-              <li class=\\"list-group-item\\">
-                <fraction-text-stub text=\\"Add in the whole basil leaves, garlic, and tomatoes. Bring the sauce to a simmer, cover, and cook for 45 minutes, stirring occasionally and breaking apart the larger tomatoes as they cook.\\"></fraction-text-stub>
-              </li>
-              <li class=\\"list-group-item\\">
-                <fraction-text-stub text=\\"After 45 minutes, or when the vegetables are tender, remove the sauce from the heat and let rest for 15 minutes.\\"></fraction-text-stub>
-              </li>
-              <li class=\\"list-group-item\\">
-                <fraction-text-stub text=\\"While the sauce is simmering, fill another large pot with water and bring to a boil. Add salt, if desired. Cook the spaghetti until al dente. Drain the pasta.\\"></fraction-text-stub>
-              </li>
-              <li class=\\"list-group-item\\">
-                <fraction-text-stub text=\\"Taste the sauce and add salt, if desired. Serve pasta topped generously with sauce, grated Parmigiano-Reggiano cheese, and the reserved sliced basil leaves.\\"></fraction-text-stub>
-              </li>
-            </ol>
-          </b-card-body-stub>
-        </b-collapse-stub>
-      </b-card-stub>
+      <!---->
     </b-col-stub>
   </b-row-stub>
   <!---->
   <section class=\\"mb-2\\">
     <h2 class=\\"h4\\">Tags</h2>
     <div class=\\"list-group-flush\\">
-      <keywords-stub tags=\\"Audrey Hepburn, recipe, Pasta Recipes, Sauce Recipes, Audrey, Hepburn, spaghetti, spathetti, pomodoro, pasta, history, sauce\\" class=\\"list-group-item\\"></keywords-stub>
+      <keywords-stub tags=\\"\\" class=\\"list-group-item\\"></keywords-stub>
     </div>
   </section>
   <!---->

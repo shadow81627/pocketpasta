@@ -3,5 +3,8 @@
 exports[`recipes renders properly 1`] = `
 "<div class=\\"container\\">
   <list-stub heading=\\"recipes.heading\\" list=\\"\\" layout=\\"list\\"></list-stub>
+  <div class=\\"overflow-auto\\" style=\\"display: none;\\">
+    <b-pagination-stub value=\\"1\\" limit=\\"5\\" align=\\"center\\" arialabel=\\"Pagination\\" labelfirstpage=\\"Go to first page\\" firsttext=\\"«\\" labelprevpage=\\"Go to previous page\\" prevtext=\\"‹\\" labelnextpage=\\"Go to next page\\" nexttext=\\"›\\" labellastpage=\\"Go to last page\\" lasttext=\\"»\\" labelpage=\\"Go to page\\" ellipsistext=\\"…\\" size=\\"lg\\" perpage=\\"1\\" totalrows=\\"1\\" link-gen=\\"function () { [native code] }\\" use-router=\\"\\" number-of-pages=\\"1\\"></b-pagination-stub> <button style=\\"display: none;\\">Refresh</button> <span style=\\"display: none;\\">Pending: </span> <span style=\\"display: none;\\">Error: </span>
+  </div>
 </div>"
 `;

@@ -1,22 +1,15 @@
 import damien from '@/assets/link-data/damien.json';
-
-import recipes from '@/assets/link-data/recipes';
-
 import products from '@/assets/link-data/products';
-
 import themes from '@/assets/themes';
 
 export const state = () => ({
   user: null,
   themes,
-  recipes,
   products,
   damien,
 });
 
 export const getters = {
-  getRecipeById: (state) => (id) =>
-    state.recipes.find((recipe) => recipe.id === id),
   getProductById: (state) => (id) =>
     state.products.find((product) => product.id === id),
   getThemeById: (state) => (value) =>

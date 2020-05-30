@@ -13,7 +13,7 @@
         <div class="card-layout" :class="layoutClass">
           <card
             v-for="item in list"
-            :key="item.id"
+            :key="item.id || item.slug"
             v-bind="item"
             :layout="layout"
           />

@@ -1,0 +1,72 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Recipe",
+  "name": "Trash Can Nachos",
+  "description": "Trash Can Nachos reci̇pe courtesy of Guy Fi̇eri̇ from Food Network Magazine.",
+  "url": "https://www.foodnetwork.com/recipes/guy-fieri/trash-can-nachos-3582107",
+  "headline": "Trash Can Nachos",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Guy Fieri",
+      "url": "https://www.foodnetwork.com/profiles/talent/guy-fieri"
+    }
+  ],
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2016/12/17/4/FNM010117_Trash-Can-Nachos-Recipe_s4x3.jpg.rend.hgtvcom.826.620.suffix/1482181363877.jpeg",
+    "height": "620",
+    "width": "826"
+  },
+  "datePublished": "2017-01-09T12:09:55.614-05:00",
+  "dateModified": "2017-01-09T12:09:53.031-05:00",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Food Network",
+    "url": "https://www.foodnetwork.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://food.fnr.sndimg.com/etc/clientlibs/assets/images/food/fn-logo-flat-60x60.png",
+      "height": "60",
+      "width": "60"
+    }
+  },
+  "keywords": "Beef, Nachos",
+  "cookTime": "P0Y0M0DT1H20M0.000S",
+  "totalTime": "P0Y0M0DT2H0M0.000S",
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "Carne Asada: Combine 2 minced garlic cloves, 2 tablespoons lime juice and 1 teaspoon kosher salt; rub all over 8 ounces skirt steak and refrigerate 30 minutes. Grill over high heat, turning, until charred, 6 to 8 minutes. Let rest, then chop."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Super Melty Cheese (SMC): Melt 2 tablespoons butter in a saucepan over medium heat; add 1 tablespoon flour and whisk until smooth and toasted, 5 minutes. Whisk in 1 cup each whole milk and heavy cream; bring to a boil. Add 2 ounces each grated mild cheddar, monterey jack, Oaxaca and asadero cheese. Whisk until melted. Stir in a pinch each of cayenne and cumin, 1 tablespoon each minced pickled jalapenos and pickled jalapeno juice and 2 tablespoons pico de gallo. Remove from the heat and keep warm."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Black Beans: Rinse 1 cup dried black beans, then soak in water overnight; drain. Transfer to a saucepan, cover with water by 2 inches and bring to a boil; reduce to a simmer. Add 1/2 cup minced sweet onion, 1 clove minced garlic, 1/2 tablespoon kosher salt and 1 sprig epazote (or 1 teaspoon dried Mexican oregano). Simmer until the beans are tender, about 1 hour, adding more water as needed. Discard the epazote."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Make the carne asada, super melty cheese (SMC) and black beans (see above)."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Spoon some of the SMC in a large tin can (an empty 110-ounce can works well, or you can use a pot or a metal bucket). Layer 1/4 pound tortilla chips one-quarter of the way up."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Spoon more SMC over the chips, then sprinkle with a layer each of carne asada and black beans. Sprinkle with pico de gallo, shredded cheddar, sliced jalapeno, crumbled Cotija cheese, sliced red onion, julienned radish and chopped cilantro; drizzle with Mexican crema."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Repeat to make 3 more layers of chips, SMC, meat, beans and toppings. Place a large round platter or tray on top of the nachos; invert onto the platter and remove the can. Garnish with more pico de gallo, cilantro, red onion and jalapeno."
+    }
+  ],
+  "recipeYield": "6 servings",
+  "sameAs": [
+    "https://www.foodnetwork.com/recipes/guy-fieri/trash-can-nachos-3582107",
+    "https://www.delish.com/cooking/recipe-ideas/a25751125/trash-can-nachos-recipe/"
+  ]
+}
