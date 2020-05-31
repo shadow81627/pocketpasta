@@ -8,7 +8,7 @@ exports[`create page renders properly 1`] = `
     <div class=\\"form-group\\"><label for=\\"data\\" class=\\"form-label\\">Data</label>
       <b-form-textarea-stub id=\\"data\\" required=\\"true\\" state=\\"true\\" value=\\"{}\\" debounce=\\"0\\" rows=\\"2\\" wrap=\\"soft\\" class=\\"overflow-hidden\\"></b-form-textarea-stub>
     </div>
-    <b-button-stub target=\\"_self\\" event=\\"click\\" routertag=\\"a\\" variant=\\"primary\\" type=\\"submit\\" tag=\\"button\\">Submit</b-button-stub>
+    <b-button-stub variant=\\"primary\\" type=\\"submit\\" tag=\\"button\\" target=\\"_self\\">Submit</b-button-stub>
   </form>
 </div>"
 `;

@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Setting renders properly 1`] = `
+"<li class=\\"list-group-item\\">
+  <div class=\\"row\\">
+    <div class=\\"col-sm-6\\">
+      <v-card-stub loaderheight=\\"4\\" tag=\\"div\\" color=\\"transparent\\" flat=\\"true\\">
+        <v-card-title-stub primarytitle=\\"\\" primary-title=\\"\\">
+          <v-icon-stub left=\\"\\">$icon</v-icon-stub> <span id=\\"id\\" class=\\"title font-weight-light\\">label</span>
+        </v-card-title-stub>
+        <v-card-text-stub class=\\"subheading form-text text-muted pt-0\\">description</v-card-text-stub>
+      </v-card-stub>
+    </div>
+    <div class=\\"col-sm-6 align-self-center\\"><input type=\\"text\\" placeholder=\\"placeholder\\" class=\\"form-control\\"></div>
+  </div>
+</li>"
+`;

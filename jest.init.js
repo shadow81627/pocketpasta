@@ -23,3 +23,9 @@ config.mocks.switchLocalePath = (lang) => lang;
 config.mocks.$icon = (size) => size;
 
 global.MutationObserver = MutationObserver;
+
+// theme selector
+config.mocks.$colorMode = { preference: null, value: null };
+
+config.showDeprecationWarnings = false;
+config.stubs['client-only'] = '<span><slot /></span>';

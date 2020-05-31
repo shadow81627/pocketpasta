@@ -1,0 +1,66 @@
+{
+  "@context": "http://schema.org/",
+  "@type": "Recipe",
+  "name": "Audrey Hepburn’s Spaghetti Al Pomodoro Recipe",
+  "suitableForDiet": "https://schema.org/VeganDiet",
+  "image": "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/162208.jpg",
+  "description": "Make Audrey Hepburn's spaghetti al pomodoro recipe. Hepburn liked her pasta smothered in tomato sauce.",
+  "keywords": "Audrey Hepburn, recipe, Pasta Recipes, Sauce Recipes, Audrey, Hepburn, spaghetti, spathetti, pomodoro, pasta, history, sauce",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Audrey Hepburn"
+    }
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "PocketPasta",
+    "url": "https://pocketpasta.com",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://pocketpasta.com/logo.png"
+    }
+  },
+  "recipeCategory": "Dinner",
+  "recipeCuisine": "Italian",
+
+  "datePublished": "2018-06-08T23:54:54",
+  "recipeYield": "4 servings",
+  "recipeIngredient": [
+    "1 small onion, diced",
+    "2 cloves garlic, minced",
+    "2 carrots, diced small",
+    "2 stalks celery, diced small",
+    "2 large cans (28 oz. each) peeled Italian Roma tomatoes",
+    "1 large bunch fresh basil, washed",
+    "2 tbsp extra virgin olive oil",
+    "1 lb. spaghetti pasta",
+    "Salt to taste"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "Dice the carrots, onion, and celery. Thinly slice half of the basil leaves. Set aside."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Heat the olive oil in a large pot over medium heat. Add the onion, carrots, celery, and garlic. Cook until softened but not brown."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Add in the whole basil leaves, garlic, and tomatoes. Bring the sauce to a simmer, cover, and cook for 45 minutes, stirring occasionally and breaking apart the larger tomatoes as they cook."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "After 45 minutes, or when the vegetables are tender, remove the sauce from the heat and let rest for 15 minutes."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "While the sauce is simmering, fill another large pot with water and bring to a boil. Add salt, if desired. Cook the spaghetti until al dente. Drain the pasta."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Taste the sauce and add salt, if desired. Serve pasta topped generously with sauce, and the reserved sliced basil leaves."
+    }
+  ]
+}

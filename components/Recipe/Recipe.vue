@@ -1,91 +1,167 @@
 <template>
   <div class="recipe">
-    <h1>{{ recipe.name }}</h1>
-    <p>{{ recipe.description }}</p>
+    <h1>{{ name }}</h1>
+    <p>
+      <span v-if="!showDescription">
+        <span>{{ truncate(description, 120) }}</span>
+        <b-link
+          v-if="description && description.length > 120"
+          class="text-primary"
+          @click.prevent="showDescription = !showDescription"
+          >Read more</b-link
+        >
+      </span>
+      <span v-if="showDescription">
+        <span>{{ description }}</span>
+        <b-link
+          class="text-primary"
+          @click.prevent="showDescription = !showDescription"
+          >Read less</b-link
+        >
+      </span>
+    </p>
 
-    <vue-plyr v-if="recipe.video && Array.isArray(recipe.video)">
+    <vue-plyr
+      v-if="video && video.embedUrl && video.embedUrl.includes('youtube')"
+    >
       <div
-        v-if="recipe.video[0].contentUrl.includes('youtube')"
         data-plyr-provider="youtube"
-        :data-plyr-embed-id="
-          recipe.video[0].contentUrl.split('/').slice(-1).pop()
-        "
+        :data-plyr-embed-id="video.embedUrl"
+        style="padding-top: 56.25%;"
       />
     </vue-plyr>
     <div v-else-if="imageData && imageData.url">
       <b-img-lazy
         :src="imageData.url"
         class="img-fluid mx-auto d-block"
-        :alt="recipe.name"
+        :alt="name"
         throttle="100"
         itemprop="image"
         :width="640"
         :height="360"
+        fluid
+        xfluid-grow
       />
     </div>
-    <!-- <p>Author: {{ recipe.author }}</p> -->
-    <!-- <p>Published: {{ recipe.datePublished }}</p> -->
+    <!-- <p>Author: {{ author }}</p> -->
+    <!-- <p>Published: {{ datePublished }}</p> -->
 
-    <share class="py-4" />
-
-    <p>
-      <!-- <span>Makes:</span> -->
-      <number-text :text="recipe.recipeYield" />
-    </p>
-    <section v-if="recipe.recipeIngredient">
-      <h2>Ingredients:</h2>
-      <ol class="list-group-flush pl-0">
-        <li
-          v-for="ingredient in recipe.recipeIngredient"
-          :key="ingredient"
-          class="list-group-item"
-        >
-          <fraction-text :text="ingredient" />
-        </li>
-      </ol>
+    <section>
+      <b-row>
+        <b-col>
+          <v-chip label readonly style="background: none; padding: 0;">
+            <b-form-rating
+              id="rating"
+              :value="aggregateRating.ratingValue"
+              readonly
+              inline
+              no-border
+              style="background: none;"
+              variant="primary"
+              name="rating"
+              aria-label="rating"
+            />
+          </v-chip>
+          <v-chip label style="background: none;"
+            ><number-text :text="recipeYield"
+          /></v-chip>
+          <v-chip v-if="suitableForDiet" label style="background: none;">
+            {{
+              suitableForDiet.replace(/https:\/\/schema.org\/(.*?)Diet/, '$1')
+            }}
+          </v-chip>
+          <v-chip
+            label
+            style="background: none; overflow: visible; padding: 0;"
+          >
+            <share class="d-inline-block" />
+          </v-chip>
+        </b-col>
+      </b-row>
     </section>
+    <b-row>
+      <b-col md="6">
+        <b-card v-if="recipeIngredient" no-body tag="section" class="mb-4">
+          <b-card-header header-tag="header" class="p-1 text-left">
+            <b-button
+              v-b-toggle:collapse-ingredient
+              block
+              variant="none"
+              squared
+              class="text-left"
+              ><h2>Ingredients</h2></b-button
+            >
+          </b-card-header>
+          <b-collapse id="collapse-ingredient" visible>
+            <b-card-body>
+              <ol class="list-group-flush pl-0 mb-0">
+                <li
+                  v-for="ingredient in recipeIngredient"
+                  :key="ingredient"
+                  class="list-group-item"
+                >
+                  {{ ingredient }}
+                  <!-- <fraction-text :text="ingredient" /> -->
+                </li>
+              </ol>
+            </b-card-body>
+          </b-collapse>
+        </b-card>
+      </b-col>
+      <b-col md="6">
+        <b-card v-if="recipeInstructions" no-body tag="section" class="mb-4">
+          <b-card-header header-tag="header" class="p-1">
+            <b-button
+              v-b-toggle:collapse-instructions
+              block
+              variant="none"
+              squared
+              class="text-left"
+              ><h2>Instructions</h2></b-button
+            >
+          </b-card-header>
+          <b-collapse id="collapse-instructions" visible>
+            <b-card-body>
+              <ol
+                v-if="Array.isArray(recipeInstructions)"
+                class="list-group-flush pl-0 mb-0"
+              >
+                <li
+                  v-for="instruction in recipeInstructions"
+                  :key="instruction.text"
+                  class="list-group-item"
+                >
+                  {{ instruction.text }}
+                  <!-- <fraction-text :text="instruction.text" /> -->
+                </li>
+              </ol>
+              <p v-else>{{ recipeInstructions }}</p>
+            </b-card-body>
+          </b-collapse>
+        </b-card>
+      </b-col>
+    </b-row>
 
-    <section v-if="recipe.recipeInstructions">
-      <h2>Instructions:</h2>
-      <ol
-        v-if="Array.isArray(recipe.recipeInstructions)"
-        class="list-group-flush pl-0"
-      >
-        <li
-          v-for="instruction in recipe.recipeInstructions"
-          :key="instruction.text"
-          class="list-group-item"
-        >
-          <fraction-text :text="instruction.text" />
-        </li>
-      </ol>
-      <p v-else>{{ recipe.recipeInstructions }}</p>
-    </section>
-
-    <nutrition-fact-table
-      v-if="recipe.nutrition"
-      v-bind="recipe.nutrition"
-      class="my-4"
-    />
+    <nutrition-fact-table v-if="nutrition" v-bind="nutrition" class="my-4" />
 
     <section class="mb-2">
       <h2 class="h4">Tags</h2>
       <div class="list-group-flush">
         <keywords
-          :tags="recipe.keywords ? recipe.keywords.split(',') : []"
+          :tags="keywords ? keywords.split(',') : []"
           :label="null"
           class="list-group-item"
         />
       </div>
     </section>
 
-    <section v-if="recipe.sameAs">
+    <section v-if="sameAs">
       <h2 class="h4">References</h2>
       <div class="list-group-flush">
         <span
-          v-for="reference in recipe.sameAs"
+          v-for="reference in sameAs"
           :key="reference"
-          class="list-group-item"
+          class="list-group-item text-truncate"
         >
           <a :href="reference" target="_blank" itemprop="url" rel="noopener">{{
             reference
@@ -98,31 +174,61 @@
 
 <script>
 import NumberText from '@/components/text/NumberText';
-import FractionText from '@/components/FractionText';
+// import FractionText from '@/components/FractionText';
 import Keywords from '@/components/Keywords';
 import Share from '@/components/Social/Share';
 import NutritionFactTable from '@/components/Recipe/NutritionFactTable';
-
+import { BCollapse, VBToggle, BRow, BCol, BFormRating } from 'bootstrap-vue';
+import VuePlyr from 'vue-plyr/dist/vue-plyr.ssr.js';
+import 'plyr/dist/plyr.css';
+// import { VChip } from 'vuetify/lib';
 export default {
   components: {
     NumberText,
-    FractionText,
+    // FractionText,
     Keywords,
     Share,
     NutritionFactTable,
+    BCollapse,
+    BRow,
+    BCol,
+    VuePlyr,
+    BFormRating,
+    // VChip,
   },
+  directives: { 'b-toggle': VBToggle },
   inheritAttrs: false,
-  computed: {
-    recipe() {
-      // parse id param to int for id lookup
-      const id = parseInt(this.$route.params.id, 10);
-      const recipe = JSON.parse(
-        JSON.stringify(this.$store.getters.getRecipeById(id)),
-      );
-      recipe.recipeIngredient = [...new Set(recipe.recipeIngredient)];
-
-      return recipe;
+  props: {
+    name: { type: String, required: false },
+    description: { type: String, required: false },
+    suitableForDiet: { type: String, required: false },
+    author: { type: Object, required: false },
+    nutrition: { type: Object, required: false },
+    datePublished: { type: String, required: false },
+    keywords: { type: String, required: false },
+    recipeIngredient: { type: Array, required: false },
+    recipeInstructions: { type: Array, required: false },
+    prepTime: { type: String, required: false },
+    cookTime: { type: String, required: false },
+    totalTime: { type: String, required: false },
+    video: { type: Object, required: false },
+    recipeYield: { type: String, required: false },
+    recipeCategory: { type: String, required: false },
+    recipeCuisine: { type: String, required: false },
+    image: { type: [Array, String], required: false },
+    sameAs: { type: Array, required: false },
+    aggregateRating: {
+      type: Object,
+      default: () => ({
+        '@type': 'AggregateRating',
+        ratingValue: 4.93,
+        ratingCount: 1,
+      }),
     },
+    // updatedAt: { type: Date, default: () => new Date() },
+  },
+  data: () => ({ showDescription: false }),
+  computed: {
     imageData() {
       function cloudinaryify(image) {
         if (!image.startsWith('https://res.cloudinary.com')) {
@@ -131,43 +237,46 @@ export default {
           return image;
         }
       }
-      if (this.recipe.image) {
+      if (this.image) {
         if (
-          typeof this.recipe.image === 'object' &&
-          this.recipe.image !== null &&
-          !Array.isArray(this.recipe.image)
+          typeof this.image === 'object' &&
+          this.image !== null &&
+          !Array.isArray(this.image)
         ) {
-          const { url, width, height } = this.recipe.image;
+          const { url, width, height } = this.image;
           return { url: cloudinaryify(url), width, height };
-        } else if (Array.isArray(this.recipe.image)) {
-          return { url: cloudinaryify(this.recipe.image[0]) };
+        } else if (Array.isArray(this.image)) {
+          return { url: cloudinaryify(this.image[0]) };
         } else {
-          return { url: cloudinaryify(this.recipe.image) };
+          return { url: cloudinaryify(this.image) };
         }
       } else {
         return null;
+      }
+    },
+    linkData() {
+      return {
+        ...this.$props,
+        '@type': 'Recipe',
+        // dateModified: this.updatedAt.toISOString(),
+        // updatedAt: undefined,
+      };
+    },
+  },
+
+  methods: {
+    truncate(text, stop = 150, clamp = '...') {
+      if (text) {
+        return `${text.slice(0, stop)}${stop < text.length ? clamp : ''}`;
       }
     },
   },
 
   head() {
     return {
-      title: this.recipe.name,
-      meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content: this.recipe.description,
-        },
-        {
-          hid: 'og:description',
-          name: 'og:description',
-          content: this.recipe.description,
-        },
-      ],
       script: [
         {
-          json: this.recipe,
+          json: this.linkData,
           type: 'application/ld+json',
         },
       ],

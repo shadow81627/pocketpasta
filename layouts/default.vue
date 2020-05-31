@@ -1,5 +1,5 @@
 <template>
-  <v-app id="inspire" :dark="isDark" clipped-left>
+  <v-app id="inspire" clipped-left>
     <v-navigation-drawer
       v-model="drawer"
       :clipped="$vuetify.breakpoint.lgAndUp"
@@ -82,6 +82,7 @@
         /></v-app-bar-nav-icon>
         <b-img-lazy
           :src="$icon(32)"
+          :srcset="`${$icon(32)} 1x, ${$icon(64)} 2x`"
           width="32"
           height="32"
           class="rounded"
@@ -95,7 +96,7 @@
       <user-menu />
     </v-app-bar>
     <v-content>
-      <nuxt style="min-height: 100vh;" />
+      <nuxt style="min-height: 100vh;" keep-alive />
       <the-footer />
     </v-content>
   </v-app>
@@ -158,17 +159,53 @@ export default {
         },
       ];
     },
-    isDark() {
-      return this.$store.getters.getCurrentTheme().dark;
-    },
+  },
+  mounted() {
+    this.$vuetify.theme.dark = this.$store.getters.getThemeById(
+      this.$colorMode.value,
+    ).dark;
   },
   mounted() {
     this.loading = false;
   },
   head() {
+    const i18nSeo = this.$nuxtI18nSeo();
     return {
+      htmlAttrs: {
+        ...i18nSeo.htmlAttrs,
+      },
+      meta: [
+        ...i18nSeo.meta,
+        {
+          hid: 'og:url',
+          name: 'og:url',
+          property: 'og:url',
+          content: `${this.baseUrl}${this.$route.path}`,
+        },
+      ],
       link: [
-        this.$store.getters.getCurrentTheme(),
+        ...i18nSeo.link,
+        {
+          hid: 'theme-preload',
+          rel: 'preload',
+          as: 'style',
+          href: this.$store.getters.getThemeById(this.$colorMode.value).href,
+          skip:
+            this.$store.getters.getThemeById(this.$colorMode.value).href ===
+              '' ||
+            !this.$store.getters.getThemeById(this.$colorMode.value).href,
+        },
+        {
+          // stylesheet is valid in the body, needed because default css is loading first this allows theme to overide default.
+          pbody: true,
+          hid: 'theme',
+          rel: 'stylesheet',
+          href: this.$store.getters.getThemeById(this.$colorMode.value).href,
+          skip:
+            this.$store.getters.getThemeById(this.$colorMode.value).href ===
+              '' ||
+            !this.$store.getters.getThemeById(this.$colorMode.value).href,
+        },
         {
           hid: 'canonical',
           rel: 'canonical',
@@ -182,7 +219,6 @@ export default {
 
 <style>
 .brand {
-  font-family: 'Comic Neue', sans-serif;
   font-size: 1.5rem;
   font-weight: 400;
   vertical-align: middle;
