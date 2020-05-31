@@ -215,7 +215,7 @@ export default {
     recipeYield: { type: String, required: false },
     recipeCategory: { type: String, required: false },
     recipeCuisine: { type: String, required: false },
-    image: { type: [Array, String], required: false },
+    image: { type: [Array, String, Object], required: false },
     sameAs: { type: Array, required: false },
     aggregateRating: {
       type: Object,

@@ -15,7 +15,7 @@
   "bugs": "https://github.com/shadow81627/pocketpasta/issues",
   "homepage": "https://pocketpasta.com",
   "scripts": {
-    "dev": "nuxt",
+    "dev": "cross-env NODE_ENV=development nuxt",
     "build": "nuxt build --modern && nuxt generate --modern",
     "analyze": "nuxt build --analyze",
     "serve:lhci": "cross-env HOST=localhost PORT=3000 npm run start",
