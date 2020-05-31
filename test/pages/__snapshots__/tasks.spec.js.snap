@@ -5,7 +5,7 @@ exports[`Tasks page renders properly 1`] = `
   <b-row-stub tag=\\"div\\">
     <b-col-stub tag=\\"div\\">
       <h1>Tasks</h1>
-      <v-data-table-stub items=\\"[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]\\" options=\\"[object Object]\\" sortby=\\"isNew,done,due\\" sortdesc=\\"isNew\\" customsort=\\"function sortItems(items, sortBy, sortDesc, locale, customSorters) {
+      <v-data-table-stub items=\\"[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object],[object Object]\\" options=\\"[object Object]\\" sortby=\\"isNew,xdone,xdue\\" sortdesc=\\"isNew\\" customsort=\\"function sortItems(items, sortBy, sortDesc, locale, customSorters) {
           if (sortBy === null || !sortBy.length) return items;
           var stringCollator = new Intl.Collator(locale, {
             sensitivity: 'accent',
@@ -69,7 +69,7 @@ exports[`Tasks page renders properly 1`] = `
           return groups;
         }\\" locale=\\"en-US\\" search=\\"\\" customfilter=\\"function defaultFilter(value, search, item) {
           return value != null &amp;&amp; search != null &amp;&amp; typeof value !== 'boolean' &amp;&amp; value.toString().toLocaleLowerCase().indexOf(search.toLocaleLowerCase()) !== -1;
-        }\\" serveritemslength=\\"-1\\" itemkey=\\"id\\" value=\\"\\" expanded=\\"\\" mobilebreakpoint=\\"600\\" noresultstext=\\"$vuetify.dataIterator.noResultsText\\" nodatatext=\\"$vuetify.noDataText\\" loadingtext=\\"$vuetify.dataIterator.loadingText\\" selectablekey=\\"isSelectable\\" headers=\\"[object Object],[object Object],[object Object],[object Object]\\" expandicon=\\"$expand\\" xshow-select=\\"\\" xitem-key=\\"name\\" class=\\"elevation-1\\"></v-data-table-stub>
+        }\\" serveritemslength=\\"-1\\" itemkey=\\"id\\" value=\\"\\" expanded=\\"\\" mobilebreakpoint=\\"0\\" noresultstext=\\"$vuetify.dataIterator.noResultsText\\" nodatatext=\\"$vuetify.noDataText\\" loadingtext=\\"$vuetify.dataIterator.loadingText\\" selectablekey=\\"isSelectable\\" headers=\\"[object Object],[object Object],[object Object],[object Object]\\" expandicon=\\"$expand\\" xitem-key=\\"name\\" class=\\"elevation-1\\"></v-data-table-stub>
       <v-btn-stub tag=\\"button\\" activeclass=\\"\\" bottom=\\"true\\" fixed=\\"true\\" right=\\"true\\" fab=\\"true\\" type=\\"button\\" class=\\"bg-primary\\">
         <v-icon-stub>M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z</v-icon-stub>
       </v-btn-stub>
