@@ -73,7 +73,13 @@
       class="hidden-print-only"
     >
       <v-toolbar-title style="width: 256px;" class="ml-0 pl-3">
-        <v-app-bar-nav-icon aria-label="menu" @click.stop="drawer = !drawer" />
+        <v-app-bar-nav-icon aria-label="menu" @click.stop="drawer = !drawer"
+          ><v-progress-circular
+            v-if="loading"
+            indeterminate
+            size="24"
+            width="2"
+        /></v-app-bar-nav-icon>
         <b-img-lazy
           :src="$icon(32)"
           :srcset="`${$icon(32)} 1x, ${$icon(64)} 2x`"
@@ -108,6 +114,7 @@ export default {
   },
   data() {
     return {
+      loading: true,
       dialog: false,
       drawer: false,
     };
@@ -157,6 +164,9 @@ export default {
     this.$vuetify.theme.dark = this.$store.getters.getThemeById(
       this.$colorMode.value,
     ).dark;
+    if (process.client) {
+      this.loading = false;
+    }
   },
   head() {
     const i18nSeo = this.$nuxtI18nSeo();
