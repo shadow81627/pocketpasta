@@ -164,9 +164,9 @@ export default {
     this.$vuetify.theme.dark = this.$store.getters.getThemeById(
       this.$colorMode.value,
     ).dark;
-  },
-  mounted() {
-    this.loading = false;
+    if (process.client) {
+      this.loading = false;
+    }
   },
   head() {
     const i18nSeo = this.$nuxtI18nSeo();
