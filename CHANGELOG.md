@@ -1,5 +1,11 @@
 # Releases
 
+## [0.33.0](https://github.com/shadow81627/pocketpasta/compare/v0.32.4...v0.33.0) (2020-06-01)
+
+### Features
+
+- **nav:** add initial load spinner ([#1147](https://github.com/shadow81627/pocketpasta/issues/1147)) ([1c10a57](https://github.com/shadow81627/pocketpasta/commit/1c10a574f83c8551cd7d2101d9e50cc7cc74260a))
+
 ## [0.32.4](https://github.com/shadow81627/pocketpasta/compare/v0.32.3...v0.32.4) (2020-05-30)
 
 ### Bug Fixes
