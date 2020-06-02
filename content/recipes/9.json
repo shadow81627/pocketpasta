@@ -1,6 +1,7 @@
 {
   "@context": "http://schema.org",
   "@type": "Recipe",
+  "suitableForDiet": "https://schema.org/VeganDiet",
   "author": { "name": "Lauren Miyashiro", "@type": "Person" },
   "datePublished": "2017-08-30T22:02:00Z",
   "headline": "Mushroom Risotto",
