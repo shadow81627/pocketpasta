@@ -12,7 +12,7 @@
           v-if="imageData"
           xfluid
           center
-          blank
+          blank-src
           :src="imageData.url"
           rounded="0"
           height="128"

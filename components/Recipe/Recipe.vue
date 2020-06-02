@@ -33,7 +33,6 @@
     <div v-else-if="imageData && imageData.url">
       <b-img-lazy
         :src="imageData.url"
-        class="img-fluid mx-auto d-block"
         :alt="name"
         throttle="100"
         itemprop="image"
@@ -41,6 +40,8 @@
         :height="360"
         fluid
         xfluid-grow
+        blank-src
+        center
       />
     </div>
     <!-- <p>Author: {{ author }}</p> -->
