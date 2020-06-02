@@ -36,9 +36,7 @@ export default {
       .skip((this.page - 1) * this.limit)
       .limit(this.limit)
       .fetch();
-
     this.total = (await this.$content('recipes').only(['id']).fetch()).length;
-
     this.pages = this.page + (this.list.length === this.limit ? 1 : 0);
   },
   fetchOnServer: false,

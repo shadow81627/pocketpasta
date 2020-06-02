@@ -59,7 +59,6 @@ const factory = () =>
       NuxtLink: RouterLinkStub,
     },
     localVue,
-    asyncData: [{ ...recipe, id: 1 }, { id: 2 }, { id: 3 }, { id: 4 }],
   });
 
 describe('recipes', () => {
@@ -70,6 +69,13 @@ describe('recipes', () => {
   test('mounts properly', () => {
     const wrapper = factory();
     expect(wrapper.isVueInstance()).toBeTruthy();
+  });
+
+  test('fetch', () => {
+    const wrapper = factory();
+    expect(wrapper.vm.$options.fetch()).toBeTruthy();
+    expect(wrapper.vm.$data.total).toBe(null);
+    expect(wrapper.vm.$data.list).toBeTruthy();
   });
 
   test('renders properly', () => {
