@@ -1,5 +1,11 @@
 # Releases
 
+## [0.33.1](https://github.com/shadow81627/pocketpasta/compare/v0.33.0...v0.33.1) (2020-06-02)
+
+### Bug Fixes
+
+- **list-card:** add blank-src for image ([#1146](https://github.com/shadow81627/pocketpasta/issues/1146)) ([7c91f31](https://github.com/shadow81627/pocketpasta/commit/7c91f311297ca8724ccd2e1c96e531002b3b44cc))
+
 ## [0.33.0](https://github.com/shadow81627/pocketpasta/compare/v0.32.4...v0.33.0) (2020-06-01)
 
 ### Features
