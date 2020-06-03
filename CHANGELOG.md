@@ -1,5 +1,11 @@
 # Releases
 
+## [0.33.4](https://github.com/shadow81627/pocketpasta/compare/v0.33.3...v0.33.4) (2020-06-03)
+
+### Bug Fixes
+
+- **deps:** update dependency firebaseui to v4.5.1 ([a01fa79](https://github.com/shadow81627/pocketpasta/commit/a01fa79fa693a3ef1b6be113abd37a994ef14447))
+
 ## [0.33.3](https://github.com/shadow81627/pocketpasta/compare/v0.33.2...v0.33.3) (2020-06-03)
 
 ### Bug Fixes
