@@ -8,13 +8,14 @@
         use-router
         align="center"
         :number-of-pages="pages"
-        :total-rows="pages"
-        :per-page="1"
+        :total-rows="total"
+        :per-page="limit"
         size="lg"
       />
       <button v-show="false" @click="$fetch">Refresh</button>
-      <span v-show="false">Pending: {{ $fetchState.pending }}</span>
-      <span v-show="$fetchState.error">Error: {{ $fetchState.error }}</span>
+      <div v-show="false">Total: {{ total }}</div>
+      <div v-show="false">Pending: {{ $fetchState.pending }}</div>
+      <div v-show="$fetchState.error">Error: {{ $fetchState.error }}</div>
     </div>
   </div>
 </template>
@@ -35,11 +36,11 @@ export default {
       .skip((this.page - 1) * this.limit)
       .limit(this.limit)
       .fetch();
-
+    this.total = (await this.$content('recipes').only(['id']).fetch()).length;
     this.pages = this.page + (this.list.length === this.limit ? 1 : 0);
   },
   fetchOnServer: false,
-  data: () => ({ list: [], limit: 5, pages: 1 }),
+  data: () => ({ list: [], limit: 5, pages: 1, total: null }),
   computed: {
     page: {
       get() {
