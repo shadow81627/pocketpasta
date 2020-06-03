@@ -1,5 +1,11 @@
 # Releases
 
+## [0.33.3](https://github.com/shadow81627/pocketpasta/compare/v0.33.2...v0.33.3) (2020-06-03)
+
+### Bug Fixes
+
+- **recipes:** total records count ([#1154](https://github.com/shadow81627/pocketpasta/issues/1154)) ([c7dab55](https://github.com/shadow81627/pocketpasta/commit/c7dab554770bee537ba77a076d6473e419c7ffdd))
+
 ## [0.33.2](https://github.com/shadow81627/pocketpasta/compare/v0.33.1...v0.33.2) (2020-06-02)
 
 ### Bug Fixes
