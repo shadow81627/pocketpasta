@@ -78,6 +78,12 @@ describe('recipes', () => {
     expect(wrapper.vm.$data.list).toBeTruthy();
   });
 
+  test('linkGen', () => {
+    const wrapper = factory();
+    expect(wrapper.vm.linkGen(1)).toBe('?');
+    expect(wrapper.vm.linkGen(2)).toBe('?page=2');
+  });
+
   test('renders properly', () => {
     const wrapper = factory();
     expect(wrapper.html()).toMatchSnapshot();
