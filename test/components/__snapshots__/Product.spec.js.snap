@@ -8,7 +8,7 @@ exports[`Product renders properly 1`] = `
       <p itemprop=\\"description\\">Annalisa Italian Peeled Tomatoes In Tomato Juice, 100% Italian Tomatoes.</p>
     </div>
     <div class=\\"col-12 col-md-6\\">
-      <b-img-lazy-stub src=\\"https://cdn0.woolworths.media/content/wowproductimages/large/037810.jpg\\" alt=\\"Peeled Tomatoes\\" width=\\"540\\" height=\\"540\\" blanksrc=\\"\\" blankcolor=\\"transparent\\" fluid=\\"true\\" offset=\\"360\\" throttle=\\"100\\" itemprop=\\"image\\" class=\\"img-fluid mx-auto d-block\\"></b-img-lazy-stub>
+      <b-img-lazy-stub src=\\"https://res.cloudinary.com/pocketpasta/image/fetch/w_540,h_540,ar_1:1,c_fill,f_auto,q_auto/https://cdn0.woolworths.media/content/wowproductimages/large/037810.jpg\\" alt=\\"Peeled Tomatoes\\" width=\\"540\\" height=\\"540\\" blanksrc=\\"\\" blankcolor=\\"transparent\\" fluid=\\"true\\" offset=\\"360\\" throttle=\\"100\\" itemprop=\\"image\\" class=\\"img-fluid mx-auto d-block\\"></b-img-lazy-stub>
     </div>
   </div>
   <!---->
