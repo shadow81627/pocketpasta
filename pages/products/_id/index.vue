@@ -17,7 +17,7 @@ export default {
     return { id, item };
   },
   data() {
-    return { id: this.$route.params.id };
+    return { id: this.$route.params.id, item: {} };
   },
   head() {
     return {
