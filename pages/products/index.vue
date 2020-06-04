@@ -29,7 +29,7 @@ export default {
         {
           hid: 'canonical',
           rel: 'canonical',
-          href: 'https://pocketpasta.com/products',
+          href: `${this.baseUrl}/products`,
         },
       ],
     };

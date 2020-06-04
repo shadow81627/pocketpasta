@@ -21,11 +21,29 @@ export default {
   },
   head() {
     return {
+      title: this.item.name,
       link: [
         {
           hid: 'canonical',
           rel: 'canonical',
-          href: `https://pocketpasta.com/products/${this.id}`,
+          href: `${this.baseUrl}/products/${this.id}`,
+        },
+      ],
+      meta: [
+        {
+          hid: 'og:title',
+          name: 'og:title',
+          content: this.item.name,
+        },
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.item.description,
+        },
+        {
+          hid: 'og:description',
+          name: 'og:description',
+          content: this.item.description,
         },
       ],
     };

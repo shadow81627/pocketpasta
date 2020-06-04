@@ -8,7 +8,7 @@
       <div class="col-12 col-md-6">
         <b-img-lazy
           v-if="image"
-          :src="image"
+          :src="cloudinaryify(image)"
           class="img-fluid mx-auto d-block"
           :alt="name"
           throttle="100"
@@ -131,6 +131,15 @@ export default {
         // dateModified: this.updatedAt.toISOString(),
         // updatedAt: undefined,
       };
+    },
+  },
+  methods: {
+    cloudinaryify(image) {
+      if (!image.startsWith('https://res.cloudinary.com')) {
+        return `https://res.cloudinary.com/pocketpasta/image/fetch/w_540,h_540,ar_1:1,c_fill,f_auto,q_auto/${image}`;
+      } else {
+        return image;
+      }
     },
   },
   head() {
