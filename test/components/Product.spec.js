@@ -56,6 +56,9 @@ describe('Product', () => {
       mocks: {
         $route,
       },
+      propsData: {
+        ...product,
+      },
     });
 
   test('mounts properly', () => {
@@ -66,6 +69,11 @@ describe('Product', () => {
   test('renders properly', () => {
     const wrapper = factory();
     expect(wrapper.html()).toMatchSnapshot();
+  });
+
+  test('linkData', () => {
+    const wrapper = factory();
+    expect(wrapper.vm.linkData).toBeTruthy();
   });
 
   test('head', () => {

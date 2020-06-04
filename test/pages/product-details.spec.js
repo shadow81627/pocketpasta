@@ -60,6 +60,12 @@ describe('product detail', () => {
     const wrapper = factory();
     expect(wrapper.html()).toMatchSnapshot();
   });
+
+  test('fetch', () => {
+    const wrapper = factory();
+    expect(wrapper.vm.$options.asyncData()).toBeTruthy();
+  });
+
   test('head', () => {
     expect(Page.head()).toBeTruthy();
   });
