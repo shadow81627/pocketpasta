@@ -71,19 +71,6 @@ describe('recipes', () => {
     expect(wrapper.isVueInstance()).toBeTruthy();
   });
 
-  test('fetch', () => {
-    const wrapper = factory();
-    expect(wrapper.vm.$options.fetch()).toBeTruthy();
-    expect(wrapper.vm.$data.total).toBe(null);
-    expect(wrapper.vm.$data.list).toBeTruthy();
-  });
-
-  test('linkGen', () => {
-    const wrapper = factory();
-    expect(wrapper.vm.linkGen(1)).toBe('?');
-    expect(wrapper.vm.linkGen(2)).toBe('?page=2');
-  });
-
   test('renders properly', () => {
     const wrapper = factory();
     expect(wrapper.html()).toMatchSnapshot();

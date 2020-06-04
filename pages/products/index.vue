@@ -1,7 +1,11 @@
 <template>
   <div class="container">
     <list
-      v-bind="{ heading: $t('products.heading'), list, layout: 'columns' }"
+      v-bind="{
+        heading: $t('products.heading'),
+        layout: 'columns',
+        collection: 'products',
+      }"
     />
   </div>
 </template>
@@ -11,11 +15,6 @@ import List from '@/components/List/List';
 export default {
   components: {
     List,
-  },
-  computed: {
-    list() {
-      return this.$store.state.products;
-    },
   },
   head() {
     return {
