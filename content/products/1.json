@@ -1,0 +1,73 @@
+{
+  "id": 1,
+  "@context": "http://schema.org",
+  "@type": "Product",
+  "image": "https://cdn0.woolworths.media/content/wowproductimages/large/037810.jpg",
+  "name": "Peeled Tomatoes",
+  "brand": "Annalisa",
+  "description": "Annalisa Italian Peeled Tomatoes In Tomato Juice, 100% Italian Tomatoes.",
+  "offers": {
+    "@type": "AggregateOffer",
+    "highPrice": "1.40",
+    "lowPrice": "1.40",
+    "offerCount": "2",
+    "weight": { "value": 400, "unitText": "grams", "unitCode": "GRM" },
+    "offers": [
+      {
+        "@type": "Offer",
+        "offeredBy": "Coles",
+        "name": "Peeled Tomatoes",
+        "description": "Italian peeled tomatoes in tomato juice",
+        "brand": "Annalisa",
+        "price": "1.40",
+        "itemCondition": "http://www.schema.org/NewCondition",
+        "seller": {
+          "@type": "Organization",
+          "name": "Coles Online"
+        },
+        "priceCurrency": "AUD",
+        "url": "https://shop.coles.com.au/a/a-national/product/annalisa-tomatoes-peeled"
+      },
+      {
+        "@type": "Offer",
+        "offeredBy": "Woolworths",
+        "name": "Peeled Tomatoes",
+        "description": "Italian peeled tomatoes in tomato juice",
+        "brand": "Annalisa",
+        "price": "1.40",
+        "itemCondition": "http://www.schema.org/NewCondition",
+        "priceCurrency": "AUD",
+        "url": "https://www.woolworths.com.au/shop/productdetails/37810/annalisa-tomatoes-peeled"
+      }
+    ]
+  },
+  "additionalProperty": [
+    {
+      "@type": "PropertyValue",
+      "name": "ingredients",
+      "value": ["Peeled tomatoes", "tomato juice"]
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "servingSize",
+      "value": "3.0"
+    },
+    {
+      "@type": "PropertyValue",
+      "name": "Country Of Origin",
+      "value": "Product of Italy"
+    },
+    {
+      "@type": "NutritionInformation",
+      "name": "nutrition",
+      "calories": "108 kJ",
+      "carbohydrateContent": "4.1 g",
+      "proteinContent": "1.5 g",
+      "fatContent": "0.5 g",
+      "saturatedFatContent": "0 g",
+      "sodiumContent": "19 mg",
+      "sugarContent": "3.9 g",
+      "servingSize": "133 g"
+    }
+  ]
+}
