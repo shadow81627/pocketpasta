@@ -1,5 +1,11 @@
 # Releases
 
+## [0.33.5](https://github.com/shadow81627/pocketpasta/compare/v0.33.4...v0.33.5) (2020-06-04)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxtjs/sitemap to v2.3.1 ([7cee6fc](https://github.com/shadow81627/pocketpasta/commit/7cee6fcb003b3d437f7abafd6538bf66d4313df3))
+
 ## [0.33.4](https://github.com/shadow81627/pocketpasta/compare/v0.33.3...v0.33.4) (2020-06-03)
 
 ### Bug Fixes
