@@ -6,7 +6,9 @@
         "http://localhost:3000/",
         "http://localhost:3000/about",
         "http://localhost:3000/recipes",
-        "http://localhost:3000/recipes/2"
+        "http://localhost:3000/recipes/2",
+        "http://localhost:3000/products",
+        "http://localhost:3000/products/2"
       ]
     },
     "assert": {
