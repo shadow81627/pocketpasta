@@ -97,8 +97,8 @@
     </v-app-bar>
     <v-content>
       <nuxt style="min-height: 100vh;" keep-alive />
-      <the-footer />
     </v-content>
+    <the-footer />
   </v-app>
 </template>
 
