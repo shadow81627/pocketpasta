@@ -261,9 +261,9 @@ module.exports = {
   ],
 
   buildModules: [
-    // Simple usage
     '@nuxtjs/vuetify',
     '@nuxtjs/color-mode',
+    '@nuxtjs/netlify-files',
   ],
 
   dotenv: {
