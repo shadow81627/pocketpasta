@@ -90,7 +90,9 @@ describe('Recipe', () => {
 
   test('imageData with cloudinary image does not modify url', () => {
     const wrapper = factory();
-    const image = 'https://res.cloudinary.com/pocketpasta/image/fetch/';
+    const image = {
+      url: 'https://res.cloudinary.com/pocketpasta/image/fetch/',
+    };
     wrapper.setProps({
       ...recipe,
       image,
