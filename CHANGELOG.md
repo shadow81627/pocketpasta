@@ -1,5 +1,11 @@
 # Releases
 
+## [0.33.6](https://github.com/shadow81627/pocketpasta/compare/v0.33.5...v0.33.6) (2020-06-05)
+
+### Bug Fixes
+
+- **deps:** update dependency firebase to v7.15.0 ([667649f](https://github.com/shadow81627/pocketpasta/commit/667649f0d343e9f324745414075b1e49db199c66))
+
 ## [0.33.5](https://github.com/shadow81627/pocketpasta/compare/v0.33.4...v0.33.5) (2020-06-04)
 
 ### Bug Fixes
