@@ -16,7 +16,10 @@ const pkg = require('./package');
 const HOST = process.env.HOST || '0.0.0.0';
 const PORT = process.env.PORT || '3000';
 const BASE_URL =
-  process.env.BASE_URL || `http${PORT === 433 ? 's' : ''}://${HOST}:${PORT}`;
+  process.env.BASE_URL ||
+  process.env.DEPLOY_URL ||
+  process.env.URL ||
+  `http${PORT === 433 ? 's' : ''}://${HOST}:${PORT}`;
 
 const routes = (callback) => {
   // axios
