@@ -1,5 +1,11 @@
 # Releases
 
+## [0.33.9](https://github.com/shadow81627/pocketpasta/compare/v0.33.8...v0.33.9) (2020-06-05)
+
+### Bug Fixes
+
+- **nutrition-facts:** fiber content hidden when empty ([#1168](https://github.com/shadow81627/pocketpasta/issues/1168)) ([44cc539](https://github.com/shadow81627/pocketpasta/commit/44cc539718cb35498ffd6088fc1dc3cebab9ec42))
+
 ## [0.33.8](https://github.com/shadow81627/pocketpasta/compare/v0.33.7...v0.33.8) (2020-06-05)
 
 ### Performance Improvements
