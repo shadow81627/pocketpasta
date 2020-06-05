@@ -1,5 +1,5 @@
 <template>
-  <v-footer class="hidden-print-only" height="auto">
+  <v-footer class="hidden-print-only" height="auto" inset>
     <div class="container-fluid">
       <v-row no-gutters>
         <v-col cols="auto">
