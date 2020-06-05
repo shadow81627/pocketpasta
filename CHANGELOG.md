@@ -1,5 +1,11 @@
 # Releases
 
+## [0.33.8](https://github.com/shadow81627/pocketpasta/compare/v0.33.7...v0.33.8) (2020-06-05)
+
+### Performance Improvements
+
+- **product:** srcset ([#1167](https://github.com/shadow81627/pocketpasta/issues/1167)) ([f8bd5ca](https://github.com/shadow81627/pocketpasta/commit/f8bd5ca72a69f2a640ede9d9de21cc72364d8805))
+
 ## [0.33.7](https://github.com/shadow81627/pocketpasta/compare/v0.33.6...v0.33.7) (2020-06-05)
 
 ### Performance Improvements
