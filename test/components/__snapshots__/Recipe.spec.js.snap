@@ -33,7 +33,7 @@ exports[`Recipe renders properly 1`] = `
     </b-col-stub>
   </b-row-stub>
   <!---->
-  <section class=\\"mb-2\\">
+  <section class=\\"mb-2 d-print-none\\">
     <h2 class=\\"h4\\">Tags</h2>
     <div class=\\"list-group-flush\\">
       <keywords-stub tags=\\"\\" class=\\"list-group-item\\"></keywords-stub>
