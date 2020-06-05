@@ -6,9 +6,15 @@
         <p itemprop="description">{{ description }}</p>
       </div>
       <div class="col-12 col-md-6">
-        <b-img-lazy
+        <b-img
           v-if="image"
           :src="cloudinaryify(image)"
+          :srcset="[
+            `${cloudinaryify(image, 110)} 110w`,
+            `${cloudinaryify(image, 220)} 220w`,
+            `${cloudinaryify(image, 540)} 540w`,
+            `${cloudinaryify(image, 1080)} 1080w`,
+          ]"
           class="img-fluid mx-auto d-block"
           :alt="name"
           throttle="100"
@@ -17,6 +23,7 @@
           itemprop="image"
           blank-src
           fluid
+          sizes="(max-width: 768px) 50vw, 100vw"
         />
       </div>
     </div>
@@ -134,9 +141,9 @@ export default {
     },
   },
   methods: {
-    cloudinaryify(image) {
+    cloudinaryify(image, width = 540) {
       if (!image.startsWith('https://res.cloudinary.com')) {
-        return `https://res.cloudinary.com/pocketpasta/image/fetch/w_540,h_540,ar_1:1,c_fill,f_auto,q_auto/${image}`;
+        return `https://res.cloudinary.com/pocketpasta/image/fetch/w_${width},h_${width},ar_1:1,c_fill,f_auto,q_auto/${image}`;
       } else {
         return image;
       }

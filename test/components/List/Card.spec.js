@@ -28,6 +28,35 @@ describe('List Card', () => {
     expect(Component.methods.truncate('text', 2, '....')).toEqual('te....');
   });
 
+  test('imageData with cloudinary image does not modify url', () => {
+    const wrapper = factory();
+    const image = {
+      url: 'https://res.cloudinary.com/pocketpasta/image/fetch/',
+    };
+    wrapper.setProps({
+      ...recipe,
+      image,
+    });
+    expect(wrapper.vm.imageData).toBeTruthy();
+  });
+
+  test('imageData convet to cloudinaty url', () => {
+    const wrapper = factory();
+    wrapper.setProps({
+      ...recipe,
+    });
+    expect(wrapper.vm.imageData).toBeTruthy();
+  });
+
+  test('imageData handle array', () => {
+    const wrapper = factory();
+    wrapper.setProps({
+      ...recipe,
+      image: ['https://res.cloudinary.com/pocketpasta/image/fetch/'],
+    });
+    expect(wrapper.vm.imageData).toBeTruthy();
+  });
+
   test('renders properly', () => {
     const wrapper = factory();
     expect(wrapper.html()).toMatchSnapshot();

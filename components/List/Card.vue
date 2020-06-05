@@ -10,10 +10,11 @@
       <div style="min-width: 128px;">
         <b-card-img-lazy
           v-if="imageData"
-          xfluid
+          fluid
           center
           blank-src
-          :src="imageData.url"
+          :src="imageData.src"
+          :srcset="imageData.srcset"
           rounded="0"
           height="128"
           width="128"
@@ -51,7 +52,16 @@ export default {
     imageData() {
       function cloudinaryify(image) {
         if (!image.startsWith('https://res.cloudinary.com')) {
-          return `https://res.cloudinary.com/pocketpasta/image/fetch/fl_progressive/w_128,h_128,c_fill,f_auto,q_auto/${image}`;
+          return {
+            src: `https://res.cloudinary.com/pocketpasta/image/fetch/fl_progressive/w_128,h_128,c_fill,f_auto,q_auto/${image}`,
+            srcset: [
+              `https://res.cloudinary.com/pocketpasta/image/fetch/fl_progressive/w_128,h_128,c_fill,f_auto,q_auto/${image} 1x`,
+              `https://res.cloudinary.com/pocketpasta/image/fetch/fl_progressive/w_192,h_192,c_fill,f_auto,q_auto/${image} 1.5x`,
+              `https://res.cloudinary.com/pocketpasta/image/fetch/fl_progressive/w_256,h_256,c_fill,f_auto,q_auto/${image} 2x`,
+              `https://res.cloudinary.com/pocketpasta/image/fetch/fl_progressive/w_320,h_320,c_fill,f_auto,q_auto/${image} 2.5x`,
+              `https://res.cloudinary.com/pocketpasta/image/fetch/fl_progressive/w_384,h_384,c_fill,f_auto,q_auto/${image} 3x`,
+            ],
+          };
         } else {
           return image;
         }
@@ -62,12 +72,12 @@ export default {
           this.image !== null &&
           !Array.isArray(this.image)
         ) {
-          const { url, width, height } = this.image;
-          return { url: cloudinaryify(url), width, height };
+          const { url } = this.image;
+          return cloudinaryify(url);
         } else if (Array.isArray(this.image)) {
-          return { url: cloudinaryify(this.image[0]) };
+          return cloudinaryify(this.image[0]);
         } else {
-          return { url: cloudinaryify(this.image) };
+          return cloudinaryify(this.image);
         }
       } else {
         return null;
