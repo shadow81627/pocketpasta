@@ -1,0 +1,79 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Product",
+  "name": "Oreo Family Pack Original  370g",
+  "description": "Oreo Original Cookies is a choc cookie sandwich with sweet vanilla creme. Share more Oreo Cookies than ever before with family and friends with the convenient Oreo 370g sharing pack. 39 Oreo Cookies in a plastic tray with a resealable seal for freshnesss. They'll be sure to be a hit at your next event. The pack made for sharing!",
+  "image": "https://cdn0.woolworths.media/content/wowproductimages/large/073032.jpg",
+  "brand": {
+    "@context": "http://schema.org",
+    "@type": "Organization",
+    "name": "oreo"
+  },
+  "offers": {
+    "@type": "AggregateOffer",
+    "highPrice": "4.50",
+    "lowPrice": "4.50",
+    "offerCount": "2",
+    "offers": [
+      {
+        "@type": "Offer",
+        "url": "https://shop.coles.com.au/a/national/product/oreo-family-pack-biscuits-creme-original",
+        "priceCurrency": "AUD",
+        "price": "4.50",
+        "itemCondition": "https://schema.org/NewCondition",
+        "availability": "https://schema.org/InStock",
+        "offeredBy": "Coles",
+        "seller": {
+          "@type": "Organization",
+          "name": "Coles Online"
+        }
+      },
+      {
+        "@context": "http://schema.org",
+        "@type": "Offer",
+        "url": "https://www.woolworths.com.au/shop/productdetails/73032/oreo-family-pack-original",
+        "potentialAction": {
+          "@context": "http://schema.org",
+          "@type": "BuyAction"
+        },
+        "availability": "http://schema.org/InStock",
+        "itemCondition": "http://schema.org/NewCondition",
+        "price": 4.5,
+        "priceCurrency": "AUD",
+        "offeredBy": "Woolworths",
+        "seller": {
+          "@type": "Organization",
+          "name": "Woolworths"
+        }
+      }
+    ]
+  },
+  "gtin13": "9300650430440",
+  "sku": "73032",
+  "additionalProperty": [
+    {
+      "name": "Size",
+      "value": "370g"
+    },
+    {
+      "name": "Unit Price",
+      "value": "$1.22 per 100G"
+    },
+    {
+      "name": "Country Of Origin",
+      "value": "Made in Bahrian"
+    },
+    {
+      "@type": "NutritionInformation",
+      "name": "nutrition",
+      "servingSize": "100 g",
+      "calories": "2020 kJ",
+      "proteinContent": "4.7 g",
+      "fatContent": "19.6g",
+      "saturatedFatContent": "11.3g",
+      "carbohydrateContent": "70.6 g",
+      "sugarContent": "41.9g",
+      "sodiumContent": "554mg"
+    }
+  ]
+}
