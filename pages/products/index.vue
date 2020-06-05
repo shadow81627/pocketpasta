@@ -22,7 +22,7 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: 'Find the best palce to buy pasta ingredients.',
+          content: 'Find the best place to buy pasta ingredients.',
         },
       ],
       link: [
