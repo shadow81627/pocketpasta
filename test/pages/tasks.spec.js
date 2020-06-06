@@ -11,6 +11,9 @@ localVue.use(BootstrapVuePlugin);
 const factory = () =>
   shallowMount(Component, {
     localVue,
+    mocks: {
+      $fetchState: {},
+    },
   });
 
 describe('Tasks page', () => {

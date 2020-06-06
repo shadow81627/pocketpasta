@@ -5,15 +5,16 @@
         <h1>Tasks</h1>
         <v-data-table
           :headers="headers"
-          :items="desserts"
+          :items="items"
           :search="search"
           :sort-by="['isNew', 'xdone', 'xdue']"
           :sort-desc="['isNew']"
           multi-sort
           class="elevation-1"
           :group-by.sync="groupBy"
-          xitem-key="name"
+          item-key="id"
           mobile-breakpoint="0"
+          :loading="$fetchState.pending"
         >
           <template v-slot:top>
             <v-toolbar flat>
@@ -97,7 +98,7 @@
           </template>
 
           <template v-slot:item.done="{ item }">
-            <v-simple-checkbox v-model="item.done" />
+            <v-simple-checkbox v-model="item.done" @input="save(item)" />
           </template>
 
           <template v-slot:item.name="{ item }">
@@ -119,6 +120,7 @@
                 (value) => {
                   item.isNew = false;
                   item.name = value;
+                  save(item);
                 }
               "
             />
@@ -126,7 +128,10 @@
               v-else
               :return-value.sync="item.name"
               large
-              @save="item.isNew = false"
+              @save="
+                item.isNew = false;
+                save(item);
+              "
             >
               {{ item.name }}
               <template v-slot:input>
@@ -142,26 +147,28 @@
             </v-edit-dialog>
           </template>
 
-          <template v-slot:item.due="props">
-            <v-edit-dialog :return-value.sync="props.item.due" large>
+          <template v-slot:item.due="{ item }">
+            <v-edit-dialog
+              :return-value.sync="item.due"
+              large
+              @save="save(item)"
+            >
               <v-chip
                 :color="
-                  !props.item.done &&
-                  DateTime.fromISO(props.item.due) <
+                  !item.done &&
+                  DateTime.fromISO(item.due) <
                     DateTime.local().minus({ days: 1 })
                     ? 'red'
                     : null
                 "
                 >{{
-                  DateTime.fromISO(props.item.due).toLocaleString(
-                    DateTime.DATE_FULL,
-                  )
+                  DateTime.fromISO(item.due).toLocaleString(DateTime.DATE_FULL)
                 }}</v-chip
               >
               &nbsp;
-              {{ DateTime.fromISO(props.item.due).toRelativeCalendar() }}
+              {{ DateTime.fromISO(item.due).toRelativeCalendar() }}
               <template v-slot:input>
-                <v-date-picker v-model="props.item.due" scrollable />
+                <v-date-picker v-model="item.due" scrollable />
               </template>
             </v-edit-dialog>
           </template>
@@ -211,6 +218,11 @@ export default {
   directives: {
     Ripple,
   },
+  async fetch() {
+    const { docs } = await this.$fireStore.collection(this.collection).get();
+    this.items = docs.map((doc) => ({ ...doc.data(), id: doc.id }));
+  },
+  fetchOnServer: false,
   data: () => ({
     DateTime,
     groupBy: null,
@@ -242,7 +254,7 @@ export default {
         width: 1,
       },
     ],
-    desserts: [],
+    items: [],
     editedIndex: -1,
     editedItem: {
       name: '',
@@ -262,6 +274,9 @@ export default {
     formTitle() {
       return this.editedIndex === -1 ? 'New Item' : 'Edit Item';
     },
+    collection() {
+      return `users/${this.$auth.user.uid}/tasks`;
+    },
   },
 
   watch: {
@@ -269,77 +284,23 @@ export default {
       val || this.close();
     },
   },
-
-  created() {
-    this.initialize();
-  },
-
   methods: {
-    initialize() {
-      this.desserts = [
-        {
-          name: 'Take out trash',
-          done: true,
-          due: DateTime.local().plus({ days: 7 }).toISODate(),
-        },
-        {
-          name: 'Washup',
-          done: false,
-          due: DateTime.local().minus({ days: 7 }).toISODate(),
-        },
-        {
-          name: 'Eclair',
-          done: false,
-          due: DateTime.local().plus({ days: 7 }).toISODate(),
-        },
-        {
-          name: 'Cupcake',
-          done: false,
-          due: DateTime.local().plus({ days: 3 }).toISODate(),
-        },
-        {
-          name: 'Gingerbread',
-          done: false,
-          due: DateTime.local().minus({ days: 3 }).toISODate(),
-        },
-        {
-          name: 'Jelly bean',
-          done: true,
-          due: DateTime.local().toISODate(),
-        },
-        {
-          name: 'Lollipop',
-          done: false,
-          due: DateTime.local().toISODate(),
-        },
-        {
-          name: 'Honeycomb',
-          done: false,
-          due: DateTime.local().toISODate(),
-        },
-        {
-          name: 'Donut',
-          done: false,
-          due: DateTime.local().toISODate(),
-        },
-        {
-          name: 'KitKat',
-          done: false,
-          due: DateTime.local().toISODate(),
-        },
-      ];
-    },
-
     editItem(item) {
-      this.editedIndex = this.desserts.indexOf(item);
+      this.editedIndex = this.items.indexOf(item);
       this.editedItem = Object.assign({}, item);
       this.dialog = true;
     },
 
-    deleteItem(item) {
-      const index = this.desserts.indexOf(item);
-      confirm('Are you sure you want to delete this item?') &&
-        this.desserts.splice(index, 1);
+    async deleteItem(item) {
+      const index = this.items.indexOf(item);
+      const confirmed = confirm('Are you sure you want to delete this item?');
+      if (confirmed) {
+        this.items.splice(index, 1);
+        await this.$fireStore
+          .collection(`users/${this.$auth.user.uid}/tasks`)
+          .doc(item.id)
+          .delete();
+      }
     },
 
     close() {
@@ -349,16 +310,27 @@ export default {
         this.editedIndex = -1;
       });
     },
-    create() {
-      this.desserts.push(Object.assign({}, this.defaultItem));
+    async create() {
+      const response = await this.$fireStore
+        .collection(`users/${this.$auth.user.uid}/tasks`)
+        .add(this.defaultItem);
+
+      const task = { ...this.defaultItem, id: response.id };
+      this.items.push(task);
+      console.log(task);
     },
-    save() {
-      if (this.editedIndex > -1) {
-        Object.assign(this.desserts[this.editedIndex], this.editedItem);
-      } else {
-        this.desserts.push(this.editedItem);
-      }
-      this.close();
+    save(item) {
+      this.$fireStore
+        .collection(`users/${this.$auth.user.uid}/tasks`)
+        .doc(item.id)
+        .set(item)
+        .then(function (response) {
+          console.log('Document successfully written!', response);
+        })
+        .catch(function (error) {
+          console.error('Error writing document: ', error);
+        })
+        .finally(() => this.close());
     },
   },
   head() {
