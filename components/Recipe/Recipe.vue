@@ -182,7 +182,14 @@ import NumberText from '@/components/text/NumberText';
 import Keywords from '@/components/Keywords';
 import Share from '@/components/Social/Share';
 import NutritionFactTable from '@/components/Recipe/NutritionFactTable';
-import { BCollapse, VBToggle, BRow, BCol, BFormRating } from 'bootstrap-vue';
+import {
+  BCollapse,
+  VBToggle,
+  BRow,
+  BCol,
+  BFormRating,
+  BLink,
+} from 'bootstrap-vue';
 import VuePlyr from 'vue-plyr/dist/vue-plyr.ssr.js';
 import 'plyr/dist/plyr.css';
 // import { VChip } from 'vuetify/lib';
@@ -198,6 +205,7 @@ export default {
     BCol,
     VuePlyr,
     BFormRating,
+    BLink,
     // VChip,
   },
   directives: { 'b-toggle': VBToggle },
@@ -219,7 +227,7 @@ export default {
     recipeYield: { type: String, required: false },
     recipeCategory: { type: String, required: false },
     recipeCuisine: { type: String, required: false },
-    image: { type: [Array, String, Object], required: false },
+    image: { type: [Object, Array, String], required: false },
     sameAs: { type: Array, required: false },
     aggregateRating: {
       type: Object,

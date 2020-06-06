@@ -24,7 +24,7 @@ export default {
     Recipe,
   },
   async asyncData(context) {
-    const id = parseInt(context.route.params.id, 10);
+    const id = context.route.params.id;
     const recipe = await context.$content('recipes', id).fetch();
     return { id, recipe };
   },
