@@ -271,9 +271,9 @@ export default {
   }),
 
   computed: {
-    formTitle() {
-      return this.editedIndex === -1 ? 'New Item' : 'Edit Item';
-    },
+    // formTitle() {
+    //   return this.editedIndex === -1 ? 'New Item' : 'Edit Item';
+    // },
     collection() {
       return `users/${this.$auth.user.uid}/tasks`;
     },
@@ -285,21 +285,18 @@ export default {
     },
   },
   methods: {
-    editItem(item) {
-      this.editedIndex = this.items.indexOf(item);
-      this.editedItem = Object.assign({}, item);
-      this.dialog = true;
-    },
+    // editItem(item) {
+    //   this.editedIndex = this.items.indexOf(item);
+    //   this.editedItem = Object.assign({}, item);
+    //   this.dialog = true;
+    // },
 
     async deleteItem(item) {
       const index = this.items.indexOf(item);
       const confirmed = confirm('Are you sure you want to delete this item?');
       if (confirmed) {
         this.items.splice(index, 1);
-        await this.$fireStore
-          .collection(`users/${this.$auth.user.uid}/tasks`)
-          .doc(item.id)
-          .delete();
+        await this.$fireStore.collection(this.collection).doc(item.id).delete();
       }
     },
 
@@ -310,29 +307,21 @@ export default {
         this.editedIndex = -1;
       });
     },
+
     async create() {
       const response = await this.$fireStore
-        .collection(`users/${this.$auth.user.uid}/tasks`)
+        .collection(this.collection)
         .add(this.defaultItem);
-
       const task = { ...this.defaultItem, id: response.id };
       this.items.push(task);
-      console.log(task);
     },
-    save(item) {
-      this.$fireStore
-        .collection(`users/${this.$auth.user.uid}/tasks`)
-        .doc(item.id)
-        .set(item)
-        .then(function (response) {
-          console.log('Document successfully written!', response);
-        })
-        .catch(function (error) {
-          console.error('Error writing document: ', error);
-        })
-        .finally(() => this.close());
+
+    async save(item) {
+      await this.$fireStore.collection(this.collection).doc(item.id).set(item);
+      this.close();
     },
   },
+
   head() {
     return {
       title: 'Tasks',
