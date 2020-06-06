@@ -12,7 +12,7 @@ export default {
     Product,
   },
   async asyncData(context) {
-    const id = parseInt(context.route.params.id, 10);
+    const id = context.route.params.id;
     const item = await context.$content('products', id).fetch();
     return { id, item };
   },
