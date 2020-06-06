@@ -1,5 +1,11 @@
 # Releases
 
+## [0.33.12](https://github.com/shadow81627/pocketpasta/compare/v0.33.11...v0.33.12) (2020-06-06)
+
+### Bug Fixes
+
+- **recipes:** use string id ([#1175](https://github.com/shadow81627/pocketpasta/issues/1175)) ([854d0d7](https://github.com/shadow81627/pocketpasta/commit/854d0d7ac12a9ad96a6040cff7a63029e23e1aa6))
+
 ## [0.33.11](https://github.com/shadow81627/pocketpasta/compare/v0.33.10...v0.33.11) (2020-06-05)
 
 ### Bug Fixes
