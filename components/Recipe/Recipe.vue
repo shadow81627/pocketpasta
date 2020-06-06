@@ -30,17 +30,21 @@
         style="padding-top: 56.25%;"
       />
     </vue-plyr>
-    <div v-else-if="imageData && imageData.url">
-      <b-img-lazy
-        :src="imageData.url"
-        class="img-fluid mx-auto d-block"
+    <div v-else-if="imageData && imageData.src">
+      <b-img
+        :xsrc="imageData.src"
+        :srcset="imageData.srcset"
         :alt="name"
         throttle="100"
         itemprop="image"
         :width="640"
         :height="360"
         fluid
-        xfluid-grow
+        fluid-grow
+        blank-src
+        center
+        sizes="(max-width: 1140px) 100vw, 1140px"
+        block
       />
     </div>
     <!-- <p>Author: {{ author }}</p> -->
@@ -144,7 +148,7 @@
 
     <nutrition-fact-table v-if="nutrition" v-bind="nutrition" class="my-4" />
 
-    <section class="mb-2">
+    <section class="mb-2 d-print-none">
       <h2 class="h4">Tags</h2>
       <div class="list-group-flush">
         <keywords
@@ -155,7 +159,7 @@
       </div>
     </section>
 
-    <section v-if="sameAs">
+    <section v-if="sameAs" class="d-print-none">
       <h2 class="h4">References</h2>
       <div class="list-group-flush">
         <span
@@ -232,9 +236,21 @@ export default {
     imageData() {
       function cloudinaryify(image) {
         if (!image.startsWith('https://res.cloudinary.com')) {
-          return `https://res.cloudinary.com/pocketpasta/image/fetch/w_640,h_360,ar_16:9,c_fill,f_auto,q_auto/${image}`;
+          return {
+            src: `https://res.cloudinary.com/pocketpasta/image/fetch/fl_progressive/w_640,h_360,ar_16:9,c_fill,f_auto,q_auto/${image}`,
+            srcset: [
+              `https://res.cloudinary.com/pocketpasta/image/fetch/fl_progressive/w_320,h_180,ar_16:9,c_fill,f_auto,q_auto/${image} 320w`,
+              `https://res.cloudinary.com/pocketpasta/image/fetch/fl_progressive/w_640,h_360,ar_16:9,c_fill,f_auto,q_auto/${image} 640w`,
+              `https://res.cloudinary.com/pocketpasta/image/fetch/fl_progressive/w_768,h_432,ar_16:9,c_fill,f_auto,q_auto/${image} 768w`,
+              `https://res.cloudinary.com/pocketpasta/image/fetch/fl_progressive/w_1024,h_576,ar_16:9,c_fill,f_auto,q_auto/${image} 1024w`,
+              `https://res.cloudinary.com/pocketpasta/image/fetch/fl_progressive/w_1280,h_720,ar_16:9,c_fill,f_auto,q_auto/${image} 1280w`,
+              `https://res.cloudinary.com/pocketpasta/image/fetch/fl_progressive/w_1366,h_768,ar_16:9,c_fill,f_auto,q_auto/${image} 1366w`,
+            ],
+          };
         } else {
-          return image;
+          return {
+            src: image,
+          };
         }
       }
       if (this.image) {
@@ -243,12 +259,12 @@ export default {
           this.image !== null &&
           !Array.isArray(this.image)
         ) {
-          const { url, width, height } = this.image;
-          return { url: cloudinaryify(url), width, height };
+          const { url } = this.image;
+          return cloudinaryify(url);
         } else if (Array.isArray(this.image)) {
-          return { url: cloudinaryify(this.image[0]) };
+          return cloudinaryify(this.image[0]);
         } else {
-          return { url: cloudinaryify(this.image) };
+          return cloudinaryify(this.image);
         }
       } else {
         return null;

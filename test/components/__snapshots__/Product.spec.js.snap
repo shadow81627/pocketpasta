@@ -8,10 +8,9 @@ exports[`Product renders properly 1`] = `
       <p itemprop=\\"description\\">Annalisa Italian Peeled Tomatoes In Tomato Juice, 100% Italian Tomatoes.</p>
     </div>
     <div class=\\"col-12 col-md-6\\">
-      <b-img-lazy-stub src=\\"https://cdn0.woolworths.media/content/wowproductimages/large/037810.jpg\\" alt=\\"Peeled Tomatoes\\" blankcolor=\\"transparent\\" offset=\\"360\\" throttle=\\"100\\" itemprop=\\"image\\" class=\\"img-fluid mx-auto d-block\\"></b-img-lazy-stub>
+      <b-img-stub src=\\"https://res.cloudinary.com/pocketpasta/image/fetch/w_540,h_540,ar_1:1,c_fill,f_auto,q_auto/https://cdn0.woolworths.media/content/wowproductimages/large/037810.jpg\\" srcset=\\"https://res.cloudinary.com/pocketpasta/image/fetch/w_110,h_110,ar_1:1,c_fill,f_auto,q_auto/https://cdn0.woolworths.media/content/wowproductimages/large/037810.jpg 110w,https://res.cloudinary.com/pocketpasta/image/fetch/w_220,h_220,ar_1:1,c_fill,f_auto,q_auto/https://cdn0.woolworths.media/content/wowproductimages/large/037810.jpg 220w,https://res.cloudinary.com/pocketpasta/image/fetch/w_540,h_540,ar_1:1,c_fill,f_auto,q_auto/https://cdn0.woolworths.media/content/wowproductimages/large/037810.jpg 540w,https://res.cloudinary.com/pocketpasta/image/fetch/w_1080,h_1080,ar_1:1,c_fill,f_auto,q_auto/https://cdn0.woolworths.media/content/wowproductimages/large/037810.jpg 1080w\\" sizes=\\"(max-width: 768px) 50vw, 100vw\\" alt=\\"Peeled Tomatoes\\" width=\\"540\\" height=\\"540\\" fluid=\\"true\\" blankcolor=\\"transparent\\" throttle=\\"100\\" itemprop=\\"image\\" blank-src=\\"\\" class=\\"img-fluid mx-auto d-block\\"></b-img-stub>
     </div>
   </div>
-  <share-stub class=\\"py-4\\"></share-stub>
   <!---->
   <!---->
   <div itemprop=\\"offers\\" itemscope=\\"itemscope\\" itemtype=\\"http://schema.org/AggregateOffer\\">
@@ -20,6 +19,6 @@ exports[`Product renders properly 1`] = `
     <div itemprop=\\"offers\\" itemscope=\\"itemscope\\" itemtype=\\"http://schema.org/Offer\\" class=\\"list-group-flush\\"><span class=\\"list-group-item\\"><a href=\\"https://www.woolworths.com.au/shop/productdetails/37810/annalisa-tomatoes-peeled\\" target=\\"_blank\\" itemprop=\\"url\\" rel=\\"noopener\\"><span itemprop=\\"offeredBy\\">Woolworths</span></a> <span itemprop=\\"price\\">A$1.40</span></span></div>
   </div>
   <nutrition-fact-table-stub calories=\\"108 kJ\\" carbohydratecontent=\\"4.1 g\\" fatcontent=\\"0.5 g\\" proteincontent=\\"1.5 g\\" saturatedfatcontent=\\"0 g\\" servingsize=\\"133 g\\" sodiumcontent=\\"19 mg\\" sugarcontent=\\"3.9 g\\" name=\\"nutrition\\" class=\\"my-4\\"></nutrition-fact-table-stub>
-  <keywords-stub label=\\"Tags\\" tags=\\"\\"></keywords-stub>
+  <!---->
 </div>"
 `;

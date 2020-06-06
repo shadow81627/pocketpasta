@@ -56,6 +56,9 @@ describe('Product', () => {
       mocks: {
         $route,
       },
+      propsData: {
+        ...product,
+      },
     });
 
   test('mounts properly', () => {
@@ -66,6 +69,24 @@ describe('Product', () => {
   test('renders properly', () => {
     const wrapper = factory();
     expect(wrapper.html()).toMatchSnapshot();
+  });
+
+  test('linkData', () => {
+    const wrapper = factory();
+    expect(wrapper.vm.linkData).toBeTruthy();
+  });
+
+  test('imageData with cloudinary image does not modify url', () => {
+    const wrapper = factory();
+    const image = 'https://res.cloudinary.com/pocketpasta/image/fetch/';
+    expect(wrapper.vm.cloudinaryify(image)).toEqual(image);
+  });
+
+  test('imageData convet to cloudinaty url', () => {
+    const wrapper = factory();
+    expect(wrapper.vm.cloudinaryify(product.image)).toEqual(
+      `https://res.cloudinary.com/pocketpasta/image/fetch/w_540,h_540,ar_1:1,c_fill,f_auto,q_auto/${product.image}`,
+    );
   });
 
   test('head', () => {

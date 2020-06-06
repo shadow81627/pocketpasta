@@ -38,8 +38,10 @@
                 <span itemprop="calories">{{ calories }}</span>
               </th>
               <td>
-                Calories from Fat
-                <span itemprop="fiberContent">{{ fiberContent }}</span>
+                <span v-if="fiberContent">
+                  <span class="d-none d-md-inline">Calories from Fat</span>
+                  <span itemprop="fiberContent">{{ fiberContent }}</span>
+                </span>
               </td>
             </tr>
             <tr class="thick-row">

@@ -1,5 +1,77 @@
 # Releases
 
+## [0.33.11](https://github.com/shadow81627/pocketpasta/compare/v0.33.10...v0.33.11) (2020-06-05)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxtjs/axios to v5.11.0 ([647b86c](https://github.com/shadow81627/pocketpasta/commit/647b86c84f8cbfc38859f416fc8c10c49dadd236))
+
+## [0.33.10](https://github.com/shadow81627/pocketpasta/compare/v0.33.9...v0.33.10) (2020-06-05)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxt/content to v1.3.1 ([625ac58](https://github.com/shadow81627/pocketpasta/commit/625ac58014fc0a1900d530c5914870ce55c48d50))
+
+## [0.33.9](https://github.com/shadow81627/pocketpasta/compare/v0.33.8...v0.33.9) (2020-06-05)
+
+### Bug Fixes
+
+- **nutrition-facts:** fiber content hidden when empty ([#1168](https://github.com/shadow81627/pocketpasta/issues/1168)) ([44cc539](https://github.com/shadow81627/pocketpasta/commit/44cc539718cb35498ffd6088fc1dc3cebab9ec42))
+
+## [0.33.8](https://github.com/shadow81627/pocketpasta/compare/v0.33.7...v0.33.8) (2020-06-05)
+
+### Performance Improvements
+
+- **product:** srcset ([#1167](https://github.com/shadow81627/pocketpasta/issues/1167)) ([f8bd5ca](https://github.com/shadow81627/pocketpasta/commit/f8bd5ca72a69f2a640ede9d9de21cc72364d8805))
+
+## [0.33.7](https://github.com/shadow81627/pocketpasta/compare/v0.33.6...v0.33.7) (2020-06-05)
+
+### Performance Improvements
+
+- **recipe:** add srcset ([#1165](https://github.com/shadow81627/pocketpasta/issues/1165)) ([4e169b1](https://github.com/shadow81627/pocketpasta/commit/4e169b1a433609faf5a563ab8d2769fa1109eb58))
+
+## [0.33.6](https://github.com/shadow81627/pocketpasta/compare/v0.33.5...v0.33.6) (2020-06-05)
+
+### Bug Fixes
+
+- **deps:** update dependency firebase to v7.15.0 ([667649f](https://github.com/shadow81627/pocketpasta/commit/667649f0d343e9f324745414075b1e49db199c66))
+
+## [0.33.5](https://github.com/shadow81627/pocketpasta/compare/v0.33.4...v0.33.5) (2020-06-04)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxtjs/sitemap to v2.3.1 ([7cee6fc](https://github.com/shadow81627/pocketpasta/commit/7cee6fcb003b3d437f7abafd6538bf66d4313df3))
+
+## [0.33.4](https://github.com/shadow81627/pocketpasta/compare/v0.33.3...v0.33.4) (2020-06-03)
+
+### Bug Fixes
+
+- **deps:** update dependency firebaseui to v4.5.1 ([a01fa79](https://github.com/shadow81627/pocketpasta/commit/a01fa79fa693a3ef1b6be113abd37a994ef14447))
+
+## [0.33.3](https://github.com/shadow81627/pocketpasta/compare/v0.33.2...v0.33.3) (2020-06-03)
+
+### Bug Fixes
+
+- **recipes:** total records count ([#1154](https://github.com/shadow81627/pocketpasta/issues/1154)) ([c7dab55](https://github.com/shadow81627/pocketpasta/commit/c7dab554770bee537ba77a076d6473e419c7ffdd))
+
+## [0.33.2](https://github.com/shadow81627/pocketpasta/compare/v0.33.1...v0.33.2) (2020-06-02)
+
+### Bug Fixes
+
+- **deps:** update dependency nuxt-i18n to v6.12.2 ([bea0f81](https://github.com/shadow81627/pocketpasta/commit/bea0f81f55014017d886c55ad45e1308cac40fc4))
+
+## [0.33.1](https://github.com/shadow81627/pocketpasta/compare/v0.33.0...v0.33.1) (2020-06-02)
+
+### Bug Fixes
+
+- **list-card:** add blank-src for image ([#1146](https://github.com/shadow81627/pocketpasta/issues/1146)) ([7c91f31](https://github.com/shadow81627/pocketpasta/commit/7c91f311297ca8724ccd2e1c96e531002b3b44cc))
+
+## [0.33.0](https://github.com/shadow81627/pocketpasta/compare/v0.32.4...v0.33.0) (2020-06-01)
+
+### Features
+
+- **nav:** add initial load spinner ([#1147](https://github.com/shadow81627/pocketpasta/issues/1147)) ([1c10a57](https://github.com/shadow81627/pocketpasta/commit/1c10a574f83c8551cd7d2101d9e50cc7cc74260a))
+
 ## [0.32.4](https://github.com/shadow81627/pocketpasta/compare/v0.32.3...v0.32.4) (2020-05-30)
 
 ### Bug Fixes

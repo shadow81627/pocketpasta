@@ -24,8 +24,8 @@ exports[`Recipe renders properly 1`] = `
           <tr>
             <th colspan=\\"2\\"><b>Calories</b> <span itemprop=\\"calories\\"></span></th>
             <td>
-              Calories from Fat
-              <span itemprop=\\"fiberContent\\"></span></td>
+              <!---->
+            </td>
           </tr>
           <tr class=\\"thick-row\\">
             <td colspan=\\"3\\" class=\\"small-info\\"><b>% Daily Value*</b></td>
