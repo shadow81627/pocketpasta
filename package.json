@@ -15,7 +15,7 @@
   "bugs": "https://github.com/shadow81627/pocketpasta/issues",
   "homepage": "https://pocketpasta.com",
   "scripts": {
-    "dev": "nuxt",
+    "dev": "cross-env NODE_ENV=development nuxt",
     "build": "nuxt build --modern && nuxt generate --modern",
     "analyze": "nuxt build --analyze",
     "serve:lhci": "cross-env HOST=localhost PORT=3000 npm run start",
@@ -55,6 +55,7 @@
     "firebaseui": "4.5.1",
     "github-markdown-css": "4.0.0",
     "koa": "2.12.0",
+    "luxon": "^1.24.1",
     "nuxt": "2.12.2",
     "nuxt-i18n": "6.12.2",
     "plyr": "3.6.2",

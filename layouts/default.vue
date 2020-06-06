@@ -153,6 +153,11 @@ export default {
           route: { name: 'shoppinglist' },
         },
         {
+          icon: 'calendar-check',
+          text: 'Tasks',
+          route: { name: 'tasks' },
+        },
+        {
           icon: 'settings',
           text: this.$t('layout.navigation.settings'),
           route: { name: 'settings' },
