@@ -1,5 +1,11 @@
 # Releases
 
+## [0.34.0](https://github.com/shadow81627/pocketpasta/compare/v0.33.12...v0.34.0) (2020-06-06)
+
+### Features
+
+- add tasks page ([#1107](https://github.com/shadow81627/pocketpasta/issues/1107)) ([ed982d8](https://github.com/shadow81627/pocketpasta/commit/ed982d8edfd195bc0f84419e102ec3ac10f8e002))
+
 ## [0.33.12](https://github.com/shadow81627/pocketpasta/compare/v0.33.11...v0.33.12) (2020-06-06)
 
 ### Bug Fixes
