@@ -2,12 +2,12 @@
   "@context": "http://schema.org/",
   "@type": "Recipe",
   "suitableForDiet": "https://schema.org/VeganDiet",
-  "name": "Vegan Spanish Beans with Tomatoes",
+  "name": "Spanish Beans with Tomatoes",
   "author": {
     "@type": "Person",
     "name": "Kate Hackworthy | Veggie Desserts"
   },
-  "description": "These vegan gluten-free Spanish beans are packed with flavour, but are so easy to make in less than 20 minutes with just 7 ingredients! Perfect served with rice or fresh bread and only 125 calories per serving.",
+  "description": "These Spanish beans are packed with flavour, but are so easy to make in less than 20 minutes with just 7 ingredients! Perfect served with rice or fresh bread and only 125 calories per serving.",
   "datePublished": "2018-11-18T15:00:26+00:00",
   "image": [
     "https://veggiedesserts.com/wp-content/uploads/2016/06/SpanishWhiteBeans.jpg"
@@ -66,7 +66,7 @@
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "5",
-    "ratingCount": "47"
+    "ratingCount": "1"
   },
   "recipeCategory": "Main Meals",
   "recipeCuisine": "Spanish",
