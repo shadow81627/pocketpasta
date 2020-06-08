@@ -47,7 +47,7 @@
     "@nuxtjs/markdownit": "1.2.9",
     "@nuxtjs/pwa": "2.6.0",
     "@nuxtjs/recaptcha": "0.6.2",
-    "@nuxtjs/sentry": "4.0.3",
+    "@nuxtjs/sentry": "4.1.2",
     "@nuxtjs/sitemap": "2.3.1",
     "bootstrap-vue": "2.15.0",
     "cross-env": "7.0.2",
