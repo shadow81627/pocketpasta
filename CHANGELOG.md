@@ -1,5 +1,11 @@
 # Releases
 
+## [0.34.3](https://github.com/shadow81627/pocketpasta/compare/v0.34.2...v0.34.3) (2020-06-09)
+
+### Bug Fixes
+
+- **deps:** pin dependency luxon to 1.24.1 ([#1176](https://github.com/shadow81627/pocketpasta/issues/1176)) ([bd61a23](https://github.com/shadow81627/pocketpasta/commit/bd61a23ac0c6fd5e855ba690a9cd953748323727))
+
 ## [0.34.2](https://github.com/shadow81627/pocketpasta/compare/v0.34.1...v0.34.2) (2020-06-08)
 
 ### Bug Fixes
