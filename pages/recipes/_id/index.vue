@@ -24,9 +24,13 @@ export default {
     Recipe,
   },
   async asyncData(context) {
-    const id = context.route.params.id;
-    const recipe = await context.$content('recipes', id).fetch();
-    return { id, recipe };
+    try {
+      const id = context.route.params.id;
+      const recipe = await context.$content('recipes', id).fetch();
+      return { id, recipe };
+    } catch {
+      context.error({ statusCode: 404 });
+    }
   },
   data() {
     return { id: 0, recipe: {} };
@@ -59,10 +63,6 @@ export default {
         },
       ],
     };
-  },
-  validate({ params }) {
-    // Must be a number
-    return /^\d+$/.test(params.id);
   },
 };
 </script>

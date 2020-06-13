@@ -1,6 +1,4 @@
 {
-  "@context": "http://schema.org/",
-  "@type": "Recipe",
   "name": "Dick Chmeller's Salad Lasagna",
   "suitableForDiet": "https://schema.org/VeganDiet",
   "image": "https://web.archive.org/web/20190502152625im_/https://media4.s-nbcnews.com/j/newscms/2019_18/1430923/salad-lasagna-today-main-190429_f69fca6a6a0e8f39c1c7fbebcc0575fe.fit-760w.jpg",

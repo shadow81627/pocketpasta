@@ -148,7 +148,7 @@
 
     <nutrition-fact-table v-if="nutrition" v-bind="nutrition" class="my-4" />
 
-    <section class="mb-2 d-print-none">
+    <section v-if="tags" class="mb-2 d-print-none">
       <h2 class="h4">Tags</h2>
       <div class="list-group-flush">
         <keywords
@@ -282,6 +282,7 @@ export default {
       return {
         ...this.$props,
         '@type': 'Recipe',
+        '@context': 'http://schema.org/',
         // dateModified: this.updatedAt.toISOString(),
         // updatedAt: undefined,
       };

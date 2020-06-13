@@ -1,6 +1,4 @@
 {
-  "@context": "http://schema.org/",
-  "@type": "Recipe",
   "name": "Hot and Sour Soup with Bok Choy",
   "suitableForDiet": "https://schema.org/VeganDiet",
   "author": { "@type": "Person", "name": "Alissa" },

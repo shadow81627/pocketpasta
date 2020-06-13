@@ -1,6 +1,4 @@
 {
-  "@context": "http://schema.org/",
-  "@type": "Recipe",
   "name": "Audrey Hepburn’s Spaghetti Al Pomodoro Recipe",
   "suitableForDiet": "https://schema.org/VeganDiet",
   "image": "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/162208.jpg",
