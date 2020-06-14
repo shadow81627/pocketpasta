@@ -114,7 +114,7 @@ axios.get(url).then(({ data }) => {
           .value(),
         undefined,
         2,
-      ),
+      ) + '\n',
     );
   }
 });
