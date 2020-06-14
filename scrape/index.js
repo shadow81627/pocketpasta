@@ -62,8 +62,13 @@ axios.get(url).then(({ data }) => {
         linkData.additionalProperty = linkData.additionalProperty
           ? linkData.additionalProperty
           : [];
-        if (nutrition && nutrition.length) {
-          linkData.additionalProperty.push(nutrition);
+        if (nutrition && Object.keys(nutrition).length) {
+          linkData.additionalProperty.push({
+            ...nutrition,
+            '@type': 'NutritionInformation',
+            name: 'nutrition',
+            servingSize: '100 g',
+          });
         }
         if (!linkData.offers) {
           linkData.offers = { price };

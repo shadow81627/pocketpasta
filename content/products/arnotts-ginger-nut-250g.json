@@ -7,7 +7,10 @@
       "saturatedFatContent": "4.7g",
       "carbohydrateContent": "79.0g",
       "sugarContent": "42.7g",
-      "sodiumContent": "367mg"
+      "sodiumContent": "367mg",
+      "@type": "NutritionInformation",
+      "name": "nutrition",
+      "servingSize": "100 g"
     }
   ],
   "brand": {
