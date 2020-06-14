@@ -1,16 +1,16 @@
 {
   "additionalProperty": [
     {
-      "calories": "1780kJ",
-      "proteinContent": "4.2g",
-      "fatContent": "9.4g",
-      "saturatedFatContent": "4.7g",
-      "carbohydrateContent": "79.0g",
-      "sugarContent": "42.7g",
-      "sodiumContent": "367mg",
       "@type": "NutritionInformation",
+      "calories": "1780kJ",
+      "carbohydrateContent": "79.0g",
+      "fatContent": "9.4g",
       "name": "nutrition",
-      "servingSize": "100 g"
+      "proteinContent": "4.2g",
+      "saturatedFatContent": "4.7g",
+      "servingSize": "100 g",
+      "sodiumContent": "367mg",
+      "sugarContent": "42.7g"
     }
   ],
   "brand": {
@@ -25,15 +25,15 @@
   "offers": {
     "offers": [
       {
-        "@type": "Offer",
         "@context": "http://schema.org",
-        "url": "https://www.woolworths.com.au/shop/productdetails/384568/arnott-s-ginger-nut",
-        "price": "",
+        "@type": "Offer",
         "offeredBy": "Woolworths",
+        "price": "",
         "seller": {
           "@type": "Organization",
           "name": "Woolworths"
-        }
+        },
+        "url": "https://www.woolworths.com.au/shop/productdetails/384568/arnott-s-ginger-nut"
       }
     ]
   },

@@ -3,7 +3,8 @@ const axios = require('axios');
 const cheerio = require('cheerio');
 const slugify = require('slugify');
 const he = require('he');
-const _ = require('lodash');
+// const _ = require('lodash');
+const sortobject = require('deep-sort-object');
 
 const renameKeys = (keysMap, obj) =>
   Object.keys(obj).reduce(
@@ -107,16 +108,12 @@ axios.get(url).then(({ data }) => {
         strict: true, // strip special characters except replacement, defaults to `false`
       })}.json`,
       JSON.stringify(
-        _({
+        sortobject({
           ...linkData,
           sameAs,
           '@context': undefined,
           '@type': undefined,
-        })
-          .toPairs()
-          .sortBy(0)
-          .fromPairs()
-          .value(),
+        }),
         undefined,
         2,
       ) + '\n',
