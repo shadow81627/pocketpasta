@@ -12,22 +12,22 @@
   "offers": {
     "offers": [
       {
-        "@type": "Offer",
         "@context": "http://schema.org",
-        "url": "https://www.woolworths.com.au/shop/productdetails/750176/taylors-of-harrogate-yorkshire-tea-bags",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "itemCondition": "http://schema.org/NewCondition",
+        "offeredBy": "Woolworths",
         "potentialAction": {
           "@context": "http://schema.org",
           "@type": "BuyAction"
         },
-        "availability": "http://schema.org/InStock",
-        "itemCondition": "http://schema.org/NewCondition",
         "price": 5,
         "priceCurrency": "AUD",
-        "offeredBy": "Woolworths",
         "seller": {
           "@type": "Organization",
           "name": "Woolworths"
-        }
+        },
+        "url": "https://www.woolworths.com.au/shop/productdetails/750176/taylors-of-harrogate-yorkshire-tea-bags"
       }
     ]
   },
