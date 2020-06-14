@@ -12,9 +12,13 @@ export default {
     Product,
   },
   async asyncData(context) {
-    const id = context.route.params.id;
-    const item = await context.$content('products', id).fetch();
-    return { id, item };
+    try {
+      const id = context.route.params.id;
+      const item = await context.$content('products', id).fetch();
+      return { id, item };
+    } catch {
+      context.error({ statusCode: 404 });
+    }
   },
   data() {
     return { id: this.$route.params.id, item: {} };
@@ -47,10 +51,6 @@ export default {
         },
       ],
     };
-  },
-  validate({ params }) {
-    // Must be a number
-    return /^\d+$/.test(params.id);
   },
 };
 </script>

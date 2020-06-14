@@ -34,7 +34,7 @@
       </div>
     </div> -->
 
-    <p v-if="recipeYield">
+    <!-- <p v-if="recipeYield">
       <strong>Servings:</strong>
       <span>{{ recipeYield }}</span>
     </p>
@@ -49,7 +49,7 @@
           {{ ingredient }}
         </li>
       </ol>
-    </div>
+    </div> -->
 
     <div
       v-if="offers && offers.offers"
@@ -67,10 +67,16 @@
         class="list-group-flush"
       >
         <span class="list-group-item">
-          <a :href="offer.url" target="_blank" itemprop="url" rel="noopener">
+          <a
+            v-if="offer.url"
+            :href="offer.url"
+            target="_blank"
+            itemprop="url"
+            rel="noopener"
+          >
             <span itemprop="offeredBy">{{ offer.offeredBy }}</span></a
           >
-          <span itemprop="price">{{
+          <span v-if="offer.price" itemprop="price">{{
             new Intl.NumberFormat('en-AU', {
               style: 'currency',
               currency: offer.priceCurrency || 'AUD',
