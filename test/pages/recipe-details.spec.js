@@ -7,6 +7,8 @@ import VueRouter from 'vue-router';
 import VueMeta from 'vue-meta';
 import Vue from 'vue';
 
+import { $content } from '@nuxt/content';
+
 import { removeKeys } from '@/utils';
 
 const recipe = removeKeys(spaghetti, ['@type', '@context']);
@@ -70,7 +72,7 @@ const factory = () =>
     stubs: {
       NuxtLink: RouterLinkStub,
     },
-    mocks: { $route },
+    mocks: { $route, $content },
     localVue,
     // data() {
     //   return { recipe, id: 1 };
@@ -81,7 +83,7 @@ const factory = () =>
 describe('recipeDetial', () => {
   test('mounts properly', () => {
     const wrapper = factory();
-    expect(wrapper.isVueInstance()).toBeTruthy();
+    expect(wrapper.vm).toBeTruthy();
   });
 
   test('renders properly', () => {
