@@ -1,20 +1,11 @@
 const fs = require('fs');
-const axios = require('axios');
 const cheerio = require('cheerio');
 const slugify = require('slugify');
 const he = require('he');
 // const _ = require('lodash');
 const sortobject = require('deep-sort-object');
-// const puppeteer = require('puppeteer');
-
-const renameKeys = (keysMap, obj) =>
-  Object.keys(obj).reduce(
-    (acc, key) => ({
-      ...acc,
-      ...{ [keysMap[key] || key]: obj[key] },
-    }),
-    {},
-  );
+const puppeteer = require('puppeteer');
+const renameKeys = require('./renameKeys');
 
 const urls = [
   'https://www.woolworths.com.au/shop/productdetails/750176/taylors-of-harrogate-yorkshire-tea-bags',
@@ -27,7 +18,16 @@ const urls = [
  */
 Promise.all(
   urls.map(async function (url) {
-    const { data } = await axios.get(url);
+    const browser = await puppeteer.launch();
+    const [page] = await browser.pages();
+
+    await page.goto(url, { waitUntil: 'networkidle0' });
+    const data = await page.evaluate(
+      () => document.querySelector('*').outerHTML,
+    );
+
+    await browser.close();
+
     const $ = cheerio.load(data);
     const linkDataHtml = $('script[type="application/ld+json"]').html();
     const linkDataHtmlDecoded = he.decode(linkDataHtml);

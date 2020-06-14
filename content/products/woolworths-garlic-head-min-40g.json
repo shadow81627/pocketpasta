@@ -14,8 +14,15 @@
       {
         "@context": "http://schema.org",
         "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "itemCondition": "http://schema.org/NewCondition",
         "offeredBy": "Woolworths",
-        "price": "",
+        "potentialAction": {
+          "@context": "http://schema.org",
+          "@type": "BuyAction"
+        },
+        "price": 1,
+        "priceCurrency": "AUD",
         "seller": {
           "@type": "Organization",
           "name": "Woolworths"
