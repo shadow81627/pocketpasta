@@ -51,7 +51,7 @@
     "@nuxtjs/sitemap": "2.3.2",
     "bootstrap-vue": "2.15.0",
     "cross-env": "7.0.2",
-    "firebase": "7.15.1",
+    "firebase": "7.15.2",
     "firebaseui": "4.5.1",
     "github-markdown-css": "4.0.0",
     "koa": "2.12.1",
