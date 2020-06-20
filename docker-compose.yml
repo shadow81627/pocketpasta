@@ -1,14 +1,19 @@
-version: '3'
+version: '3.7'
 services:
   pocketpasta:
     build: .
-    container_name: pocketpasta
+    container_name: nuxt
     restart: always
     environment:
       - PORT=3000
     ports:
-      - 3000:3000
+      - '3000:3000'
     command: npm run dev
     volumes:
-      - .:/app:cached
-      - /app/node_modules
+      - ./:/app:cached
+      - npm-cache:/root/.npm
+      # - /app/node_modules
+
+volumes:
+  npm-cache:
+    external: false
