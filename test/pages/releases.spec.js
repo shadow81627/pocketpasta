@@ -1,22 +1,29 @@
+import Component from '@/pages/releases.vue';
 import { createLocalVue, shallowMount } from '@vue/test-utils';
 import Vuetify from 'vuetify';
 import BootstrapVuePlugin from 'bootstrap-vue';
-import Component from '@/pages/releases.vue';
+import Vue from 'vue';
 
 const localVue = createLocalVue();
+let vuetify;
 
-localVue.use(Vuetify);
+Vue.use(Vuetify);
 localVue.use(BootstrapVuePlugin);
 
 const factory = () =>
   shallowMount(Component, {
     localVue,
+    vuetify,
   });
 
 describe('releases page', () => {
+  beforeEach(() => {
+    vuetify = new Vuetify();
+  });
+
   test('mounts properly', () => {
     const wrapper = factory();
-    expect(wrapper.isVueInstance()).toBeTruthy();
+    expect(wrapper.vm).toBeTruthy();
   });
 
   test('renders properly', () => {

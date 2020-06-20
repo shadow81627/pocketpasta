@@ -14,7 +14,7 @@
         :key="theme.value"
         :value="theme.value"
       >
-        {{ theme.value }}
+        {{ capitalize(theme.value) }}
       </option>
     </b-form-select>
   </client-only>
@@ -25,10 +25,18 @@ export default {
   computed: {
     currentTheme: {
       get() {
-        return this.$store.state.theme.value;
+        return this.$colorMode.preference;
       },
       set(value) {
-        this.$store.commit('setTheme', this.$store.getters.getThemeById(value));
+        this.$colorMode.preference = value;
+        // timeout required to wait for color mode to be set.
+        setTimeout(
+          () =>
+            (this.$vuetify.theme.dark = this.$store.getters.getThemeById(
+              this.$colorMode.value,
+            ).dark),
+          100,
+        );
       },
     },
     themeMeta() {
@@ -38,6 +46,9 @@ export default {
           href: theme.href,
           rel: 'stylesheet',
           as: 'style',
+          skip:
+            this.$store.getters.getThemeById(theme.value).href === '' ||
+            !this.$store.getters.getThemeById(theme.value).href,
         };
         if (theme.value !== this.currentTheme) {
           themeLink.disabled = true;
@@ -45,6 +56,13 @@ export default {
         }
         return themeLink;
       });
+    },
+  },
+  methods: {
+    capitalize(value) {
+      if (!value) return '';
+      value = value.toString();
+      return value.charAt(0).toUpperCase() + value.slice(1);
     },
   },
   head() {

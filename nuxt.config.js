@@ -16,7 +16,10 @@ const pkg = require('./package');
 const HOST = process.env.HOST || '0.0.0.0';
 const PORT = process.env.PORT || '3000';
 const BASE_URL =
-  process.env.BASE_URL || `http${PORT === 433 ? 's' : ''}://${HOST}:${PORT}`;
+  process.env.BASE_URL ||
+  process.env.DEPLOY_URL ||
+  process.env.URL ||
+  `http${PORT === 433 ? 's' : ''}://${HOST}:${PORT}`;
 
 const routes = (callback) => {
   // axios
@@ -43,7 +46,7 @@ const routes = (callback) => {
 
 const i18nSettings = {
   baseUrl: BASE_URL,
-  seo: true,
+  seo: false,
   defaultLocale: 'en',
   vueI18n: {
     fallbackLocale: 'en',
@@ -84,6 +87,11 @@ module.exports = {
     offlineAnalytics: true,
   },
 
+  meta: {
+    lang: undefined,
+    ogHost: 'https://pocketpasta.com',
+  },
+
   manifest: {
     name: pkg.name,
     short_name: 'pocketpasta',
@@ -101,7 +109,7 @@ module.exports = {
 
   router: {
     linkActiveClass: 'active',
-    middleware: ['theme'],
+    middleware: [],
   },
 
   env: {
@@ -124,8 +132,8 @@ module.exports = {
       process.env.FIREBASE_STORAGE_BUCKET || 'staging-pocketpasta.appspot.com',
     FIREBASE_MESSAGE_SENDER_ID:
       process.env.FIREBASE_MESSAGE_SENDER_ID || '216453269763',
-    FIREBASE_API_ID:
-      process.env.FIREBASE_API_ID || '1:216453269763:web:71a3fe1ca24500bb',
+    FIREBASE_APP_ID:
+      process.env.FIREBASE_APP_ID || '1:216453269763:web:71a3fe1ca24500bb',
   },
 
   server: {
@@ -135,23 +143,6 @@ module.exports = {
   },
 
   render: {
-    bundleRenderer: {
-      shouldPreload: (file, type) => {
-        // type is inferred based on the file extension.
-        // https://fetch.spec.whatwg.org/#concept-request-destination
-        if (type === 'script' || type === 'style') {
-          return true;
-        }
-        if (type === 'font') {
-          // only preload woff2 fonts
-          return /\.woff2$/.test(file);
-        }
-        // if (type === 'image') {
-        //   // only preload important images
-        //   return file === 'header-bg.jpg';
-        // }
-      },
-    },
     http2: {
       push: true,
       pushAssets: (req, res, publicPath, preloadFiles) =>
@@ -170,15 +161,8 @@ module.exports = {
       // If undefined or blank then we don't need the hyphen
       return titleChunk ? `${titleChunk} - PocketPasta` : 'PocketPasta';
     },
+    noscript: [{ innerHTML: 'This website requires JavaScript.', once: true }],
     meta: [
-      {
-        charset: 'utf-8',
-      },
-      {
-        name: 'viewport',
-        content:
-          'width=device-width, initial-scale=1, shrink-to-fit=no, minimal-ui',
-      },
       {
         property: 'og:title',
         template: (titleChunk) => {
@@ -188,34 +172,33 @@ module.exports = {
         vmid: 'og:title',
       },
       {
-        hid: 'description',
-        name: 'description',
-        content: pkg.description,
-      },
-      {
+        once: true,
         name: 'google-site-verification',
         content: 'LqVnUnYGR8NrvXrhnFgW5RjNJVChZp2j2OEP55xjE30',
       },
       {
+        once: true,
         name: 'version',
         content: pkg.version,
+      },
+      {
+        once: true,
+        'http-equiv': 'Accept-CH',
+        content: 'DPR, Viewport-Width, Width',
       },
     ],
     link: [
       {
+        once: true,
         rel: 'icon',
         type: 'image/x-icon',
         href: '/favicon.ico',
-      },
-      {
-        rel: 'preconnect',
-        href: 'https://res.cloudinary.com',
-        crossorigin: 'anonymous',
       },
       ...preconnectLinks.map((href) => ({
         rel: 'preconnect',
         href,
         crossorigin: 'anonymous',
+        once: true,
       })),
     ],
   },
@@ -240,16 +223,15 @@ module.exports = {
    */
   css: [
     '~/assets/scss/custom.scss',
-    '~/assets/css/font.css',
     '~/assets/css/custom.css',
-    'plyr/dist/plyr.css',
+    // 'plyr/dist/plyr.css',
   ],
 
   /*
    ** Plugins to load before mounting the App
    */
   plugins: [
-    { src: '~/plugins/vue-plyr' },
+    // { src: '~/plugins/vue-plyr' },
     // { src: '~/plugins/firebase.js', ssr: false },
     // { src: '~/plugins/firebase_auth.js', ssr: false },
     // { src: '~/plugins/quicklink', ssr: false },
@@ -260,10 +242,12 @@ module.exports = {
    ** Nuxt.js modules
    */
   modules: [
+    '@nuxt/content',
     '@nuxtjs/axios',
     '@nuxtjs/auth',
     '@nuxtjs/dotenv',
     '@nuxtjs/eslint-module',
+    '@nuxtjs/firebase',
     '@nuxtjs/google-analytics',
     '@nuxtjs/markdownit',
     '@nuxtjs/pwa',
@@ -271,16 +255,15 @@ module.exports = {
     '@nuxtjs/sentry',
     'bootstrap-vue/nuxt',
     ['nuxt-i18n', i18nSettings],
-    'nuxt-fire',
-    'nuxt-webfontloader',
 
     // keep sitemap last
     '@nuxtjs/sitemap',
   ],
 
   buildModules: [
-    // Simple usage
     '@nuxtjs/vuetify',
+    '@nuxtjs/color-mode',
+    '@nuxtjs/netlify-files',
   ],
 
   dotenv: {
@@ -330,7 +313,7 @@ module.exports = {
     },
   },
 
-  fire: {
+  firebase: {
     config: {
       apiKey:
         process.env.FIREBASE_API_KEY ||
@@ -349,14 +332,14 @@ module.exports = {
       messagingSenderId:
         process.env.FIREBASE_MESSAGE_SENDER_ID || '216453269763',
       appId:
-        process.env.FIREBASE_API_ID || '1:216453269763:web:71a3fe1ca24500bb',
+        process.env.FIREBASE_APP_ID || '1:216453269763:web:71a3fe1ca24500bb',
     },
     onFirebaseHosting: process.env.FIREBASE_HOSTING || false,
     services: {
       auth: {
         initialize: {
-          onSuccessMutation: 'setUser',
-          onSuccessAction: 'setUser',
+          onAuthStateChangedMutation: 'setUser',
+          onAuthStateChangedAction: 'setUser',
         },
       },
       firestore: { enablePersistence: true },
@@ -415,12 +398,6 @@ module.exports = {
       // priority: 0.5,
       lastmod: new Date(),
       // lastmodrealtime: true,
-    },
-  },
-
-  webfontloader: {
-    custom: {
-      families: ['Comic Neue'],
     },
   },
 

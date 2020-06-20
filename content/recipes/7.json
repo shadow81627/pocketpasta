@@ -1,0 +1,107 @@
+{
+  "url": "https://www.delish.com/cooking/recipe-ideas/a25751125/trash-can-nachos-recipe/",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Delish",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://assets.hearstapps.com/sites/delish/assets/images/logos/logo-jsonld.58eed96.png",
+      "width": 219,
+      "height": 60
+    }
+  },
+  "author": { "name": "Damien Robinson", "@type": "Person" },
+  "datePublished": "2019-10-27T16:26:36.788962Z",
+  "headline": "Trash Can Nachos",
+  "image": {
+    "@type": "ImageObject",
+    "height": 1080,
+    "thumbnail": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-trashcan-nachos-still002-1547568061.jpg?crop=0.564xw:1.00xh;0.220xw,0&resize=100:*",
+    "url": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-trashcan-nachos-still002-1547568061.jpg",
+    "width": 1920
+  },
+  "thumbnailUrl": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-trashcan-nachos-still002-1547568061.jpg?crop=0.564xw:1.00xh;0.220xw,0&resize=100:*",
+  "dateModified": "2019-01-16T20:17:00Z",
+  "name": "Trash Can Nachos",
+  "prepTime": "PT20M",
+  "cookTime": "PT0S",
+  "totalTime": "PT40M",
+  "recipeIngredient": [
+    "2 small tomatoes, chopped",
+    "1/2 c. diced red onion",
+    "1 jalape\u00f1o, seeded and minced",
+    "1/4 c. freshly chopped cilantro",
+    "1 tbsp. lime juice",
+    "Kosher salt",
+    "Freshly ground black pepper",
+    "1 tbsp. extra-virgin olive oil",
+    "1 lb. ground beef",
+    "Kosher salt",
+    "Freshly ground black pepper",
+    "3 cloves garlic, minced",
+    "1/2 tsp. ground cumin",
+    "1/2 tsp. paprika",
+    "1/2 tsp. Cholula\u00ae Original Hot Sauce",
+    "2 tbsp. butter",
+    "2 tbsp. all-purpose flour",
+    "2 c. whole milk",
+    "1/2 tsp. Cholula\u00ae Original Hot Sauce",
+    "2 c. shredded cheddar",
+    "Kosher salt",
+    "Freshly ground black pepper",
+    "2 c. shredded cheddar",
+    "1 lb. sour cream",
+    "1 (12-oz.) bag thick tortilla chips",
+    "1 (15.5-oz.) can black beans, rinsed and drained",
+    "Cholula\u00ae Original Hot Sauce, for drizzling"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "In a medium bowl, combine tomatoes, onion, jalapeño, cilantro, and lime juice. Season with salt and pepper."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "In a large skillet, heat oil over medium-high heat. Add the ground beef and season with salt and pepper. Cook, stirring occasionally, until no pink remains, about 6 minutes. Drain excess fat, then add garlic, cumin, paprika, and Cholula hot sauce, and cook, stirring until fragrant, about 1 minute more. Remove from the heat and set aside."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "In a medium pot, melt butter over medium heat. Add flour and stir, 1 minute. Slowly whisk in milk, then continue to cook over medium, stirring constantly until thickened, about 6 minutes. Remove from the heat and stir in Cholula hot sauce and cheddar. Season with salt and pepper."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Set aside ½ cup of the pico de gallo, ½ cup of the shredded cheese, and ½ cup of the sour cream, for garnishing the nachos. "
+    },
+    {
+      "@type": "HowToStep",
+      "text": "In the bottom of a 110-oz. tin can, spread a thin layer of cheese sauce. Using a ¼ of the tortilla chips, make an even layer of chips over the cheese sauce. Top with ⅓ of the remaining cheese sauce, ⅓ of the cooked beef, ⅓ of the black beans, ⅓ of the shredded cheese, ⅓ of the remaining pico de gallo, and ⅓ of the remaining sour cream. Drizzle with Cholula. "
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Repeat layering the chips, cheese sauce, beef, black beans, remaining shredded cheese, pico de gallo, sour cream, and Cholula two more times. Layer the remaining nacho chips on top. "
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Place a dinner plate on top of the can and carefully flip over and slowly remove the tin from the nachos, leaving a nacho tower behind. Top the nacho tower with the reserved sour cream, pico de gallo, and shredded cheese. Drizzle with Cholula before serving."
+    }
+  ],
+  "$video": {
+    "@type": "VideoObject",
+    "contentUrl": "https://glimmer.hearstapps.com/?id=94a991a2-ae94-46f5-a9f0-975295a4bb7b",
+    "description": "The most Delish way to make nachos ever.",
+    "duration": "PT1M33S",
+    "embedUrl": "https://glimmer.hearstapps.com/?id=94a991a2-ae94-46f5-a9f0-975295a4bb7b",
+    "name": "Trash Can Nachos",
+    "thumbnailUrl": "https://hips.hearstapps.com/vidthumb/images/delish-trashcan-nachos-still001-1547510236.jpg",
+    "uploadDate": "2019-01-14T23:54:35.498710Z"
+  },
+  "recipeCuisine": ["American", "Tex Mex"],
+  "recipeCategory": ["low sugar", "feed a crowd", "Super Bowl", "appetizers"],
+  "recipeYield": "12 servings",
+  "description": "A plate of nachos is great but a TOWER of nachos is literally next level. Impress your game day guests by serving up this cheesy, spicy, full-of-flavor app that's made for sharing. It's inspired by Guy Fieri, so you know it's gonna be good.",
+  "keywords": "Super Bowl recipes, Tex Mex recipes, tex mex nachoes, nachos appetizers, feed a crowd, low sugar nachos, homemade pico de gallo, homemade salsa, easy salsa recipe, easy pico de gallo, pico de gallo nachos, easy ground beef, ground beef recipes, spicy ground beef, homemade cheese sauce, cheddar sauce, cholula cheddar cheese sauce, nacho tower, trash can nachos, guy fieri nachos",
+  "sameAs": [
+    "https://www.delish.com/cooking/recipe-ideas/a25751125/trash-can-nachos-recipe/",
+    "https://www.foodnetwork.com/recipes/guy-fieri/trash-can-nachos-3582107"
+  ]
+}

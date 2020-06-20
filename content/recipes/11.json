@@ -1,0 +1,83 @@
+{
+  "suitableForDiet": "https://schema.org/VeganDiet",
+  "name": "Spanish Beans with Tomatoes",
+  "author": {
+    "@type": "Person",
+    "name": "Kate Hackworthy | Veggie Desserts"
+  },
+  "description": "These Spanish beans are packed with flavour, but are so easy to make in less than 20 minutes with just 7 ingredients! Perfect served with rice or fresh bread and only 125 calories per serving.",
+  "datePublished": "2018-11-18T15:00:26+00:00",
+  "image": [
+    "https://veggiedesserts.com/wp-content/uploads/2016/06/SpanishWhiteBeans.jpg"
+  ],
+  "video": {
+    "name": "Spanish Beans",
+    "description": "These Spanish Beans with tomatoes and smokey sweet spices are easy to make in less than 20 minutes. They\u2019re perfect as tapas, a main meal or a side dish. Vegan and gluten-free. They're a very popular recipe on my site with hundreds of readers loving them.",
+    "thumbnailUrl": "https://mediavine-res.cloudinary.com/image/upload/s--7DLdAN27--/c_limit,f_auto,fl_lossy,h_1080,q_auto,w_1920/v1515851007/c1i9zamwfqshnvx0ougq.jpg",
+    "contentUrl": "https://embed.mediavine.com/videos/fyqzt8lidx6wppbpv3gs",
+    "uploadDate": "2018-01-13T13:39:38+00:00",
+    "duration": "PT58S",
+    "@type": "VideoObject"
+  },
+  "recipeYield": "4",
+  "prepTime": "PT5M",
+  "cookTime": "PT20M",
+  "totalTime": "PT25M",
+  "recipeIngredient": [
+    "1 tablespoon extra virgin olive oil",
+    "1  onion (diced)",
+    "2  garlic cloves (finely chopped)",
+    "1 teaspoon sweet smoked paprika (pimenton dulce - or hot paprika if you like it spicy)",
+    "2  bay leaves",
+    "2 cans butter beans (400ml/14oz  (lima beans), drained and rinsed)",
+    "2 cans plum tomatoes (400ml/14oz )",
+    "Sea salt and black pepper",
+    "2  large handfuls spinach (roughly chopped)"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "In a large saucepan, heat the oil over a medium heat. Add the onions and fry, stirring continuously, for 3-5 minutes until translucent but not browned.&nbsp;&nbsp;",
+      "url": "https://veggiedesserts.com/spanish-beans-tomatoes/#wprm-recipe-8954-step-0-0"
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Add the garlic, paprika and bay leaves and fry for a further minute.",
+      "url": "https://veggiedesserts.com/spanish-beans-tomatoes/#wprm-recipe-8954-step-0-1"
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Add the beans and tomatoes. Stir and break up the tomatoes a bit, then season with salt and pepper. Stir well and reduce the heat to low. Simmer for 15 minutes, checking regularly so it doesn\u2019t stick to the bottom of the pan.",
+      "url": "https://veggiedesserts.com/spanish-beans-tomatoes/#wprm-recipe-8954-step-0-2"
+    },
+    {
+      "@type": "HowToStep",
+      "text": "As it finishes, stir the spinach through to wilt.",
+      "url": "https://veggiedesserts.com/spanish-beans-tomatoes/#wprm-recipe-8954-step-0-3"
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Serve hot or cold, as tapas or a side dish, sprinkled with the fresh parsley.",
+      "url": "https://veggiedesserts.com/spanish-beans-tomatoes/#wprm-recipe-8954-step-0-4"
+    }
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5",
+    "ratingCount": "1"
+  },
+  "recipeCategory": "Main Meals",
+  "recipeCuisine": "Spanish",
+  "keywords": "spanish beans, spanish recipe, tapas, vegan gluten free",
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "servingSize": "1 g",
+    "calories": "125 kcal",
+    "carbohydrateContent": "19 g",
+    "proteinContent": "6 g",
+    "fatContent": "2 g",
+    "sodiumContent": "2 mg",
+    "fiberContent": "6 g",
+    "sugarContent": "3 g"
+  }
+}

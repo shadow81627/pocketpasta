@@ -1,0 +1,15 @@
+{
+  "@type": "Offer",
+  "offeredBy": "Coles",
+  "name": "Peeled Tomatoes",
+  "description": "Italian peeled tomatoes in tomato juice",
+  "brand": "Annalisa",
+  "price": "1.40",
+  "itemCondition": "http://www.schema.org/NewCondition",
+  "seller": {
+    "@type": "Organization",
+    "name": "Coles Online"
+  },
+  "priceCurrency": "AUD",
+  "url": "https://shop.coles.com.au/a/a-national/product/annalisa-tomatoes-peeled"
+}

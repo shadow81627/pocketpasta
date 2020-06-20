@@ -2,20 +2,37 @@
   "ci": {
     "collect": {
       "numberOfRuns": 5,
-      "url": ["http://localhost:3000/", "http://localhost:3000/about"]
+      "url": [
+        "http://localhost:3000/",
+        "http://localhost:3000/about",
+        "http://localhost:3000/recipes",
+        "http://localhost:3000/recipes/1",
+        "http://localhost:3000/recipes/2",
+        "http://localhost:3000/products",
+        "http://localhost:3000/products/2"
+      ]
     },
     "assert": {
       "preset": "lighthouse:recommended",
       "assertions": {
-        "errors-in-console": "off",
-        "offscreen-images": "off",
-        "total-byte-weight": "off",
-        "uses-rel-preconnect": "off",
-        "uses-optimized-images": "off",
+        "errors-in-console": "warn",
+        "offscreen-images": "warn",
+        "total-byte-weight": "warn",
+        "uses-rel-preconnect": "warn",
+        "uses-optimized-images": "warn",
 
-        "color-contrast": "off",
-        "unused-css-rules": "off",
-        "uses-http2": "off"
+        "color-contrast": "warn",
+        "unused-css-rules": "warn",
+        "uses-http2": "warn",
+
+        "font-display": "warn",
+        "uses-passive-event-listeners": "warn",
+        "dom-size": "warn",
+
+        "unused-javascript": "warn",
+        "meta-viewport": "warn",
+        "maskable-icon": "warn",
+        "image-size-responsive": "warn"
       }
     },
     "upload": {

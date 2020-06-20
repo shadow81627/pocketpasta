@@ -1,5 +1,5 @@
 <template>
-  <v-footer class="hidden-print-only" height="auto">
+  <v-footer class="hidden-print-only" height="auto" inset>
     <div class="container-fluid">
       <v-row no-gutters>
         <v-col cols="auto">
@@ -28,7 +28,7 @@
         </v-col>
       </v-row>
       <v-row no-gutters>
-        <v-col>
+        <v-col cols="auto">
           <v-card flat tile color="transparent">
             <v-card-text class="py-2 text-left">
               <span>Made with </span>

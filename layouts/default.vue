@@ -1,5 +1,5 @@
 <template>
-  <v-app id="inspire" :dark="isDark" clipped-left>
+  <v-app id="inspire" clipped-left>
     <v-navigation-drawer
       v-model="drawer"
       :clipped="$vuetify.breakpoint.lgAndUp"
@@ -72,10 +72,17 @@
       fixed
       class="hidden-print-only"
     >
-      <v-toolbar-title style="width: 256px" class="ml-0 pl-3">
-        <v-app-bar-nav-icon aria-label="menu" @click.stop="drawer = !drawer" />
+      <v-toolbar-title style="width: 256px;" class="ml-0 pl-3">
+        <v-app-bar-nav-icon aria-label="menu" @click.stop="drawer = !drawer"
+          ><v-progress-circular
+            v-if="loading"
+            indeterminate
+            size="24"
+            width="2"
+        /></v-app-bar-nav-icon>
         <b-img-lazy
           :src="$icon(32)"
+          :srcset="`${$icon(32)} 1x, ${$icon(64)} 2x`"
           width="32"
           height="32"
           class="rounded"
@@ -89,9 +96,9 @@
       <user-menu />
     </v-app-bar>
     <v-content>
-      <nuxt style="min-height: 100vh;" />
-      <the-footer />
+      <nuxt style="min-height: 100vh;" keep-alive />
     </v-content>
+    <the-footer />
   </v-app>
 </template>
 
@@ -107,6 +114,7 @@ export default {
   },
   data() {
     return {
+      loading: true,
       dialog: false,
       drawer: false,
     };
@@ -145,20 +153,64 @@ export default {
           route: { name: 'shoppinglist' },
         },
         {
+          icon: 'calendar-check',
+          text: 'Tasks',
+          route: { name: 'tasks' },
+        },
+        {
           icon: 'settings',
           text: this.$t('layout.navigation.settings'),
           route: { name: 'settings' },
         },
       ];
     },
-    isDark() {
-      return this.$store.getters.getCurrentTheme().dark;
-    },
+  },
+  mounted() {
+    this.$vuetify.theme.dark = this.$store.getters.getThemeById(
+      this.$colorMode.value,
+    ).dark;
+    if (process.client) {
+      this.loading = false;
+    }
   },
   head() {
+    const i18nSeo = this.$nuxtI18nSeo();
     return {
+      htmlAttrs: {
+        ...i18nSeo.htmlAttrs,
+      },
+      meta: [
+        ...i18nSeo.meta,
+        {
+          hid: 'og:url',
+          name: 'og:url',
+          property: 'og:url',
+          content: `${this.baseUrl}${this.$route.path}`,
+        },
+      ],
       link: [
-        this.$store.getters.getCurrentTheme(),
+        ...i18nSeo.link,
+        {
+          hid: 'theme-preload',
+          rel: 'preload',
+          as: 'style',
+          href: this.$store.getters.getThemeById(this.$colorMode.value).href,
+          skip:
+            this.$store.getters.getThemeById(this.$colorMode.value).href ===
+              '' ||
+            !this.$store.getters.getThemeById(this.$colorMode.value).href,
+        },
+        {
+          // stylesheet is valid in the body, needed because default css is loading first this allows theme to overide default.
+          pbody: true,
+          hid: 'theme',
+          rel: 'stylesheet',
+          href: this.$store.getters.getThemeById(this.$colorMode.value).href,
+          skip:
+            this.$store.getters.getThemeById(this.$colorMode.value).href ===
+              '' ||
+            !this.$store.getters.getThemeById(this.$colorMode.value).href,
+        },
         {
           hid: 'canonical',
           rel: 'canonical',
@@ -172,7 +224,6 @@ export default {
 
 <style>
 .brand {
-  font-family: 'Comic Neue', sans-serif;
   font-size: 1.5rem;
   font-weight: 400;
   vertical-align: middle;

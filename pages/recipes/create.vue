@@ -53,13 +53,13 @@ export default {
   methods: {
     edit(event) {
       this.formData = event.target.value;
-      setTimeout(function() {
+      setTimeout(function () {
         event.target.style.height = 0;
         event.target.style.height = event.target.scrollHeight + 'px';
       });
     },
     autoSize(event) {
-      setTimeout(function() {
+      setTimeout(function () {
         event.target.style.height = 0;
         event.target.style.height = event.target.scrollHeight + 'px';
       });
@@ -70,11 +70,11 @@ export default {
         .collection(this.collection)
         .doc(this.id)
         .set(this.document)
-        .then(function() {
+        .then(function () {
           console.log('Document successfully written!');
           this.document = null;
         })
-        .catch(function(error) {
+        .catch(function (error) {
           console.error('Error writing document: ', error);
         });
     },

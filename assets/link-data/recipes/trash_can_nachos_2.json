@@ -23,10 +23,6 @@
     "url": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-trashcan-nachos-still002-1547568061.jpg",
     "width": 1920
   },
-  "mainEntityOfPage": {
-    "@id": "https://www.delish.com/cooking/recipe-ideas/a25751125/trash-can-nachos-recipe/",
-    "@type": "WebPage"
-  },
   "thumbnailUrl": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-trashcan-nachos-still002-1547568061.jpg?crop=0.564xw:1.00xh;0.220xw,0&resize=100:*",
   "dateModified": "2019-01-16T20:17:00Z",
   "name": "Trash Can Nachos",
