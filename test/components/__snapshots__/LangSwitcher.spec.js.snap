@@ -2,6 +2,6 @@
 
 exports[`LangSwitcher renders properly 1`] = `
 "<v-menu-stub opendelay=\\"0\\" closedelay=\\"0\\" contentclass=\\"\\" maxwidth=\\"auto\\" nudgebottom=\\"0\\" nudgeleft=\\"0\\" nudgeright=\\"0\\" nudgetop=\\"0\\" nudgewidth=\\"0\\" openonclick=\\"true\\" closeonclick=\\"true\\" closeoncontentclick=\\"true\\" maxheight=\\"auto\\" origin=\\"top left\\" transition=\\"v-menu-transition\\">
-  <v-list-stub tag=\\"div\\" tile=\\"true\\"></v-list-stub>
+  <v-list-stub tag=\\"div\\"></v-list-stub>
 </v-menu-stub>"
 `;

@@ -30,7 +30,7 @@ exports[`index renders properly 1`] = `
             <v-card-title-stub primarytitle=\\"\\" primary-title=\\"\\" class=\\"layout justify-center\\">
               <div class=\\"headline\\">landing.contact.heading</div>
             </v-card-title-stub>
-            <v-list-stub tag=\\"div\\" tile=\\"true\\" class=\\"transparent\\">
+            <v-list-stub tag=\\"div\\" class=\\"transparent\\">
               <v-list-item-stub activeclass=\\"\\" tag=\\"div\\">
                 <v-list-item-action-stub>
                   <v-icon-stub class=\\"text-primary\\">$place</v-icon-stub>
