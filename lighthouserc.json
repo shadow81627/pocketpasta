@@ -3,13 +3,13 @@
     "collect": {
       "numberOfRuns": 5,
       "url": [
-        "http://localhost:3000/",
-        "http://localhost:3000/about",
-        "http://localhost:3000/recipes",
-        "http://localhost:3000/recipes/1",
-        "http://localhost:3000/recipes/2",
-        "http://localhost:3000/products",
-        "http://localhost:3000/products/2"
+        "http://localhost:3001/",
+        "http://localhost:3001/about",
+        "http://localhost:3001/recipes",
+        "http://localhost:3001/recipes/1",
+        "http://localhost:3001/recipes/2",
+        "http://localhost:3001/products",
+        "http://localhost:3001/products/2"
       ]
     },
     "assert": {
@@ -32,7 +32,9 @@
         "unused-javascript": "warn",
         "meta-viewport": "warn",
         "maskable-icon": "warn",
-        "image-size-responsive": "warn"
+        "image-size-responsive": "warn",
+
+        "aria-allowed-attr": "warn"
       }
     },
     "upload": {

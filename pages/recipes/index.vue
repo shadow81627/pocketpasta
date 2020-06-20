@@ -25,7 +25,6 @@ export default {
           content: 'Easy pasta recipes made with simple ingredients.',
         },
       ],
-      link: [],
     };
   },
 };

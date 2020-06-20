@@ -25,13 +25,6 @@ export default {
           content: 'Find the best place to buy pasta ingredients.',
         },
       ],
-      link: [
-        {
-          hid: 'canonical',
-          rel: 'canonical',
-          href: `${this.baseUrl}/products`,
-        },
-      ],
     };
   },
 };

@@ -38,13 +38,6 @@ export default {
   head() {
     return {
       title: this.recipe.name,
-      link: [
-        {
-          hid: 'canonical',
-          rel: 'canonical',
-          href: `${this.baseUrl}/recipes/${this.id}`,
-        },
-      ],
       meta: [
         {
           hid: 'og:title',

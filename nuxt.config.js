@@ -1,18 +1,4 @@
-// const config = require('dotenv').config({
-//   debug: true,
-// });
-// import axios from 'axios';
-
-// import recipes from './assets/link-data/recipes';
-// import products from './assets/link-data/products';
-
-const recipes = require('./assets/link-data/recipes');
-const products = require('./assets/link-data/products');
-
 const pkg = require('./package');
-
-// console.log(config);
-
 const HOST = process.env.HOST || '0.0.0.0';
 const PORT = process.env.PORT || '3000';
 const BASE_URL =
@@ -20,29 +6,6 @@ const BASE_URL =
   process.env.DEPLOY_URL ||
   process.env.URL ||
   `http${PORT === 433 ? 's' : ''}://${HOST}:${PORT}`;
-
-const routes = (callback) => {
-  // axios
-  //   .get(
-  //     'https://firestore.googleapis.com/v1/projects/staging-pocketpasta/databases/(default)/documents/recipes',
-  //   )
-  //   .then((res) => {
-  //     const routes = res.data.documents.map((recipe) => {
-  //       return '/recipes/' + recipe.id;
-  //     });
-  //     callback(null, routes);
-  //   })
-  //   .catch(callback);
-
-  const recipeRoutes = recipes.map((recipe) => {
-    return { route: `/recipes/${recipe.id}` };
-  });
-  const productRoutes = products.map((product) => {
-    return { route: `/products/${product.id}` };
-  });
-  const routes = [...recipeRoutes, ...productRoutes];
-  callback(null, routes);
-};
 
 const i18nSettings = {
   baseUrl: BASE_URL,
@@ -82,6 +45,7 @@ const preconnectLinks = [
 
 module.exports = {
   mode: 'universal',
+  target: 'static',
 
   workbox: {
     offlineAnalytics: true,
@@ -161,7 +125,13 @@ module.exports = {
       // If undefined or blank then we don't need the hyphen
       return titleChunk ? `${titleChunk} - PocketPasta` : 'PocketPasta';
     },
-    noscript: [{ innerHTML: 'This website requires JavaScript.', once: true }],
+    noscript: [
+      {
+        innerHTML: 'This website requires JavaScript.',
+        once: true,
+        hid: 'noscript',
+      },
+    ],
     meta: [
       {
         property: 'og:title',
@@ -169,9 +139,10 @@ module.exports = {
           // If undefined or blank then we don't need the hyphen
           return titleChunk ? `${titleChunk} - PocketPasta` : 'PocketPasta';
         },
-        vmid: 'og:title',
+        hid: 'og:title',
       },
       {
+        hid: 'google-site-verification',
         once: true,
         name: 'google-site-verification',
         content: 'LqVnUnYGR8NrvXrhnFgW5RjNJVChZp2j2OEP55xjE30',
@@ -179,11 +150,13 @@ module.exports = {
       {
         once: true,
         name: 'version',
+        hid: 'version',
         content: pkg.version,
       },
       {
         once: true,
         'http-equiv': 'Accept-CH',
+        hid: 'Accept-CH',
         content: 'DPR, Viewport-Width, Width',
       },
     ],
@@ -191,12 +164,14 @@ module.exports = {
       {
         once: true,
         rel: 'icon',
+        hid: 'icon',
         type: 'image/x-icon',
         href: '/favicon.ico',
       },
       ...preconnectLinks.map((href) => ({
         rel: 'preconnect',
         href,
+        hid: `preconnect-${href}`,
         crossorigin: 'anonymous',
         once: true,
       })),
@@ -206,7 +181,6 @@ module.exports = {
   generate: {
     // if you want to use '404.html' instead of the default '200.html'
     fallback: true,
-    routes,
   },
 
   /*
@@ -221,22 +195,12 @@ module.exports = {
   /*
    ** Global CSS
    */
-  css: [
-    '~/assets/scss/custom.scss',
-    '~/assets/css/custom.css',
-    // 'plyr/dist/plyr.css',
-  ],
+  css: ['~/assets/scss/custom.scss', '~/assets/css/custom.css'],
 
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [
-    // { src: '~/plugins/vue-plyr' },
-    // { src: '~/plugins/firebase.js', ssr: false },
-    // { src: '~/plugins/firebase_auth.js', ssr: false },
-    // { src: '~/plugins/quicklink', ssr: false },
-    { src: '~/plugins/debug.js', ssr: false },
-  ],
+  plugins: [{ src: '~/plugins/debug.js', ssr: false }],
 
   /*
    ** Nuxt.js modules
@@ -390,7 +354,6 @@ module.exports = {
 
   sitemap: {
     hostname: BASE_URL,
-    routes,
     gzip: true,
     xslUrl: '/sitemap.xsl',
     defaults: {

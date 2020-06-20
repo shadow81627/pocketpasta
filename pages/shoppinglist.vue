@@ -1,12 +1,16 @@
 <template>
-  <div class="container">
-    <editor
-      v-model="document"
-      :loading="loading"
-      @submit="debouncedSave"
-      @input="debouncedInput"
-    />
-  </div>
+  <v-container>
+    <v-row>
+      <v-col>
+        <editor
+          v-model="document"
+          :loading="loading"
+          @submit="debouncedSave"
+          @input="debouncedInput"
+        />
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 
 <script>

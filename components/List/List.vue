@@ -22,15 +22,14 @@
     </div>
 
     <div v-show="list && list.length > 0" class="overflow-auto">
-      <b-pagination
-        v-model="page"
+      <b-pagination-nav
         :link-gen="linkGen"
+        :number-of-pages="pages"
         use-router
         align="center"
-        :number-of-pages="pages"
-        :total-rows="total"
         :per-page="limit"
         size="lg"
+        exact
       />
       <button v-show="false" @click="$fetch">Refresh</button>
       <div v-show="false">Total: {{ total }}</div>
@@ -43,12 +42,12 @@
 <script>
 import ViewSwitcher from '@/components/List/ViewSwitcher';
 import Card from '@/components/List/Card';
-import { BPagination } from 'bootstrap-vue';
+import { BPaginationNav } from 'bootstrap-vue';
 export default {
   components: {
     ViewSwitcher,
     Card,
-    BPagination,
+    BPaginationNav,
   },
   props: {
     collection: { type: String, required: true },
@@ -56,7 +55,6 @@ export default {
     layout: { type: String, default: null },
   },
   async fetch() {
-    // this.page = parseInt(this.$route.query.page, 10) || 1;
     this.list = await this.$content(this.collection)
       .only(['id', 'slug', 'name', 'description', 'image'])
       .sortBy('updatedAt', 'desc')
@@ -66,10 +64,9 @@ export default {
     this.total = (
       await this.$content(this.collection).only(['id']).fetch()
     ).length;
-    this.pages = this.page + (this.list.length === this.limit ? 1 : 0);
   },
   fetchOnServer: false,
-  data: () => ({ list: [], limit: 5, pages: 1, total: null }),
+  data: () => ({ list: [], limit: 5, total: null }),
   computed: {
     layoutClass() {
       // list layout is no class
@@ -78,6 +75,9 @@ export default {
         'card-deck': this.layout === 'deck',
         'card-columns': this.layout === 'columns',
       };
+    },
+    pages() {
+      return this.total / this.limit;
     },
     page: {
       get() {
@@ -99,6 +99,19 @@ export default {
     linkGen(pageNum) {
       return pageNum === 1 ? '?' : `?page=${pageNum}`;
     },
+  },
+  head() {
+    return {
+      link: [
+        {
+          hid: 'canonical',
+          rel: 'canonical',
+          href: `${process.env.BASE_URL}${this.$route.path}${
+            this.page !== 1 ? `?${this.linkGen(this.page)}` : ''
+          }`,
+        },
+      ],
+    };
   },
 };
 </script>

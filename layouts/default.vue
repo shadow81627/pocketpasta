@@ -95,9 +95,9 @@
       <add-to-home-screen icon />
       <user-menu />
     </v-app-bar>
-    <v-content>
-      <nuxt style="min-height: 100vh;" keep-alive />
-    </v-content>
+    <v-main>
+      <nuxt keep-alive />
+    </v-main>
     <the-footer />
   </v-app>
 </template>
@@ -185,7 +185,7 @@ export default {
           hid: 'og:url',
           name: 'og:url',
           property: 'og:url',
-          content: `${this.baseUrl}${this.$route.path}`,
+          content: `${process.env.BASE_URL}${this.$route.path}`,
         },
       ],
       link: [
@@ -214,7 +214,7 @@ export default {
         {
           hid: 'canonical',
           rel: 'canonical',
-          href: `${this.baseUrl}${this.$route.path}`,
+          href: `${process.env.BASE_URL}${this.$route.path}`,
         },
       ],
     };
