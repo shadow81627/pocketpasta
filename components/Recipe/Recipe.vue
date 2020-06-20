@@ -148,7 +148,7 @@
 
     <nutrition-fact-table v-if="nutrition" v-bind="nutrition" class="my-4" />
 
-    <section class="mb-2 d-print-none">
+    <section v-if="tags" class="mb-2 d-print-none">
       <h2 class="h4">Tags</h2>
       <div class="list-group-flush">
         <keywords
@@ -214,7 +214,14 @@ export default {
     name: { type: String, required: false },
     description: { type: String, required: false },
     suitableForDiet: { type: String, required: false },
-    author: { type: Object, required: false },
+    author: {
+      type: Object,
+      required: false,
+      default: () => ({
+        '@type': 'Person',
+        name: 'Damien Robinson',
+      }),
+    },
     nutrition: { type: Object, required: false },
     datePublished: { type: String, required: false },
     keywords: { type: String, required: false },
@@ -282,6 +289,7 @@ export default {
       return {
         ...this.$props,
         '@type': 'Recipe',
+        '@context': 'http://schema.org/',
         // dateModified: this.updatedAt.toISOString(),
         // updatedAt: undefined,
       };

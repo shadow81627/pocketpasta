@@ -1,6 +1,4 @@
 {
-  "@context": "http://schema.org/",
-  "@type": "Recipe",
   "name": "Scalloped Potatoes",
   "suitableForDiet": "https://schema.org/VeganDiet",
   "author": { "@type": "Person", "name": "Minimalist Baker" },

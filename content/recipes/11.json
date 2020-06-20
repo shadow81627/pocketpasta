@@ -1,6 +1,4 @@
 {
-  "@context": "http://schema.org/",
-  "@type": "Recipe",
   "suitableForDiet": "https://schema.org/VeganDiet",
   "name": "Spanish Beans with Tomatoes",
   "author": {

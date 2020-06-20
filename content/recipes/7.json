@@ -1,5 +1,4 @@
 {
-  "@context": "http://schema.org",
   "url": "https://www.delish.com/cooking/recipe-ideas/a25751125/trash-can-nachos-recipe/",
   "publisher": {
     "@type": "Organization",
@@ -11,7 +10,6 @@
       "height": 60
     }
   },
-  "@type": "Recipe",
   "author": { "name": "Damien Robinson", "@type": "Person" },
   "datePublished": "2019-10-27T16:26:36.788962Z",
   "headline": "Trash Can Nachos",

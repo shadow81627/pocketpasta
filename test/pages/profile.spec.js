@@ -19,7 +19,7 @@ describe('profile', () => {
 
   test('mounts properly', () => {
     const wrapper = factory();
-    expect(wrapper.isVueInstance()).toBeTruthy();
+    expect(wrapper.vm).toBeTruthy();
   });
 
   test('renders properly', () => {
