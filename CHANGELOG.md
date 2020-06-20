@@ -1,5 +1,11 @@
 # Releases
 
+## [0.35.0](https://github.com/shadow81627/pocketpasta/compare/v0.34.9...v0.35.0) (2020-06-20)
+
+### Features
+
+- **content:** add web scraping script ([#1190](https://github.com/shadow81627/pocketpasta/issues/1190)) ([0339501](https://github.com/shadow81627/pocketpasta/commit/0339501ab9b032e0ac30c762fad1cdf66fc2486e))
+
 ## [0.34.9](https://github.com/shadow81627/pocketpasta/compare/v0.34.8...v0.34.9) (2020-06-20)
 
 ### Bug Fixes
