@@ -3,18 +3,18 @@ const cheerio = require('cheerio');
 const slugify = require('slugify');
 const he = require('he');
 const sortobject = require('deep-sort-object');
-const puppeteer = require('puppeteer-extra');
+const puppeteerExtra = require('puppeteer-extra');
+const puppeteer = require('puppeteer');
 const StealthPlugin = require('puppeteer-extra-plugin-stealth');
 const renameKeys = require('./renameKeys');
-
-// add stealth plugin and use defaults (all evasion techniques)
-puppeteer.use(StealthPlugin());
 
 const urls = [
   // 'https://www.woolworths.com.au/shop/productdetails/750176/taylors-of-harrogate-yorkshire-tea-bags',
   // 'https://www.woolworths.com.au/shop/productdetails/384568/arnott-s-ginger-nut',
   // 'https://www.woolworths.com.au/shop/productdetails/713429/woolworths-garlic-head',
   // 'https://shop.coles.com.au/a/caboolture/product/taylors-harrogates-tea-yorkshire-100-pack',
+  'https://www.womensweeklyfood.com.au/recipes/shepherdless-pie-31497',
+  'https://www.womensweeklyfood.com.au/recipes/crisp-roast-potatoes-with-rosemary-salt-31376',
 ];
 
 /**
@@ -22,7 +22,17 @@ const urls = [
  */
 Promise.all(
   urls.map(async function (url) {
-    const browser = await puppeteer.launch({
+    async function setupPuppeteer(options) {
+      if (url.startsWith('https://shop.coles.com.au/')) {
+        // add stealth plugin and use defaults (all evasion techniques)
+        puppeteerExtra.use(StealthPlugin());
+        return await puppeteerExtra.launch(options);
+      } else {
+        return await puppeteer.launch(options);
+      }
+    }
+
+    const browser = await setupPuppeteer({
       headless: true,
       slowMo: 250,
       devtools: true,
@@ -52,8 +62,13 @@ Promise.all(
       if (linkData) {
         const type = linkData['@type'].toLowerCase();
         let sameAs = [url];
+        // add url to same as to use a reference
         if (linkData.sameAs) {
           sameAs = sameAs.concat(linkData.sameAs);
+        }
+        // remove author is name has no length
+        if (linkData.author && !linkData.author.name) {
+          linkData.author = undefined;
         }
         if (type === 'product') {
           if (url.includes('woolworths')) {
@@ -152,8 +167,7 @@ Promise.all(
             sortobject({
               ...linkData,
               sameAs,
-              '@context': undefined,
-              '@type': undefined,
+              mainEntityOfPage: undefined,
             }),
             undefined,
             2,

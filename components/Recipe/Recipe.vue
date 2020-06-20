@@ -214,7 +214,14 @@ export default {
     name: { type: String, required: false },
     description: { type: String, required: false },
     suitableForDiet: { type: String, required: false },
-    author: { type: Object, required: false },
+    author: {
+      type: Object,
+      required: false,
+      default: () => ({
+        '@type': 'Person',
+        name: 'Damien Robinson',
+      }),
+    },
     nutrition: { type: Object, required: false },
     datePublished: { type: String, required: false },
     keywords: { type: String, required: false },
