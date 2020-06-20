@@ -1,5 +1,29 @@
 # Releases
 
+## [0.34.9](https://github.com/shadow81627/pocketpasta/compare/v0.34.8...v0.34.9) (2020-06-20)
+
+### Bug Fixes
+
+- **deps:** update dependency firebase to v7.15.3 ([f5d0728](https://github.com/shadow81627/pocketpasta/commit/f5d0728f2410f0c202c8de531154e05e3a49a2d7))
+
+## [0.34.8](https://github.com/shadow81627/pocketpasta/compare/v0.34.7...v0.34.8) (2020-06-19)
+
+### Bug Fixes
+
+- **deps:** update dependency firebase to v7.15.2 ([fc32e78](https://github.com/shadow81627/pocketpasta/commit/fc32e780a727561cf134f7d4b3a930418f8894b2))
+
+## [0.34.7](https://github.com/shadow81627/pocketpasta/compare/v0.34.6...v0.34.7) (2020-06-15)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxtjs/sitemap to v2.3.2 ([fa8a946](https://github.com/shadow81627/pocketpasta/commit/fa8a94613050cbb2d607c5095d897bd8aeabc912))
+
+## [0.34.6](https://github.com/shadow81627/pocketpasta/compare/v0.34.5...v0.34.6) (2020-06-13)
+
+### Bug Fixes
+
+- **deps:** update dependency koa to v2.12.1 ([8a9ac12](https://github.com/shadow81627/pocketpasta/commit/8a9ac1280a717652861e90db9fb6361626dc7039))
+
 ## [0.34.5](https://github.com/shadow81627/pocketpasta/compare/v0.34.4...v0.34.5) (2020-06-12)
 
 ### Bug Fixes
