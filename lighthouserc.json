@@ -34,7 +34,8 @@
         "maskable-icon": "warn",
         "image-size-responsive": "warn",
 
-        "aria-allowed-attr": "warn"
+        "aria-allowed-attr": "warn",
+        "canonical": "warn"
       }
     },
     "upload": {
