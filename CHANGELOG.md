@@ -1,5 +1,11 @@
 # Releases
 
+## [0.36.1](https://github.com/shadow81627/pocketpasta/compare/v0.36.0...v0.36.1) (2020-06-21)
+
+### Bug Fixes
+
+- **deps:** update dependency koa to v2.13.0 ([e7e808a](https://github.com/shadow81627/pocketpasta/commit/e7e808aeb3d37128499e715139c66be4fc550831))
+
 ## [0.36.0](https://github.com/shadow81627/pocketpasta/compare/v0.35.0...v0.36.0) (2020-06-21)
 
 ### Features
