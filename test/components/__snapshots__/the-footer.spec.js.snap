@@ -20,7 +20,11 @@ exports[`Footer renders properly 1`] = `
     <v-row-stub tag=\\"div\\" nogutters=\\"true\\">
       <v-col-stub cols=\\"auto\\" tag=\\"div\\">
         <v-card-stub loaderheight=\\"4\\" tag=\\"div\\" color=\\"transparent\\" tile=\\"true\\" flat=\\"true\\">
-          <v-card-text-stub class=\\"py-2 text-left\\"><span>Made with </span> <span>🍝</span> <span> in Brisbane, Australia</span> <br> <span>© 2015 | PocketPasta</span></v-card-text-stub>
+          <v-card-text-stub class=\\"py-2 text-left\\">
+            <div><a>About</a> |
+              <a>Contact</a> |
+              <a>Newsletter</a></div> <span>Made with </span> <span>🍝</span> <span> in Brisbane, Australia</span> <br> <span>© 2015 | PocketPasta</span>
+          </v-card-text-stub>
         </v-card-stub>
       </v-col-stub>
       <v-spacer-stub></v-spacer-stub>
@@ -50,7 +54,11 @@ exports[`Footer renders properly without lastModified 1`] = `
     <v-row-stub tag=\\"div\\" nogutters=\\"true\\">
       <v-col-stub cols=\\"auto\\" tag=\\"div\\">
         <v-card-stub loaderheight=\\"4\\" tag=\\"div\\" color=\\"transparent\\" tile=\\"true\\" flat=\\"true\\">
-          <v-card-text-stub class=\\"py-2 text-left\\"><span>Made with </span> <span>🍝</span> <span> in Brisbane, Australia</span> <br> <span>© 2015 | PocketPasta</span></v-card-text-stub>
+          <v-card-text-stub class=\\"py-2 text-left\\">
+            <div><a>About</a> |
+              <a>Contact</a> |
+              <a>Newsletter</a></div> <span>Made with </span> <span>🍝</span> <span> in Brisbane, Australia</span> <br> <span>© 2015 | PocketPasta</span>
+          </v-card-text-stub>
         </v-card-stub>
       </v-col-stub>
       <v-spacer-stub></v-spacer-stub>

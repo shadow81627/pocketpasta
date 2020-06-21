@@ -96,7 +96,7 @@
       <user-menu />
     </v-app-bar>
     <v-main>
-      <nuxt keep-alive />
+      <nuxt style="min-height: 100vh;" keep-alive />
     </v-main>
     <the-footer />
   </v-app>
@@ -122,21 +122,6 @@ export default {
   computed: {
     items() {
       return [
-        // {
-        //   icon: 'home',
-        //   text: this.$t('layout.navigation.home'),
-        //   route: { name: 'index' },
-        // },
-        {
-          icon: 'info',
-          text: this.$t('layout.navigation.about'),
-          route: { name: 'about' },
-        },
-        {
-          icon: 'email',
-          text: this.$t('layout.navigation.newsletter'),
-          route: { name: 'newsletter' },
-        },
         {
           icon: 'book',
           text: this.$t('layout.navigation.recipes'),
@@ -166,9 +151,6 @@ export default {
     },
   },
   mounted() {
-    this.$vuetify.theme.dark = this.$store.getters.getThemeById(
-      this.$colorMode.value,
-    ).dark;
     if (process.client) {
       this.loading = false;
     }

@@ -69,10 +69,8 @@
           <v-chip label style="background: none;"
             ><number-text :text="recipeYield"
           /></v-chip>
-          <v-chip v-if="suitableForDiet" label style="background: none;">
-            {{
-              suitableForDiet.replace(/https:\/\/schema.org\/(.*?)Diet/, '$1')
-            }}
+          <v-chip v-if="diet" label style="background: none;">
+            {{ diet }}
           </v-chip>
           <v-chip
             label
@@ -212,7 +210,7 @@ export default {
   props: {
     name: { type: String, required: false },
     description: { type: String, required: false },
-    suitableForDiet: { type: String, required: false },
+    suitableForDiet: { type: [String, Array], required: false },
     author: {
       type: Object,
       required: false,
@@ -280,6 +278,18 @@ export default {
         } else {
           return cloudinaryify(this.image);
         }
+      } else {
+        return null;
+      }
+    },
+    diet() {
+      // allow diet to be a list
+      if (this.suitableForDiet) {
+        const diet =
+          Array.isArray(this.suitableForDiet) && this.suitableForDiet
+            ? this.suitableForDiet[0]
+            : this.suitableForDiet;
+        return diet.replace(/https:\/\/schema.org\/(.*?)Diet/, '$1');
       } else {
         return null;
       }

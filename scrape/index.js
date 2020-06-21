@@ -13,8 +13,9 @@ const urls = [
   // 'https://www.woolworths.com.au/shop/productdetails/384568/arnott-s-ginger-nut',
   // 'https://www.woolworths.com.au/shop/productdetails/713429/woolworths-garlic-head',
   // 'https://shop.coles.com.au/a/caboolture/product/taylors-harrogates-tea-yorkshire-100-pack',
-  'https://www.womensweeklyfood.com.au/recipes/shepherdless-pie-31497',
-  'https://www.womensweeklyfood.com.au/recipes/crisp-roast-potatoes-with-rosemary-salt-31376',
+  // 'https://www.womensweeklyfood.com.au/recipes/shepherdless-pie-31497',
+  // 'https://www.womensweeklyfood.com.au/recipes/crisp-roast-potatoes-with-rosemary-salt-31376',
+  'https://www.jamieoliver.com/recipes/cheese-recipes/creamy-polenta-with-garlic-and-basil-butter/',
 ];
 
 /**
