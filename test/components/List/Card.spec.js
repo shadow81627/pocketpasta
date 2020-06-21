@@ -12,7 +12,7 @@ localVue.use(BootstrapVuePlugin);
 describe('List Card', () => {
   const factory = () =>
     shallowMount(Component, {
-      propsData: { ...recipe },
+      propsData: { ...recipe, type: recipe['@type'] },
       localVue,
       stubs: {
         NuxtLink: RouterLinkStub,

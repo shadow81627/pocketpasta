@@ -14,12 +14,6 @@ exports[`List renders properly 1`] = `
     <div class=\\"col-12\\">
       <div class=\\"card-layout\\"></div>
     </div>
-  </div>
-  <div class=\\"overflow-auto\\" style=\\"display: none;\\">
-    <b-pagination-stub value=\\"1\\" limit=\\"5\\" align=\\"center\\" arialabel=\\"Pagination\\" labelfirstpage=\\"Go to first page\\" firsttext=\\"«\\" labelprevpage=\\"Go to previous page\\" prevtext=\\"‹\\" labelnextpage=\\"Go to next page\\" nexttext=\\"›\\" labellastpage=\\"Go to last page\\" lasttext=\\"»\\" labelpage=\\"Go to page\\" ellipsistext=\\"…\\" size=\\"lg\\" perpage=\\"5\\" link-gen=\\"function () { [native code] }\\" use-router=\\"\\" number-of-pages=\\"1\\"></b-pagination-stub> <button style=\\"display: none;\\">Refresh</button>
-    <div style=\\"display: none;\\">Total: </div>
-    <div style=\\"display: none;\\">Pending: </div>
-    <div style=\\"display: none;\\">Error: </div>
-  </div>
+  </div> <span><div class=\\"overflow-auto\\" style=\\"display: none;\\"><b-pagination-nav-stub value=\\"1\\" limit=\\"5\\" align=\\"center\\" arialabel=\\"Pagination\\" labelfirstpage=\\"Go to first page\\" firsttext=\\"«\\" labelprevpage=\\"Go to previous page\\" prevtext=\\"‹\\" labelnextpage=\\"Go to next page\\" nexttext=\\"›\\" labellastpage=\\"Go to last page\\" lasttext=\\"»\\" labelpage=\\"Go to page\\" ellipsistext=\\"…\\" size=\\"lg\\" numberofpages=\\"1\\" baseurl=\\"/\\" userouter=\\"true\\" linkgen=\\"function () { [native code] }\\" target=\\"_self\\" exact=\\"true\\" per-page=\\"5\\"></b-pagination-nav-stub> <button style=\\"display: none;\\">Refresh</button> <div style=\\"display: none;\\">Total: </div> <div style=\\"display: none;\\">Pending: </div> <div style=\\"display: none;\\">Error: </div></div></span>
 </div>"
 `;

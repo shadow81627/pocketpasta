@@ -1,18 +1,4 @@
-// const config = require('dotenv').config({
-//   debug: true,
-// });
-// import axios from 'axios';
-
-// import recipes from './assets/link-data/recipes';
-// import products from './assets/link-data/products';
-
-const recipes = require('./assets/link-data/recipes');
-const products = require('./assets/link-data/products');
-
 const pkg = require('./package');
-
-// console.log(config);
-
 const HOST = process.env.HOST || '0.0.0.0';
 const PORT = process.env.PORT || '3000';
 const BASE_URL =
@@ -21,27 +7,27 @@ const BASE_URL =
   process.env.URL ||
   `http${PORT === 433 ? 's' : ''}://${HOST}:${PORT}`;
 
-const routes = (callback) => {
-  // axios
-  //   .get(
-  //     'https://firestore.googleapis.com/v1/projects/staging-pocketpasta/databases/(default)/documents/recipes',
-  //   )
-  //   .then((res) => {
-  //     const routes = res.data.documents.map((recipe) => {
-  //       return '/recipes/' + recipe.id;
-  //     });
-  //     callback(null, routes);
-  //   })
-  //   .catch(callback);
+const env = {
+  HOST,
+  PORT,
+  BASE_URL,
+  VERSION: pkg.version,
+  COMMIT: process.env.npm_package_gitHead,
 
-  const recipeRoutes = recipes.map((recipe) => {
-    return { route: `/recipes/${recipe.id}` };
-  });
-  const productRoutes = products.map((product) => {
-    return { route: `/products/${product.id}` };
-  });
-  const routes = [...recipeRoutes, ...productRoutes];
-  callback(null, routes);
+  FIREBASE_API_KEY:
+    process.env.FIREBASE_API_KEY || 'AIzaSyDG_OMeMaXVIHJqZpTzkY_DAWV9ylNwlXM',
+  FIREBASE_AUTH_DOMAIN:
+    process.env.FIREBASE_AUTH_DOMAIN || 'staging-pocketpasta.firebaseapp.com',
+  FIREBASE_DATABASE_URL:
+    process.env.FIREBASE_DATABASE_URL ||
+    'https://staging-pocketpasta.firebaseio.com',
+  FIREBASE_PROJECT_ID: process.env.FIREBASE_PROJECT_ID || 'staging-pocketpasta',
+  FIREBASE_STORAGE_BUCKET:
+    process.env.FIREBASE_STORAGE_BUCKET || 'staging-pocketpasta.appspot.com',
+  FIREBASE_MESSAGE_SENDER_ID:
+    process.env.FIREBASE_MESSAGE_SENDER_ID || '216453269763',
+  FIREBASE_APP_ID:
+    process.env.FIREBASE_APP_ID || '1:216453269763:web:71a3fe1ca24500bb',
 };
 
 const i18nSettings = {
@@ -82,6 +68,7 @@ const preconnectLinks = [
 
 module.exports = {
   mode: 'universal',
+  target: 'static',
 
   workbox: {
     offlineAnalytics: true,
@@ -112,28 +99,8 @@ module.exports = {
     middleware: [],
   },
 
-  env: {
-    HOST,
-    PORT,
-    BASE_URL,
-    VERSION: pkg.version,
-    COMMIT: process.env.npm_package_gitHead,
-
-    FIREBASE_API_KEY:
-      process.env.FIREBASE_API_KEY || 'AIzaSyDG_OMeMaXVIHJqZpTzkY_DAWV9ylNwlXM',
-    FIREBASE_AUTH_DOMAIN:
-      process.env.FIREBASE_AUTH_DOMAIN || 'staging-pocketpasta.firebaseapp.com',
-    FIREBASE_DATABASE_URL:
-      process.env.FIREBASE_DATABASE_URL ||
-      'https://staging-pocketpasta.firebaseio.com',
-    FIREBASE_PROJECT_ID:
-      process.env.FIREBASE_PROJECT_ID || 'staging-pocketpasta',
-    FIREBASE_STORAGE_BUCKET:
-      process.env.FIREBASE_STORAGE_BUCKET || 'staging-pocketpasta.appspot.com',
-    FIREBASE_MESSAGE_SENDER_ID:
-      process.env.FIREBASE_MESSAGE_SENDER_ID || '216453269763',
-    FIREBASE_APP_ID:
-      process.env.FIREBASE_APP_ID || '1:216453269763:web:71a3fe1ca24500bb',
+  publicRuntimeConfig: {
+    ...env,
   },
 
   server: {
@@ -161,7 +128,13 @@ module.exports = {
       // If undefined or blank then we don't need the hyphen
       return titleChunk ? `${titleChunk} - PocketPasta` : 'PocketPasta';
     },
-    noscript: [{ innerHTML: 'This website requires JavaScript.', once: true }],
+    noscript: [
+      {
+        innerHTML: 'This website requires JavaScript.',
+        once: true,
+        hid: 'noscript',
+      },
+    ],
     meta: [
       {
         property: 'og:title',
@@ -169,9 +142,10 @@ module.exports = {
           // If undefined or blank then we don't need the hyphen
           return titleChunk ? `${titleChunk} - PocketPasta` : 'PocketPasta';
         },
-        vmid: 'og:title',
+        hid: 'og:title',
       },
       {
+        hid: 'google-site-verification',
         once: true,
         name: 'google-site-verification',
         content: 'LqVnUnYGR8NrvXrhnFgW5RjNJVChZp2j2OEP55xjE30',
@@ -179,11 +153,13 @@ module.exports = {
       {
         once: true,
         name: 'version',
+        hid: 'version',
         content: pkg.version,
       },
       {
         once: true,
         'http-equiv': 'Accept-CH',
+        hid: 'Accept-CH',
         content: 'DPR, Viewport-Width, Width',
       },
     ],
@@ -191,12 +167,14 @@ module.exports = {
       {
         once: true,
         rel: 'icon',
+        hid: 'icon',
         type: 'image/x-icon',
         href: '/favicon.ico',
       },
       ...preconnectLinks.map((href) => ({
         rel: 'preconnect',
         href,
+        hid: `preconnect-${href}`,
         crossorigin: 'anonymous',
         once: true,
       })),
@@ -206,7 +184,6 @@ module.exports = {
   generate: {
     // if you want to use '404.html' instead of the default '200.html'
     fallback: true,
-    routes,
   },
 
   /*
@@ -221,22 +198,12 @@ module.exports = {
   /*
    ** Global CSS
    */
-  css: [
-    '~/assets/scss/custom.scss',
-    '~/assets/css/custom.css',
-    // 'plyr/dist/plyr.css',
-  ],
+  css: ['~/assets/scss/custom.scss', '~/assets/css/custom.css'],
 
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [
-    // { src: '~/plugins/vue-plyr' },
-    // { src: '~/plugins/firebase.js', ssr: false },
-    // { src: '~/plugins/firebase_auth.js', ssr: false },
-    // { src: '~/plugins/quicklink', ssr: false },
-    { src: '~/plugins/debug.js', ssr: false },
-  ],
+  plugins: [],
 
   /*
    ** Nuxt.js modules
@@ -245,7 +212,6 @@ module.exports = {
     '@nuxt/content',
     '@nuxtjs/axios',
     '@nuxtjs/auth',
-    '@nuxtjs/dotenv',
     '@nuxtjs/eslint-module',
     '@nuxtjs/firebase',
     '@nuxtjs/google-analytics',
@@ -390,7 +356,6 @@ module.exports = {
 
   sitemap: {
     hostname: BASE_URL,
-    routes,
     gzip: true,
     xslUrl: '/sitemap.xsl',
     defaults: {

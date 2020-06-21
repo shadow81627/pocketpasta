@@ -1,13 +1,13 @@
 <template>
   <nuxt-link
-    :to="{ path: `${id || slug}` }"
+    :to="{ path }"
     tag="b-card"
     no-body
     class="overflow-hidden rounded-0"
-    append
+    style="cursor: pointer;"
   >
     <div class="row no-gutters">
-      <div style="min-width: 128px;">
+      <div style="min-width: 128px;" :class="{ col: layout === 'columns' }">
         <b-card-img-lazy
           v-if="imageData"
           fluid
@@ -21,16 +21,17 @@
           itemprop="image"
           :alt="name"
           class="mx-auto d-block"
-          style="width: auto;"
         />
       </div>
       <br />
       <div class="col overflow-hidden" style="min-width: 220px;">
         <b-card-body>
           <header>
-            <b-card-title title-tag="h2" class="h4">{{ name }}</b-card-title>
+            <b-card-title title-tag="h2" class="h4">
+              <nuxt-link :to="{ path }">{{ name }}</nuxt-link>
+            </b-card-title>
           </header>
-          <b-card-text>{{ truncate(description) }}</b-card-text>
+          <b-card-text>{{ truncate(description) }} </b-card-text>
         </b-card-body>
       </div>
     </div>
@@ -41,14 +42,17 @@
 export default {
   inheritAttrs: false,
   props: {
-    id: { type: [String, Number], required: true },
-    slug: { type: [String, Number], required: false },
+    type: { type: String, required: true },
+    slug: { type: [String, Number], required: true },
     name: { type: String, default: null },
     description: { type: String, default: null },
     image: { type: [String, Object, Array], default: null },
     layout: { type: String, default: null },
   },
   computed: {
+    path() {
+      return `/${this.type.toLowerCase()}s/${this.slug}`;
+    },
     imageData() {
       function cloudinaryify(image) {
         if (!image.startsWith('https://res.cloudinary.com')) {

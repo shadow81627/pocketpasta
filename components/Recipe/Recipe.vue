@@ -148,11 +148,11 @@
 
     <nutrition-fact-table v-if="nutrition" v-bind="nutrition" class="my-4" />
 
-    <section v-if="tags" class="mb-2 d-print-none">
+    <section v-if="keywords" class="mb-2 d-print-none">
       <h2 class="h4">Tags</h2>
       <div class="list-group-flush">
         <keywords
-          :tags="keywords ? keywords.split(',') : []"
+          :tags="keywords.split(',')"
           :label="null"
           class="list-group-item"
         />
@@ -192,7 +192,6 @@ import {
 } from 'bootstrap-vue';
 import VuePlyr from 'vue-plyr/dist/vue-plyr.ssr.js';
 import 'plyr/dist/plyr.css';
-// import { VChip } from 'vuetify/lib';
 export default {
   components: {
     NumberText,

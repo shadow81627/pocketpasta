@@ -1,4 +1,6 @@
 {
+  "@context": "http://schema.org",
+  "@type": "Product",
   "additionalProperty": [
     {
       "name": "Size",

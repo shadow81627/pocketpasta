@@ -26,13 +26,6 @@ export default {
   head() {
     return {
       title: this.item.name,
-      link: [
-        {
-          hid: 'canonical',
-          rel: 'canonical',
-          href: `${this.baseUrl}/products/${this.id}`,
-        },
-      ],
       meta: [
         {
           hid: 'og:title',

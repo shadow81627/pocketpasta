@@ -1,12 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Footer renders properly 1`] = `
-"<v-footer-stub height=\\"auto\\" tag=\\"div\\" inset=\\"true\\" class=\\"hidden-print-only\\">
-  <div class=\\"container-fluid\\">
+"<v-footer-stub height=\\"auto\\" tag=\\"div\\" absolute=\\"true\\" app=\\"true\\" inset=\\"true\\" class=\\"hidden-print-only\\">
+  <v-container-stub tag=\\"div\\">
     <v-row-stub tag=\\"div\\" nogutters=\\"true\\">
       <v-col-stub cols=\\"auto\\" tag=\\"div\\">
         <v-card-stub loaderheight=\\"4\\" tag=\\"div\\" color=\\"transparent\\" flat=\\"true\\">
-          <v-card-text-stub><span>Version: 0.11.19</span> <span>|</span> <span>Commit: </span> <a><span> a95a529</span></a></v-card-text-stub>
+          <v-card-text-stub><span>Version: 0.11.19</span> <span>|</span> <span>Commit: </span> <a><span>
+                a95a529</span></a></v-card-text-stub>
         </v-card-stub>
       </v-col-stub>
       <v-spacer-stub></v-spacer-stub>
@@ -25,17 +26,18 @@ exports[`Footer renders properly 1`] = `
       <v-spacer-stub></v-spacer-stub>
       <lastmodified-stub utc=\\"true\\"></lastmodified-stub>
     </v-row-stub>
-  </div>
+  </v-container-stub>
 </v-footer-stub>"
 `;
 
 exports[`Footer renders properly without lastModified 1`] = `
-"<v-footer-stub height=\\"auto\\" tag=\\"div\\" inset=\\"true\\" class=\\"hidden-print-only\\">
-  <div class=\\"container-fluid\\">
+"<v-footer-stub height=\\"auto\\" tag=\\"div\\" absolute=\\"true\\" app=\\"true\\" inset=\\"true\\" class=\\"hidden-print-only\\">
+  <v-container-stub tag=\\"div\\">
     <v-row-stub tag=\\"div\\" nogutters=\\"true\\">
       <v-col-stub cols=\\"auto\\" tag=\\"div\\">
         <v-card-stub loaderheight=\\"4\\" tag=\\"div\\" color=\\"transparent\\" flat=\\"true\\">
-          <v-card-text-stub><span>Version: 0.11.19</span> <span>|</span> <span>Commit: </span> <a><span> a95a529</span></a></v-card-text-stub>
+          <v-card-text-stub><span>Version: 0.11.19</span> <span>|</span> <span>Commit: </span> <a><span>
+                a95a529</span></a></v-card-text-stub>
         </v-card-stub>
       </v-col-stub>
       <v-spacer-stub></v-spacer-stub>
@@ -54,6 +56,6 @@ exports[`Footer renders properly without lastModified 1`] = `
       <v-spacer-stub></v-spacer-stub>
       <lastmodified-stub utc=\\"true\\"></lastmodified-stub>
     </v-row-stub>
-  </div>
+  </v-container-stub>
 </v-footer-stub>"
 `;
