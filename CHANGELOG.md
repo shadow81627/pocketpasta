@@ -1,5 +1,11 @@
 # Releases
 
+## [0.36.0](https://github.com/shadow81627/pocketpasta/compare/v0.35.0...v0.36.0) (2020-06-21)
+
+### Features
+
+- **nuxt:** export ([#1210](https://github.com/shadow81627/pocketpasta/issues/1210)) ([db5e642](https://github.com/shadow81627/pocketpasta/commit/db5e642782fc0d8ffb1fed5bf9355774f099bc4d))
+
 ## [0.35.0](https://github.com/shadow81627/pocketpasta/compare/v0.34.9...v0.35.0) (2020-06-20)
 
 ### Features
