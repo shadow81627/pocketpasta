@@ -1,5 +1,5 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.13.5
+version: v1.15.0
 ignore: {}
 # patches apply the minimum changes required to fix a vulnerability
 patch:
@@ -75,3 +75,6 @@ patch:
         patched: '2019-10-13T04:14:45.508Z'
     - '@nuxtjs/sentry > @sentry/webpack-plugin > @sentry/cli > https-proxy-agent':
         patched: '2019-10-13T04:14:45.508Z'
+  SNYK-JS-LODASH-567746:
+    - nuxt > @nuxt/telemetry > inquirer > lodash:
+        patched: '2020-06-21T05:20:29.498Z'
