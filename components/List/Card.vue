@@ -1,41 +1,27 @@
 <template>
-  <nuxt-link
-    :to="{ path }"
-    tag="b-card"
-    no-body
-    class="overflow-hidden rounded-0"
-    style="cursor: pointer;"
-  >
-    <div class="row no-gutters">
-      <div style="min-width: 128px;" :class="{ col: layout === 'columns' }">
-        <b-card-img-lazy
+  <v-card :to="{ path }" exact nuxt ripple hover class="text-decoration-none">
+    <div class="d-flex flex-no-wrap align-center">
+      <v-avatar class="ma-3" size="128" tile>
+        <v-img
           v-if="imageData"
-          fluid
-          center
-          blank-src
           :src="imageData.src"
           :srcset="imageData.srcset"
-          rounded="0"
           height="128"
           width="128"
           itemprop="image"
           :alt="name"
-          class="mx-auto d-block"
         />
-      </div>
-      <br />
-      <div class="col overflow-hidden" style="min-width: 220px;">
-        <b-card-body>
-          <header>
-            <b-card-title title-tag="h2" class="h4">
-              <nuxt-link :to="{ path }">{{ name }}</nuxt-link>
-            </b-card-title>
-          </header>
-          <b-card-text>{{ truncate(description) }} </b-card-text>
-        </b-card-body>
+      </v-avatar>
+      <div class="align-center">
+        <v-card-title title-tag="h2" class="h4">
+          {{ name }}
+        </v-card-title>
+        <v-card-subtitle class="text-wrap subtitle-1">{{
+          truncate(description)
+        }}</v-card-subtitle>
       </div>
     </div>
-  </nuxt-link>
+  </v-card>
 </template>
 
 <script>
@@ -64,7 +50,7 @@ export default {
               `https://res.cloudinary.com/pocketpasta/image/fetch/fl_progressive/w_256,h_256,c_fill,f_auto,q_auto/${image} 2x`,
               `https://res.cloudinary.com/pocketpasta/image/fetch/fl_progressive/w_320,h_320,c_fill,f_auto,q_auto/${image} 2.5x`,
               `https://res.cloudinary.com/pocketpasta/image/fetch/fl_progressive/w_384,h_384,c_fill,f_auto,q_auto/${image} 3x`,
-            ],
+            ].join(','),
           };
         } else {
           return image;

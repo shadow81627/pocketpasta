@@ -33,6 +33,11 @@
         <v-col cols="auto">
           <v-card flat tile color="transparent">
             <v-card-text class="py-2 text-left">
+              <div>
+                <nuxt-link to="/about">About</nuxt-link> |
+                <nuxt-link to="/contact">Contact</nuxt-link> |
+                <nuxt-link to="/newsletter">Newsletter</nuxt-link>
+              </div>
               <span>Made with </span>
               <span>🍝</span>
               <span> in Brisbane, Australia</span>

@@ -10,15 +10,15 @@
     </div>
     <div class="row">
       <div class="col-12">
-        <div class="card-layout" :class="layoutClass">
-          <card
-            v-for="item in list"
-            :key="`${item['@type']}-${item.slug}`"
-            v-bind="item"
-            :type="item['@type']"
-            :layout="layout"
-          />
-        </div>
+        <!-- <div class="card-layout" :class="layoutClass"> -->
+        <card
+          v-for="item in list"
+          :key="`${item['@type']}-${item.slug}`"
+          v-bind="item"
+          :type="item['@type']"
+          :layout="layout"
+        />
+        <!-- </div> -->
       </div>
     </div>
 

@@ -88,6 +88,13 @@ module.exports = {
     display: 'standalone',
     background_color: '#4DBA87',
     theme_color: '#4DBA87',
+    shortcuts: [
+      {
+        name: 'Shopping List',
+        url: '/shoppinglist?utm_source=a2hs&utm_medium=none&standalone=true',
+        icons: [{ src: '/icon.png', sizes: '512x512' }],
+      },
+    ],
   },
 
   icon: {
@@ -126,7 +133,7 @@ module.exports = {
     // htmlAttrs: { 'data-vue-meta-server-rendered': '' },
     titleTemplate: (titleChunk) => {
       // If undefined or blank then we don't need the hyphen
-      return titleChunk ? `${titleChunk} - PocketPasta` : 'PocketPasta';
+      return titleChunk ? `${titleChunk} | PocketPasta` : 'PocketPasta';
     },
     noscript: [
       {
@@ -184,6 +191,7 @@ module.exports = {
   generate: {
     // if you want to use '404.html' instead of the default '200.html'
     fallback: true,
+    exclude: ['/shoppinglist', 'tasks'],
   },
 
   /*
@@ -203,7 +211,7 @@ module.exports = {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: [{ src: '~/plugins/theme.js', mode: 'client' }],
 
   /*
    ** Nuxt.js modules
