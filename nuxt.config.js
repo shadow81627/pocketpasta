@@ -7,6 +7,29 @@ const BASE_URL =
   process.env.URL ||
   `http${PORT === 433 ? 's' : ''}://${HOST}:${PORT}`;
 
+const env = {
+  HOST,
+  PORT,
+  BASE_URL,
+  VERSION: pkg.version,
+  COMMIT: process.env.npm_package_gitHead,
+
+  FIREBASE_API_KEY:
+    process.env.FIREBASE_API_KEY || 'AIzaSyDG_OMeMaXVIHJqZpTzkY_DAWV9ylNwlXM',
+  FIREBASE_AUTH_DOMAIN:
+    process.env.FIREBASE_AUTH_DOMAIN || 'staging-pocketpasta.firebaseapp.com',
+  FIREBASE_DATABASE_URL:
+    process.env.FIREBASE_DATABASE_URL ||
+    'https://staging-pocketpasta.firebaseio.com',
+  FIREBASE_PROJECT_ID: process.env.FIREBASE_PROJECT_ID || 'staging-pocketpasta',
+  FIREBASE_STORAGE_BUCKET:
+    process.env.FIREBASE_STORAGE_BUCKET || 'staging-pocketpasta.appspot.com',
+  FIREBASE_MESSAGE_SENDER_ID:
+    process.env.FIREBASE_MESSAGE_SENDER_ID || '216453269763',
+  FIREBASE_APP_ID:
+    process.env.FIREBASE_APP_ID || '1:216453269763:web:71a3fe1ca24500bb',
+};
+
 const i18nSettings = {
   baseUrl: BASE_URL,
   seo: false,
@@ -76,28 +99,8 @@ module.exports = {
     middleware: [],
   },
 
-  env: {
-    HOST,
-    PORT,
-    BASE_URL,
-    VERSION: pkg.version,
-    COMMIT: process.env.npm_package_gitHead,
-
-    FIREBASE_API_KEY:
-      process.env.FIREBASE_API_KEY || 'AIzaSyDG_OMeMaXVIHJqZpTzkY_DAWV9ylNwlXM',
-    FIREBASE_AUTH_DOMAIN:
-      process.env.FIREBASE_AUTH_DOMAIN || 'staging-pocketpasta.firebaseapp.com',
-    FIREBASE_DATABASE_URL:
-      process.env.FIREBASE_DATABASE_URL ||
-      'https://staging-pocketpasta.firebaseio.com',
-    FIREBASE_PROJECT_ID:
-      process.env.FIREBASE_PROJECT_ID || 'staging-pocketpasta',
-    FIREBASE_STORAGE_BUCKET:
-      process.env.FIREBASE_STORAGE_BUCKET || 'staging-pocketpasta.appspot.com',
-    FIREBASE_MESSAGE_SENDER_ID:
-      process.env.FIREBASE_MESSAGE_SENDER_ID || '216453269763',
-    FIREBASE_APP_ID:
-      process.env.FIREBASE_APP_ID || '1:216453269763:web:71a3fe1ca24500bb',
+  publicRuntimeConfig: {
+    ...env,
   },
 
   server: {
@@ -200,7 +203,7 @@ module.exports = {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [{ src: '~/plugins/debug.js', ssr: false }],
+  plugins: [],
 
   /*
    ** Nuxt.js modules
@@ -209,7 +212,6 @@ module.exports = {
     '@nuxt/content',
     '@nuxtjs/axios',
     '@nuxtjs/auth',
-    '@nuxtjs/dotenv',
     '@nuxtjs/eslint-module',
     '@nuxtjs/firebase',
     '@nuxtjs/google-analytics',

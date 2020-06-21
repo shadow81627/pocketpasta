@@ -22,9 +22,13 @@ describe('Footer', () => {
       stubs: {
         NuxtLink: RouterLinkStub,
       },
+      mocks: {
+        $config: {
+          VERSION: '0.11.19',
+          COMMIT: 'a95a529a01ab4fe627cc276b35ed8f5e0c6f45d9',
+        },
+      },
       data: () => ({
-        version: '0.11.19',
-        commit: 'a95a529a01ab4fe627cc276b35ed8f5e0c6f45d9',
         utc: true,
         lastModified: null,
       }),

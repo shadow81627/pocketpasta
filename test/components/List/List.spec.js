@@ -39,8 +39,12 @@ describe('List', () => {
 
   test('linkGen', () => {
     const wrapper = factory();
-    expect(wrapper.vm.linkGen(1)).toBe('?');
-    expect(wrapper.vm.linkGen(2)).toBe('?page=2');
+    expect(wrapper.vm.linkGen(1)).toEqual({
+      query: { limit: undefined, page: undefined },
+    });
+    expect(wrapper.vm.linkGen(2)).toEqual({
+      query: { limit: undefined, page: 2 },
+    });
   });
 
   test('renders properly', () => {

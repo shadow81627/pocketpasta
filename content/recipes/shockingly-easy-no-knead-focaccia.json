@@ -1,4 +1,6 @@
 {
+  "@context": "http://schema.org",
+  "@type": "Recipe",
   "name": "Shockingly Easy No-Knead Focaccia",
   "image": "https://assets.bonappetit.com/photos/5e504706e23a4f0008694627/16:9/w_1000,c_limit/BBaking_WEEK3_Focaccia2.jpg",
   "author": {

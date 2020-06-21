@@ -13,29 +13,33 @@
         <div class="card-layout" :class="layoutClass">
           <card
             v-for="item in list"
-            :key="item.slug"
+            :key="`${item['@type']}-${item.slug}`"
             v-bind="item"
+            :type="item['@type']"
             :layout="layout"
           />
         </div>
       </div>
     </div>
 
-    <div v-show="list && list.length > 0" class="overflow-auto">
-      <b-pagination-nav
-        :link-gen="linkGen"
-        :number-of-pages="pages"
-        use-router
-        align="center"
-        :per-page="limit"
-        size="lg"
-        exact
-      />
-      <button v-show="false" @click="$fetch">Refresh</button>
-      <div v-show="false">Total: {{ total }}</div>
-      <div v-show="false">Pending: {{ $fetchState.pending }}</div>
-      <div v-show="$fetchState.error">Error: {{ $fetchState.error }}</div>
-    </div>
+    <client-only>
+      <div v-show="list && list.length > 0 && pages > 1" class="overflow-auto">
+        <b-pagination-nav
+          v-model="page"
+          :link-gen="linkGen"
+          :number-of-pages="pages"
+          use-router
+          align="center"
+          :per-page="limit"
+          size="lg"
+          exact
+        />
+        <button v-show="false" @click="$fetch">Refresh</button>
+        <div v-show="false">Total: {{ total }}</div>
+        <div v-show="false">Pending: {{ $fetchState.pending }}</div>
+        <div v-show="$fetchState.error">Error: {{ $fetchState.error }}</div>
+      </div>
+    </client-only>
   </div>
 </template>
 
@@ -53,20 +57,29 @@ export default {
     collection: { type: String, required: true },
     heading: { type: String, default: '' },
     layout: { type: String, default: null },
+    deep: { type: Boolean, default: false },
+    fetchOnServer: { type: Boolean, default: false },
+    defaultLimit: { type: Number, default: 5 },
   },
   async fetch() {
-    this.list = await this.$content(this.collection)
-      .only(['id', 'slug', 'name', 'description', 'image'])
-      .sortBy('updatedAt', 'desc')
+    this.total = (
+      await this.$content(this.collection, { deep: this.deep })
+        .only(['id'])
+        .where({ '@type': { $ne: 'Offer' } })
+        .fetch()
+    ).length;
+    this.list = await this.$content(this.collection, { deep: this.deep })
+      .only(['id', 'slug', 'name', 'description', 'image', '@type'])
+      .where({ '@type': { $ne: 'Offer' } })
+      .sortBy('createdAt', 'desc')
       .skip((this.page - 1) * this.limit)
       .limit(this.limit)
       .fetch();
-    this.total = (
-      await this.$content(this.collection).only(['id']).fetch()
-    ).length;
   },
-  fetchOnServer: false,
-  data: () => ({ list: [], limit: 5, total: null }),
+  fetchOnServer() {
+    return this.fetchOnServer;
+  },
+  data: () => ({ list: [], total: null }),
   computed: {
     layoutClass() {
       // list layout is no class
@@ -77,18 +90,30 @@ export default {
       };
     },
     pages() {
-      return this.total / this.limit;
+      const pages = Math.ceil(this.total / this.limit);
+      return pages || 1;
     },
     page: {
       get() {
-        return parseInt(this.$route.query.page, 10) || 1;
+        const page = parseInt(this.$route.query.page, 10) || 1;
+        // set page to last page if page is larger than last page
+        if (page <= this.pages) {
+          return page;
+        } else {
+          return this.pages;
+        }
       },
       set(page) {
-        if (page === 1) {
-          this.$router.push({ query: { page: undefined } });
-        } else {
-          this.$router.push({ query: { page } });
-        }
+        this.$router.push({ query: this.query({ page }) });
+      },
+    },
+    limit: {
+      get() {
+        const limit = this.defaultLimit === -1 ? this.total : this.defaultLimit;
+        return parseInt(this.$route.query.limit, 10) || limit;
+      },
+      set(limit) {
+        this.$router.push({ query: this.query({ limit }) });
       },
     },
   },
@@ -96,22 +121,17 @@ export default {
     '$route.query': '$fetch',
   },
   methods: {
-    linkGen(pageNum) {
-      return pageNum === 1 ? '?' : `?page=${pageNum}`;
+    linkGen(page) {
+      return {
+        query: this.query({ page }),
+      };
     },
-  },
-  head() {
-    return {
-      link: [
-        {
-          hid: 'canonical',
-          rel: 'canonical',
-          href: `${process.env.BASE_URL}${this.$route.path}${
-            this.page !== 1 ? `?${this.linkGen(this.page)}` : ''
-          }`,
-        },
-      ],
-    };
+    query({ page = this.page, limit = this.limit }) {
+      return {
+        page: page !== 1 ? page : undefined,
+        limit: limit !== this.defaultLimit ? limit : undefined,
+      };
+    },
   },
 };
 </script>

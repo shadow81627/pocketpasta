@@ -6,7 +6,8 @@ exports[`Footer renders properly 1`] = `
     <v-row-stub tag=\\"div\\" nogutters=\\"true\\">
       <v-col-stub cols=\\"auto\\" tag=\\"div\\">
         <v-card-stub loaderheight=\\"4\\" tag=\\"div\\" color=\\"transparent\\" flat=\\"true\\">
-          <v-card-text-stub><span>Version: 0.11.19</span> <span>|</span> <span>Commit: </span> <a><span> a95a529</span></a></v-card-text-stub>
+          <v-card-text-stub><span>Version: 0.11.19</span> <span>|</span> <span>Commit: </span> <a><span>
+                a95a529</span></a></v-card-text-stub>
         </v-card-stub>
       </v-col-stub>
       <v-spacer-stub></v-spacer-stub>
@@ -35,7 +36,8 @@ exports[`Footer renders properly without lastModified 1`] = `
     <v-row-stub tag=\\"div\\" nogutters=\\"true\\">
       <v-col-stub cols=\\"auto\\" tag=\\"div\\">
         <v-card-stub loaderheight=\\"4\\" tag=\\"div\\" color=\\"transparent\\" flat=\\"true\\">
-          <v-card-text-stub><span>Version: 0.11.19</span> <span>|</span> <span>Commit: </span> <a><span> a95a529</span></a></v-card-text-stub>
+          <v-card-text-stub><span>Version: 0.11.19</span> <span>|</span> <span>Commit: </span> <a><span>
+                a95a529</span></a></v-card-text-stub>
         </v-card-stub>
       </v-col-stub>
       <v-spacer-stub></v-spacer-stub>

@@ -1,4 +1,6 @@
 {
+  "@context": "http://schema.org",
+  "@type": "Recipe",
   "name": "Roast Taters",
   "suitableForDiet": "https://schema.org/VeganDiet",
   "author": {

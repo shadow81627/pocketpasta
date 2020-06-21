@@ -1,14 +1,13 @@
 <template>
   <nuxt-link
-    :to="{ path: `${slug}` }"
+    :to="{ path }"
     tag="b-card"
     no-body
     class="overflow-hidden rounded-0"
     style="cursor: pointer;"
-    append
   >
     <div class="row no-gutters">
-      <div style="min-width: 128px;">
+      <div style="min-width: 128px;" :class="{ col: layout === 'columns' }">
         <b-card-img-lazy
           v-if="imageData"
           fluid
@@ -22,7 +21,6 @@
           itemprop="image"
           :alt="name"
           class="mx-auto d-block"
-          style="width: auto;"
         />
       </div>
       <br />
@@ -30,7 +28,7 @@
         <b-card-body>
           <header>
             <b-card-title title-tag="h2" class="h4">
-              <nuxt-link :to="{ path: `${slug}` }" append>{{ name }}</nuxt-link>
+              <nuxt-link :to="{ path }">{{ name }}</nuxt-link>
             </b-card-title>
           </header>
           <b-card-text>{{ truncate(description) }} </b-card-text>
@@ -44,6 +42,7 @@
 export default {
   inheritAttrs: false,
   props: {
+    type: { type: String, required: true },
     slug: { type: [String, Number], required: true },
     name: { type: String, default: null },
     description: { type: String, default: null },
@@ -51,6 +50,9 @@ export default {
     layout: { type: String, default: null },
   },
   computed: {
+    path() {
+      return `/${this.type.toLowerCase()}s/${this.slug}`;
+    },
     imageData() {
       function cloudinaryify(image) {
         if (!image.startsWith('https://res.cloudinary.com')) {

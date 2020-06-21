@@ -1,7 +1,6 @@
 {
-  "id": 2,
   "@context": "http://www.schema.org",
-  "@type": "product",
+  "@type": "Product",
   "brand": "San Remo",
   "image": "https://cdn0.woolworths.media/content/wowproductimages/large/043974.jpg",
   "name": "Spaghetti No 5",

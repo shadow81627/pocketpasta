@@ -1,4 +1,6 @@
 {
+  "@context": "http://schema.org",
+  "@type": "Recipe",
   "url": "https://www.delish.com/cooking/recipe-ideas/a25751125/trash-can-nachos-recipe/",
   "publisher": {
     "@type": "Organization",

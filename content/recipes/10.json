@@ -1,4 +1,6 @@
 {
+  "@context": "http://schema.org",
+  "@type": "Recipe",
   "suitableForDiet": "https://schema.org/VeganDiet",
   "name": "Homemade Artisan Bread",
   "description": "Even if you've never made homemade bread or worked with yeast before, this homemade artisan bread is for you.",

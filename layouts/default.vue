@@ -77,7 +77,7 @@
           ><v-progress-circular
             v-if="loading"
             indeterminate
-            size="24"
+            size="18"
             width="2"
         /></v-app-bar-nav-icon>
         <b-img-lazy
@@ -185,7 +185,7 @@ export default {
           hid: 'og:url',
           name: 'og:url',
           property: 'og:url',
-          content: `${process.env.BASE_URL}${this.$route.path}`,
+          content: `${this.$config.BASE_URL}${this.$route.path}`,
         },
       ],
       link: [
@@ -214,7 +214,7 @@ export default {
         {
           hid: 'canonical',
           rel: 'canonical',
-          href: `${process.env.BASE_URL}${this.$route.path}`,
+          href: `${this.$config.BASE_URL}${this.$route.path}`,
         },
       ],
     };

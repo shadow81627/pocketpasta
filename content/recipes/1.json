@@ -1,15 +1,15 @@
 {
+  "@context": "http://schema.org",
+  "@type": "Recipe",
   "name": "Audrey Hepburn’s Spaghetti Al Pomodoro Recipe",
   "suitableForDiet": "https://schema.org/VeganDiet",
   "image": "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/162208.jpg",
   "description": "Make Audrey Hepburn's spaghetti al pomodoro recipe. Hepburn liked her pasta smothered in tomato sauce.",
   "keywords": "Audrey Hepburn, recipe, Pasta Recipes, Sauce Recipes, Audrey, Hepburn, spaghetti, spathetti, pomodoro, pasta, history, sauce",
-  "author": [
-    {
-      "@type": "Person",
-      "name": "Audrey Hepburn"
-    }
-  ],
+  "author": {
+    "@type": "Person",
+    "name": "Audrey Hepburn"
+  },
   "publisher": {
     "@type": "Organization",
     "name": "PocketPasta",

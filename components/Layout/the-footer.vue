@@ -5,11 +5,13 @@
         <v-col cols="auto">
           <v-card flat color="transparent">
             <v-card-text>
-              <span>Version: {{ version }}</span>
+              <span>Version: {{ $config.VERSION }}</span>
               <span>|</span>
               <span>Commit: </span>
               <nuxt-link :to="localePath({ name: 'releases' })"
-                ><span> {{ shortHash(commit) }}</span></nuxt-link
+                ><span>
+                  {{ shortHash($config.COMMIT || $config.TRAVIS_COMMIT) }}</span
+                ></nuxt-link
               >
             </v-card-text>
           </v-card>
@@ -53,8 +55,6 @@ export default {
     lastModified,
   },
   data: () => ({
-    version: process.env.VERSION,
-    commit: process.env.COMMIT || process.env.TRAVIS_COMMIT,
     utc: false,
   }),
   methods: {
