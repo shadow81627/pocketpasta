@@ -1,5 +1,11 @@
 # Releases
 
+## [0.37.0](https://github.com/shadow81627/pocketpasta/compare/v0.36.1...v0.37.0) (2020-06-22)
+
+### Features
+
+- **manifest:** add shoppinglist shortcut ([#1215](https://github.com/shadow81627/pocketpasta/issues/1215)) ([aafa5b7](https://github.com/shadow81627/pocketpasta/commit/aafa5b74b5ee90eb8f8f7c73706436017864b656))
+
 ## [0.36.1](https://github.com/shadow81627/pocketpasta/compare/v0.36.0...v0.36.1) (2020-06-21)
 
 ### Bug Fixes
