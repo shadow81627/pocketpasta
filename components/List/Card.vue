@@ -86,10 +86,8 @@ export default {
     },
   },
   methods: {
-    truncate(text, stop = 150, clamp = '...') {
-      if (text) {
-        return `${text.slice(0, stop)}${stop < text.length ? clamp : ''}`;
-      }
+    truncate(text = '', stop = 150, clamp = '...') {
+      return `${text.slice(0, stop)}${stop < text.length ? clamp : ''}`;
     },
   },
 };
