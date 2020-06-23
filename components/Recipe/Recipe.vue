@@ -265,18 +265,17 @@ export default {
           };
         }
       }
-      if (this.image) {
+      const image = Array.isArray(this.image) ? this.image[0] : this.image;
+      if (image) {
         if (
-          typeof this.image === 'object' &&
-          this.image !== null &&
-          !Array.isArray(this.image)
+          typeof image === 'object' &&
+          image !== null &&
+          !Array.isArray(image)
         ) {
-          const { url } = this.image;
+          const { url } = image;
           return cloudinaryify(url);
-        } else if (Array.isArray(this.image)) {
-          return cloudinaryify(this.image[0]);
         } else {
-          return cloudinaryify(this.image);
+          return cloudinaryify(image);
         }
       } else {
         return null;

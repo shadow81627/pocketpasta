@@ -15,7 +15,9 @@ const urls = [
   // 'https://shop.coles.com.au/a/caboolture/product/taylors-harrogates-tea-yorkshire-100-pack',
   // 'https://www.womensweeklyfood.com.au/recipes/shepherdless-pie-31497',
   // 'https://www.womensweeklyfood.com.au/recipes/crisp-roast-potatoes-with-rosemary-salt-31376',
-  'https://www.jamieoliver.com/recipes/cheese-recipes/creamy-polenta-with-garlic-and-basil-butter/',
+  // 'https://www.jamieoliver.com/recipes/cheese-recipes/creamy-polenta-with-garlic-and-basil-butter/',
+  // 'https://www.woolworths.com.au/shop/productdetails/342970/colgate-savacol-antiseptic-mouth-throat-rinse',
+  // 'https://www.thespruceeats.com/turkish-red-lentil-soup-suzme-mercimek-corbasi-recipe-3274346',
 ];
 
 /**

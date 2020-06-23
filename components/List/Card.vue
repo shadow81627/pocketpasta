@@ -1,26 +1,38 @@
 <template>
-  <v-card :to="{ path }" exact nuxt ripple hover class="text-decoration-none">
-    <div class="d-flex flex-no-wrap align-center">
-      <v-avatar class="ma-3" size="128" tile>
-        <v-img
-          v-if="imageData"
-          :src="imageData.src"
-          :srcset="imageData.srcset"
-          height="128"
-          width="128"
-          itemprop="image"
-          :alt="name"
-        />
-      </v-avatar>
-      <div class="align-center">
-        <v-card-title title-tag="h2" class="h4">
-          {{ name }}
-        </v-card-title>
-        <v-card-subtitle class="text-wrap subtitle-1">{{
-          truncate(description)
-        }}</v-card-subtitle>
-      </div>
-    </div>
+  <v-card
+    :to="{ path }"
+    exact
+    nuxt
+    ripple
+    hover
+    tile
+    class="text-decoration-none"
+  >
+    <v-container>
+      <v-row class="align-center justify-center" no-gutters>
+        <v-col cols="auto">
+          <v-avatar class="ma-sm-3" size="128" tile>
+            <v-img
+              v-if="imageData"
+              :src="imageData.src"
+              :srcset="imageData.srcset"
+              height="128"
+              width="128"
+              itemprop="image"
+              :alt="name"
+            />
+          </v-avatar>
+        </v-col>
+        <v-col cols="12" sm="">
+          <v-card-title title-tag="h2" class="h4 text-break text-wrap">
+            {{ name }}
+          </v-card-title>
+          <v-card-subtitle class="text-wrap subtitle-1">{{
+            truncate(description)
+          }}</v-card-subtitle>
+        </v-col>
+      </v-row>
+    </v-container>
   </v-card>
 </template>
 
@@ -56,18 +68,17 @@ export default {
           return image;
         }
       }
-      if (this.image) {
+      const image = Array.isArray(this.image) ? this.image[0] : this.image;
+      if (image) {
         if (
-          typeof this.image === 'object' &&
-          this.image !== null &&
-          !Array.isArray(this.image)
+          typeof image === 'object' &&
+          image !== null &&
+          !Array.isArray(image)
         ) {
-          const { url } = this.image;
+          const { url } = image;
           return cloudinaryify(url);
-        } else if (Array.isArray(this.image)) {
-          return cloudinaryify(this.image[0]);
         } else {
-          return cloudinaryify(this.image);
+          return cloudinaryify(image);
         }
       } else {
         return null;
