@@ -57,6 +57,24 @@ describe('List Card', () => {
     expect(wrapper.vm.imageData).toBeTruthy();
   });
 
+  test('imageData handle array of objects', () => {
+    const wrapper = factory();
+    wrapper.setProps({
+      ...recipe,
+      image: [{ url: 'https://res.cloudinary.com/pocketpasta/image/fetch/' }],
+    });
+    expect(wrapper.vm.imageData).toBeTruthy();
+  });
+
+  test('imageData handle null', () => {
+    const wrapper = factory();
+    wrapper.setProps({
+      ...recipe,
+      image: null,
+    });
+    expect(wrapper.vm.imageData).toBe(null);
+  });
+
   test('renders properly', () => {
     const wrapper = factory();
     expect(wrapper.html()).toMatchSnapshot();

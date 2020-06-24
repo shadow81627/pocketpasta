@@ -95,10 +95,14 @@
       <add-to-home-screen icon />
       <user-menu />
     </v-app-bar>
-    <v-main>
+    <v-main class="pb-0">
       <nuxt style="min-height: 100vh;" keep-alive />
     </v-main>
-    <the-footer />
+    <the-footer
+      :style="{
+        marginLeft: drawer && $vuetify.breakpoint.lgAndUp ? '256px' : 0,
+      }"
+    />
   </v-app>
 </template>
 
