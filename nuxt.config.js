@@ -365,10 +365,11 @@ module.exports = {
   sitemap: {
     hostname: BASE_URL,
     gzip: true,
+    i18n: 'en',
     xslUrl: '/sitemap.xsl',
     defaults: {
       changefreq: 'weekly',
-      // priority: 0.5,
+      priority: 0.5,
       lastmod: new Date(),
       // lastmodrealtime: true,
     },

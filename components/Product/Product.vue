@@ -52,14 +52,14 @@
     </div> -->
 
     <div
-      v-if="offers && offers.offers"
+      v-if="offerData && offerData.offers"
       itemprop="offers"
       itemscope
       itemtype="http://schema.org/AggregateOffer"
     >
       <h2>Sellers</h2>
       <div
-        v-for="(offer, index) in offers.offers"
+        v-for="(offer, index) in offerData.offers"
         :key="index"
         itemprop="offers"
         itemscope
@@ -106,6 +106,7 @@
 </template>
 
 <script>
+import { map } from 'lodash-es';
 import Keywords from '@/components/Keywords.vue';
 import NutritionFactTable from '@/components/Recipe/NutritionFactTable';
 
@@ -133,14 +134,34 @@ export default {
         ratingCount: 1,
       }),
     },
-    offers: { type: Array, default: () => [] },
+    offers: { type: Object, default: () => ({}) },
     additionalProperty: { type: Array, default: () => [] },
   },
   computed: {
+    offerData() {
+      if (
+        this.offers &&
+        this.offers.offers &&
+        Array.isArray(this.offers.offers)
+      ) {
+        const offers = {
+          ...this.offers,
+          '@type': 'AggregateOffer',
+          highPrice: Math.max(...map(this.offers.offers, 'price')),
+          lowPrice: Math.min(...map(this.offers.offers, 'price')),
+          offerCount: this.offers.offers.length,
+        };
+        return offers;
+      } else {
+        return null;
+      }
+    },
     linkData() {
       return {
         ...this.$props,
+        offers: this.offerData,
         '@type': 'Product',
+        '@context': 'http://schema.org',
         // dateModified: this.updatedAt.toISOString(),
         // updatedAt: undefined,
       };
