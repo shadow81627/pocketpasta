@@ -45,6 +45,14 @@ describe('Footer', () => {
     expect(wrapper.html()).toMatchSnapshot();
   });
 
+  test('shortHash', () => {
+    const wrapper = factory();
+    expect(wrapper.vm.shortHash()).toBe(null);
+    expect(
+      wrapper.vm.shortHash('a95a529a01ab4fe627cc276b35ed8f5e0c6f45d9'),
+    ).toBe('a95a529');
+  });
+
   test('renders properly without lastModified', () => {
     const wrapper = factory();
     expect(wrapper.html()).toMatchSnapshot();
