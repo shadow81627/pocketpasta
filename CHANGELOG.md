@@ -1,5 +1,11 @@
 # Releases
 
+## [0.37.2](https://github.com/shadow81627/pocketpasta/compare/v0.37.1...v0.37.2) (2020-06-24)
+
+### Bug Fixes
+
+- **footer:** position static ([#1229](https://github.com/shadow81627/pocketpasta/issues/1229)) ([4e7c925](https://github.com/shadow81627/pocketpasta/commit/4e7c925b292c5f2b5b769f7923cf64cb18e1c0eb))
+
 ## [0.37.1](https://github.com/shadow81627/pocketpasta/compare/v0.37.0...v0.37.1) (2020-06-22)
 
 ### Bug Fixes
