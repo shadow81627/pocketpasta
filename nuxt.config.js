@@ -387,6 +387,7 @@ module.exports = {
    ** Build configuration
    */
   build: {
+    transpile: ['lodash-es'],
     // move component styles into css files
     extractCSS: true,
     /*
