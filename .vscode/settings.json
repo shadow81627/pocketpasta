@@ -3,7 +3,7 @@
   "editor.formatOnSave": true,
   "vetur.validation.template": false,
   "files.exclude": {
-    "**/xnode_modules/**": true,
+    "**/node_modules/**": true,
     "**/dist/**": true,
     "**/coverage/**": true,
     "**/.nuxt/**": true,
