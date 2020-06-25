@@ -57,6 +57,7 @@
     "firebaseui": "4.5.1",
     "github-markdown-css": "4.0.0",
     "koa": "2.13.0",
+    "lodash-es": "4.17.15",
     "luxon": "1.24.1",
     "nuxt": "2.13.1",
     "nuxt-i18n": "6.12.2",

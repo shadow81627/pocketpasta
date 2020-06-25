@@ -43,7 +43,7 @@ export default {
     type: { type: String, required: true },
     slug: { type: [String, Number], required: true },
     name: { type: String, default: null },
-    description: { type: String, default: null },
+    description: { type: String, default: undefined },
     image: { type: [String, Object, Array], default: null },
     layout: { type: String, default: null },
   },

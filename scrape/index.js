@@ -18,6 +18,9 @@ const urls = [
   // 'https://www.jamieoliver.com/recipes/cheese-recipes/creamy-polenta-with-garlic-and-basil-butter/',
   // 'https://www.woolworths.com.au/shop/productdetails/342970/colgate-savacol-antiseptic-mouth-throat-rinse',
   // 'https://www.thespruceeats.com/turkish-red-lentil-soup-suzme-mercimek-corbasi-recipe-3274346',
+  'https://www.woolworths.com.au/shop/productdetails/701038/higher-living-sweet-dreams-tea-bags',
+  'https://www.woolworths.com.au/shop/productdetails/575845/twinings-digest',
+  'https://www.woolworths.com.au/shop/productdetails/793384/sanitarium-so-good-long-life-unsweetened-almond-coconut-milk',
 ];
 
 /**

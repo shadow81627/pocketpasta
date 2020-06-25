@@ -7,6 +7,7 @@ module.exports = {
     '\\.(css|less)$': '<rootDir>/test/__mocks__/styleMock.js',
     '^vuetify/lib$': 'vuetify',
     '^vuetify/lib/directives$': 'vuetify',
+    '^lodash-es$': 'lodash',
   },
   moduleFileExtensions: ['js', 'vue', 'json'],
   transform: {
@@ -16,7 +17,7 @@ module.exports = {
       '<rootDir>/test/__mocks__/fileMock.js',
     '\\.(css|less)$': 'css-loader',
   },
-  transformIgnorePatterns: ['node_modules/(?!vuetify)'],
+  transformIgnorePatterns: ['node_modules/(?!vuetify|lodash-es)'],
   collectCoverage: true,
   collectCoverageFrom: [
     '<rootDir>/components/**/*.vue',

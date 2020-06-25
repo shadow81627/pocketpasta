@@ -2,6 +2,6 @@
 
 exports[`product detail renders properly 1`] = `
 "<div class=\\"container\\">
-  <product-stub aggregaterating=\\"[object Object]\\" offers=\\"\\" additionalproperty=\\"\\"></product-stub>
+  <product-stub aggregaterating=\\"[object Object]\\" offers=\\"[object Object]\\" additionalproperty=\\"\\"></product-stub>
 </div>"
 `;

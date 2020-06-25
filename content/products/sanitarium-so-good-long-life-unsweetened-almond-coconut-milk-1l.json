@@ -1,0 +1,54 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Product",
+  "additionalProperty": [
+    {
+      "@type": "NutritionInformation",
+      "calories": "72kJ",
+      "carbohydrateContent": "0.3g",
+      "fatContent": "1.5g",
+      "name": "nutrition",
+      "proteinContent": "0.5g",
+      "saturatedFatContent": "0.3g",
+      "servingSize": "100 g",
+      "sodiumContent": "31mg",
+      "sugarContent": "0.2g"
+    }
+  ],
+  "brand": {
+    "@context": "http://schema.org",
+    "@type": "Organization",
+    "name": "sanitarium"
+  },
+  "description": "Sanitarium So Good Almond Coconut Milk is a long life dairy free milk alternative  So Good™ Unsweetened Almond Coconut milk easily fits into your everyday routine. It adds a creamy, tropical taste to smoothies, a new flavour twist to your cereal and cooking, and is mild enough to enjoy icy cold by the glass. Blending the mild nuttiness of almonds with the deliciously refreshing taste of coconut, So Good™ Almond Coconut milk Unsweetened is naturally free from lactose, gluten, dairy and cholesterol, and is low in saturated fat. So Good™ Almond & Coconut Milk Unsweetened is also: 98.5% fat free Low in Saturated Fat 95% less sugars than lite dairy milk 60% less calories than lite dairy milk Good source of Calcium Good source of vitamins B2 and B12 Source of vitamin ESo Good™ Almond & Coconut Milk Unsweetened is suitable for inclusion in the following diets: Lactose and dairy free Gluten free Cholesterol free Low fat and saturated fat Vegetarian and vegan",
+  "gtin13": "9300652804973",
+  "image": "https://cdn0.woolworths.media/content/wowproductimages/large/793384.jpg",
+  "name": "Sanitarium So Good Long Life Unsweetened Almond Coconut Milk 1l",
+  "offers": {
+    "offers": [
+      {
+        "@context": "http://schema.org",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "itemCondition": "http://schema.org/NewCondition",
+        "offeredBy": "Woolworths",
+        "potentialAction": {
+          "@context": "http://schema.org",
+          "@type": "BuyAction"
+        },
+        "price": 2.7,
+        "priceCurrency": "AUD",
+        "seller": {
+          "@type": "Organization",
+          "name": "Woolworths"
+        },
+        "url": "https://www.woolworths.com.au/shop/productdetails/793384/sanitarium-so-good-long-life-unsweetened-almond-coconut-milk"
+      }
+    ]
+  },
+  "review": [],
+  "sameAs": [
+    "https://www.woolworths.com.au/shop/productdetails/793384/sanitarium-so-good-long-life-unsweetened-almond-coconut-milk"
+  ],
+  "sku": "793384"
+}
