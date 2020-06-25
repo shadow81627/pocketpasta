@@ -1,5 +1,11 @@
 # Releases
 
+## [0.37.5](https://github.com/shadow81627/pocketpasta/compare/v0.37.4...v0.37.5) (2020-06-25)
+
+### Bug Fixes
+
+- **product:** set type menu item when nutrition ([#1235](https://github.com/shadow81627/pocketpasta/issues/1235)) ([51a9d19](https://github.com/shadow81627/pocketpasta/commit/51a9d190c2168eb425898a56da26fe5432675d17))
+
 ## [0.37.4](https://github.com/shadow81627/pocketpasta/compare/v0.37.3...v0.37.4) (2020-06-25)
 
 ### Bug Fixes
