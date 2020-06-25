@@ -87,13 +87,8 @@
     </div>
 
     <nutrition-fact-table
-      v-if="
-        additionalProperty &&
-        additionalProperty.find((property) => property.name === 'nutrition')
-      "
-      v-bind="
-        additionalProperty.find((property) => property.name === 'nutrition')
-      "
+      v-if="nutritionData"
+      v-bind="nutritionData"
       class="my-4"
     />
 
@@ -106,7 +101,7 @@
 </template>
 
 <script>
-import { map } from 'lodash-es';
+import { map, head } from 'lodash-es';
 import Keywords from '@/components/Keywords.vue';
 import NutritionFactTable from '@/components/Recipe/NutritionFactTable';
 
@@ -123,7 +118,7 @@ export default {
     sku: { type: String, required: false },
     // suitableForDiet: { type: String, required: false },
     // author: { type: Object, required: false },
-    // nutrition: { type: Object, required: false },
+    nutrition: { type: Object, required: false },
     datePublished: { type: String, required: false },
     keywords: { type: String, required: false },
     image: { type: [Array, String], required: false },
@@ -140,6 +135,14 @@ export default {
     additionalProperty: { type: Array, default: () => [] },
   },
   computed: {
+    nutritionData() {
+      return (
+        this.nutrition ||
+        (this.additionalProperty || []).find(
+          (property) => property.name === 'nutrition',
+        )
+      );
+    },
     offerData() {
       if (
         this.offers &&
@@ -147,6 +150,7 @@ export default {
         Array.isArray(this.offers.offers)
       ) {
         const offers = {
+          priceCurrency: head(map(this.offers.offers, 'priceCurrency')),
           ...this.offers,
           '@type': 'AggregateOffer',
           highPrice: Math.max(...map(this.offers.offers, 'price')),
@@ -159,13 +163,17 @@ export default {
       }
     },
     linkData() {
+      const type = ['Product'];
+      if (this.nutritionData) {
+        type.push('MenuItem');
+      }
       return {
         ...this.$props,
         offers: this.offerData,
-        '@type': 'Product',
+        nutrition: this.nutritionData || undefined,
+        additionalProperty: undefined,
+        '@type': type,
         '@context': 'http://schema.org',
-        // dateModified: this.updatedAt.toISOString(),
-        // updatedAt: undefined,
       };
     },
   },

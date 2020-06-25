@@ -74,6 +74,30 @@ describe('Product', () => {
   test('linkData', () => {
     const wrapper = factory();
     expect(wrapper.vm.linkData).toBeTruthy();
+    wrapper.setProps({
+      nutrition: null,
+      additionalProperty: null,
+    });
+    expect(wrapper.vm.linkData.nutrition).toBe(undefined);
+  });
+
+  test('offerData', () => {
+    const wrapper = factory();
+    expect(wrapper.vm.offerData).toBeTruthy();
+    wrapper.setProps({
+      offers: null,
+    });
+    expect(wrapper.vm.offerData).toBe(null);
+  });
+
+  test('nutritionData', () => {
+    const wrapper = factory();
+    expect(wrapper.vm.nutritionData).toBeTruthy();
+    wrapper.setProps({
+      nutrition: null,
+      additionalProperty: null,
+    });
+    expect(wrapper.vm.nutritionData).toBe(undefined);
   });
 
   test('imageData with cloudinary image does not modify url', () => {
