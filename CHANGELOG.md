@@ -1,5 +1,11 @@
 # Releases
 
+## [0.37.4](https://github.com/shadow81627/pocketpasta/compare/v0.37.3...v0.37.4) (2020-06-25)
+
+### Bug Fixes
+
+- **product:** calculate aggregate offer ([#1234](https://github.com/shadow81627/pocketpasta/issues/1234)) ([e5fde48](https://github.com/shadow81627/pocketpasta/commit/e5fde48374cef0d9657c80d6b23a740c523593a7))
+
 ## [0.37.3](https://github.com/shadow81627/pocketpasta/compare/v0.37.2...v0.37.3) (2020-06-24)
 
 ### Bug Fixes
