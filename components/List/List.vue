@@ -25,7 +25,7 @@
     <client-only>
       <div v-show="list && list.length > 0 && pages > 1" class="overflow-auto">
         <b-pagination-nav
-          v-model="page"
+          :value="page"
           :link-gen="linkGen"
           :number-of-pages="pages"
           use-router
