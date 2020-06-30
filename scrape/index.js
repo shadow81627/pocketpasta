@@ -133,13 +133,10 @@ const fileUrlMap = {};
                   ),
                 }))
                 .filter(({ text }) => Boolean(text))
-                .map((instruction) => {
-                  const text = instruction.text.replace(/([^.!?])$/, '$1.');
-                  return {
-                    ...instruction,
-                    text,
-                  };
-                });
+                .map((instruction) => ({
+                  ...instruction,
+                  text: instruction.text.replace(/([^.!?])$/, '$1.'),
+                }));
         linkData.recipeInstructions = _.uniq(recipeInstructionsArray);
       }
 
