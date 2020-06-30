@@ -1,0 +1,18 @@
+{
+  "@type": "Offer",
+  "availability": "http://schema.org/InStock",
+  "availabilityStarts": "2020-06-27T00:51:50.760Z",
+  "itemCondition": "http://schema.org/NewCondition",
+  "offeredBy": "Woolworths",
+  "potentialAction": {
+    "@context": "http://schema.org",
+    "@type": "BuyAction"
+  },
+  "price": 2.6,
+  "priceCurrency": "AUD",
+  "seller": {
+    "@type": "Organization",
+    "name": "Woolworths"
+  },
+  "url": "https://www.woolworths.com.au/shop/productdetails/43974/san-remo-spaghetti-pasta-no-5"
+}

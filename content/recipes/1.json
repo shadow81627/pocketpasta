@@ -1,29 +1,37 @@
 {
-  "@context": "http://schema.org",
   "@type": "Recipe",
-  "name": "Audrey Hepburn’s Spaghetti Al Pomodoro Recipe",
-  "suitableForDiet": "https://schema.org/VeganDiet",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "bestRating": "100",
+    "ratingCount": "201",
+    "ratingValue": "92",
+    "worstRating": "0"
+  },
+  "datePublished": "2018-06-08T23:54:54",
+  "description": "Here's what you need: extra virgin olive oil, small onion, celery, garlic, fresh basil, canned whole peeled tomato, salt, dried spathetti, freshly grated parmigiano-reggiano cheese, carrots",
   "image": "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/162208.jpg",
-  "description": "Make Audrey Hepburn's spaghetti al pomodoro recipe. Hepburn liked her pasta smothered in tomato sauce.",
-  "keywords": "Audrey Hepburn, recipe, Pasta Recipes, Sauce Recipes, Audrey, Hepburn, spaghetti, spathetti, pomodoro, pasta, history, sauce",
-  "author": {
-    "@type": "Person",
-    "name": "Audrey Hepburn"
+  "keywords": "audrey, audrey hepburn, devin lytle, hepburn, history, history bites, jared nunn, pasta, pomodoro, sauce, spaghetti",
+  "name": "Audrey Hepburn’s Spaghetti Al Pomodoro Recipe by Tasty",
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "calories": "585 calories",
+    "carbohydrateContent": "98 grams",
+    "fatContent": "12 grams",
+    "fiberContent": "9 grams",
+    "proteinContent": "21 grams",
+    "sugarContent": "11 grams"
   },
   "publisher": {
     "@type": "Organization",
-    "name": "PocketPasta",
-    "url": "https://pocketpasta.com",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://pocketpasta.com/logo.png"
-    }
+      "url": "https://tasty.co/favicon.ico"
+    },
+    "name": "Tasty",
+    "url": "https://pocketpasta.com"
   },
   "recipeCategory": "Dinner",
   "recipeCuisine": "Italian",
-
-  "datePublished": "2018-06-08T23:54:54",
-  "recipeYield": "4 servings",
   "recipeIngredient": [
     "1 small onion, diced",
     "2 cloves garlic, minced",
@@ -59,6 +67,42 @@
     {
       "@type": "HowToStep",
       "text": "Taste the sauce and add salt, if desired. Serve pasta topped generously with sauce, and the reserved sliced basil leaves."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "While the sauce is simmering, fill another large pot with water and bring to a boil. Add salt, if desired. Cook the spaghetti until al dente. Drain and rinse the pasta with lukewarm water to prevent sticking."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Taste the sauce and add salt, if desired. Serve pasta topped generously with sauce, grated Parmigiano-Reggiano cheese, and the reserved sliced basil leaves."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Enjoy!."
     }
-  ]
+  ],
+  "recipeYield": "4 servings",
+  "sameAs": [
+    "https://tasty.co/recipe/audrey-hepburns-spaghetti-al-pomodoro",
+    "https://www.pbs.org/food/recipes/audrey-hepburn-spaghetti-al-pomodoro"
+  ],
+  "suitableForDiet": "https://schema.org/VeganDiet",
+  "tool": "Tongs",
+  "video": {
+    "@type": "VideoObject",
+    "contentUrl": "https://vid.tasty.co/output/97978/landscape_480/1528506768",
+    "description": "Here's what you need: extra virgin olive oil, small onion, celery, garlic, fresh basil, canned whole peeled tomato, salt, dried spathetti, freshly grated parmigiano-reggiano cheese, carrots",
+    "duration": "PT15M37S",
+    "name": "Audrey Hepburn’s Spaghetti Al Pomodoro Recipe by Tasty",
+    "publisher": {
+      "@type": "Organization",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://tasty.co/favicon.ico"
+      },
+      "name": "Tasty"
+    },
+    "thumbnailUrl": "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/162208.jpg",
+    "uploadDate": "2018-06-08T23:54:54"
+  }
 }

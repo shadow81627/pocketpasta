@@ -33,7 +33,7 @@ async function scrape(url) {
   try {
     // fetch puppeteer browser rendered html
     const page = await browser.newPage();
-    const timeout = 60000; // timeout in milliseconds.
+    const timeout = 1200000; // timeout in milliseconds.
     await page.goto(url, { waitUntil: 'networkidle0', timeout });
     await page.waitFor(15000);
     const data = await page.evaluate(
@@ -48,9 +48,19 @@ async function scrape(url) {
     const linkDataHtmlDecodedTagsStripped = cheerio
       .load(linkDataHtmlDecoded)
       .text();
-    const linkData = JSON.parse(linkDataHtmlDecodedTagsStripped);
+    const parsedData = JSON.parse(linkDataHtmlDecodedTagsStripped);
 
-    if (linkData && linkDataTypes.includes(linkData['@type'].toLowerCase())) {
+    // check graph for recipe
+    const linkData =
+      parsedData && parsedData['@graph'] && !parsedData['@type']
+        ? _.find(parsedData['@graph'], { '@type': 'Recipe' })
+        : parsedData;
+
+    if (
+      linkData &&
+      linkData['@type'] &&
+      linkDataTypes.includes(linkData['@type'].toLowerCase())
+    ) {
       const type = linkData['@type'].toLowerCase();
       let sameAs = [url];
       // add url to same as to use a reference
@@ -60,6 +70,26 @@ async function scrape(url) {
       // remove author is name has no length
       if (linkData.author && !linkData.author.name) {
         linkData.author = undefined;
+      }
+      if (type === 'recipe') {
+        if (
+          linkData.recipeYield &&
+          Array.isArray(linkData.recipeYield) &&
+          linkData.recipeYield.length
+        ) {
+          linkData.recipeYield = linkData.recipeYield[0];
+        }
+        if (
+          linkData.recipeCuisine &&
+          Array.isArray(linkData.recipeCuisine) &&
+          linkData.recipeCuisine.length
+        ) {
+          linkData.recipeCuisine = linkData.recipeCuisine[0];
+        }
+
+        if (!linkData.datePublished) {
+          linkData.datePublished = new Date();
+        }
       }
       if (type === 'product') {
         if (url.includes('woolworths')) {
@@ -191,19 +221,12 @@ async function scrape(url) {
         ...linkData,
         sameAs,
         mainEntityOfPage: undefined,
+        isPartOf: undefined,
         // offers: undefined,
         '@type': _.startCase(_.toLower(type)),
         '@id': undefined,
         '@context': undefined,
       });
-
-      fs.writeFileSync(
-        `content/${type}s/${slugify(data.name, {
-          lower: true, // convert to lower case, defaults to `false`
-          strict: true, // strip special characters except replacement, defaults to `false`
-        })}.json`,
-        JSON.stringify(sortobject(data), undefined, 2) + '\n',
-      );
       return data;
     }
   } catch (error) {

@@ -1,15 +1,39 @@
 {
   "@context": "http://schema.org",
   "@type": "Recipe",
-  "suitableForDiet": "https://schema.org/VeganDiet",
-  "name": "Split Pea Soup",
-  "author": { "@type": "Person", "name": "Heidi Swanson" },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingCount": "1",
+    "ratingValue": "3.9"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Heidi Swanson"
+  },
+  "cookTime": "PT25M",
   "datePublished": "2018-11-15T14:23:18+00:00",
   "description": "A delicious, simple split pea soup made from an impossibly short list of ingredients.",
-  "recipeYield": "6",
+  "image": [
+    "https://images.101cookbooks.com/vegetarian-split-pea-soup-h2.jpg?w=680&auto=format",
+    "https://images.101cookbooks.com/vegetarian-split-pea-soup-2.jpg?w=1000&auto=format",
+    "https://images.101cookbooks.com/vegetarian-split-pea-soup-2.jpg?w=800&h=800&fp-z=2&fp-y=.5&fp-x=.5&fit=crop&crop=entropy"
+  ],
+  "keywords": "split pea soup",
+  "name": "Split Pea Soup",
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "calories": "259 kcal",
+    "carbohydrateContent": "43 g",
+    "fatContent": "3 g",
+    "fiberContent": "17 g",
+    "proteinContent": "16 g",
+    "servingSize": "1 serving",
+    "sodiumContent": "409 mg",
+    "sugarContent": "6 g"
+  },
   "prepTime": "PT5M",
-  "cookTime": "PT25M",
-  "totalTime": "PT30M",
+  "recipeCategory": ["Lunch", "Main Course", "Soup"],
+  "recipeCuisine": "American",
   "recipeIngredient": [
     "1 tablespoon extra virgin olive oil",
     "2  large onions, chopped",
@@ -33,29 +57,8 @@
       "text": "Stir in the lemon juice and taste. If the soup needs more salt (likely), add more a bit at a time until the flavor of the soup really pops."
     }
   ],
-  "recipeCategory": ["Lunch", "Main Course", "Soup"],
-  "recipeCuisine": "American",
-  "keywords": "split pea soup",
-  "nutrition": {
-    "@type": "NutritionInformation",
-    "calories": "259 kcal",
-    "carbohydrateContent": "43 g",
-    "proteinContent": "16 g",
-    "fatContent": "3 g",
-    "sodiumContent": "409 mg",
-    "fiberContent": "17 g",
-    "sugarContent": "6 g",
-    "servingSize": "1 serving"
-  },
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "3.9",
-    "ratingCount": "1"
-  },
-  "image": [
-    "https://images.101cookbooks.com/vegetarian-split-pea-soup-h2.jpg?w=680&auto=format",
-    "https://images.101cookbooks.com/vegetarian-split-pea-soup-2.jpg?w=1000&auto=format",
-    "https://images.101cookbooks.com/vegetarian-split-pea-soup-2.jpg?w=800&h=800&fp-z=2&fp-y=.5&fp-x=.5&fit=crop&crop=entropy"
-  ],
-  "sameAs": ["https://www.101cookbooks.com/vegetarian-split-pea-soup/"]
+  "recipeYield": "6",
+  "sameAs": ["https://www.101cookbooks.com/vegetarian-split-pea-soup/"],
+  "suitableForDiet": "https://schema.org/VeganDiet",
+  "totalTime": "PT30M"
 }

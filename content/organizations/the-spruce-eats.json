@@ -1,0 +1,13 @@
+{
+  "@type": "Organization",
+  "brand": "The Spruce Eats",
+  "logo": {
+    "@type": "ImageObject",
+    "height": 109,
+    "url": "https://www.thespruceeats.com/thmb/f3m_vtGjmtpclj77cP5o_vmsxBM=/361x109/filters:no_upscale():max_bytes(150000):strip_icc()/thespruceeats2x-a1e29f658c6a4903ad453641f794cb18.png",
+    "width": 361
+  },
+  "name": "The Spruce Eats",
+  "publishingPrinciples": "https://www.thespruceeats.com/about-us-4776236#editorial-guidelines",
+  "url": "https://www.thespruceeats.com"
+}

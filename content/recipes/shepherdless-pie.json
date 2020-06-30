@@ -1,5 +1,4 @@
 {
-  "@context": "http://schema.org",
   "@type": "Recipe",
   "dateModified": "2020-02-26T06:37:53.161Z",
   "datePublished": "2020-02-13T13:00:00.00Z",
@@ -40,7 +39,6 @@
     "1 litre (4 cups) vegetable stock",
     "1 cup (170g) polenta (cornmeal)",
     "2 tablespoons finely chopped fresh thyme leaves",
-    "2 tablespoons olive oil",
     "2 tablespoons nutritional yeast flakes (see tips)"
   ],
   "recipeInstructions": [

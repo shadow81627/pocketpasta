@@ -1,0 +1,8 @@
+{
+  "@type": "Organization",
+  "logo": {
+    "@type": "ImageObject",
+    "url": "https://tasty.co/favicon.ico"
+  },
+  "name": "Tasty"
+}
