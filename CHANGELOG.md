@@ -1,5 +1,11 @@
 # Releases
 
+## [0.38.0](https://github.com/shadow81627/pocketpasta/compare/v0.37.10...v0.38.0) (2020-06-30)
+
+### Features
+
+- **scrape:** read write files ([#1242](https://github.com/shadow81627/pocketpasta/issues/1242)) ([44bd72f](https://github.com/shadow81627/pocketpasta/commit/44bd72f8e4bf5dc7726f8ba66f77594305416878))
+
 ## [0.37.10](https://github.com/shadow81627/pocketpasta/compare/v0.37.9...v0.37.10) (2020-06-30)
 
 ### Bug Fixes
