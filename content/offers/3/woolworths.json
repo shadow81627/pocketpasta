@@ -1,0 +1,18 @@
+{
+  "@type": "Offer",
+  "availability": "http://schema.org/InStock",
+  "availabilityStarts": "2020-06-27T00:52:38.045Z",
+  "itemCondition": "http://schema.org/NewCondition",
+  "offeredBy": "Woolworths",
+  "potentialAction": {
+    "@context": "http://schema.org",
+    "@type": "BuyAction"
+  },
+  "price": 3,
+  "priceCurrency": "AUD",
+  "seller": {
+    "@type": "Organization",
+    "name": "Woolworths"
+  },
+  "url": "https://www.woolworths.com.au/shop/productdetails/73032/oreo-family-pack-original"
+}

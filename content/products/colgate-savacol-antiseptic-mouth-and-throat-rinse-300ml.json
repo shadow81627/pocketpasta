@@ -1,5 +1,4 @@
 {
-  "@context": "http://schema.org",
   "@type": "Product",
   "additionalProperty": [],
   "aggregateRating": {
@@ -18,11 +17,16 @@
   "image": "https://cdn0.woolworths.media/content/wowproductimages/large/342970.jpg",
   "name": "Colgate Savacol Antiseptic Mouth & Throat Rinse 300ml",
   "offers": {
+    "@type": "AggregateOffer",
+    "highPrice": 9.7,
+    "lowPrice": 9.7,
+    "offerCount": 1,
     "offers": [
       {
         "@context": "http://schema.org",
         "@type": "Offer",
         "availability": "http://schema.org/InStock",
+        "availabilityStarts": "2020-06-27T00:53:48.047Z",
         "itemCondition": "http://schema.org/NewCondition",
         "offeredBy": "Woolworths",
         "potentialAction": {
@@ -37,7 +41,8 @@
         },
         "url": "https://www.woolworths.com.au/shop/productdetails/342970/colgate-savacol-antiseptic-mouth-throat-rinse"
       }
-    ]
+    ],
+    "priceCurrency": "AUD"
   },
   "review": [
     {

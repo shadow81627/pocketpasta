@@ -1,0 +1,10 @@
+{
+  "@type": "Organization",
+  "logo": {
+    "@type": "ImageObject",
+    "height": 60,
+    "url": "https://assets.hearstapps.com/sites/delish/assets/images/logos/logo-jsonld.58eed96.png",
+    "width": 219
+  },
+  "name": "Delish"
+}

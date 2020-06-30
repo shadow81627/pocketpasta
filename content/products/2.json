@@ -1,44 +1,18 @@
 {
-  "@context": "http://www.schema.org",
   "@type": "Product",
-  "brand": "San Remo",
-  "image": "https://cdn0.woolworths.media/content/wowproductimages/large/043974.jpg",
-  "name": "Spaghetti No 5",
-  "sku": "206196",
-  "description": "San Remo Spaghetti contains no artificial colourings, flavourings or preservatives. Cooks in 12 minutes.",
-  "offers": {
-    "@type": "AggregateOffer",
-    "highPrice": "1.95",
-    "lowPrice": "1.95",
-    "offerCount": "2",
-    "offers": [
-      {
-        "@type": "Offer",
-        "offeredBy": "Coles",
-        "url": "https://shop.coles.com.au/a/a-national/product/san-remo-pasta-spag-no-5-standard",
-        "priceCurrency": "AUD",
-        "price": "1.95",
-        "itemCondition": "https://schema.org/NewCondition",
-        "seller": {
-          "@type": "Organization",
-          "name": "Coles Online"
-        }
-      },
-      {
-        "@type": "Offer",
-        "offeredBy": "Woolworths",
-        "url": "https://www.woolworths.com.au/shop/productdetails/43974/san-remo-spaghetti-pasta-no-5",
-        "priceCurrency": "AUD",
-        "price": "1.95",
-        "itemCondition": "https://schema.org/NewCondition",
-        "seller": {
-          "@type": "Organization",
-          "name": "Woolworths"
-        }
-      }
-    ]
-  },
   "additionalProperty": [
+    {
+      "@type": "NutritionInformation",
+      "calories": "1530kJ",
+      "carbohydrateContent": "72.0g",
+      "fatContent": "2.0g",
+      "name": "nutrition",
+      "proteinContent": "12.0g",
+      "saturatedFatContent": "0.5g",
+      "servingSize": "100 g",
+      "sodiumContent": "30mg",
+      "sugarContent": "2.5g"
+    },
     {
       "name": "Ingredients",
       "value": "Durum Wheat Semolina."
@@ -49,7 +23,7 @@
     },
     {
       "name": "Dietary",
-      "value": "No Preservatives, No Artificial Flavours or Colours"
+      "value": "No Artificial Flavours or Colours, No Preservatives"
     },
     {
       "name": "Servings Per Pack",
@@ -65,19 +39,65 @@
     },
     {
       "name": "Unit Price",
-      "value": "$0.39 per 100G"
-    },
-    {
-      "@type": "NutritionInformation",
-      "name": "nutrition",
-      "calories": "1910 kJ",
-      "carbohydrateContent": "90 g",
-      "proteinContent": "15 g",
-      "fatContent": "2.5 g",
-      "saturatedFatContent": "0.6 g",
-      "sodiumContent": "38 mg",
-      "sugarContent": "3.1 g",
-      "servingSize": "125 g"
+      "value": "$0.52 per 100G"
     }
-  ]
+  ],
+  "brand": {
+    "@context": "http://schema.org",
+    "@type": "Organization",
+    "name": "san remo"
+  },
+  "description": "San Remo Spaghetti contains no artificial colourings, flavourings or preservatives. Cooks in 12 minutes.",
+  "gtin13": "9310155100434",
+  "image": "https://cdn0.woolworths.media/content/wowproductimages/large/043974.jpg",
+  "name": "San Remo Spaghetti Pasta No 5 500g",
+  "offers": {
+    "@type": "AggregateOffer",
+    "highPrice": 2.6,
+    "lowPrice": 2.6,
+    "offerCount": 2,
+    "offers": [
+      {
+        "@context": "http://schema.org",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "availabilityStarts": "2020-06-27T00:51:50.760Z",
+        "itemCondition": "http://schema.org/NewCondition",
+        "offeredBy": "Woolworths",
+        "potentialAction": {
+          "@context": "http://schema.org",
+          "@type": "BuyAction"
+        },
+        "price": 2.6,
+        "priceCurrency": "AUD",
+        "seller": {
+          "@type": "Organization",
+          "name": "Woolworths"
+        },
+        "url": "https://www.woolworths.com.au/shop/productdetails/43974/san-remo-spaghetti-pasta-no-5"
+      },
+      {
+        "@context": "http://schema.org",
+        "@type": "Offer",
+        "availability": "https://schema.org/InStock",
+        "availabilityStarts": "2020-06-27T00:52:11.475Z",
+        "itemCondition": "https://schema.org/NewCondition",
+        "offeredBy": "Coles",
+        "price": "2.60",
+        "priceCurrency": "AUD",
+        "seller": {
+          "@type": "Organization",
+          "name": "Coles"
+        },
+        "url": "https://shop.coles.com.au/a/national/product/san-remo-pasta-spag-no-5-standard"
+      }
+    ],
+    "priceCurrency": "AUD"
+  },
+  "review": [],
+  "sameAs": [
+    "https://www.woolworths.com.au/shop/productdetails/43974/san-remo-spaghetti-pasta-no-5",
+    "https://shop.coles.com.au/a/a-national/product/san-remo-pasta-spag-no-5-standard"
+  ],
+  "sku": "43974"
 }

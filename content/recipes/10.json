@@ -1,20 +1,34 @@
 {
-  "@context": "http://schema.org",
   "@type": "Recipe",
-  "suitableForDiet": "https://schema.org/VeganDiet",
-  "name": "Homemade Artisan Bread",
-  "description": "Even if you've never made homemade bread or worked with yeast before, this homemade artisan bread is for you.",
-  "author": { "@type": "Person", "name": "Sally" },
-  "keywords": "bread, loaf",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "416"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Sally"
+  },
+  "cookingMethod": "Baking",
+  "cookTime": "PT25M",
+  "datePublished": "2020-01-01",
+  "description": "Even if you've never made homemade bread or worked with yeast before, this homemade artisan bread is for you. Watch the video tutorial above and review the recipe instructions and recipe notes prior to beginning. If you’re new to working with yeast, reference my Baking with Yeast Guide for answers to common yeast FAQs.",
   "image": [
-    "https://cdn.sallysbakingaddiction.com/wp-content/uploads/2019/12/homemade-artisan-bread.jpg"
+    "https://cdn.sallysbakingaddiction.com/wp-content/uploads/2019/12/homemade-artisan-bread.jpg",
+    "https://cdn.sallysbakingaddiction.com/wp-content/uploads/2019/12/homemade-artisan-bread-225x225.jpg",
+    "https://cdn.sallysbakingaddiction.com/wp-content/uploads/2019/12/homemade-artisan-bread-260x195.jpg",
+    "https://cdn.sallysbakingaddiction.com/wp-content/uploads/2019/12/homemade-artisan-bread-320x180.jpg"
   ],
-  "url": "https://sallysbakingaddiction.com/homemade-artisan-bread/",
+  "keywords": "bread, loaf",
+  "name": "Homemade Artisan Bread (With or Without Dutch Oven)",
+  "prepTime": "PT4H",
+  "recipeCategory": "Bread",
+  "recipeCuisine": "American",
   "recipeIngredient": [
     "3 and 1/4 cups (420g) bread flour (spoon & leveled), plus more for hands and pan",
     "2 teaspoons instant yeast",
     "2 teaspoons coarse salt (see note)",
-    "1 and 1/2 cups (360ml)\u00a0cool water",
+    "1 and 1/2 cups (360ml) cool water",
     "optional: cornmeal for dusting pan"
   ],
   "recipeInstructions": [
@@ -55,85 +69,129 @@
       "text": "Remove the bread from the oven and allow to cool for at least 5 minutes before slicing and serving. Store leftovers loosely covered at room temperature for up to 5 days or in the refrigerator for up to 10 days."
     }
   ],
-  "prepTime": "PT4H",
-  "cookTime": "PT25M",
-  "totalTime": "PT4H25M",
-  "recipeYield": "2 8-inch loaves",
-  "recipeCategory": "Bread",
-  "cookingMethod": "Baking",
-  "recipeCuisine": "American",
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "reviewCount": "416",
-    "ratingValue": "4.9"
-  },
-  "video": {
-    "@context": "http://schema.org",
-    "@type": "VideoObject",
-    "name": "Homemade Artisan Bread",
-    "description": "This super easy 4 ingredient homemade artisan bread is extra chewy, slightly crispy, and a soft and airy interior.",
-    "contentUrl": "https://content.jwplatform.com/videos/yXQwx8l1.mp4",
-    "thumbnailUrl": ["https://content.jwplatform.com/thumbs/yXQwx8l1-720.jpg"],
-    "uploadDate": "2019-12-31"
-  },
+  "recipeYield": "2",
   "review": [
     {
       "@type": "Review",
-      "reviewRating": { "@type": "Rating", "ratingValue": "5" },
-      "author": { "@type": "Person", "name": "Pat" },
+      "author": {
+        "@type": "Person",
+        "name": "Pat"
+      },
       "datePublished": "2020-05-19",
-      "reviewBody": "Thank you so much for this recipe. Really easy! This was my first time ever, and it was great. My family loved it!"
+      "reviewBody": "Thank you so much for this recipe. Really easy! This was my first time ever, and it was great. My family loved it!",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5"
+      }
     },
     {
       "@type": "Review",
-      "reviewRating": { "@type": "Rating", "ratingValue": "5" },
-      "author": { "@type": "Person", "name": "claudia e silbert" },
+      "author": {
+        "@type": "Person",
+        "name": "claudia e silbert"
+      },
       "datePublished": "2020-05-23",
-      "reviewBody": "USE A SILICONE SCRAPER TO MANIPULATE/KNEAD THE DOUGH AFTER RISING. ELIMINATES STICKYNESS PROBLEMS SINCE IT IS NONSTICK.  KITCHENAID MAKES A SET FOR $12 ON Amazon."
+      "reviewBody": "USE A SILICONE SCRAPER TO MANIPULATE/KNEAD THE DOUGH AFTER RISING. ELIMINATES STICKYNESS PROBLEMS SINCE IT IS NONSTICK.  KITCHENAID MAKES A SET FOR $12 ON Amazon.",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5"
+      }
     },
     {
       "@type": "Review",
-      "reviewRating": { "@type": "Rating", "ratingValue": "5" },
-      "author": { "@type": "Person", "name": "Gretchen H Nelson" },
+      "author": {
+        "@type": "Person",
+        "name": "Gretchen H Nelson"
+      },
       "datePublished": "2020-05-21",
-      "reviewBody": "I made this yesterday and it was my first time making Artisan bread. I only had regular flour and I followed the recipe to the letter. The dough came out a bit too thin so could not form it into two but used my newly purchased Bread bowl. It came out absolutely perfect!!  It was just delicious !!   My husband loved it. I will be making it again and again!! \r\nWonderful!!!"
+      "reviewBody": "I made this yesterday and it was my first time making Artisan bread. I only had regular flour and I followed the recipe to the letter. The dough came out a bit too thin so could not form it into two but used my newly purchased Bread bowl. It came out absolutely perfect!!  It was just delicious !!   My husband loved it. I will be making it again and again!! \r\nWonderful!!!",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5"
+      }
     },
     {
       "@type": "Review",
-      "reviewRating": { "@type": "Rating", "ratingValue": "5" },
-      "author": { "@type": "Person", "name": "Fredi" },
+      "author": {
+        "@type": "Person",
+        "name": "Fredi"
+      },
       "datePublished": "2020-05-21",
-      "reviewBody": "This bread was amazing! Why are people complaining about this AMAZING bread?"
+      "reviewBody": "This bread was amazing! Why are people complaining about this AMAZING bread?",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5"
+      }
     },
     {
       "@type": "Review",
-      "reviewRating": { "@type": "Rating", "ratingValue": "5" },
-      "author": { "@type": "Person", "name": "Beth" },
+      "author": {
+        "@type": "Person",
+        "name": "Beth"
+      },
       "datePublished": "2020-05-21",
-      "reviewBody": "This turned out great!  Thank you for sharing it."
+      "reviewBody": "This turned out great!  Thank you for sharing it.",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5"
+      }
     },
     {
       "@type": "Review",
-      "reviewRating": { "@type": "Rating", "ratingValue": "5" },
-      "author": { "@type": "Person", "name": "Junko" },
+      "author": {
+        "@type": "Person",
+        "name": "Junko"
+      },
       "datePublished": "2020-05-22",
-      "reviewBody": "I just made this bread today.  \r\nI added 3/4 cup dried cranberries and 1 cup of coarsely chopped walnuts to the dough.  I also used the water bath as described.  I made one big round-shaped bread and baked It for 33 minutes.  It turned out great!!  The outside is crisp, but the inside is so fluffy and moist.  My family really liked it!\r\nThanks for the great recipe!!"
+      "reviewBody": "I just made this bread today.  \r\nI added 3/4 cup dried cranberries and 1 cup of coarsely chopped walnuts to the dough.  I also used the water bath as described.  I made one big round-shaped bread and baked It for 33 minutes.  It turned out great!!  The outside is crisp, but the inside is so fluffy and moist.  My family really liked it!\r\nThanks for the great recipe!!",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5"
+      }
     },
     {
       "@type": "Review",
-      "reviewRating": { "@type": "Rating", "ratingValue": "5" },
-      "author": { "@type": "Person", "name": "Hugo" },
+      "author": {
+        "@type": "Person",
+        "name": "Hugo"
+      },
       "datePublished": "2020-05-22",
-      "reviewBody": "I adapted this recipe to make a chilli and garlic loaf by replacing the 2tsp of course salt with 1tsp of chilli salt and 1tsp of  Garlic salt - delicious!\r\n\r\nGreat recipe, great bread every time!"
+      "reviewBody": "I adapted this recipe to make a chilli and garlic loaf by replacing the 2tsp of course salt with 1tsp of chilli salt and 1tsp of  Garlic salt - delicious!\r\n\r\nGreat recipe, great bread every time!",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5"
+      }
     },
     {
       "@type": "Review",
-      "reviewRating": { "@type": "Rating", "ratingValue": "3" },
-      "author": { "@type": "Person", "name": "Anna Fisco" },
+      "author": {
+        "@type": "Person",
+        "name": "Anna Fisco"
+      },
       "datePublished": "2020-05-24",
-      "reviewBody": "I followed this recipe exactly.  When I took loaves out of oven , they were stuck to pan.\r\nCould not remove them without tearing the bread "
+      "reviewBody": "I followed this recipe exactly.  When I took loaves out of oven , they were stuck to pan.\r\nCould not remove them without tearing the bread ",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "3"
+      }
     }
   ],
-  "datePublished": "2020-01-01",
-  "sameAs": ["https://sallysbakingaddiction.com/homemade-artisan-bread/"]
+  "sameAs": ["https://sallysbakingaddiction.com/homemade-artisan-bread/"],
+  "suitableForDiet": "https://schema.org/VeganDiet",
+  "totalTime": "PT4H25M",
+  "url": "https://sallysbakingaddiction.com/homemade-artisan-bread/",
+  "video": {
+    "@context": "http://schema.org",
+    "@type": "VideoObject",
+    "contentUrl": "https://www.youtube.com/watch?v=SgXjh5BJ0-M",
+    "description": "Even if you’ve never made homemade bread or worked with yeast before, this homemade artisan bread is for you. Watch the video tutorial above and review the recipe instructions and recipe notes prior to beginning.\n\nIf you’re new to working with yeast, reference my Baking with Yeast Guide for answers to common yeast FAQs: https://sallysbakingaddiction.com/baking-with-yeast/\n\nIngredients\n3 and 1/4 cups (420g) bread flour (spoon & leveled), plus more for hands and pan\n2 teaspoons instant yeast\n2 teaspoons coarse salt (see note)\n1 and 1/2 cups (360ml) cool water\noptional: cornmeal for dusting pan\n\nGet the full recipe: https://sallysbakingaddiction.com/homemade-artisan-bread/\n\n• Subscribe and turn on notifications to never miss a new video: https://www.youtube.com/channel/UCXSCbnLpg23d7WU5bIOAsBg?sub_confirmation=1\n\n#baking #recipes #artisanbread\n\nWelcome to my kitchen! I’m Sally, a cookbook author, photographer, and blogger. My goal is to give you the confidence and knowledge to cook and bake from scratch while providing quality recipes and plenty of pictures. Grab a cookie, take a seat, and have fun exploring! \n\n• For more of my favorite recipes go to https://sallysbakingaddiction.com/ \n\n• Follow me\nInstagram: https://www.instagram.com/sallysbakeblog\nFacebook: https://www.facebook.com/sallysbakingaddiction/\nTwitter: https://twitter.com/SallysBakeBlog\nPinterest: https://twitter.com/SallysBakeBlog",
+    "duration": "PT4M",
+    "embedUrl": "https://www.youtube.com/embed/SgXjh5BJ0-M?feature=oembed",
+    "name": "Homemade Artisan Bread (With or Without Dutch Oven) | Sally's Baking Addiction",
+    "thumbnailUrl": [
+      "https://content.jwplatform.com/thumbs/yXQwx8l1-720.jpg",
+      "https://i.ytimg.com/vi/SgXjh5BJ0-M/hqdefault.jpg"
+    ],
+    "uploadDate": "2020-05-30"
+  }
 }

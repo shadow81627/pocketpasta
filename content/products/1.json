@@ -1,46 +1,38 @@
 {
-  "@context": "http://schema.org",
   "@type": "Product",
-  "image": "https://cdn0.woolworths.media/content/wowproductimages/large/037810.jpg",
-  "name": "Peeled Tomatoes",
-  "brand": "Annalisa",
-  "description": "Annalisa Italian Peeled Tomatoes In Tomato Juice, 100% Italian Tomatoes.",
-  "offers": {
-    "@type": "AggregateOffer",
-    "highPrice": "1.40",
-    "lowPrice": "1.40",
-    "offerCount": "2",
-    "weight": { "value": 400, "unitText": "grams", "unitCode": "GRM" },
-    "offers": [
-      {
-        "@type": "Offer",
-        "offeredBy": "Coles",
-        "name": "Peeled Tomatoes",
-        "description": "Italian peeled tomatoes in tomato juice",
-        "brand": "Annalisa",
-        "price": "1.40",
-        "itemCondition": "http://www.schema.org/NewCondition",
-        "seller": {
-          "@type": "Organization",
-          "name": "Coles Online"
-        },
-        "priceCurrency": "AUD",
-        "url": "https://shop.coles.com.au/a/a-national/product/annalisa-tomatoes-peeled"
-      },
-      {
-        "@type": "Offer",
-        "offeredBy": "Woolworths",
-        "name": "Peeled Tomatoes",
-        "description": "Italian peeled tomatoes in tomato juice",
-        "brand": "Annalisa",
-        "price": "1.40",
-        "itemCondition": "http://www.schema.org/NewCondition",
-        "priceCurrency": "AUD",
-        "url": "https://www.woolworths.com.au/shop/productdetails/37810/annalisa-tomatoes-peeled"
-      }
-    ]
-  },
   "additionalProperty": [
+    {
+      "@type": "NutritionInformation",
+      "calories": "112kJ(27kCal)",
+      "carbohydrateContent": "4,5g",
+      "fatContent": "0,2g",
+      "name": "nutrition",
+      "proteinContent": "1,3g",
+      "saturatedFatContent": "0g",
+      "servingSize": "100 g",
+      "sodiumContent": "10mg",
+      "sugarContent": "3,7g"
+    },
+    {
+      "name": "Ingredients",
+      "value": "Peeled tomatoes, tomato juice."
+    },
+    {
+      "name": "Servings Per Pack",
+      "value": "3.0"
+    },
+    {
+      "name": "Size",
+      "value": "400g"
+    },
+    {
+      "name": "Unit Price",
+      "value": "$3.00 per 1Kg"
+    },
+    {
+      "name": "Country Of Origin",
+      "value": "Product of Italy"
+    },
     {
       "@type": "PropertyValue",
       "name": "ingredients",
@@ -50,23 +42,69 @@
       "@type": "PropertyValue",
       "name": "servingSize",
       "value": "3.0"
-    },
-    {
-      "@type": "PropertyValue",
-      "name": "Country Of Origin",
-      "value": "Product of Italy"
-    },
-    {
-      "@type": "NutritionInformation",
-      "name": "nutrition",
-      "calories": "108 kJ",
-      "carbohydrateContent": "4.1 g",
-      "proteinContent": "1.5 g",
-      "fatContent": "0.5 g",
-      "saturatedFatContent": "0 g",
-      "sodiumContent": "19 mg",
-      "sugarContent": "3.9 g",
-      "servingSize": "133 g"
     }
-  ]
+  ],
+  "brand": {
+    "@context": "http://schema.org",
+    "@type": "Organization",
+    "name": "annalisa"
+  },
+  "description": "Annalisa Italian Peeled Tomatoes In Tomato Juice a 100% Italian Tomatoes.",
+  "gtin13": "8002560200564",
+  "image": "https://cdn0.woolworths.media/content/wowproductimages/large/037810.jpg",
+  "name": "Annalisa Tomatoes Peeled 400g",
+  "offers": {
+    "@type": "AggregateOffer",
+    "highPrice": 1.4,
+    "lowPrice": 1.2,
+    "offerCount": 2,
+    "offers": [
+      {
+        "@context": "http://schema.org",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "availabilityStarts": "2020-06-27T00:51:05.657Z",
+        "itemCondition": "http://schema.org/NewCondition",
+        "offeredBy": "Woolworths",
+        "potentialAction": {
+          "@context": "http://schema.org",
+          "@type": "BuyAction"
+        },
+        "price": 1.4,
+        "priceCurrency": "AUD",
+        "seller": {
+          "@type": "Organization",
+          "name": "Woolworths"
+        },
+        "url": "https://www.woolworths.com.au/shop/productdetails/37810/annalisa-tomatoes-peeled"
+      },
+      {
+        "@context": "http://schema.org",
+        "@type": "Offer",
+        "availability": "https://schema.org/OutOfStock",
+        "availabilityStarts": "2020-06-27T00:51:25.485Z",
+        "itemCondition": "https://schema.org/NewCondition",
+        "offeredBy": "Coles",
+        "price": "1.20",
+        "priceCurrency": "AUD",
+        "seller": {
+          "@type": "Organization",
+          "name": "Coles"
+        },
+        "url": "https://shop.coles.com.au/a/national/product/annalisa-tomatoes-peeled"
+      }
+    ],
+    "priceCurrency": "AUD",
+    "weight": {
+      "unitCode": "GRM",
+      "unitText": "grams",
+      "value": 400
+    }
+  },
+  "review": [],
+  "sameAs": [
+    "https://www.woolworths.com.au/shop/productdetails/37810/annalisa-tomatoes-peeled",
+    "https://shop.coles.com.au/a/a-national/product/annalisa-tomatoes-peeled"
+  ],
+  "sku": "37810"
 }

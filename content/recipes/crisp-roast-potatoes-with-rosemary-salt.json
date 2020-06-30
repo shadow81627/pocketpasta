@@ -1,5 +1,4 @@
 {
-  "@context": "http://schema.org",
   "@type": "Recipe",
   "cookTime": "PT1H35M",
   "dateModified": "2019-12-05T23:59:44.082Z",

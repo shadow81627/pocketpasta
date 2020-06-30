@@ -1,11 +1,18 @@
 {
   "@type": "Offer",
+  "availability": "http://schema.org/InStock",
+  "availabilityStarts": "2020-06-27T00:51:05.657Z",
+  "itemCondition": "http://schema.org/NewCondition",
   "offeredBy": "Woolworths",
-  "name": "Peeled Tomatoes",
-  "description": "Italian peeled tomatoes in tomato juice",
-  "brand": "Annalisa",
-  "price": "1.40",
-  "itemCondition": "http://www.schema.org/NewCondition",
+  "potentialAction": {
+    "@context": "http://schema.org",
+    "@type": "BuyAction"
+  },
+  "price": 1.4,
   "priceCurrency": "AUD",
+  "seller": {
+    "@type": "Organization",
+    "name": "Woolworths"
+  },
   "url": "https://www.woolworths.com.au/shop/productdetails/37810/annalisa-tomatoes-peeled"
 }

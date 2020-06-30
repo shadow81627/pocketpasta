@@ -1,5 +1,4 @@
 {
-  "@context": "http://schema.org",
   "@type": "Product",
   "additionalProperty": [],
   "brand": {
@@ -11,11 +10,16 @@
   "image": "https://cdn0.woolworths.media/content/wowproductimages/large/575845.jpg",
   "name": "Twinings Digest  18 pack",
   "offers": {
+    "@type": "AggregateOffer",
+    "highPrice": 4,
+    "lowPrice": 4,
+    "offerCount": 1,
     "offers": [
       {
         "@context": "http://schema.org",
         "@type": "Offer",
         "availability": "http://schema.org/InStock",
+        "availabilityStarts": "2020-06-27T00:55:23.396Z",
         "itemCondition": "http://schema.org/NewCondition",
         "offeredBy": "Woolworths",
         "potentialAction": {
@@ -30,7 +34,8 @@
         },
         "url": "https://www.woolworths.com.au/shop/productdetails/575845/twinings-digest"
       }
-    ]
+    ],
+    "priceCurrency": "AUD"
   },
   "review": [],
   "sameAs": [

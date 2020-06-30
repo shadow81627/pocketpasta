@@ -1,30 +1,39 @@
 {
-  "@context": "http://schema.org",
   "@type": "Recipe",
-  "suitableForDiet": "https://schema.org/VeganDiet",
-  "name": "Spanish Beans with Tomatoes",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingCount": "47",
+    "ratingValue": "5"
+  },
   "author": {
     "@type": "Person",
     "name": "Kate Hackworthy | Veggie Desserts"
   },
-  "description": "These Spanish beans are packed with flavour, but are so easy to make in less than 20 minutes with just 7 ingredients! Perfect served with rice or fresh bread and only 125 calories per serving.",
-  "datePublished": "2018-11-18T15:00:26+00:00",
-  "image": [
-    "https://veggiedesserts.com/wp-content/uploads/2016/06/SpanishWhiteBeans.jpg"
-  ],
-  "video": {
-    "name": "Spanish Beans",
-    "description": "These Spanish Beans with tomatoes and smokey sweet spices are easy to make in less than 20 minutes. They\u2019re perfect as tapas, a main meal or a side dish. Vegan and gluten-free. They're a very popular recipe on my site with hundreds of readers loving them.",
-    "thumbnailUrl": "https://mediavine-res.cloudinary.com/image/upload/s--7DLdAN27--/c_limit,f_auto,fl_lossy,h_1080,q_auto,w_1920/v1515851007/c1i9zamwfqshnvx0ougq.jpg",
-    "contentUrl": "https://embed.mediavine.com/videos/fyqzt8lidx6wppbpv3gs",
-    "uploadDate": "2018-01-13T13:39:38+00:00",
-    "duration": "PT58S",
-    "@type": "VideoObject"
-  },
-  "recipeYield": "4",
-  "prepTime": "PT5M",
   "cookTime": "PT20M",
-  "totalTime": "PT25M",
+  "datePublished": "2018-11-18T15:00:26+00:00",
+  "description": "These vegan gluten-free Spanish beans are packed with flavour, but are so easy to make in less than 20 minutes with just 7 ingredients! Perfect served with rice or fresh bread and only 125 calories per serving.",
+  "image": [
+    "https://veggiedesserts.com/wp-content/uploads/2016/06/SpanishWhiteBeans.jpg",
+    "https://veggiedesserts.com/wp-content/uploads/2016/06/SpanishWhiteBeans-500x500.jpg",
+    "https://veggiedesserts.com/wp-content/uploads/2016/06/SpanishWhiteBeans-500x375.jpg",
+    "https://veggiedesserts.com/wp-content/uploads/2016/06/SpanishWhiteBeans-480x270.jpg"
+  ],
+  "keywords": "spanish beans, spanish recipe, tapas, vegan gluten free",
+  "name": "Vegan Spanish Beans with Tomatoes",
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "calories": "125 kcal",
+    "carbohydrateContent": "19 g",
+    "fatContent": "2 g",
+    "fiberContent": "6 g",
+    "proteinContent": "6 g",
+    "servingSize": "1 g",
+    "sodiumContent": "2 mg",
+    "sugarContent": "3 g"
+  },
+  "prepTime": "PT5M",
+  "recipeCategory": ["Main Meals"],
+  "recipeCuisine": "Spanish",
   "recipeIngredient": [
     "1 tablespoon extra virgin olive oil",
     "1  onion (diced)",
@@ -39,7 +48,7 @@
   "recipeInstructions": [
     {
       "@type": "HowToStep",
-      "text": "In a large saucepan, heat the oil over a medium heat. Add the onions and fry, stirring continuously, for 3-5 minutes until translucent but not browned.&nbsp;&nbsp;",
+      "text": "In a large saucepan, heat the oil over a medium heat. Add the onions and fry, stirring continuously, for 3-5 minutes until translucent but not browned.&nbsp;&nbsp;.",
       "url": "https://veggiedesserts.com/spanish-beans-tomatoes/#wprm-recipe-8954-step-0-0"
     },
     {
@@ -49,7 +58,7 @@
     },
     {
       "@type": "HowToStep",
-      "text": "Add the beans and tomatoes. Stir and break up the tomatoes a bit, then season with salt and pepper. Stir well and reduce the heat to low. Simmer for 15 minutes, checking regularly so it doesn\u2019t stick to the bottom of the pan.",
+      "text": "Add the beans and tomatoes. Stir and break up the tomatoes a bit, then season with salt and pepper. Stir well and reduce the heat to low. Simmer for 15 minutes, checking regularly so it doesn’t stick to the bottom of the pan.",
       "url": "https://veggiedesserts.com/spanish-beans-tomatoes/#wprm-recipe-8954-step-0-2"
     },
     {
@@ -63,23 +72,17 @@
       "url": "https://veggiedesserts.com/spanish-beans-tomatoes/#wprm-recipe-8954-step-0-4"
     }
   ],
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "5",
-    "ratingCount": "1"
-  },
-  "recipeCategory": "Main Meals",
-  "recipeCuisine": "Spanish",
-  "keywords": "spanish beans, spanish recipe, tapas, vegan gluten free",
-  "nutrition": {
-    "@type": "NutritionInformation",
-    "servingSize": "1 g",
-    "calories": "125 kcal",
-    "carbohydrateContent": "19 g",
-    "proteinContent": "6 g",
-    "fatContent": "2 g",
-    "sodiumContent": "2 mg",
-    "fiberContent": "6 g",
-    "sugarContent": "3 g"
+  "recipeYield": "4",
+  "sameAs": ["https://veggiedesserts.com/spanish-beans-tomatoes/"],
+  "suitableForDiet": "https://schema.org/VeganDiet",
+  "totalTime": "PT25M",
+  "video": {
+    "@type": "VideoObject",
+    "contentUrl": "https://embed.mediavine.com/videos/fyqzt8lidx6wppbpv3gs",
+    "description": "These Spanish Beans with tomatoes and smokey sweet spices are easy to make in less than 20 minutes. They’re perfect as tapas, a main meal or a side dish. Vegan and gluten-free. They're a very popular recipe on my site with hundreds of readers loving them.",
+    "duration": "PT58S",
+    "name": "Spanish Beans",
+    "thumbnailUrl": "https://mediavine-res.cloudinary.com/image/upload/s--7DLdAN27--/c_limit,f_auto,fl_lossy,h_1080,q_auto,w_1920/v1515851007/c1i9zamwfqshnvx0ougq.jpg",
+    "uploadDate": "2018-01-13T13:39:38+00:00"
   }
 }

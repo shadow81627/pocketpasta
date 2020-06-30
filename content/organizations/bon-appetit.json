@@ -1,0 +1,10 @@
+{
+  "@type": "Organization",
+  "logo": {
+    "@type": "ImageObject",
+    "height": 56,
+    "url": "https://www.bonappetit.com/images/logo-foodculture-tablet@1x.png",
+    "width": 322
+  },
+  "name": "Bon Appétit"
+}

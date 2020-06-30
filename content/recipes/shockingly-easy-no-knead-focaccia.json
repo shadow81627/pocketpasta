@@ -1,26 +1,25 @@
 {
-  "@context": "http://schema.org",
   "@type": "Recipe",
-  "name": "Shockingly Easy No-Knead Focaccia",
-  "image": "https://assets.bonappetit.com/photos/5e504706e23a4f0008694627/16:9/w_1000,c_limit/BBaking_WEEK3_Focaccia2.jpg",
   "author": {
     "@type": "Person",
     "name": "Sarah Jampel"
   },
+  "dateCreated": "2020-06-24T10:21:00.000-04:00",
+  "datePublished": "2020-02-22T04:00:00.000-05:00",
+  "description": "If you want to fill your kitchen with the smell of fresh-baked bread but you're nervous about shaping a boule or working with a starter, focaccia is the best place to begin. We're not exaggerating when we say it requires zero skill and provides ample opportunity to be amazed by yourself and by the wonders of yeast. ",
+  "image": "https://assets.bonappetit.com/photos/5e504706e23a4f0008694627/16:9/w_1000,c_limit/BBaking_WEEK3_Focaccia2.jpg",
+  "name": "Shockingly Easy No-Knead Focaccia",
+  "nutrition": "",
   "publisher": {
     "@type": "Organization",
-    "name": "Bon Appétit",
     "logo": {
       "@type": "ImageObject",
+      "height": 56,
       "url": "https://www.bonappetit.com/images/logo-foodculture-tablet@1x.png",
-      "width": 322,
-      "height": 56
-    }
+      "width": 322
+    },
+    "name": "Bon Appétit"
   },
-  "datePublished": "2020-02-22T04:00:00.000-05:00",
-  "dateCreated": "2020-06-11T13:28:00.000-04:00",
-  "description": "If you want to fill your kitchen with the smell of fresh-baked bread but you're nervous about shaping a boule or working with a starter, focaccia is the best place to begin. We're not exaggerating when we say it requires zero skill and provides ample opportunity to be amazed by yourself and by the wonders of yeast. ",
-  "recipeYield": "10–12 servings",
   "recipeIngredient": [
     "1 ¼-oz. envelope active dry yeast (about 2¼ tsp.)",
     "2 tsp. honey",
@@ -54,7 +53,7 @@
     },
     {
       "@type": "HowToStep",
-      "text": "Hold off on this last step until you're ready to serve the focaccia: Melt 4 Tbsp. unsalted butter in a small saucepan over medium heat. Remove from heat. Peel and grate in 2–4 garlic cloves with a Microplane (use 2 cloves if you’re garlic-shy or up to 4 if you love it). Return to medium heat and cook, stirring often, until garlic is just lightly toasted, 30–45 seconds. (Or, if you prefer raw garlic to toasted garlic, you can grate the garlic into the hot butter, off heat, then brush right away.)"
+      "text": "Hold off on this last step until you're ready to serve the focaccia: Melt 4 Tbsp. unsalted butter in a small saucepan over medium heat. Remove from heat. Peel and grate in 2–4 garlic cloves with a Microplane (use 2 cloves if you’re garlic-shy or up to 4 if you love it). Return to medium heat and cook, stirring often, until garlic is just lightly toasted, 30–45 seconds. (Or, if you prefer raw garlic to toasted garlic, you can grate the garlic into the hot butter, off heat, then brush right away.)."
     },
     {
       "@type": "HowToStep",
@@ -65,5 +64,6 @@
       "text": "Do Ahead:  Focaccia is best eaten the day it's made, but keeps well in the freezer. Slice it into pieces, store it in a freezer-safe container, then reheat it on a baking sheet in a 300° F oven."
     }
   ],
+  "recipeYield": "10–12 servings",
   "sameAs": ["https://www.bonappetit.com/recipe/easy-no-knead-focaccia"]
 }

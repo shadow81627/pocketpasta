@@ -1,5 +1,4 @@
 {
-  "@context": "http://schema.org",
   "@type": "Recipe",
   "aggregateRating": {
     "@type": "AggregateRating",
