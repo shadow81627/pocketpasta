@@ -1,5 +1,29 @@
 # Releases
 
+## [0.37.10](https://github.com/shadow81627/pocketpasta/compare/v0.37.9...v0.37.10) (2020-06-30)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxt/content to v1.4.0 ([aed8bc1](https://github.com/shadow81627/pocketpasta/commit/aed8bc1948d69a88aadbffde5b67c8e6598d00f4))
+
+## [0.37.9](https://github.com/shadow81627/pocketpasta/compare/v0.37.8...v0.37.9) (2020-06-29)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxtjs/firebase to v6.1.0 ([705710e](https://github.com/shadow81627/pocketpasta/commit/705710e306bc854f4af2ed7505bca4e1f485dc42))
+
+## [0.37.8](https://github.com/shadow81627/pocketpasta/compare/v0.37.7...v0.37.8) (2020-06-26)
+
+### Bug Fixes
+
+- **deps:** update dependency nuxt to v2.13.2 ([dda3476](https://github.com/shadow81627/pocketpasta/commit/dda3476d5e1195b25a0da558dae14846df3dc1a6))
+
+## [0.37.7](https://github.com/shadow81627/pocketpasta/compare/v0.37.6...v0.37.7) (2020-06-26)
+
+### Bug Fixes
+
+- **deps:** update dependency firebase to v7.15.5 ([88f80db](https://github.com/shadow81627/pocketpasta/commit/88f80dbbf153b26304fc67fd07830152bae082d6))
+
 ## [0.37.6](https://github.com/shadow81627/pocketpasta/compare/v0.37.5...v0.37.6) (2020-06-25)
 
 ### Bug Fixes
