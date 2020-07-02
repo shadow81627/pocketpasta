@@ -1,17 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`List renders properly 1`] = `
-"<v-container>
-  <v-row>
-    <v-col class=\\"col-auto mr-auto\\">
+"<v-container-stub tag=\\"div\\">
+  <v-row-stub tag=\\"div\\">
+    <v-col-stub tag=\\"div\\" class=\\"col-auto mr-auto\\">
       <h1></h1>
-    </v-col>
-    <v-col class=\\"col-auto ml-auto my-auto\\">
+    </v-col-stub>
+    <v-col-stub tag=\\"div\\" class=\\"col-auto ml-auto my-auto\\">
       <view-switcher-stub layouts=\\"[object Object],[object Object]\\"></view-switcher-stub>
-    </v-col>
-  </v-row>
-  <v-row>
-    <v-col></v-col>
-  </v-row> <span><v-row style=\\"display: none;\\"><v-col><v-pagination length=\\"1\\" total-visible=\\"9\\"></v-pagination> <button style=\\"display: none;\\">Refresh</button> <div style=\\"display: none;\\">Total: </div> <div style=\\"display: none;\\">Pending: </div> <div style=\\"display: none;\\">Error: </div></v-col></v-row></span>
-</v-container>"
+    </v-col-stub>
+  </v-row-stub>
+  <v-row-stub tag=\\"div\\">
+    <v-col-stub tag=\\"div\\"></v-col-stub>
+  </v-row-stub> <span><v-row-stub tag=\\"div\\"><v-col-stub tag=\\"div\\"><v-pagination-stub length=\\"1\\" nexticon=\\"$next\\" previcon=\\"$prev\\" totalvisible=\\"9\\" value=\\"1\\" pagearialabel=\\"$vuetify.pagination.ariaLabel.page\\" currentpagearialabel=\\"$vuetify.pagination.ariaLabel.currentPage\\" previousarialabel=\\"$vuetify.pagination.ariaLabel.previous\\" nextarialabel=\\"$vuetify.pagination.ariaLabel.next\\" wrapperarialabel=\\"$vuetify.pagination.ariaLabel.wrapper\\"></v-pagination-stub> <button style=\\"display: none;\\">Refresh</button> <div style=\\"display: none;\\">Total: </div> <div style=\\"display: none;\\">Pending: </div> <div style=\\"display: none;\\">Error: </div></v-col-stub></v-row-stub></span>
+</v-container-stub>"
 `;

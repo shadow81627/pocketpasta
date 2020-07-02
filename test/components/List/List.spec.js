@@ -4,7 +4,7 @@ import Vuex from 'vuex';
 import BootstrapVuePlugin from 'bootstrap-vue';
 import VueRouter from 'vue-router';
 import Vuetify from 'vuetify';
-import Vue from 'Vue';
+import Vue from 'vue';
 
 const localVue = createLocalVue();
 

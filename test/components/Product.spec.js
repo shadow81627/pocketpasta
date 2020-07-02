@@ -5,7 +5,7 @@ import { shallowMount, createLocalVue } from '@vue/test-utils';
 import Vuex from 'vuex';
 import BootstrapVuePlugin from 'bootstrap-vue';
 import Vuetify from 'vuetify';
-import Vue from 'Vue';
+import Vue from 'vue';
 
 // JSDOM complains about this attribute
 removeKeys(product, ['@type']);
