@@ -1,114 +1,83 @@
 <template>
   <div class="product" itemscope itemtype="http://schema.org/Product">
-    <div class="row">
-      <div class="col-12 col-md-6">
+    <v-row>
+      <v-col cols="12" md="6">
         <h1 itemprop="name">{{ name }}</h1>
         <p itemprop="description">{{ description }}</p>
-      </div>
-      <div class="col-12 col-md-6">
-        <b-img
+      </v-col>
+      <v-col cols="12" md="6">
+        <v-img
           v-if="image"
           :src="cloudinaryify(image)"
-          :srcset="[
-            `${cloudinaryify(image, 110)} 110w`,
-            `${cloudinaryify(image, 220)} 220w`,
-            `${cloudinaryify(image, 540)} 540w`,
-            `${cloudinaryify(image, 1080)} 1080w`,
-          ]"
-          class="img-fluid mx-auto d-block"
+          :srcset="
+            [
+              `${cloudinaryify(image, 110)} 110w`,
+              `${cloudinaryify(image, 220)} 220w`,
+              `${cloudinaryify(image, 540)} 540w`,
+              `${cloudinaryify(image, 1080)} 1080w`,
+            ].join(',')
+          "
           :alt="name"
-          throttle="100"
           width="540"
           height="540"
           itemprop="image"
-          blank-src
-          fluid
           sizes="(max-width: 768px) 50vw, 100vw"
+          contain
         />
-      </div>
-    </div>
-    <!-- <div class="row d-block d-md-none">
-      <div class="col-12">
-        <h1 itemprop="name">{{ name }}</h1>
-        <p itemprop="description">{{ description }}</p>
-      </div>
-    </div> -->
+      </v-col>
+    </v-row>
 
-    <!-- <p v-if="recipeYield">
-      <strong>Servings:</strong>
-      <span>{{ recipeYield }}</span>
-    </p>
-    <div v-if="ingredient">
-      <h2>Ingredients:</h2>
-      <ol class="list-group-flush">
-        <li
-          v-for="ingredient in ingredient"
-          :key="ingredient"
-          class="list-group-item"
-        >
-          {{ ingredient }}
-        </li>
-      </ol>
-    </div> -->
-
-    <div
-      v-if="offerData && offerData.offers"
-      itemprop="offers"
-      itemscope
-      itemtype="http://schema.org/AggregateOffer"
-    >
-      <h2>Sellers</h2>
-      <div
-        v-for="(offer, index) in offerData.offers"
-        :key="index"
+    <v-expansion-panels multiple :value="range(2)">
+      <v-expansion-panel
+        v-if="offerData && offerData.offers"
         itemprop="offers"
         itemscope
-        itemtype="http://schema.org/Offer"
-        class="list-group-flush"
+        itemtype="http://schema.org/AggregateOffer"
       >
-        <span class="list-group-item">
-          <a
-            v-if="offer.url"
-            :href="offer.url"
-            target="_blank"
-            itemprop="url"
-            rel="noopener"
-          >
-            <span itemprop="offeredBy">{{ offer.offeredBy }}</span></a
-          >
-          <span v-if="offer.price" itemprop="price">{{
-            new Intl.NumberFormat('en-AU', {
-              style: 'currency',
-              currency: offer.priceCurrency || 'AUD',
-            }).format(offer.price)
-          }}</span></span
-        >
-      </div>
-    </div>
-
-    <nutrition-fact-table
-      v-if="nutritionData"
-      v-bind="nutritionData"
-      class="my-4"
-    />
-
-    <keywords
-      v-if="keywords"
-      :tags="keywords ? keywords.split(',') : []"
-      label="Tags"
-    />
+        <v-expansion-panel-header
+          ><h2>Sellers</h2>
+          <price-summary v-bind="offerData"
+        /></v-expansion-panel-header>
+        <v-expansion-panel-content eager>
+          <offers v-bind="offerData" />
+        </v-expansion-panel-content>
+      </v-expansion-panel>
+      <nutrition-fact-table
+        v-if="nutritionData"
+        v-bind="nutritionData"
+        class="my-4"
+      />
+      <v-expansion-panel v-if="keywords" class="mb-2 d-print-none">
+        <v-expansion-panel-header>
+          <h2 class="h4">Tags</h2>
+        </v-expansion-panel-header>
+        <v-expansion-panel-content>
+          <div class="list-group-flush">
+            <keywords
+              :tags="(keywords || []).split(',')"
+              :label="null"
+              class="list-group-item"
+            />
+          </div>
+        </v-expansion-panel-content>
+      </v-expansion-panel>
+    </v-expansion-panels>
   </div>
 </template>
 
 <script>
-import { map, head } from 'lodash-es';
+import { map, head, range } from 'lodash-es';
 import Keywords from '@/components/Keywords.vue';
 import NutritionFactTable from '@/components/Recipe/NutritionFactTable';
+import Offers from '~/components/Offers';
+import PriceSummary from '~/components/PriceSummary';
 
 export default {
   components: {
     Keywords,
     NutritionFactTable,
+    Offers,
+    PriceSummary,
   },
   inheritAttrs: false,
   props: {
@@ -116,8 +85,6 @@ export default {
     description: { type: String, required: false },
     gtin13: { type: String, required: false },
     sku: { type: String, required: false },
-    // suitableForDiet: { type: String, required: false },
-    // author: { type: Object, required: false },
     nutrition: { type: Object, required: false },
     datePublished: { type: String, required: false },
     keywords: { type: String, required: false },
@@ -152,7 +119,6 @@ export default {
         const offers = {
           priceCurrency: head(map(this.offers.offers, 'priceCurrency')),
           ...this.offers,
-          '@type': 'AggregateOffer',
           highPrice: Math.max(...map(this.offers.offers, 'price')),
           lowPrice: Math.min(...map(this.offers.offers, 'price')),
           offerCount: this.offers.offers.length,
@@ -169,7 +135,7 @@ export default {
       }
       return {
         ...this.$props,
-        offers: this.offerData,
+        offers: { ...this.offerData, '@type': 'AggregateOffer' },
         nutrition: this.nutritionData || undefined,
         additionalProperty: undefined,
         '@type': type,
@@ -178,6 +144,7 @@ export default {
     },
   },
   methods: {
+    range,
     cloudinaryify(image, width = 540) {
       if (!image.startsWith('https://res.cloudinary.com')) {
         return `https://res.cloudinary.com/pocketpasta/image/fetch/w_${width},h_${width},ar_1:1,c_fill,f_auto,q_auto/${image}`;

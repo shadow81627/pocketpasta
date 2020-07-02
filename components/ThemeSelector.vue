@@ -1,28 +1,24 @@
 <template>
   <client-only>
-    <b-form-select
+    <v-select
       id="theme"
       v-model="currentTheme"
       name="theme"
-      aria-label="theme"
-    >
-      <template slot="first">
-        <option disabled value="">Please select a theme</option>
-      </template>
-      <option
-        v-for="theme in $store.state.themes"
-        :key="theme.value"
-        :value="theme.value"
-      >
-        {{ capitalize(theme.value) }}
-      </option>
-    </b-form-select>
+      label="Theme"
+      :items="items"
+    />
   </client-only>
 </template>
 
 <script>
 export default {
   computed: {
+    items() {
+      return this.$store.state.themes.map(({ value }) => ({
+        text: this.capitalize(value),
+        value,
+      }));
+    },
     currentTheme: {
       get() {
         return this.$colorMode.preference;
@@ -39,24 +35,6 @@ export default {
         );
       },
     },
-    themeMeta() {
-      return this.$store.state.themes.map((theme) => {
-        const themeLink = {
-          hid: `theme-${theme.value}`,
-          href: theme.href,
-          rel: 'stylesheet',
-          as: 'style',
-          skip:
-            this.$store.getters.getThemeById(theme.value).href === '' ||
-            !this.$store.getters.getThemeById(theme.value).href,
-        };
-        if (theme.value !== this.currentTheme) {
-          themeLink.disabled = true;
-          themeLink.rel = 'preload';
-        }
-        return themeLink;
-      });
-    },
   },
   methods: {
     capitalize(value) {
@@ -64,11 +42,6 @@ export default {
       value = value.toString();
       return value.charAt(0).toUpperCase() + value.slice(1);
     },
-  },
-  head() {
-    return {
-      link: [].concat(this.themeMeta),
-    };
   },
 };
 </script>

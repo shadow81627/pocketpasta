@@ -78,13 +78,7 @@ exports[`shoppinglist page renders properly 1`] = `
             <li>spinach</li>
           </ul> <br>
         </div>
-        <div class=\\"mt-3\\"><button type=\\"button\\" class=\\"btn btn-secondary\\">Clear</button> <button type=\\"button\\" class=\\"btn float-right btn-primary\\">
-            <div role=\\"progressbar\\" aria-valuemin=\\"0\\" aria-valuemax=\\"100\\" class=\\"v-progress-circular v-progress-circular--indeterminate\\" style=\\"height: 24px; width: 24px; display: none;\\"><svg xmlns=\\"http://www.w3.org/2000/svg\\" viewBox=\\"21.81818181818182 21.81818181818182 43.63636363636364 43.63636363636364\\" style=\\"transform: rotate(0deg);\\">
-                <circle fill=\\"transparent\\" cx=\\"43.63636363636364\\" cy=\\"43.63636363636364\\" r=\\"20\\" stroke-width=\\"3.6363636363636367\\" stroke-dasharray=\\"125.664\\" stroke-dashoffset=\\"125.66370614359172px\\" class=\\"v-progress-circular__overlay\\"></circle>
-              </svg>
-              <div class=\\"v-progress-circular__info\\"></div>
-            </div><span>Save</span>
-          </button></div>
+        <div class=\\"mt-3\\"><button type=\\"button\\" class=\\"v-btn v-btn--contained theme--light v-size--default\\"><span class=\\"v-btn__content\\">Clear</span></button> <button type=\\"button\\" class=\\"float-right v-btn v-btn--contained theme--light v-size--default primary\\"><span class=\\"v-btn__content\\">Save</span></button></div>
       </div>
     </div>
   </div>

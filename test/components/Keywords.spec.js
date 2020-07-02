@@ -1,7 +1,9 @@
 import Keywords from '@/components/Keywords.vue';
 import { mount, createLocalVue } from '@vue/test-utils';
+import Vuetify from 'vuetify';
 
 const localVue = createLocalVue();
+// localVue.use(Vuetify);
 
 const factory = () =>
   mount(Keywords, {

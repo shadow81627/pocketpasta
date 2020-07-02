@@ -93,30 +93,20 @@
       <br />
     </div>
     <div class="mt-3">
-      <b-button @click="clear">Clear</b-button>
-      <b-button
+      <v-btn @click="clear">Clear</v-btn>
+      <v-btn
         class="float-right"
-        variant="primary"
-        :disabled="loading"
+        color="primary"
+        :loading="loading"
         @click="save"
-        ><v-progress-circular
-          v-show="loading"
-          indeterminate
-          size="24"
-          width="2"
-        /><span v-show="!loading">Save</span></b-button
+        >Save</v-btn
       >
     </div>
   </div>
 </template>
 
 <script>
-import { BButton } from 'bootstrap-vue';
-
 export default {
-  components: {
-    BButton,
-  },
   props: {
     value: {
       type: Object,

@@ -86,14 +86,4 @@ describe('ThemeSelector', () => {
     wrapper.vm.currentTheme = 'united';
     expect(wrapper.vm.currentTheme).toBeTruthy();
   });
-
-  test('theme meta', () => {
-    const wrapper = factory();
-    expect(wrapper.vm.themeMeta).toBeTruthy();
-  });
-
-  test('head', () => {
-    ThemeSelector.$store = store;
-    expect(ThemeSelector.head()).toBeTruthy();
-  });
 });

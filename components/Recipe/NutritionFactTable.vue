@@ -1,145 +1,134 @@
 <template>
-  <b-card
-    no-body
-    tag="section"
+  <v-expansion-panel
     class="performance-facts"
     itemscope
     itemtype="http://schema.org/NutritionInformation"
   >
-    <b-card-header header-tag="header" class="p-1">
-      <b-button
-        v-b-toggle:collapse-performance-facts
-        block
-        variant="none"
-        squared
-        class="text-left"
-      >
-        <h2>Nutrition Facts</h2>
-      </b-button>
-    </b-card-header>
-    <b-collapse id="collapse-performance-facts" visible>
-      <b-card-body>
-        <header class="performance-facts__header">
-          <p itemprop="servingSize">Serving Size: {{ servingSize }}</p>
-          <!-- <p>Serving Per Container 8</p> -->
-        </header>
-        <table class="performance-facts__table">
-          <thead>
-            <tr>
-              <th colspan="3" class="small-info">
-                Amount Per Serving
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th colspan="2">
-                <b>Calories</b>
-                <span itemprop="calories">{{ calories }}</span>
-              </th>
-              <td>
-                <span v-if="fiberContent">
-                  <span class="d-none d-md-inline">Calories from Fat</span>
-                  <span itemprop="fiberContent">{{ fiberContent }}</span>
-                </span>
-              </td>
-            </tr>
-            <tr class="thick-row">
-              <td colspan="3" class="small-info">
-                <b>% Daily Value*</b>
-              </td>
-            </tr>
-            <tr>
-              <th colspan="2">
-                <b>Total Fat</b>
-                <span itemprop="fatContent">{{ fatContent }}</span>
-              </th>
-              <td>
-                <!-- <b>22%</b> -->
-              </td>
-            </tr>
-            <tr>
-              <td class="blank-cell" />
-              <th>
-                Saturated Fat
-                <span itemprop="saturatedFatContent">{{
-                  saturatedFatContent
-                }}</span>
-              </th>
-              <td>
-                <!-- <b>22%</b> -->
-              </td>
-            </tr>
-            <tr>
-              <td class="blank-cell" />
-              <th>
-                Trans Fat
-                <span itemprop="unsaturatedFatContent">{{
-                  unsaturatedFatContent
-                }}</span>
-              </th>
-              <td />
-            </tr>
-            <tr>
-              <th colspan="2">
-                <b>Cholesterol</b>
-                <span itemprop="cholesterolContent">{{
-                  cholesterolContent
-                }}</span>
-              </th>
-              <td>
-                <!-- <b>18%</b> -->
-              </td>
-            </tr>
-            <tr>
-              <th colspan="2">
-                <b>Sodium</b>
-                <span itemprop="sodiumContent">{{ sodiumContent }}</span>
-              </th>
-              <td>
-                <!-- <b>2%</b> -->
-              </td>
-            </tr>
-            <tr>
-              <th colspan="2">
-                <b>Total Carbohydrate</b>
-                <span itemprop="carbohydrateContent">{{
-                  carbohydrateContent
-                }}</span>
-              </th>
-              <td>
-                <!-- <b>6%</b> -->
-              </td>
-            </tr>
-            <tr>
-              <td class="blank-cell" />
-              <th>
-                Dietary Fiber
+    <v-expansion-panel-header>
+      <h2>Nutrition Facts</h2>
+    </v-expansion-panel-header>
+    <v-expansion-panel-content eager>
+      <header class="performance-facts__header">
+        <p itemprop="servingSize">Serving Size: {{ servingSize }}</p>
+        <!-- <p>Serving Per Container 8</p> -->
+      </header>
+      <table class="performance-facts__table">
+        <thead>
+          <tr>
+            <th colspan="3" class="small-info">
+              Amount Per Serving
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th colspan="2">
+              <b>Calories</b>
+              <span itemprop="calories">{{ calories }}</span>
+            </th>
+            <td>
+              <span v-if="fiberContent">
+                <span class="d-none d-md-inline">Calories from Fat</span>
                 <span itemprop="fiberContent">{{ fiberContent }}</span>
-              </th>
-              <td>
-                <!-- <b>4%</b> -->
-              </td>
-            </tr>
-            <tr>
-              <td class="blank-cell" />
-              <th>
-                Sugars
-                <span itemprop="sugarContent">{{ sugarContent }}</span>
-              </th>
-              <td />
-            </tr>
-            <tr class="thick-end">
-              <th colspan="2">
-                <b>Protein</b>
-                <span itemprop="proteinContent">{{ proteinContent }}</span>
-              </th>
-              <td />
-            </tr>
-          </tbody>
-        </table>
+              </span>
+            </td>
+          </tr>
+          <tr class="thick-row">
+            <td colspan="3" class="small-info">
+              <b>% Daily Value*</b>
+            </td>
+          </tr>
+          <tr>
+            <th colspan="2">
+              <b>Total Fat</b>
+              <span itemprop="fatContent">{{ fatContent }}</span>
+            </th>
+            <td>
+              <!-- <b>22%</b> -->
+            </td>
+          </tr>
+          <tr>
+            <td class="blank-cell" />
+            <th>
+              Saturated Fat
+              <span itemprop="saturatedFatContent">{{
+                saturatedFatContent
+              }}</span>
+            </th>
+            <td>
+              <!-- <b>22%</b> -->
+            </td>
+          </tr>
+          <tr>
+            <td class="blank-cell" />
+            <th>
+              Trans Fat
+              <span itemprop="unsaturatedFatContent">{{
+                unsaturatedFatContent
+              }}</span>
+            </th>
+            <td />
+          </tr>
+          <tr>
+            <th colspan="2">
+              <b>Cholesterol</b>
+              <span itemprop="cholesterolContent">{{
+                cholesterolContent
+              }}</span>
+            </th>
+            <td>
+              <!-- <b>18%</b> -->
+            </td>
+          </tr>
+          <tr>
+            <th colspan="2">
+              <b>Sodium</b>
+              <span itemprop="sodiumContent">{{ sodiumContent }}</span>
+            </th>
+            <td>
+              <!-- <b>2%</b> -->
+            </td>
+          </tr>
+          <tr>
+            <th colspan="2">
+              <b>Total Carbohydrate</b>
+              <span itemprop="carbohydrateContent">{{
+                carbohydrateContent
+              }}</span>
+            </th>
+            <td>
+              <!-- <b>6%</b> -->
+            </td>
+          </tr>
+          <tr>
+            <td class="blank-cell" />
+            <th>
+              Dietary Fiber
+              <span itemprop="fiberContent">{{ fiberContent }}</span>
+            </th>
+            <td>
+              <!-- <b>4%</b> -->
+            </td>
+          </tr>
+          <tr>
+            <td class="blank-cell" />
+            <th>
+              Sugars
+              <span itemprop="sugarContent">{{ sugarContent }}</span>
+            </th>
+            <td />
+          </tr>
+          <tr class="thick-end">
+            <th colspan="2">
+              <b>Protein</b>
+              <span itemprop="proteinContent">{{ proteinContent }}</span>
+            </th>
+            <td />
+          </tr>
+        </tbody>
+      </table>
 
-        <!-- <table class="performance-facts__table--grid">
+      <!-- <table class="performance-facts__table--grid">
       <tbody>
         <tr>
           <td colspan="2">
@@ -160,12 +149,12 @@
       </tbody>
     </table> -->
 
-        <p class="small-info">
-          * Percent Daily Values are based on a 2,000 calorie diet. Your daily
-          values may be higher or lower depending on your calorie needs:
-        </p>
+      <p class="small-info">
+        * Percent Daily Values are based on a 2,000 calorie diet. Your daily
+        values may be higher or lower depending on your calorie needs:
+      </p>
 
-        <!-- <table class="performance-facts__table--small small-info">
+      <!-- <table class="performance-facts__table--small small-info">
       <thead>
         <tr>
           <td colspan="2" />
@@ -214,24 +203,18 @@
       </tbody>
     </table> -->
 
-        <!-- <p class="small-info">
+      <!-- <p class="small-info">
       Calories per gram:
     </p>
     <p class="small-info text-center">
       Fat 9 &bull; Carbohydrate 4 &bull; Protein 4
     </p> -->
-      </b-card-body>
-    </b-collapse>
-  </b-card>
+    </v-expansion-panel-content>
+  </v-expansion-panel>
 </template>
 
 <script>
-import { BCollapse, VBToggle } from 'bootstrap-vue';
 export default {
-  components: {
-    BCollapse,
-  },
-  directives: { 'b-toggle': VBToggle },
   inheritAttrs: false,
   props: {
     calories: { type: String, default: null },

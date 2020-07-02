@@ -48,5 +48,5 @@ export default {
   },
   // lang: {},
   // rtl: true,
-  theme: { disable: true },
+  // theme: { disable: true },
 };

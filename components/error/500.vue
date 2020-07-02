@@ -1,5 +1,5 @@
 <template>
-  <div id="message" class="card bg-light card-body">
+  <v-card id="message">
     <h2 v-if="error.statusCode">{{ error.statusCode }}</h2>
     <h1>{{ $t('error.500.heading') }}</h1>
     <p>
@@ -14,16 +14,21 @@
       loop
     />
 
-    <a href="javascript:location.reload();" class="btn btn-primary btn-block"
-      >Try again</a
-    >
-    <nuxt-link
-      :to="localePath('index')"
-      class="btn btn-primary btn-block"
-      exact
-      >{{ $t('layout.navigation.home') }}</nuxt-link
-    >
-  </div>
+    <v-row no-gutters>
+      <v-col>
+        <v-btn href="javascript:location.reload();" large block color="primary"
+          >Try again</v-btn
+        >
+      </v-col>
+    </v-row>
+    <v-row>
+      <v-col>
+        <v-btn :to="localePath('index')" exact large block color="primary">{{
+          $t('layout.navigation.home')
+        }}</v-btn>
+      </v-col>
+    </v-row>
+  </v-card>
 </template>
 
 <script>
@@ -81,18 +86,6 @@ export default {
   line-height: 140%;
   margin: 16px 0 24px;
   font-size: 14px;
-}
-#message a {
-  display: block;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 16px;
-  border-radius: 4px;
-}
-#message,
-#message a {
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 #load {
   color: rgba(0, 0, 0, 0.4);

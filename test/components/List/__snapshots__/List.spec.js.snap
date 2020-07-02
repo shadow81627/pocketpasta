@@ -1,17 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`List renders properly 1`] = `
-"<div>
-  <div class=\\"row\\">
-    <div class=\\"col-auto mr-auto\\">
+"<v-container>
+  <v-row>
+    <v-col class=\\"col-auto mr-auto\\">
       <h1></h1>
-    </div>
-    <div class=\\"col-auto ml-auto my-auto\\">
+    </v-col>
+    <v-col class=\\"col-auto ml-auto my-auto\\">
       <view-switcher-stub layouts=\\"[object Object],[object Object]\\"></view-switcher-stub>
-    </div>
-  </div>
-  <div class=\\"row\\">
-    <div class=\\"col-12\\"></div>
-  </div> <span><div class=\\"overflow-auto\\" style=\\"display: none;\\"><b-pagination-nav-stub value=\\"1\\" limit=\\"5\\" align=\\"center\\" arialabel=\\"Pagination\\" labelfirstpage=\\"Go to first page\\" firsttext=\\"«\\" labelprevpage=\\"Go to previous page\\" prevtext=\\"‹\\" labelnextpage=\\"Go to next page\\" nexttext=\\"›\\" labellastpage=\\"Go to last page\\" lasttext=\\"»\\" labelpage=\\"Go to page\\" ellipsistext=\\"…\\" size=\\"lg\\" numberofpages=\\"1\\" baseurl=\\"/\\" userouter=\\"true\\" linkgen=\\"function () { [native code] }\\" target=\\"_self\\" exact=\\"true\\" per-page=\\"5\\"></b-pagination-nav-stub> <button style=\\"display: none;\\">Refresh</button> <div style=\\"display: none;\\">Total: </div> <div style=\\"display: none;\\">Pending: </div> <div style=\\"display: none;\\">Error: </div></div></span>
-</div>"
+    </v-col>
+  </v-row>
+  <v-row>
+    <v-col></v-col>
+  </v-row> <span><v-row style=\\"display: none;\\"><v-col><v-pagination length=\\"1\\" total-visible=\\"9\\"></v-pagination> <button style=\\"display: none;\\">Refresh</button> <div style=\\"display: none;\\">Total: </div> <div style=\\"display: none;\\">Pending: </div> <div style=\\"display: none;\\">Error: </div></v-col></v-row></span>
+</v-container>"
 `;

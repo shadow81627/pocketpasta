@@ -2,21 +2,27 @@
 
 exports[`Product renders properly 1`] = `
 "<div itemscope=\\"itemscope\\" itemtype=\\"http://schema.org/Product\\" class=\\"product\\">
-  <div class=\\"row\\">
-    <div class=\\"col-12 col-md-6\\">
+  <v-row>
+    <v-col cols=\\"12\\" md=\\"6\\">
       <h1 itemprop=\\"name\\">Peeled Tomatoes</h1>
       <p itemprop=\\"description\\">Annalisa Italian Peeled Tomatoes In Tomato Juice, 100% Italian Tomatoes.</p>
-    </div>
-    <div class=\\"col-12 col-md-6\\">
-      <b-img-stub src=\\"https://res.cloudinary.com/pocketpasta/image/fetch/w_540,h_540,ar_1:1,c_fill,f_auto,q_auto/https://cdn0.woolworths.media/content/wowproductimages/large/037810.jpg\\" srcset=\\"https://res.cloudinary.com/pocketpasta/image/fetch/w_110,h_110,ar_1:1,c_fill,f_auto,q_auto/https://cdn0.woolworths.media/content/wowproductimages/large/037810.jpg 110w,https://res.cloudinary.com/pocketpasta/image/fetch/w_220,h_220,ar_1:1,c_fill,f_auto,q_auto/https://cdn0.woolworths.media/content/wowproductimages/large/037810.jpg 220w,https://res.cloudinary.com/pocketpasta/image/fetch/w_540,h_540,ar_1:1,c_fill,f_auto,q_auto/https://cdn0.woolworths.media/content/wowproductimages/large/037810.jpg 540w,https://res.cloudinary.com/pocketpasta/image/fetch/w_1080,h_1080,ar_1:1,c_fill,f_auto,q_auto/https://cdn0.woolworths.media/content/wowproductimages/large/037810.jpg 1080w\\" sizes=\\"(max-width: 768px) 50vw, 100vw\\" alt=\\"Peeled Tomatoes\\" width=\\"540\\" height=\\"540\\" fluid=\\"true\\" blankcolor=\\"transparent\\" throttle=\\"100\\" itemprop=\\"image\\" blank-src=\\"\\" class=\\"img-fluid mx-auto d-block\\"></b-img-stub>
-    </div>
-  </div>
-  <div itemprop=\\"offers\\" itemscope=\\"itemscope\\" itemtype=\\"http://schema.org/AggregateOffer\\">
-    <h2>Sellers</h2>
-    <div itemprop=\\"offers\\" itemscope=\\"itemscope\\" itemtype=\\"http://schema.org/Offer\\" class=\\"list-group-flush\\"><span class=\\"list-group-item\\"><a href=\\"https://shop.coles.com.au/a/a-national/product/annalisa-tomatoes-peeled\\" target=\\"_blank\\" itemprop=\\"url\\" rel=\\"noopener\\"><span itemprop=\\"offeredBy\\">Coles</span></a> <span itemprop=\\"price\\">A$1.40</span></span></div>
-    <div itemprop=\\"offers\\" itemscope=\\"itemscope\\" itemtype=\\"http://schema.org/Offer\\" class=\\"list-group-flush\\"><span class=\\"list-group-item\\"><a href=\\"https://www.woolworths.com.au/shop/productdetails/37810/annalisa-tomatoes-peeled\\" target=\\"_blank\\" itemprop=\\"url\\" rel=\\"noopener\\"><span itemprop=\\"offeredBy\\">Woolworths</span></a> <span itemprop=\\"price\\">A$1.40</span></span></div>
-  </div>
-  <nutrition-fact-table-stub calories=\\"108 kJ\\" carbohydratecontent=\\"4.1 g\\" fatcontent=\\"0.5 g\\" proteincontent=\\"1.5 g\\" saturatedfatcontent=\\"0 g\\" servingsize=\\"133 g\\" sodiumcontent=\\"19 mg\\" sugarcontent=\\"3.9 g\\" name=\\"nutrition\\" class=\\"my-4\\"></nutrition-fact-table-stub>
-  <!---->
+    </v-col>
+    <v-col cols=\\"12\\" md=\\"6\\">
+      <v-img src=\\"https://res.cloudinary.com/pocketpasta/image/fetch/w_540,h_540,ar_1:1,c_fill,f_auto,q_auto/https://cdn0.woolworths.media/content/wowproductimages/large/037810.jpg\\" srcset=\\"https://res.cloudinary.com/pocketpasta/image/fetch/w_110,h_110,ar_1:1,c_fill,f_auto,q_auto/https://cdn0.woolworths.media/content/wowproductimages/large/037810.jpg 110w,https://res.cloudinary.com/pocketpasta/image/fetch/w_220,h_220,ar_1:1,c_fill,f_auto,q_auto/https://cdn0.woolworths.media/content/wowproductimages/large/037810.jpg 220w,https://res.cloudinary.com/pocketpasta/image/fetch/w_540,h_540,ar_1:1,c_fill,f_auto,q_auto/https://cdn0.woolworths.media/content/wowproductimages/large/037810.jpg 540w,https://res.cloudinary.com/pocketpasta/image/fetch/w_1080,h_1080,ar_1:1,c_fill,f_auto,q_auto/https://cdn0.woolworths.media/content/wowproductimages/large/037810.jpg 1080w\\" alt=\\"Peeled Tomatoes\\" width=\\"540\\" height=\\"540\\" itemprop=\\"image\\" sizes=\\"(max-width: 768px) 50vw, 100vw\\" contain=\\"\\"></v-img>
+    </v-col>
+  </v-row>
+  <v-expansion-panels multiple=\\"\\" value=\\"0,1\\">
+    <v-expansion-panel itemprop=\\"offers\\" itemscope=\\"\\" itemtype=\\"http://schema.org/AggregateOffer\\">
+      <v-expansion-panel-header>
+        <h2>Sellers</h2>
+        <price-summary-stub lowprice=\\"1.4\\" highprice=\\"1.4\\" pricecurrency=\\"AUD\\" offercount=\\"2\\" weight=\\"[object Object]\\" offers=\\"[object Object],[object Object]\\"></price-summary-stub>
+      </v-expansion-panel-header>
+      <v-expansion-panel-content eager=\\"\\">
+        <offers-stub offers=\\"[object Object],[object Object]\\" pricecurrency=\\"AUD\\" highprice=\\"1.4\\" lowprice=\\"1.4\\" offercount=\\"2\\" weight=\\"[object Object]\\"></offers-stub>
+      </v-expansion-panel-content>
+    </v-expansion-panel>
+    <nutrition-fact-table-stub calories=\\"108 kJ\\" carbohydratecontent=\\"4.1 g\\" fatcontent=\\"0.5 g\\" proteincontent=\\"1.5 g\\" saturatedfatcontent=\\"0 g\\" servingsize=\\"133 g\\" sodiumcontent=\\"19 mg\\" sugarcontent=\\"3.9 g\\" name=\\"nutrition\\" class=\\"my-4\\"></nutrition-fact-table-stub>
+    <!---->
+  </v-expansion-panels>
 </div>"
 `;

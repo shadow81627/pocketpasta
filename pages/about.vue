@@ -1,7 +1,7 @@
 <template>
-  <b-container>
-    <b-row>
-      <b-col>
+  <v-container>
+    <v-row>
+      <v-col>
         <h1>{{ $t('about.heading') }}</h1>
         <p class="lead">
           <!-- PocketPasta is a progressive web app for journaling your life.
@@ -20,12 +20,12 @@
             "
           />
         </vue-plyr>
-      </b-col>
-    </b-row>
+      </v-col>
+    </v-row>
 
-    <b-row align-v="center">
-      <b-col cols="12" md="6">
-        <b-img-lazy
+    <v-row class="align-v">
+      <v-col cols="12" md="6">
+        <v-img
           class="img-fluid mx-auto d-block"
           alt="Typing monkey"
           src="https://res.cloudinary.com/pocketpasta/image/fetch/f_auto,q_auto/https://cdn-images-1.medium.com/max/600/1*6BIIyDspOhlLYW5ZiK6b1Q.jpeg"
@@ -33,8 +33,8 @@
           width="310"
           height="360"
         />
-      </b-col>
-      <b-col v-if="damien" cols="12" md="6">
+      </v-col>
+      <v-col v-if="damien" cols="12" md="6">
         <h2>{{ damien.name }}</h2>
         <p>
           <strong>Job Title:<span>&nbsp;</span></strong>
@@ -79,54 +79,19 @@
             />
           </div>
         </div>
-      </b-col>
-    </b-row>
-
-    <!-- <b-row align-v="center">
-        <b-col>
-          <h3>What's with the name?</h3>
-          <p>
-            The name comes form 4chan
-            <a href="https://knowyourmeme.com/memes/spaghetti-stories"
-              >Spaghetti Stories</a
-            >
-            a type of bait-and-switch copypasta posted under the pretext of
-            recounting a socially awkward or humiliating situation in
-            <a href="https://knowyourmeme.com/memes/greentext-stories"
-              >greentext</a
-            >. While the plot may vary from one to another, each story ends when
-            spaghetti suddenly falls out of one’s pocket or fanny pack, similar
-            to the twist in
-            <a href="https://knowyourmeme.com/memes/bel-air-fresh-prince"
-              >Fresh Prince of Bel-Air</a
-            >
-            copypasta stories.
-          </p>
-        </b-col>
-        <b-col>
-          <b-img-lazy
-            class="img-fluid mx-auto d-block"
-            alt="Spaghetti suddenly falls out Pepe"
-            src="https://res.cloudinary.com/pocketpasta/image/fetch/https://i.kym-cdn.com/photos/images/original/001/182/064/60a.jpg"
-            throttle="100"
-          />
-        </b-col>
-      </b-row> -->
-  </b-container>
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 
 <script>
 import Keywords from '@/components/Keywords';
-import { BRow, BCol, BContainer } from 'bootstrap-vue';
 import VuePlyr from 'vue-plyr/dist/vue-plyr.ssr.js';
 import 'plyr/dist/plyr.css';
 
 export default {
   components: {
     Keywords,
-    BRow,
-    BCol,
-    BContainer,
     VuePlyr,
   },
   data() {

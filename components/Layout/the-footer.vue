@@ -1,5 +1,5 @@
 <template>
-  <v-footer class="hidden-print-only position-static" inset app>
+  <v-footer class="hidden-print-only" inset app style="position: static;">
     <v-container>
       <v-row no-gutters>
         <v-col cols="auto">

@@ -2,16 +2,14 @@ import Recipe from '@/components/Recipe/NutritionFactTable';
 import recipe from '@/assets/link-data/recipes/spaghetti.json';
 import { shallowMount, createLocalVue } from '@vue/test-utils';
 import Vuex from 'vuex';
-// import VueRouter from 'vue-router';
 import BootstrapVuePlugin from 'bootstrap-vue';
+import Vuetify from 'vuetify';
 
 const localVue = createLocalVue();
 
 localVue.use(Vuex);
+localVue.use(Vuetify);
 localVue.use(BootstrapVuePlugin);
-// localVue.use(VueRouter);
-
-// const router = new VueRouter();
 
 const $route = {
   path: '/recipes/detail/1',

@@ -206,7 +206,7 @@ module.exports = {
   /*
    ** Global CSS
    */
-  css: ['~/assets/scss/custom.scss', '~/assets/css/custom.css'],
+  // css: ['~/assets/scss/custom.scss', '~/assets/css/custom.css'],
 
   /*
    ** Plugins to load before mounting the App
@@ -330,7 +330,7 @@ module.exports = {
     optionsPath: './vuetify.options.js',
     // customVariables: ['~/assets/scss/vuetify.scss'],
     treeShake: true,
-    theme: { disable: true },
+    // theme: { disable: true },
     defaultAssets: false,
   },
 
