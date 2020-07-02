@@ -206,7 +206,7 @@ module.exports = {
   /*
    ** Global CSS
    */
-  // css: ['~/assets/scss/custom.scss', '~/assets/css/custom.css'],
+  css: ['~/assets/scss/app.scss'],
 
   /*
    ** Plugins to load before mounting the App
@@ -227,7 +227,6 @@ module.exports = {
     '@nuxtjs/pwa',
     '@nuxtjs/recaptcha',
     '@nuxtjs/sentry',
-    'bootstrap-vue/nuxt',
     ['nuxt-i18n', i18nSettings],
 
     // keep sitemap last
@@ -332,21 +331,6 @@ module.exports = {
     treeShake: true,
     // theme: { disable: true },
     defaultAssets: false,
-  },
-
-  bootstrapVue: {
-    bootstrapCSS: false, // or `css`
-    bootstrapVueCSS: false, // or `bvCSS`
-    componentPlugins: [
-      'Image',
-      'FormSelect',
-      'Card',
-      'ButtonPlugin',
-      'FormTextareaPlugin',
-      'FormGroupPlugin',
-      'FormInputPlugin',
-    ],
-    directivePlugins: ['Tooltip'],
   },
 
   googleAnalytics: {

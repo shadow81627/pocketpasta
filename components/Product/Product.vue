@@ -34,8 +34,8 @@
         itemscope
         itemtype="http://schema.org/AggregateOffer"
       >
-        <v-expansion-panel-header
-          ><h2>Sellers</h2>
+        <v-expansion-panel-header>
+          <h2>Sellers</h2>
           <price-summary v-bind="offerData"
         /></v-expansion-panel-header>
         <v-expansion-panel-content eager>

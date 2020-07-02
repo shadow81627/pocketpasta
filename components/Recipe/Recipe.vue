@@ -60,19 +60,19 @@
 
     <v-expansion-panels multiple :value="[0, 1, 2]" accordion>
       <v-expansion-panel>
-        <v-expansion-panel-header
-          ><h2>Ingredients</h2></v-expansion-panel-header
-        >
+        <v-expansion-panel-header>
+          <h2>Ingredients</h2>
+        </v-expansion-panel-header>
         <v-expansion-panel-content eager>
-          <ol class="list-group-flush pl-0 mb-0">
-            <li
-              v-for="ingredient in recipeIngredient"
-              :key="ingredient"
-              class="list-group-item"
-            >
-              {{ ingredient }}
-            </li>
-          </ol>
+          <v-data-iterator :items="recipeIngredient" hide-default-footer>
+            <template v-slot:default="props">
+              <v-card v-for="item in props.items" :key="item" tile flat>
+                <v-card-title class="text-break text-wrap">{{
+                  item
+                }}</v-card-title>
+              </v-card>
+            </template>
+          </v-data-iterator>
         </v-expansion-panel-content>
       </v-expansion-panel>
       <v-expansion-panel class="my-4">
@@ -80,18 +80,19 @@
           ><h2>Instructions</h2></v-expansion-panel-header
         >
         <v-expansion-panel-content eager>
-          <ol
+          <v-data-iterator
             v-if="Array.isArray(recipeInstructions)"
-            class="list-group-flush pl-0 mb-0"
+            :items="recipeInstructions"
+            hide-default-footer
           >
-            <li
-              v-for="instruction in recipeInstructions"
-              :key="instruction.text"
-              class="list-group-item"
-            >
-              {{ instruction.text }}
-            </li>
-          </ol>
+            <template v-slot:default="props">
+              <v-card v-for="item in props.items" :key="item.text" tile flat>
+                <v-card-title class="text-break text-wrap">{{
+                  item.text
+                }}</v-card-title>
+              </v-card>
+            </template>
+          </v-data-iterator>
           <p v-else>{{ recipeInstructions }}</p>
         </v-expansion-panel-content>
       </v-expansion-panel>
