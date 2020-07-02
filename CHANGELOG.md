@@ -1,5 +1,23 @@
 # Releases
 
+## [0.38.4](https://github.com/shadow81627/pocketpasta/compare/v0.38.3...v0.38.4) (2020-07-02)
+
+### Bug Fixes
+
+- **deps:** update dependency nuxt to v2.13.3 ([78f918a](https://github.com/shadow81627/pocketpasta/commit/78f918a4a297581e9ada1109a77ad72c5323d07a))
+
+## [0.38.3](https://github.com/shadow81627/pocketpasta/compare/v0.38.2...v0.38.3) (2020-07-02)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxt/content to v1.4.1 ([59acc67](https://github.com/shadow81627/pocketpasta/commit/59acc670f482058da0550052dd3a94bbb2d1d193))
+
+## [0.38.2](https://github.com/shadow81627/pocketpasta/compare/v0.38.1...v0.38.2) (2020-07-02)
+
+### Bug Fixes
+
+- **deps:** update dependency nuxt-i18n to v6.13.0 ([4468b78](https://github.com/shadow81627/pocketpasta/commit/4468b78d662cb2a983aefd7c1eb458bf40ba200d))
+
 ## [0.38.1](https://github.com/shadow81627/pocketpasta/compare/v0.38.0...v0.38.1) (2020-07-01)
 
 ### Bug Fixes
