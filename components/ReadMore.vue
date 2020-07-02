@@ -1,7 +1,7 @@
 <template>
   <span>
     <span>{{ formattedString }}</span>
-    <span v-show="text.length > stop">
+    <span v-show="text && text.length > stop">
       <a
         v-show="!isReadMore"
         :href="link"

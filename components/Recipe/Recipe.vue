@@ -39,7 +39,6 @@
               dense
               :value="Number(aggregateRating.ratingValue)"
               readonly
-              color="#007bff"
             />
           </v-chip>
           <v-chip label style="background: none;"
@@ -247,6 +246,12 @@ export default {
         '@context': 'http://schema.org/',
       };
     },
+  },
+  mounted() {
+    const buttons = document.getElementsByTagName('button');
+    Array.from(buttons).map((btn) =>
+      btn.setAttribute('aria-label', 'rating-star'),
+    );
   },
 
   head() {

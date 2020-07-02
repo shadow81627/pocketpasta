@@ -11,7 +11,7 @@ exports[`Recipe renders properly 1`] = `
     <v-row-stub tag=\\"div\\">
       <v-col-stub tag=\\"div\\">
         <v-chip-stub activeclass=\\"\\" tag=\\"span\\" active=\\"true\\" closeicon=\\"$delete\\" filtericon=\\"$complete\\" label=\\"true\\" style=\\"background: none;\\">
-          <v-rating-stub color=\\"#007bff\\" opendelay=\\"0\\" closedelay=\\"0\\" ripple=\\"true\\" backgroundcolor=\\"accent\\" dense=\\"true\\" emptyicon=\\"$ratingEmpty\\" fullicon=\\"$ratingFull\\" halficon=\\"$ratingHalf\\" length=\\"5\\" readonly=\\"true\\" value=\\"4.93\\"></v-rating-stub>
+          <v-rating-stub color=\\"primary\\" opendelay=\\"0\\" closedelay=\\"0\\" ripple=\\"true\\" backgroundcolor=\\"accent\\" dense=\\"true\\" emptyicon=\\"$ratingEmpty\\" fullicon=\\"$ratingFull\\" halficon=\\"$ratingHalf\\" length=\\"5\\" readonly=\\"true\\" value=\\"4.93\\"></v-rating-stub>
         </v-chip-stub>
         <v-chip-stub activeclass=\\"\\" tag=\\"span\\" active=\\"true\\" closeicon=\\"$delete\\" filtericon=\\"$complete\\" label=\\"true\\" style=\\"background: none;\\">
           <number-text-stub></number-text-stub>
