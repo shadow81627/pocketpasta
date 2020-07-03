@@ -2,7 +2,7 @@
 
 exports[`index renders properly 1`] = `
 "<div label=\\"Job Title\\" value=\\"Full Stack Web Developer\\">
-  <section>
+  <v-card-stub loaderheight=\\"4\\" tag=\\"div\\" dark=\\"true\\">
     <div class=\\"position-relative overflow-hidden pa-3 pa-md-12 text-center bg-dark text-light text-shadow banner-image-background\\" style=\\"position: relative; overflow: hidden; background-size: cover; background-image: url(https://res.cloudinary.com/pocketpasta/image/upload/fl_progressive/ar_16:9,c_fill,f_auto,q_auto,dpr_auto,g_south,w_auto/c_limit,w_1920/v1559982334/hero_rko6us.jpg);\\">
       <div class=\\"product-device shadow-sm d-none d-md-block\\"></div>
       <div class=\\"product-device product-device-2 shadow-sm d-none d-md-block\\"></div>
@@ -23,7 +23,7 @@ exports[`index renders properly 1`] = `
       </div>
       <credit-stub style=\\"position: absolute; right: 0px; bottom: 0px;\\"></credit-stub>
     </div>
-  </section>
+  </v-card-stub>
   <section>
     <v-container-stub tag=\\"div\\">
       <v-row-stub tag=\\"div\\" justify=\\"center\\" class=\\"my-5\\">
