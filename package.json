@@ -125,7 +125,7 @@
     "sass-loader": "9.0.0",
     "semantic-release": "17.1.1",
     "slugify": "1.4.4",
-    "snyk": "1.359.1",
+    "snyk": "1.360.0",
     "stylelint-config-prettier": "8.0.2",
     "vue-jest": "3.0.6",
     "vuetify-loader": "1.5.0"
