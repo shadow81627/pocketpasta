@@ -1,5 +1,11 @@
 # Releases
 
+## [0.38.5](https://github.com/shadow81627/pocketpasta/compare/v0.38.4...v0.38.5) (2020-07-03)
+
+### Performance Improvements
+
+- remove bootstrap css ([#1277](https://github.com/shadow81627/pocketpasta/issues/1277)) ([ce9aecd](https://github.com/shadow81627/pocketpasta/commit/ce9aecd1ec0981515d2c35dce3c00bd45555a3a1))
+
 ## [0.38.4](https://github.com/shadow81627/pocketpasta/compare/v0.38.3...v0.38.4) (2020-07-02)
 
 ### Bug Fixes
