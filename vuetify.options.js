@@ -14,6 +14,9 @@ import {
   mdiViewComfy,
   mdiDownload,
   mdiCalendarCheck,
+  mdiMagnify,
+  mdiArrowUp,
+  mdiArrowDown,
 } from '@mdi/js';
 
 // vuetify.options.js
@@ -44,6 +47,9 @@ export default {
       view_comfy: mdiViewComfy,
       get_app: mdiDownload,
       'calendar-check': mdiCalendarCheck,
+      search: mdiMagnify,
+      'arrow-up': mdiArrowUp,
+      'arrow-down': mdiArrowDown,
     },
   },
   // lang: {},

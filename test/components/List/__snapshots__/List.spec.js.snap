@@ -6,12 +6,78 @@ exports[`List renders properly 1`] = `
     <v-col-stub tag=\\"div\\" class=\\"col-auto mr-auto\\">
       <h1></h1>
     </v-col-stub>
-    <v-col-stub tag=\\"div\\" class=\\"col-auto ml-auto my-auto\\">
-      <view-switcher-stub layouts=\\"[object Object],[object Object]\\"></view-switcher-stub>
-    </v-col-stub>
   </v-row-stub>
-  <v-row-stub tag=\\"div\\">
-    <v-col-stub tag=\\"div\\"></v-col-stub>
-  </v-row-stub> <span><v-row-stub tag=\\"div\\"><v-col-stub tag=\\"div\\"><v-pagination-stub length=\\"1\\" nexticon=\\"$next\\" previcon=\\"$prev\\" totalvisible=\\"9\\" value=\\"1\\" pagearialabel=\\"$vuetify.pagination.ariaLabel.page\\" currentpagearialabel=\\"$vuetify.pagination.ariaLabel.currentPage\\" previousarialabel=\\"$vuetify.pagination.ariaLabel.previous\\" nextarialabel=\\"$vuetify.pagination.ariaLabel.next\\" wrapperarialabel=\\"$vuetify.pagination.ariaLabel.wrapper\\"></v-pagination-stub> <button style=\\"display: none;\\">Refresh</button> <div style=\\"display: none;\\">Total: </div> <div style=\\"display: none;\\">Pending: </div> <div style=\\"display: none;\\">Error: </div></v-col-stub></v-row-stub></span>
+  <v-data-iterator-stub mobilebreakpoint=\\"600\\" items=\\"\\" options=\\"[object Object]\\" sortby=\\"\\" sortdesc=\\"\\" customsort=\\"function sortItems(items, sortBy, sortDesc, locale, customSorters) {
+          if (sortBy === null || !sortBy.length) return items;
+          var stringCollator = new Intl.Collator(locale, {
+            sensitivity: 'accent',
+            usage: 'sort'
+          });
+          return items.sort(function (a, b) {
+            var _a, _b;
+
+            for (var i = 0; i < sortBy.length; i++) {
+              var sortKey = sortBy[i];
+              var sortA = getObjectValueByPath(a, sortKey);
+              var sortB = getObjectValueByPath(b, sortKey);
+
+              if (sortDesc[i]) {
+                _a = __read([sortB, sortA], 2), sortA = _a[0], sortB = _a[1];
+              }
+
+              if (customSorters &amp;&amp; customSorters[sortKey]) {
+                var customResult = customSorters[sortKey](sortA, sortB);
+                if (!customResult) continue;
+                return customResult;
+              } // Check if both cannot be evaluated
+
+
+              if (sortA === null &amp;&amp; sortB === null) {
+                continue;
+              }
+
+              _b = __read([sortA, sortB].map(function (s) {
+                return (s || '').toString().toLocaleLowerCase();
+              }), 2), sortA = _b[0], sortB = _b[1];
+
+              if (sortA !== sortB) {
+                if (!isNaN(sortA) &amp;&amp; !isNaN(sortB)) return Number(sortA) - Number(sortB);
+                return stringCollator.compare(sortA, sortB);
+              }
+            }
+
+            return 0;
+          });
+        }\\" page=\\"1\\" itemsperpage=\\"4\\" groupby=\\"\\" groupdesc=\\"\\" customgroup=\\"function groupItems(items, groupBy, groupDesc) {
+          var key = groupBy[0];
+          var groups = [];
+          var current = null;
+
+          for (var i = 0; i < items.length; i++) {
+            var item = items[i];
+            var val = getObjectValueByPath(item, key);
+
+            if (current !== val) {
+              current = val;
+              groups.push({
+                name: val,
+                items: []
+              });
+            }
+
+            groups[groups.length - 1].items.push(item);
+          }
+
+          return groups;
+        }\\" locale=\\"en-US\\" customfilter=\\"function searchItems(items, search) {
+          if (!search) return items;
+          search = search.toString().toLowerCase();
+          if (search.trim() === '') return items;
+          return items.filter(function (item) {
+            return Object.keys(item).some(function (key) {
+              return defaultFilter(getObjectValueByPath(item, key), search, item);
+            });
+          });
+        }\\" serveritemslength=\\"-1\\" itemkey=\\"id\\" value=\\"\\" expanded=\\"\\" noresultstext=\\"$vuetify.dataIterator.noResultsText\\" nodatatext=\\"$vuetify.noDataText\\" loadingtext=\\"$vuetify.dataIterator.loadingText\\" hidedefaultfooter=\\"true\\" selectablekey=\\"isSelectable\\"></v-data-iterator-stub>
 </v-container-stub>"
 `;
