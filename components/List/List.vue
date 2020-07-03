@@ -45,10 +45,20 @@
                     </v-col>
                     <v-col cols="auto">
                       <v-btn-toggle v-model="direction" mandatory tile>
-                        <v-btn depressed color="blue" value="asc">
+                        <v-btn
+                          depressed
+                          color="blue"
+                          value="asc"
+                          aria-label="sort ascending"
+                        >
                           <v-icon>{{ mdiSortAlphabeticalAscending }}</v-icon>
                         </v-btn>
-                        <v-btn depressed color="blue" value="desc">
+                        <v-btn
+                          depressed
+                          color="blue"
+                          value="desc"
+                          aria-label="sort descending"
+                        >
                           <v-icon>{{ mdiSortAlphabeticalDescending }}</v-icon>
                         </v-btn>
                       </v-btn-toggle>
