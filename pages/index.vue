@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section>
+    <v-card dark>
       <div
         class="position-relative overflow-hidden pa-3 pa-md-12 text-center bg-dark text-light text-shadow banner-image-background"
         :style="`
@@ -39,7 +39,7 @@
         </div>
         <credit style="position: absolute; right: 0; bottom: 0;" />
       </div>
-    </section>
+    </v-card>
 
     <section>
       <v-container>
