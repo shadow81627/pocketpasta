@@ -1,32 +1,61 @@
 <template>
-  <div class="container">
-    <div class="row">
-      <div class="col">
+  <v-container>
+    <v-row>
+      <v-col>
         <h1>{{ $t('settings.heading') }}</h1>
-      </div>
-    </div>
-    <div class="card mb-3">
-      <h2 class="subheading card-header text-uppercase">
-        {{ $t('settings.style.heading') }}
-      </h2>
-      <ul class="list-group list-group-flush">
-        <setting v-bind="$t('settings.style.theme-label')">
-          <theme-selector aria-labelledby="theme-label" />
-        </setting>
-      </ul>
-    </div>
+      </v-col>
+    </v-row>
 
-    <div class="card mb-3">
-      <h2 class="subheading card-header text-uppercase">
-        {{ $t('settings.content.heading') }}
-      </h2>
-      <ul class="list-group list-group-flush">
-        <setting v-bind="$t('settings.content.language')">
-          <lang-switcher />
-        </setting>
-      </ul>
-    </div>
-  </div>
+    <!-- <v-expansion-panels multiple accordion>
+      <v-expansion-panel>
+        <v-expansion-panel-header>
+          header
+        </v-expansion-panel-header>
+        <v-expansion-panel-content>
+          content
+        </v-expansion-panel-content>
+      </v-expansion-panel>
+      <v-expansion-panel>
+        <v-expansion-panel-header>
+          header
+        </v-expansion-panel-header>
+        <v-expansion-panel-content>
+          content
+        </v-expansion-panel-content>
+      </v-expansion-panel>
+    </v-expansion-panels> -->
+
+    <v-row>
+      <v-col>
+        <v-card>
+          <v-card-title>
+            <h2>
+              {{ $t('settings.style.heading') }}
+            </h2>
+          </v-card-title>
+
+          <setting v-bind="$t('settings.style.theme-label')">
+            <theme-selector aria-labelledby="theme-label" />
+          </setting>
+        </v-card>
+      </v-col>
+    </v-row>
+
+    <v-row>
+      <v-col>
+        <v-card>
+          <v-card-title>
+            <h2>
+              {{ $t('settings.content.heading') }}
+            </h2>
+          </v-card-title>
+          <setting v-bind="$t('settings.content.language')">
+            <lang-switcher />
+          </setting>
+        </v-card>
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 
 <script>

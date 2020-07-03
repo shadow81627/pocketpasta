@@ -1,24 +1,8 @@
 <template>
   <div class="recipe">
-    <h1>{{ name }}</h1>
-    <p>
-      <span v-if="!showDescription">
-        <span>{{ truncate(description, 120) }}</span>
-        <b-link
-          v-if="description && description.length > 120"
-          class="text-primary"
-          @click.prevent="showDescription = !showDescription"
-          >Read more</b-link
-        >
-      </span>
-      <span v-if="showDescription">
-        <span>{{ description }}</span>
-        <b-link
-          class="text-primary"
-          @click.prevent="showDescription = !showDescription"
-          >Read less</b-link
-        >
-      </span>
+    <h1 itemprop="name">{{ name }}</h1>
+    <p itemprop="description">
+      <read-more :text="description" />
     </p>
 
     <vue-plyr
@@ -31,39 +15,30 @@
       />
     </vue-plyr>
     <div v-else-if="imageData && imageData.src">
-      <b-img
-        :xsrc="imageData.src"
-        :srcset="imageData.srcset"
+      <v-img
+        :src="imageData.src"
+        :srcset="imageData.srcset.join(',')"
         :alt="name"
-        throttle="100"
         itemprop="image"
-        :width="640"
-        :height="360"
-        fluid
-        fluid-grow
-        blank-src
-        center
+        :xwidth="640"
+        :xheight="360"
+        :aspect-ratio="640 / 360"
         sizes="(max-width: 1140px) 100vw, 1140px"
-        block
+        min-width="100%"
+        contain
       />
     </div>
     <!-- <p>Author: {{ author }}</p> -->
     <!-- <p>Published: {{ datePublished }}</p> -->
 
     <section>
-      <b-row>
-        <b-col>
-          <v-chip label readonly style="background: none; padding: 0;">
-            <b-form-rating
-              id="rating"
-              :value="aggregateRating.ratingValue"
+      <v-row>
+        <v-col>
+          <v-chip label style="background: none;">
+            <v-rating
+              dense
+              :value="Number(aggregateRating.ratingValue)"
               readonly
-              inline
-              no-border
-              style="background: none;"
-              variant="primary"
-              name="rating"
-              aria-label="rating"
             />
           </v-chip>
           <v-chip label style="background: none;"
@@ -78,134 +53,106 @@
           >
             <share class="d-inline-block" />
           </v-chip>
-        </b-col>
-      </b-row>
-    </section>
-    <b-row>
-      <b-col md="6">
-        <b-card v-if="recipeIngredient" no-body tag="section" class="mb-4">
-          <b-card-header header-tag="header" class="p-1 text-left">
-            <b-button
-              v-b-toggle:collapse-ingredient
-              block
-              variant="none"
-              squared
-              class="text-left"
-              ><h2>Ingredients</h2></b-button
-            >
-          </b-card-header>
-          <b-collapse id="collapse-ingredient" visible>
-            <b-card-body>
-              <ol class="list-group-flush pl-0 mb-0">
-                <li
-                  v-for="ingredient in recipeIngredient"
-                  :key="ingredient"
-                  class="list-group-item"
-                >
-                  {{ ingredient }}
-                  <!-- <fraction-text :text="ingredient" /> -->
-                </li>
-              </ol>
-            </b-card-body>
-          </b-collapse>
-        </b-card>
-      </b-col>
-      <b-col md="6">
-        <b-card v-if="recipeInstructions" no-body tag="section" class="mb-4">
-          <b-card-header header-tag="header" class="p-1">
-            <b-button
-              v-b-toggle:collapse-instructions
-              block
-              variant="none"
-              squared
-              class="text-left"
-              ><h2>Instructions</h2></b-button
-            >
-          </b-card-header>
-          <b-collapse id="collapse-instructions" visible>
-            <b-card-body>
-              <ol
-                v-if="Array.isArray(recipeInstructions)"
-                class="list-group-flush pl-0 mb-0"
-              >
-                <li
-                  v-for="instruction in recipeInstructions"
-                  :key="instruction.text"
-                  class="list-group-item"
-                >
-                  {{ instruction.text }}
-                  <!-- <fraction-text :text="instruction.text" /> -->
-                </li>
-              </ol>
-              <p v-else>{{ recipeInstructions }}</p>
-            </b-card-body>
-          </b-collapse>
-        </b-card>
-      </b-col>
-    </b-row>
-
-    <nutrition-fact-table v-if="nutrition" v-bind="nutrition" class="my-4" />
-
-    <section v-if="keywords" class="mb-2 d-print-none">
-      <h2 class="h4">Tags</h2>
-      <div class="list-group-flush">
-        <keywords
-          :tags="keywords.split(',')"
-          :label="null"
-          class="list-group-item"
-        />
-      </div>
+        </v-col>
+      </v-row>
     </section>
 
-    <section v-if="sameAs" class="d-print-none">
-      <h2 class="h4">References</h2>
-      <div class="list-group-flush">
-        <span
-          v-for="reference in sameAs"
-          :key="reference"
-          class="list-group-item text-truncate"
+    <v-expansion-panels multiple :value="[0, 1, 2]" accordion>
+      <v-expansion-panel>
+        <v-expansion-panel-header>
+          <h2>Ingredients</h2>
+        </v-expansion-panel-header>
+        <v-expansion-panel-content eager>
+          <v-data-iterator :items="recipeIngredient" hide-default-footer>
+            <template v-slot:default="props">
+              <v-card v-for="item in props.items" :key="item" tile flat>
+                <v-card-title class="text-break text-wrap">{{
+                  item
+                }}</v-card-title>
+              </v-card>
+            </template>
+          </v-data-iterator>
+        </v-expansion-panel-content>
+      </v-expansion-panel>
+      <v-expansion-panel class="my-4">
+        <v-expansion-panel-header
+          ><h2>Instructions</h2></v-expansion-panel-header
         >
-          <a :href="reference" target="_blank" itemprop="url" rel="noopener">{{
-            reference
-          }}</a>
-        </span>
-      </div>
-    </section>
+        <v-expansion-panel-content eager>
+          <v-data-iterator
+            v-if="Array.isArray(recipeInstructions)"
+            :items="recipeInstructions"
+            hide-default-footer
+          >
+            <template v-slot:default="props">
+              <v-card v-for="item in props.items" :key="item.text" tile flat>
+                <v-card-title class="text-break text-wrap">{{
+                  item.text
+                }}</v-card-title>
+              </v-card>
+            </template>
+          </v-data-iterator>
+          <p v-else>{{ recipeInstructions }}</p>
+        </v-expansion-panel-content>
+      </v-expansion-panel>
+      <nutrition-fact-table v-if="nutrition" v-bind="nutrition" class="mb-4" />
+      <v-expansion-panel v-if="keywords" class="mb-2 d-print-none">
+        <v-expansion-panel-header>
+          <h2>Tags</h2>
+        </v-expansion-panel-header>
+        <v-expansion-panel-content>
+          <div class="list-group-flush">
+            <keywords
+              :tags="keywords.split(',')"
+              :label="null"
+              class="list-group-item"
+            />
+          </div>
+        </v-expansion-panel-content>
+      </v-expansion-panel>
+      <v-expansion-panel v-if="sameAs" class="d-print-none">
+        <v-expansion-panel-header>
+          <h2>References</h2>
+        </v-expansion-panel-header>
+        <v-expansion-panel-content>
+          <div class="list-group-flush">
+            <span
+              v-for="reference in sameAs"
+              :key="reference"
+              class="list-group-item text-truncate"
+            >
+              <a
+                :href="reference"
+                target="_blank"
+                itemprop="url"
+                rel="noopener"
+                >{{ reference }}</a
+              >
+            </span>
+          </div>
+        </v-expansion-panel-content>
+      </v-expansion-panel>
+    </v-expansion-panels>
   </div>
 </template>
 
 <script>
+import ReadMore from '@/components/ReadMore.vue';
 import NumberText from '@/components/text/NumberText';
-// import FractionText from '@/components/FractionText';
 import Keywords from '@/components/Keywords';
 import Share from '@/components/Social/Share';
 import NutritionFactTable from '@/components/Recipe/NutritionFactTable';
-import {
-  BCollapse,
-  VBToggle,
-  BRow,
-  BCol,
-  BFormRating,
-  BLink,
-} from 'bootstrap-vue';
 import VuePlyr from 'vue-plyr/dist/vue-plyr.ssr.js';
 import 'plyr/dist/plyr.css';
 export default {
   components: {
     NumberText,
-    // FractionText,
     Keywords,
     Share,
     NutritionFactTable,
-    BCollapse,
-    BRow,
-    BCol,
     VuePlyr,
-    BFormRating,
-    BLink,
-    // VChip,
+    ReadMore,
   },
-  directives: { 'b-toggle': VBToggle },
   inheritAttrs: false,
   props: {
     name: { type: String, required: false },
@@ -241,7 +188,6 @@ export default {
         ratingCount: 1,
       }),
     },
-    // updatedAt: { type: Date, default: () => new Date() },
   },
   data: () => ({ showDescription: false }),
   computed: {
@@ -298,18 +244,14 @@ export default {
         ...this.$props,
         '@type': 'Recipe',
         '@context': 'http://schema.org/',
-        // dateModified: this.updatedAt.toISOString(),
-        // updatedAt: undefined,
       };
     },
   },
-
-  methods: {
-    truncate(text, stop = 150, clamp = '...') {
-      if (text) {
-        return `${text.slice(0, stop)}${stop < text.length ? clamp : ''}`;
-      }
-    },
+  mounted() {
+    const buttons = document.getElementsByTagName('button');
+    Array.from(buttons).map((btn) =>
+      btn.setAttribute('aria-label', 'rating-star'),
+    );
   },
 
   head() {

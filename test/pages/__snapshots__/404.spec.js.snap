@@ -1,11 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`404 renders properly 1`] = `
-"<div id=\\"message\\" class=\\"card bg-light card-body\\">
+"<v-card-stub loaderheight=\\"4\\" tag=\\"div\\" id=\\"message\\">
   <h2>404</h2>
   <h1>error.404.heading</h1>
   <p>
     error.404.description
-  </p> <a class=\\"btn btn-primary\\">layout.navigation.home</a>
-</div>"
+  </p>
+  <v-btn-stub color=\\"primary\\" tag=\\"button\\" activeclass=\\"\\" to=\\"index\\" large=\\"true\\" block=\\"true\\" type=\\"button\\">layout.navigation.home</v-btn-stub>
+</v-card-stub>"
 `;

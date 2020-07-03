@@ -1,8 +1,14 @@
 import component from '@/components/error/404.vue';
-import { shallowMount, RouterLinkStub } from '@vue/test-utils';
+import { shallowMount, RouterLinkStub, createLocalVue } from '@vue/test-utils';
+import Vuetify from 'vuetify';
+
+const localVue = createLocalVue();
+
+localVue.use(Vuetify);
 
 const factory = () =>
   shallowMount(component, {
+    localVue,
     propsData: {
       error: {
         statusCode: 404,

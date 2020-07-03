@@ -1,90 +1,86 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Recipe renders properly 1`] = `
-"<b-card-stub bodytag=\\"div\\" titletag=\\"h4\\" subtitletag=\\"h6\\" subtitletextvariant=\\"muted\\" headertag=\\"div\\" footertag=\\"div\\" tag=\\"section\\" nobody=\\"true\\" itemscope=\\"\\" itemtype=\\"http://schema.org/NutritionInformation\\" class=\\"performance-facts\\">
-  <b-card-header-stub headertag=\\"header\\" class=\\"p-1\\">
-    <b-button-stub block=\\"true\\" variant=\\"none\\" type=\\"button\\" tag=\\"button\\" squared=\\"true\\" target=\\"_self\\" class=\\"text-left\\">
-      <h2>Nutrition Facts</h2>
-    </b-button-stub>
-  </b-card-header-stub>
-  <b-collapse-stub id=\\"collapse-performance-facts\\" visible=\\"true\\" tag=\\"div\\">
-    <b-card-body-stub bodytag=\\"div\\" titletag=\\"h4\\" subtitletag=\\"h6\\" subtitletextvariant=\\"muted\\">
-      <header class=\\"performance-facts__header\\">
-        <p itemprop=\\"servingSize\\">Serving Size: </p>
-      </header>
-      <table class=\\"performance-facts__table\\">
-        <thead>
-          <tr>
-            <th colspan=\\"3\\" class=\\"small-info\\">
-              Amount Per Serving
-            </th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th colspan=\\"2\\"><b>Calories</b> <span itemprop=\\"calories\\"></span></th>
-            <td>
-              <!---->
-            </td>
-          </tr>
-          <tr class=\\"thick-row\\">
-            <td colspan=\\"3\\" class=\\"small-info\\"><b>% Daily Value*</b></td>
-          </tr>
-          <tr>
-            <th colspan=\\"2\\"><b>Total Fat</b> <span itemprop=\\"fatContent\\"></span></th>
-            <td></td>
-          </tr>
-          <tr>
-            <td class=\\"blank-cell\\"></td>
-            <th>
-              Saturated Fat
-              <span itemprop=\\"saturatedFatContent\\"></span></th>
-            <td></td>
-          </tr>
-          <tr>
-            <td class=\\"blank-cell\\"></td>
-            <th>
-              Trans Fat
-              <span itemprop=\\"unsaturatedFatContent\\"></span></th>
-            <td></td>
-          </tr>
-          <tr>
-            <th colspan=\\"2\\"><b>Cholesterol</b> <span itemprop=\\"cholesterolContent\\"></span></th>
-            <td></td>
-          </tr>
-          <tr>
-            <th colspan=\\"2\\"><b>Sodium</b> <span itemprop=\\"sodiumContent\\"></span></th>
-            <td></td>
-          </tr>
-          <tr>
-            <th colspan=\\"2\\"><b>Total Carbohydrate</b> <span itemprop=\\"carbohydrateContent\\"></span></th>
-            <td></td>
-          </tr>
-          <tr>
-            <td class=\\"blank-cell\\"></td>
-            <th>
-              Dietary Fiber
-              <span itemprop=\\"fiberContent\\"></span></th>
-            <td></td>
-          </tr>
-          <tr>
-            <td class=\\"blank-cell\\"></td>
-            <th>
-              Sugars
-              <span itemprop=\\"sugarContent\\"></span></th>
-            <td></td>
-          </tr>
-          <tr class=\\"thick-end\\">
-            <th colspan=\\"2\\"><b>Protein</b> <span itemprop=\\"proteinContent\\"></span></th>
-            <td></td>
-          </tr>
-        </tbody>
-      </table>
-      <p class=\\"small-info\\">
-        * Percent Daily Values are based on a 2,000 calorie diet. Your daily
-        values may be higher or lower depending on your calorie needs:
-      </p>
-    </b-card-body-stub>
-  </b-collapse-stub>
-</b-card-stub>"
+"<v-expansion-panel-stub itemscope=\\"\\" itemtype=\\"http://schema.org/NutritionInformation\\" class=\\"performance-facts\\">
+  <v-expansion-panel-header-stub expandicon=\\"$expand\\">
+    <h2>Nutrition Facts</h2>
+  </v-expansion-panel-header-stub>
+  <v-expansion-panel-content-stub eager=\\"true\\">
+    <header class=\\"performance-facts__header\\">
+      <p itemprop=\\"servingSize\\">Serving Size: </p>
+    </header>
+    <table class=\\"performance-facts__table\\">
+      <thead>
+        <tr>
+          <th colspan=\\"3\\" class=\\"small-info\\">
+            Amount Per Serving
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th colspan=\\"2\\"><b>Calories</b> <span itemprop=\\"calories\\"></span></th>
+          <td>
+            <!---->
+          </td>
+        </tr>
+        <tr class=\\"thick-row\\">
+          <td colspan=\\"3\\" class=\\"small-info\\"><b>% Daily Value*</b></td>
+        </tr>
+        <tr>
+          <th colspan=\\"2\\"><b>Total Fat</b> <span itemprop=\\"fatContent\\"></span></th>
+          <td></td>
+        </tr>
+        <tr>
+          <td class=\\"blank-cell\\"></td>
+          <th>
+            Saturated Fat
+            <span itemprop=\\"saturatedFatContent\\"></span></th>
+          <td></td>
+        </tr>
+        <tr>
+          <td class=\\"blank-cell\\"></td>
+          <th>
+            Trans Fat
+            <span itemprop=\\"unsaturatedFatContent\\"></span></th>
+          <td></td>
+        </tr>
+        <tr>
+          <th colspan=\\"2\\"><b>Cholesterol</b> <span itemprop=\\"cholesterolContent\\"></span></th>
+          <td></td>
+        </tr>
+        <tr>
+          <th colspan=\\"2\\"><b>Sodium</b> <span itemprop=\\"sodiumContent\\"></span></th>
+          <td></td>
+        </tr>
+        <tr>
+          <th colspan=\\"2\\"><b>Total Carbohydrate</b> <span itemprop=\\"carbohydrateContent\\"></span></th>
+          <td></td>
+        </tr>
+        <tr>
+          <td class=\\"blank-cell\\"></td>
+          <th>
+            Dietary Fiber
+            <span itemprop=\\"fiberContent\\"></span></th>
+          <td></td>
+        </tr>
+        <tr>
+          <td class=\\"blank-cell\\"></td>
+          <th>
+            Sugars
+            <span itemprop=\\"sugarContent\\"></span></th>
+          <td></td>
+        </tr>
+        <tr class=\\"thick-end\\">
+          <th colspan=\\"2\\"><b>Protein</b> <span itemprop=\\"proteinContent\\"></span></th>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+    <p class=\\"small-info\\">
+      * Percent Daily Values are based on a 2,000 calorie diet. Your daily
+      values may be higher or lower depending on your calorie needs:
+    </p>
+  </v-expansion-panel-content-stub>
+</v-expansion-panel-stub>"
 `;

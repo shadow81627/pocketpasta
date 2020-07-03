@@ -26,7 +26,7 @@
               {{ $t('newsletter.email.label') }}
               <span class="asterisk text-danger">*</span>
             </label>
-            <input
+            <v-text-field
               id="mce-EMAIL"
               type="email"
               name="EMAIL"
@@ -38,7 +38,7 @@
             <label for="mce-FNAME">{{
               $t('newsletter.firstname.label')
             }}</label>
-            <input
+            <v-text-field
               id="mce-FNAME"
               type="text"
               name="FNAME"
@@ -48,7 +48,7 @@
           </div>
           <div class="mc-field-group form-group pb-4">
             <label for="mce-LNAME">{{ $t('newsletter.lastname.label') }}</label>
-            <input
+            <v-text-field
               id="mce-LNAME"
               type="text"
               name="LNAME"
@@ -79,13 +79,14 @@
             />
           </div>
           <div class="clear">
-            <input
+            <v-btn
               id="mc-embedded-subscribe"
               type="submit"
-              :value="$t('newsletter.submit')"
               name="subscribe"
-              class="button btn btn-primary"
-            />
+              class="button"
+              color="primary"
+              >{{ $t('newsletter.submit') }}</v-btn
+            >
           </div>
         </div>
       </form>

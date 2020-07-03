@@ -116,13 +116,6 @@ describe('Recipe', () => {
     });
     expect(wrapper.vm.imageData).toBeTruthy();
   });
-
-  test('truncate', () => {
-    const wrapper = factory();
-    const text = `${'a'.repeat(151)}`;
-    expect(wrapper.vm.truncate(text)).toEqual(`${'a'.repeat(150)}...`);
-  });
-
   test('head', () => {
     const wrapper = factory();
     expect(wrapper.vm.$metaInfo).toBeTruthy();

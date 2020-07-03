@@ -52,9 +52,7 @@
             v-else
             :key="item.text"
             :to="localePath(item.route ? item.route : {})"
-            active-class="btn-primary pointer-events-none active"
             nuxt
-            class="text-decoration-none"
           >
             <v-list-item-action>
               <v-icon>${{ item.icon }}</v-icon>
@@ -72,24 +70,23 @@
       fixed
       class="hidden-print-only"
     >
-      <v-toolbar-title style="width: 256px;" class="ml-0 pl-3">
-        <v-app-bar-nav-icon aria-label="menu" @click.stop="drawer = !drawer"
-          ><v-progress-circular
-            v-if="loading"
-            indeterminate
-            size="18"
-            width="2"
-        /></v-app-bar-nav-icon>
-        <b-img-lazy
+      <v-app-bar-nav-icon aria-label="menu" @click.stop="drawer = !drawer"
+        ><v-progress-circular v-if="loading" indeterminate size="18" width="2"
+      /></v-app-bar-nav-icon>
+      <v-avatar width="32" height="32" tile>
+        <v-img
           :src="$icon(32)"
           :srcset="`${$icon(32)} 1x, ${$icon(64)} 2x`"
           width="32"
           height="32"
-          class="rounded"
           alt="PocketPasta"
+          contain
           onerror="javascript:this.style.display = 'none'"
         />
-        <span class="brand d-none d-sm-inline">PocketPasta</span>
+      </v-avatar>
+
+      <v-toolbar-title>
+        <span class="brand d-none d-sm-flex">PocketPasta</span>
       </v-toolbar-title>
       <v-spacer />
       <add-to-home-screen icon />
@@ -177,27 +174,6 @@ export default {
       link: [
         ...i18nSeo.link,
         {
-          hid: 'theme-preload',
-          rel: 'preload',
-          as: 'style',
-          href: this.$store.getters.getThemeById(this.$colorMode.value).href,
-          skip:
-            this.$store.getters.getThemeById(this.$colorMode.value).href ===
-              '' ||
-            !this.$store.getters.getThemeById(this.$colorMode.value).href,
-        },
-        {
-          // stylesheet is valid in the body, needed because default css is loading first this allows theme to overide default.
-          pbody: true,
-          hid: 'theme',
-          rel: 'stylesheet',
-          href: this.$store.getters.getThemeById(this.$colorMode.value).href,
-          skip:
-            this.$store.getters.getThemeById(this.$colorMode.value).href ===
-              '' ||
-            !this.$store.getters.getThemeById(this.$colorMode.value).href,
-        },
-        {
           hid: 'canonical',
           rel: 'canonical',
           href: `${this.$config.BASE_URL}${this.$route.path}`,
@@ -218,10 +194,5 @@ export default {
 /* no pointer events */
 .pointer-events-none {
   pointer-events: none;
-}
-
-/* navbar links no underline, can't add class to a element since it is added in js */
-.text-decoration-none a {
-  text-decoration: none !important;
 }
 </style>

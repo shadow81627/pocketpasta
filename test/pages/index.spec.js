@@ -1,13 +1,3 @@
-// const assert = require('assert');
-
-// describe('pocketpasta.com page', () => {
-//   it('should have the right title', () => {
-//     browser.url('https://pocketpasta.com');
-//     const title = browser.getTitle();
-//     assert.strict.equal(title, 'pocketpasta');
-//   });
-// });
-
 import index from '@/pages/index.vue';
 import { shallowMount, createLocalVue } from '@vue/test-utils';
 import Vuetify from 'vuetify';
