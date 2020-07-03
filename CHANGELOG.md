@@ -1,5 +1,12 @@
 # Releases
 
+## [0.38.6](https://github.com/shadow81627/pocketpasta/compare/v0.38.5...v0.38.6) (2020-07-03)
+
+### Bug Fixes
+
+- **home:** banner text dark ([#1289](https://github.com/shadow81627/pocketpasta/issues/1289)) ([509282c](https://github.com/shadow81627/pocketpasta/commit/509282c1c5cd60ed625084630493ceb382241bd4)), closes [#1287](https://github.com/shadow81627/pocketpasta/issues/1287)
+- **unsplash-logo:** add style sheet ([#1286](https://github.com/shadow81627/pocketpasta/issues/1286)) ([5834b69](https://github.com/shadow81627/pocketpasta/commit/5834b69de1046296c8e1483b4c2cb54755b2d306)), closes [#1285](https://github.com/shadow81627/pocketpasta/issues/1285)
+
 ## [0.38.5](https://github.com/shadow81627/pocketpasta/compare/v0.38.4...v0.38.5) (2020-07-03)
 
 ### Performance Improvements
