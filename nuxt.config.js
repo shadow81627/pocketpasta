@@ -371,6 +371,10 @@ module.exports = {
    ** Build configuration
    */
   build: {
+    filenames: {
+      chunk: ({ isDev }) =>
+        isDev ? '[name].js' : 'chunks/[id].[contenthash].js',
+    },
     transpile: ['lodash-es'],
     // move component styles into css files
     extractCSS: true,
