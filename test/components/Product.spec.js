@@ -4,11 +4,15 @@ import product from '@/assets/link-data/products/tomatoes.json';
 import { shallowMount, createLocalVue } from '@vue/test-utils';
 import Vuex from 'vuex';
 import BootstrapVuePlugin from 'bootstrap-vue';
+import Vuetify from 'vuetify';
+import Vue from 'vue';
 
 // JSDOM complains about this attribute
 removeKeys(product, ['@type']);
 
 const localVue = createLocalVue();
+
+Vue.use(Vuetify);
 
 localVue.use(Vuex);
 localVue.use(BootstrapVuePlugin);

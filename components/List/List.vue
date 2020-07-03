@@ -1,15 +1,15 @@
 <template>
-  <div>
-    <div class="row">
-      <div class="col-auto mr-auto">
+  <v-container>
+    <v-row>
+      <v-col class="col-auto mr-auto">
         <h1>{{ heading }}</h1>
-      </div>
-      <div class="col-auto ml-auto my-auto">
+      </v-col>
+      <v-col class="col-auto ml-auto my-auto">
         <view-switcher v-model="layout" />
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-12">
+      </v-col>
+    </v-row>
+    <v-row>
+      <v-col>
         <!-- <div class="card-layout" :class="layoutClass"> -->
         <card
           v-for="item in list"
@@ -19,39 +19,30 @@
           :layout="layout"
         />
         <!-- </div> -->
-      </div>
-    </div>
+      </v-col>
+    </v-row>
 
     <client-only>
-      <div v-show="list && list.length > 0 && pages > 1" class="overflow-auto">
-        <b-pagination-nav
-          :value="page"
-          :link-gen="linkGen"
-          :number-of-pages="pages"
-          use-router
-          align="center"
-          :per-page="limit"
-          size="lg"
-          exact
-        />
-        <button v-show="false" @click="$fetch">Refresh</button>
-        <div v-show="false">Total: {{ total }}</div>
-        <div v-show="false">Pending: {{ $fetchState.pending }}</div>
-        <div v-show="$fetchState.error">Error: {{ $fetchState.error }}</div>
-      </div>
+      <v-row v-show="list && list.length > 0 && pages > 1">
+        <v-col>
+          <v-pagination v-model="page" :length="pages" total-visible="9" />
+          <button v-show="false" @click="$fetch">Refresh</button>
+          <div v-show="false">Total: {{ total }}</div>
+          <div v-show="false">Pending: {{ $fetchState.pending }}</div>
+          <div v-show="$fetchState.error">Error: {{ $fetchState.error }}</div>
+        </v-col>
+      </v-row>
     </client-only>
-  </div>
+  </v-container>
 </template>
 
 <script>
 import ViewSwitcher from '@/components/List/ViewSwitcher';
 import Card from '@/components/List/Card';
-import { BPaginationNav } from 'bootstrap-vue';
 export default {
   components: {
     ViewSwitcher,
     Card,
-    BPaginationNav,
   },
   props: {
     collection: { type: String, required: true },

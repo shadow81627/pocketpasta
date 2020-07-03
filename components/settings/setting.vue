@@ -1,7 +1,7 @@
 <template>
-  <li class="list-group-item">
-    <div class="row">
-      <div class="col-sm-6">
+  <v-container>
+    <v-row>
+      <v-col cols="12" sm="6">
         <v-card flat color="transparent">
           <v-card-title primary-title>
             <v-icon left>${{ icon }}</v-icon>
@@ -11,14 +11,14 @@
             description
           }}</v-card-text>
         </v-card>
-      </div>
-      <div class="col-sm-6 align-self-center">
+      </v-col>
+      <v-col cols="12" sm="6" class="align-self-center">
         <slot :id="id">
           <input type="text" class="form-control" placeholder="placeholder" />
         </slot>
-      </div>
-    </div>
-  </li>
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 
 <script>
