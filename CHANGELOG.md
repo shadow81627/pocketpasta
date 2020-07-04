@@ -1,5 +1,11 @@
 # Releases
 
+## [0.39.1](https://github.com/shadow81627/pocketpasta/compare/v0.39.0...v0.39.1) (2020-07-04)
+
+### Bug Fixes
+
+- **search:** close keyboard on enter press ([#1300](https://github.com/shadow81627/pocketpasta/issues/1300)) ([09ddb82](https://github.com/shadow81627/pocketpasta/commit/09ddb8245f3d076af6f7fa5ffdb7c107e5210adb)), closes [#1297](https://github.com/shadow81627/pocketpasta/issues/1297)
+
 ## [0.39.0](https://github.com/shadow81627/pocketpasta/compare/v0.38.7...v0.39.0) (2020-07-04)
 
 ### Features
