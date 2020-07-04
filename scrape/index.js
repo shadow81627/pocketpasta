@@ -44,9 +44,8 @@ const fileUrlMap = {};
  * Main top level async/await
  */
 (async () => {
-  const { collection } = argv;
   // get list of urls to crawl from content files
-  for await (const filename of getFiles(`content/${collection}`)) {
+  for await (const filename of getFiles(`content/${argv.collection}`)) {
     const file = await readFile(filename, { encoding: 'utf8' });
     const content = JSON.parse(file);
     // && urls.length === 0
