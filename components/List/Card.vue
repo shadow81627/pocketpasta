@@ -6,7 +6,8 @@
     ripple
     hover
     tile
-    class="text-decoration-none"
+    elevation="5"
+    class="flex d-flex flex-column"
   >
     <v-container>
       <v-row class="align-center justify-center" no-gutters>
@@ -23,7 +24,7 @@
             />
           </v-avatar>
         </v-col>
-        <v-col cols="12" sm="">
+        <v-col cols="12" sm="" style="min-width: 224px;">
           <v-card-title title-tag="h2" class="h4 text-break text-wrap">
             {{ name }}
           </v-card-title>

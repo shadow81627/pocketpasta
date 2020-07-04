@@ -367,6 +367,11 @@ module.exports = {
     https: true,
   },
 
+  content: {
+    // Only search in title and description
+    fullTextSearchFields: ['name', 'description'],
+  },
+
   /*
    ** Build configuration
    */

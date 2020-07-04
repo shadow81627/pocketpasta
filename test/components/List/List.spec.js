@@ -54,4 +54,46 @@ describe('List', () => {
     const wrapper = factory();
     expect(wrapper.html()).toMatchSnapshot();
   });
+
+  test('pages', () => {
+    const wrapper = factory();
+    wrapper.vm.pages = 1;
+    expect(wrapper.vm.pages).toEqual(1);
+  });
+
+  test('page', () => {
+    const wrapper = factory();
+    wrapper.vm.page = 1;
+    expect(wrapper.vm.page).toEqual(1);
+  });
+
+  test('limit', () => {
+    const wrapper = factory();
+    wrapper.vm.limit = 1;
+    expect(wrapper.vm.limit).toEqual(1);
+  });
+
+  test('search', () => {
+    const wrapper = factory();
+    wrapper.vm.search = 1;
+    expect(wrapper.vm.search).toEqual(1);
+  });
+
+  test('view', () => {
+    const wrapper = factory();
+    wrapper.vm.view = 1;
+    expect(wrapper.vm.view).toEqual(1);
+  });
+
+  test('direction', () => {
+    const wrapper = factory();
+    wrapper.vm.direction = 1;
+    expect(wrapper.vm.direction).toEqual(1);
+  });
+
+  test('sortBy', () => {
+    const wrapper = factory();
+    wrapper.vm.sortBy = 1;
+    expect(wrapper.vm.sortBy).toEqual(1);
+  });
 });

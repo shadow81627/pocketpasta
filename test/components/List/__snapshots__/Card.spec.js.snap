@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`List Card renders properly 1`] = `
-"<v-card to=\\"[object Object]\\" exact=\\"\\" nuxt=\\"\\" ripple=\\"\\" hover=\\"\\" tile=\\"\\" class=\\"text-decoration-none\\">
+"<v-card to=\\"[object Object]\\" exact=\\"\\" nuxt=\\"\\" ripple=\\"\\" hover=\\"\\" tile=\\"\\" elevation=\\"5\\" class=\\"flex d-flex flex-column\\">
   <v-container>
     <v-row no-gutters=\\"\\" class=\\"align-center justify-center\\">
       <v-col cols=\\"auto\\">
@@ -9,7 +9,7 @@ exports[`List Card renders properly 1`] = `
           <v-img src=\\"https://res.cloudinary.com/pocketpasta/image/fetch/fl_progressive/w_128,h_128,c_fill,f_auto,q_auto/https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/162208.jpg\\" srcset=\\"https://res.cloudinary.com/pocketpasta/image/fetch/fl_progressive/w_128,h_128,c_fill,f_auto,q_auto/https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/162208.jpg 1x,https://res.cloudinary.com/pocketpasta/image/fetch/fl_progressive/w_192,h_192,c_fill,f_auto,q_auto/https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/162208.jpg 1.5x,https://res.cloudinary.com/pocketpasta/image/fetch/fl_progressive/w_256,h_256,c_fill,f_auto,q_auto/https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/162208.jpg 2x,https://res.cloudinary.com/pocketpasta/image/fetch/fl_progressive/w_320,h_320,c_fill,f_auto,q_auto/https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/162208.jpg 2.5x,https://res.cloudinary.com/pocketpasta/image/fetch/fl_progressive/w_384,h_384,c_fill,f_auto,q_auto/https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/162208.jpg 3x\\" height=\\"128\\" width=\\"128\\" itemprop=\\"image\\" alt=\\"Audrey Hepburn’s Spaghetti Al Pomodoro Recipe\\"></v-img>
         </v-avatar>
       </v-col>
-      <v-col cols=\\"12\\" sm=\\"\\">
+      <v-col cols=\\"12\\" sm=\\"\\" style=\\"min-width: 224px;\\">
         <v-card-title title-tag=\\"h2\\" class=\\"h4 text-break text-wrap\\">
           Audrey Hepburn’s Spaghetti Al Pomodoro Recipe
         </v-card-title>

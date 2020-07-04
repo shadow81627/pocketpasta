@@ -1,31 +1,28 @@
 <template>
-  <div>
-    <span>View as: </span>
-    <v-menu left offset-y>
-      <template v-slot:activator="{ on }">
-        <v-btn icon aria-label="View as" v-on="on">
-          <v-icon>${{ currentLayout.icon }}</v-icon>
-        </v-btn>
-      </template>
+  <v-menu left offset-y>
+    <template v-slot:activator="{ on }">
+      <v-btn large icon aria-label="View as" title="View as" v-on="on">
+        <v-icon>${{ currentLayout.icon }}</v-icon>
+      </v-btn>
+    </template>
 
-      <v-card>
-        <v-list dense>
-          <v-list-item
-            v-for="layout in availableLayouts"
-            :key="layout.value"
-            @click="() => $emit('input', layout.value)"
-          >
-            <v-list-item-content>
-              <v-list-item-title>{{ layout.label }}</v-list-item-title>
-            </v-list-item-content>
-            <v-list-item-action>
-              <v-icon>${{ layout.icon }}</v-icon>
-            </v-list-item-action>
-          </v-list-item>
-        </v-list>
-      </v-card>
-    </v-menu>
-  </div>
+    <v-card>
+      <v-list dense>
+        <v-list-item
+          v-for="layout in availableLayouts"
+          :key="layout.value"
+          @click="() => $emit('input', layout.value)"
+        >
+          <v-list-item-content>
+            <v-list-item-title>{{ layout.label }}</v-list-item-title>
+          </v-list-item-content>
+          <v-list-item-action>
+            <v-icon>${{ layout.icon }}</v-icon>
+          </v-list-item-action>
+        </v-list-item>
+      </v-list>
+    </v-card>
+  </v-menu>
 </template>
 
 <script>
