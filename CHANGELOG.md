@@ -1,5 +1,11 @@
 # Releases
 
+## [0.39.0](https://github.com/shadow81627/pocketpasta/compare/v0.38.7...v0.39.0) (2020-07-04)
+
+### Features
+
+- add list search and sort ([#1293](https://github.com/shadow81627/pocketpasta/issues/1293)) ([1d972be](https://github.com/shadow81627/pocketpasta/commit/1d972bee19961a0538e087b729d321a791a0ea8e)), closes [#1256](https://github.com/shadow81627/pocketpasta/issues/1256) [#1254](https://github.com/shadow81627/pocketpasta/issues/1254) [#1288](https://github.com/shadow81627/pocketpasta/issues/1288)
+
 ## [0.38.7](https://github.com/shadow81627/pocketpasta/compare/v0.38.6...v0.38.7) (2020-07-03)
 
 ### Bug Fixes
