@@ -10,25 +10,12 @@ import {
   mdiRun,
   mdiAccountCircle,
   mdiMapMarker,
-  mdiViewList,
-  mdiViewComfy,
   mdiDownload,
   mdiCalendarCheck,
-  mdiMagnify,
-  mdiArrowUp,
-  mdiArrowDown,
 } from '@mdi/js';
 
 // vuetify.options.js
 export default {
-  breakpoint: {
-    thresholds: {
-      xs: 340,
-      sm: 540,
-      md: 800,
-      lg: 1280,
-    },
-  },
   icons: {
     iconfont: 'mdiSvg',
     values: {
@@ -43,13 +30,8 @@ export default {
       run: mdiRun,
       account_circle: mdiAccountCircle,
       place: mdiMapMarker,
-      list: mdiViewList,
-      view_comfy: mdiViewComfy,
       get_app: mdiDownload,
       'calendar-check': mdiCalendarCheck,
-      search: mdiMagnify,
-      'arrow-up': mdiArrowUp,
-      'arrow-down': mdiArrowDown,
     },
   },
   // lang: {},

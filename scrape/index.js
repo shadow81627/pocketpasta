@@ -5,8 +5,26 @@ const slugify = require('slugify');
 const sortobject = require('deep-sort-object');
 const merge = require('deepmerge');
 const he = require('he');
+const yargs = require('yargs');
 const scrape = require('./scrape');
 const getFiles = require('./getFiles');
+
+const argv = yargs
+  .command('scrape', 'Crawl urls with browser', {})
+  .option('scrape', {
+    alias: 's',
+    description: 'Crawl urls with browser',
+    type: 'boolean',
+    default: true,
+  })
+  .option('collection', {
+    alias: 'c',
+    description: 'Collection',
+    type: 'string',
+    default: '',
+  })
+  .help()
+  .alias('help', 'h').argv;
 
 const urls = [
   // ['https://shop.coles.com.au/a/caboolture/product/coles-pasta-large-shells'],
@@ -26,9 +44,8 @@ const fileUrlMap = {};
  * Main top level async/await
  */
 (async () => {
-  const collection = 'recipes';
   // get list of urls to crawl from content files
-  for await (const filename of getFiles(`content/${collection}`)) {
+  for await (const filename of getFiles(`content/${argv.collection}`)) {
     const file = await readFile(filename, { encoding: 'utf8' });
     const content = JSON.parse(file);
     // && urls.length === 0
@@ -46,22 +63,24 @@ const fileUrlMap = {};
   // crawl urls
   for (const chunk of urls) {
     const chunkData = [];
-    for (const url of chunk) {
-      console.log(url);
-      const linkData = await scrape(url);
-      if (linkData) {
-        chunkData.push(linkData);
+    if (argv.scrape) {
+      for (const url of chunk) {
+        console.log(url);
+        const linkData = await scrape(url);
+        if (linkData) {
+          chunkData.push(linkData);
+        }
       }
     }
-    if (chunkData && chunkData.length) {
-      if (fileUrlMap[_.head(chunk)]) {
-        const file = JSON.parse(
-          await readFile(fileUrlMap[_.head(chunk)], {
-            encoding: 'utf8',
-          }),
-        );
-        chunkData.push(file);
-      }
+    // if (chunkData && chunkData.length) {
+    if (fileUrlMap[_.head(chunk)]) {
+      const file = JSON.parse(
+        await readFile(fileUrlMap[_.head(chunk)], {
+          encoding: 'utf8',
+        }),
+      );
+      chunkData.push(file);
+      // }
       _.reverse(chunkData);
       const overwriteMerge = (destinationArray, sourceArray, options) =>
         _.unionWith(destinationArray, sourceArray, _.isEqual);
@@ -88,7 +107,19 @@ const fileUrlMap = {};
         recipeIngredientChunkData &&
         recipeIngredientChunkData.recipeIngredient
       ) {
-        const recipeIngredient = recipeIngredientChunkData.recipeIngredient;
+        const recipeIngredient = recipeIngredientChunkData.recipeIngredient.map(
+          (item) => {
+            // turn objects into strings
+            if (typeof item === 'object' && item.quantity && item.ingredient) {
+              return `${
+                item.quantity && item.quantity !== 'N/A' ? item.quantity : ''
+              } ${item.ingredient}`;
+            } else {
+              return item;
+            }
+          },
+        );
+
         linkData.recipeIngredient = _.uniq(_.map(recipeIngredient, _.trim));
       }
 

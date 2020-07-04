@@ -2,7 +2,7 @@
   <v-menu left offset-y>
     <template v-slot:activator="{ on }">
       <v-btn large icon aria-label="View as" title="View as" v-on="on">
-        <v-icon>${{ currentLayout.icon }}</v-icon>
+        <v-icon>{{ currentLayout.icon }}</v-icon>
       </v-btn>
     </template>
 
@@ -17,7 +17,7 @@
             <v-list-item-title>{{ layout.label }}</v-list-item-title>
           </v-list-item-content>
           <v-list-item-action>
-            <v-icon>${{ layout.icon }}</v-icon>
+            <v-icon>{{ layout.icon }}</v-icon>
           </v-list-item-action>
         </v-list-item>
       </v-list>
@@ -26,16 +26,16 @@
 </template>
 
 <script>
+import { mdiViewList, mdiViewComfy } from '@mdi/js';
 const defaultLayout = 'list';
-
 export default {
   props: {
-    value: { type: String, default: 'list' },
+    value: { type: String, default: defaultLayout },
     layouts: {
       type: Array,
       default: () => [
-        { icon: 'list', value: 'list', label: 'List' },
-        { icon: 'view_comfy', value: 'columns', label: 'Grid' },
+        { icon: mdiViewList, value: 'list', label: 'List' },
+        { icon: mdiViewComfy, value: 'columns', label: 'Grid' },
       ],
     },
   },

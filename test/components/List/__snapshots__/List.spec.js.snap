@@ -78,6 +78,6 @@ exports[`List renders properly 1`] = `
               return defaultFilter(getObjectValueByPath(item, key), search, item);
             });
           });
-        }\\" serveritemslength=\\"-1\\" itemkey=\\"id\\" value=\\"\\" expanded=\\"\\" noresultstext=\\"$vuetify.dataIterator.noResultsText\\" nodatatext=\\"$vuetify.noDataText\\" loadingtext=\\"$vuetify.dataIterator.loadingText\\" hidedefaultfooter=\\"true\\" selectablekey=\\"isSelectable\\"></v-data-iterator-stub>
+        }\\" serveritemslength=\\"-1\\" itemkey=\\"slug\\" value=\\"\\" expanded=\\"\\" noresultstext=\\"$vuetify.dataIterator.noResultsText\\" nodatatext=\\"$vuetify.noDataText\\" loadingtext=\\"$vuetify.dataIterator.loadingText\\" hidedefaultfooter=\\"true\\" selectablekey=\\"isSelectable\\"></v-data-iterator-stub>
 </v-container-stub>"
 `;

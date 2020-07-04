@@ -25,9 +25,11 @@
   "nationality": "African American",
   "telephone": "(123) 456-6789",
   "url": "http://www.example.com",
-  "sameAs" : [ "https://www.facebook.com/",
-  "https://www.linkedin.com/",
-  "http://twitter.com/",
-  "http://instagram.com/",
-  "https://plus.google.com/"]
+  "sameAs": [
+    "https://www.facebook.com/",
+    "https://www.linkedin.com/",
+    "http://twitter.com/",
+    "http://instagram.com/",
+    "https://plus.google.com/"
+  ]
 }
