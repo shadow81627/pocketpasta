@@ -1,7 +1,7 @@
 <template>
   <div>
     <strong v-if="label" class="tag pl-0 font-weight-bold">{{ label }}:</strong>
-    <v-chip-group class="d-inline">
+    <v-chip-group class="d-inline" column>
       <v-chip v-for="tag in tags" :key="tag" color="primary" label
         >{{ tag.trim() }}
       </v-chip>

@@ -28,7 +28,8 @@
     "generate:modern": "cross-env HOST=localhost PORT=3001 nuxt export --modern",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "eslint-check": "eslint --print-config . | eslint-config-prettier-check",
-    "lint:fix": "eslint --ext .js,.vue --ignore-path .gitignore . --fix",
+    "lint:fix": "eslint --ext .js,.vue, --ignore-path .gitignore . --fix",
+    "format": "prettier --write \"**/*.+(json|css|md)\" --ignore-path .gitignore",
     "lhci:autorun": "cross-env FIREBASE_HOSTING=false lhci autorun",
     "test": "jest && codecov",
     "test:update": "jest -u",
@@ -38,7 +39,8 @@
     "git-cz": "git-cz",
     "now-build": "nuxt build --modern && nuxt export --modern",
     "stylelint:fix": "npx stylelint **/*.css !**/node_modules/** !**/dist/** !**/coverage/** --fix",
-    "scrape": "node scrape"
+    "scrape": "node scrape && npm run format",
+    "scrape:dry": "node scrape --no-scrape && npm run format"
   },
   "dependencies": {
     "@nuxt/content": "1.4.1",
@@ -128,7 +130,8 @@
     "snyk": "1.360.0",
     "stylelint-config-prettier": "8.0.2",
     "vue-jest": "3.0.6",
-    "vuetify-loader": "1.5.0"
+    "vuetify-loader": "1.5.0",
+    "yargs": "15.4.0"
   },
   "engines": {
     "node": "12.x"

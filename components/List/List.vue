@@ -11,6 +11,7 @@
       hide-default-footer
       :loading="$fetchState.pending"
       :items-per-page="limit"
+      item-key="slug"
     >
       <template v-slot:header>
         <v-card dark color="primary" class="mb-1">
@@ -23,9 +24,10 @@
                   flat
                   solo-inverted
                   hide-details
-                  prepend-inner-icon="$search"
+                  :prepend-inner-icon="mdiMagnify"
                   label="Search"
                   autocomplete="false"
+                  @keydown.enter="$event.target.blur()"
                 />
               </v-col>
 
@@ -73,7 +75,6 @@
                     <v-btn large text v-bind="attrs" v-on="on">
                       {{ limit }}
                       <span> per page</span>
-                      <v-icon>mdi-chevron-down</v-icon>
                     </v-btn>
                   </template>
                   <v-list>
@@ -127,6 +128,7 @@ import {
   mdiSortAlphabeticalAscending,
   mdiSortAlphabeticalDescending,
   mdiSortVariant,
+  mdiMagnify,
 } from '@mdi/js';
 import ViewSwitcher from '@/components/List/ViewSwitcher';
 import Card from '@/components/List/Card';
@@ -141,7 +143,7 @@ export default {
     heading: { type: String, default: '' },
     layout: { type: String, default: null },
     deep: { type: Boolean, default: false },
-    fetchOnServer: { type: Boolean, default: false },
+    fetchOnServer: { type: Boolean, default: true },
     defaultLimit: { type: Number, default: 4 },
   },
   async fetch() {
@@ -174,10 +176,11 @@ export default {
     list: [],
     keys: ['createdAt', 'name', 'description'],
     total: null,
-    limits: [4, 8, 12],
+    limits: [4, 8, 12, 24],
     mdiSortAlphabeticalAscending,
     mdiSortAlphabeticalDescending,
     mdiSortVariant,
+    mdiMagnify,
   }),
   computed: {
     pages() {
@@ -209,7 +212,7 @@ export default {
     },
     direction: {
       get() {
-        return this.$route.query.direction;
+        return this.$route.query.direction || 'desc';
       },
       set(direction) {
         this.$router.push({ query: this.query({ direction }) });
@@ -263,7 +266,7 @@ export default {
           sortBy: sortBy && sortBy !== 'createdAt' ? sortBy : undefined,
           search: search && search !== '' ? search : undefined,
           view: view && view !== this.layout ? view : undefined,
-          direction: direction !== 'asc' ? direction : undefined,
+          direction: direction !== 'desc' ? direction : undefined,
           page: page !== 1 ? page : undefined,
           limit:
             limit !== this.defaultLimit && limit !== this.total

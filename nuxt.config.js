@@ -369,7 +369,7 @@ module.exports = {
 
   content: {
     // Only search in title and description
-    fullTextSearchFields: ['name', 'description'],
+    fullTextSearchFields: ['name', 'description', 'keywords'],
   },
 
   /*
