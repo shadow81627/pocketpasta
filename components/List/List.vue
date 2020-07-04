@@ -41,6 +41,7 @@
                         :items="keys"
                         :prepend-inner-icon="mdiSortVariant"
                         label="Sort by"
+                        aria-label="Sort by"
                       />
                     </v-col>
                     <v-col cols="auto">
