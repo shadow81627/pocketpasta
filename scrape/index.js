@@ -10,7 +10,7 @@ const pluralize = require('pluralize');
 const { Duration } = require('luxon');
 const { normalizeWhiteSpaces } = require('normalize-text');
 const scrape = require('./scrape');
-const punctuation = require('./punctuation');
+// const punctuation = require('./punctuation');
 const getFiles = require('./getFiles');
 
 const argv = yargs

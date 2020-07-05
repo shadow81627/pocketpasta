@@ -1,4 +1,4 @@
-const chalk = require('chalk');
+// const chalk = require('chalk');
 
 function pedant(text) {
   let inQuote = false;
