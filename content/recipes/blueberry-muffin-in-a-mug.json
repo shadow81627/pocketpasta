@@ -44,33 +44,23 @@
   "recipeInstructions": [
     {
       "@type": "HowToStep",
-      "name": "In a small dish melt your butter in the microwave for 30 seconds.",
-      "text": "In a small dish melt your butter in the microwave for 30 seconds.",
-      "url": "https://temeculablogs.com/blueberry-muffin-in-a-mug/#wprm-recipe-55121-step-0-0"
+      "text": "In a small dish melt your butter in the microwave for 30 seconds."
     },
     {
       "@type": "HowToStep",
-      "name": "In your mug stir together the flour, sugar, brown sugar, and baking powder well.",
-      "text": "In your mug stir together the flour, sugar, brown sugar, and baking powder well.",
-      "url": "https://temeculablogs.com/blueberry-muffin-in-a-mug/#wprm-recipe-55121-step-0-1"
+      "text": "In your mug stir together the flour, sugar, brown sugar, and baking powder well."
     },
     {
       "@type": "HowToStep",
-      "name": "Pour in your melted butter, milk, and vanilla and stir so you have batter and no powder is left.",
-      "text": "Pour in your melted butter, milk, and vanilla and stir so you have batter and no powder is left.",
-      "url": "https://temeculablogs.com/blueberry-muffin-in-a-mug/#wprm-recipe-55121-step-0-2"
+      "text": "Pour in your melted butter, milk, and vanilla and stir so you have batter and no powder is left."
     },
     {
       "@type": "HowToStep",
-      "name": "Gently fold in your fresh blueberries.",
-      "text": "Gently fold in your fresh blueberries.",
-      "url": "https://temeculablogs.com/blueberry-muffin-in-a-mug/#wprm-recipe-55121-step-0-3"
+      "text": "Gently fold in your fresh blueberries."
     },
     {
       "@type": "HowToStep",
-      "name": "Put into the microwave for 2 minutes. Eat immediately for best results!",
-      "text": "Put into the microwave for 2 minutes. Eat immediately for best results!.",
-      "url": "https://temeculablogs.com/blueberry-muffin-in-a-mug/#wprm-recipe-55121-step-0-4"
+      "text": "Put into the microwave for 2 minutes. Eat immediately for best results."
     }
   ],
   "recipeYield": "1",

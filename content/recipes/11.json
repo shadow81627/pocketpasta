@@ -36,40 +36,35 @@
   "recipeCuisine": "Spanish",
   "recipeIngredient": [
     "1 tablespoon extra virgin olive oil",
-    "1  onion (diced)",
-    "2  garlic cloves (finely chopped)",
+    "1 onion (diced)",
+    "2 garlic cloves (finely chopped)",
     "1 teaspoon sweet smoked paprika (pimenton dulce - or hot paprika if you like it spicy)",
-    "2  bay leaves",
-    "2 cans butter beans (400ml/14oz  (lima beans), drained and rinsed)",
+    "2 bay leaves",
+    "2 cans butter beans (400ml/14oz (lima beans), drained and rinsed)",
     "2 cans plum tomatoes (400ml/14oz )",
     "Sea salt and black pepper",
-    "2  large handfuls spinach (roughly chopped)"
+    "2 large handfuls spinach (roughly chopped)"
   ],
   "recipeInstructions": [
     {
       "@type": "HowToStep",
-      "text": "In a large saucepan, heat the oil over a medium heat. Add the onions and fry, stirring continuously, for 3-5 minutes until translucent but not browned.&nbsp;&nbsp;.",
-      "url": "https://veggiedesserts.com/spanish-beans-tomatoes/#wprm-recipe-8954-step-0-0"
+      "text": "In a large saucepan, heat the oil over a medium heat. Add the onions and fry, stirring continuously, for 3-5 minutes until translucent but not browned."
     },
     {
       "@type": "HowToStep",
-      "text": "Add the garlic, paprika and bay leaves and fry for a further minute.",
-      "url": "https://veggiedesserts.com/spanish-beans-tomatoes/#wprm-recipe-8954-step-0-1"
+      "text": "Add the garlic, paprika and bay leaves and fry for a further minute."
     },
     {
       "@type": "HowToStep",
-      "text": "Add the beans and tomatoes. Stir and break up the tomatoes a bit, then season with salt and pepper. Stir well and reduce the heat to low. Simmer for 15 minutes, checking regularly so it doesn’t stick to the bottom of the pan.",
-      "url": "https://veggiedesserts.com/spanish-beans-tomatoes/#wprm-recipe-8954-step-0-2"
+      "text": "Add the beans and tomatoes. Stir and break up the tomatoes a bit, then season with salt and pepper. Stir well and reduce the heat to low. Simmer for 15 minutes, checking regularly so it doesn’t stick to the bottom of the pan."
     },
     {
       "@type": "HowToStep",
-      "text": "As it finishes, stir the spinach through to wilt.",
-      "url": "https://veggiedesserts.com/spanish-beans-tomatoes/#wprm-recipe-8954-step-0-3"
+      "text": "As it finishes, stir the spinach through to wilt."
     },
     {
       "@type": "HowToStep",
-      "text": "Serve hot or cold, as tapas or a side dish, sprinkled with the fresh parsley.",
-      "url": "https://veggiedesserts.com/spanish-beans-tomatoes/#wprm-recipe-8954-step-0-4"
+      "text": "Serve hot or cold, as tapas or a side dish, sprinkled with the fresh parsley."
     }
   ],
   "recipeYield": "4",

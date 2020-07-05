@@ -35,15 +35,23 @@
       <v-row>
         <v-col>
           <v-chip label style="background: none;">
+            <span itemprop="ratingValue">{{
+              Number(aggregateRating.ratingValue).toFixed(1)
+            }}</span>
             <v-rating
               dense
               :value="Number(aggregateRating.ratingValue)"
               readonly
             />
+            <span itemprop="ratingCount"
+              >({{ Number(aggregateRating.ratingCount) }})</span
+            >
           </v-chip>
-          <v-chip label style="background: none;"
-            ><number-text :text="recipeYield"
-          /></v-chip>
+          <v-chip v-if="recipeYield" label style="background: none;">{{
+            recipeYield.match(/(\d+)/)
+              ? `${recipeYield} serving${recipeYield > 1 ? 's' : ''}`
+              : recipeYield
+          }}</v-chip>
           <v-chip v-if="diet" label style="background: none;">
             {{ diet }}
           </v-chip>
@@ -63,7 +71,11 @@
           <h2>Ingredients</h2>
         </v-expansion-panel-header>
         <v-expansion-panel-content eager>
-          <v-data-iterator :items="recipeIngredient" hide-default-footer>
+          <v-data-iterator
+            :items="recipeIngredient"
+            hide-default-footer
+            :items-per-page="-1"
+          >
             <template v-slot:default="props">
               <v-card v-for="item in props.items" :key="item" tile flat>
                 <v-card-title class="text-break text-wrap">{{
@@ -83,13 +95,16 @@
             v-if="Array.isArray(recipeInstructions)"
             :items="recipeInstructions"
             hide-default-footer
+            :items-per-page="-1"
           >
             <template v-slot:default="props">
-              <v-card v-for="item in props.items" :key="item.text" tile flat>
-                <v-card-title class="text-break text-wrap">{{
-                  item.text
-                }}</v-card-title>
-              </v-card>
+              <ol>
+                <v-card v-for="item in props.items" :key="item.text" tile flat>
+                  <v-card-title class="text-break text-wrap"
+                    ><li>{{ item.text }}</li></v-card-title
+                  >
+                </v-card>
+              </ol>
             </template>
           </v-data-iterator>
           <p v-else>{{ recipeInstructions }}</p>
@@ -138,7 +153,6 @@
 
 <script>
 import ReadMore from '@/components/ReadMore.vue';
-import NumberText from '@/components/text/NumberText';
 import Keywords from '@/components/Keywords';
 import Share from '@/components/Social/Share';
 import NutritionFactTable from '@/components/Recipe/NutritionFactTable';
@@ -146,7 +160,6 @@ import VuePlyr from 'vue-plyr/dist/vue-plyr.ssr.js';
 import 'plyr/dist/plyr.css';
 export default {
   components: {
-    NumberText,
     Keywords,
     Share,
     NutritionFactTable,

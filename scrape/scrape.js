@@ -20,7 +20,7 @@ const browserOptions = {
   defaultViewport: null,
 };
 
-const linkDataTypes = ['product', 'recipe'];
+const linkDataTypes = ['Product', 'Recipe', 'VideoObject'];
 
 async function scrape(url) {
   /**
@@ -59,9 +59,9 @@ async function scrape(url) {
     if (
       linkData &&
       linkData['@type'] &&
-      linkDataTypes.includes(linkData['@type'].toLowerCase())
+      linkDataTypes.includes(_.upperFirst(linkData['@type']))
     ) {
-      const type = linkData['@type'].toLowerCase();
+      const type = _.upperFirst(linkData['@type']);
       let sameAs = [url];
       // add url to same as to use a reference
       if (linkData.sameAs) {
@@ -71,7 +71,7 @@ async function scrape(url) {
       if (linkData.author && !linkData.author.name) {
         linkData.author = undefined;
       }
-      if (type === 'recipe') {
+      if (type === 'Recipe') {
         if (
           linkData.recipeYield &&
           Array.isArray(linkData.recipeYield) &&
@@ -91,7 +91,7 @@ async function scrape(url) {
           linkData.datePublished = new Date();
         }
       }
-      if (type === 'product') {
+      if (type === 'Product') {
         if (url.includes('woolworths')) {
           const price = $('.price').text();
           const nutritionScraped = {};
@@ -223,7 +223,7 @@ async function scrape(url) {
         mainEntityOfPage: undefined,
         isPartOf: undefined,
         // offers: undefined,
-        '@type': _.startCase(_.toLower(type)),
+        '@type': type,
         '@id': undefined,
         '@context': undefined,
       });

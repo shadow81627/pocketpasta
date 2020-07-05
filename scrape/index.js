@@ -6,7 +6,11 @@ const sortobject = require('deep-sort-object');
 const merge = require('deepmerge');
 const he = require('he');
 const yargs = require('yargs');
+const pluralize = require('pluralize');
+const { Duration } = require('luxon');
+const { normalizeWhiteSpaces } = require('normalize-text');
 const scrape = require('./scrape');
+const punctuation = require('./punctuation');
 const getFiles = require('./getFiles');
 
 const argv = yargs
@@ -40,6 +44,98 @@ const urlBlacklist = [
 
 const fileUrlMap = {};
 
+const pipe = (...fns) => (x) => fns.reduce((v, f) => f(v), x);
+
+function formatString(value) {
+  const removeDuplicateSpaces = (str) => str.replace(/\s+/g, ' ');
+  const removeHtml = (str) => str.replace(/(<([^>]+)>)/gi, '');
+  const replaceFractionSlash = (str) =>
+    str
+      .normalize('NFKD')
+      .replace(/(\d)⁄(\d+)/g, ' $1/$2 ')
+      .normalize();
+  const removeDuplicateParenthesis = (str) =>
+    str.replace(/([()])(?=[()])/g, '');
+  const removeDuplicatePunctuation = (str) =>
+    str.replace(/([.!?,;])(?=[.!?,;])/g, '');
+  const removeSpaceBeforePunctuation = (str) =>
+    str.replace(/\s+([.!?,;])/g, '$1');
+
+  return pipe(
+    he.decode,
+    removeHtml,
+    replaceFractionSlash,
+    // normalizeDiacritics,
+    normalizeWhiteSpaces,
+    removeDuplicateSpaces,
+    removeDuplicateParenthesis,
+    removeSpaceBeforePunctuation,
+    removeDuplicatePunctuation,
+    // punctuation,
+    _.trim,
+  )(value);
+}
+
+function formatIngredient(ingredient) {
+  // turn objects into strings
+  if (
+    typeof ingredient === 'object' &&
+    ingredient.quantity &&
+    ingredient.ingredient
+  ) {
+    return formatString(
+      `${
+        ingredient.quantity && ingredient.quantity !== 'N/A'
+          ? ingredient.quantity
+          : ''
+      } ${ingredient.ingredient}`,
+    );
+  } else {
+    return formatString(ingredient);
+  }
+}
+
+function fromatInstructions(instructions) {
+  return (
+    instructions
+      // ensure instruction.text is a string
+      .map((instruction) =>
+        instruction.text ? instruction : { text: instruction || '' },
+      )
+      // add type
+      .map((instruction) => ({ ...instruction, '@type': 'HowToStep' }))
+      .map((instruction) => ({
+        ...instruction,
+        text: formatString(instruction.text),
+      }))
+      // rename stepImageUrl
+      // TODO: check iamge is public
+      .map((instruction) => ({
+        ...instruction,
+        image: instruction.image || instruction.stepImageUrl,
+        stepImageUrl: undefined,
+        url: undefined,
+        name: undefined,
+      }))
+      // remove empty
+      .filter(({ text }) => Boolean(text))
+      // ensure ends with punctuation
+      .map((instruction) => ({
+        ...instruction,
+        text: instruction.text,
+        // .replace(/([^.!?])$/, '$1.')
+        // remove whitespace before punctuation / non-word characters
+        // .replace(/\s+(\W)/g, '$1'),
+      }))
+  );
+}
+
+function parseDuration(duration) {
+  return `PT${((duration || '').match(/(\d+)/g) || [''])[0]}${
+    (duration || '').search('mins') ? 'M' : 'H'
+  }`;
+}
+
 /**
  * Main top level async/await
  */
@@ -49,6 +145,17 @@ const fileUrlMap = {};
     const file = await readFile(filename, { encoding: 'utf8' });
     const content = JSON.parse(file);
     // && urls.length === 0
+    if (
+      content &&
+      !content.sameAs &&
+      content.slug &&
+      content.author &&
+      content.author === 'Yaman Agarwal'
+    ) {
+      // if recipe and author is Yaman Agarwal then cooking shooking so url = https://cscom-2019.web.app/${slug}
+      content.sameAs = [`https://cscom-2019.web.app/${content.slug}`];
+    }
+
     if (
       content.sameAs &&
       !content.sameAs.some((item) => urlBlacklist.includes(item))
@@ -72,7 +179,7 @@ const fileUrlMap = {};
         }
       }
     }
-    // if (chunkData && chunkData.length) {
+
     if (fileUrlMap[_.head(chunk)]) {
       const file = JSON.parse(
         await readFile(fileUrlMap[_.head(chunk)], {
@@ -80,20 +187,58 @@ const fileUrlMap = {};
         }),
       );
       chunkData.push(file);
-      // }
+      // make sure existing file is first so all other data gets merged onto it.
       _.reverse(chunkData);
+
+      // normalize attribute names
+      chunkData.forEach((item, index) => {
+        chunkData[index] = {
+          ...item,
+          recipeIngredient: item.recipeIngredient || item.recipeIngredients,
+          recipeIngredients: undefined,
+          name: item.name || item.title,
+          title: undefined,
+          description: item.description || item.content,
+          content: undefined,
+          id: undefined,
+          categories: undefined,
+          image: item.image || item.featuredImage,
+          featuredImage: undefined,
+          publish: undefined,
+          slug: undefined,
+          // youtubeUrl: undefined,
+          recipeInstructions: item.recipeInstructions || item.recipeSteps,
+          recipeSteps: undefined,
+          featuredRecipe: undefined,
+          keywords:
+            item.keywords ||
+            (item.searchTags && Array.isArray(item.searchTags)
+              ? _.uniq(_.map(item.searchTags, _.trim)).join(', ')
+              : undefined),
+          searchTags: undefined,
+          recipeNotes: undefined,
+          recipeIntros: undefined,
+        };
+      });
+
       const overwriteMerge = (destinationArray, sourceArray, options) =>
         _.unionWith(destinationArray, sourceArray, _.isEqual);
       const linkData = merge.all(chunkData, { arrayMerge: overwriteMerge });
 
-      const filename = path.basename(
-        fileUrlMap[_.head(chunk)] ||
+      const filename = fileUrlMap[_.head(chunk)];
+      const slug = path.basename(
+        filename ||
           slugify(linkData.name, {
             lower: true,
             strict: true,
           }),
         '.json',
       );
+      const collection = path.basename(path.dirname(filename));
+      const type =
+        _.upperFirst(linkData['@type']) ||
+        _.upperFirst(pluralize(collection, 1));
+      linkData['@type'] = type;
 
       if (linkData.additionalProperty) {
         linkData.additionalProperty = _.uniqBy(
@@ -102,25 +247,37 @@ const fileUrlMap = {};
         );
       }
 
+      if (linkData.prepTime && !Duration.fromISO(linkData.prepTime).toJSON()) {
+        linkData.prepTime = parseDuration(linkData.prepTime);
+      }
+      if (
+        linkData.totalTime &&
+        !Duration.fromISO(linkData.totalTime).toJSON()
+      ) {
+        linkData.totalTime = parseDuration(linkData.totalTime);
+      }
+      if (linkData.cookTime && !Duration.fromISO(linkData.cookTime).toJSON()) {
+        linkData.cookTime = parseDuration(linkData.cookTime);
+      }
+
       const recipeIngredientChunkData = _.find(chunkData, 'recipeIngredient');
       if (
         recipeIngredientChunkData &&
         recipeIngredientChunkData.recipeIngredient
       ) {
-        const recipeIngredient = recipeIngredientChunkData.recipeIngredient.map(
-          (item) => {
-            // turn objects into strings
-            if (typeof item === 'object' && item.quantity && item.ingredient) {
-              return `${
-                item.quantity && item.quantity !== 'N/A' ? item.quantity : ''
-              } ${item.ingredient}`;
-            } else {
-              return item;
-            }
-          },
-        );
+        const recipeIngredient = recipeIngredientChunkData.recipeIngredient;
+        const recipeIngredientArray =
+          recipeIngredient &&
+          recipeIngredient.length > 0 &&
+          typeof recipeIngredient[0] === 'object' &&
+          recipeIngredient[0].group &&
+          recipeIngredient[0].group.ingredients
+            ? recipeIngredient[0].group.ingredients
+            : recipeIngredient;
 
-        linkData.recipeIngredient = _.uniq(_.map(recipeIngredient, _.trim));
+        linkData.recipeIngredient = _.uniq(
+          _.map(recipeIngredientArray.map(formatIngredient), _.trim),
+        );
       }
 
       const recipeInstructionsChunkData = _.find(
@@ -133,42 +290,20 @@ const fileUrlMap = {};
       ) {
         const recipeInstructions =
           recipeInstructionsChunkData.recipeInstructions;
+
         const recipeInstructionsArray =
-          typeof recipeInstructions === 'string'
-            ? recipeInstructions
-                .split(/([.!?][^)])/)
-                .map((instruction) => he.decode(instruction))
-                .map((instruction) =>
-                  _.trim((instruction || '').replace(/(<([^>]+)>)/gi, '')),
-                )
-                .filter(Boolean)
-                .map((instruction) => {
-                  const text = instruction.replace(/([^.!?])$/, '$1.');
-                  return {
-                    '@type': 'HowToStep',
-                    text,
-                  };
-                })
-            : (recipeInstructions || [])
-                // .map((instruction) => ({
-                //   ...instruction,
-                //   text: he.decode(instruction),
-                // }))
-                .map((instruction) => ({
-                  ...instruction,
-                  text: _.trim(
-                    (instruction || { text: '' }).text.replace(
-                      /(<([^>]+)>)/gi,
-                      '',
-                    ),
-                  ),
-                }))
-                .filter(({ text }) => Boolean(text))
-                .map((instruction) => ({
-                  ...instruction,
-                  text: instruction.text.replace(/([^.!?])$/, '$1.'),
-                }));
-        linkData.recipeInstructions = _.uniq(recipeInstructionsArray);
+          (typeof recipeInstructions === 'string'
+            ? recipeInstructions.split(/([.!?][^)])/)
+            : // deal try and handle groups...?
+            recipeInstructions &&
+              recipeInstructions.length > 0 &&
+              recipeInstructions[0].group
+            ? recipeInstructions[0].group.steps
+            : recipeInstructions) || [];
+
+        linkData.recipeInstructions = _.uniq(
+          fromatInstructions(recipeInstructionsArray),
+        );
       }
 
       // dedup and print offers to offers collection
@@ -183,7 +318,7 @@ const fileUrlMap = {};
           offerCount: linkData.offers.offers.length,
         };
         linkData.offers.offers.map(async (offer) => {
-          const folder = `content/offers/${filename}`;
+          const folder = `content/offers/${slug}`;
           await mkdir(folder, { recursive: true });
           await writeFile(
             `${folder}/${slugify(offer.offeredBy, {
@@ -204,9 +339,25 @@ const fileUrlMap = {};
         });
       }
 
-      const type = linkData['@type'].toLowerCase();
+      linkData.name = linkData.name || linkData.title;
+
+      if (linkData.youtubeUrl) {
+        const crawlUrl = linkData.youtubeUrl.replace('/embed/', '/watch/');
+        const video = await scrape(crawlUrl);
+        if (video) {
+          linkData.video = video;
+          linkData.youtubeUrl = undefined;
+          if (!linkData.name) {
+            linkData.name = formatString(video.name);
+          }
+          if (!linkData.description) {
+            linkData.description = formatString(video.description);
+          }
+        }
+      }
+
       await writeFile(
-        `content/${type}s/${filename}.json`,
+        `content/${pluralize(type)}/${slug}.json`,
         JSON.stringify(sortobject(linkData), undefined, 2) + '\n',
       );
     }
