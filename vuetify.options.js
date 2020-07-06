@@ -37,4 +37,38 @@ export default {
   // lang: {},
   // rtl: true,
   // theme: { disable: true },
+  theme: {
+    themes: {
+      light: {
+        // orange: '#e0611d'
+        // primary: '#4DBA87',
+        /*
+          My text color is #4FBA88 at 14 px and regular weight
+          My background color is #F5F5F5
+          My design must be AAA compliant
+          https://accessible-colors.com/
+         */
+        primary: '#255D43',
+        /*
+          My text color is #4FBA87 at 14 px and regular weight
+          My background color is #F5F5F5
+          My design must be AA compliant
+          https://accessible-colors.com/
+         */
+        // primary: '#317E5A',
+        // primary: '#e0611d',
+        // primary: '#8A3C12',
+      },
+      dark: {
+        // primary: '#4DBA87',
+        /**
+          My text color is #4FBA88 at 14px and regular weight
+          My background color is #F5F5F5
+          My design must be AAA compliant
+          https://accessible-colors.com/
+        */
+        primary: '#67C498',
+      },
+    },
+  },
 };
