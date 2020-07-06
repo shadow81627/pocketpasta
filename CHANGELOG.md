@@ -1,5 +1,11 @@
 # Releases
 
+## [0.40.0](https://github.com/shadow81627/pocketpasta/compare/v0.39.4...v0.40.0) (2020-07-06)
+
+### Features
+
+- disqus comments ([#1307](https://github.com/shadow81627/pocketpasta/issues/1307)) ([d71fb0c](https://github.com/shadow81627/pocketpasta/commit/d71fb0ce4383b9691aac974427532395d38be2bb))
+
 ## [0.39.4](https://github.com/shadow81627/pocketpasta/compare/v0.39.3...v0.39.4) (2020-07-06)
 
 ### Bug Fixes
