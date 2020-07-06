@@ -161,10 +161,12 @@
         </v-expansion-panel-content>
       </v-expansion-panel>
     </v-expansion-panels>
+    <disqus shortname="pocketpasta" style="margin-top: 16px;" />
   </div>
 </template>
 
 <script>
+import { Disqus } from 'vue-disqus';
 import ReadMore from '@/components/ReadMore.vue';
 import Keywords from '@/components/Keywords';
 import Share from '@/components/Social/Share';
@@ -178,6 +180,7 @@ export default {
     NutritionFactTable,
     VuePlyr,
     ReadMore,
+    Disqus,
   },
   inheritAttrs: false,
   props: {
