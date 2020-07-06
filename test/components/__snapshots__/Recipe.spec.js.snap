@@ -112,5 +112,6 @@ exports[`Recipe renders properly 1`] = `
     <!---->
     <!---->
   </v-expansion-panels-stub>
+  <disqus-stub shortname=\\"pocketpasta\\" lang=\\"en\\" lazy=\\"true\\" lazyconfig=\\"[object Object]\\" style=\\"margin-top: 16px;\\"></disqus-stub>
 </div>"
 `;

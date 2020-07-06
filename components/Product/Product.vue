@@ -62,10 +62,12 @@
         </v-expansion-panel-content>
       </v-expansion-panel>
     </v-expansion-panels>
+    <disqus shortname="pocketpasta" style="margin-top: 16px;" />
   </div>
 </template>
 
 <script>
+import { Disqus } from 'vue-disqus';
 import { map, head, range } from 'lodash-es';
 import Keywords from '@/components/Keywords.vue';
 import NutritionFactTable from '@/components/Recipe/NutritionFactTable';
@@ -78,6 +80,7 @@ export default {
     NutritionFactTable,
     Offers,
     PriceSummary,
+    Disqus,
   },
   inheritAttrs: false,
   props: {

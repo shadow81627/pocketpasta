@@ -71,8 +71,7 @@ export default () => {
             id: 'theme-label',
             icon: 'style',
             label: 'Theme',
-            description:
-              'Choose a bootstrap CSS theme to style the app your way.',
+            description: 'Choose a theme to style the app your way.',
           },
         },
         content: {
