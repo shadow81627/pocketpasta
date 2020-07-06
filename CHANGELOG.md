@@ -1,5 +1,11 @@
 # Releases
 
+## [0.39.4](https://github.com/shadow81627/pocketpasta/compare/v0.39.3...v0.39.4) (2020-07-06)
+
+### Bug Fixes
+
+- **theme:** set primary to brand ([#1306](https://github.com/shadow81627/pocketpasta/issues/1306)) ([5af0f45](https://github.com/shadow81627/pocketpasta/commit/5af0f45f3f7fcc7af2fd5e25112691f9aa1d1136))
+
 ## [0.39.3](https://github.com/shadow81627/pocketpasta/compare/v0.39.2...v0.39.3) (2020-07-06)
 
 ### Bug Fixes
