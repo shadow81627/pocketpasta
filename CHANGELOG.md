@@ -1,5 +1,11 @@
 # Releases
 
+## [0.39.2](https://github.com/shadow81627/pocketpasta/compare/v0.39.1...v0.39.2) (2020-07-06)
+
+### Bug Fixes
+
+- **recipe:** list item length ([#1302](https://github.com/shadow81627/pocketpasta/issues/1302)) ([0890c68](https://github.com/shadow81627/pocketpasta/commit/0890c683940c2e82c203be3ef257c78614135751))
+
 ## [0.39.1](https://github.com/shadow81627/pocketpasta/compare/v0.39.0...v0.39.1) (2020-07-04)
 
 ### Bug Fixes
