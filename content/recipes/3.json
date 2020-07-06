@@ -1,0 +1,44 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Recipe",
+  "author": {
+    "@type": "Person",
+    "name": "Dick Chmeller"
+  },
+  "cookTime": "PT0M",
+  "datePublished": "2019-04-29",
+  "description": "If you’ve ever wondered how to trick a pasta-loving kid (or perhaps even a carb-obsessed adult) into eating more vegetables, then a “lasagna salad” may just be the very green answer to your prayers. This virtually carb-free creation consists of seven layers of vitamin-rich veggies including a base of iceberg lettuce, layers of sliced onion and slivers of red tomatoes.",
+  "image": "https://web.archive.org/web/20190502152625im_/https://media4.s-nbcnews.com/j/newscms/2019_18/1430923/salad-lasagna-today-main-190429_f69fca6a6a0e8f39c1c7fbebcc0575fe.fit-760w.jpg",
+  "keywords": "Salad Lasagna, Dick Chmeller",
+  "name": "Dick Chmeller's Salad Lasagna",
+  "prepTime": "PT10M",
+  "recipeCategory": "Dinner",
+  "recipeCuisine": "Italian",
+  "recipeIngredient": [
+    "1 iceberg lettuce",
+    "1 onion, sliced",
+    "1 red tomatoes, sliced",
+    "1 dollop mayonnaise"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "slice ingredients."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "make a salad."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "layer salad to look like a lasagna."
+    }
+  ],
+  "recipeYield": "2 servings",
+  "sameAs": [
+    "https://www.reddit.com/r/4chan/comments/bk8hu5/anon_fools_an_nbc_roastie_with_his_salad_lasagna/",
+    "https://web.archive.org/web/20190501231915/https://www.today.com/food/what-lasagna-salad-low-carb-lasagna-made-lettuce-t153105"
+  ],
+  "suitableForDiet": "https://schema.org/VeganDiet",
+  "totalTime": "PT10M"
+}

@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <product />
+    <product v-bind="item" />
   </div>
 </template>
 
@@ -11,16 +11,36 @@ export default {
   components: {
     Product,
   },
+  async asyncData(context) {
+    try {
+      const id = context.route.params.id;
+      const item = await context.$content('products', id).fetch();
+      return { id, item };
+    } catch {
+      context.error({ statusCode: 404 });
+    }
+  },
   data() {
-    return { id: this.$route.params.id };
+    return { id: this.$route.params.id, item: {} };
   },
   head() {
     return {
-      link: [
+      title: this.item.name,
+      meta: [
         {
-          hid: 'canonical',
-          rel: 'canonical',
-          href: `https://pocketpasta.com/products/${this.id}`,
+          hid: 'og:title',
+          name: 'og:title',
+          content: this.item.name,
+        },
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.item.description,
+        },
+        {
+          hid: 'og:description',
+          name: 'og:description',
+          content: this.item.description,
         },
       ],
     };

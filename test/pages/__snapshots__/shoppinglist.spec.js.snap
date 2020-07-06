@@ -2,81 +2,85 @@
 
 exports[`shoppinglist page renders properly 1`] = `
 "<div class=\\"container\\">
-  <div>
-    <div id=\\"editor\\">
-      <h1>Shopping list</h1> <br>
-      <h2>Breakfast:</h2>
-      <ul data-checked=\\"false\\">
-        <li>Milk</li>
-        <li>Bananas</li>
-      </ul> <br>
-      <h2>Misc:</h2>
-      <ul data-checked=\\"false\\">
-        <li>canola oil</li>
-        <li>apple cider vinegar</li>
-        <li>vinegar</li>
-        <li>baking soda</li>
-        <li>toothpaste</li>
-        <li>toilet paper</li>
-        <li>dish soap</li>
-        <li>snacks</li>
-      </ul> <br>
-      <h2>Thursday: DND cookup</h2>
-      <ul data-checked=\\"false\\">
-        <li>macaroni</li>
-        <li>potato</li>
-        <li>carrot</li>
-        <li>broccoli</li>
-        <li>cauliflower</li>
-        <li>kale</li>
-      </ul> <br>
-      <h2>Friday: soup leftovers</h2>
-      <ul data-checked=\\"false\\">
-        <li>macaroni</li>
-        <li>potato</li>
-        <li>carrot</li>
-        <li>broccoli</li>
-        <li>cauliflower</li>
-        <li>kale</li>
-      </ul> <br>
-      <h2>Saturday: fish and chips</h2>
-      <ul data-checked=\\"false\\">
-        <li>fish</li>
-        <li>chips</li>
-      </ul> <br>
-      <h2>Sunday: tacos</h2>
-      <ul data-checked=\\"false\\">
-        <li>tortillas</li>
-        <li>tomato</li>
-        <li>avocado</li>
-        <li>garlic</li>
-        <li>tofu</li>
-        <li>parsley</li>
-      </ul> <br>
-      <h2>Monday: Ethiopian</h2>
-      <ul data-checked=\\"false\\">
-        <li>red onion</li>
-        <li>sweet potato</li>
-        <li>walnuts</li>
-        <li>spinach</li>
-        <li>feta</li>
-      </ul> <br>
-      <h2>Tuesday: chickpea curry</h2>
-      <ul data-checked=\\"false\\">
-        <li>chickpeas</li>
-        <li>ginger</li>
-        <li>garlic</li>
-        <li>spinach</li>
-      </ul> <br>
-      <h2>Wednesday: chickpea curry</h2>
-      <ul data-checked=\\"false\\">
-        <li>chickpeas</li>
-        <li>ginger</li>
-        <li>garlic</li>
-        <li>spinach</li>
-      </ul> <br>
+  <div class=\\"row\\">
+    <div class=\\"col\\">
+      <div>
+        <div id=\\"editor\\">
+          <h1>Shopping list</h1> <br>
+          <h2>Breakfast:</h2>
+          <ul data-checked=\\"false\\">
+            <li>Milk</li>
+            <li>Bananas</li>
+          </ul> <br>
+          <h2>Misc:</h2>
+          <ul data-checked=\\"false\\">
+            <li>canola oil</li>
+            <li>apple cider vinegar</li>
+            <li>vinegar</li>
+            <li>baking soda</li>
+            <li>toothpaste</li>
+            <li>toilet paper</li>
+            <li>dish soap</li>
+            <li>snacks</li>
+          </ul> <br>
+          <h2>Thursday: DND cookup</h2>
+          <ul data-checked=\\"false\\">
+            <li>macaroni</li>
+            <li>potato</li>
+            <li>carrot</li>
+            <li>broccoli</li>
+            <li>cauliflower</li>
+            <li>kale</li>
+          </ul> <br>
+          <h2>Friday: soup leftovers</h2>
+          <ul data-checked=\\"false\\">
+            <li>macaroni</li>
+            <li>potato</li>
+            <li>carrot</li>
+            <li>broccoli</li>
+            <li>cauliflower</li>
+            <li>kale</li>
+          </ul> <br>
+          <h2>Saturday: fish and chips</h2>
+          <ul data-checked=\\"false\\">
+            <li>fish</li>
+            <li>chips</li>
+          </ul> <br>
+          <h2>Sunday: tacos</h2>
+          <ul data-checked=\\"false\\">
+            <li>tortillas</li>
+            <li>tomato</li>
+            <li>avocado</li>
+            <li>garlic</li>
+            <li>tofu</li>
+            <li>parsley</li>
+          </ul> <br>
+          <h2>Monday: Ethiopian</h2>
+          <ul data-checked=\\"false\\">
+            <li>red onion</li>
+            <li>sweet potato</li>
+            <li>walnuts</li>
+            <li>spinach</li>
+            <li>feta</li>
+          </ul> <br>
+          <h2>Tuesday: chickpea curry</h2>
+          <ul data-checked=\\"false\\">
+            <li>chickpeas</li>
+            <li>ginger</li>
+            <li>garlic</li>
+            <li>spinach</li>
+          </ul> <br>
+          <h2>Wednesday: chickpea curry</h2>
+          <ul data-checked=\\"false\\">
+            <li>chickpeas</li>
+            <li>ginger</li>
+            <li>garlic</li>
+            <li>spinach</li>
+          </ul> <br>
+        </div>
+        <div class=\\"mt-3\\"><button type=\\"button\\" class=\\"v-btn v-btn--contained theme--light v-size--default\\"><span class=\\"v-btn__content\\">Clear</span></button> <button type=\\"button\\" class=\\"float-right v-btn v-btn--contained theme--light v-size--default primary\\"><span class=\\"v-btn__content\\">Save</span></button></div>
+      </div>
     </div>
-    <div class=\\"mt-3\\"><button type=\\"button\\" class=\\"btn btn-secondary\\">Clear</button> <button type=\\"button\\" class=\\"btn float-right btn-primary\\">Save</button></div>
   </div>
 </div>"
 `;

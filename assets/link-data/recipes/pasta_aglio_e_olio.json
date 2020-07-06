@@ -43,12 +43,15 @@
       "text": "Add the pasta, drained, with about 1/4 cup reserved pasta cooking water.  Add lemon juice and parsley, and toss to combine.  Season for salt and pepper, and serve."
     }
   ],
-  "video": [
-    {
-      "name": "Binging with Babish: Pasta Aglio e Olio from \"Chef\"",
-      "description": "What dish can make any man or woman ache for the touch of Jon Favreau?  Pasta Aglio e Olio is the dreamy midnight snack that lives up to its porny portrayal in the foodie-comedy-drama \"Chef\".",
-      "contentUrl": "https://www.youtube.com/embed/bJUiWdM__Qw",
-      "duration": "PT3M31S"
-    }
-  ]
+  "image": ["https://i.ytimg.com/vi/bJUiWdM__Qw/maxresdefault.jpg"],
+  "video": {
+    "@type": "VideoObject",
+    "name": "Binging with Babish: Pasta Aglio e Olio from \"Chef\"",
+    "description": "What dish can make any man or woman ache for the touch of Jon Favreau?  Pasta Aglio e Olio is the dreamy midnight snack that lives up to its porny portrayal in the foodie-comedy-drama \"Chef\".",
+    "embedUrl": "https://www.youtube.com/embed/bJUiWdM__Qw",
+    "contentUrl": "https://www.youtube.com/watch?v=bJUiWdM__Qw",
+    "thumbnailUrl": "https://i.ytimg.com/vi/bJUiWdM__Qw/maxresdefault.jpg",
+    "duration": "PT3M31S",
+    "uploadDate": "2016-03-25T00:00:00+00:00"
+  }
 }

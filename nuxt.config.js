@@ -1,49 +1,38 @@
-// const config = require('dotenv').config({
-//   debug: true,
-// });
-// import axios from 'axios';
-
-// import recipes from './assets/link-data/recipes';
-// import products from './assets/link-data/products';
-
-const recipes = require('./assets/link-data/recipes');
-const products = require('./assets/link-data/products');
-
 const pkg = require('./package');
-
-// console.log(config);
-
 const HOST = process.env.HOST || '0.0.0.0';
 const PORT = process.env.PORT || '3000';
 const BASE_URL =
-  process.env.BASE_URL || `http${PORT === 433 ? 's' : ''}://${HOST}:${PORT}`;
+  process.env.BASE_URL ||
+  process.env.DEPLOY_URL ||
+  process.env.URL ||
+  `http${PORT === 433 ? 's' : ''}://${HOST}:${PORT}`;
 
-const routes = (callback) => {
-  // axios
-  //   .get(
-  //     'https://firestore.googleapis.com/v1/projects/staging-pocketpasta/databases/(default)/documents/recipes',
-  //   )
-  //   .then((res) => {
-  //     const routes = res.data.documents.map((recipe) => {
-  //       return '/recipes/' + recipe.id;
-  //     });
-  //     callback(null, routes);
-  //   })
-  //   .catch(callback);
+const env = {
+  HOST,
+  PORT,
+  BASE_URL,
+  VERSION: pkg.version,
+  COMMIT: process.env.npm_package_gitHead,
 
-  const recipeRoutes = recipes.map((recipe) => {
-    return { route: `/recipes/${recipe.id}` };
-  });
-  const productRoutes = products.map((product) => {
-    return { route: `/products/${product.id}` };
-  });
-  const routes = [...recipeRoutes, ...productRoutes];
-  callback(null, routes);
+  FIREBASE_API_KEY:
+    process.env.FIREBASE_API_KEY || 'AIzaSyDG_OMeMaXVIHJqZpTzkY_DAWV9ylNwlXM',
+  FIREBASE_AUTH_DOMAIN:
+    process.env.FIREBASE_AUTH_DOMAIN || 'staging-pocketpasta.firebaseapp.com',
+  FIREBASE_DATABASE_URL:
+    process.env.FIREBASE_DATABASE_URL ||
+    'https://staging-pocketpasta.firebaseio.com',
+  FIREBASE_PROJECT_ID: process.env.FIREBASE_PROJECT_ID || 'staging-pocketpasta',
+  FIREBASE_STORAGE_BUCKET:
+    process.env.FIREBASE_STORAGE_BUCKET || 'staging-pocketpasta.appspot.com',
+  FIREBASE_MESSAGE_SENDER_ID:
+    process.env.FIREBASE_MESSAGE_SENDER_ID || '216453269763',
+  FIREBASE_APP_ID:
+    process.env.FIREBASE_APP_ID || '1:216453269763:web:71a3fe1ca24500bb',
 };
 
 const i18nSettings = {
   baseUrl: BASE_URL,
-  seo: true,
+  seo: false,
   defaultLocale: 'en',
   vueI18n: {
     fallbackLocale: 'en',
@@ -79,6 +68,7 @@ const preconnectLinks = [
 
 module.exports = {
   mode: 'universal',
+  target: 'static',
 
   workbox: {
     offlineAnalytics: true,
@@ -86,6 +76,11 @@ module.exports = {
     // by default the workbox module will not install the service worker in dev environment to avoid conflicts with HMR
     // only set this true for testing and remember to always clear your browser cache in development
     dev: false,
+  },
+
+  meta: {
+    lang: undefined,
+    ogHost: 'https://pocketpasta.com',
   },
 
   manifest: {
@@ -97,6 +92,13 @@ module.exports = {
     display: 'standalone',
     background_color: '#4DBA87',
     theme_color: '#4DBA87',
+    shortcuts: [
+      {
+        name: 'Shopping List',
+        url: '/shoppinglist?utm_source=a2hs&utm_medium=none&standalone=true',
+        icons: [{ src: '/icon.png', sizes: '512x512' }],
+      },
+    ],
   },
 
   icon: {
@@ -105,31 +107,11 @@ module.exports = {
 
   router: {
     linkActiveClass: 'active',
-    middleware: ['theme'],
+    middleware: [],
   },
 
-  env: {
-    HOST,
-    PORT,
-    BASE_URL,
-    VERSION: pkg.version,
-    COMMIT: process.env.npm_package_gitHead,
-
-    FIREBASE_API_KEY:
-      process.env.FIREBASE_API_KEY || 'AIzaSyDG_OMeMaXVIHJqZpTzkY_DAWV9ylNwlXM',
-    FIREBASE_AUTH_DOMAIN:
-      process.env.FIREBASE_AUTH_DOMAIN || 'staging-pocketpasta.firebaseapp.com',
-    FIREBASE_DATABASE_URL:
-      process.env.FIREBASE_DATABASE_URL ||
-      'https://staging-pocketpasta.firebaseio.com',
-    FIREBASE_PROJECT_ID:
-      process.env.FIREBASE_PROJECT_ID || 'staging-pocketpasta',
-    FIREBASE_STORAGE_BUCKET:
-      process.env.FIREBASE_STORAGE_BUCKET || 'staging-pocketpasta.appspot.com',
-    FIREBASE_MESSAGE_SENDER_ID:
-      process.env.FIREBASE_MESSAGE_SENDER_ID || '216453269763',
-    FIREBASE_API_ID:
-      process.env.FIREBASE_API_ID || '1:216453269763:web:71a3fe1ca24500bb',
+  publicRuntimeConfig: {
+    ...env,
   },
 
   server: {
@@ -139,23 +121,6 @@ module.exports = {
   },
 
   render: {
-    bundleRenderer: {
-      shouldPreload: (file, type) => {
-        // type is inferred based on the file extension.
-        // https://fetch.spec.whatwg.org/#concept-request-destination
-        if (type === 'script' || type === 'style') {
-          return true;
-        }
-        if (type === 'font') {
-          // only preload woff2 fonts
-          return /\.woff2$/.test(file);
-        }
-        // if (type === 'image') {
-        //   // only preload important images
-        //   return file === 'header-bg.jpg';
-        // }
-      },
-    },
     http2: {
       push: true,
       pushAssets: (req, res, publicPath, preloadFiles) =>
@@ -172,54 +137,57 @@ module.exports = {
     // htmlAttrs: { 'data-vue-meta-server-rendered': '' },
     titleTemplate: (titleChunk) => {
       // If undefined or blank then we don't need the hyphen
-      return titleChunk ? `${titleChunk} - PocketPasta` : 'PocketPasta';
+      return titleChunk ? `${titleChunk} | PocketPasta` : 'PocketPasta';
     },
+    noscript: [
+      {
+        innerHTML: 'This website requires JavaScript.',
+        once: true,
+        hid: 'noscript',
+      },
+    ],
     meta: [
-      {
-        charset: 'utf-8',
-      },
-      {
-        name: 'viewport',
-        content:
-          'width=device-width, initial-scale=1, shrink-to-fit=no, minimal-ui',
-      },
       {
         property: 'og:title',
         template: (titleChunk) => {
           // If undefined or blank then we don't need the hyphen
           return titleChunk ? `${titleChunk} - PocketPasta` : 'PocketPasta';
         },
-        vmid: 'og:title',
+        hid: 'og:title',
       },
       {
-        hid: 'description',
-        name: 'description',
-        content: pkg.description,
-      },
-      {
+        hid: 'google-site-verification',
+        once: true,
         name: 'google-site-verification',
         content: 'LqVnUnYGR8NrvXrhnFgW5RjNJVChZp2j2OEP55xjE30',
       },
       {
+        once: true,
         name: 'version',
+        hid: 'version',
         content: pkg.version,
+      },
+      {
+        once: true,
+        'http-equiv': 'Accept-CH',
+        hid: 'Accept-CH',
+        content: 'DPR, Viewport-Width, Width',
       },
     ],
     link: [
       {
+        once: true,
         rel: 'icon',
+        hid: 'icon',
         type: 'image/x-icon',
         href: '/favicon.ico',
-      },
-      {
-        rel: 'preconnect',
-        href: 'https://res.cloudinary.com',
-        crossorigin: 'anonymous',
       },
       ...preconnectLinks.map((href) => ({
         rel: 'preconnect',
         href,
+        hid: `preconnect-${href}`,
         crossorigin: 'anonymous',
+        once: true,
       })),
     ],
   },
@@ -227,7 +195,7 @@ module.exports = {
   generate: {
     // if you want to use '404.html' instead of the default '200.html'
     fallback: true,
-    routes,
+    exclude: ['/shoppinglist', 'tasks'],
   },
 
   /*
@@ -242,31 +210,20 @@ module.exports = {
   /*
    ** Global CSS
    */
-  css: [
-    '~/assets/scss/custom.scss',
-    '~/assets/css/font.css',
-    '~/assets/css/custom.css',
-    'plyr/dist/plyr.css',
-  ],
+  css: ['~/assets/scss/app.scss'],
 
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [
-    { src: '~/plugins/vue-plyr' },
-    // { src: '~/plugins/firebase.js', ssr: false },
-    // { src: '~/plugins/firebase_auth.js', ssr: false },
-    // { src: '~/plugins/quicklink', ssr: false },
-    { src: '~/plugins/debug.js', ssr: false },
-  ],
+  plugins: [{ src: '~/plugins/theme.js', mode: 'client' }],
 
   /*
    ** Nuxt.js modules
    */
   modules: [
+    '@nuxt/content',
     '@nuxtjs/axios',
     '@nuxtjs/auth',
-    '@nuxtjs/dotenv',
     '@nuxtjs/eslint-module',
     '@nuxtjs/firebase',
     '@nuxtjs/google-analytics',
@@ -274,17 +231,16 @@ module.exports = {
     '@nuxtjs/pwa',
     '@nuxtjs/recaptcha',
     '@nuxtjs/sentry',
-    'bootstrap-vue/nuxt',
     ['nuxt-i18n', i18nSettings],
-    'nuxt-webfontloader',
 
     // keep sitemap last
     '@nuxtjs/sitemap',
   ],
 
   buildModules: [
-    // Simple usage
     '@nuxtjs/vuetify',
+    '@nuxtjs/color-mode',
+    '@nuxtjs/netlify-files',
   ],
 
   dotenv: {
@@ -353,7 +309,7 @@ module.exports = {
       messagingSenderId:
         process.env.FIREBASE_MESSAGE_SENDER_ID || '216453269763',
       appId:
-        process.env.FIREBASE_API_ID || '1:216453269763:web:71a3fe1ca24500bb',
+        process.env.FIREBASE_APP_ID || '1:216453269763:web:71a3fe1ca24500bb',
     },
     onFirebaseHosting: process.env.FIREBASE_HOSTING || false,
     services: {
@@ -377,23 +333,8 @@ module.exports = {
     optionsPath: './vuetify.options.js',
     // customVariables: ['~/assets/scss/vuetify.scss'],
     treeShake: true,
-    theme: { disable: true },
+    // theme: { disable: true },
     defaultAssets: false,
-  },
-
-  bootstrapVue: {
-    bootstrapCSS: false, // or `css`
-    bootstrapVueCSS: false, // or `bvCSS`
-    componentPlugins: [
-      'Image',
-      'FormSelect',
-      'Card',
-      'ButtonPlugin',
-      'FormTextareaPlugin',
-      'FormGroupPlugin',
-      'FormInputPlugin',
-    ],
-    directivePlugins: ['Tooltip'],
   },
 
   googleAnalytics: {
@@ -411,20 +352,14 @@ module.exports = {
 
   sitemap: {
     hostname: BASE_URL,
-    routes,
     gzip: true,
+    i18n: 'en',
     xslUrl: '/sitemap.xsl',
     defaults: {
       changefreq: 'weekly',
-      // priority: 0.5,
+      priority: 0.5,
       lastmod: new Date(),
       // lastmodrealtime: true,
-    },
-  },
-
-  webfontloader: {
-    custom: {
-      families: ['Comic Neue'],
     },
   },
 
@@ -436,10 +371,20 @@ module.exports = {
     https: true,
   },
 
+  content: {
+    // Only search in title and description
+    fullTextSearchFields: ['name', 'description', 'keywords'],
+  },
+
   /*
    ** Build configuration
    */
   build: {
+    filenames: {
+      chunk: ({ isDev }) =>
+        isDev ? '[name].js' : 'chunks/[id].[contenthash].js',
+    },
+    transpile: ['lodash-es'],
     // move component styles into css files
     extractCSS: true,
     /*

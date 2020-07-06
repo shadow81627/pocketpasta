@@ -1,7 +1,11 @@
 <template>
   <div class="container">
     <list
-      v-bind="{ heading: $t('products.heading'), list, layout: 'columns' }"
+      v-bind="{
+        heading: $t('products.heading'),
+        layout: 'columns',
+        collection: 'products',
+      }"
     />
   </div>
 </template>
@@ -12,25 +16,13 @@ export default {
   components: {
     List,
   },
-  computed: {
-    list() {
-      return this.$store.state.products;
-    },
-  },
   head() {
     return {
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content: 'Find the best palce to buy pasta ingredients.',
-        },
-      ],
-      link: [
-        {
-          hid: 'canonical',
-          rel: 'canonical',
-          href: 'https://pocketpasta.com/products',
+          content: 'Find the best place to buy pasta ingredients.',
         },
       ],
     };

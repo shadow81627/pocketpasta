@@ -1,14 +1,14 @@
 <template>
-  <div id="message" class="card bg-light card-body">
+  <v-card id="message">
     <h2>404</h2>
     <h1>{{ $t('error.404.heading') }}</h1>
     <p>
       {{ $t('error.404.description') }}
     </p>
-    <nuxt-link :to="localePath('index')" class="btn btn-primary">{{
+    <v-btn :to="localePath('index')" color="primary" block large>{{
       $t('layout.navigation.home')
-    }}</nuxt-link>
-  </div>
+    }}</v-btn>
+  </v-card>
 </template>
 
 <script>
@@ -60,18 +60,6 @@ export default {
   line-height: 140%;
   margin: 16px 0 24px;
   font-size: 14px;
-}
-#message a {
-  display: block;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 16px;
-  border-radius: 4px;
-}
-#message,
-#message a {
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 #load {
   color: rgba(0, 0, 0, 0.4);

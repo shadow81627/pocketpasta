@@ -1,7 +1,7 @@
 <template>
   <div class="container">
-    <recipe />
-    <v-btn
+    <recipe v-bind="recipe" />
+    <!-- <v-btn
       fab
       bottom
       right
@@ -12,7 +12,7 @@
       class="hidden-print-only"
     >
       <v-icon>$edit</v-icon>
-    </v-btn>
+    </v-btn> -->
   </div>
 </template>
 
@@ -23,16 +23,36 @@ export default {
   components: {
     Recipe,
   },
+  async asyncData(context) {
+    try {
+      const id = context.route.params.id;
+      const recipe = await context.$content('recipes', id).fetch();
+      return { id, recipe };
+    } catch {
+      context.error({ statusCode: 404 });
+    }
+  },
   data() {
-    return { id: this.$route.params.id };
+    return { id: 0, recipe: {} };
   },
   head() {
     return {
-      link: [
+      title: this.recipe.name,
+      meta: [
         {
-          hid: 'canonical',
-          rel: 'canonical',
-          href: `https://pocketpasta.com/recipes/${this.id}`,
+          hid: 'og:title',
+          name: 'og:title',
+          content: this.recipe.name,
+        },
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.recipe.description,
+        },
+        {
+          hid: 'og:description',
+          name: 'og:description',
+          content: this.recipe.description,
         },
       ],
     };

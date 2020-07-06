@@ -1,15 +1,17 @@
 <template>
-  <v-footer class="hidden-print-only" height="auto">
-    <div class="container-fluid">
+  <v-footer class="hidden-print-only" inset app style="position: static;">
+    <v-container>
       <v-row no-gutters>
         <v-col cols="auto">
           <v-card flat color="transparent">
             <v-card-text>
-              <span>Version: {{ version }}</span>
+              <span>Version: {{ $config.VERSION }}</span>
               <span>|</span>
               <span>Commit: </span>
               <nuxt-link :to="localePath({ name: 'releases' })"
-                ><span> {{ commit | shortHash }}</span></nuxt-link
+                ><span>
+                  {{ shortHash($config.COMMIT || $config.TRAVIS_COMMIT) }}</span
+                ></nuxt-link
               >
             </v-card-text>
           </v-card>
@@ -28,9 +30,14 @@
         </v-col>
       </v-row>
       <v-row no-gutters>
-        <v-col>
+        <v-col cols="auto">
           <v-card flat tile color="transparent">
             <v-card-text class="py-2 text-left">
+              <div>
+                <nuxt-link to="/about">About</nuxt-link> |
+                <nuxt-link to="/contact">Contact</nuxt-link> |
+                <nuxt-link to="/newsletter">Newsletter</nuxt-link>
+              </div>
               <span>Made with </span>
               <span>🍝</span>
               <span> in Brisbane, Australia</span>
@@ -42,7 +49,7 @@
         <v-spacer />
         <lastModified v-bind="{ utc }" />
       </v-row>
-    </div>
+    </v-container>
   </v-footer>
 </template>
 
@@ -52,13 +59,11 @@ export default {
   components: {
     lastModified,
   },
-  filters: {
-    shortHash: (value) => (value ? value.substring(0, 7) : null),
-  },
   data: () => ({
-    version: process.env.VERSION,
-    commit: process.env.COMMIT || process.env.TRAVIS_COMMIT,
     utc: false,
   }),
+  methods: {
+    shortHash: (value) => (value ? value.substring(0, 7) : null),
+  },
 };
 </script>

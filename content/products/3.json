@@ -1,0 +1,103 @@
+{
+  "@type": "Product",
+  "additionalProperty": [
+    {
+      "@type": "NutritionInformation",
+      "calories": "2020kJ",
+      "carbohydrateContent": "70.6g",
+      "fatContent": "19.6g",
+      "name": "nutrition",
+      "proteinContent": "4.7g",
+      "saturatedFatContent": "11.3g",
+      "servingSize": "100 g",
+      "sodiumContent": "554mg",
+      "sugarContent": "41.9g"
+    },
+    {
+      "name": "Ingredients",
+      "value": "Wheat flour, sugar, vegetable oil, cocoa powder, glucose syrup, salt, raising agents (500, 503), emulsifier (soy lecithin), flavour, antioxidants (319, 304, 307b)."
+    },
+    {
+      "name": "Contains",
+      "value": "Chocolate flavoured sandwich cookies with vanilla flavoured creme (28%). Wheat and Soy."
+    },
+    {
+      "name": "Allergen",
+      "value": "May Be Present Milk, Contains Wheat, May Be Present Peanuts, Contains Soy"
+    },
+    {
+      "name": "Servings Per Pack",
+      "value": "13.0"
+    },
+    {
+      "name": "Size",
+      "value": "370g"
+    },
+    {
+      "name": "Unit Price",
+      "value": "$1.22 per 100G"
+    },
+    {
+      "name": "Country Of Origin",
+      "value": "Made in Bahrian"
+    }
+  ],
+  "brand": {
+    "@context": "http://schema.org",
+    "@type": "Organization",
+    "name": "oreo"
+  },
+  "description": "Oreo Original Cookies is a choc cookie sandwich with sweet vanilla creme.  Share more Oreo Cookies than ever before with family and friends with the convenient Oreo 370g sharing pack. 39 Oreo Cookies in a plastic tray with a resealable seal for freshnesss. They'll be sure to be a hit at your next event. The pack made for sharing!",
+  "gtin13": "9300650430440",
+  "image": "https://cdn0.woolworths.media/content/wowproductimages/large/073032.jpg",
+  "name": "Oreo Family Pack Original  370g",
+  "offers": {
+    "@type": "AggregateOffer",
+    "highPrice": 4.5,
+    "lowPrice": 3,
+    "offerCount": 2,
+    "offers": [
+      {
+        "@context": "http://schema.org",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "availabilityStarts": "2020-06-27T00:52:38.045Z",
+        "itemCondition": "http://schema.org/NewCondition",
+        "offeredBy": "Woolworths",
+        "potentialAction": {
+          "@context": "http://schema.org",
+          "@type": "BuyAction"
+        },
+        "price": 3,
+        "priceCurrency": "AUD",
+        "seller": {
+          "@type": "Organization",
+          "name": "Woolworths"
+        },
+        "url": "https://www.woolworths.com.au/shop/productdetails/73032/oreo-family-pack-original"
+      },
+      {
+        "@context": "http://schema.org",
+        "@type": "Offer",
+        "availability": "https://schema.org/InStock",
+        "availabilityStarts": "2020-06-27T00:52:58.005Z",
+        "itemCondition": "https://schema.org/NewCondition",
+        "offeredBy": "Coles",
+        "price": "4.50",
+        "priceCurrency": "AUD",
+        "seller": {
+          "@type": "Organization",
+          "name": "Coles"
+        },
+        "url": "https://shop.coles.com.au/a/national/product/oreo-family-pack-biscuits-creme-original"
+      }
+    ],
+    "priceCurrency": "AUD"
+  },
+  "review": [],
+  "sameAs": [
+    "https://www.woolworths.com.au/shop/productdetails/73032/oreo-family-pack-original",
+    "https://shop.coles.com.au/a/national/product/oreo-family-pack-biscuits-creme-original"
+  ],
+  "sku": "73032"
+}

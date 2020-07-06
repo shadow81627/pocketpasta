@@ -3,7 +3,7 @@
     <h1>Profile</h1>
     <v-list-item>
       <v-list-item-avatar>
-        <b-img-lazy :src="$auth.user.picture" alt="avatar" class="rounded" />
+        <v-img :src="$auth.user.picture" alt="avatar" class="rounded" />
       </v-list-item-avatar>
 
       <v-list-item-content>

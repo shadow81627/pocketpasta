@@ -1,5 +1,5 @@
 <template>
-  <v-app id="inspire" :dark="isDark" clipped-left>
+  <v-app id="inspire" clipped-left>
     <v-navigation-drawer
       v-model="drawer"
       :clipped="$vuetify.breakpoint.lgAndUp"
@@ -52,9 +52,7 @@
             v-else
             :key="item.text"
             :to="localePath(item.route ? item.route : {})"
-            active-class="btn-primary pointer-events-none active"
             nuxt
-            class="text-decoration-none"
           >
             <v-list-item-action>
               <v-icon>${{ item.icon }}</v-icon>
@@ -72,26 +70,36 @@
       fixed
       class="hidden-print-only"
     >
-      <v-toolbar-title style="width: 256px;" class="ml-0 pl-3">
-        <v-app-bar-nav-icon aria-label="menu" @click.stop="drawer = !drawer" />
-        <b-img-lazy
+      <v-app-bar-nav-icon aria-label="menu" @click.stop="drawer = !drawer"
+        ><v-progress-circular v-if="loading" indeterminate size="18" width="2"
+      /></v-app-bar-nav-icon>
+      <v-avatar width="32" height="32" tile>
+        <v-img
           :src="$icon(32)"
+          :srcset="`${$icon(32)} 1x, ${$icon(64)} 2x`"
           width="32"
           height="32"
-          class="rounded"
           alt="PocketPasta"
+          contain
           onerror="javascript:this.style.display = 'none'"
         />
-        <span class="brand d-none d-sm-inline">PocketPasta</span>
+      </v-avatar>
+
+      <v-toolbar-title>
+        <span class="brand d-none d-sm-flex">PocketPasta</span>
       </v-toolbar-title>
       <v-spacer />
       <add-to-home-screen icon />
       <user-menu />
     </v-app-bar>
-    <v-content>
-      <nuxt style="min-height: 100vh;" />
-      <the-footer />
-    </v-content>
+    <v-main class="pb-0">
+      <nuxt style="min-height: 100vh;" keep-alive />
+    </v-main>
+    <the-footer
+      :style="{
+        marginLeft: drawer && $vuetify.breakpoint.lgAndUp ? '256px' : 0,
+      }"
+    />
   </v-app>
 </template>
 
@@ -107,6 +115,7 @@ export default {
   },
   data() {
     return {
+      loading: true,
       dialog: false,
       drawer: false,
     };
@@ -114,21 +123,6 @@ export default {
   computed: {
     items() {
       return [
-        // {
-        //   icon: 'home',
-        //   text: this.$t('layout.navigation.home'),
-        //   route: { name: 'index' },
-        // },
-        {
-          icon: 'info',
-          text: this.$t('layout.navigation.about'),
-          route: { name: 'about' },
-        },
-        {
-          icon: 'email',
-          text: this.$t('layout.navigation.newsletter'),
-          route: { name: 'newsletter' },
-        },
         {
           icon: 'book',
           text: this.$t('layout.navigation.recipes'),
@@ -145,24 +139,44 @@ export default {
           route: { name: 'shoppinglist' },
         },
         {
+          icon: 'calendar-check',
+          text: 'Tasks',
+          route: { name: 'tasks' },
+        },
+        {
           icon: 'settings',
           text: this.$t('layout.navigation.settings'),
           route: { name: 'settings' },
         },
       ];
     },
-    isDark() {
-      return this.$store.getters.getCurrentTheme().dark;
-    },
+  },
+  mounted() {
+    if (process.client) {
+      this.loading = false;
+    }
   },
   head() {
+    const i18nSeo = this.$nuxtI18nSeo();
     return {
+      htmlAttrs: {
+        ...i18nSeo.htmlAttrs,
+      },
+      meta: [
+        ...i18nSeo.meta,
+        {
+          hid: 'og:url',
+          name: 'og:url',
+          property: 'og:url',
+          content: `${this.$config.BASE_URL}${this.$route.path}`,
+        },
+      ],
       link: [
-        this.$store.getters.getCurrentTheme(),
+        ...i18nSeo.link,
         {
           hid: 'canonical',
           rel: 'canonical',
-          href: `${this.baseUrl}${this.$route.path}`,
+          href: `${this.$config.BASE_URL}${this.$route.path}`,
         },
       ],
     };
@@ -172,7 +186,6 @@ export default {
 
 <style>
 .brand {
-  font-family: 'Comic Neue', sans-serif;
   font-size: 1.5rem;
   font-weight: 400;
   vertical-align: middle;
@@ -181,10 +194,5 @@ export default {
 /* no pointer events */
 .pointer-events-none {
   pointer-events: none;
-}
-
-/* navbar links no underline, can't add class to a element since it is added in js */
-.text-decoration-none a {
-  text-decoration: none !important;
 }
 </style>

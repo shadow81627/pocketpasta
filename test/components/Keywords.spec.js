@@ -1,0 +1,32 @@
+import Keywords from '@/components/Keywords.vue';
+import { mount, createLocalVue } from '@vue/test-utils';
+// import Vuetify from 'vuetify';
+
+const localVue = createLocalVue();
+// localVue.use(Vuetify);
+
+const factory = () =>
+  mount(Keywords, {
+    localVue,
+  });
+
+describe('Keywords', () => {
+  test('mounts properly', () => {
+    const wrapper = factory();
+    expect(wrapper.vm).toBeTruthy();
+  });
+
+  test('renders properly', () => {
+    const wrapper = factory();
+    expect(wrapper.html()).toMatchSnapshot();
+  });
+
+  test('head', () => {
+    expect(Keywords.head()).toBeTruthy();
+  });
+
+  test('computes keywords', () => {
+    const wrapper = factory();
+    expect(wrapper.vm.keywords).toBe('');
+  });
+});

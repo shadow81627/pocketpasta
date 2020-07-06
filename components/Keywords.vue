@@ -1,14 +1,11 @@
 <template>
-  <div class="list-inline">
+  <div>
     <strong v-if="label" class="tag pl-0 font-weight-bold">{{ label }}:</strong>
-    <a
-      v-for="tag in tags"
-      :key="tag"
-      href="#"
-      class="list-inline-item btn tag btn-primary"
-      role="button"
-      >{{ tag.trim() }}
-    </a>
+    <v-chip-group class="d-inline" column>
+      <v-chip v-for="tag in tags" :key="tag" color="primary" label
+        >{{ tag.trim() }}
+      </v-chip>
+    </v-chip-group>
   </div>
 </template>
 
@@ -33,12 +30,3 @@ export default {
   },
 };
 </script>
-
-<style>
-.tag {
-  border-radius: 2px;
-  font-weight: bold;
-  padding: 2px 4px;
-  margin-bottom: 0.5rem;
-}
-</style>

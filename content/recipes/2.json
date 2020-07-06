@@ -1,0 +1,57 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Recipe",
+  "author": {
+    "@type": "Person",
+    "name": "Binging with Babish"
+  },
+  "cookTime": "PT22M",
+  "datePublished": "2016-03-25",
+  "description": "What dish can make any man or woman ache for the touch of Jon Favreau?  Pasta Aglio e Olio is the dreamy midnight snack that lives up to its porny portrayal in the foodie-comedy-drama \"Chef\".",
+  "image": ["https://i.ytimg.com/vi/bJUiWdM__Qw/maxresdefault.jpg"],
+  "keywords": "Pasta Aglio e Olio, Pasta, dreamy midnight snack, Chef, Jon Favreau, Binging with Babish",
+  "name": "Binging with Babish: Pasta Aglio e Olio from \"Chef\"",
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "calories": "1509 calories"
+  },
+  "prepTime": "PT10M",
+  "recipeCategory": "Dinner",
+  "recipeCuisine": "Italian",
+  "recipeIngredient": [
+    "1/2 head garlic, separated and peeled",
+    "1 bunch parsley, rinsed",
+    "1/2 cup good quality olive oil",
+    "1 tsp red pepper flakes",
+    "1/2 lb dry linguine",
+    "1/2 lemon"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "Heavily salt a large pot of water, and bring to a boil. Cook pasta to al dente while completing the steps below."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Slice the garlic cloves thinly, and set aside. Pick the parsley leaves from their stems, and finely chop. Add olive oil to a large saute pan, and heat over medium flame until shimmering. Add sliced garlic, stirring constantly, until garlic is barely toasted. Add the red pepper flake and remove from heat."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Add the pasta, drained, with about 1/4 cup reserved pasta cooking water. Add lemon juice and parsley, and toss to combine. Season for salt and pepper, and serve."
+    }
+  ],
+  "recipeYield": "2 servings",
+  "sameAs": ["https://www.bingingwithbabish.com/recipes/2017/5/4/aglioeolio"],
+  "suitableForDiet": "https://schema.org/VeganDiet",
+  "totalTime": "PT32M",
+  "video": {
+    "@type": "VideoObject",
+    "contentUrl": "https://www.youtube.com/watch?v=bJUiWdM__Qw",
+    "description": "What dish can make any man or woman ache for the touch of Jon Favreau?  Pasta Aglio e Olio is the dreamy midnight snack that lives up to its porny portrayal in the foodie-comedy-drama \"Chef\".",
+    "duration": "PT3M31S",
+    "embedUrl": "https://www.youtube.com/embed/bJUiWdM__Qw",
+    "name": "Binging with Babish: Pasta Aglio e Olio from \"Chef\"",
+    "thumbnailUrl": "https://i.ytimg.com/vi/bJUiWdM__Qw/maxresdefault.jpg",
+    "uploadDate": "2016-03-25T00:00:00+00:00"
+  }
+}

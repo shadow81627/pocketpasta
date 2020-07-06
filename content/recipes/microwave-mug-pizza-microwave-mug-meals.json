@@ -1,0 +1,90 @@
+{
+  "@type": "Recipe",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingCount": "658",
+    "ratingValue": "4.45"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "adapted recipe from Kirbiecravings.com"
+  },
+  "cookTime": "PT1M",
+  "datePublished": "2018-03-21T07:30:17+00:00",
+  "description": "Learn how to make my amazing Microwave Mug Pizza recipe in just minutes. You can add any toppings you'd like and it's faster and better than pizza delivery!",
+  "image": [
+    "https://www.biggerbolderbaking.com/wp-content/uploads/2016/01/IMG_9114.jpg",
+    "https://www.biggerbolderbaking.com/wp-content/uploads/2016/01/IMG_9114-500x500.jpg",
+    "https://www.biggerbolderbaking.com/wp-content/uploads/2016/01/IMG_9114-500x375.jpg",
+    "https://www.biggerbolderbaking.com/wp-content/uploads/2016/01/IMG_9114-480x270.jpg"
+  ],
+  "keywords": "Miccrowave Mug Pizza, Microwave Mug Pizza, Microwave Pizza",
+  "name": "Microwave Mug Pizza (Microwave Mug Meals)",
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "calories": "342 kcal",
+    "carbohydrateContent": "27 g",
+    "cholesterolContent": "22 mg",
+    "fatContent": "20 g",
+    "fiberContent": "1 g",
+    "proteinContent": "10 g",
+    "saturatedFatContent": "5 g",
+    "servingSize": "1 g",
+    "sodiumContent": "998 mg",
+    "sugarContent": "4 g"
+  },
+  "prepTime": "PT5M",
+  "recipeCategory": ["Dinner"],
+  "recipeCuisine": "Italian",
+  "recipeIngredient": [
+    "4 tablespoons all purpose flour",
+    "1/8 teaspoon baking powder",
+    "1/16 teaspoon baking soda",
+    "1/8 teaspoon salt",
+    "3 tablespoons milk",
+    "1 tablespoon olive oil",
+    "1 tablespoon marinara sauce",
+    "1 generous tablespoon shredded mozzarella cheese",
+    "5 mini pepperoni",
+    "1/2 teaspoon dried Italian herbs (basil or oregano will work)"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "Mix the flour, baking powder, baking soda and salt together in a microwavable mug."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Add in the milk and oil then mix together. There might be some lumps but that is ok."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Spoon on the marinara sauce and spread it around the surface of the batter."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Sprinkle on the cheese, pepperoni, and dried herbs."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Microwave for 1 minute 10 - 1 minute 20 seconds, or until it rises up and the toppings are bubbling (timing is based on my 1200W microwave so your timing might vary)."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Enjoy straight away."
+    }
+  ],
+  "recipeYield": "1",
+  "sameAs": ["https://www.biggerbolderbaking.com/microwave-mug-pizza/"],
+  "totalTime": "PT6M",
+  "video": {
+    "@type": "VideoObject",
+    "contentUrl": "https://www.youtube.com/watch?v=6eslIRo9als",
+    "description": "",
+    "duration": "",
+    "embedUrl": "https://www.youtube.com/embed/6eslIRo9als?feature=oembed",
+    "name": "5 Microwave Mug Meals (Mug Pizza, Brownie in a Mug & More!) | Gemma's Bigger Bolder Baking",
+    "thumbnailUrl": "https://i.ytimg.com/vi/6eslIRo9als/hqdefault.jpg",
+    "uploadDate": ""
+  }
+}

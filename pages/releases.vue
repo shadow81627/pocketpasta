@@ -1,7 +1,7 @@
 <template>
-  <div class="container bg-light">
-    <div class="markdown-body" v-html="content()" />
-  </div>
+  <v-container>
+    <v-sheet class="markdown-body" light v-html="content()" />
+  </v-container>
 </template>
 
 <script>

@@ -85,3 +85,9 @@ sw.*
 
 # Firebase
 .firebase
+
+# Lighthouse
+.lighthouseci
+
+# only generated sitemap
+sitemap.xml

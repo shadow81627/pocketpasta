@@ -93,25 +93,28 @@
       <br />
     </div>
     <div class="mt-3">
-      <b-button @click="clear">Clear</b-button>
-      <b-button class="float-right" variant="primary" @click="save"
-        >Save</b-button
+      <v-btn @click="clear">Clear</v-btn>
+      <v-btn
+        class="float-right"
+        color="primary"
+        :loading="loading"
+        @click="save"
+        >Save</v-btn
       >
     </div>
   </div>
 </template>
 
 <script>
-import { BButton } from 'bootstrap-vue';
-
 export default {
-  components: {
-    BButton,
-  },
   props: {
     value: {
       type: Object,
       default: () => {},
+    },
+    loading: {
+      type: Boolean,
+      default: false,
     },
   },
   data() {
@@ -188,7 +191,6 @@ export default {
     // Store accumulated changes
     editor.on('text-change', function (delta) {
       vm.change = vm.change.compose(delta);
-      // debouncedSave();
       vm.save();
       vm.$emit('input', vm.document);
     });
@@ -206,18 +208,6 @@ export default {
       const vm = this;
       if (vm.change && vm.change.length() > 0) {
         vm.document = JSON.parse(JSON.stringify(vm.editor.getContents()));
-
-        // vm.$fireStore
-        //   .collection('shoppinglists')
-        //   .doc(vm.$auth.user.uid)
-        //   .set(vm.document)
-        //   .then(function() {
-        //     const Delta = vm.editor.import('delta');
-        //     vm.change = new Delta();
-        //   })
-        //   .catch(function(error) {
-        //     console.error('Error writing document: ', error);
-        //   });
       }
       vm.$emit('submit');
     },
@@ -339,5 +329,9 @@ export default {
 
 span.ql-picker-label::before {
   color: #4dba87;
+}
+
+.ql-editor ul > li {
+  font-size: 24px;
 }
 </style>

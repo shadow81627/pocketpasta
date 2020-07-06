@@ -1,5 +1,697 @@
 # Releases
 
+## [0.39.2](https://github.com/shadow81627/pocketpasta/compare/v0.39.1...v0.39.2) (2020-07-06)
+
+### Bug Fixes
+
+- **recipe:** list item length ([#1302](https://github.com/shadow81627/pocketpasta/issues/1302)) ([0890c68](https://github.com/shadow81627/pocketpasta/commit/0890c683940c2e82c203be3ef257c78614135751))
+
+## [0.39.1](https://github.com/shadow81627/pocketpasta/compare/v0.39.0...v0.39.1) (2020-07-04)
+
+### Bug Fixes
+
+- **search:** close keyboard on enter press ([#1300](https://github.com/shadow81627/pocketpasta/issues/1300)) ([09ddb82](https://github.com/shadow81627/pocketpasta/commit/09ddb8245f3d076af6f7fa5ffdb7c107e5210adb)), closes [#1297](https://github.com/shadow81627/pocketpasta/issues/1297)
+
+## [0.39.0](https://github.com/shadow81627/pocketpasta/compare/v0.38.7...v0.39.0) (2020-07-04)
+
+### Features
+
+- add list search and sort ([#1293](https://github.com/shadow81627/pocketpasta/issues/1293)) ([1d972be](https://github.com/shadow81627/pocketpasta/commit/1d972bee19961a0538e087b729d321a791a0ea8e)), closes [#1256](https://github.com/shadow81627/pocketpasta/issues/1256) [#1254](https://github.com/shadow81627/pocketpasta/issues/1254) [#1288](https://github.com/shadow81627/pocketpasta/issues/1288)
+
+## [0.38.7](https://github.com/shadow81627/pocketpasta/compare/v0.38.6...v0.38.7) (2020-07-03)
+
+### Bug Fixes
+
+- **deps:** update dependency nuxt-i18n to v6.13.1 ([b2effeb](https://github.com/shadow81627/pocketpasta/commit/b2effebb7f9fb2e819c75a1e0fa03e8238a960d4))
+
+## [0.38.6](https://github.com/shadow81627/pocketpasta/compare/v0.38.5...v0.38.6) (2020-07-03)
+
+### Bug Fixes
+
+- **home:** banner text dark ([#1289](https://github.com/shadow81627/pocketpasta/issues/1289)) ([509282c](https://github.com/shadow81627/pocketpasta/commit/509282c1c5cd60ed625084630493ceb382241bd4)), closes [#1287](https://github.com/shadow81627/pocketpasta/issues/1287)
+- **unsplash-logo:** add style sheet ([#1286](https://github.com/shadow81627/pocketpasta/issues/1286)) ([5834b69](https://github.com/shadow81627/pocketpasta/commit/5834b69de1046296c8e1483b4c2cb54755b2d306)), closes [#1285](https://github.com/shadow81627/pocketpasta/issues/1285)
+
+## [0.38.5](https://github.com/shadow81627/pocketpasta/compare/v0.38.4...v0.38.5) (2020-07-03)
+
+### Performance Improvements
+
+- remove bootstrap css ([#1277](https://github.com/shadow81627/pocketpasta/issues/1277)) ([ce9aecd](https://github.com/shadow81627/pocketpasta/commit/ce9aecd1ec0981515d2c35dce3c00bd45555a3a1))
+
+## [0.38.4](https://github.com/shadow81627/pocketpasta/compare/v0.38.3...v0.38.4) (2020-07-02)
+
+### Bug Fixes
+
+- **deps:** update dependency nuxt to v2.13.3 ([78f918a](https://github.com/shadow81627/pocketpasta/commit/78f918a4a297581e9ada1109a77ad72c5323d07a))
+
+## [0.38.3](https://github.com/shadow81627/pocketpasta/compare/v0.38.2...v0.38.3) (2020-07-02)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxt/content to v1.4.1 ([59acc67](https://github.com/shadow81627/pocketpasta/commit/59acc670f482058da0550052dd3a94bbb2d1d193))
+
+## [0.38.2](https://github.com/shadow81627/pocketpasta/compare/v0.38.1...v0.38.2) (2020-07-02)
+
+### Bug Fixes
+
+- **deps:** update dependency nuxt-i18n to v6.13.0 ([4468b78](https://github.com/shadow81627/pocketpasta/commit/4468b78d662cb2a983aefd7c1eb458bf40ba200d))
+
+## [0.38.1](https://github.com/shadow81627/pocketpasta/compare/v0.38.0...v0.38.1) (2020-07-01)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxtjs/sentry to v4.1.3 ([7d6bf46](https://github.com/shadow81627/pocketpasta/commit/7d6bf461df5f12c98fe42cfaddb69b24f98797b2))
+
+## [0.38.0](https://github.com/shadow81627/pocketpasta/compare/v0.37.10...v0.38.0) (2020-06-30)
+
+### Features
+
+- **scrape:** read write files ([#1242](https://github.com/shadow81627/pocketpasta/issues/1242)) ([44bd72f](https://github.com/shadow81627/pocketpasta/commit/44bd72f8e4bf5dc7726f8ba66f77594305416878))
+
+## [0.37.10](https://github.com/shadow81627/pocketpasta/compare/v0.37.9...v0.37.10) (2020-06-30)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxt/content to v1.4.0 ([aed8bc1](https://github.com/shadow81627/pocketpasta/commit/aed8bc1948d69a88aadbffde5b67c8e6598d00f4))
+
+## [0.37.9](https://github.com/shadow81627/pocketpasta/compare/v0.37.8...v0.37.9) (2020-06-29)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxtjs/firebase to v6.1.0 ([705710e](https://github.com/shadow81627/pocketpasta/commit/705710e306bc854f4af2ed7505bca4e1f485dc42))
+
+## [0.37.8](https://github.com/shadow81627/pocketpasta/compare/v0.37.7...v0.37.8) (2020-06-26)
+
+### Bug Fixes
+
+- **deps:** update dependency nuxt to v2.13.2 ([dda3476](https://github.com/shadow81627/pocketpasta/commit/dda3476d5e1195b25a0da558dae14846df3dc1a6))
+
+## [0.37.7](https://github.com/shadow81627/pocketpasta/compare/v0.37.6...v0.37.7) (2020-06-26)
+
+### Bug Fixes
+
+- **deps:** update dependency firebase to v7.15.5 ([88f80db](https://github.com/shadow81627/pocketpasta/commit/88f80dbbf153b26304fc67fd07830152bae082d6))
+
+## [0.37.6](https://github.com/shadow81627/pocketpasta/compare/v0.37.5...v0.37.6) (2020-06-25)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxtjs/sitemap to v2.4.0 ([3cb6835](https://github.com/shadow81627/pocketpasta/commit/3cb6835fb87ecc0b29eb00f27e6d5b7b15e8a9ae))
+
+## [0.37.5](https://github.com/shadow81627/pocketpasta/compare/v0.37.4...v0.37.5) (2020-06-25)
+
+### Bug Fixes
+
+- **product:** set type menu item when nutrition ([#1235](https://github.com/shadow81627/pocketpasta/issues/1235)) ([51a9d19](https://github.com/shadow81627/pocketpasta/commit/51a9d190c2168eb425898a56da26fe5432675d17))
+
+## [0.37.4](https://github.com/shadow81627/pocketpasta/compare/v0.37.3...v0.37.4) (2020-06-25)
+
+### Bug Fixes
+
+- **product:** calculate aggregate offer ([#1234](https://github.com/shadow81627/pocketpasta/issues/1234)) ([e5fde48](https://github.com/shadow81627/pocketpasta/commit/e5fde48374cef0d9657c80d6b23a740c523593a7))
+
+## [0.37.3](https://github.com/shadow81627/pocketpasta/compare/v0.37.2...v0.37.3) (2020-06-24)
+
+### Bug Fixes
+
+- **deps:** update dependency nuxt to v2.13.1 ([5eeb455](https://github.com/shadow81627/pocketpasta/commit/5eeb4557c5ddfd37d72c2267ee478da2e6dac31d))
+
+## [0.37.2](https://github.com/shadow81627/pocketpasta/compare/v0.37.1...v0.37.2) (2020-06-24)
+
+### Bug Fixes
+
+- **footer:** position static ([#1229](https://github.com/shadow81627/pocketpasta/issues/1229)) ([4e7c925](https://github.com/shadow81627/pocketpasta/commit/4e7c925b292c5f2b5b769f7923cf64cb18e1c0eb))
+
+## [0.37.1](https://github.com/shadow81627/pocketpasta/compare/v0.37.0...v0.37.1) (2020-06-22)
+
+### Bug Fixes
+
+- **deps:** update dependency firebase to v7.15.4 ([76da49d](https://github.com/shadow81627/pocketpasta/commit/76da49d703e69324b6f8b933bea5dd829cee036d))
+
+## [0.37.0](https://github.com/shadow81627/pocketpasta/compare/v0.36.1...v0.37.0) (2020-06-22)
+
+### Features
+
+- **manifest:** add shoppinglist shortcut ([#1215](https://github.com/shadow81627/pocketpasta/issues/1215)) ([aafa5b7](https://github.com/shadow81627/pocketpasta/commit/aafa5b74b5ee90eb8f8f7c73706436017864b656))
+
+## [0.36.1](https://github.com/shadow81627/pocketpasta/compare/v0.36.0...v0.36.1) (2020-06-21)
+
+### Bug Fixes
+
+- **deps:** update dependency koa to v2.13.0 ([e7e808a](https://github.com/shadow81627/pocketpasta/commit/e7e808aeb3d37128499e715139c66be4fc550831))
+
+## [0.36.0](https://github.com/shadow81627/pocketpasta/compare/v0.35.0...v0.36.0) (2020-06-21)
+
+### Features
+
+- **nuxt:** export ([#1210](https://github.com/shadow81627/pocketpasta/issues/1210)) ([db5e642](https://github.com/shadow81627/pocketpasta/commit/db5e642782fc0d8ffb1fed5bf9355774f099bc4d))
+
+## [0.35.0](https://github.com/shadow81627/pocketpasta/compare/v0.34.9...v0.35.0) (2020-06-20)
+
+### Features
+
+- **content:** add web scraping script ([#1190](https://github.com/shadow81627/pocketpasta/issues/1190)) ([0339501](https://github.com/shadow81627/pocketpasta/commit/0339501ab9b032e0ac30c762fad1cdf66fc2486e))
+
+## [0.34.9](https://github.com/shadow81627/pocketpasta/compare/v0.34.8...v0.34.9) (2020-06-20)
+
+### Bug Fixes
+
+- **deps:** update dependency firebase to v7.15.3 ([f5d0728](https://github.com/shadow81627/pocketpasta/commit/f5d0728f2410f0c202c8de531154e05e3a49a2d7))
+
+## [0.34.8](https://github.com/shadow81627/pocketpasta/compare/v0.34.7...v0.34.8) (2020-06-19)
+
+### Bug Fixes
+
+- **deps:** update dependency firebase to v7.15.2 ([fc32e78](https://github.com/shadow81627/pocketpasta/commit/fc32e780a727561cf134f7d4b3a930418f8894b2))
+
+## [0.34.7](https://github.com/shadow81627/pocketpasta/compare/v0.34.6...v0.34.7) (2020-06-15)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxtjs/sitemap to v2.3.2 ([fa8a946](https://github.com/shadow81627/pocketpasta/commit/fa8a94613050cbb2d607c5095d897bd8aeabc912))
+
+## [0.34.6](https://github.com/shadow81627/pocketpasta/compare/v0.34.5...v0.34.6) (2020-06-13)
+
+### Bug Fixes
+
+- **deps:** update dependency koa to v2.12.1 ([8a9ac12](https://github.com/shadow81627/pocketpasta/commit/8a9ac1280a717652861e90db9fb6361626dc7039))
+
+## [0.34.5](https://github.com/shadow81627/pocketpasta/compare/v0.34.4...v0.34.5) (2020-06-12)
+
+### Bug Fixes
+
+- **deps:** update dependency firebase to v7.15.1 ([fff1651](https://github.com/shadow81627/pocketpasta/commit/fff165144e0fe5e1d1eefa80d6a0f7ba5b55bad7))
+
+## [0.34.4](https://github.com/shadow81627/pocketpasta/compare/v0.34.3...v0.34.4) (2020-06-10)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxt/content to v1.3.2 ([b7a7318](https://github.com/shadow81627/pocketpasta/commit/b7a7318877347d69a6009b092190f6d9eda2a0ec))
+
+## [0.34.3](https://github.com/shadow81627/pocketpasta/compare/v0.34.2...v0.34.3) (2020-06-09)
+
+### Bug Fixes
+
+- **deps:** pin dependency luxon to 1.24.1 ([#1176](https://github.com/shadow81627/pocketpasta/issues/1176)) ([bd61a23](https://github.com/shadow81627/pocketpasta/commit/bd61a23ac0c6fd5e855ba690a9cd953748323727))
+
+## [0.34.2](https://github.com/shadow81627/pocketpasta/compare/v0.34.1...v0.34.2) (2020-06-08)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxtjs/sentry to v4.1.2 ([2ff2ee1](https://github.com/shadow81627/pocketpasta/commit/2ff2ee144a2207fd5ef3aaf161936b80cbf2d6a3))
+
+## [0.34.1](https://github.com/shadow81627/pocketpasta/compare/v0.34.0...v0.34.1) (2020-06-08)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxtjs/firebase to v6 ([3aa6b52](https://github.com/shadow81627/pocketpasta/commit/3aa6b52714b3252ab9084c4dc79064ab4f4cbbb1))
+
+## [0.34.0](https://github.com/shadow81627/pocketpasta/compare/v0.33.12...v0.34.0) (2020-06-06)
+
+### Features
+
+- add tasks page ([#1107](https://github.com/shadow81627/pocketpasta/issues/1107)) ([ed982d8](https://github.com/shadow81627/pocketpasta/commit/ed982d8edfd195bc0f84419e102ec3ac10f8e002))
+
+## [0.33.12](https://github.com/shadow81627/pocketpasta/compare/v0.33.11...v0.33.12) (2020-06-06)
+
+### Bug Fixes
+
+- **recipes:** use string id ([#1175](https://github.com/shadow81627/pocketpasta/issues/1175)) ([854d0d7](https://github.com/shadow81627/pocketpasta/commit/854d0d7ac12a9ad96a6040cff7a63029e23e1aa6))
+
+## [0.33.11](https://github.com/shadow81627/pocketpasta/compare/v0.33.10...v0.33.11) (2020-06-05)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxtjs/axios to v5.11.0 ([647b86c](https://github.com/shadow81627/pocketpasta/commit/647b86c84f8cbfc38859f416fc8c10c49dadd236))
+
+## [0.33.10](https://github.com/shadow81627/pocketpasta/compare/v0.33.9...v0.33.10) (2020-06-05)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxt/content to v1.3.1 ([625ac58](https://github.com/shadow81627/pocketpasta/commit/625ac58014fc0a1900d530c5914870ce55c48d50))
+
+## [0.33.9](https://github.com/shadow81627/pocketpasta/compare/v0.33.8...v0.33.9) (2020-06-05)
+
+### Bug Fixes
+
+- **nutrition-facts:** fiber content hidden when empty ([#1168](https://github.com/shadow81627/pocketpasta/issues/1168)) ([44cc539](https://github.com/shadow81627/pocketpasta/commit/44cc539718cb35498ffd6088fc1dc3cebab9ec42))
+
+## [0.33.8](https://github.com/shadow81627/pocketpasta/compare/v0.33.7...v0.33.8) (2020-06-05)
+
+### Performance Improvements
+
+- **product:** srcset ([#1167](https://github.com/shadow81627/pocketpasta/issues/1167)) ([f8bd5ca](https://github.com/shadow81627/pocketpasta/commit/f8bd5ca72a69f2a640ede9d9de21cc72364d8805))
+
+## [0.33.7](https://github.com/shadow81627/pocketpasta/compare/v0.33.6...v0.33.7) (2020-06-05)
+
+### Performance Improvements
+
+- **recipe:** add srcset ([#1165](https://github.com/shadow81627/pocketpasta/issues/1165)) ([4e169b1](https://github.com/shadow81627/pocketpasta/commit/4e169b1a433609faf5a563ab8d2769fa1109eb58))
+
+## [0.33.6](https://github.com/shadow81627/pocketpasta/compare/v0.33.5...v0.33.6) (2020-06-05)
+
+### Bug Fixes
+
+- **deps:** update dependency firebase to v7.15.0 ([667649f](https://github.com/shadow81627/pocketpasta/commit/667649f0d343e9f324745414075b1e49db199c66))
+
+## [0.33.5](https://github.com/shadow81627/pocketpasta/compare/v0.33.4...v0.33.5) (2020-06-04)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxtjs/sitemap to v2.3.1 ([7cee6fc](https://github.com/shadow81627/pocketpasta/commit/7cee6fcb003b3d437f7abafd6538bf66d4313df3))
+
+## [0.33.4](https://github.com/shadow81627/pocketpasta/compare/v0.33.3...v0.33.4) (2020-06-03)
+
+### Bug Fixes
+
+- **deps:** update dependency firebaseui to v4.5.1 ([a01fa79](https://github.com/shadow81627/pocketpasta/commit/a01fa79fa693a3ef1b6be113abd37a994ef14447))
+
+## [0.33.3](https://github.com/shadow81627/pocketpasta/compare/v0.33.2...v0.33.3) (2020-06-03)
+
+### Bug Fixes
+
+- **recipes:** total records count ([#1154](https://github.com/shadow81627/pocketpasta/issues/1154)) ([c7dab55](https://github.com/shadow81627/pocketpasta/commit/c7dab554770bee537ba77a076d6473e419c7ffdd))
+
+## [0.33.2](https://github.com/shadow81627/pocketpasta/compare/v0.33.1...v0.33.2) (2020-06-02)
+
+### Bug Fixes
+
+- **deps:** update dependency nuxt-i18n to v6.12.2 ([bea0f81](https://github.com/shadow81627/pocketpasta/commit/bea0f81f55014017d886c55ad45e1308cac40fc4))
+
+## [0.33.1](https://github.com/shadow81627/pocketpasta/compare/v0.33.0...v0.33.1) (2020-06-02)
+
+### Bug Fixes
+
+- **list-card:** add blank-src for image ([#1146](https://github.com/shadow81627/pocketpasta/issues/1146)) ([7c91f31](https://github.com/shadow81627/pocketpasta/commit/7c91f311297ca8724ccd2e1c96e531002b3b44cc))
+
+## [0.33.0](https://github.com/shadow81627/pocketpasta/compare/v0.32.4...v0.33.0) (2020-06-01)
+
+### Features
+
+- **nav:** add initial load spinner ([#1147](https://github.com/shadow81627/pocketpasta/issues/1147)) ([1c10a57](https://github.com/shadow81627/pocketpasta/commit/1c10a574f83c8551cd7d2101d9e50cc7cc74260a))
+
+## [0.32.4](https://github.com/shadow81627/pocketpasta/compare/v0.32.3...v0.32.4) (2020-05-30)
+
+### Bug Fixes
+
+- **recipes:** no page query string for first page ([#1140](https://github.com/shadow81627/pocketpasta/issues/1140)) ([d1ee733](https://github.com/shadow81627/pocketpasta/commit/d1ee733fa044bff715dac2552f93d2b6b2349ee7))
+
+## [0.32.3](https://github.com/shadow81627/pocketpasta/compare/v0.32.2...v0.32.3) (2020-05-29)
+
+### Bug Fixes
+
+- **deps:** update dependency firebase to v7.14.6 ([12d79c2](https://github.com/shadow81627/pocketpasta/commit/12d79c2f78ec9ea6f709553371a003b440cd74f6))
+
+## [0.32.2](https://github.com/shadow81627/pocketpasta/compare/v0.32.1...v0.32.2) (2020-05-29)
+
+### Bug Fixes
+
+- **deps:** update dependency nuxt-i18n to v6.12.1 ([e9598b6](https://github.com/shadow81627/pocketpasta/commit/e9598b6b25d4671eb685fe9f7794a426010ce28f))
+
+## [0.32.1](https://github.com/shadow81627/pocketpasta/compare/v0.32.0...v0.32.1) (2020-05-28)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxt/content to v1.2.0 ([978974f](https://github.com/shadow81627/pocketpasta/commit/978974f4bc858a4ffedbfbe3ce25e8fd3b364859))
+
+## [0.32.0](https://github.com/shadow81627/pocketpasta/compare/v0.31.12...v0.32.0) (2020-05-28)
+
+### Features
+
+- **recipe:** add pagination ([#1124](https://github.com/shadow81627/pocketpasta/issues/1124)) ([6877baa](https://github.com/shadow81627/pocketpasta/commit/6877baadb97e0158d163cf49f2f038ea4a832fd4))
+
+## [0.31.12](https://github.com/shadow81627/pocketpasta/compare/v0.31.11...v0.31.12) (2020-05-25)
+
+### Bug Fixes
+
+- **deps:** update dependency nuxt-i18n to v6.12.0 ([e64f0dd](https://github.com/shadow81627/pocketpasta/commit/e64f0dd4c559c7fe64074ee6bb26363a875a8a5c))
+
+## [0.31.11](https://github.com/shadow81627/pocketpasta/compare/v0.31.10...v0.31.11) (2020-05-24)
+
+### Bug Fixes
+
+- **video:** add missing plyr css ([#1119](https://github.com/shadow81627/pocketpasta/issues/1119)) ([3da5145](https://github.com/shadow81627/pocketpasta/commit/3da514592bb6bc452f6b2eb55be066cab3fe4157))
+
+## [0.31.10](https://github.com/shadow81627/pocketpasta/compare/v0.31.9...v0.31.10) (2020-05-24)
+
+### Performance Improvements
+
+- **fonts:** remove custom font ([#1116](https://github.com/shadow81627/pocketpasta/issues/1116)) ([bc2f137](https://github.com/shadow81627/pocketpasta/commit/bc2f137519dc68e7e45eae8bf792e84e76e3a4b5))
+
+## [0.31.9](https://github.com/shadow81627/pocketpasta/compare/v0.31.8...v0.31.9) (2020-05-23)
+
+### Bug Fixes
+
+- **deps:** update dependency bootstrap-vue to v2.15.0 ([#1113](https://github.com/shadow81627/pocketpasta/issues/1113)) ([609d94d](https://github.com/shadow81627/pocketpasta/commit/609d94de4f8aab136827ee38026882540a0cda73))
+
+## [0.31.8](https://github.com/shadow81627/pocketpasta/compare/v0.31.7...v0.31.8) (2020-05-23)
+
+### Performance Improvements
+
+- **meta:** move i18n seo into layout ([#1115](https://github.com/shadow81627/pocketpasta/issues/1115)) ([705bded](https://github.com/shadow81627/pocketpasta/commit/705bded2ae46493de2ab78f0b0240fede23fb70f))
+
+## [0.31.7](https://github.com/shadow81627/pocketpasta/compare/v0.31.6...v0.31.7) (2020-05-23)
+
+### Bug Fixes
+
+- **og:url:** add ogHost ([efdc2e9](https://github.com/shadow81627/pocketpasta/commit/efdc2e9e3fdc415e45ee523f76da66849cc3298b))
+
+## [0.31.6](https://github.com/shadow81627/pocketpasta/compare/v0.31.5...v0.31.6) (2020-05-23)
+
+### Bug Fixes
+
+- **viewport:** maximum-scale=5 ([792457a](https://github.com/shadow81627/pocketpasta/commit/792457ae688d80aa37dfbb3d8a6dbeb76bf94629))
+
+## [0.31.5](https://github.com/shadow81627/pocketpasta/compare/v0.31.4...v0.31.5) (2020-05-23)
+
+### Bug Fixes
+
+- **lang:** remove lang from pwa meta ([ea31cbe](https://github.com/shadow81627/pocketpasta/commit/ea31cbecde19794e22e649f26da8c7656979d875))
+- **links:** 14px AAA contrasts ratio ([2ca481b](https://github.com/shadow81627/pocketpasta/commit/2ca481b76c1eef8ad5892ebdc5137d511c508ba5))
+
+## [0.31.4](https://github.com/shadow81627/pocketpasta/compare/v0.31.3...v0.31.4) (2020-05-23)
+
+### Bug Fixes
+
+- **viewport:** use pwa native ui ([b5fe39e](https://github.com/shadow81627/pocketpasta/commit/b5fe39e56a8adf51a63f7d5115fdee85a64cfa33))
+
+## [0.31.3](https://github.com/shadow81627/pocketpasta/compare/v0.31.2...v0.31.3) (2020-05-22)
+
+### Bug Fixes
+
+- **footer:** add cols auto for made with text ([#1111](https://github.com/shadow81627/pocketpasta/issues/1111)) ([20d198e](https://github.com/shadow81627/pocketpasta/commit/20d198ed9bce059b18d20506ea4dc9e2b129cf95))
+
+## [0.31.2](https://github.com/shadow81627/pocketpasta/compare/v0.31.1...v0.31.2) (2020-05-21)
+
+### Bug Fixes
+
+- **deps:** update dependency firebase to v7.14.5 ([9d93b2c](https://github.com/shadow81627/pocketpasta/commit/9d93b2c886fe2770a81e8d7c1a2303ed89c51125))
+
+## [0.31.1](https://github.com/shadow81627/pocketpasta/compare/v0.31.0...v0.31.1) (2020-05-20)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxtjs/google-analytics to v2.3.0 ([e625da0](https://github.com/shadow81627/pocketpasta/commit/e625da01e5c68f679375c5686f9e50adda6e5213))
+
+## [0.31.0](https://github.com/shadow81627/pocketpasta/compare/v0.30.1...v0.31.0) (2020-05-20)
+
+### Features
+
+- **recipe:** two col ingredients and instructions ([613bde2](https://github.com/shadow81627/pocketpasta/commit/613bde243b158482db54eedd699477d0dc126ffd))
+
+## [0.30.1](https://github.com/shadow81627/pocketpasta/compare/v0.30.0...v0.30.1) (2020-05-19)
+
+### Bug Fixes
+
+- **deps:** update dependency koa to v2.12.0 ([c51f153](https://github.com/shadow81627/pocketpasta/commit/c51f1535f5099df684a853ed7dc8926a95505ddd))
+
+## [0.30.0](https://github.com/shadow81627/pocketpasta/compare/v0.29.9...v0.30.0) (2020-05-19)
+
+### Features
+
+- **recipe:** collapsable sections ([#1099](https://github.com/shadow81627/pocketpasta/issues/1099)) ([68846f0](https://github.com/shadow81627/pocketpasta/commit/68846f0e3d48020ea18363846dd4d06eb9869197))
+
+## [0.29.9](https://github.com/shadow81627/pocketpasta/compare/v0.29.8...v0.29.9) (2020-05-17)
+
+### Bug Fixes
+
+- **video:** add 16:9 padding ([#1096](https://github.com/shadow81627/pocketpasta/issues/1096)) ([d40c4a8](https://github.com/shadow81627/pocketpasta/commit/d40c4a8f63a676b1fcaddc6760a9afb5f5c91d4b))
+
+## [0.29.8](https://github.com/shadow81627/pocketpasta/compare/v0.29.7...v0.29.8) (2020-05-17)
+
+### Bug Fixes
+
+- **about:** remove name section ([#1095](https://github.com/shadow81627/pocketpasta/issues/1095)) ([4045d83](https://github.com/shadow81627/pocketpasta/commit/4045d832fe8912fe9ad17b5415ac7de66d1f177d))
+
+## [0.29.7](https://github.com/shadow81627/pocketpasta/compare/v0.29.6...v0.29.7) (2020-05-15)
+
+### Bug Fixes
+
+- **deps:** update dependency firebase to v7.14.4 ([bc8d691](https://github.com/shadow81627/pocketpasta/commit/bc8d691339bf6cfa0cbbaaf7fd48b628d7414c05))
+
+## [0.29.6](https://github.com/shadow81627/pocketpasta/compare/v0.29.5...v0.29.6) (2020-05-14)
+
+### Bug Fixes
+
+- **theme:** use @nuxtjs/color-mode ([#1088](https://github.com/shadow81627/pocketpasta/issues/1088)) ([e6f6f80](https://github.com/shadow81627/pocketpasta/commit/e6f6f8092170eadd31bff35e614463bb42e10514))
+
+## [0.29.5](https://github.com/shadow81627/pocketpasta/compare/v0.29.4...v0.29.5) (2020-05-12)
+
+### Bug Fixes
+
+- **deps:** update dependency bootstrap-vue to v2.14.0 ([8605a87](https://github.com/shadow81627/pocketpasta/commit/8605a870d9c2444f924074686ca23da2b29783e9))
+
+## [0.29.4](https://github.com/shadow81627/pocketpasta/compare/v0.29.3...v0.29.4) (2020-05-11)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxtjs/sitemap to v2.3.0 ([1ad1256](https://github.com/shadow81627/pocketpasta/commit/1ad125677ce920d4adcc75ba38e900b52ad4ab85))
+
+## [0.29.3](https://github.com/shadow81627/pocketpasta/compare/v0.29.2...v0.29.3) (2020-05-10)
+
+### Bug Fixes
+
+- **deps:** update dependency nuxt-i18n to v6.11.1 ([033d092](https://github.com/shadow81627/pocketpasta/commit/033d0922b2589c0f909541038ec3d46ec3588e79))
+
+## [0.29.2](https://github.com/shadow81627/pocketpasta/compare/v0.29.1...v0.29.2) (2020-05-10)
+
+### Bug Fixes
+
+- **auth:** add get authUI instance ([#1075](https://github.com/shadow81627/pocketpasta/issues/1075)) ([ea6bb36](https://github.com/shadow81627/pocketpasta/commit/ea6bb36e5c52bfdbd2f4e81ecb440708643f669e))
+
+## [0.29.1](https://github.com/shadow81627/pocketpasta/compare/v0.29.0...v0.29.1) (2020-05-10)
+
+### Bug Fixes
+
+- **shopping-list:** increase list item size to 24 pixels ([#1074](https://github.com/shadow81627/pocketpasta/issues/1074)) ([50f0ffa](https://github.com/shadow81627/pocketpasta/commit/50f0ffae515b3188230821063b9471726839585f))
+
+## [0.29.0](https://github.com/shadow81627/pocketpasta/compare/v0.28.103...v0.29.0) (2020-05-09)
+
+### Features
+
+- **editor:** add save button loading spinner ([09f4cc7](https://github.com/shadow81627/pocketpasta/commit/09f4cc776732b607d16fc0a78e4f732b757b5962))
+
+## [0.28.103](https://github.com/shadow81627/pocketpasta/compare/v0.28.102...v0.28.103) (2020-05-08)
+
+### Bug Fixes
+
+- **deps:** update dependency quicklink to v2 ([cf4cd32](https://github.com/shadow81627/pocketpasta/commit/cf4cd32a01643b6e1878f7415a3a8964a1cf2f32))
+
+## [0.28.102](https://github.com/shadow81627/pocketpasta/compare/v0.28.101...v0.28.102) (2020-05-08)
+
+### Bug Fixes
+
+- **deps:** update dependency firebase to v7.14.3 ([6528fe8](https://github.com/shadow81627/pocketpasta/commit/6528fe89d2b288d1e77e9762bbb179ccff02bd5e))
+
+## [0.28.101](https://github.com/shadow81627/pocketpasta/compare/v0.28.100...v0.28.101) (2020-05-07)
+
+### Bug Fixes
+
+- **deps:** update dependency bootstrap-vue to v2.13.1 ([#969](https://github.com/shadow81627/pocketpasta/issues/969)) ([f137c03](https://github.com/shadow81627/pocketpasta/commit/f137c039d16afaed0bf7575d7676cf5a53a8e232))
+
+## [0.28.100](https://github.com/shadow81627/pocketpasta/compare/v0.28.99...v0.28.100) (2020-05-04)
+
+### Bug Fixes
+
+- **deps:** update dependency plyr to v3.6.2 ([0136b44](https://github.com/shadow81627/pocketpasta/commit/0136b44084dcd9965c067c67458c676a0bebbe24))
+
+## [0.28.99](https://github.com/shadow81627/pocketpasta/compare/v0.28.98...v0.28.99) (2020-05-04)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxtjs/sentry to v4.0.3 ([d876c0d](https://github.com/shadow81627/pocketpasta/commit/d876c0d3382f4696d1bdf9c5469ace322b97cec9))
+
+## [0.28.98](https://github.com/shadow81627/pocketpasta/compare/v0.28.97...v0.28.98) (2020-05-01)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxtjs/firebase to v5.2.0 ([6a43c7b](https://github.com/shadow81627/pocketpasta/commit/6a43c7b43d3ce781644e52c78491b12b4738732a))
+
+## [0.28.97](https://github.com/shadow81627/pocketpasta/compare/v0.28.96...v0.28.97) (2020-04-30)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxtjs/axios to v5.10.3 ([e4efa86](https://github.com/shadow81627/pocketpasta/commit/e4efa862f7e4a12f7daa9324de90aecf34a1e66c))
+
+## [0.28.96](https://github.com/shadow81627/pocketpasta/compare/v0.28.95...v0.28.96) (2020-04-30)
+
+### Bug Fixes
+
+- **deps:** update dependency nuxt-i18n to v6.11.0 ([e603e73](https://github.com/shadow81627/pocketpasta/commit/e603e73e6da654937148e7f36cb6544e006bee94))
+
+## [0.28.95](https://github.com/shadow81627/pocketpasta/compare/v0.28.94...v0.28.95) (2020-04-27)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxtjs/axios to v5.10.2 ([33e99f4](https://github.com/shadow81627/pocketpasta/commit/33e99f4cd8c370960eb4890ba7327702b1f42962))
+
+## [0.28.94](https://github.com/shadow81627/pocketpasta/compare/v0.28.93...v0.28.94) (2020-04-24)
+
+### Bug Fixes
+
+- **deps:** update dependency firebase to v7.14.2 ([5e62408](https://github.com/shadow81627/pocketpasta/commit/5e62408b5ac0fffaa0aa59b815d62e78ea2a663a))
+
+## [0.28.93](https://github.com/shadow81627/pocketpasta/compare/v0.28.92...v0.28.93) (2020-04-24)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxtjs/sitemap to v2.2.1 ([923976e](https://github.com/shadow81627/pocketpasta/commit/923976e7c59ca1606e2e3f67f02e9139c15a5dc6))
+
+## [0.28.92](https://github.com/shadow81627/pocketpasta/compare/v0.28.91...v0.28.92) (2020-04-23)
+
+### Bug Fixes
+
+- **deps:** update dependency nuxt-i18n to v6.10.1 ([eadc8bb](https://github.com/shadow81627/pocketpasta/commit/eadc8bbf90a1eeb251eaed99867957eabffb92db))
+
+## [0.28.91](https://github.com/shadow81627/pocketpasta/compare/v0.28.90...v0.28.91) (2020-04-23)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxtjs/sentry to v4.0.2 ([655b87f](https://github.com/shadow81627/pocketpasta/commit/655b87f874f70509842d8521d7bc9e26761f62d5))
+
+## [0.28.90](https://github.com/shadow81627/pocketpasta/compare/v0.28.89...v0.28.90) (2020-04-23)
+
+### Bug Fixes
+
+- **deps:** update dependency nuxt-i18n to v6.9.3 ([47cd81e](https://github.com/shadow81627/pocketpasta/commit/47cd81e4f94eb6506d56ed849f4957752f8d50c7))
+
+## [0.28.89](https://github.com/shadow81627/pocketpasta/compare/v0.28.88...v0.28.89) (2020-04-22)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxtjs/axios to v5.10.1 ([2089ba3](https://github.com/shadow81627/pocketpasta/commit/2089ba3f8e7bfcc259417c6c45107a4d7794b851))
+
+## [0.28.88](https://github.com/shadow81627/pocketpasta/compare/v0.28.87...v0.28.88) (2020-04-22)
+
+### Bug Fixes
+
+- **deps:** update dependency nuxt-i18n to v6.9.2 ([0f659f9](https://github.com/shadow81627/pocketpasta/commit/0f659f921c1a8279c07978df0cd4658b0817aa8d))
+
+## [0.28.87](https://github.com/shadow81627/pocketpasta/compare/v0.28.86...v0.28.87) (2020-04-21)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxtjs/axios to v5.10.0 ([cdf2fd4](https://github.com/shadow81627/pocketpasta/commit/cdf2fd49d53ad4706e64652af77cd23d5310a252))
+
+## [0.28.86](https://github.com/shadow81627/pocketpasta/compare/v0.28.85...v0.28.86) (2020-04-16)
+
+### Bug Fixes
+
+- **deps:** update dependency firebase to v7.14.1 ([3011aa2](https://github.com/shadow81627/pocketpasta/commit/3011aa22cced0420e3b516b5ba17a7d39e307875))
+
+## [0.28.85](https://github.com/shadow81627/pocketpasta/compare/v0.28.84...v0.28.85) (2020-04-16)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxtjs/auth to v4.9.1 ([2c0e04d](https://github.com/shadow81627/pocketpasta/commit/2c0e04d403215ef8e585350e7ed1b4168c11dd4a))
+
+## [0.28.84](https://github.com/shadow81627/pocketpasta/compare/v0.28.83...v0.28.84) (2020-04-15)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxtjs/sentry to v4.0.1 ([c0b585d](https://github.com/shadow81627/pocketpasta/commit/c0b585ddbb08e615d658adb72112c5019d111a64))
+
+## [0.28.83](https://github.com/shadow81627/pocketpasta/compare/v0.28.82...v0.28.83) (2020-04-14)
+
+### Bug Fixes
+
+- **deps:** update dependency nuxt-i18n to v6.9.1 ([dcd012b](https://github.com/shadow81627/pocketpasta/commit/dcd012ba03f9edeef19189b3c48efe605d13b3bc))
+
+## [0.28.82](https://github.com/shadow81627/pocketpasta/compare/v0.28.81...v0.28.82) (2020-04-14)
+
+### Bug Fixes
+
+- **deps:** update dependency nuxt-i18n to v6.9.0 ([35e76dd](https://github.com/shadow81627/pocketpasta/commit/35e76dd17fc9c235373eb7185c2acdb75886df9c))
+
+## [0.28.81](https://github.com/shadow81627/pocketpasta/compare/v0.28.80...v0.28.81) (2020-04-09)
+
+### Bug Fixes
+
+- **deps:** update dependency firebase to v7.14.0 ([0e022c5](https://github.com/shadow81627/pocketpasta/commit/0e022c5d7592cdab541691e4338264fff93cd27f))
+
+## [0.28.80](https://github.com/shadow81627/pocketpasta/compare/v0.28.79...v0.28.80) (2020-04-06)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxtjs/firebase to v5.0.7 ([172e436](https://github.com/shadow81627/pocketpasta/commit/172e436fc0fc4c6668e6d89de638df567de563a4))
+
+## [0.28.79](https://github.com/shadow81627/pocketpasta/compare/v0.28.78...v0.28.79) (2020-04-05)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxtjs/sitemap to v2.2.0 ([c69994c](https://github.com/shadow81627/pocketpasta/commit/c69994c3d9d01616d0c1ecd8548e424babd4ce51))
+
+## [0.28.78](https://github.com/shadow81627/pocketpasta/compare/v0.28.77...v0.28.78) (2020-04-04)
+
+### Performance Improvements
+
+- **recipe:** cloudinary fetch image ([#973](https://github.com/shadow81627/pocketpasta/issues/973)) ([bf08059](https://github.com/shadow81627/pocketpasta/commit/bf08059cc834ed946cc1862ac125dbf7c3f0027a))
+
+## [0.28.77](https://github.com/shadow81627/pocketpasta/compare/v0.28.76...v0.28.77) (2020-04-03)
+
+### Bug Fixes
+
+- **deps:** update dependency nuxt-i18n to v6.8.1 ([b6179d2](https://github.com/shadow81627/pocketpasta/commit/b6179d2fa387f3edd640129b2d8ca98a216bc29f))
+
+## [0.28.76](https://github.com/shadow81627/pocketpasta/compare/v0.28.75...v0.28.76) (2020-04-02)
+
+### Bug Fixes
+
+- **deps:** update dependency firebase to v7.13.2 ([d005a25](https://github.com/shadow81627/pocketpasta/commit/d005a254dfa00717bcd54beca6d6a9dfc7de144f))
+
+## [0.28.75](https://github.com/shadow81627/pocketpasta/compare/v0.28.74...v0.28.75) (2020-04-02)
+
+### Bug Fixes
+
+- **deps:** update dependency nuxt-i18n to v6.8.0 ([44a8c6e](https://github.com/shadow81627/pocketpasta/commit/44a8c6e8320f3ffb49d70f2a482dc86442920c78))
+
+## [0.28.74](https://github.com/shadow81627/pocketpasta/compare/v0.28.73...v0.28.74) (2020-04-01)
+
+### Performance Improvements
+
+- **card-image:** cloudinary fetch for external images ([#968](https://github.com/shadow81627/pocketpasta/issues/968)) ([1a53d83](https://github.com/shadow81627/pocketpasta/commit/1a53d8380af0683f1777c35c5026067e255cd425))
+
+## [0.28.73](https://github.com/shadow81627/pocketpasta/compare/v0.28.72...v0.28.73) (2020-04-01)
+
+### Bug Fixes
+
+- **list-card:** handle image array ([#961](https://github.com/shadow81627/pocketpasta/issues/961)) ([2ad67f0](https://github.com/shadow81627/pocketpasta/commit/2ad67f0194d8fe4efb31f63a7375f1a9c334db7c))
+
+## [0.28.72](https://github.com/shadow81627/pocketpasta/compare/v0.28.71...v0.28.72) (2020-03-31)
+
+### Bug Fixes
+
+- **deps:** update dependency nuxt to v2.12.2 ([d19096d](https://github.com/shadow81627/pocketpasta/commit/d19096dd262498d977b96269d6ffaa2518362a74))
+
+## [0.28.71](https://github.com/shadow81627/pocketpasta/compare/v0.28.70...v0.28.71) (2020-03-31)
+
+### Bug Fixes
+
+- **deps:** update dependency nuxt-i18n to v6.7.2 ([c8f8985](https://github.com/shadow81627/pocketpasta/commit/c8f8985abd0c6ace1f266a781f91e0b971bd89c9))
+
+## [0.28.70](https://github.com/shadow81627/pocketpasta/compare/v0.28.69...v0.28.70) (2020-03-30)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxtjs/axios to v5.9.7 ([8798f00](https://github.com/shadow81627/pocketpasta/commit/8798f00dedf3e423f670744a306dcc0e3ff29a4b))
+
+## [0.28.69](https://github.com/shadow81627/pocketpasta/compare/v0.28.68...v0.28.69) (2020-03-30)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxtjs/firebase to v5.0.6 ([f83fe01](https://github.com/shadow81627/pocketpasta/commit/f83fe011ecd0e6b854c63ab9592e17a179f24eaa))
+
+## [0.28.68](https://github.com/shadow81627/pocketpasta/compare/v0.28.67...v0.28.68) (2020-03-30)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxtjs/firebase to v5.0.5 ([c1dc956](https://github.com/shadow81627/pocketpasta/commit/c1dc956a31ea1e7ce071a8b123bb743417bda30e))
+
+## [0.28.67](https://github.com/shadow81627/pocketpasta/compare/v0.28.66...v0.28.67) (2020-03-30)
+
+### Bug Fixes
+
+- **deps:** update dependency nuxt-i18n to v6.7.1 ([b2bce39](https://github.com/shadow81627/pocketpasta/commit/b2bce39e618cafb427c4c755aad72d732c56422d))
+
 ## [0.28.66](https://github.com/shadow81627/pocketpasta/compare/v0.28.65...v0.28.66) (2020-03-28)
 
 ### Bug Fixes

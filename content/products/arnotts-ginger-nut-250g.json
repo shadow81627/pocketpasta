@@ -1,0 +1,59 @@
+{
+  "@type": "Product",
+  "additionalProperty": [
+    {
+      "@type": "NutritionInformation",
+      "calories": "1780kJ",
+      "carbohydrateContent": "79.0g",
+      "fatContent": "9.4g",
+      "name": "nutrition",
+      "proteinContent": "4.2g",
+      "saturatedFatContent": "4.7g",
+      "servingSize": "100 g",
+      "sodiumContent": "367mg",
+      "sugarContent": "42.7g"
+    }
+  ],
+  "brand": {
+    "@context": "http://schema.org",
+    "@type": "Organization",
+    "name": "arnott's"
+  },
+  "description": "Arnott's The Original Ginger Nut contains no artificial flavours or preservatives.  Baking for 150 Years.A delicious sweet biscuit with a blissful ginger aroma and taste. Oven baked until golden and firm, it's the perfect dunking partner for your cuppa!",
+  "gtin13": "9310072023038",
+  "image": "https://cdn0.woolworths.media/content/wowproductimages/large/384568.jpg",
+  "name": "Arnott's Ginger Nut  250g",
+  "offers": {
+    "@type": "AggregateOffer",
+    "highPrice": 1.8,
+    "lowPrice": 1.8,
+    "offerCount": 1,
+    "offers": [
+      {
+        "@context": "http://schema.org",
+        "@type": "Offer",
+        "availability": "http://schema.org/InStock",
+        "availabilityStarts": "2020-06-27T00:53:22.270Z",
+        "itemCondition": "http://schema.org/NewCondition",
+        "offeredBy": "Woolworths",
+        "potentialAction": {
+          "@context": "http://schema.org",
+          "@type": "BuyAction"
+        },
+        "price": 1.8,
+        "priceCurrency": "AUD",
+        "seller": {
+          "@type": "Organization",
+          "name": "Woolworths"
+        },
+        "url": "https://www.woolworths.com.au/shop/productdetails/384568/arnott-s-ginger-nut"
+      }
+    ],
+    "priceCurrency": "AUD"
+  },
+  "review": [],
+  "sameAs": [
+    "https://www.woolworths.com.au/shop/productdetails/384568/arnott-s-ginger-nut"
+  ],
+  "sku": "384568"
+}

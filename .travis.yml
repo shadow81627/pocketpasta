@@ -7,15 +7,6 @@ addons:
 
 # Cache node packages between jobs
 cache: npm
-branches:
-  only:
-    # This is where pull requests from "bors r+" are built.
-    - staging
-    # This is where pull requests from "bors try" are built.
-    - trying
-    # enable building pull requests.
-    - master
-    - production
 jobs:
   include:
     - # require the branch name to be master
@@ -54,6 +45,7 @@ before_script:
 script:
   - npm run lint
   - npm run test
+  - npm run build
   - npm run generate:modern
 
 after_script:

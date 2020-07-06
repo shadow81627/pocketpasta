@@ -1,10 +1,10 @@
 <template>
-  <div class="container">
-    <div class="row">
-      <div class="col">
+  <v-container>
+    <v-row>
+      <v-col>
         <h1>Contact Us</h1>
-      </div>
-    </div>
+      </v-col>
+    </v-row>
     <form
       method="POST"
       action="https://formspree.io/damien.robinson@pocketpasta.com"
@@ -12,37 +12,34 @@
       <div class="hpot d-none" style="display: none;">
         <label>Leave this field empty: <input name="_gotcha" /></label>
       </div>
-      <b-form-group
-        label="Email address:"
-        label-for="email"
-        description="We'll never share your email with anyone else."
-      >
-        <b-form-input
-          id="email"
-          name="email"
-          type="email"
-          required
-          placeholder="Enter email"
-        />
-      </b-form-group>
+      <v-text-field
+        id="email"
+        name="email"
+        type="email"
+        required
+        label="Email address"
+        hint="We'll never share your email with anyone else."
+        persistent-hint
+        solo-inverted
+      />
 
-      <b-form-group label="Your Name:" label-for="name">
-        <b-form-input id="name" name="name" required placeholder="Enter name" />
-      </b-form-group>
+      <v-text-field
+        id="name"
+        name="name"
+        required
+        label="Your Name"
+        solo-inverted
+      />
 
-      <b-form-group label="Comments:" label-for="comments">
-        <b-form-textarea
-          id="comments"
-          name="comments"
-          placeholder="Enter something..."
-          rows="3"
-          max-rows="6"
-        />
-      </b-form-group>
-
-      <b-form-group>
-        <b-button type="submit" variant="primary">Submit</b-button>
-      </b-form-group>
+      <v-textarea
+        id="comments"
+        name="comments"
+        label="Comments"
+        rows="3"
+        max-rows="6"
+        solo-inverted
+      />
+      <v-btn type="submit" color="primary">Submit</v-btn>
     </form>
-  </div>
+  </v-container>
 </template>
