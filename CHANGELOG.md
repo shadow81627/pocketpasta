@@ -1,5 +1,11 @@
 # Releases
 
+## [0.39.3](https://github.com/shadow81627/pocketpasta/compare/v0.39.2...v0.39.3) (2020-07-06)
+
+### Bug Fixes
+
+- **recipe:** truncate reference ([#1304](https://github.com/shadow81627/pocketpasta/issues/1304)) ([b33e2cc](https://github.com/shadow81627/pocketpasta/commit/b33e2cc3559211f47ac081ac5d8900670190e207))
+
 ## [0.39.2](https://github.com/shadow81627/pocketpasta/compare/v0.39.1...v0.39.2) (2020-07-06)
 
 ### Bug Fixes
