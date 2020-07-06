@@ -99,11 +99,13 @@
           >
             <template v-slot:default="props">
               <ol>
-                <v-card v-for="item in props.items" :key="item.text" tile flat>
-                  <v-card-title class="text-break text-wrap"
-                    ><li>{{ item.text }}</li></v-card-title
-                  >
-                </v-card>
+                <li v-for="item in props.items" :key="item.text">
+                  <v-card tile flat>
+                    <v-card-title class="text-break text-wrap">{{
+                      item.text
+                    }}</v-card-title>
+                  </v-card>
+                </li>
               </ol>
             </template>
           </v-data-iterator>
