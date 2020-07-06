@@ -19,6 +19,16 @@ describe('ReadMore', () => {
     expect(wrapper.vm).toBeTruthy();
   });
 
+  test('triggerReadMore', () => {
+    const wrapper = factory();
+    wrapper.vm.triggerReadMore({ preventDefault: () => ({}) }, true);
+    expect(wrapper.vm.isReadMore).toBeTruthy();
+  });
+
+  test('truncate', () => {
+    expect(Component.methods.truncate('text', 2, '....')).toEqual('te....');
+  });
+
   test('renders properly', () => {
     const wrapper = factory();
     expect(wrapper.html()).toMatchSnapshot();

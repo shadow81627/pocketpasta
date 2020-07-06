@@ -10,12 +10,9 @@ exports[`Recipe renders properly 1`] = `
   <section>
     <v-row-stub tag=\\"div\\">
       <v-col-stub tag=\\"div\\">
-        <v-chip-stub activeclass=\\"\\" tag=\\"span\\" active=\\"true\\" closeicon=\\"$delete\\" filtericon=\\"$complete\\" label=\\"true\\" style=\\"background: none;\\">
-          <v-rating-stub color=\\"primary\\" opendelay=\\"0\\" closedelay=\\"0\\" ripple=\\"true\\" backgroundcolor=\\"accent\\" dense=\\"true\\" emptyicon=\\"$ratingEmpty\\" fullicon=\\"$ratingFull\\" halficon=\\"$ratingHalf\\" length=\\"5\\" readonly=\\"true\\" value=\\"4.93\\"></v-rating-stub>
-        </v-chip-stub>
-        <v-chip-stub activeclass=\\"\\" tag=\\"span\\" active=\\"true\\" closeicon=\\"$delete\\" filtericon=\\"$complete\\" label=\\"true\\" style=\\"background: none;\\">
-          <number-text-stub></number-text-stub>
-        </v-chip-stub>
+        <v-chip-stub activeclass=\\"\\" tag=\\"span\\" active=\\"true\\" closeicon=\\"$delete\\" filtericon=\\"$complete\\" label=\\"true\\" style=\\"background: none;\\"><span itemprop=\\"ratingValue\\">4.9</span>
+          <v-rating-stub color=\\"primary\\" opendelay=\\"0\\" closedelay=\\"0\\" ripple=\\"true\\" backgroundcolor=\\"accent\\" dense=\\"true\\" emptyicon=\\"$ratingEmpty\\" fullicon=\\"$ratingFull\\" halficon=\\"$ratingHalf\\" length=\\"5\\" readonly=\\"true\\" value=\\"4.93\\"></v-rating-stub> <span itemprop=\\"ratingCount\\">(1)</span></v-chip-stub>
+        <!---->
         <!---->
         <v-chip-stub activeclass=\\"\\" tag=\\"span\\" active=\\"true\\" closeicon=\\"$delete\\" filtericon=\\"$complete\\" label=\\"true\\" style=\\"background: none; overflow: visible; padding: 0px;\\">
           <share-stub class=\\"d-inline-block\\"></share-stub>
@@ -70,7 +67,7 @@ exports[`Recipe renders properly 1`] = `
 
             return 0;
           });
-        }\\" page=\\"1\\" itemsperpage=\\"10\\" groupby=\\"\\" groupdesc=\\"\\" customgroup=\\"function groupItems(items, groupBy, groupDesc) {
+        }\\" page=\\"1\\" itemsperpage=\\"-1\\" groupby=\\"\\" groupdesc=\\"\\" customgroup=\\"function groupItems(items, groupBy, groupDesc) {
           var key = groupBy[0];
           var groups = [];
           var current = null;

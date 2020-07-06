@@ -44,9 +44,9 @@
     "3 tablespoons milk",
     "1 tablespoon olive oil",
     "1 tablespoon marinara sauce",
-    "1  generous tablespoon shredded mozzarella cheese",
-    "5  mini pepperoni",
-    "1/2 teaspoon dried Italian herbs ((basil or oregano will work))"
+    "1 generous tablespoon shredded mozzarella cheese",
+    "5 mini pepperoni",
+    "1/2 teaspoon dried Italian herbs (basil or oregano will work)"
   ],
   "recipeInstructions": [
     {
@@ -71,7 +71,7 @@
     },
     {
       "@type": "HowToStep",
-      "text": "Enjoy straight away!."
+      "text": "Enjoy straight away."
     }
   ],
   "recipeYield": "1",
