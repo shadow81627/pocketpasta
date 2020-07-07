@@ -3,7 +3,8 @@
 exports[`login renders properly 1`] = `
 "<div class=\\"container\\" label=\\"Job Title\\" value=\\"Full Stack Web Developer\\">
   <div>
-    <h1>Login</h1> <span><auth-stub></auth-stub></span>
+    <h1>Login</h1>
+    <div id=\\"firebaseui-auth-container\\"></div>
   </div>
 </div>"
 `;
