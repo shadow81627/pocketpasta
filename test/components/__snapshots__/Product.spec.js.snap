@@ -24,5 +24,6 @@ exports[`Product renders properly 1`] = `
     <nutrition-fact-table-stub calories=\\"108 kJ\\" carbohydratecontent=\\"4.1 g\\" fatcontent=\\"0.5 g\\" proteincontent=\\"1.5 g\\" saturatedfatcontent=\\"0 g\\" servingsize=\\"133 g\\" sodiumcontent=\\"19 mg\\" sugarcontent=\\"3.9 g\\" name=\\"nutrition\\" class=\\"my-4\\"></nutrition-fact-table-stub>
     <!---->
   </v-expansion-panels-stub>
+  <disqus-stub shortname=\\"pocketpasta\\" lang=\\"en\\" lazy=\\"true\\" lazyconfig=\\"[object Object]\\" style=\\"margin-top: 16px;\\"></disqus-stub>
 </div>"
 `;

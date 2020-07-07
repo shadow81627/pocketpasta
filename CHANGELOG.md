@@ -1,5 +1,23 @@
 # Releases
 
+## [0.40.0](https://github.com/shadow81627/pocketpasta/compare/v0.39.4...v0.40.0) (2020-07-06)
+
+### Features
+
+- disqus comments ([#1307](https://github.com/shadow81627/pocketpasta/issues/1307)) ([d71fb0c](https://github.com/shadow81627/pocketpasta/commit/d71fb0ce4383b9691aac974427532395d38be2bb))
+
+## [0.39.4](https://github.com/shadow81627/pocketpasta/compare/v0.39.3...v0.39.4) (2020-07-06)
+
+### Bug Fixes
+
+- **theme:** set primary to brand ([#1306](https://github.com/shadow81627/pocketpasta/issues/1306)) ([5af0f45](https://github.com/shadow81627/pocketpasta/commit/5af0f45f3f7fcc7af2fd5e25112691f9aa1d1136))
+
+## [0.39.3](https://github.com/shadow81627/pocketpasta/compare/v0.39.2...v0.39.3) (2020-07-06)
+
+### Bug Fixes
+
+- **recipe:** truncate reference ([#1304](https://github.com/shadow81627/pocketpasta/issues/1304)) ([b33e2cc](https://github.com/shadow81627/pocketpasta/commit/b33e2cc3559211f47ac081ac5d8900670190e207))
+
 ## [0.39.2](https://github.com/shadow81627/pocketpasta/compare/v0.39.1...v0.39.2) (2020-07-06)
 
 ### Bug Fixes

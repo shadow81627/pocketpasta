@@ -44,11 +44,11 @@
               readonly
             />
             <span itemprop="ratingCount"
-              >({{ Number(aggregateRating.ratingCount) }})</span
+              >({{ aggregateRating.ratingCount || 1 }})</span
             >
           </v-chip>
           <v-chip v-if="recipeYield" label style="background: none;">{{
-            recipeYield.match(/(\d+)/)
+            recipeYield.match(/(^\d*$)/)
               ? `${recipeYield} serving${recipeYield > 1 ? 's' : ''}`
               : recipeYield
           }}</v-chip>
@@ -77,11 +77,20 @@
             :items-per-page="-1"
           >
             <template v-slot:default="props">
-              <v-card v-for="item in props.items" :key="item" tile flat>
-                <v-card-title class="text-break text-wrap">{{
-                  item
-                }}</v-card-title>
-              </v-card>
+              <ul>
+                <li
+                  v-for="item in props.items"
+                  :key="item"
+                  style="list-style: none; padding-bottom: 12px;"
+                >
+                  <v-card tile flat>
+                    <v-card-title
+                      class="subtitle-1 text-break text-wrap py-0"
+                      >{{ item }}</v-card-title
+                    >
+                  </v-card>
+                </li>
+              </ul>
             </template>
           </v-data-iterator>
         </v-expansion-panel-content>
@@ -94,6 +103,7 @@
           <v-data-iterator
             v-if="Array.isArray(recipeInstructions)"
             :items="recipeInstructions"
+            item-key="text"
             hide-default-footer
             :items-per-page="-1"
           >
@@ -101,9 +111,9 @@
               <ol>
                 <li v-for="item in props.items" :key="item.text">
                   <v-card tile flat>
-                    <v-card-title class="text-break text-wrap">{{
+                    <v-card-text class="subtitle-1 text-break text-wrap">{{
                       item.text
-                    }}</v-card-title>
+                    }}</v-card-text>
                   </v-card>
                 </li>
               </ol>
@@ -136,7 +146,8 @@
             <span
               v-for="reference in sameAs"
               :key="reference"
-              class="list-group-item text-truncate"
+              style="max-width: 100%;"
+              class="d-inline-block text-truncate"
             >
               <a
                 :href="reference"
@@ -150,10 +161,12 @@
         </v-expansion-panel-content>
       </v-expansion-panel>
     </v-expansion-panels>
+    <disqus shortname="pocketpasta" style="margin-top: 16px;" />
   </div>
 </template>
 
 <script>
+import { Disqus } from 'vue-disqus';
 import ReadMore from '@/components/ReadMore.vue';
 import Keywords from '@/components/Keywords';
 import Share from '@/components/Social/Share';
@@ -167,6 +180,7 @@ export default {
     NutritionFactTable,
     VuePlyr,
     ReadMore,
+    Disqus,
   },
   inheritAttrs: false,
   props: {

@@ -14,7 +14,7 @@
       item-key="slug"
     >
       <template v-slot:header>
-        <v-card dark color="primary" class="mb-1">
+        <v-card dark :color="$vuetify.theme.dark ? '' : 'primary'" class="mb-1">
           <v-container class="py-0">
             <v-row>
               <v-col cols="12" md="">
@@ -50,7 +50,7 @@
                       <v-btn-toggle v-model="direction" mandatory tile>
                         <v-btn
                           depressed
-                          color="blue"
+                          :color="$vuetify.theme.dark ? '' : 'primary'"
                           value="asc"
                           aria-label="sort ascending"
                         >
@@ -58,7 +58,7 @@
                         </v-btn>
                         <v-btn
                           depressed
-                          color="blue"
+                          :color="$vuetify.theme.dark ? '' : 'primary'"
                           value="desc"
                           aria-label="sort descending"
                         >
