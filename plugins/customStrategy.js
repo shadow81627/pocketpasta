@@ -35,11 +35,13 @@ export default class CustomScheme {
     const stringUser = await JSON.parse(
       JSON.stringify(this.$auth.ctx.app.$fireAuth.currentUser),
     );
-    return this.$auth.setUser({
-      name: stringUser.displayName,
-      picture: stringUser.photoURL,
-      ...stringUser,
-    });
+    if (stringUser) {
+      return this.$auth.setUser({
+        name: stringUser.displayName,
+        picture: stringUser.photoURL,
+        ...stringUser,
+      });
+    }
   }
 
   _handleCallback(uri) {
