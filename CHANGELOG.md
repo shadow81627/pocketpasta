@@ -1,5 +1,15 @@
 # Releases
 
+## [0.41.0](https://github.com/shadow81627/pocketpasta/compare/v0.40.1...v0.41.0) (2020-07-07)
+
+### Bug Fixes
+
+- **scrape:** recipe instruction split use match ([#1319](https://github.com/shadow81627/pocketpasta/issues/1319)) ([67e5ab4](https://github.com/shadow81627/pocketpasta/commit/67e5ab4ee136bfd6835a4199320e4366fee91186))
+
+### Features
+
+- **recipes, products:** add og image ([#1318](https://github.com/shadow81627/pocketpasta/issues/1318)) ([d742773](https://github.com/shadow81627/pocketpasta/commit/d7427738e89a140c68b757c628f2a50f05dfe656)), closes [#1310](https://github.com/shadow81627/pocketpasta/issues/1310)
+
 ## [0.40.1](https://github.com/shadow81627/pocketpasta/compare/v0.40.0...v0.40.1) (2020-07-07)
 
 ### Bug Fixes
