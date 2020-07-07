@@ -1,5 +1,13 @@
 # Releases
 
+## [0.40.1](https://github.com/shadow81627/pocketpasta/compare/v0.40.0...v0.40.1) (2020-07-07)
+
+### Bug Fixes
+
+- **auth:** only return user if we have one ([#956](https://github.com/shadow81627/pocketpasta/issues/956)) ([8167f60](https://github.com/shadow81627/pocketpasta/commit/8167f6020f2cd2b62dc2ede0608e5205f15b3f68))
+- **card:** rounded corners ([#1312](https://github.com/shadow81627/pocketpasta/issues/1312)) ([e7105ca](https://github.com/shadow81627/pocketpasta/commit/e7105cac25d10910657efccb76c995f7ebb917d3))
+- **user-menu:** add placeholder ([#1313](https://github.com/shadow81627/pocketpasta/issues/1313)) ([1fb4e83](https://github.com/shadow81627/pocketpasta/commit/1fb4e835922e9ff4ade4654cf14aef2aa1c6ab75))
+
 ## [0.40.0](https://github.com/shadow81627/pocketpasta/compare/v0.39.4...v0.40.0) (2020-07-06)
 
 ### Features
