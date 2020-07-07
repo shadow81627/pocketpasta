@@ -1,46 +1,69 @@
 <template>
-  <v-btn aria-label="get app" :class="{ 'd-none': !display }" v-bind="$attrs">
+  <v-btn
+    v-show="deferredPrompt"
+    aria-label="install app"
+    v-bind="$attrs"
+    icon
+    @click="promptInstall"
+  >
     <slot>
-      <v-icon>$get_app</v-icon>
+      <v-icon>{{ mdiDownload }}</v-icon>
     </slot>
   </v-btn>
 </template>
 
 <script>
+import { mdiDownload } from '@mdi/js';
 export default {
   inheritAttrs: false,
   data: () => {
-    return { display: false, deferredPrompt: null };
+    return { deferredPrompt: null, mdiDownload };
+  },
+  created() {
+    // inspired by https://www.npmjs.com/package/vue-pwa-install
+    const vm = this;
+    vm.$on('canInstall', (event) => {
+      // Prevent Chrome 67 and earlier from automatically showing the prompt:
+      event.preventDefault();
+
+      // Stash the event so it can be triggered later:
+      vm.deferredPrompt = event;
+    });
   },
   mounted() {
-    const vm = this;
-    if (process.client) {
-      window.addEventListener('beforeinstallprompt', (e) => {
-        // Prevent Chrome 67 and earlier from automatically showing the prompt
-        e.preventDefault();
-        // Stash the event so it can be triggered later.
-        vm.deferredPrompt = e;
-        // Update UI to notify the user they can add to home screen
-        vm.display = true;
-
-        vm.$el.addEventListener('click', (e) => {
-          // hide our user interface that shows our A2HS button
-          vm.display = false;
-          // Show the prompt
-          vm.deferredPrompt.prompt();
-          // Wait for the user to respond to the prompt
-          vm.deferredPrompt.userChoice.then((choiceResult) => {
-            if (choiceResult.outcome === 'accepted') {
-              console.log('User accepted the A2HS prompt');
-              this.$ga.event('App', 'Click', 'Download');
-            } else {
-              console.log('User dismissed the A2HS prompt');
-            }
-            vm.deferredPrompt = null;
-          });
-        });
-      });
+    if (window) {
+      window.addEventListener('beforeinstallprompt', this.installHandler);
     }
+  },
+  destroyed() {
+    if (window) {
+      window.removeEventListener('beforeinstallprompt', this.installHandler);
+    }
+  },
+  methods: {
+    installHandler(event) {
+      const vm = this;
+      if (Boolean(event) && 'prompt' in event) {
+        vm.$emit('canInstall', event);
+      }
+    },
+    promptInstall() {
+      const vm = this;
+      // Show the prompt:
+      vm.deferredPrompt.prompt();
+
+      // Wait for the user to respond to the prompt:
+      vm.deferredPrompt.userChoice.then((choiceResult) => {
+        if (choiceResult.outcome === 'accepted') {
+          console.log('User accepted the A2HS prompt');
+          vm.$ga.event('App', 'Click', 'Download');
+        } else {
+          console.log('User dismissed the A2HS prompt');
+        }
+
+        vm.deferredPrompt = null;
+      });
+    },
   },
 };
 </script>
