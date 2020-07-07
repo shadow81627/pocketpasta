@@ -36,6 +36,9 @@ const urls = [
   // ['https://www.thecraftpatchblog.com/chocolate-mug-cake/'],
   // ['https://temeculablogs.com/blueberry-muffin-in-a-mug/'],
   // ['https://healthynibblesandbits.com/egg-fried-rice-mug/'],
+  // [
+  //   'https://www.delish.com/cooking/recipe-ideas/recipes/a43059/best-farro-salad-recipe/',
+  // ],
 ];
 
 const urlBlacklist = [
@@ -293,7 +296,7 @@ function parseDuration(duration) {
 
         const recipeInstructionsArray =
           (typeof recipeInstructions === 'string'
-            ? recipeInstructions.split(/([.!?][^)])/)
+            ? formatString(recipeInstructions).match(/[^.!?]+[.!?]+[^)]/g)
             : // deal try and handle groups...?
             recipeInstructions &&
               recipeInstructions.length > 0 &&

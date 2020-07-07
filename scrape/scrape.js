@@ -52,7 +52,9 @@ async function scrape(url) {
 
     // check graph for recipe
     const linkData =
-      parsedData && parsedData['@graph'] && !parsedData['@type']
+      parsedData &&
+      parsedData['@graph'] &&
+      !linkDataTypes.includes(_.upperFirst(parsedData['@type']))
         ? _.find(parsedData['@graph'], { '@type': 'Recipe' })
         : parsedData;
 
