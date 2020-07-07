@@ -5,6 +5,7 @@ const BASE_URL =
   process.env.BASE_URL ||
   process.env.DEPLOY_URL ||
   process.env.URL ||
+  process.env.VERCEL_URL ||
   `http${PORT === 433 ? 's' : ''}://${HOST}:${PORT}`;
 
 const env = {
