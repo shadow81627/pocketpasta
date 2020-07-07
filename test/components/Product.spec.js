@@ -6,6 +6,7 @@ import Vuex from 'vuex';
 import BootstrapVuePlugin from 'bootstrap-vue';
 import Vuetify from 'vuetify';
 import Vue from 'vue';
+import VueMeta from 'vue-meta';
 
 // JSDOM complains about this attribute
 removeKeys(product, ['@type']);
@@ -16,6 +17,13 @@ Vue.use(Vuetify);
 
 localVue.use(Vuex);
 localVue.use(BootstrapVuePlugin);
+localVue.use(VueMeta, {
+  keyName: 'head',
+  attribute: 'data-vue-meta',
+  ssrAttribute: 'data-vue-meta-server-rendered',
+  tagIDKeyName: 'hid',
+  refreshOnceOnNavigation: true,
+});
 
 const $route = {
   path: '/products/detail/1',
@@ -118,6 +126,7 @@ describe('Product', () => {
   });
 
   test('head', () => {
-    expect(Component.head()).toBeTruthy();
+    const wrapper = factory();
+    expect(wrapper.vm.$metaInfo).toBeTruthy();
   });
 });
