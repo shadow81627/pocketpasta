@@ -284,7 +284,28 @@ export default {
   },
 
   head() {
+    const { src: image } = this.imageData || {};
     return {
+      meta: [
+        {
+          skip: !image,
+          hid: 'og:image',
+          property: 'og:image',
+          content: image,
+        },
+        {
+          skip: !image,
+          hid: 'og:image:width',
+          property: 'og:image:width',
+          content: '640',
+        },
+        {
+          skip: !image,
+          hid: 'og:image:height',
+          property: 'og:image:height',
+          content: '360',
+        },
+      ],
       script: [
         {
           json: this.linkData,
