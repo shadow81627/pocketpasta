@@ -31,22 +31,22 @@ export default {
     });
   },
   mounted() {
-    const vm = this;
     if (window) {
-      const installHandler = (event) => {
-        if (Boolean(event) && 'prompt' in event) {
-          vm.$emit('canInstall', event);
-        }
-      };
-
-      window.addEventListener('beforeinstallprompt', installHandler);
-
-      vm.$once('hook:beforeDestroy', () => {
-        window.removeEventListener('beforeinstallprompt', installHandler);
-      });
+      window.addEventListener('beforeinstallprompt', this.installHandler);
+    }
+  },
+  destroyed() {
+    if (window) {
+      window.removeEventListener('beforeinstallprompt', this.installHandler);
     }
   },
   methods: {
+    installHandler(event) {
+      const vm = this;
+      if (Boolean(event) && 'prompt' in event) {
+        vm.$emit('canInstall', event);
+      }
+    },
     promptInstall() {
       const vm = this;
       // Show the prompt:

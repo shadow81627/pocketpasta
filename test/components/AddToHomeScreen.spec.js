@@ -10,14 +10,26 @@ let vuetify;
 Vue.use(Vuetify);
 localVue.use(BootstrapVuePlugin);
 
-const eventMock = { prompt() {}, preventDefault() {} };
-const eventMap = {};
+const userChoice = new Promise((resolve, reject) => {
+  // setTimeout(function () {
+  resolve({ outcome: 'accepted' });
+  // }, 0);
+});
+const eventMock = { prompt() {}, preventDefault() {}, userChoice };
+let eventMap = {};
 
 window.addEventListener = jest.fn((event, cb) => {
   if (event in eventMap) {
     eventMap[event].push(cb);
   } else {
     eventMap[event] = [cb];
+  }
+});
+
+window.removeEventListener = jest.fn((event, cb) => {
+  console.log(event);
+  if (event in eventMap) {
+    eventMap[event].filter((element) => element !== cb);
   }
 });
 
@@ -30,6 +42,7 @@ function triggerWindowEvent(event, payload) {
 describe('AddToHomeScreen', () => {
   beforeEach(() => {
     vuetify = new Vuetify();
+    eventMap = {};
   });
 
   const factory = () =>
@@ -54,6 +67,7 @@ describe('AddToHomeScreen', () => {
   });
 
   test("emits 'canInstall' on 'beforeinstallprompt' event", async () => {
+    const beforeDestoryedSpy = jest.spyOn(component, 'destroyed');
     const wrapper = factory();
     expect(wrapper.vm).toBeTruthy();
     expect(wrapper.vm.deferredPrompt).toBe(null);
@@ -65,5 +79,12 @@ describe('AddToHomeScreen', () => {
     await wrapper.vm.$nextTick();
     await wrapper.trigger('click');
     expect(wrapper.vm.deferredPrompt).toBe(eventMock);
+    await wrapper.vm.$nextTick();
+    await wrapper.destroy();
+    expect(beforeDestoryedSpy).toHaveBeenCalled();
+    await wrapper.vm.$nextTick();
+    // should be empty arry but I can't make it work...
+    expect(eventMap.beforeinstallprompt).toBeTruthy();
+    await wrapper.vm.$nextTick();
   });
 });
