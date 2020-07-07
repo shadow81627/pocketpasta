@@ -5,8 +5,7 @@
     nuxt
     ripple
     hover
-    tile
-    elevation="5"
+    elevation="4"
     class="flex d-flex flex-column"
   >
     <v-container>

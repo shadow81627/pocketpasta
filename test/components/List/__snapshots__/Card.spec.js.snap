@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`List Card renders properly 1`] = `
-"<v-card to=\\"[object Object]\\" exact=\\"\\" nuxt=\\"\\" ripple=\\"\\" hover=\\"\\" tile=\\"\\" elevation=\\"5\\" class=\\"flex d-flex flex-column\\">
+"<v-card to=\\"[object Object]\\" exact=\\"\\" nuxt=\\"\\" ripple=\\"\\" hover=\\"\\" elevation=\\"4\\" class=\\"flex d-flex flex-column\\">
   <v-container>
     <v-row no-gutters=\\"\\" class=\\"align-center justify-center\\">
       <v-col cols=\\"auto\\">
