@@ -30,4 +30,7 @@ describe('login', () => {
     const wrapper = factory();
     expect(wrapper.html()).toMatchSnapshot();
   });
+  test('head', () => {
+    expect(Page.head()).toBeTruthy();
+  });
 });
