@@ -116,7 +116,7 @@
     "husky": "4.2.5",
     "jest": "26.1.0",
     "lighthousebot": "git+https://github.com/ebidel/lighthousebot.git",
-    "lodash": "4.17.17",
+    "lodash": "4.17.19",
     "mutation-observer": "1.0.3",
     "node-sass": "4.14.1",
     "nodemon": "2.0.4",
