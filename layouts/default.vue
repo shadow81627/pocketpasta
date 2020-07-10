@@ -105,7 +105,7 @@
 
 <script>
 import AddToHomeScreen from '@/components/AddToHomeScreen.vue';
-import UserMenu from '@/components/User/Menu.vue';
+import UserMenu from '@/components/UserMenu.vue';
 import TheFooter from '@/components/Layout/the-footer.vue';
 export default {
   components: {
