@@ -1,4 +1,4 @@
-import Component from '@/components/User/Menu';
+import Component from '@/components/UserMenu';
 import { shallowMount, createLocalVue, RouterLinkStub } from '@vue/test-utils';
 import Vuex from 'vuex';
 import BootstrapVuePlugin from 'bootstrap-vue';
@@ -25,9 +25,28 @@ describe('Menu', () => {
   beforeEach(() => {
     vuetify = new Vuetify();
 
+    state = {
+      themes: [
+        {
+          value: 'dark',
+          dark: true,
+        },
+        {
+          value: 'light',
+          dark: false,
+        },
+      ],
+      theme: {
+        value: 'dark',
+        dark: true,
+      },
+    };
+
     getters = {
       getRecipeById: (state) => (id) =>
         state.recipes.find((recipe) => recipe.id === id),
+      getThemeById: (state) => (value) =>
+        state.themes.find((theme) => theme.value === value),
     };
 
     mutations = {
@@ -53,6 +72,7 @@ describe('Menu', () => {
         NuxtLink: RouterLinkStub,
       },
       mocks: {
+        $colorMode: { value: 'light' },
         $auth: {
           loggedIn: () => true,
           user: {
@@ -77,5 +97,11 @@ describe('Menu', () => {
   test('renders properly', () => {
     const wrapper = factory();
     expect(wrapper.html()).toMatchSnapshot();
+  });
+
+  test('theme getter', () => {
+    const wrapper = factory();
+    wrapper.vm.currentTheme = 'light';
+    expect(wrapper.vm.currentTheme).toBe('light');
   });
 });
