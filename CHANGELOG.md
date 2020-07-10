@@ -1,5 +1,11 @@
 # Releases
 
+## [0.42.0](https://github.com/shadow81627/pocketpasta/compare/v0.41.2...v0.42.0) (2020-07-10)
+
+### Features
+
+- **user-menu:** add dark mode toggle ([#1333](https://github.com/shadow81627/pocketpasta/issues/1333)) ([4bc7800](https://github.com/shadow81627/pocketpasta/commit/4bc780084c4f66c3dbc678aa9be712ce9cf348a9))
+
 ## [0.41.2](https://github.com/shadow81627/pocketpasta/compare/v0.41.1...v0.41.2) (2020-07-09)
 
 ### Bug Fixes
