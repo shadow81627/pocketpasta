@@ -1,5 +1,11 @@
 # Releases
 
+## [0.43.0](https://github.com/shadow81627/pocketpasta/compare/v0.42.0...v0.43.0) (2020-07-11)
+
+### Features
+
+- **routing:** redirect to last known page ([#1340](https://github.com/shadow81627/pocketpasta/issues/1340)) ([c320a98](https://github.com/shadow81627/pocketpasta/commit/c320a98ed83b3f6371be7f93bb522f62fd3c1825))
+
 ## [0.42.0](https://github.com/shadow81627/pocketpasta/compare/v0.41.2...v0.42.0) (2020-07-10)
 
 ### Features
