@@ -135,7 +135,7 @@
     "snyk": "1.361.3",
     "stylelint-config-prettier": "8.0.2",
     "vue-jest": "3.0.6",
-    "vuetify-loader": "1.5.0",
+    "vuetify-loader": "1.6.0",
     "yargs": "15.4.1"
   },
   "engines": {
