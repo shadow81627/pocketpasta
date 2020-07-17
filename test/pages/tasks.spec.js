@@ -2,15 +2,20 @@ import Component from '@/pages/tasks.vue';
 import { shallowMount, createLocalVue } from '@vue/test-utils';
 import Vuetify from 'vuetify';
 import BootstrapVuePlugin from 'bootstrap-vue';
+import VueRouter from 'vue-router';
 
 const localVue = createLocalVue();
 
 localVue.use(Vuetify);
 localVue.use(BootstrapVuePlugin);
+localVue.use(VueRouter);
+
+const router = new VueRouter();
 
 const factory = () =>
   shallowMount(Component, {
     localVue,
+    router,
     mocks: {
       $auth: { user: {} },
       $fetchState: {},
@@ -27,6 +32,11 @@ const factory = () =>
 
           add: () => ({}),
         }),
+      },
+      $pouch: {
+        changes: () => ({ on: () => ({}) }),
+        post: () => ({}),
+        put: () => ({}),
       },
     },
   });

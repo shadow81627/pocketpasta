@@ -5,7 +5,7 @@ exports[`Tasks page renders properly 1`] = `
   <v-row-stub tag=\\"div\\">
     <v-col-stub tag=\\"div\\">
       <h1>Tasks</h1>
-      <v-data-table-stub mobilebreakpoint=\\"0\\" items=\\"\\" options=\\"[object Object]\\" sortby=\\"isNew,xdone,xdue\\" sortdesc=\\"isNew\\" customsort=\\"function sortItems(items, sortBy, sortDesc, locale, customSorters) {
+      <v-data-table-stub mobilebreakpoint=\\"0\\" items=\\"\\" options=\\"[object Object]\\" sortby=\\"category\\" sortdesc=\\"\\" customsort=\\"function sortItems(items, sortBy, sortDesc, locale, customSorters) {
           if (sortBy === null || !sortBy.length) return items;
           var stringCollator = new Intl.Collator(locale, {
             sensitivity: 'accent',
@@ -46,7 +46,7 @@ exports[`Tasks page renders properly 1`] = `
 
             return 0;
           });
-        }\\" multisort=\\"true\\" page=\\"1\\" itemsperpage=\\"10\\" groupdesc=\\"\\" customgroup=\\"function groupItems(items, groupBy, groupDesc) {
+        }\\" multisort=\\"true\\" page=\\"1\\" itemsperpage=\\"10\\" groupby=\\"category\\" groupdesc=\\"\\" customgroup=\\"function groupItems(items, groupBy, groupDesc) {
           var key = groupBy[0];
           var groups = [];
           var current = null;
@@ -67,9 +67,16 @@ exports[`Tasks page renders properly 1`] = `
           }
 
           return groups;
-        }\\" locale=\\"en-US\\" search=\\"\\" customfilter=\\"function defaultFilter(value, search, item) {
+        }\\" locale=\\"en-US\\" customfilter=\\"function defaultFilter(value, search, item) {
           return value != null &amp;&amp; search != null &amp;&amp; typeof value !== 'boolean' &amp;&amp; value.toString().toLocaleLowerCase().indexOf(search.toLocaleLowerCase()) !== -1;
-        }\\" serveritemslength=\\"-1\\" itemkey=\\"id\\" value=\\"\\" expanded=\\"\\" noresultstext=\\"$vuetify.dataIterator.noResultsText\\" nodatatext=\\"$vuetify.noDataText\\" loadingtext=\\"$vuetify.dataIterator.loadingText\\" selectablekey=\\"isSelectable\\" loaderheight=\\"4\\" headers=\\"[object Object],[object Object],[object Object],[object Object]\\" expandicon=\\"$expand\\" itemclass=\\"\\" class=\\"elevation-1\\"></v-data-table-stub>
+        }\\" serveritemslength=\\"10\\" itemkey=\\"_id\\" value=\\"\\" expanded=\\"\\" noresultstext=\\"$vuetify.dataIterator.noResultsText\\" nodatatext=\\"$vuetify.noDataText\\" loadingtext=\\"$vuetify.dataIterator.loadingText\\" selectablekey=\\"isSelectable\\" loaderheight=\\"4\\" headers=\\"[object Object],[object Object],[object Object],[object Object]\\" expandicon=\\"$expand\\" itemclass=\\"function (item) {
+        /* istanbul ignore next */
+        cov_1dngz1u1h().f[35]++;
+        cov_1dngz1u1h().s[71]++;
+        return {
+          'ignore-elements': true
+        };
+      }\\" class=\\"elevation-1\\"></v-data-table-stub>
       <v-btn-stub tag=\\"button\\" activeclass=\\"\\" bottom=\\"true\\" fixed=\\"true\\" right=\\"true\\" fab=\\"true\\" type=\\"button\\" class=\\"bg-primary\\">
         <v-icon-stub>M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z</v-icon-stub>
       </v-btn-stub>

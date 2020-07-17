@@ -9,8 +9,17 @@ export default async (context, inject) => {
     const { default: find } = await import(
       /* webpackChunkName: "pouch" */ 'pouchdb-find'
     );
+    // const { default: search } = await import(
+    //   /* webpackChunkName: "pouch" */ 'pouchdb-quick-search'
+    // );
+    const { default: upsert } = await import(
+      /* webpackChunkName: "pouch" */ 'pouchdb-upsert'
+    );
 
+    // PouchDB.plugin(search);
     PouchDB.plugin(find);
+    PouchDB.plugin(upsert);
+
     const dbname = 'my_database';
     const options = {};
     // const supported = await isSupportedBrowser();
@@ -24,9 +33,11 @@ export default async (context, inject) => {
     // }
 
     const pouch = new PouchDB(dbname, options);
+
     pouch.createIndex({
-      index: { fields: ['name'] },
+      index: { fields: ['category', 'name', 'type'] },
     });
+    // PouchDB.debug.enable('*');
     inject('pouch', pouch);
   }
 };
