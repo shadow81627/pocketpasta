@@ -16,7 +16,7 @@
           :page.sync="page"
           :server-items-length="total"
           :sort-by.sync="groupBy"
-          :item-class="
+          :xitem-class="
             (item) => ({
               'ignore-elements': true,
             })
