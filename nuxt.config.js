@@ -108,7 +108,7 @@ module.exports = {
 
   router: {
     linkActiveClass: 'active',
-    middleware: [],
+    middleware: ['last-known-route'],
   },
 
   publicRuntimeConfig: {
@@ -196,7 +196,7 @@ module.exports = {
   generate: {
     // if you want to use '404.html' instead of the default '200.html'
     fallback: true,
-    exclude: ['/shoppinglist', 'tasks'],
+    // exclude: ['/shoppinglist', '/tasks'],
   },
 
   /*
@@ -219,6 +219,7 @@ module.exports = {
   plugins: [
     { src: '~/plugins/theme.js', mode: 'client' },
     { src: '~/plugins/pouch.js', mode: 'client' },
+    { src: '~/middleware/last-known-route', mode: 'client' },
   ],
 
   /*
@@ -235,6 +236,7 @@ module.exports = {
     '@nuxtjs/pwa',
     '@nuxtjs/recaptcha',
     '@nuxtjs/sentry',
+    'vue-warehouse/nuxt',
     ['nuxt-i18n', i18nSettings],
 
     // keep sitemap last

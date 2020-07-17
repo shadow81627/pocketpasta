@@ -1,5 +1,23 @@
 # Releases
 
+## [0.43.2](https://github.com/shadow81627/pocketpasta/compare/v0.43.1...v0.43.2) (2020-07-16)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxtjs/markdownit to v1.2.10 ([03bfb0b](https://github.com/shadow81627/pocketpasta/commit/03bfb0b78eb0b539d0189484009f819854bd48ee))
+
+## [0.43.1](https://github.com/shadow81627/pocketpasta/compare/v0.43.0...v0.43.1) (2020-07-12)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxtjs/axios to v5.12.0 ([001650c](https://github.com/shadow81627/pocketpasta/commit/001650c65fe553b6d782fc6bbafe74b665c463fa))
+
+## [0.43.0](https://github.com/shadow81627/pocketpasta/compare/v0.42.0...v0.43.0) (2020-07-11)
+
+### Features
+
+- **routing:** redirect to last known page ([#1340](https://github.com/shadow81627/pocketpasta/issues/1340)) ([c320a98](https://github.com/shadow81627/pocketpasta/commit/c320a98ed83b3f6371be7f93bb522f62fd3c1825))
+
 ## [0.42.0](https://github.com/shadow81627/pocketpasta/compare/v0.41.2...v0.42.0) (2020-07-10)
 
 ### Features
