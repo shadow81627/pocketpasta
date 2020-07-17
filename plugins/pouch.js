@@ -3,18 +3,13 @@
 export default async (context, inject) => {
   if (process.browser) {
     // webpack code split into a pouch bundle
-    const { default: PouchDB } = await import(
-      /* webpackChunkName: "pouch" */ 'pouchdb'
-    );
-    const { default: find } = await import(
-      /* webpackChunkName: "pouch" */ 'pouchdb-find'
-    );
-    // const { default: search } = await import(
-    //   /* webpackChunkName: "pouch" */ 'pouchdb-quick-search'
-    // );
-    const { default: upsert } = await import(
-      /* webpackChunkName: "pouch" */ 'pouchdb-upsert'
-    );
+    const PouchDB = (await import(/* webpackChunkName: "pouch" */ 'pouchdb'))
+      .default;
+    const find = (await import(/* webpackChunkName: "pouch" */ 'pouchdb-find'))
+      .default;
+    const upsert = (
+      await import(/* webpackChunkName: "pouch" */ 'pouchdb-upsert')
+    ).default;
 
     // PouchDB.plugin(search);
     PouchDB.plugin(find);
