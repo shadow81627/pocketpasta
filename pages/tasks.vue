@@ -16,11 +16,7 @@
           :page.sync="page"
           :server-items-length="total"
           :sort-by.sync="groupBy"
-          :xitem-class="
-            (item) => ({
-              'ignore-elements': true,
-            })
-          "
+          :item-class="draggableIgnore"
         >
           <template v-slot:top>
             <v-toolbar flat>
@@ -481,6 +477,9 @@ export default {
     // });
   },
   methods: {
+    draggableIgnore: (item) => ({
+      'ignore-elements': true,
+    }),
     async deleteItem(item) {
       const confirmed = confirm('Are you sure you want to delete this item?');
       if (confirmed) {

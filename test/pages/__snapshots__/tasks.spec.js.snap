@@ -69,14 +69,7 @@ exports[`Tasks page renders properly 1`] = `
           return groups;
         }\\" locale=\\"en-US\\" customfilter=\\"function defaultFilter(value, search, item) {
           return value != null &amp;&amp; search != null &amp;&amp; typeof value !== 'boolean' &amp;&amp; value.toString().toLocaleLowerCase().indexOf(search.toLocaleLowerCase()) !== -1;
-        }\\" serveritemslength=\\"10\\" itemkey=\\"_id\\" value=\\"\\" expanded=\\"\\" noresultstext=\\"$vuetify.dataIterator.noResultsText\\" nodatatext=\\"$vuetify.noDataText\\" loadingtext=\\"$vuetify.dataIterator.loadingText\\" selectablekey=\\"isSelectable\\" loaderheight=\\"4\\" headers=\\"[object Object],[object Object],[object Object],[object Object]\\" expandicon=\\"$expand\\" itemclass=\\"\\" xitem-class=\\"function (item) {
-        /* istanbul ignore next */
-        cov_1dngz1u1h().f[35]++;
-        cov_1dngz1u1h().s[71]++;
-        return {
-          'ignore-elements': true
-        };
-      }\\" class=\\"elevation-1\\"></v-data-table-stub>
+        }\\" serveritemslength=\\"10\\" itemkey=\\"_id\\" value=\\"\\" expanded=\\"\\" noresultstext=\\"$vuetify.dataIterator.noResultsText\\" nodatatext=\\"$vuetify.noDataText\\" loadingtext=\\"$vuetify.dataIterator.loadingText\\" selectablekey=\\"isSelectable\\" loaderheight=\\"4\\" headers=\\"[object Object],[object Object],[object Object],[object Object]\\" expandicon=\\"$expand\\" itemclass=\\"function () { [native code] }\\" class=\\"elevation-1\\"></v-data-table-stub>
       <v-btn-stub tag=\\"button\\" activeclass=\\"\\" bottom=\\"true\\" fixed=\\"true\\" right=\\"true\\" fab=\\"true\\" type=\\"button\\" class=\\"bg-primary\\">
         <v-icon-stub>M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z</v-icon-stub>
       </v-btn-stub>
