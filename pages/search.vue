@@ -6,7 +6,7 @@
         layout: 'list',
         collection: '',
         deep: true,
-        fetchOnServer: true,
+        fetchOnServer: false,
         defaultLimit: -1,
       }"
     />

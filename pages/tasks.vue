@@ -19,28 +19,15 @@
           :item-class="draggableIgnore"
         >
           <template v-slot:top>
-            <v-toolbar flat>
-              <v-text-field
-                v-model="search"
-                label="Search"
-                single-line
-                hide-details
-                clearable
-              >
-                <v-icon slot="prepend">{{ icons.mdiMagnify }}</v-icon>
-              </v-text-field>
-              <v-spacer />
-              <v-select
-                v-model="groupBy"
-                :items="headers.filter((item) => item.text)"
-                label="Group by"
-                single-line
-                hide-details
-              >
-                <v-icon slot="prepend">{{ icons.mdiSelectGroup }}</v-icon>
-              </v-select>
-              <v-spacer />
-            </v-toolbar>
+            <list-header
+              :headers="headers"
+              :direction.sync="direction"
+              :sort-by.sync="sortBy"
+              :search.sync="search"
+              :group-by.sync="groupBy"
+              :limit.sync="limit"
+              :view.sync="view"
+            />
           </template>
 
           <template v-slot:group.header="{ headers, group, items }">
@@ -278,9 +265,12 @@ import {
 } from '@mdi/js';
 import { DateTime } from 'luxon';
 
+import ListHeader from '@/components/List/ListHeader.vue';
+
 // Sortable.mount(new MultiDrag());
 
 export default {
+  components: { ListHeader },
   directives: {
     Ripple,
   },

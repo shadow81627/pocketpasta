@@ -2,6 +2,6 @@
 
 exports[`organizations page renders properly 1`] = `
 "<v-container-stub tag=\\"div\\">
-  <list-stub collection=\\"organizations\\" heading=\\"Organizations\\" layout=\\"list\\" fetchonserver=\\"true\\" defaultlimit=\\"4\\"></list-stub>
+  <list-stub collection=\\"organizations\\" heading=\\"Organizations\\" layout=\\"list\\" defaultlimit=\\"12\\" infinite=\\"true\\" headers=\\"[object Object],[object Object],[object Object]\\"></list-stub>
 </v-container-stub>"
 `;

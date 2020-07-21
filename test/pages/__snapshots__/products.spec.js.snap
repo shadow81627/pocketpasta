@@ -2,6 +2,6 @@
 
 exports[`products page renders properly 1`] = `
 "<div class=\\"container\\">
-  <list-stub collection=\\"products\\" heading=\\"products.heading\\" layout=\\"columns\\" fetchonserver=\\"true\\" defaultlimit=\\"4\\"></list-stub>
+  <list-stub collection=\\"products\\" heading=\\"products.heading\\" layout=\\"columns\\" defaultlimit=\\"12\\" infinite=\\"true\\" headers=\\"[object Object],[object Object],[object Object]\\"></list-stub>
 </div>"
 `;

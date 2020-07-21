@@ -1,5 +1,5 @@
 <template>
-  <v-menu left offset-y>
+  <v-menu left offset-y close-on-click>
     <template v-slot:activator="{ on }">
       <v-btn large icon aria-label="View as" title="View as" v-on="on">
         <v-icon>{{ currentLayout.icon }}</v-icon>

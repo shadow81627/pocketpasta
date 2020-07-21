@@ -41,12 +41,21 @@ describe('List', () => {
   });
 
   test('linkGen', () => {
+    const defualtQuery = {
+      direction: undefined,
+      limit: undefined,
+      page: undefined,
+      reset: true,
+      search: undefined,
+      sortBy: undefined,
+      view: undefined,
+    };
     const wrapper = factory();
     expect(wrapper.vm.linkGen(1)).toEqual({
-      query: { limit: undefined, page: undefined },
+      query: defualtQuery,
     });
     expect(wrapper.vm.linkGen(2)).toEqual({
-      query: { limit: undefined, page: 2 },
+      query: { ...defualtQuery, page: 2 },
     });
   });
 
