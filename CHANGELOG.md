@@ -1,5 +1,11 @@
 # Releases
 
+## [0.44.0](https://github.com/shadow81627/pocketpasta/compare/v0.43.5...v0.44.0) (2020-07-21)
+
+### Features
+
+- pouch ([#1342](https://github.com/shadow81627/pocketpasta/issues/1342)) ([b1aa3ff](https://github.com/shadow81627/pocketpasta/commit/b1aa3ff21ef693172e314a471321d09c2bf22cdd))
+
 ## [0.43.5](https://github.com/shadow81627/pocketpasta/compare/v0.43.4...v0.43.5) (2020-07-18)
 
 ### Bug Fixes
