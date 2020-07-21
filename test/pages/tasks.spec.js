@@ -60,7 +60,7 @@ describe('Tasks page', () => {
 
   test('deleteItem', async () => {
     const wrapper = factory();
-    expect(await wrapper.vm.deleteItem()).toBe(undefined);
+    expect(await wrapper.vm.deleteItem({ _id: 'test' })).toBe(undefined);
   });
   test('create', async () => {
     const wrapper = factory();

@@ -250,7 +250,14 @@
             </v-btn>
           </template>
         </v-data-table>
-        <v-btn bottom right fixed fab class="bg-primary" @click="create">
+        <v-btn
+          bottom
+          right
+          fixed
+          fab
+          class="bg-primary"
+          @click="create(defaultItem)"
+        >
           <v-icon>{{ icons.mdiPlus }}</v-icon>
         </v-btn>
       </v-col>
@@ -260,7 +267,6 @@
 
 <script>
 // import { Sortable } from 'sortablejs';
-import { head } from 'lodash-es';
 import { Ripple } from 'vuetify/lib/directives';
 import {
   mdiPencil,
@@ -480,23 +486,13 @@ export default {
     draggableIgnore: (item) => ({
       'ignore-elements': true,
     }),
-    async deleteItem(item) {
+    async deleteItem({ _id }) {
       const confirmed = confirm('Are you sure you want to delete this item?');
       if (confirmed) {
-        try {
-          const { tasks } = await this.$pouch.get(item.id);
-          const task = head(tasks) ?? {};
-          await this.$pouch.remove(task);
-        } catch (error) {
-          if (error.code === 409) {
-            // conflict
-            // handle the conflict somehow. e.g. ask the user to compare the two versions,
-            // or just try the whole thing again
-            console.log(error);
-          } else {
-            throw error; // some other error
-          }
-        }
+        await this.$pouch.upsert(_id, (doc) => ({
+          ...doc,
+          _deleted: true,
+        }));
       }
     },
 
