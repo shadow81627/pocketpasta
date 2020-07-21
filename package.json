@@ -79,7 +79,7 @@
     "@babel/core": "7.10.5",
     "@commitlint/cli": "9.1.2",
     "@commitlint/config-conventional": "9.1.1",
-    "@lhci/cli": "0.4.2",
+    "@lhci/cli": "0.4.3",
     "@mdi/js": "5.3.45",
     "@nuxtjs/color-mode": "1.0.0",
     "@nuxtjs/eslint-config": "3.0.0",
