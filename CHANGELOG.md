@@ -1,5 +1,23 @@
 # Releases
 
+## [0.43.5](https://github.com/shadow81627/pocketpasta/compare/v0.43.4...v0.43.5) (2020-07-18)
+
+### Bug Fixes
+
+- **deps:** update dependency firebase to v7.16.1 ([f729d8f](https://github.com/shadow81627/pocketpasta/commit/f729d8fea3a9f355100beace07c873a492659a21))
+
+## [0.43.4](https://github.com/shadow81627/pocketpasta/compare/v0.43.3...v0.43.4) (2020-07-18)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxtjs/google-analytics to v2.4.0 ([4249461](https://github.com/shadow81627/pocketpasta/commit/4249461cbb70f75aae0771b21625442867f76df7))
+
+## [0.43.3](https://github.com/shadow81627/pocketpasta/compare/v0.43.2...v0.43.3) (2020-07-17)
+
+### Bug Fixes
+
+- **deps:** update dependency firebaseui to v4.6.0 ([01d17f4](https://github.com/shadow81627/pocketpasta/commit/01d17f49536d03136adf6d5fb9e97629f8e9b3f8))
+
 ## [0.43.2](https://github.com/shadow81627/pocketpasta/compare/v0.43.1...v0.43.2) (2020-07-16)
 
 ### Bug Fixes
