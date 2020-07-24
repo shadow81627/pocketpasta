@@ -16,12 +16,22 @@ localVue.use(VueRouter);
 const router = new VueRouter();
 
 describe('List', () => {
+  let vuetify;
+
+  beforeEach(() => {
+    vuetify = new Vuetify();
+  });
+
   const factory = () =>
     shallowMount(Component, {
       localVue,
       router,
+      vuetify,
       mocks: {
         $fetchState: {},
+        process: {
+          browser: true,
+        },
       },
       stubs: {
         NuxtLink: RouterLinkStub,
@@ -38,6 +48,7 @@ describe('List', () => {
     expect(wrapper.vm.$options.fetch()).toBeTruthy();
     expect(wrapper.vm.$data.total).toBe(null);
     expect(wrapper.vm.$data.list).toBeTruthy();
+    expect(wrapper.vm.$options.fetchOnServer()).toBeTruthy();
   });
 
   test('linkGen', () => {
@@ -104,5 +115,17 @@ describe('List', () => {
     const wrapper = factory();
     wrapper.vm.sortBy = 1;
     expect(wrapper.vm.sortBy).toEqual(1);
+  });
+
+  test('reset', () => {
+    const wrapper = factory();
+    wrapper.vm.reset = false;
+    expect(wrapper.vm.reset).toEqual(false);
+  });
+
+  test('groupBy', () => {
+    const wrapper = factory();
+    wrapper.vm.groupBy = 'category';
+    expect(wrapper.vm.groupBy).toEqual('category');
   });
 });

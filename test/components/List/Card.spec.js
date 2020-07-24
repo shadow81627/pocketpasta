@@ -3,16 +3,26 @@ import recipe from '@/assets/link-data/recipes/spaghetti.json';
 import { shallowMount, createLocalVue, RouterLinkStub } from '@vue/test-utils';
 import Vuex from 'vuex';
 import BootstrapVuePlugin from 'bootstrap-vue';
+import Vuetify from 'vuetify';
+import Vue from 'vue';
 
 const localVue = createLocalVue();
 
+Vue.use(Vuetify);
 localVue.use(Vuex);
 localVue.use(BootstrapVuePlugin);
 
 describe('List Card', () => {
+  let vuetify;
+
+  beforeEach(() => {
+    vuetify = new Vuetify();
+  });
+
   const factory = () =>
     shallowMount(Component, {
       propsData: { ...recipe, type: recipe['@type'] },
+      vuetify,
       localVue,
       stubs: {
         NuxtLink: RouterLinkStub,

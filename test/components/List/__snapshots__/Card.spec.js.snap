@@ -1,24 +1,24 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`List Card renders properly 1`] = `
-"<v-card to=\\"[object Object]\\" exact=\\"\\" nuxt=\\"\\" ripple=\\"\\" hover=\\"\\" elevation=\\"4\\" class=\\"flex d-flex flex-column\\">
+"<v-card-stub loaderheight=\\"4\\" exact=\\"true\\" to=\\"[object Object]\\" nuxt=\\"true\\" ripple=\\"true\\" tag=\\"div\\" elevation=\\"4\\" hover=\\"true\\" class=\\"flex d-flex flex-column\\">
   <div style=\\"display: none;\\">
-    <v-img src=\\"https://res.cloudinary.com/pocketpasta/image/fetch/w_auto,h_256,c_fill,f_auto,q_auto/https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/162208.jpg\\" srcset=\\"https://res.cloudinary.com/pocketpasta/image/fetch/w_auto,h_256,c_fill,f_auto,q_auto/https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/162208.jpg 1x, https://res.cloudinary.com/pocketpasta/image/fetch/w_auto,h_384,c_fill,f_auto,q_auto/https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/162208.jpg 1.5x, https://res.cloudinary.com/pocketpasta/image/fetch/w_auto,h_512,c_fill,f_auto,q_auto/https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/162208.jpg 2x, https://res.cloudinary.com/pocketpasta/image/fetch/w_auto,h_640,c_fill,f_auto,q_auto/https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/162208.jpg 2.5x, https://res.cloudinary.com/pocketpasta/image/fetch/w_auto,h_768,c_fill,f_auto,q_auto/https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/162208.jpg 3x\\" itemprop=\\"image\\" height=\\"256\\" max-height=\\"256\\" alt=\\"Audrey Hepburn’s Spaghetti Al Pomodoro Recipe\\"></v-img>
+    <v-img-stub height=\\"256\\" maxheight=\\"256\\" alt=\\"Audrey Hepburn’s Spaghetti Al Pomodoro Recipe\\" options=\\"[object Object]\\" position=\\"center center\\" src=\\"https://res.cloudinary.com/pocketpasta/image/fetch/w_auto,h_256,c_fill,f_auto,q_auto/https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/162208.jpg\\" srcset=\\"https://res.cloudinary.com/pocketpasta/image/fetch/w_auto,h_256,c_fill,f_auto,q_auto/https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/162208.jpg 1x, https://res.cloudinary.com/pocketpasta/image/fetch/w_auto,h_384,c_fill,f_auto,q_auto/https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/162208.jpg 1.5x, https://res.cloudinary.com/pocketpasta/image/fetch/w_auto,h_512,c_fill,f_auto,q_auto/https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/162208.jpg 2x, https://res.cloudinary.com/pocketpasta/image/fetch/w_auto,h_640,c_fill,f_auto,q_auto/https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/162208.jpg 2.5x, https://res.cloudinary.com/pocketpasta/image/fetch/w_auto,h_768,c_fill,f_auto,q_auto/https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/162208.jpg 3x\\" transition=\\"fade-transition\\" itemprop=\\"image\\"></v-img-stub>
   </div>
-  <v-container>
-    <v-row no-gutters=\\"\\" class=\\"align-center justify-center\\">
-      <v-col cols=\\"auto\\">
-        <v-avatar size=\\"128\\" tile=\\"\\" class=\\"ma-sm-3\\">
-          <v-img src=\\"https://res.cloudinary.com/pocketpasta/image/fetch/w_128,h_128,c_fill,f_auto,q_auto/https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/162208.jpg\\" srcset=\\"https://res.cloudinary.com/pocketpasta/image/fetch/w_128,h_128,c_fill,f_auto,q_auto/https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/162208.jpg 1x, https://res.cloudinary.com/pocketpasta/image/fetch/w_192,h_192,c_fill,f_auto,q_auto/https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/162208.jpg 1.5x, https://res.cloudinary.com/pocketpasta/image/fetch/w_256,h_256,c_fill,f_auto,q_auto/https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/162208.jpg 2x, https://res.cloudinary.com/pocketpasta/image/fetch/w_320,h_320,c_fill,f_auto,q_auto/https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/162208.jpg 2.5x, https://res.cloudinary.com/pocketpasta/image/fetch/w_384,h_384,c_fill,f_auto,q_auto/https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/162208.jpg 3x\\" height=\\"128\\" width=\\"128\\" itemprop=\\"image\\" alt=\\"Audrey Hepburn’s Spaghetti Al Pomodoro Recipe\\"></v-img>
-        </v-avatar>
-      </v-col>
-      <v-col cols=\\"12\\" sm=\\"\\" style=\\"min-width: 224px;\\">
-        <v-card-title title-tag=\\"h2\\" class=\\"h4 text-break text-wrap\\">
+  <v-container-stub tag=\\"div\\">
+    <v-row-stub tag=\\"div\\" nogutters=\\"true\\" class=\\"align-center justify-center\\">
+      <v-col-stub cols=\\"auto\\" tag=\\"div\\">
+        <v-avatar-stub tile=\\"true\\" size=\\"128\\" class=\\"ma-sm-3\\">
+          <v-img-stub height=\\"128\\" width=\\"128\\" alt=\\"Audrey Hepburn’s Spaghetti Al Pomodoro Recipe\\" options=\\"[object Object]\\" position=\\"center center\\" src=\\"https://res.cloudinary.com/pocketpasta/image/fetch/w_128,h_128,c_fill,f_auto,q_auto/https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/162208.jpg\\" srcset=\\"https://res.cloudinary.com/pocketpasta/image/fetch/w_128,h_128,c_fill,f_auto,q_auto/https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/162208.jpg 1x, https://res.cloudinary.com/pocketpasta/image/fetch/w_192,h_192,c_fill,f_auto,q_auto/https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/162208.jpg 1.5x, https://res.cloudinary.com/pocketpasta/image/fetch/w_256,h_256,c_fill,f_auto,q_auto/https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/162208.jpg 2x, https://res.cloudinary.com/pocketpasta/image/fetch/w_320,h_320,c_fill,f_auto,q_auto/https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/162208.jpg 2.5x, https://res.cloudinary.com/pocketpasta/image/fetch/w_384,h_384,c_fill,f_auto,q_auto/https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/162208.jpg 3x\\" transition=\\"fade-transition\\" itemprop=\\"image\\"></v-img-stub>
+        </v-avatar-stub>
+      </v-col-stub>
+      <v-col-stub cols=\\"12\\" sm=\\"true\\" tag=\\"div\\">
+        <v-card-title-stub titletag=\\"h2\\" title-tag=\\"h2\\" class=\\"h4 text-break text-wrap\\">
           Audrey Hepburn’s Spaghetti Al Pomodoro Recipe
-        </v-card-title>
-        <v-card-subtitle class=\\"text-wrap subtitle-1\\">Make Audrey Hepburn's spaghetti al pomodoro recipe. Hepburn liked her pasta smothered in tomato sauce.</v-card-subtitle>
-      </v-col>
-    </v-row>
-  </v-container>
-</v-card>"
+        </v-card-title-stub>
+        <v-card-subtitle-stub class=\\"text-wrap subtitle-1\\">Make Audrey Hepburn's spaghetti al pomodoro recipe. Hepburn liked her pasta smothered in tomato sauce.</v-card-subtitle-stub>
+      </v-col-stub>
+    </v-row-stub>
+  </v-container-stub>
+</v-card-stub>"
 `;

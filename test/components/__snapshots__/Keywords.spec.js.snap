@@ -2,6 +2,6 @@
 
 exports[`Keywords renders properly 1`] = `
 "<div><strong class=\\"tag pl-0 font-weight-bold\\">Tags:</strong>
-  <v-chip-group column=\\"\\" class=\\"d-inline\\"></v-chip-group>
+  <v-chip-group-stub activeclass=\\"v-slide-item--active\\" mobilebreakpoint=\\"1264\\" nexticon=\\"$next\\" previcon=\\"$prev\\" column=\\"true\\" class=\\"d-inline\\"></v-chip-group-stub>
 </div>"
 `;

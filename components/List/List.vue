@@ -278,6 +278,7 @@ export default {
       };
     },
     generateQuery({
+      groupBy = this.groupBy,
       sortBy = this.sortBy,
       page = this.reset ? 1 : this.page,
       limit = this.limit,
@@ -289,6 +290,7 @@ export default {
       // sorted query string for more cache hits
       return Object.fromEntries(
         Object.entries({
+          groupBy,
           sortBy: sortBy && sortBy !== 'createdAt' ? sortBy : undefined,
           search: search && search !== '' ? search : undefined,
           view: view && view !== this.layout ? view : undefined,
