@@ -6,8 +6,9 @@
         layout: 'list',
         collection: '',
         deep: true,
-        fetchOnServer: false,
+        fetchOnServer: true,
         defaultLimit: -1,
+        infinite: false,
       }"
     />
   </div>

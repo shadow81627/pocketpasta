@@ -25,17 +25,33 @@
         />
       </template>
       <template v-slot:default="{ items }">
-        <virtual-list
-          data-key="slug"
-          :data-sources="items"
-          :data-component="ItemComponent"
-          page-mode
-          wrap-class="row"
-          item-class="d-flex flex-column col-12"
-          :item-class-add="itemClass"
-          :extra-props="{ view }"
-          @tobottom="onScrollToBottom"
-        />
+        <client-only v-if="infinite && items">
+          <virtual-list
+            data-key="slug"
+            :data-sources="items"
+            :data-component="itemComponent"
+            page-mode
+            wrap-class="row"
+            item-class="d-flex flex-column col-12"
+            :item-class-add="itemClass"
+            :extra-props="{ view }"
+            :keeps="limit * 2"
+            @tobottom="onScrollToBottom"
+          />
+        </client-only>
+        <v-row v-else>
+          <v-col
+            v-for="item in items"
+            :key="`${item['@type']}-${item.slug}`"
+            cols="12"
+            :sm="view === 'columns' ? 6 : 12"
+            :md="view === 'columns' ? 4 : 12"
+            :lg="view === 'columns' ? 3 : 12"
+            class="d-flex flex-column"
+          >
+            <card v-bind="item" :type="item['@type']" :layout="view" />
+          </v-col>
+        </v-row>
       </template>
 
       <template v-slot:footer>
@@ -78,18 +94,20 @@ import VirtualList from 'vue-virtual-scroll-list';
 
 import ItemComponent from '@/components/List/ItemComponent.vue';
 import ListHeader from '@/components/List/ListHeader.vue';
+import Card from '@/components/List/Card';
 const collections = ['Recipe', 'Product'];
 export default {
   components: {
     ListHeader,
     VirtualList,
+    Card,
   },
   props: {
     collection: { type: String, required: true },
     heading: { type: String, default: '' },
     layout: { type: String, default: null },
     deep: { type: Boolean, default: false },
-    fetchOnServer: { type: Boolean, default: false },
+    fetchOnServer: { type: Boolean, default: true },
     defaultLimit: { type: Number, default: 12 },
     infinite: { type: Boolean, default: true },
     headers: {
@@ -153,7 +171,6 @@ export default {
     return this.fetchOnServer;
   },
   data: () => ({
-    ItemComponent,
     list: [],
     total: null,
     mdiSortAlphabeticalAscending,
@@ -164,6 +181,9 @@ export default {
     mdiArrowUpBold,
   }),
   computed: {
+    itemComponent() {
+      return process.browser ? ItemComponent : '';
+    },
     pages() {
       const pages = Math.ceil(this.total / this.limit);
       return pages || 1;
