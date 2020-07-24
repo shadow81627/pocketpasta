@@ -38,6 +38,19 @@ describe('List Card', () => {
     expect(Component.methods.truncate('text', 2, '....')).toEqual('te....');
   });
 
+  test('cloudinaryify', () => {
+    const image = 'https://google.com/image.png';
+    const height = 128;
+    const width = 128;
+    expect(
+      Component.methods.cloudinaryify({
+        image,
+      }),
+    ).toEqual(
+      `https://res.cloudinary.com/pocketpasta/image/fetch/w_${width},h_${height},c_fill,f_auto,q_auto/${image}`,
+    );
+  });
+
   test('imageData with cloudinary image does not modify url', () => {
     const wrapper = factory();
     const image = {
@@ -64,7 +77,7 @@ describe('List Card', () => {
     expect(
       wrapper.vm.source({
         image: wrapper.vm.imageUrl,
-        height: 256,
+        height: 'auto',
         width: 'auto',
       }),
     ).toBeTruthy();
