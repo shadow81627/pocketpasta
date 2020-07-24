@@ -1,5 +1,11 @@
 # Releases
 
+## [0.44.1](https://github.com/shadow81627/pocketpasta/compare/v0.44.0...v0.44.1) (2020-07-21)
+
+### Bug Fixes
+
+- **deps:** update dependency vue-warehouse to v2.2.0 ([6560e1f](https://github.com/shadow81627/pocketpasta/commit/6560e1f890b3477813a800f6e05bdf0037acd78b))
+
 ## [0.44.0](https://github.com/shadow81627/pocketpasta/compare/v0.43.5...v0.44.0) (2020-07-21)
 
 ### Features
