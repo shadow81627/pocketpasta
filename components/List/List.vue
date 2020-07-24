@@ -50,7 +50,7 @@
         </v-row>
       </template>
     </v-data-iterator>
-    <v-btn
+    <!-- <v-btn
       v-show="infinite"
       bottom
       right
@@ -60,7 +60,7 @@
       @click="scrollToTop"
     >
       <v-icon>{{ mdiArrowUpBold }}</v-icon>
-    </v-btn>
+    </v-btn> -->
   </v-container>
 </template>
 
@@ -234,7 +234,7 @@ export default {
     },
     reset: {
       get() {
-        return Boolean(this.$route.query.reset) ?? true;
+        return Boolean(this.$route.query.reset ?? true);
       },
       set(reset) {
         this.$router.push({

@@ -8,6 +8,7 @@
             clearable
             flat
             solo-inverted
+            single-line
             hide-details
             :prepend-inner-icon="mdiMagnify"
             label="Search"
