@@ -73,7 +73,7 @@ import {
   mdiSelectGroup,
   mdiArrowUpBold,
 } from '@mdi/js';
-import { chunk, head } from 'lodash-es';
+// import { chunk, head } from 'lodash-es';
 import VirtualList from 'vue-virtual-scroll-list';
 
 import ItemComponent from '@/components/List/ItemComponent.vue';
@@ -261,17 +261,16 @@ export default {
         this.page = this.page++;
       }
     },
-    rows(items = this.list) {
-      const chunks = chunk(items, 4).map((row) => {
-        const slug = `${head(row)['@type']}-${head(row).slug}`;
-        return {
-          slug,
-          content: row,
-        };
-      });
-      console.log(chunks);
-      return chunks;
-    },
+    // rows(items = this.list) {
+    //   const chunks = chunk(items, 4).map((row) => {
+    //     const slug = `${head(row)['@type']}-${head(row).slug}`;
+    //     return {
+    //       slug,
+    //       content: row,
+    //     };
+    //   });
+    //   return chunks;
+    // },
     linkGen(page) {
       return {
         query: this.generateQuery({ page }),

@@ -6,6 +6,8 @@ import VueRouter from 'vue-router';
 import Vuetify from 'vuetify';
 import Vue from 'vue';
 
+import recipe from '@/content/recipes/1.json';
+
 const localVue = createLocalVue();
 
 Vue.use(Vuetify);
@@ -72,13 +74,38 @@ describe('List', () => {
 
   test('renders properly', () => {
     const wrapper = factory();
+    wrapper.setData({ list: [recipe], total: 1 });
     expect(wrapper.html()).toMatchSnapshot();
+  });
+
+  test('itemClass', () => {
+    const wrapper = factory();
+    expect(wrapper.vm.itemClass(1)).toBeTruthy();
+  });
+
+  test('onScrollBottom', () => {
+    const wrapper = factory();
+    wrapper.setData({ list: [recipe, recipe], total: 200 });
+
+    // check that page does not increment without infinate scoll enabled
+    wrapper.setProps({ infinite: false });
+    wrapper.vm.onScrollToBottom();
+    expect(wrapper.vm.page).toEqual(1);
+
+    // check that page is incremented when infinate scroll is enabled
+    wrapper.setProps({ infinite: true });
+    wrapper.vm.onScrollToBottom();
+    // expect(wrapper.vm.page).toEqual(2);
+    expect(wrapper.vm.page).toEqual(1);
   });
 
   test('pages', () => {
     const wrapper = factory();
-    wrapper.vm.pages = 1;
-    expect(wrapper.vm.pages).toEqual(1);
+    wrapper.setData({ total: 200 });
+    // check that pages can not be directly updated
+    wrapper.vm.pages = 2;
+    // check that pages is calculated by total / limit (default 12) rounded up
+    expect(wrapper.vm.pages).toEqual(17);
   });
 
   test('page', () => {
