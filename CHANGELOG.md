@@ -1,5 +1,11 @@
 # Releases
 
+## [0.44.2](https://github.com/shadow81627/pocketpasta/compare/v0.44.1...v0.44.2) (2020-07-25)
+
+### Bug Fixes
+
+- **tasks:** display all items ([#1369](https://github.com/shadow81627/pocketpasta/issues/1369)) ([195a10a](https://github.com/shadow81627/pocketpasta/commit/195a10a0cd3b2a938f21f671e1f3f9e83018b39c))
+
 ## [0.44.1](https://github.com/shadow81627/pocketpasta/compare/v0.44.0...v0.44.1) (2020-07-21)
 
 ### Bug Fixes

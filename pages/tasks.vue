@@ -15,8 +15,9 @@
           :items-per-page.sync="limit"
           :page.sync="page"
           :server-items-length="total"
-          :sort-by.sync="groupBy"
+          :xsort-by.sync="groupBy"
           :item-class="draggableIgnore"
+          hide-default-footer
         >
           <template v-slot:top>
             <list-header
@@ -305,9 +306,9 @@ export default {
         category: { $gte: null },
         type: { $eq: 'task' },
       },
-      sort: ['category', 'name'],
-      limit: this.limit,
-      skip: (this.page - 1) * this.limit,
+      // sort: ['category', 'name'],
+      // limit: this.limit,
+      // skip: (this.page - 1) * this.limit,
     });
     const { docs = [] } = result;
     this.items = docs;
@@ -317,7 +318,7 @@ export default {
   data: () => ({
     categories: [],
     total: 10,
-    defaultLimit: 10,
+    defaultLimit: -1,
     DateTime,
     newDueMenu: false,
     icons: {
