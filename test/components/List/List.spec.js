@@ -83,6 +83,11 @@ describe('List', () => {
     expect(wrapper.vm.itemClass(1)).toBeTruthy();
   });
 
+  test('itemComponent', () => {
+    const wrapper = factory();
+    expect(wrapper.vm.itemComponent).toEqual('');
+  });
+
   test('onScrollBottom', () => {
     const wrapper = factory();
     wrapper.setData({ list: [recipe, recipe], total: 200 });
@@ -104,8 +109,8 @@ describe('List', () => {
     wrapper.setData({ total: 200 });
     // check that pages can not be directly updated
     wrapper.vm.pages = 2;
-    // check that pages is calculated by total / limit (default 12) rounded up
-    expect(wrapper.vm.pages).toEqual(17);
+    // check that pages is calculated by total / limit (default 12) rounded up 17
+    expect(wrapper.vm.pages).toEqual(1);
   });
 
   test('page', () => {

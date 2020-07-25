@@ -31,6 +31,7 @@
             :data-sources="items"
             :data-component="itemComponent"
             page-mode
+            wrap-tag="ul"
             wrap-class="row"
             item-class="d-flex flex-column col-12"
             :item-class-add="itemClass"
@@ -108,7 +109,7 @@ export default {
     layout: { type: String, default: null },
     deep: { type: Boolean, default: false },
     fetchOnServer: { type: Boolean, default: true },
-    defaultLimit: { type: Number, default: 12 },
+    defaultLimit: { type: Number, default: -1 },
     infinite: { type: Boolean, default: true },
     headers: {
       type: Array,
@@ -130,12 +131,12 @@ export default {
           .fetch()
       ).length;
 
-      console.log({
-        skip: (this.page - 1) * this.limit,
-        limit: this.limit,
-        reset: this.reset,
-        page: this.page,
-      });
+      // console.log({
+      //   skip: (this.page - 1) * this.limit,
+      //   limit: this.limit,
+      //   reset: this.reset,
+      //   page: this.page,
+      // });
 
       const results = await this.$content(this.collection, { deep: this.deep })
         .only(['id', 'slug', 'name', 'description', 'image', '@type'])
@@ -281,16 +282,6 @@ export default {
         this.page = this.page++;
       }
     },
-    // rows(items = this.list) {
-    //   const chunks = chunk(items, 4).map((row) => {
-    //     const slug = `${head(row)['@type']}-${head(row).slug}`;
-    //     return {
-    //       slug,
-    //       content: row,
-    //     };
-    //   });
-    //   return chunks;
-    // },
     linkGen(page) {
       return {
         query: this.generateQuery({ page }),
