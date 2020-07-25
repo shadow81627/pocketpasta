@@ -124,13 +124,13 @@ describe('Tasks page', () => {
   test('sortBy', () => {
     const wrapper = factory();
     wrapper.vm.sortBy = 1;
-    expect(wrapper.vm.sortBy).toEqual(1);
+    expect(wrapper.vm.sortBy).toEqual(null);
   });
 
   test('groupBy', () => {
     const wrapper = factory();
     wrapper.vm.groupBy = 1;
-    expect(wrapper.vm.groupBy).toEqual(1);
+    expect(wrapper.vm.groupBy).toEqual(null);
   });
 
   test('head', () => {
