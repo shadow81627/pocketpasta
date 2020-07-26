@@ -2,6 +2,6 @@
 
 exports[`recipes renders properly 1`] = `
 "<div class=\\"container\\">
-  <list-stub collection=\\"\\" heading=\\"Search\\" layout=\\"list\\" deep=\\"true\\" fetchonserver=\\"true\\" defaultlimit=\\"-1\\"></list-stub>
+  <list-stub collection=\\"\\" heading=\\"Search\\" layout=\\"list\\" deep=\\"true\\" fetchonserver=\\"true\\" defaultlimit=\\"-1\\" headers=\\"[object Object],[object Object],[object Object]\\"></list-stub>
 </div>"
 `;

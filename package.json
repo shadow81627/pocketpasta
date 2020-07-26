@@ -1,6 +1,6 @@
 {
   "name": "pocketpasta",
-  "version": "0.44.2",
+  "version": "0.45.0",
   "description": "Eat spagetti to forgetti your regretti",
   "author": {
     "name": "Damien Robinson",
@@ -73,6 +73,7 @@
     "utility-opentype": "0.1.4",
     "vue-disqus": "4.0.1",
     "vue-plyr": "6.0.4",
+    "vue-virtual-scroll-list": "2.3.0",
     "vue-warehouse": "2.2.0"
   },
   "devDependencies": {
@@ -130,8 +131,8 @@
     "prettier": "2.0.5",
     "pretty-quick": "2.0.1",
     "puppeteer": "5.2.1",
-    "puppeteer-extra": "3.1.12",
-    "puppeteer-extra-plugin-stealth": "2.4.13",
+    "puppeteer-extra": "3.1.13",
+    "puppeteer-extra-plugin-stealth": "2.4.14",
     "sass": "1.26.10",
     "sass-loader": "9.0.2",
     "semantic-release": "17.1.1",

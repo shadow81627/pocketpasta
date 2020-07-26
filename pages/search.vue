@@ -8,6 +8,7 @@
         deep: true,
         fetchOnServer: true,
         defaultLimit: -1,
+        infinite: false,
       }"
     />
   </div>

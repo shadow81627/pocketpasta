@@ -149,6 +149,12 @@ module.exports = {
     ],
     meta: [
       {
+        once: true,
+        name: 'charset',
+        hid: 'charset',
+        content: 'utf-8',
+      },
+      {
         property: 'og:title',
         template: (titleChunk) => {
           // If undefined or blank then we don't need the hyphen
