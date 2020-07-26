@@ -1,5 +1,11 @@
 # Releases
 
+## [0.45.0](https://github.com/shadow81627/pocketpasta/compare/v0.44.2...v0.45.0) (2020-07-26)
+
+### Features
+
+- **list:** infinite scroll ([#1363](https://github.com/shadow81627/pocketpasta/issues/1363)) ([543925c](https://github.com/shadow81627/pocketpasta/commit/543925cb0a0bfeb6e8bd5dfea181ff24d1f738a8))
+
 ## [0.44.2](https://github.com/shadow81627/pocketpasta/compare/v0.44.1...v0.44.2) (2020-07-25)
 
 ### Bug Fixes
