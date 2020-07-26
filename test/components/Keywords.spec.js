@@ -1,16 +1,23 @@
 import Keywords from '@/components/Keywords.vue';
-import { mount, createLocalVue } from '@vue/test-utils';
-// import Vuetify from 'vuetify';
+import { shallowMount, createLocalVue } from '@vue/test-utils';
+import Vuetify from 'vuetify';
 
 const localVue = createLocalVue();
-// localVue.use(Vuetify);
-
-const factory = () =>
-  mount(Keywords, {
-    localVue,
-  });
+localVue.use(Vuetify);
 
 describe('Keywords', () => {
+  let vuetify;
+
+  beforeEach(() => {
+    vuetify = new Vuetify();
+  });
+
+  const factory = () =>
+    shallowMount(Keywords, {
+      localVue,
+      vuetify,
+    });
+
   test('mounts properly', () => {
     const wrapper = factory();
     expect(wrapper.vm).toBeTruthy();

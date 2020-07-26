@@ -10,93 +10,39 @@
       :items="list"
       hide-default-footer
       :loading="$fetchState.pending"
-      :items-per-page="limit"
+      :items-per-page="infinite ? total : limit"
       item-key="slug"
     >
       <template v-slot:header>
-        <v-card dark :color="$vuetify.theme.dark ? '' : 'primary'" class="mb-1">
-          <v-container class="py-0">
-            <v-row>
-              <v-col cols="12" md="">
-                <v-text-field
-                  v-model="search"
-                  clearable
-                  flat
-                  solo-inverted
-                  hide-details
-                  :prepend-inner-icon="mdiMagnify"
-                  label="Search"
-                  autocomplete="false"
-                  @keydown.enter="$event.target.blur()"
-                />
-              </v-col>
-
-              <v-col cols="auto">
-                <v-container fluid class="pa-0">
-                  <v-row no-gutters>
-                    <v-col>
-                      <v-select
-                        v-model="sortBy"
-                        flat
-                        solo-inverted
-                        hide-details
-                        :items="keys"
-                        :prepend-inner-icon="mdiSortVariant"
-                        label="Sort by"
-                        aria-label="Sort by"
-                      />
-                    </v-col>
-                    <v-col cols="auto">
-                      <v-btn-toggle v-model="direction" mandatory tile>
-                        <v-btn
-                          depressed
-                          :color="$vuetify.theme.dark ? '' : 'primary'"
-                          value="asc"
-                          aria-label="sort ascending"
-                        >
-                          <v-icon>{{ mdiSortAlphabeticalAscending }}</v-icon>
-                        </v-btn>
-                        <v-btn
-                          depressed
-                          :color="$vuetify.theme.dark ? '' : 'primary'"
-                          value="desc"
-                          aria-label="sort descending"
-                        >
-                          <v-icon>{{ mdiSortAlphabeticalDescending }}</v-icon>
-                        </v-btn>
-                      </v-btn-toggle>
-                    </v-col>
-                  </v-row>
-                </v-container>
-              </v-col>
-              <v-col cols="auto">
-                <v-menu offset-y>
-                  <template v-slot:activator="{ on, attrs }">
-                    <v-btn large text v-bind="attrs" v-on="on">
-                      {{ limit }}
-                      <span> per page</span>
-                    </v-btn>
-                  </template>
-                  <v-list>
-                    <v-list-item
-                      v-for="(number, index) in limits"
-                      :key="index"
-                      @click="limit = number"
-                    >
-                      <v-list-item-title>{{ number }}</v-list-item-title>
-                    </v-list-item>
-                  </v-list>
-                </v-menu>
-                <view-switcher v-model="view" />
-              </v-col>
-            </v-row>
-          </v-container>
-        </v-card>
+        <list-header
+          :headers="headers"
+          :direction.sync="direction"
+          :sort-by.sync="sortBy"
+          :search.sync="search"
+          :group-by.sync="groupBy"
+          :limit.sync="limit"
+          :view.sync="view"
+        />
       </template>
-      <template v-slot:default="props">
-        <v-row>
+      <template v-slot:default="{ items }">
+        <client-only v-if="infinite && items">
+          <virtual-list
+            data-key="slug"
+            :data-sources="items"
+            :data-component="itemComponent"
+            page-mode
+            wrap-tag="ul"
+            wrap-class="row"
+            item-class="d-flex flex-column col-12"
+            :item-class-add="itemClass"
+            :extra-props="{ view }"
+            :keeps="limit * 2"
+            @tobottom="onScrollToBottom"
+          />
+        </client-only>
+        <v-row v-else>
           <v-col
-            v-for="item in props.items"
+            v-for="item in items"
             :key="`${item['@type']}-${item.slug}`"
             cols="12"
             :sm="view === 'columns' ? 6 : 12"
@@ -112,14 +58,26 @@
       <template v-slot:footer>
         <v-row class="mt-2" align="center" justify="center">
           <v-col>
-            <v-pagination v-model="page" :length="pages" total-visible="9" />
-            <button v-show="false" @click="$fetch">Refresh</button>
-            <div v-show="false">Total: {{ total }}</div>
-            <div v-show="$fetchState.error">Error: {{ $fetchState.error }}</div>
+            <client-only>
+              <v-pagination v-model="page" :length="pages" total-visible="9" />
+              <!-- <button v-show="false" @click="$fetch">Refresh</button> -->
+              <div v-show="false">Total: {{ total }}</div>
+            </client-only>
           </v-col>
         </v-row>
       </template>
     </v-data-iterator>
+    <!-- <v-btn
+      v-show="infinite"
+      bottom
+      right
+      fixed
+      fab
+      class="bg-primary"
+      @click="scrollToTop"
+    >
+      <v-icon>{{ mdiArrowUpBold }}</v-icon>
+    </v-btn> -->
   </v-container>
 </template>
 
@@ -129,13 +87,20 @@ import {
   mdiSortAlphabeticalDescending,
   mdiSortVariant,
   mdiMagnify,
+  mdiSelectGroup,
+  mdiArrowUpBold,
 } from '@mdi/js';
-import ViewSwitcher from '@/components/List/ViewSwitcher';
+// import { chunk, head } from 'lodash-es';
+import VirtualList from 'vue-virtual-scroll-list';
+
+import ItemComponent from '@/components/List/ItemComponent.vue';
+import ListHeader from '@/components/List/ListHeader.vue';
 import Card from '@/components/List/Card';
 const collections = ['Recipe', 'Product'];
 export default {
   components: {
-    ViewSwitcher,
+    ListHeader,
+    VirtualList,
     Card,
   },
   props: {
@@ -144,29 +109,63 @@ export default {
     layout: { type: String, default: null },
     deep: { type: Boolean, default: false },
     fetchOnServer: { type: Boolean, default: true },
-    defaultLimit: { type: Number, default: 4 },
+    defaultLimit: { type: Number, default: -1 },
+    infinite: { type: Boolean, default: true },
+    headers: {
+      type: Array,
+      default: () => [
+        { value: 'createdAt', text: 'Created' },
+        { value: 'name', text: 'Name' },
+        { value: 'description', text: 'Description' },
+      ],
+    },
   },
   async fetch() {
-    this.total = (
-      await this.$content(this.collection, { deep: this.deep })
-        .only(['id'])
+    try {
+      this.total = (
+        await this.$content(this.collection, { deep: this.deep })
+          .only(['id'])
+          .where({ '@type': { $in: collections } })
+          .search(this.search)
+          .sortBy(this.sortBy, this.direction)
+          .fetch()
+      ).length;
+
+      // console.log({
+      //   skip: (this.page - 1) * this.limit,
+      //   limit: this.limit,
+      //   reset: this.reset,
+      //   page: this.page,
+      // });
+
+      const results = await this.$content(this.collection, { deep: this.deep })
+        .only(['id', 'slug', 'name', 'description', 'image', '@type'])
         .where({ '@type': { $in: collections } })
         .search(this.search)
         .sortBy(this.sortBy, this.direction)
-        .fetch()
-    ).length;
-    this.list = await this.$content(this.collection, { deep: this.deep })
-      .only(['id', 'slug', 'name', 'description', 'image', '@type'])
-      .where({ '@type': { $in: collections } })
-      .search(this.search)
-      .sortBy(this.sortBy, this.direction)
-      .skip((this.page - 1) * this.limit)
-      .limit(this.limit)
-      .fetch();
+        .skip((this.page - 1) * this.limit)
+        .limit(this.limit)
+        .fetch();
 
-    if (process.browser) {
+      if (this.infinite && !this.reset) {
+        this.list = this.list.concat(results);
+      } else {
+        this.list = results;
+      }
+    } catch (error) {
+      if (error.response && error.response.status !== 404) {
+        this.$nuxt.error({
+          statusCode: error.response.status,
+          message: error.message,
+        });
+      } else if (!error.response) {
+        this.$nuxt.error(error);
+      }
+    }
+
+    if (process.browser && this.reset) {
       // scroll to top on data change
-      window.scrollTo(0, 0);
+      this.scrollToTop();
     }
   },
   fetchOnServer() {
@@ -174,15 +173,18 @@ export default {
   },
   data: () => ({
     list: [],
-    keys: ['createdAt', 'name', 'description'],
     total: null,
-    limits: [4, 8, 12, 24],
     mdiSortAlphabeticalAscending,
     mdiSortAlphabeticalDescending,
     mdiSortVariant,
     mdiMagnify,
+    mdiSelectGroup,
+    mdiArrowUpBold,
   }),
   computed: {
+    itemComponent() {
+      return process.browser ? ItemComponent : '';
+    },
     pages() {
       const pages = Math.ceil(this.total / this.limit);
       return pages || 1;
@@ -191,14 +193,15 @@ export default {
       get() {
         const page = parseInt(this.$route.query.page, 10) || 1;
         // set page to last page if page is larger than last page
-        if (page <= this.pages) {
-          return page;
-        } else {
-          return this.pages;
-        }
+        return page <= this.pages ? page : this.pages;
       },
       set(page) {
-        this.$router.push({ query: this.query({ page }) });
+        this.$router.push({
+          query: this.generateQuery({
+            page: page <= this.pages ? page : this.pages,
+            reset: false,
+          }),
+        });
       },
     },
     limit: {
@@ -207,7 +210,7 @@ export default {
         return parseInt(this.$route.query.limit, 10) || limit;
       },
       set(limit) {
-        this.$router.push({ query: this.query({ limit }) });
+        this.$router.push({ query: this.generateQuery({ limit }) });
       },
     },
     direction: {
@@ -215,7 +218,7 @@ export default {
         return this.$route.query.direction || 'desc';
       },
       set(direction) {
-        this.$router.push({ query: this.query({ direction }) });
+        this.$router.push({ query: this.generateQuery({ direction }) });
       },
     },
     search: {
@@ -223,7 +226,7 @@ export default {
         return this.$route.query.search || '';
       },
       set(search) {
-        this.$router.push({ query: this.query({ search }) });
+        this.$router.push({ query: this.generateQuery({ search }) });
       },
     },
     sortBy: {
@@ -231,7 +234,15 @@ export default {
         return this.$route.query.sortBy || 'createdAt';
       },
       set(sortBy) {
-        this.$router.push({ query: this.query({ sortBy }) });
+        this.$router.push({ query: this.generateQuery({ sortBy }) });
+      },
+    },
+    groupBy: {
+      get() {
+        return this.$route.query.groupBy;
+      },
+      set(groupBy) {
+        this.$router.push({ query: this.generateQuery({ groupBy }) });
       },
     },
     view: {
@@ -239,7 +250,17 @@ export default {
         return this.$route.query.view || this.layout;
       },
       set(view) {
-        this.$router.push({ query: this.query({ view }) });
+        this.$router.push({ query: this.generateQuery({ view }) });
+      },
+    },
+    reset: {
+      get() {
+        return Boolean(this.$route.query.reset ?? true);
+      },
+      set(reset) {
+        this.$router.push({
+          query: this.generateQuery({ reset, page: reset ? 1 : this.page }),
+        });
       },
     },
   },
@@ -247,27 +268,45 @@ export default {
     '$route.query': '$fetch',
   },
   methods: {
+    scrollToTop() {
+      window.scrollTo(0, 0);
+    },
+    itemClass(index) {
+      const view = this.view;
+      return `col-sm-${view === 'columns' ? 6 : 12} col-md-${
+        view === 'columns' ? 4 : 12
+      } col-lg-${view === 'columns' ? 3 : 12}`;
+    },
+    onScrollToBottom() {
+      if (this.infinite) {
+        this.page = this.page++;
+      }
+    },
     linkGen(page) {
       return {
-        query: this.query({ page }),
+        query: this.generateQuery({ page }),
       };
     },
-    query({
+    generateQuery({
+      groupBy = this.groupBy,
       sortBy = this.sortBy,
-      page = this.page,
+      page = this.reset ? 1 : this.page,
       limit = this.limit,
       direction = this.direction,
       search = this.search,
       view = this.view,
+      reset = true,
     }) {
       // sorted query string for more cache hits
       return Object.fromEntries(
         Object.entries({
+          groupBy,
           sortBy: sortBy && sortBy !== 'createdAt' ? sortBy : undefined,
           search: search && search !== '' ? search : undefined,
           view: view && view !== this.layout ? view : undefined,
           direction: direction !== 'desc' ? direction : undefined,
           page: page !== 1 ? page : undefined,
+          reset,
           limit:
             limit !== this.defaultLimit && limit !== this.total
               ? limit

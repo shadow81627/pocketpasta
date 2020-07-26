@@ -3,16 +3,26 @@ import recipe from '@/assets/link-data/recipes/spaghetti.json';
 import { shallowMount, createLocalVue, RouterLinkStub } from '@vue/test-utils';
 import Vuex from 'vuex';
 import BootstrapVuePlugin from 'bootstrap-vue';
+import Vuetify from 'vuetify';
+import Vue from 'vue';
 
 const localVue = createLocalVue();
 
+Vue.use(Vuetify);
 localVue.use(Vuex);
 localVue.use(BootstrapVuePlugin);
 
 describe('List Card', () => {
+  let vuetify;
+
+  beforeEach(() => {
+    vuetify = new Vuetify();
+  });
+
   const factory = () =>
     shallowMount(Component, {
       propsData: { ...recipe, type: recipe['@type'] },
+      vuetify,
       localVue,
       stubs: {
         NuxtLink: RouterLinkStub,
@@ -28,6 +38,19 @@ describe('List Card', () => {
     expect(Component.methods.truncate('text', 2, '....')).toEqual('te....');
   });
 
+  test('cloudinaryify', () => {
+    const image = 'https://google.com/image.png';
+    const height = 128;
+    const width = 128;
+    expect(
+      Component.methods.cloudinaryify({
+        image,
+      }),
+    ).toEqual(
+      `https://res.cloudinary.com/pocketpasta/image/fetch/w_${width},h_${height},c_fill,f_auto,q_auto/${image}`,
+    );
+  });
+
   test('imageData with cloudinary image does not modify url', () => {
     const wrapper = factory();
     const image = {
@@ -37,7 +60,13 @@ describe('List Card', () => {
       ...recipe,
       image,
     });
-    expect(wrapper.vm.imageData).toBeTruthy();
+    expect(
+      wrapper.vm.source({
+        image: wrapper.vm.imageUrl,
+        height: 256,
+        width: 'auto',
+      }),
+    ).toBeTruthy();
   });
 
   test('imageData convet to cloudinaty url', () => {
@@ -45,7 +74,13 @@ describe('List Card', () => {
     wrapper.setProps({
       ...recipe,
     });
-    expect(wrapper.vm.imageData).toBeTruthy();
+    expect(
+      wrapper.vm.source({
+        image: wrapper.vm.imageUrl,
+        height: 'auto',
+        width: 'auto',
+      }),
+    ).toBeTruthy();
   });
 
   test('imageData handle array', () => {
@@ -54,7 +89,13 @@ describe('List Card', () => {
       ...recipe,
       image: ['https://res.cloudinary.com/pocketpasta/image/fetch/'],
     });
-    expect(wrapper.vm.imageData).toBeTruthy();
+    expect(
+      wrapper.vm.source({
+        image: wrapper.vm.imageUrl,
+        height: 256,
+        width: 'auto',
+      }),
+    ).toBeTruthy();
   });
 
   test('imageData handle array of objects', () => {
@@ -63,7 +104,13 @@ describe('List Card', () => {
       ...recipe,
       image: [{ url: 'https://res.cloudinary.com/pocketpasta/image/fetch/' }],
     });
-    expect(wrapper.vm.imageData).toBeTruthy();
+    expect(
+      wrapper.vm.source({
+        image: wrapper.vm.imageUrl,
+        height: 256,
+        width: 'auto',
+      }),
+    ).toBeTruthy();
   });
 
   test('imageData handle null', () => {
@@ -72,7 +119,13 @@ describe('List Card', () => {
       ...recipe,
       image: null,
     });
-    expect(wrapper.vm.imageData).toBe(null);
+    expect(
+      wrapper.vm.source({
+        image: wrapper.vm.imageUrl,
+        height: 256,
+        width: 'auto',
+      }),
+    ).toEqual({ src: '', srcset: '' });
   });
 
   test('renders properly', () => {
