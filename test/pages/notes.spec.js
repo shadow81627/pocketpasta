@@ -14,6 +14,13 @@ const factory = () =>
   shallowMount(Component, {
     localVue,
     router,
+    $pouch: {
+      changes: () => ({ on: () => ({}) }),
+      post: () => ({}),
+      put: () => ({}),
+      upsert: () => ({}),
+      find: () => [],
+    },
     mocks: {
       $fetchState: {},
       $pouch: {
@@ -21,6 +28,7 @@ const factory = () =>
         post: () => ({}),
         put: () => ({}),
         upsert: () => ({}),
+        find: () => [],
       },
     },
   });
@@ -45,9 +53,9 @@ describe('Notes page', () => {
     expect(await wrapper.vm.save({})).toBe(undefined);
   });
 
-  test('fetch', () => {
+  test('fetch', async () => {
     const wrapper = factory();
-    expect(wrapper.vm.$options.fetch()).toBeTruthy();
+    expect(await wrapper.vm.$options.fetch()).toEqual(undefined);
     expect(wrapper.vm.items).toEqual([]);
   });
 
