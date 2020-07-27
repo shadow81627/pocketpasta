@@ -1,5 +1,17 @@
 # Releases
 
+## [0.45.3](https://github.com/shadow81627/pocketpasta/compare/v0.45.2...v0.45.3) (2020-07-27)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxtjs/firebase to v6.1.1 ([40c77af](https://github.com/shadow81627/pocketpasta/commit/40c77afec32e956e073a27872f04123f4c183d63))
+
+## [0.45.2](https://github.com/shadow81627/pocketpasta/compare/v0.45.1...v0.45.2) (2020-07-27)
+
+### Bug Fixes
+
+- **deps:** update dependency vue-virtual-scroll-list to v2.3.1 ([a4d6d59](https://github.com/shadow81627/pocketpasta/commit/a4d6d5962eb09fb83686a66ed26333332fcf9cc7))
+
 ## [0.45.1](https://github.com/shadow81627/pocketpasta/compare/v0.45.0...v0.45.1) (2020-07-27)
 
 ### Bug Fixes
