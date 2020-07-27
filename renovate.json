@@ -1,4 +1,6 @@
 {
+  "prCreation": "not-pending",
+  "dependencyDashboard": true,
   "rollbackPrs": true,
   "unpublishSafe": true,
   "stabilityDays": 2,
@@ -6,5 +8,13 @@
   "bumpVersion": null,
   "labels": ["dependencies"],
   "lockFileMaintenance": { "enabled": true },
-  "extends": ["config:base", ":semanticCommits", ":pinSkipCi"]
+  "extends": [
+    "config:base",
+    ":semanticCommits",
+    ":pinSkipCi",
+    ":unpublishSafe",
+    ":prNotPending",
+    ":maintainLockFilesWeekly",
+    ":enableVulnerabilityAlerts"
+  ]
 }
