@@ -1,5 +1,47 @@
 # Releases
 
+## [0.45.7](https://github.com/shadow81627/pocketpasta/compare/v0.45.6...v0.45.7) (2020-07-28)
+
+### Bug Fixes
+
+- **deps:** update pouchdb monorepo to v7.2.2 ([ba970c6](https://github.com/shadow81627/pocketpasta/commit/ba970c6ebc515f3dd2a8090f9639a0b2ddbd2988))
+
+## [0.45.6](https://github.com/shadow81627/pocketpasta/compare/v0.45.5...v0.45.6) (2020-07-28)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxtjs/sentry to v4.2.1 ([5b3322e](https://github.com/shadow81627/pocketpasta/commit/5b3322ea3633c734c171e9dd7d9a7f9a7087ef13))
+
+## [0.45.5](https://github.com/shadow81627/pocketpasta/compare/v0.45.4...v0.45.5) (2020-07-28)
+
+### Bug Fixes
+
+- **deps:** update dependency nuxt to v2.14.0 ([a3e5a96](https://github.com/shadow81627/pocketpasta/commit/a3e5a9620336c78712d8d386435de0e2c32709de))
+
+## [0.45.4](https://github.com/shadow81627/pocketpasta/compare/v0.45.3...v0.45.4) (2020-07-28)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxt/content to v1.5.0 ([7d368ab](https://github.com/shadow81627/pocketpasta/commit/7d368ab2981d15ab44d1b69aad422f86f38abcd2))
+
+## [0.45.3](https://github.com/shadow81627/pocketpasta/compare/v0.45.2...v0.45.3) (2020-07-27)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxtjs/firebase to v6.1.1 ([40c77af](https://github.com/shadow81627/pocketpasta/commit/40c77afec32e956e073a27872f04123f4c183d63))
+
+## [0.45.2](https://github.com/shadow81627/pocketpasta/compare/v0.45.1...v0.45.2) (2020-07-27)
+
+### Bug Fixes
+
+- **deps:** update dependency vue-virtual-scroll-list to v2.3.1 ([a4d6d59](https://github.com/shadow81627/pocketpasta/commit/a4d6d5962eb09fb83686a66ed26333332fcf9cc7))
+
+## [0.45.1](https://github.com/shadow81627/pocketpasta/compare/v0.45.0...v0.45.1) (2020-07-27)
+
+### Bug Fixes
+
+- **deps:** update dependency firebase to v7.17.1 ([7043635](https://github.com/shadow81627/pocketpasta/commit/704363500ebc4b51ae86d493c9e0ca92257a288f))
+
 ## [0.45.0](https://github.com/shadow81627/pocketpasta/compare/v0.44.2...v0.45.0) (2020-07-26)
 
 ### Features
