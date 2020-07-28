@@ -1,9 +1,6 @@
 {
-  "prCreation": "not-pending",
   "dependencyDashboard": true,
   "rollbackPrs": true,
-  "unpublishSafe": true,
-  "stabilityDays": 2,
   "automerge": true,
   "bumpVersion": null,
   "labels": ["dependencies"],
@@ -12,7 +9,6 @@
     "config:base",
     ":semanticCommits",
     ":pinSkipCi",
-    ":unpublishSafe",
     ":prNotPending",
     ":maintainLockFilesWeekly",
     ":enableVulnerabilityAlerts"
