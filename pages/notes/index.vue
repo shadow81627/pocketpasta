@@ -130,16 +130,20 @@ export default {
         const { content } = head(this.items) ?? {};
         return content;
       },
-      set: debounce(async function (value) {
+      async set(value) {
         const item = {
           _id: `notes/${1}`,
           ...(head(this.items) ?? {}),
           type: 'note',
           content: value,
         };
-        await this.save(item);
-      }, 2000),
+        await this.debouncedSave(item);
+      },
     },
+  },
+  created() {
+    // only save 2 seconds after typing stops to prevent lots of revisions being created
+    this.debouncedSave = debounce(this.save, 2000);
   },
   mounted() {
     this.$pouch
