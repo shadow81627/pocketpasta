@@ -1,5 +1,23 @@
 # Releases
 
+## [0.45.7](https://github.com/shadow81627/pocketpasta/compare/v0.45.6...v0.45.7) (2020-07-28)
+
+### Bug Fixes
+
+- **deps:** update pouchdb monorepo to v7.2.2 ([ba970c6](https://github.com/shadow81627/pocketpasta/commit/ba970c6ebc515f3dd2a8090f9639a0b2ddbd2988))
+
+## [0.45.6](https://github.com/shadow81627/pocketpasta/compare/v0.45.5...v0.45.6) (2020-07-28)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxtjs/sentry to v4.2.1 ([5b3322e](https://github.com/shadow81627/pocketpasta/commit/5b3322ea3633c734c171e9dd7d9a7f9a7087ef13))
+
+## [0.45.5](https://github.com/shadow81627/pocketpasta/compare/v0.45.4...v0.45.5) (2020-07-28)
+
+### Bug Fixes
+
+- **deps:** update dependency nuxt to v2.14.0 ([a3e5a96](https://github.com/shadow81627/pocketpasta/commit/a3e5a9620336c78712d8d386435de0e2c32709de))
+
 ## [0.45.4](https://github.com/shadow81627/pocketpasta/compare/v0.45.3...v0.45.4) (2020-07-28)
 
 ### Bug Fixes
