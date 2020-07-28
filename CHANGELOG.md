@@ -1,5 +1,11 @@
 # Releases
 
+## [0.45.7](https://github.com/shadow81627/pocketpasta/compare/v0.45.6...v0.45.7) (2020-07-28)
+
+### Bug Fixes
+
+- **deps:** update pouchdb monorepo to v7.2.2 ([ba970c6](https://github.com/shadow81627/pocketpasta/commit/ba970c6ebc515f3dd2a8090f9639a0b2ddbd2988))
+
 ## [0.45.6](https://github.com/shadow81627/pocketpasta/compare/v0.45.5...v0.45.6) (2020-07-28)
 
 ### Bug Fixes
