@@ -48,7 +48,7 @@ exports[`List renders properly 1`] = `
 
             return 0;
           });
-        }\\" page=\\"1\\" itemsperpage=\\"4\\" groupby=\\"\\" groupdesc=\\"\\" customgroup=\\"function groupItems(items, groupBy, groupDesc) {
+        }\\" page=\\"1\\" groupby=\\"\\" groupdesc=\\"\\" customgroup=\\"function groupItems(items, groupBy, groupDesc) {
           var key = groupBy[0];
           var groups = [];
           var current = null;

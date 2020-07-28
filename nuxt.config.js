@@ -149,6 +149,12 @@ module.exports = {
     ],
     meta: [
       {
+        once: true,
+        name: 'charset',
+        hid: 'charset',
+        content: 'utf-8',
+      },
+      {
         property: 'og:title',
         template: (titleChunk) => {
           // If undefined or blank then we don't need the hyphen
@@ -218,6 +224,7 @@ module.exports = {
    */
   plugins: [
     { src: '~/plugins/theme.js', mode: 'client' },
+    { src: '~/plugins/pouch.js', mode: 'client' },
     { src: '~/middleware/last-known-route', mode: 'client' },
   ],
 
@@ -402,6 +409,16 @@ module.exports = {
           enforce: 'pre',
           test: /\.(js|vue)$/,
           loader: 'eslint-loader',
+          exclude: /(node_modules)/,
+        });
+      }
+
+      // Web Worker support
+      if (ctx.isClient) {
+        config.module.rules.push({
+          test: /\.worker\.js$/,
+          // use: { loader: 'worker-loader' },
+          loader: 'worker-loader',
           exclude: /(node_modules)/,
         });
       }

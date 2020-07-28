@@ -1,3 +1,4 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`recipes renders properly 1`] = `"<list-stub collection=\\"recipes\\" heading=\\"recipes.heading\\" layout=\\"list\\" fetchonserver=\\"true\\" defaultlimit=\\"4\\"></list-stub>"`;
+

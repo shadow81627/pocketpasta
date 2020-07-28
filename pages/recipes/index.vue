@@ -2,7 +2,7 @@
   <list
     v-bind="{
       heading: $t('recipes.heading'),
-      layout: 'list',
+      layout: 'columns',
       collection: 'recipes',
     }"
   />

@@ -26,18 +26,6 @@ let store;
 let mutations;
 let vuetify;
 
-const $route = {
-  get() {
-    return {
-      path: '/recipes/detail/1',
-      params: { id: '1' },
-      fullPath: '/recipes/detail/1',
-      name: 'recipes-detail-id',
-    };
-  },
-  set() {},
-};
-
 beforeEach(() => {
   vuetify = new Vuetify();
   state = {
@@ -70,7 +58,7 @@ const factory = () =>
     stubs: {
       NuxtLink: RouterLinkStub,
     },
-    mocks: { $route },
+    // mocks: { $route },
     localVue,
   });
 
