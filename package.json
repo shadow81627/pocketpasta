@@ -1,6 +1,6 @@
 {
   "name": "pocketpasta",
-  "version": "0.45.3",
+  "version": "0.45.4",
   "description": "Eat spagetti to forgetti your regretti",
   "author": {
     "name": "Damien Robinson",
@@ -43,7 +43,7 @@
     "scrape:dry": "node scrape --no-scrape && npm run format"
   },
   "dependencies": {
-    "@nuxt/content": "1.4.1",
+    "@nuxt/content": "1.5.0",
     "@nuxtjs/auth": "4.9.1",
     "@nuxtjs/axios": "5.12.0",
     "@nuxtjs/firebase": "6.1.1",
@@ -82,9 +82,9 @@
     "@commitlint/cli": "9.1.2",
     "@commitlint/config-conventional": "9.1.1",
     "@lhci/cli": "0.4.3",
-    "@mdi/js": "5.3.45",
-    "@nuxtjs/color-mode": "1.0.0",
-    "@nuxtjs/eslint-config": "3.0.0",
+    "@mdi/js": "5.4.45",
+    "@nuxtjs/color-mode": "1.0.1",
+    "@nuxtjs/eslint-config": "3.1.0",
     "@nuxtjs/eslint-module": "2.0.0",
     "@nuxtjs/netlify-files": "1.2.0",
     "@nuxtjs/vuetify": "1.11.2",
@@ -109,7 +109,7 @@
     "eslint-config-vuetify": "0.6.1",
     "eslint-loader": "4.0.2",
     "eslint-plugin-import": "2.22.0",
-    "eslint-plugin-jest": "23.18.0",
+    "eslint-plugin-jest": "23.19.0",
     "eslint-plugin-node": "11.1.0",
     "eslint-plugin-nuxt": "1.0.0",
     "eslint-plugin-prettier": "3.1.4",
@@ -137,7 +137,7 @@
     "sass": "1.26.10",
     "sass-loader": "9.0.2",
     "semantic-release": "17.1.1",
-    "slugify": "1.4.4",
+    "slugify": "1.4.5",
     "snyk": "1.366.2",
     "stylelint-config-prettier": "8.0.2",
     "vue-jest": "3.0.6",
