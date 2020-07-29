@@ -8,16 +8,15 @@
     elevation="4"
     class="flex d-flex flex-column"
   >
-    <div v-show="layout === 'columns'">
-      <v-img
-        :src="source({ image: imageUrl, height: 256, width: 'auto' }).src"
-        :srcset="source({ image: imageUrl, height: 256, width: 'auto' }).srcset"
-        itemprop="image"
-        height="256"
-        max-height="256"
-        :alt="name"
-      />
-    </div>
+    <v-img
+      v-show="layout === 'columns'"
+      :src="source({ image: imageUrl, height: 256, width: 'auto' }).src"
+      :srcset="source({ image: imageUrl, height: 256, width: 'auto' }).srcset"
+      itemprop="image"
+      height="256"
+      max-height="256"
+      :alt="name"
+    />
     <v-container>
       <v-row class="align-center justify-center" no-gutters>
         <v-col v-show="layout !== 'columns'" cols="auto">
