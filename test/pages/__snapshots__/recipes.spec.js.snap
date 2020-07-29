@@ -1,4 +1,3 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`recipes renders properly 1`] = `"<list-stub collection=\\"recipes\\" heading=\\"recipes.heading\\" layout=\\"list\\" fetchonserver=\\"true\\" defaultlimit=\\"4\\"></list-stub>"`;
-
+exports[`recipes renders properly 1`] = `"<list-stub collection=\\"recipes\\" heading=\\"recipes.heading\\" layout=\\"columns\\" fetchonserver=\\"true\\" defaultlimit=\\"-1\\" infinite=\\"true\\" headers=\\"[object Object],[object Object],[object Object]\\"></list-stub>"`;
