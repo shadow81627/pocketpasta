@@ -12,32 +12,23 @@ localVue.use(VueRouter);
 
 const router = new VueRouter();
 
+const $pouch = {
+  changes: () => ({ on: () => ({}) }),
+  post: () => ({}),
+  put: () => ({}),
+  upsert: () => ({}),
+  find: () => ({ docs: [] }),
+};
+
 const factory = () =>
   shallowMount(Component, {
     localVue,
     router,
+    $pouch,
     mocks: {
       $auth: { user: {} },
       $fetchState: {},
-      $fireStore: {
-        collection: () => ({
-          doc: () => ({
-            set: () =>
-              new Promise((resolve, reject) => {
-                setTimeout(() => {
-                  resolve('foo');
-                }, 300);
-              }),
-          }),
-          add: () => ({}),
-        }),
-      },
-      $pouch: {
-        changes: () => ({ on: () => ({}) }),
-        post: () => ({}),
-        put: () => ({}),
-        upsert: () => ({}),
-      },
+      $pouch,
     },
   });
 
@@ -73,14 +64,15 @@ describe('Tasks page', () => {
     const wrapper = factory();
     expect(await wrapper.vm.create()).toBe(undefined);
   });
+
   test('save', async () => {
     const wrapper = factory();
     expect(await wrapper.vm.save({})).toBe(undefined);
   });
 
-  test('fetch', () => {
+  test('fetch', async () => {
     const wrapper = factory();
-    expect(wrapper.vm.$options.fetch()).toBeTruthy();
+    expect(await wrapper.vm.$options.fetch()).toBe(undefined);
   });
 
   test('pages', () => {

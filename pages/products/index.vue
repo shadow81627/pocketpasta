@@ -1,13 +1,11 @@
 <template>
-  <div class="container">
-    <list
-      v-bind="{
-        heading: $t('products.heading'),
-        layout: 'list',
-        collection: 'products',
-      }"
-    />
-  </div>
+  <list
+    v-bind="{
+      heading: $t('products.heading'),
+      layout: 'list',
+      collection: 'products',
+    }"
+  />
 </template>
 
 <script>

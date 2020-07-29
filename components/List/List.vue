@@ -195,13 +195,16 @@ export default {
         // set page to last page if page is larger than last page
         return page <= this.pages ? page : this.pages;
       },
-      set(page) {
-        this.$router.push({
-          query: this.generateQuery({
-            page: page <= this.pages ? page : this.pages,
-            reset: false,
-          }),
-        });
+      set(value) {
+        const page = value <= this.pages ? value : this.pages;
+        if (page !== this.page) {
+          this.$router.push({
+            query: this.generateQuery({
+              page,
+              reset: false,
+            }),
+          });
+        }
       },
     },
     limit: {
