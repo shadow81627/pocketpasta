@@ -1,6 +1,6 @@
 {
   "name": "pocketpasta",
-  "version": "0.45.7",
+  "version": "0.46.0",
   "description": "Eat spagetti to forgetti your regretti",
   "author": {
     "name": "Damien Robinson",
@@ -70,6 +70,7 @@
     "quill": "1.3.7",
     "sortablejs": "1.10.2",
     "store": "2.0.12",
+    "tiptap-vuetify": "2.24.0",
     "utility-opentype": "0.1.4",
     "vue-disqus": "4.0.1",
     "vue-plyr": "6.0.4",
