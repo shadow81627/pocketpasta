@@ -32,6 +32,9 @@ export default async (context, inject) => {
     pouch.createIndex({
       index: { fields: ['category', 'name', 'type'] },
     });
+    pouch.createIndex({
+      index: { fields: ['type'] },
+    });
     // PouchDB.debug.enable('*');
     inject('pouch', pouch);
   }
