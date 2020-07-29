@@ -289,10 +289,10 @@ import ListHeader from '@/components/List/ListHeader.vue';
 // Sortable.mount(new MultiDrag());
 
 export default {
-
   components: {
     ConfirmDialog,
- ListHeader },
+    ListHeader,
+  },
 
   directives: {
     Ripple,
