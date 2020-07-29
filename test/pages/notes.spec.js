@@ -10,26 +10,22 @@ localVue.use(VueRouter);
 
 const router = new VueRouter();
 
+const $pouch = {
+  changes: () => ({ on: () => ({}) }),
+  post: () => ({}),
+  put: () => ({}),
+  upsert: () => ({}),
+  find: () => ({ docs: [] }),
+};
+
 const factory = () =>
   shallowMount(Component, {
     localVue,
     router,
-    $pouch: {
-      changes: () => ({ on: () => ({}) }),
-      post: () => ({}),
-      put: () => ({}),
-      upsert: () => ({}),
-      find: () => [],
-    },
+    $pouch,
     mocks: {
       $fetchState: {},
-      $pouch: {
-        changes: () => ({ on: () => ({}) }),
-        post: () => ({}),
-        put: () => ({}),
-        upsert: () => ({}),
-        find: () => [],
-      },
+      $pouch,
     },
   });
 
