@@ -15,7 +15,7 @@ const $pouch = {
   post: () => ({}),
   put: () => ({}),
   upsert: () => ({}),
-  find: () => ({ docs: [] }),
+  find: () => ({}),
 };
 
 const factory = () =>
