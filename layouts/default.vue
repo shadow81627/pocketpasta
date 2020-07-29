@@ -55,7 +55,7 @@
             nuxt
           >
             <v-list-item-action>
-              <v-icon>${{ item.icon }}</v-icon>
+              <v-icon>{{ item.icon }}</v-icon>
             </v-list-item-action>
             <v-list-item-content>
               <v-list-item-title>{{ item.text }}</v-list-item-title>
@@ -104,6 +104,7 @@
 </template>
 
 <script>
+import { mdiClipboardListOutline } from '@mdi/js';
 import AddToHomeScreen from '@/components/AddToHomeScreen.vue';
 import UserMenu from '@/components/UserMenu.vue';
 import TheFooter from '@/components/Layout/the-footer.vue';
@@ -124,27 +125,32 @@ export default {
     items() {
       return [
         {
-          icon: 'book',
+          icon: '$book',
           text: this.$t('layout.navigation.recipes'),
           route: { name: 'recipes' },
         },
         {
-          icon: 'store',
+          icon: '$store',
           text: this.$t('layout.navigation.products'),
           route: { name: 'products' },
         },
         {
-          icon: 'notes',
-          text: this.$t('layout.navigation.shoppinglist'),
+          icon: mdiClipboardListOutline,
+          text: 'lists',
           route: { name: 'shoppinglist' },
         },
         {
-          icon: 'calendar-check',
+          icon: '$calendar-check',
           text: 'Tasks',
           route: { name: 'tasks' },
         },
         {
-          icon: 'settings',
+          icon: '$notes',
+          text: 'Notes',
+          route: { name: 'notes' },
+        },
+        {
+          icon: '$settings',
           text: this.$t('layout.navigation.settings'),
           route: { name: 'settings' },
         },
