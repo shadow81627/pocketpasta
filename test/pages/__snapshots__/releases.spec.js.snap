@@ -2,6 +2,6 @@
 
 exports[`releases page renders properly 1`] = `
 "<v-container-stub tag=\\"div\\">
-  <v-sheet-stub light=\\"true\\" tag=\\"div\\" class=\\"markdown-body\\">CHANGELOG.md</v-sheet-stub>
+  <v-sheet-stub tag=\\"div\\" class=\\"markdown-body\\">CHANGELOG.md</v-sheet-stub>
 </v-container-stub>"
 `;

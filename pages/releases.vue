@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <v-sheet class="markdown-body" light v-html="content()" />
+    <v-sheet class="markdown-body" v-html="content()" />
   </v-container>
 </template>
 

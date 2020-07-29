@@ -1,7 +1,3 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`products page renders properly 1`] = `
-"<div class=\\"container\\">
-  <list-stub collection=\\"products\\" heading=\\"products.heading\\" layout=\\"list\\" fetchonserver=\\"true\\" defaultlimit=\\"-1\\" infinite=\\"true\\" headers=\\"[object Object],[object Object],[object Object]\\"></list-stub>
-</div>"
-`;
+exports[`products page renders properly 1`] = `"<list-stub collection=\\"products\\" heading=\\"products.heading\\" layout=\\"list\\" fetchonserver=\\"true\\" defaultlimit=\\"-1\\" infinite=\\"true\\" headers=\\"[object Object],[object Object],[object Object]\\"></list-stub>"`;
