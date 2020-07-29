@@ -1,14 +1,13 @@
 import Page from '@/pages/login.vue';
 import { shallowMount, createLocalVue } from '@vue/test-utils';
 import Vuetify from 'vuetify';
-import BootstrapVuePlugin from 'bootstrap-vue';
+
 import Vue from 'vue';
 
 const localVue = createLocalVue();
 let vuetify;
 
 Vue.use(Vuetify);
-localVue.use(BootstrapVuePlugin);
 
 const factory = () =>
   shallowMount(Page, {
