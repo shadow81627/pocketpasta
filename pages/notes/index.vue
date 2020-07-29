@@ -23,11 +23,9 @@
                   <v-col cols="auto">
                     <v-tooltip bottom>
                       <template v-slot:activator="{ on, attrs }">
-                        <confirm-dialog
-                          v-bind="attrs"
-                          @confirm="deleteItem(head(items))"
-                          v-on="on"
-                        />
+                        <span v-bind="attrs" v-on="on">
+                          <confirm-dialog @confirm="deleteItem(head(items))" />
+                        </span>
                       </template>
                       <span>Delete</span>
                     </v-tooltip>
