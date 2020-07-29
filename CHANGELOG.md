@@ -1,5 +1,11 @@
 # Releases
 
+## [0.46.0](https://github.com/shadow81627/pocketpasta/compare/v0.45.8...v0.46.0) (2020-07-29)
+
+### Features
+
+- notes ([#1377](https://github.com/shadow81627/pocketpasta/issues/1377)) ([db48b78](https://github.com/shadow81627/pocketpasta/commit/db48b788087ce4b5048710d7e184122660b98a18))
+
 ## [0.45.8](https://github.com/shadow81627/pocketpasta/compare/v0.45.7...v0.45.8) (2020-07-28)
 
 ### Bug Fixes
