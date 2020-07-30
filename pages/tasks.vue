@@ -15,7 +15,7 @@
           :items-per-page.sync="limit"
           :page.sync="page"
           :server-items-length="total"
-          :xsort-by.sync="groupBy"
+          :sort-by.sync="sortBy"
           :item-class="draggableIgnore"
           hide-default-footer
         >
@@ -31,7 +31,7 @@
             />
           </template>
 
-          <template v-slot:group.header="{ headers, group, items }">
+          <template v-slot:group.header="{ group, items }">
             <td :colspan="headers.length" class="item handle">
               <v-container class="pa-0">
                 <v-row>
@@ -39,7 +39,12 @@
                     <v-text-field
                       v-if="!group || (group && group.length === 0)"
                       :value="group"
-                      label="Name"
+                      :label="
+                        headers
+                          .filter((item) => item.text)
+                          .find((item) => item.value === groupBy).text
+                      "
+                      :name="groupBy"
                       single-line
                       hide-details
                       clearable
@@ -231,13 +236,25 @@
                 {{ icons.mdiPencil }}
               </v-icon>
             </v-btn> -->
-            <v-btn icon title="delete" @click="deleteItem(item)">
-              <v-icon>
-                {{ icons.mdiDelete }}
-              </v-icon>
-            </v-btn>
+            <confirm-dialog @confirm="deleteItem(item)" />
           </template>
         </v-data-table>
+      </v-col>
+    </v-row>
+    <v-row>
+      <v-col>
+        <confirm-dialog
+          v-if="items.length"
+          action="all your items"
+          @confirm="clear(items)"
+        >
+          <template v-slot:activator="{ on, attrs }">
+            <v-btn color="danger" v-bind="attrs" v-on="on">
+              Clear All
+            </v-btn>
+          </template>
+        </confirm-dialog>
+
         <v-btn
           bottom
           right
@@ -266,12 +283,17 @@ import {
 } from '@mdi/js';
 import { DateTime } from 'luxon';
 
+import ConfirmDialog from '@/components/ConfirmDialog.vue';
 import ListHeader from '@/components/List/ListHeader.vue';
 
 // Sortable.mount(new MultiDrag());
 
 export default {
-  components: { ListHeader },
+  components: {
+    ConfirmDialog,
+    ListHeader,
+  },
+
   directives: {
     Ripple,
   },
@@ -310,7 +332,7 @@ export default {
       // limit: this.limit,
       // skip: (this.page - 1) * this.limit,
     });
-    const { docs = [] } = result;
+    const { docs = [this.defaultItem] } = result;
     this.items = docs;
     console.log(result);
   },
@@ -330,6 +352,7 @@ export default {
       mdiPlus,
     },
     dialog: false,
+    deleteDialog: false,
     headers: [
       { value: 'done', align: 'start', width: 1 },
       {
@@ -414,7 +437,8 @@ export default {
     },
     sortBy: {
       get() {
-        return this.$route.query.sortBy || 'name';
+        const sortBy = this.$route.query.sortBy ?? 'category';
+        return this.items.length ? sortBy : null;
       },
       set(sortBy) {
         this.$router.push({ query: this.query({ sortBy }) });
@@ -422,7 +446,8 @@ export default {
     },
     groupBy: {
       get() {
-        return this.$route.query.groupBy || 'category';
+        const groupBy = this.$route.query.groupBy ?? 'category';
+        return this.items.length ? groupBy : null;
       },
       set(groupBy) {
         this.$router.push({ query: this.query({ groupBy }) });
@@ -478,13 +503,10 @@ export default {
       'ignore-elements': true,
     }),
     async deleteItem({ _id }) {
-      const confirmed = confirm('Are you sure you want to delete this item?');
-      if (confirmed) {
-        await this.$pouch.upsert(_id, (doc) => ({
-          ...doc,
-          _deleted: true,
-        }));
-      }
+      await this.$pouch.upsert(_id, (doc) => ({
+        ...doc,
+        _deleted: true,
+      }));
     },
 
     close() {
@@ -504,6 +526,10 @@ export default {
       this.close();
     },
 
+    clear(items) {
+      this.bulkUpdate({ items, key: '_deleted', value: true });
+    },
+
     async saveCategory({ tasks, id }) {
       const category = await this.$pouch.upsert(id, (doc) => ({
         ...doc,
@@ -519,14 +545,17 @@ export default {
       );
     },
 
-    bulkUpdate({ items, key, value }) {
-      items.map((item) => (item[key] = value));
+    async bulkUpdate({ items, key, value }) {
+      await Promise.all(
+        items.map((item) =>
+          this.$pouch.upsert(item._id, (doc) => ({
+            ...doc,
+            [key]: value,
+          })),
+        ),
+      );
     },
 
-    async bulkSave(items) {
-      await this.$pouch.bulkDocs(items);
-      this.close();
-    },
     query({
       sortBy = this.sortBy,
       groupBy = this.groupBy,
@@ -539,7 +568,7 @@ export default {
       // sorted query string for more cache hits
       return Object.fromEntries(
         Object.entries({
-          sortBy: sortBy && sortBy !== 'name' ? sortBy : undefined,
+          sortBy: sortBy && sortBy !== 'category' ? sortBy : undefined,
           groupBy: groupBy && groupBy !== 'category' ? groupBy : undefined,
           search: search && search !== '' ? search : undefined,
           view: view && view !== this.layout ? view : undefined,

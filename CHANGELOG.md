@@ -1,5 +1,23 @@
 # Releases
 
+## [0.46.3](https://github.com/shadow81627/pocketpasta/compare/v0.46.2...v0.46.3) (2020-07-29)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxtjs/sentry to v4.3.2 ([6d82ffd](https://github.com/shadow81627/pocketpasta/commit/6d82ffd79c8de2ace4e297dbbd5815e9d5547345))
+
+## [0.46.2](https://github.com/shadow81627/pocketpasta/compare/v0.46.1...v0.46.2) (2020-07-29)
+
+### Bug Fixes
+
+- **deps:** update dependency firebaseui to v4.6.1 ([5636361](https://github.com/shadow81627/pocketpasta/commit/56363611515c11a7e5ef2fed06c2ffc145b4a7db))
+
+## [0.46.1](https://github.com/shadow81627/pocketpasta/compare/v0.46.0...v0.46.1) (2020-07-29)
+
+### Bug Fixes
+
+- **deps:** update dependency bootstrap-vue to v2.16.0 ([59ea82c](https://github.com/shadow81627/pocketpasta/commit/59ea82c9082c718905f8c03785292f1f2e4d0066))
+
 ## [0.46.0](https://github.com/shadow81627/pocketpasta/compare/v0.45.8...v0.46.0) (2020-07-29)
 
 ### Features

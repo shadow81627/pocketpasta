@@ -23,18 +23,9 @@
                   <v-col cols="auto">
                     <v-tooltip bottom>
                       <template v-slot:activator="{ on, attrs }">
-                        <v-btn
-                          icon
-                          v-bind="attrs"
-                          aria-label="delete"
-                          color="error"
-                          v-on="on"
-                          @click="deleteItem()"
-                        >
-                          <v-icon>
-                            {{ mdiDelete }}
-                          </v-icon>
-                        </v-btn>
+                        <span v-bind="attrs" v-on="on">
+                          <confirm-dialog @confirm="deleteItem(head(items))" />
+                        </span>
                       </template>
                       <span>Delete</span>
                     </v-tooltip>
@@ -76,9 +67,12 @@ import {
 } from 'tiptap-vuetify';
 import { mdiDelete } from '@mdi/js';
 
+import ConfirmDialog from '@/components/ConfirmDialog.vue';
+
 export default {
   components: {
     TiptapVuetify,
+    ConfirmDialog,
   },
   fetchOnServer: false,
   async fetch() {
@@ -154,14 +148,12 @@ export default {
       .on('change', this.$fetch);
   },
   methods: {
-    async deleteItem({ _id } = head(this.items)) {
-      const confirmed = confirm('Are you sure you want to delete this item?');
-      if (confirmed) {
-        await this.$pouch.upsert(_id, (doc) => ({
-          ...doc,
-          _deleted: true,
-        }));
-      }
+    head,
+    async deleteItem({ _id }) {
+      await this.$pouch.upsert(_id, (doc) => ({
+        ...doc,
+        _deleted: true,
+      }));
     },
     async save(item) {
       this.loading = true;
