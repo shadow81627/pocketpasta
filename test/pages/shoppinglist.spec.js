@@ -3,12 +3,10 @@
  */
 
 import Component from '@/pages/shoppinglist.vue';
-import { createLocalVue, mount } from '@vue/test-utils';
+import { mount } from '@vue/test-utils';
 import Vuetify from 'vuetify';
-
 import Vue from 'vue';
 
-const localVue = createLocalVue();
 let vuetify;
 
 Vue.use(Vuetify);
