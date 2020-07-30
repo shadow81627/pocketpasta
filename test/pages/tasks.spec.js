@@ -1,13 +1,13 @@
 import Component from '@/pages/tasks.vue';
 import { shallowMount, createLocalVue } from '@vue/test-utils';
 import Vuetify from 'vuetify';
-import BootstrapVuePlugin from 'bootstrap-vue';
+
 import VueRouter from 'vue-router';
 
 const localVue = createLocalVue();
 
 localVue.use(Vuetify);
-localVue.use(BootstrapVuePlugin);
+
 localVue.use(VueRouter);
 
 const router = new VueRouter();

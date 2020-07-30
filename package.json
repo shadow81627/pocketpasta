@@ -53,7 +53,6 @@
     "@nuxtjs/recaptcha": "0.6.2",
     "@nuxtjs/sentry": "4.3.2",
     "@nuxtjs/sitemap": "2.4.0",
-    "bootstrap-vue": "2.16.0",
     "cross-env": "7.0.2",
     "firebase": "7.17.1",
     "firebaseui": "4.6.1",
@@ -122,7 +121,6 @@
     "he": "1.2.0",
     "husky": "4.2.5",
     "jest": "26.1.0",
-    "lighthousebot": "git+https://github.com/ebidel/lighthousebot.git",
     "lodash": "4.17.19",
     "mutation-observer": "1.0.3",
     "node-sass": "4.14.1",
@@ -141,8 +139,8 @@
     "snyk": "1.369.1",
     "stylelint-config-prettier": "8.0.2",
     "vue-jest": "3.0.6",
-    "worker-loader": "2.0.0",
     "vuetify-loader": "1.6.0",
+    "worker-loader": "2.0.0",
     "yargs": "15.4.1"
   },
   "engines": {

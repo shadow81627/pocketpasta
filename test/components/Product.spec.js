@@ -3,7 +3,7 @@ import Component from '@/components/Product/Product';
 import product from '@/assets/link-data/products/tomatoes.json';
 import { shallowMount, createLocalVue } from '@vue/test-utils';
 import Vuex from 'vuex';
-import BootstrapVuePlugin from 'bootstrap-vue';
+
 import Vuetify from 'vuetify';
 import Vue from 'vue';
 import VueMeta from 'vue-meta';
@@ -16,7 +16,7 @@ const localVue = createLocalVue();
 Vue.use(Vuetify);
 
 localVue.use(Vuex);
-localVue.use(BootstrapVuePlugin);
+
 localVue.use(VueMeta, {
   keyName: 'head',
   attribute: 'data-vue-meta',

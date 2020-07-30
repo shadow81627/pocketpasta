@@ -2,7 +2,7 @@ import Recipe from '@/components/Recipe/Recipe';
 import recipe from '@/content/recipes/1.json';
 import { shallowMount, createLocalVue, RouterLinkStub } from '@vue/test-utils';
 import Vuex from 'vuex';
-import BootstrapVuePlugin from 'bootstrap-vue';
+
 import VueMeta from 'vue-meta';
 // import VueRouter from 'vue-router';
 import Vue from 'vue';
@@ -13,7 +13,7 @@ const localVue = createLocalVue();
 Vue.use(Vuetify);
 localVue.use(Vuex);
 // localVue.use(VueRouter);
-localVue.use(BootstrapVuePlugin);
+
 localVue.use(VueMeta, {
   keyName: 'head',
   attribute: 'data-vue-meta',

@@ -1,7 +1,7 @@
 import Component from '@/components/List/ListHeader';
 import { shallowMount, createLocalVue, RouterLinkStub } from '@vue/test-utils';
 import Vuex from 'vuex';
-import BootstrapVuePlugin from 'bootstrap-vue';
+
 import VueRouter from 'vue-router';
 import Vuetify from 'vuetify';
 import Vue from 'vue';
@@ -10,7 +10,7 @@ const localVue = createLocalVue();
 
 Vue.use(Vuetify);
 localVue.use(Vuex);
-localVue.use(BootstrapVuePlugin);
+
 localVue.use(VueRouter);
 
 const router = new VueRouter();
