@@ -18,18 +18,25 @@ const $pouch = {
   find: () => ({}),
 };
 
-const factory = () =>
-  shallowMount(Component, {
-    localVue,
-    router,
-    $pouch,
-    mocks: {
-      $fetchState: {},
-      $pouch,
-    },
+describe('Notes page', () => {
+  let vuetify;
+
+  beforeEach(() => {
+    vuetify = new Vuetify();
   });
 
-describe('Notes page', () => {
+  const factory = () =>
+    shallowMount(Component, {
+      localVue,
+      router,
+      vuetify,
+      $pouch,
+      mocks: {
+        $fetchState: {},
+        $pouch,
+      },
+    });
+
   test('mounts properly', () => {
     const wrapper = factory();
     expect(wrapper.vm).toBeTruthy();

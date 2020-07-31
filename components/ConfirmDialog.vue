@@ -18,7 +18,7 @@
     </template>
 
     <v-card>
-      <v-card-title class="headline grey lighten-2">
+      <v-card-title class="headline grey lighten-2 text-left">
         <span style="word-break: normal;"
           >Are you sure you want to {{ action }}?</span
         >
