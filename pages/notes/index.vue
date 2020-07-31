@@ -14,6 +14,9 @@
             :extensions="extensions"
             placeholder="Write something …"
             :card-props="{ loading: $fetchState.pending }"
+            :toolbar-attributes="{
+              color: $vuetify.theme.dark ? 'grey darken-2' : 'grey lighten-4',
+            }"
           >
             <template v-slot:footer>
               <v-divider />

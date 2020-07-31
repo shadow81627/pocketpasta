@@ -3,7 +3,7 @@
 exports[`ViewSwitcher renders properly 1`] = `
 "<v-dialog-stub opendelay=\\"0\\" closedelay=\\"0\\" attach=\\"\\" contentclass=\\"\\" maxwidth=\\"none\\" origin=\\"center center\\" retainfocus=\\"true\\" transition=\\"dialog-transition\\" width=\\"600\\">
   <v-card-stub loaderheight=\\"4\\" tag=\\"div\\">
-    <v-card-title-stub class=\\"headline grey lighten-2\\"><span style=\\"word-break: normal;\\">Are you sure you want to delete this item?</span></v-card-title-stub>
+    <v-card-title-stub class=\\"headline grey lighten-2 text-left\\"><span style=\\"word-break: normal;\\">Are you sure you want to delete this item?</span></v-card-title-stub>
     <v-divider-stub></v-divider-stub>
     <v-card-actions-stub>
       <v-container-stub tag=\\"div\\">
