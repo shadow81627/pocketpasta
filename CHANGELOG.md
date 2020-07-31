@@ -1,5 +1,11 @@
 # Releases
 
+## [0.46.4](https://github.com/shadow81627/pocketpasta/compare/v0.46.3...v0.46.4) (2020-07-31)
+
+### Bug Fixes
+
+- **notes:** delete tooltip attach dialog ([#1408](https://github.com/shadow81627/pocketpasta/issues/1408)) ([d52dcc7](https://github.com/shadow81627/pocketpasta/commit/d52dcc7447bf528c08b4b1b0ca757b1940c2029c))
+
 ## [0.46.3](https://github.com/shadow81627/pocketpasta/compare/v0.46.2...v0.46.3) (2020-07-29)
 
 ### Bug Fixes
