@@ -1,5 +1,11 @@
 # Releases
 
+## [0.46.6](https://github.com/shadow81627/pocketpasta/compare/v0.46.5...v0.46.6) (2020-07-31)
+
+### Bug Fixes
+
+- **notes:** toolbar darkmode background color ([#1411](https://github.com/shadow81627/pocketpasta/issues/1411)) ([b1d5c99](https://github.com/shadow81627/pocketpasta/commit/b1d5c9917cf28259be7f1d2fd62f19e17ddc14f9))
+
 ## [0.46.5](https://github.com/shadow81627/pocketpasta/compare/v0.46.4...v0.46.5) (2020-07-31)
 
 ### Bug Fixes
