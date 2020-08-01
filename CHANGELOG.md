@@ -1,5 +1,11 @@
 # Releases
 
+## [0.46.9](https://github.com/shadow81627/pocketpasta/compare/v0.46.8...v0.46.9) (2020-08-01)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxt/content to v1.5.3 ([748515c](https://github.com/shadow81627/pocketpasta/commit/748515c99a3f6aa298cd1e0b1a3ad9555fe8891c))
+
 ## [0.46.8](https://github.com/shadow81627/pocketpasta/compare/v0.46.7...v0.46.8) (2020-08-01)
 
 ### Bug Fixes
