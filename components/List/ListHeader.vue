@@ -6,6 +6,7 @@
           :color="$vuetify.theme.dark ? '' : 'primary'"
           disable-icon-rotate
           style="min-height: 80px;"
+          aria-label="tune"
         >
           <client-only>
             <v-text-field
@@ -26,6 +27,7 @@
             <client-only>
               <v-icon
                 class="ml-4"
+                aria-label="tune"
                 @click="expanded = expanded === 0 ? null : 0"
                 >{{ mdiTune }}</v-icon
               >
