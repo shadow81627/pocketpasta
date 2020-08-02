@@ -94,12 +94,8 @@
     </v-app-bar>
     <v-main class="pb-0">
       <nuxt style="min-height: 100vh;" keep-alive />
+      <the-footer />
     </v-main>
-    <the-footer
-      :style="{
-        marginLeft: drawer && $vuetify.breakpoint.lgAndUp ? '256px' : 0,
-      }"
-    />
   </v-app>
 </template>
 
