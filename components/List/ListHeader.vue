@@ -5,26 +5,31 @@
         <v-expansion-panel-header
           :color="$vuetify.theme.dark ? '' : 'primary'"
           disable-icon-rotate
+          style="min-height: 80px;"
         >
-          <v-text-field
-            :value="search"
-            clearable
-            flat
-            solo-inverted
-            single-line
-            hide-details
-            :prepend-inner-icon="mdiMagnify"
-            label="Search"
-            autocomplete="false"
-            @keydown.enter="$event.target.blur()"
-            @input="$emit('update:search', $event)"
-          />
+          <client-only>
+            <v-text-field
+              :value="search"
+              clearable
+              flat
+              solo-inverted
+              single-line
+              hide-details
+              :prepend-inner-icon="mdiMagnify"
+              label="Search"
+              autocomplete="false"
+              @keydown.enter="$event.target.blur()"
+              @input="$emit('update:search', $event)"
+            />
+          </client-only>
           <template v-slot:actions>
-            <v-icon
-              class="ml-4"
-              @click="expanded = expanded === 0 ? null : 0"
-              >{{ mdiTune }}</v-icon
-            >
+            <client-only>
+              <v-icon
+                class="ml-4"
+                @click="expanded = expanded === 0 ? null : 0"
+                >{{ mdiTune }}</v-icon
+              >
+            </client-only>
           </template>
         </v-expansion-panel-header>
         <v-expansion-panel-content
