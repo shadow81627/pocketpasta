@@ -93,7 +93,7 @@
       <user-menu />
     </v-app-bar>
     <v-main class="pb-0">
-      <nuxt style="min-height: 100vh;" keep-alive />
+      <nuxt style="min-height: 100vh;" xkeep-alive />
       <the-footer />
     </v-main>
   </v-app>
