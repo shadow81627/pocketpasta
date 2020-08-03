@@ -96,6 +96,7 @@ import VirtualList from 'vue-virtual-scroll-list';
 import ItemComponent from '@/components/List/ItemComponent.vue';
 import ListHeader from '@/components/List/ListHeader.vue';
 import Card from '@/components/List/Card';
+import { debounce } from 'lodash-es';
 const collections = ['Recipe', 'Product'];
 export default {
   components: {
@@ -122,30 +123,30 @@ export default {
   },
   async fetch() {
     try {
-      this.total = (
-        await this.$content(this.collection, { deep: this.deep })
-          .only(['id'])
-          .where({ '@type': { $in: collections } })
-          .search(this.search)
-          .sortBy(this.sortBy, this.direction)
-          .fetch()
+      this.total = (this.search
+        ? await this.$content(this.collection, { deep: this.deep })
+            .only(['id'])
+            .where({ '@type': { $in: collections } })
+            .search(this.search)
+            .sortBy(this.sortBy, this.direction)
+            .fetch()
+        : await this.$content(this.collection, { deep: this.deep })
+            .only(['id'])
+            .where({ '@type': { $in: collections } })
+            .sortBy(this.sortBy, this.direction)
+            .fetch()
       ).length;
 
-      // console.log({
-      //   skip: (this.page - 1) * this.limit,
-      //   limit: this.limit,
-      //   reset: this.reset,
-      //   page: this.page,
-      // });
-
-      const results = await this.$content(this.collection, { deep: this.deep })
+      const content = this.$content(this.collection, { deep: this.deep })
         .only(['id', 'slug', 'name', 'description', 'image', '@type'])
         .where({ '@type': { $in: collections } })
-        .search(this.search)
         .sortBy(this.sortBy, this.direction)
         .skip((this.page - 1) * this.limit)
-        .limit(this.limit)
-        .fetch();
+        .limit(this.limit);
+
+      const results = this.search
+        ? await content.search(this.search).fetch()
+        : await content.fetch();
 
       if (this.infinite && !this.reset) {
         this.list = this.list.concat(results);
@@ -268,7 +269,9 @@ export default {
     },
   },
   watch: {
-    '$route.query': '$fetch',
+    '$route.query': debounce(function () {
+      this.$fetch();
+    }, 250),
   },
   methods: {
     scrollToTop() {
