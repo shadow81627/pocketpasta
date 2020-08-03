@@ -31,14 +31,31 @@ const argv = yargs
   .alias('help', 'h').argv;
 
 const urls = [
-  // ['https://shop.coles.com.au/a/caboolture/product/coles-pasta-large-shells'],
-  // ['https://www.biggerbolderbaking.com/microwave-mug-pizza/'],
-  // ['https://www.thecraftpatchblog.com/chocolate-mug-cake/'],
-  // ['https://temeculablogs.com/blueberry-muffin-in-a-mug/'],
-  // ['https://healthynibblesandbits.com/egg-fried-rice-mug/'],
+  // ['https://www.budgetbytes.com/soy-marinated-tofu-bowls-spicy-peanut-sauce/'],
+  // ['https://www.budgetbytes.com/vegan-red-lentil-stew/'],
+  // ['https://www.budgetbytes.com/sesame-tempeh-bowls/'],
+  // ['https://www.budgetbytes.com/smoky-potato-chickpea-stew/'],
+  // ['https://www.budgetbytes.com/creamy-coconut-curry-lentils-with-spinach/'],
+  // ['https://www.budgetbytes.com/easy-cauliflower-and-chickpea-masala/'],
+  // ['https://www.budgetbytes.com/mexican-lentil-stew/'],
+  // ['https://www.budgetbytes.com/simple-mushroom-broccoli-stir-fry-noodles/'],
   // [
-  //   'https://www.delish.com/cooking/recipe-ideas/recipes/a43059/best-farro-salad-recipe/',
+  //   'https://www.budgetbytes.com/roasted-cauliflower-salad-lemon-tahini-dressing/',
   // ],
+  // ['https://www.budgetbytes.com/chili-garlic-tofu-bowls/'],
+  // ['https://www.budgetbytes.com/vegan-winter-lentil-stew/'],
+  ['https://www.budgetbytes.com/moroccan-lentil-vegetable-stew-meal-prep/'],
+  ['https://www.budgetbytes.com/chipotle-portobello-oven-fajitas/'],
+  ['https://www.budgetbytes.com/sweet-chili-tofu-bowls/'],
+  ['https://www.budgetbytes.com/chunky-lentil-vegetable-soup/'],
+  ['https://www.budgetbytes.com/spanish-chickpeas-and-rice/'],
+  ['https://www.budgetbytes.com/apple-dijon-kale-salad/'],
+  ['https://www.budgetbytes.com/coconut-jerk-peas-pineapple-salsa/'],
+  ['https://www.budgetbytes.com/one-pot-roasted-red-pepper-pasta/'],
+  ['https://www.budgetbytes.com/african-peanut-stew-vegan/'],
+  ['https://www.budgetbytes.com/pan-fried-sesame-tofu-with-broccoli/'],
+  ['https://www.budgetbytes.com/curried-chickpeas-spinach/'],
+  ['https://www.budgetbytes.com/cold-peanut-noodle-salad/'],
 ];
 
 const urlBlacklist = [
@@ -190,44 +207,46 @@ function parseDuration(duration) {
         }),
       );
       chunkData.push(file);
-      // make sure existing file is first so all other data gets merged onto it.
-      _.reverse(chunkData);
+    }
+    // make sure existing file is first so all other data gets merged onto it.
+    _.reverse(chunkData);
 
-      // normalize attribute names
-      chunkData.forEach((item, index) => {
-        chunkData[index] = {
-          ...item,
-          recipeIngredient: item.recipeIngredient || item.recipeIngredients,
-          recipeIngredients: undefined,
-          name: item.name || item.title,
-          title: undefined,
-          description: item.description || item.content,
-          content: undefined,
-          id: undefined,
-          categories: undefined,
-          image: item.image || item.featuredImage,
-          featuredImage: undefined,
-          publish: undefined,
-          slug: undefined,
-          // youtubeUrl: undefined,
-          recipeInstructions: item.recipeInstructions || item.recipeSteps,
-          recipeSteps: undefined,
-          featuredRecipe: undefined,
-          keywords:
-            item.keywords ||
-            (item.searchTags && Array.isArray(item.searchTags)
-              ? _.uniq(_.map(item.searchTags, _.trim)).join(', ')
-              : undefined),
-          searchTags: undefined,
-          recipeNotes: undefined,
-          recipeIntros: undefined,
-        };
-      });
+    // normalize attribute names
+    chunkData.forEach((item, index) => {
+      chunkData[index] = {
+        ...item,
+        recipeIngredient: item.recipeIngredient || item.recipeIngredients,
+        recipeIngredients: undefined,
+        name: item.name || item.title,
+        title: undefined,
+        description: item.description || item.content,
+        content: undefined,
+        id: undefined,
+        categories: undefined,
+        image: item.image || item.featuredImage,
+        featuredImage: undefined,
+        publish: undefined,
+        slug: undefined,
+        // youtubeUrl: undefined,
+        recipeInstructions: item.recipeInstructions || item.recipeSteps,
+        recipeSteps: undefined,
+        featuredRecipe: undefined,
+        keywords:
+          item.keywords ||
+          (item.searchTags && Array.isArray(item.searchTags)
+            ? _.uniq(_.map(item.searchTags, _.trim)).join(', ')
+            : undefined),
+        searchTags: undefined,
+        recipeNotes: undefined,
+        recipeIntros: undefined,
+      };
+    });
 
-      const overwriteMerge = (destinationArray, sourceArray, options) =>
-        _.unionWith(destinationArray, sourceArray, _.isEqual);
-      const linkData = merge.all(chunkData, { arrayMerge: overwriteMerge });
+    const overwriteMerge = (destinationArray, sourceArray, options) =>
+      _.unionWith(destinationArray, sourceArray, _.isEqual);
+    const linkData = merge.all(chunkData, { arrayMerge: overwriteMerge });
 
+    if (linkData.name) {
       const filename = fileUrlMap[_.head(chunk)];
       const slug = path.basename(
         filename ||
@@ -237,7 +256,11 @@ function parseDuration(duration) {
           }),
         '.json',
       );
-      const collection = path.basename(path.dirname(filename));
+
+      const collection = filename
+        ? path.basename(path.dirname(filename))
+        : _.upperFirst(linkData['@type']);
+
       const type =
         _.upperFirst(linkData['@type']) ||
         _.upperFirst(pluralize(collection, 1));
