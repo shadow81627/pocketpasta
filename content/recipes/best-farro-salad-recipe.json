@@ -1,5 +1,4 @@
 {
-  "@context": "http://schema.org",
   "@graph": [
     {
       "@type": "Question",
@@ -21,8 +20,8 @@
     "@context": "http://schema.org/",
     "@type": "AggregateRating",
     "bestRating": 5,
-    "ratingValue": 4.948718,
-    "reviewCount": 39,
+    "ratingValue": 4.9534883,
+    "reviewCount": 43,
     "worstRating": 1
   },
   "author": {
@@ -42,10 +41,6 @@
     "width": 1900
   },
   "keywords": "farro, farro salad recipes, how to cook farro, easy vinaigrette ",
-  "mainEntityOfPage": {
-    "@id": "https://www.delish.com/cooking/recipe-ideas/recipes/a43059/best-farro-salad-recipe/",
-    "@type": "WebPage"
-  },
   "name": "Best-Ever Farro Salad",
   "prepTime": "PT10M",
   "publisher": {
@@ -407,6 +402,295 @@
       },
       "datePublished": "2020-05-21",
       "reviewBody": "Excellent, easy, delicious salad. I love making it and I serve it with roasted chicken. Don’t change a thing!  It’s perfect!",
+      "reviewRating": {
+        "@type": "Rating",
+        "bestRating": 5,
+        "ratingValue": 5,
+        "worstRating": 1
+      }
+    },
+    {
+      "@context": "http://schema.org/",
+      "@type": "Review",
+      "author": {
+        "@context": "http://schema.org/",
+        "@type": "Person",
+        "name": "OliveChilli"
+      },
+      "datePublished": "2019-11-04",
+      "reviewBody": "Outstanding.  Normally, I \"doctor\" recipes, but this one was perfect, as is. I will be making it again.  Very satisfying lunch to eat at room temp.  I may add both baby spinach and arugula next time, but the arugula is really key - adds a peppery bite that goes well with the sweet notes.  I also think that dried cranberries would be a nice addition for both color and sweetness.",
+      "reviewRating": {
+        "@type": "Rating",
+        "bestRating": 5,
+        "ratingValue": 5,
+        "worstRating": 1
+      }
+    },
+    {
+      "@context": "http://schema.org/",
+      "@type": "Review",
+      "author": {
+        "@context": "http://schema.org/",
+        "@type": "Person",
+        "name": "BlueBlowdryer"
+      },
+      "datePublished": "2019-08-19",
+      "reviewBody": "Absolutely incredible salad. Wouldn’t change a thing.",
+      "reviewRating": {
+        "@type": "Rating",
+        "bestRating": 5,
+        "ratingValue": 5,
+        "worstRating": 1
+      }
+    },
+    {
+      "@context": "http://schema.org/",
+      "@type": "Review",
+      "author": {
+        "@context": "http://schema.org/",
+        "@type": "Person",
+        "name": "RedScissors"
+      },
+      "datePublished": "2019-08-07",
+      "reviewBody": "I just made this tonight, and it’s a big hit! We used barley instead of farro, and it still turned out great. We had to split it into half since it’s too much food for three people. This dish is easy to make, and it’s really delicious!",
+      "reviewRating": {
+        "@type": "Rating",
+        "bestRating": 5,
+        "ratingValue": 5,
+        "worstRating": 1
+      }
+    },
+    {
+      "@context": "http://schema.org/",
+      "@type": "Review",
+      "author": {
+        "@context": "http://schema.org/",
+        "@type": "Person",
+        "name": "GoldSailboat"
+      },
+      "datePublished": "2019-09-08",
+      "reviewBody": "This lives up to its name. Delicious! To really take it home, sauté a fillet of salmon and mix it in. We’ll be making this again. Thanks so much!",
+      "reviewRating": {
+        "@type": "Rating",
+        "bestRating": 5,
+        "ratingValue": 5,
+        "worstRating": 1
+      }
+    },
+    {
+      "@context": "http://schema.org/",
+      "@type": "Review",
+      "author": {
+        "@context": "http://schema.org/",
+        "@type": "Person",
+        "name": "CyanProcessor"
+      },
+      "datePublished": "2020-06-08",
+      "reviewBody": "I LOVE this recipe! One of my favorites. I sometimes switch it up in the summer and use peaches and burrata instead of apples and parmesan.",
+      "reviewRating": {
+        "@type": "Rating",
+        "bestRating": 5,
+        "ratingValue": 5,
+        "worstRating": 1
+      }
+    },
+    {
+      "@context": "http://schema.org/",
+      "@type": "Review",
+      "author": {
+        "@context": "http://schema.org/",
+        "@type": "Person",
+        "name": "PurpleHelmet"
+      },
+      "datePublished": "2020-05-17",
+      "reviewBody": "This has to be my favorite recipe. I made it for a potluck and my friend's food snob husband asked for the recipe, it's now in their regular potluck/party rotation, too. \n\nThe parmesan really adds to the salad, but I've made the recipe without it (sometimes for vegan friends, sometimes because it wasn't on hand) and it's still amazing. \n\nI came back to this recipe today for the fried shallots and dressing - I drizzled it over pan fried purple potatoes and mushrooms and finished with the shallots on top. So good!",
+      "reviewRating": {
+        "@type": "Rating",
+        "bestRating": 5,
+        "ratingValue": 5,
+        "worstRating": 1
+      }
+    },
+    {
+      "@context": "http://schema.org/",
+      "@type": "Review",
+      "author": {
+        "@context": "http://schema.org/",
+        "@type": "Person",
+        "name": "OrangeController"
+      },
+      "datePublished": "2020-02-22",
+      "reviewBody": "I love this salad!  The first time I made it exactly as written...perfect!  The second time I made some substitutions to use ingredients I had on hand—dried cranberries and apricots instead of apples, pepitas and walnuts instead of pecans.  It is now my go-to when I am asked to bring a dish.",
+      "reviewRating": {
+        "@type": "Rating",
+        "bestRating": 5,
+        "ratingValue": 5,
+        "worstRating": 1
+      }
+    },
+    {
+      "@context": "http://schema.org/",
+      "@type": "Review",
+      "author": {
+        "@context": "http://schema.org/",
+        "@type": "Person",
+        "name": "RedWrench"
+      },
+      "datePublished": "2020-01-19",
+      "reviewBody": "This is fabulous! I did add a thinly sliced blood orange but otherwise I followed the recipe as written. Served with cold roasted chicken breasts and fresh fruit, we had an outstanding meal, my husband asked that I add this to the rotation.",
+      "reviewRating": {
+        "@type": "Rating",
+        "bestRating": 5,
+        "ratingValue": 5,
+        "worstRating": 1
+      }
+    },
+    {
+      "@context": "http://schema.org/",
+      "@type": "Review",
+      "author": {
+        "@context": "http://schema.org/",
+        "@type": "Person",
+        "name": "PurplePuzzle"
+      },
+      "datePublished": "2019-08-08",
+      "reviewBody": "Served this dish tonight to a crowd of teens and adults and it was a huge hit. The mixed textures are great (crisp apple, crunchy pecans and chewy farro) and the mix of sweet and savory is perfect. Everyone wanted the recipe!",
+      "reviewRating": {
+        "@type": "Rating",
+        "bestRating": 5,
+        "ratingValue": 5,
+        "worstRating": 1
+      }
+    },
+    {
+      "@context": "http://schema.org/",
+      "@type": "Review",
+      "author": {
+        "@context": "http://schema.org/",
+        "@type": "Person",
+        "name": "mhughes"
+      },
+      "datePublished": "2020-07-23",
+      "reviewBody": "I love this recipe.   Instead of grated parmesan, I used Boursin (herb & Garlic) on the salad.   Also, it is important that you rinse the farro.   I also covered it while it simmered, like rice.",
+      "reviewRating": {
+        "@type": "Rating",
+        "bestRating": 5,
+        "ratingValue": 5,
+        "worstRating": 1
+      }
+    },
+    {
+      "@context": "http://schema.org/",
+      "@type": "Review",
+      "author": {
+        "@context": "http://schema.org/",
+        "@type": "Person",
+        "name": "OrangeRing"
+      },
+      "datePublished": "2020-03-04",
+      "reviewBody": "Simple and delicious!!!!",
+      "reviewRating": {
+        "@type": "Rating",
+        "bestRating": 5,
+        "ratingValue": 5,
+        "worstRating": 1
+      }
+    },
+    {
+      "@context": "http://schema.org/",
+      "@type": "Review",
+      "author": {
+        "@context": "http://schema.org/",
+        "@type": "Person",
+        "name": "RedCloud"
+      },
+      "datePublished": "2020-02-02",
+      "reviewBody": "Perfect as is. I have made this three times and it has outshined the main dish every time",
+      "reviewRating": {
+        "@type": "Rating",
+        "bestRating": 5,
+        "ratingValue": 5,
+        "worstRating": 1
+      }
+    },
+    {
+      "@context": "http://schema.org/",
+      "@type": "Review",
+      "author": {
+        "@context": "http://schema.org/",
+        "@type": "Person",
+        "name": "Lizziemac"
+      },
+      "datePublished": "2020-08-01",
+      "reviewBody": "This salad is delicious! It keeps well so is one you can make ahead. Great for lunch the next day!",
+      "reviewRating": {
+        "@type": "Rating",
+        "bestRating": 5,
+        "ratingValue": 5,
+        "worstRating": 1
+      }
+    },
+    {
+      "@context": "http://schema.org/",
+      "@type": "Review",
+      "author": {
+        "@context": "http://schema.org/",
+        "@type": "Person",
+        "name": "Boisefit"
+      },
+      "datePublished": "2020-07-24",
+      "reviewBody": "This is quite possibly my favorite salad!  It really is the best!  The combination of the farro and the fried shallots and the arugula is so delicious. The nuts give just the right amount of crunch.  The dressing is simple and delicious.  I have made it with apples and pears, both are great.  I have even thrown in some grilled corn which was also very good!",
+      "reviewRating": {
+        "@type": "Rating",
+        "bestRating": 5,
+        "ratingValue": 5,
+        "worstRating": 1
+      }
+    },
+    {
+      "@context": "http://schema.org/",
+      "@type": "Review",
+      "author": {
+        "@context": "http://schema.org/",
+        "@type": "Person",
+        "name": "Garten"
+      },
+      "datePublished": "2020-07-14",
+      "reviewBody": "This salad is wonderful, even my 15 year old granddaughter liked it.",
+      "reviewRating": {
+        "@type": "Rating",
+        "bestRating": 5,
+        "ratingValue": 5,
+        "worstRating": 1
+      }
+    },
+    {
+      "@context": "http://schema.org/",
+      "@type": "Review",
+      "author": {
+        "@context": "http://schema.org/",
+        "@type": "Person",
+        "name": "BlueBox"
+      },
+      "datePublished": "2020-06-27",
+      "reviewBody": "Seriously delicious! Everyone commented on how flavorful it was. I will definitely be making this again.  I did have to substitute a pear for the apple. Yum😋 ",
+      "reviewRating": {
+        "@type": "Rating",
+        "bestRating": 5,
+        "ratingValue": 5,
+        "worstRating": 1
+      }
+    },
+    {
+      "@context": "http://schema.org/",
+      "@type": "Review",
+      "author": {
+        "@context": "http://schema.org/",
+        "@type": "Person",
+        "name": "OliveProcessor"
+      },
+      "datePublished": "2020-06-25",
+      "reviewBody": "This was absolutely incredible. I would highly recommend, easy to make and so so yummy. Definitely going to be a go-to recipe!",
       "reviewRating": {
         "@type": "Rating",
         "bestRating": 5,
