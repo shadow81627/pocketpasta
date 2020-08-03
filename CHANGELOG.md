@@ -1,5 +1,11 @@
 # Releases
 
+## [0.46.11](https://github.com/shadow81627/pocketpasta/compare/v0.46.10...v0.46.11) (2020-08-03)
+
+### Bug Fixes
+
+- **list:** search all when empty ([#1421](https://github.com/shadow81627/pocketpasta/issues/1421)) ([0d73522](https://github.com/shadow81627/pocketpasta/commit/0d735225e3ae8aee9cb185a748e7f8f0c494d07b))
+
 ## [0.46.10](https://github.com/shadow81627/pocketpasta/compare/v0.46.9...v0.46.10) (2020-08-01)
 
 ### Bug Fixes
