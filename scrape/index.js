@@ -31,15 +31,31 @@ const argv = yargs
   .alias('help', 'h').argv;
 
 const urls = [
-  // ['https://shop.coles.com.au/a/caboolture/product/coles-pasta-large-shells'],
-  // ['https://www.biggerbolderbaking.com/microwave-mug-pizza/'],
-  // ['https://www.thecraftpatchblog.com/chocolate-mug-cake/'],
-  // ['https://temeculablogs.com/blueberry-muffin-in-a-mug/'],
-  // ['https://healthynibblesandbits.com/egg-fried-rice-mug/'],
+  // ['https://www.budgetbytes.com/soy-marinated-tofu-bowls-spicy-peanut-sauce/'],
+  // ['https://www.budgetbytes.com/vegan-red-lentil-stew/'],
+  // ['https://www.budgetbytes.com/sesame-tempeh-bowls/'],
+  // ['https://www.budgetbytes.com/smoky-potato-chickpea-stew/'],
+  // ['https://www.budgetbytes.com/creamy-coconut-curry-lentils-with-spinach/'],
+  // ['https://www.budgetbytes.com/easy-cauliflower-and-chickpea-masala/'],
+  // ['https://www.budgetbytes.com/mexican-lentil-stew/'],
+  // ['https://www.budgetbytes.com/simple-mushroom-broccoli-stir-fry-noodles/'],
   // [
-  //   'https://www.delish.com/cooking/recipe-ideas/recipes/a43059/best-farro-salad-recipe/',
+  //   'https://www.budgetbytes.com/roasted-cauliflower-salad-lemon-tahini-dressing/',
   // ],
-  // ['https://www.budgetbytes.com/black-bean-avocado-enchiladas/'],
+  // ['https://www.budgetbytes.com/chili-garlic-tofu-bowls/'],
+  // ['https://www.budgetbytes.com/vegan-winter-lentil-stew/'],
+  ['https://www.budgetbytes.com/moroccan-lentil-vegetable-stew-meal-prep/'],
+  ['https://www.budgetbytes.com/chipotle-portobello-oven-fajitas/'],
+  ['https://www.budgetbytes.com/sweet-chili-tofu-bowls/'],
+  ['https://www.budgetbytes.com/chunky-lentil-vegetable-soup/'],
+  ['https://www.budgetbytes.com/spanish-chickpeas-and-rice/'],
+  ['https://www.budgetbytes.com/apple-dijon-kale-salad/'],
+  ['https://www.budgetbytes.com/coconut-jerk-peas-pineapple-salsa/'],
+  ['https://www.budgetbytes.com/one-pot-roasted-red-pepper-pasta/'],
+  ['https://www.budgetbytes.com/african-peanut-stew-vegan/'],
+  ['https://www.budgetbytes.com/pan-fried-sesame-tofu-with-broccoli/'],
+  ['https://www.budgetbytes.com/curried-chickpeas-spinach/'],
+  ['https://www.budgetbytes.com/cold-peanut-noodle-salad/'],
 ];
 
 const urlBlacklist = [
@@ -230,136 +246,146 @@ function parseDuration(duration) {
       _.unionWith(destinationArray, sourceArray, _.isEqual);
     const linkData = merge.all(chunkData, { arrayMerge: overwriteMerge });
 
-    const filename = fileUrlMap[_.head(chunk)];
-    const slug = path.basename(
-      filename ||
-        slugify(linkData.name, {
-          lower: true,
-          strict: true,
-        }),
-      '.json',
-    );
-
-    const collection = filename
-      ? path.basename(path.dirname(filename))
-      : _.upperFirst(linkData['@type']);
-
-    const type =
-      _.upperFirst(linkData['@type']) || _.upperFirst(pluralize(collection, 1));
-    linkData['@type'] = type;
-
-    if (linkData.additionalProperty) {
-      linkData.additionalProperty = _.uniqBy(
-        linkData.additionalProperty,
-        'name',
-      );
-    }
-
-    if (linkData.prepTime && !Duration.fromISO(linkData.prepTime).toJSON()) {
-      linkData.prepTime = parseDuration(linkData.prepTime);
-    }
-    if (linkData.totalTime && !Duration.fromISO(linkData.totalTime).toJSON()) {
-      linkData.totalTime = parseDuration(linkData.totalTime);
-    }
-    if (linkData.cookTime && !Duration.fromISO(linkData.cookTime).toJSON()) {
-      linkData.cookTime = parseDuration(linkData.cookTime);
-    }
-
-    const recipeIngredientChunkData = _.find(chunkData, 'recipeIngredient');
-    if (
-      recipeIngredientChunkData &&
-      recipeIngredientChunkData.recipeIngredient
-    ) {
-      const recipeIngredient = recipeIngredientChunkData.recipeIngredient;
-      const recipeIngredientArray =
-        recipeIngredient &&
-        recipeIngredient.length > 0 &&
-        typeof recipeIngredient[0] === 'object' &&
-        recipeIngredient[0].group &&
-        recipeIngredient[0].group.ingredients
-          ? recipeIngredient[0].group.ingredients
-          : recipeIngredient;
-
-      linkData.recipeIngredient = _.uniq(
-        _.map(recipeIngredientArray.map(formatIngredient), _.trim),
-      );
-    }
-
-    const recipeInstructionsChunkData = _.find(chunkData, 'recipeInstructions');
-    if (
-      recipeInstructionsChunkData &&
-      recipeInstructionsChunkData.recipeInstructions
-    ) {
-      const recipeInstructions = recipeInstructionsChunkData.recipeInstructions;
-
-      const recipeInstructionsArray =
-        (typeof recipeInstructions === 'string'
-          ? formatString(recipeInstructions).match(/[^.!?]+[.!?]+[^)]/g)
-          : // deal try and handle groups...?
-          recipeInstructions &&
-            recipeInstructions.length > 0 &&
-            recipeInstructions[0].group
-          ? recipeInstructions[0].group.steps
-          : recipeInstructions) || [];
-
-      linkData.recipeInstructions = _.uniq(
-        fromatInstructions(recipeInstructionsArray),
-      );
-    }
-
-    // dedup and print offers to offers collection
-    if (linkData.offers && linkData.offers.offers) {
-      linkData.offers.offers = _.uniqBy(linkData.offers.offers, 'offeredBy');
-      linkData.offers = {
-        priceCurrency: _.head(_.map(linkData.offers.offers, 'priceCurrency')),
-        ...linkData.offers,
-        '@type': 'AggregateOffer',
-        highPrice: Math.max(..._.map(linkData.offers.offers, 'price')),
-        lowPrice: Math.min(..._.map(linkData.offers.offers, 'price')),
-        offerCount: linkData.offers.offers.length,
-      };
-      linkData.offers.offers.map(async (offer) => {
-        const folder = `content/offers/${slug}`;
-        await mkdir(folder, { recursive: true });
-        await writeFile(
-          `${folder}/${slugify(offer.offeredBy, {
+    if (linkData.name) {
+      const filename = fileUrlMap[_.head(chunk)];
+      const slug = path.basename(
+        filename ||
+          slugify(linkData.name, {
             lower: true,
             strict: true,
-          })}.json`,
-          JSON.stringify(
-            sortobject({
-              ...offer,
-              '@type': 'Offer',
-              '@id': undefined,
-              '@context': undefined,
-            }),
-            undefined,
-            2,
-          ) + '\n',
+          }),
+        '.json',
+      );
+
+      const collection = filename
+        ? path.basename(path.dirname(filename))
+        : _.upperFirst(linkData['@type']);
+
+      const type =
+        _.upperFirst(linkData['@type']) ||
+        _.upperFirst(pluralize(collection, 1));
+      linkData['@type'] = type;
+
+      if (linkData.additionalProperty) {
+        linkData.additionalProperty = _.uniqBy(
+          linkData.additionalProperty,
+          'name',
         );
-      });
-    }
+      }
 
-    linkData.name = linkData.name || linkData.title;
+      if (linkData.prepTime && !Duration.fromISO(linkData.prepTime).toJSON()) {
+        linkData.prepTime = parseDuration(linkData.prepTime);
+      }
+      if (
+        linkData.totalTime &&
+        !Duration.fromISO(linkData.totalTime).toJSON()
+      ) {
+        linkData.totalTime = parseDuration(linkData.totalTime);
+      }
+      if (linkData.cookTime && !Duration.fromISO(linkData.cookTime).toJSON()) {
+        linkData.cookTime = parseDuration(linkData.cookTime);
+      }
 
-    if (linkData.youtubeUrl) {
-      const crawlUrl = linkData.youtubeUrl.replace('/embed/', '/watch/');
-      const video = await scrape(crawlUrl);
-      if (video) {
-        linkData.video = video;
-        linkData.youtubeUrl = undefined;
-        if (!linkData.name) {
-          linkData.name = formatString(video.name);
-        }
-        if (!linkData.description) {
-          linkData.description = formatString(video.description);
+      const recipeIngredientChunkData = _.find(chunkData, 'recipeIngredient');
+      if (
+        recipeIngredientChunkData &&
+        recipeIngredientChunkData.recipeIngredient
+      ) {
+        const recipeIngredient = recipeIngredientChunkData.recipeIngredient;
+        const recipeIngredientArray =
+          recipeIngredient &&
+          recipeIngredient.length > 0 &&
+          typeof recipeIngredient[0] === 'object' &&
+          recipeIngredient[0].group &&
+          recipeIngredient[0].group.ingredients
+            ? recipeIngredient[0].group.ingredients
+            : recipeIngredient;
+
+        linkData.recipeIngredient = _.uniq(
+          _.map(recipeIngredientArray.map(formatIngredient), _.trim),
+        );
+      }
+
+      const recipeInstructionsChunkData = _.find(
+        chunkData,
+        'recipeInstructions',
+      );
+      if (
+        recipeInstructionsChunkData &&
+        recipeInstructionsChunkData.recipeInstructions
+      ) {
+        const recipeInstructions =
+          recipeInstructionsChunkData.recipeInstructions;
+
+        const recipeInstructionsArray =
+          (typeof recipeInstructions === 'string'
+            ? formatString(recipeInstructions).match(/[^.!?]+[.!?]+[^)]/g)
+            : // deal try and handle groups...?
+            recipeInstructions &&
+              recipeInstructions.length > 0 &&
+              recipeInstructions[0].group
+            ? recipeInstructions[0].group.steps
+            : recipeInstructions) || [];
+
+        linkData.recipeInstructions = _.uniq(
+          fromatInstructions(recipeInstructionsArray),
+        );
+      }
+
+      // dedup and print offers to offers collection
+      if (linkData.offers && linkData.offers.offers) {
+        linkData.offers.offers = _.uniqBy(linkData.offers.offers, 'offeredBy');
+        linkData.offers = {
+          priceCurrency: _.head(_.map(linkData.offers.offers, 'priceCurrency')),
+          ...linkData.offers,
+          '@type': 'AggregateOffer',
+          highPrice: Math.max(..._.map(linkData.offers.offers, 'price')),
+          lowPrice: Math.min(..._.map(linkData.offers.offers, 'price')),
+          offerCount: linkData.offers.offers.length,
+        };
+        linkData.offers.offers.map(async (offer) => {
+          const folder = `content/offers/${slug}`;
+          await mkdir(folder, { recursive: true });
+          await writeFile(
+            `${folder}/${slugify(offer.offeredBy, {
+              lower: true,
+              strict: true,
+            })}.json`,
+            JSON.stringify(
+              sortobject({
+                ...offer,
+                '@type': 'Offer',
+                '@id': undefined,
+                '@context': undefined,
+              }),
+              undefined,
+              2,
+            ) + '\n',
+          );
+        });
+      }
+
+      linkData.name = linkData.name || linkData.title;
+
+      if (linkData.youtubeUrl) {
+        const crawlUrl = linkData.youtubeUrl.replace('/embed/', '/watch/');
+        const video = await scrape(crawlUrl);
+        if (video) {
+          linkData.video = video;
+          linkData.youtubeUrl = undefined;
+          if (!linkData.name) {
+            linkData.name = formatString(video.name);
+          }
+          if (!linkData.description) {
+            linkData.description = formatString(video.description);
+          }
         }
       }
-    }
 
-    await writeFile(
-      `content/${pluralize(type)}/${slug}.json`,
-      JSON.stringify(sortobject(linkData), undefined, 2) + '\n',
-    );
+      await writeFile(
+        `content/${pluralize(type)}/${slug}.json`,
+        JSON.stringify(sortobject(linkData), undefined, 2) + '\n',
+      );
+    }
   }
 })();
