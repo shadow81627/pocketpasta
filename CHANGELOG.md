@@ -1,5 +1,11 @@
 # Releases
 
+## [0.46.14](https://github.com/shadow81627/pocketpasta/compare/v0.46.13...v0.46.14) (2020-08-04)
+
+### Bug Fixes
+
+- **deps:** update dependency nuxt-i18n to v6.13.6 ([a428bfc](https://github.com/shadow81627/pocketpasta/commit/a428bfc7cfe328cfdf114cf52101cfb863f3cdd1))
+
 ## [0.46.13](https://github.com/shadow81627/pocketpasta/compare/v0.46.12...v0.46.13) (2020-08-04)
 
 ### Bug Fixes
