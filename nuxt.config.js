@@ -399,7 +399,7 @@ module.exports = {
     },
     transpile: ['lodash-es', 'vuetify/lib', 'tiptap-vuetify'],
     // move component styles into css files
-    extractCSS: true,
+    // extractCSS: true,
     /*
      ** You can extend webpack config here
      */
