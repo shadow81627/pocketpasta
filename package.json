@@ -133,7 +133,7 @@
     "puppeteer-extra": "3.1.13",
     "puppeteer-extra-plugin-stealth": "2.4.15",
     "sass": "1.26.10",
-    "sass-loader": "9.0.2",
+    "sass-loader": "9.0.3",
     "semantic-release": "17.1.1",
     "slugify": "1.4.5",
     "snyk": "1.369.3",
