@@ -1,5 +1,11 @@
 # Releases
 
+## [0.46.18](https://github.com/shadow81627/pocketpasta/compare/v0.46.17...v0.46.18) (2020-08-06)
+
+### Bug Fixes
+
+- **user menu:** allow menu open when logged out ([#1435](https://github.com/shadow81627/pocketpasta/issues/1435)) ([7ca6265](https://github.com/shadow81627/pocketpasta/commit/7ca62656a059aac686174ed7eb6b659eb00b2a15))
+
 ## [0.46.17](https://github.com/shadow81627/pocketpasta/compare/v0.46.16...v0.46.17) (2020-08-06)
 
 ### Bug Fixes
