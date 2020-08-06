@@ -1,5 +1,11 @@
 # Releases
 
+## [0.46.16](https://github.com/shadow81627/pocketpasta/compare/v0.46.15...v0.46.16) (2020-08-06)
+
+### Bug Fixes
+
+- **css:** remove extract css ([#1434](https://github.com/shadow81627/pocketpasta/issues/1434)) ([c38cf17](https://github.com/shadow81627/pocketpasta/commit/c38cf17b27a500c0c573fa9079b4a0ef2b4962dd))
+
 ## [0.46.15](https://github.com/shadow81627/pocketpasta/compare/v0.46.14...v0.46.15) (2020-08-05)
 
 ### Bug Fixes
