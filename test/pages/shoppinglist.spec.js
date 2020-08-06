@@ -1,35 +1,38 @@
-/**
- * @jest-environment jsdom
- */
-
 import Component from '@/pages/shoppinglist.vue';
-import { mount } from '@vue/test-utils';
+import { shallowMount, createLocalVue } from '@vue/test-utils';
 import Vuetify from 'vuetify';
-import Vue from 'vue';
 
-let vuetify;
+import VueRouter from 'vue-router';
 
-Vue.use(Vuetify);
+const localVue = createLocalVue();
+
+localVue.use(Vuetify);
+
+localVue.use(VueRouter);
+
+const router = new VueRouter();
+
+const $pouch = {
+  changes: () => ({ on: () => ({}) }),
+  post: () => ({}),
+  put: () => ({}),
+  upsert: () => ({}),
+  find: () => ({ docs: [] }),
+};
 
 const factory = () =>
-  mount(Component, {
-    vuetify,
-    attachToDocument: true,
-    // localVue,
+  shallowMount(Component, {
+    localVue,
+    router,
+    $pouch,
+    mocks: {
+      $auth: { user: {} },
+      $fetchState: {},
+      $pouch,
+    },
   });
 
-describe('shoppinglist page', () => {
-  beforeEach(() => {
-    vuetify = new Vuetify();
-    document.getSelection = () => {
-      return {
-        removeAllRanges: () => {},
-        getNativeRange: () => {},
-        getRangeAt: () => {},
-      };
-    };
-  });
-
+describe('Shopping List page', () => {
   test('mounts properly', () => {
     const wrapper = factory();
     expect(wrapper.vm).toBeTruthy();
@@ -38,5 +41,91 @@ describe('shoppinglist page', () => {
   test('renders properly', () => {
     const wrapper = factory();
     expect(wrapper.html()).toMatchSnapshot();
+  });
+
+  test('close', () => {
+    const wrapper = factory();
+    wrapper.vm.close();
+    expect(wrapper.vm.dialog).toEqual(false);
+  });
+
+  test('deleteItem', async () => {
+    const wrapper = factory();
+    expect(await wrapper.vm.deleteItem({ _id: 'test' })).toBe(undefined);
+  });
+  test('saveCategory', async () => {
+    const wrapper = factory();
+    expect(
+      await wrapper.vm.saveCategory({ items: [{ _id: 'task' }], id: 'test' }),
+    ).toBe(undefined);
+  });
+
+  test('create', async () => {
+    const wrapper = factory();
+    expect(await wrapper.vm.create()).toBe(undefined);
+  });
+
+  test('save', async () => {
+    const wrapper = factory();
+    expect(await wrapper.vm.save({})).toBe(undefined);
+  });
+
+  test('fetch', async () => {
+    const wrapper = factory();
+    expect(await wrapper.vm.$options.fetch()).toBe(undefined);
+  });
+
+  test('pages', () => {
+    const wrapper = factory();
+    wrapper.vm.pages = 1;
+    expect(wrapper.vm.pages).toEqual(1);
+  });
+
+  test('page', () => {
+    const wrapper = factory();
+    wrapper.vm.page = 1;
+    expect(wrapper.vm.page).toEqual(1);
+    wrapper.vm.page = 2;
+    expect(wrapper.vm.page).toEqual(1);
+  });
+
+  test('limit', () => {
+    const wrapper = factory();
+    wrapper.vm.limit = 1;
+    expect(wrapper.vm.limit).toEqual(1);
+  });
+
+  test('search', () => {
+    const wrapper = factory();
+    wrapper.vm.search = 1;
+    expect(wrapper.vm.search).toEqual(1);
+  });
+
+  test('view', () => {
+    const wrapper = factory();
+    wrapper.vm.view = 1;
+    expect(wrapper.vm.view).toEqual(1);
+  });
+
+  test('direction', () => {
+    const wrapper = factory();
+    wrapper.vm.direction = 1;
+    expect(wrapper.vm.direction).toEqual(1);
+  });
+
+  test('sortBy', () => {
+    const wrapper = factory();
+    wrapper.vm.sortBy = 1;
+    expect(wrapper.vm.sortBy).toEqual(null);
+  });
+
+  test('groupBy', () => {
+    const wrapper = factory();
+    wrapper.vm.groupBy = 1;
+    expect(wrapper.vm.groupBy).toEqual(null);
+  });
+
+  test('head', () => {
+    expect(Component.head()).toBeTruthy();
   });
 });

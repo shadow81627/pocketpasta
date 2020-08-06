@@ -133,7 +133,7 @@ export default {
         },
         {
           icon: mdiClipboardListOutline,
-          text: 'Lists',
+          text: 'Shopping List',
           route: { name: 'shoppinglist' },
         },
         {
