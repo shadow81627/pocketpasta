@@ -278,18 +278,18 @@ module.exports = {
     resetOnError: true,
     defaultStrategy: 'custom',
     strategies: {
-      custom: {
-        _scheme: '~/plugins/customStrategy.js',
-        // endpoints: {
-        //   login: {
-        //     url: '/api/auth/login',
-        //     method: 'post',
-        //     propertyName: 'token',
-        //   },
-        //   logout: { url: '/api/auth/logout', method: 'post' },
-        //   user: { url: '/api/auth/user', method: 'get', propertyName: 'user' },
-        // },
-      },
+      // custom: {
+      //   _scheme: '~/plugins/customStrategy.js',
+      //   // endpoints: {
+      //   //   login: {
+      //   //     url: '/api/auth/login',
+      //   //     method: 'post',
+      //   //     propertyName: 'token',
+      //   //   },
+      //   //   logout: { url: '/api/auth/logout', method: 'post' },
+      //   //   user: { url: '/api/auth/user', method: 'get', propertyName: 'user' },
+      //   // },
+      // },
       auth0: {
         domain: 'pocketpasta.auth0.com',
         client_id: 'SU9fkdMw6bqMkqwEZ2pX7sk3SlxR3Qi8',
@@ -324,15 +324,15 @@ module.exports = {
       appId:
         process.env.FIREBASE_APP_ID || '1:216453269763:web:71a3fe1ca24500bb',
     },
-    onFirebaseHosting: process.env.FIREBASE_HOSTING || false,
+    onFirebaseHosting: false,
     services: {
-      auth: {
-        initialize: {
-          onAuthStateChangedMutation: 'setUser',
-          onAuthStateChangedAction: 'setUser',
-        },
-      },
-      firestore: { enablePersistence: true },
+      // auth: {
+      //   initialize: {
+      //     onAuthStateChangedMutation: 'setUser',
+      //     onAuthStateChangedAction: 'setUser',
+      //   },
+      // },
+      // firestore: { enablePersistence: true },
       performance: true,
       analytics: true,
       // messaging: {

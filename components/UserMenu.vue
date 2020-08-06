@@ -62,7 +62,7 @@
               }}</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
-          <template v-if="$auth.loggedIn">
+          <!-- <template v-if="$auth.loggedIn">
             <v-list-item @click="$auth.logout()">
               <v-list-item-icon>
                 <v-icon>{{ mdiLogout }}</v-icon>
@@ -81,7 +81,7 @@
                 <v-list-item-title>{{ $t('layout.login') }}</v-list-item-title>
               </v-list-item-content>
             </v-list-item>
-          </template>
+          </template> -->
         </v-list>
       </v-card>
     </v-menu>
