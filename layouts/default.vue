@@ -69,6 +69,7 @@
       app
       fixed
       class="hidden-print-only"
+      height="64"
     >
       <v-app-bar-nav-icon aria-label="menu" @click.stop="drawer = !drawer"
         ><v-progress-circular v-if="loading" indeterminate size="18" width="2"
