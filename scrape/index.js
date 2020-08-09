@@ -21,6 +21,12 @@ const argv = yargs
     type: 'boolean',
     default: true,
   })
+  .option('only-new', {
+    alias: 'n',
+    description: 'Only use default urls',
+    type: 'boolean',
+    default: false,
+  })
   .option('collection', {
     alias: 'c',
     description: 'Collection',
@@ -29,6 +35,12 @@ const argv = yargs
   })
   .help()
   .alias('help', 'h').argv;
+
+/**
+ * Handy regex for selecting hrefs
+ * Regex: "(https:\/\/www.budgetbytes.com\/.[^"]+)"
+ * example: <a href="https://www.budgetbytes.com/black-bean-avocado-enchiladas/"],>[
+ */
 
 const urls = [
   // ['https://www.budgetbytes.com/soy-marinated-tofu-bowls-spicy-peanut-sauce/'],
@@ -44,18 +56,86 @@ const urls = [
   // ],
   // ['https://www.budgetbytes.com/chili-garlic-tofu-bowls/'],
   // ['https://www.budgetbytes.com/vegan-winter-lentil-stew/'],
-  ['https://www.budgetbytes.com/moroccan-lentil-vegetable-stew-meal-prep/'],
-  ['https://www.budgetbytes.com/chipotle-portobello-oven-fajitas/'],
+  // ['https://www.budgetbytes.com/moroccan-lentil-vegetable-stew-meal-prep/'],
+  // ['https://www.budgetbytes.com/chipotle-portobello-oven-fajitas/'],
+  // ['https://www.budgetbytes.com/sweet-chili-tofu-bowls/'],
+  // ['https://www.budgetbytes.com/chunky-lentil-vegetable-soup/'],
+  // ['https://www.budgetbytes.com/spanish-chickpeas-and-rice/'],
+  // ['https://www.budgetbytes.com/apple-dijon-kale-salad/'],
+  // ['https://www.budgetbytes.com/coconut-jerk-peas-pineapple-salsa/'],
+  // ['https://www.budgetbytes.com/one-pot-roasted-red-pepper-pasta/'],
+  // ['https://www.budgetbytes.com/african-peanut-stew-vegan/'],
+  // ['https://www.budgetbytes.com/pan-fried-sesame-tofu-with-broccoli/'],
+  // ['https://www.budgetbytes.com/curried-chickpeas-spinach/'],
+  // ['https://www.budgetbytes.com/cold-peanut-noodle-salad/'],
+  // ['https://www.budgetbytes.com/smoky-potato-chickpea-stew/'],
+  // ['https://www.budgetbytes.com/fresh-tomato-basil-pasta-with-ricotta/'],
+  // ['https://www.budgetbytes.com/bbq-bean-sliders/'],
+  // ['https://www.budgetbytes.com/spanish-chickpeas-and-rice/'],
+  // ['https://www.budgetbytes.com/garlicky-kale-and-ricotta-pizza/'],
+  // ['https://www.budgetbytes.com/sweet-potato-tacos-with-lime-crema/'],
+  // ['https://www.budgetbytes.com/black-bean-avocado-enchiladas/'],
+  // ['https://www.budgetbytes.com/bbq-tofu-sliders/'],
+  // ['https://www.budgetbytes.com/cowboy-caviar/'],
+  // ['https://www.budgetbytes.com/cheesy-vegetarian-chili-mac/'],
+  // ['https://www.budgetbytes.com/chipotle-portobello-oven-fajitas/'],
+  // ['https://www.budgetbytes.com/creamy-coconut-curry-lentils-with-spinach/'],
+  // ['https://www.budgetbytes.com/curry-roasted-carrots/'],
+  // ['https://www.budgetbytes.com/garden-vegetable-lasagna-roll-ups/'],
+  // ['https://www.budgetbytes.com/garlic-bread/'],
+  // ['https://www.budgetbytes.com/easy-cauliflower-and-chickpea-masala/'],
+  // [
+  //   'https://www.budgetbytes.com/vegetable-pot-pie-skillet-cheddar-biscuit-topping/',
+  // ],
+  // ['https://www.budgetbytes.com/sesame-tempeh-bowls/'],
+  // ['https://www.budgetbytes.com/smoky-tomato-soup/'],
+  // ['https://www.budgetbytes.com/spinach-feta-grilled-cheese/'],
+  // ['https://www.budgetbytes.com/poor-mans-burrito-bowls/'],
+  // ['https://www.budgetbytes.com/chunky-lentil-vegetable-soup/'],
+  // ['https://www.budgetbytes.com/one-pot-roasted-red-pepper-pasta/'],
+  // ['https://www.budgetbytes.com/african-peanut-stew-vegan/'],
+  // ['https://www.budgetbytes.com/smoky-white-bean-shakshuka/'],
+  // ['https://www.budgetbytes.com/curried-chickpeas-spinach/'],
+  // ['https://www.budgetbytes.com/simple-mushroom-broccoli-stir-fry-noodles/'],
+  // ['https://www.budgetbytes.com/vegan-winter-lentil-stew/'],
+
+  ['https://www.budgetbytes.com/swamp-soup/'],
+  ['https://www.budgetbytes.com/creamy-white-bean-and-spinach-quesadillas/'],
+  ['https://www.budgetbytes.com/warm-corn-avocado-salad/'],
+  ['https://www.budgetbytes.com/chana-saag/'],
+  [
+    'https://www.budgetbytes.com/loaded-sweet-potatoes-with-chipotle-lime-crema/',
+  ],
+  ['https://www.budgetbytes.com/cumin-lime-coleslaw/'],
+  ['https://www.budgetbytes.com/tomato-mozzarella-pasta-salad/'],
+  ['https://www.budgetbytes.com/homemade-freezer-garlic-bread/'],
+  ['https://www.budgetbytes.com/smoky-black-bean-soup/'],
+  ['https://www.budgetbytes.com/everyday-cornbread/'],
+  ['https://www.budgetbytes.com/lemony-artichoke-and-quinoa-salad/'],
+  ['https://www.budgetbytes.com/hummus-four-flavors/'],
+  ['https://www.budgetbytes.com/vegan-creamy-mushroom-ramen/'],
+  ['https://www.budgetbytes.com/secret-ingredient-tomato-soup/'],
+  ['https://www.budgetbytes.com/ultimate-southwest-scrambled-eggs/'],
+  ['https://www.budgetbytes.com/mushroom-and-spinach-pasta-with-ricotta/'],
+  ['https://www.budgetbytes.com/french-bread-pizza/'],
+  ['https://www.budgetbytes.com/broccoli-shells-n-cheese/'],
+  ['https://www.budgetbytes.com/turkey-chili-smothered-sweet-potatoes/'],
+  ['https://www.budgetbytes.com/fried-cabbage-and-noodles/'],
+  ['https://www.budgetbytes.com/scallion-herb-chickpea-salad/'],
+  [
+    'https://www.budgetbytes.com/tomato-herb-rice-with-white-beans-and-spinach/',
+  ],
+  ['https://www.budgetbytes.com/savory-cabbage-pancakes-okonomiyaki/'],
+  ['https://www.budgetbytes.com/simple-sesame-rice/'],
+  ['https://www.budgetbytes.com/spinach-tortellini-soup/'],
+  ['https://www.budgetbytes.com/vegetarian-french-dip-sandwiches/'],
+  ['https://www.budgetbytes.com/thick-cut-garlic-parmesan-oven-fries/'],
+  ['https://www.budgetbytes.com/roasted-broccoli-pasta-with-lemon-and-feta/'],
+  ['https://www.budgetbytes.com/make-ahead-bean-and-cheese-burritos/'],
+  ['https://www.budgetbytes.com/chili-roasted-sweet-potatoes/'],
   ['https://www.budgetbytes.com/sweet-chili-tofu-bowls/'],
-  ['https://www.budgetbytes.com/chunky-lentil-vegetable-soup/'],
-  ['https://www.budgetbytes.com/spanish-chickpeas-and-rice/'],
-  ['https://www.budgetbytes.com/apple-dijon-kale-salad/'],
-  ['https://www.budgetbytes.com/coconut-jerk-peas-pineapple-salsa/'],
-  ['https://www.budgetbytes.com/one-pot-roasted-red-pepper-pasta/'],
-  ['https://www.budgetbytes.com/african-peanut-stew-vegan/'],
-  ['https://www.budgetbytes.com/pan-fried-sesame-tofu-with-broccoli/'],
-  ['https://www.budgetbytes.com/curried-chickpeas-spinach/'],
-  ['https://www.budgetbytes.com/cold-peanut-noodle-salad/'],
+  ['https://www.budgetbytes.com/spinach-orzo-salad-balsamic-vinaigrette/'],
+  ['https://www.budgetbytes.com/homemade-freezer-garlic-bread/'],
 ];
 
 const urlBlacklist = [
@@ -177,6 +257,7 @@ function parseDuration(duration) {
     }
 
     if (
+      !argv['only-new'] &&
       content.sameAs &&
       !content.sameAs.some((item) => urlBlacklist.includes(item))
     ) {

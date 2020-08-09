@@ -40,6 +40,7 @@
     "now-build": "nuxt build --modern && nuxt export --modern",
     "stylelint:fix": "npx stylelint **/*.css !**/node_modules/** !**/dist/** !**/coverage/** --fix",
     "scrape": "node scrape && npm run format",
+    "scrape:new": "node scrape --only-new && npm run format",
     "scrape:dry": "node scrape --no-scrape && npm run format"
   },
   "dependencies": {
