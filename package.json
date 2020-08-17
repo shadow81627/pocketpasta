@@ -126,7 +126,7 @@
     "mutation-observer": "1.0.3",
     "node-sass": "4.14.1",
     "nodemon": "2.0.4",
-    "normalize-text": "2.2.1",
+    "normalize-text": "2.3.0",
     "pluralize": "8.0.0",
     "prettier": "2.0.5",
     "pretty-quick": "2.0.1",
