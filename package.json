@@ -131,7 +131,7 @@
     "prettier": "2.0.5",
     "pretty-quick": "2.0.1",
     "puppeteer": "5.2.1",
-    "puppeteer-extra": "3.1.13",
+    "puppeteer-extra": "3.1.15",
     "puppeteer-extra-plugin-stealth": "2.5.0",
     "sass": "1.26.10",
     "sass-loader": "9.0.3",
