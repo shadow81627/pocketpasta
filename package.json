@@ -55,7 +55,7 @@
     "@nuxtjs/sentry": "4.3.4",
     "@nuxtjs/sitemap": "2.4.0",
     "cross-env": "7.0.2",
-    "firebase": "7.18.0",
+    "firebase": "7.19.0",
     "firebaseui": "4.6.1",
     "github-markdown-css": "4.0.0",
     "koa": "2.13.0",
