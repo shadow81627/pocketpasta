@@ -1,43 +1,34 @@
 import Component from '@/pages/tasks.vue';
 import { shallowMount, createLocalVue } from '@vue/test-utils';
 import Vuetify from 'vuetify';
-import BootstrapVuePlugin from 'bootstrap-vue';
+
 import VueRouter from 'vue-router';
 
 const localVue = createLocalVue();
 
 localVue.use(Vuetify);
-localVue.use(BootstrapVuePlugin);
+
 localVue.use(VueRouter);
 
 const router = new VueRouter();
+
+const $pouch = {
+  changes: () => ({ on: () => ({}) }),
+  post: () => ({}),
+  put: () => ({}),
+  upsert: () => ({}),
+  find: () => ({ docs: [] }),
+};
 
 const factory = () =>
   shallowMount(Component, {
     localVue,
     router,
+    $pouch,
     mocks: {
       $auth: { user: {} },
       $fetchState: {},
-      $fireStore: {
-        collection: () => ({
-          doc: () => ({
-            set: () =>
-              new Promise((resolve, reject) => {
-                setTimeout(() => {
-                  resolve('foo');
-                }, 300);
-              }),
-          }),
-          add: () => ({}),
-        }),
-      },
-      $pouch: {
-        changes: () => ({ on: () => ({}) }),
-        post: () => ({}),
-        put: () => ({}),
-        upsert: () => ({}),
-      },
+      $pouch,
     },
   });
 
@@ -73,14 +64,15 @@ describe('Tasks page', () => {
     const wrapper = factory();
     expect(await wrapper.vm.create()).toBe(undefined);
   });
+
   test('save', async () => {
     const wrapper = factory();
     expect(await wrapper.vm.save({})).toBe(undefined);
   });
 
-  test('fetch', () => {
+  test('fetch', async () => {
     const wrapper = factory();
-    expect(wrapper.vm.$options.fetch()).toBeTruthy();
+    expect(await wrapper.vm.$options.fetch()).toBe(undefined);
   });
 
   test('pages', () => {
@@ -124,13 +116,13 @@ describe('Tasks page', () => {
   test('sortBy', () => {
     const wrapper = factory();
     wrapper.vm.sortBy = 1;
-    expect(wrapper.vm.sortBy).toEqual(1);
+    expect(wrapper.vm.sortBy).toEqual(null);
   });
 
   test('groupBy', () => {
     const wrapper = factory();
     wrapper.vm.groupBy = 1;
-    expect(wrapper.vm.groupBy).toEqual(1);
+    expect(wrapper.vm.groupBy).toEqual(null);
   });
 
   test('head', () => {

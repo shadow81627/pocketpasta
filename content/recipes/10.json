@@ -3,7 +3,7 @@
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "4.9",
-    "reviewCount": "416"
+    "reviewCount": "440"
   },
   "author": {
     "@type": "Person",
@@ -173,6 +173,136 @@
       "reviewRating": {
         "@type": "Rating",
         "ratingValue": "3"
+      }
+    },
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Jemima Sarkodie"
+      },
+      "datePublished": "2020-07-15",
+      "reviewBody": "I am officially blown! Very easy steps to follow and voila! You are making your own bread! My loaves turned out amazing, chewy inside and crisp on the outside. Didn’t have much time to keep in the fridge for hours but the dough rose for 3 hrs room temp and I baked. Turned out great with great flavour. I will definitely try it again leaving it in the fridge a day or two and compare. I am a newbie bread baker but I already feel like a pro with Sallysbakingaddiction.com recipes.",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5"
+      }
+    },
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Ashley"
+      },
+      "datePublished": "2020-07-16",
+      "reviewBody": "Beautiful and tasty recipe so simple to make. My dough rise wonderfully in 2hrs in our climate (think hot & humid) but after leaving in the fridge for 12 hrs and settled for 45mins during baking it tends to be quite flat (maybe about 3inches tall) may I know how to remedy this?",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5"
+      }
+    },
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Lu"
+      },
+      "datePublished": "2020-07-17",
+      "reviewBody": "Have made this recipe 2 times already and my whole family is in love with it! Both times when I made it it has been hard to score the bread because it's very sticky and it sticks to the knife. Anyone know how to score it without it being so difficult?",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5"
+      }
+    },
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Dennis Johnson"
+      },
+      "datePublished": "2020-07-17",
+      "reviewBody": "I baked two loaves following these instructions just this morning. They were PERFECT!  I have never been satisfied with my previous bread baking efforts, but Sally’s directions led me to bread heaven.  Sally, thank you!  I now have the confidence to work on developing more skills and doing much more baking.  Courtly smooches from my wife and me!",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5"
+      }
+    },
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Chelsea H."
+      },
+      "datePublished": "2020-07-23",
+      "reviewBody": "Have you tried this recipe with the instant sourdough yeast from red star? They say you can replace any yeast with it so I'd thought I try it for a quick sourdough loaf tonight.",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5"
+      }
+    },
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Mary"
+      },
+      "datePublished": "2020-07-28",
+      "reviewBody": "This recipe and your super-clear video worked wonderfully for me! My first homemade bread in decades! I followed the recipe exactly as given, and the bread was just delicious with a great chew--like bread from a cool bakery!  One question--could I halve the recipe and any considerations if I do so?  So that I make just one loaf?   (It's so easy I'd rather make less bread more often). Thanks so much!",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5"
+      }
+    },
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Tanya"
+      },
+      "datePublished": "2020-07-29",
+      "reviewBody": "Delicious!  I don't have a bread maker, dutch oven, or a pizza stone and I never made bread in my life.  But I had the ingredients so I gave it a try.  It was easy to make and the instructions were easy to follow.  The bread had a nice crust and was airy.  I love that I can make and rise it on a hot day and wait for a cooler day to turn on the oven.  Thanks for sharing your recipe, I can believe I made bread, and it was good :)",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5"
+      }
+    },
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "maria caballero olins"
+      },
+      "datePublished": "2020-07-30",
+      "reviewBody": "Hola Sally: gracias por tomarme en cuenta, de lo que me enviaste ya escogí dos recetas la de zuquini  y este  pancito que se ve ricoooo ¡¡¡¡¡¡¡¡¡\r\nBesitos y cuidense mucho de esta pandemia que está mantando mucha gente.\r\n\r\nMary",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5"
+      }
+    },
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Alyce"
+      },
+      "datePublished": "2020-07-30",
+      "reviewBody": "I have been making this extraordinary bread almost every day for the last 3 months.  It's not only exquisite,  but forgiving.  But I do have a question... if, after cooling the bread, I suspect that it could use a few more minutes in the oven, can I put it back without compromising the loaf? (Today it sounded hollow when I took it out, but it seems less so after about 30 minutes on the rack... \r\nThank you for your excellent recipes and your consideration.",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5"
+      }
+    },
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Rebecca"
+      },
+      "datePublished": "2020-07-31",
+      "reviewBody": "Hi, love this recipe! I have been working on my bread baking since March-- trying everything from sweet breads to sourdough. Yet this simple bread recipe, which is so much easier than sourdough or other complex loaves I've attempted, is always the most popular with my boyfriend! He says it's \"the best bread [he's] had in [his] entire life\". I've had some fun with it-- made it once with rosemary and garlic, and one time I sprinkled everything bagel seasoning on top, which I loved. But he seems to just like it best plain white served with some olive oil and salt/pepper :-) I will say, you're right about the salt. I made the mistake of making it with table salt before buying coarse salt, and it made a WORLD of difference. Thank you for this website <3",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5"
       }
     }
   ],

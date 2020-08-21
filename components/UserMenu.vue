@@ -1,94 +1,90 @@
 <template>
   <div>
-    <client-only>
-      <v-menu v-model="menu" offset-y>
-        <template v-slot:activator="{ on }">
-          <v-btn
-            v-if="$auth.loggedIn"
-            icon
-            large
-            aria-label="avatar"
-            min-width="32"
-            v-on="on"
-          >
-            <v-avatar size="32px" tile width="32" min-width="32">
+    <v-menu v-model="menu" offset-y>
+      <template v-slot:activator="{ on }">
+        <v-btn
+          icon
+          large
+          aria-label="user menu"
+          width="32"
+          height="32"
+          v-on="on"
+        >
+          <v-avatar size="32px" tile width="32" min-width="32">
+            <v-img
+              v-if="$auth.user && $auth.user.picture"
+              :src="$auth.user.picture"
+              width="32"
+              height="32"
+              min-width="32"
+              alt="avatar"
+            />
+            <v-icon v-else>{{ mdiAccountCircle }}</v-icon>
+          </v-avatar>
+        </v-btn>
+      </template>
+
+      <v-card>
+        <v-list v-if="$auth.loggedIn" flat>
+          <v-list-item tile to="/profile">
+            <v-list-item-avatar>
               <v-img
                 v-if="$auth.user.picture"
                 :src="$auth.user.picture"
-                width="32"
-                height="32"
-                min-width="32"
                 alt="avatar"
+                class="rounded"
+                height="40"
+                width="40"
               />
               <v-icon v-else>{{ mdiAccountCircle }}</v-icon>
-            </v-avatar>
-          </v-btn>
-          <v-btn v-else aria-label="login" outlined min-width="32" to="/login">
-            <v-icon>{{ mdiAccountCircle }}</v-icon>
-            <span>&nbsp;</span>
-            <span>{{ $t('layout.login') }}</span>
-          </v-btn>
-        </template>
+            </v-list-item-avatar>
+            <v-list-item-content>
+              <v-list-item-title v-if="$auth.user.name !== $auth.user.email">{{
+                $auth.user.name
+              }}</v-list-item-title>
+              <v-list-item-title>{{ $auth.user.email }}</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+        </v-list>
 
-        <v-card v-if="$auth.loggedIn">
-          <v-list>
-            <v-list-item tile to="/profile">
-              <v-list-item-avatar>
-                <v-img
-                  v-if="$auth.user.picture"
-                  :src="$auth.user.picture"
-                  alt="avatar"
-                  class="rounded"
-                  height="40"
-                  width="40"
-                />
-                <v-icon v-else>{{ mdiAccountCircle }}</v-icon>
-              </v-list-item-avatar>
+        <v-divider />
 
-              <v-list-item-content>
-                <v-list-item-title
-                  v-if="$auth.user.name !== $auth.user.email"
-                  >{{ $auth.user.name }}</v-list-item-title
-                >
-                <v-list-item-title>{{ $auth.user.email }}</v-list-item-title>
-              </v-list-item-content>
-            </v-list-item>
-          </v-list>
-
-          <v-divider />
-
-          <v-list>
-            <!-- <v-list-item>
-              <v-btn icon>
-                <v-icon>{{ mdiAccountGroup }}</v-icon>
-              </v-btn>
-              <v-list-item-title>Switch Company</v-list-item-title>
-            </v-list-item> -->
-            <v-list-item
-              @click="currentTheme = $vuetify.theme.dark ? 'light' : 'dark'"
-            >
-              <v-btn icon>
-                <v-icon>{{ mdiThemeLightDark }}</v-icon>
-              </v-btn>
+        <v-list flat dense>
+          <v-list-item
+            @click="currentTheme = $vuetify.theme.dark ? 'light' : 'dark'"
+          >
+            <v-list-item-icon>
+              <v-icon>{{ mdiThemeLightDark }}</v-icon>
+            </v-list-item-icon>
+            <v-list-item-content>
               <v-list-item-title>{{
                 isDark ? 'Light Mode' : 'Dark Mode'
               }}</v-list-item-title>
-            </v-list-item>
+            </v-list-item-content>
+          </v-list-item>
+          <!-- <template v-if="$auth.loggedIn">
             <v-list-item @click="$auth.logout()">
-              <v-btn icon>
+              <v-list-item-icon>
                 <v-icon>{{ mdiLogout }}</v-icon>
-              </v-btn>
-              <v-list-item-title>{{ $t('layout.logout') }}</v-list-item-title>
+              </v-list-item-icon>
+              <v-list-item-content>
+                <v-list-item-title>{{ $t('layout.logout') }}</v-list-item-title>
+              </v-list-item-content>
             </v-list-item>
-          </v-list>
-        </v-card>
-      </v-menu>
-      <v-btn slot="placeholder" aria-label="login" outlined min-width="32">
-        <v-icon>{{ mdiAccountCircle }}</v-icon>
-        <span>&nbsp;</span>
-        <span>{{ $t('layout.login') }}</span>
-      </v-btn>
-    </client-only>
+          </template>
+          <template v-else>
+            <v-list-item to="/login">
+              <v-list-item-icon>
+                <v-icon>{{ mdiLogin }}</v-icon>
+              </v-list-item-icon>
+              <v-list-item-content>
+                <v-list-item-title>{{ $t('layout.login') }}</v-list-item-title>
+              </v-list-item-content>
+            </v-list-item>
+          </template> -->
+        </v-list>
+      </v-card>
+    </v-menu>
   </div>
 </template>
 
@@ -98,6 +94,7 @@ import {
   mdiLogout,
   mdiThemeLightDark,
   mdiAccountGroup,
+  mdiLogin,
 } from '@mdi/js';
 export default {
   data: () => ({
@@ -106,6 +103,7 @@ export default {
     mdiLogout,
     mdiThemeLightDark,
     mdiAccountGroup,
+    mdiLogin,
   }),
   computed: {
     isDark() {

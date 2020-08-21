@@ -1,86 +1,84 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`shoppinglist page renders properly 1`] = `
-"<div class=\\"container\\">
-  <div class=\\"row\\">
-    <div class=\\"col\\">
-      <div>
-        <div id=\\"editor\\">
-          <h1>Shopping list</h1> <br>
-          <h2>Breakfast:</h2>
-          <ul data-checked=\\"false\\">
-            <li>Milk</li>
-            <li>Bananas</li>
-          </ul> <br>
-          <h2>Misc:</h2>
-          <ul data-checked=\\"false\\">
-            <li>canola oil</li>
-            <li>apple cider vinegar</li>
-            <li>vinegar</li>
-            <li>baking soda</li>
-            <li>toothpaste</li>
-            <li>toilet paper</li>
-            <li>dish soap</li>
-            <li>snacks</li>
-          </ul> <br>
-          <h2>Thursday: DND cookup</h2>
-          <ul data-checked=\\"false\\">
-            <li>macaroni</li>
-            <li>potato</li>
-            <li>carrot</li>
-            <li>broccoli</li>
-            <li>cauliflower</li>
-            <li>kale</li>
-          </ul> <br>
-          <h2>Friday: soup leftovers</h2>
-          <ul data-checked=\\"false\\">
-            <li>macaroni</li>
-            <li>potato</li>
-            <li>carrot</li>
-            <li>broccoli</li>
-            <li>cauliflower</li>
-            <li>kale</li>
-          </ul> <br>
-          <h2>Saturday: fish and chips</h2>
-          <ul data-checked=\\"false\\">
-            <li>fish</li>
-            <li>chips</li>
-          </ul> <br>
-          <h2>Sunday: tacos</h2>
-          <ul data-checked=\\"false\\">
-            <li>tortillas</li>
-            <li>tomato</li>
-            <li>avocado</li>
-            <li>garlic</li>
-            <li>tofu</li>
-            <li>parsley</li>
-          </ul> <br>
-          <h2>Monday: Ethiopian</h2>
-          <ul data-checked=\\"false\\">
-            <li>red onion</li>
-            <li>sweet potato</li>
-            <li>walnuts</li>
-            <li>spinach</li>
-            <li>feta</li>
-          </ul> <br>
-          <h2>Tuesday: chickpea curry</h2>
-          <ul data-checked=\\"false\\">
-            <li>chickpeas</li>
-            <li>ginger</li>
-            <li>garlic</li>
-            <li>spinach</li>
-          </ul> <br>
-          <h2>Wednesday: chickpea curry</h2>
-          <ul data-checked=\\"false\\">
-            <li>chickpeas</li>
-            <li>ginger</li>
-            <li>garlic</li>
-            <li>spinach</li>
-          </ul> <br>
-        </div>
-        <div class=\\"mt-3\\"><button type=\\"button\\" class=\\"v-btn v-btn--contained theme--light v-size--default\\"><span class=\\"v-btn__content\\">Clear</span></button> <button type=\\"button\\" class=\\"float-right v-btn v-btn--contained theme--light v-size--default primary\\"><span class=\\"v-btn__content\\">Save</span></button></div>
-      </div>
-    </div>
-  </div>
-</div>"
+exports[`Shopping List page renders properly 1`] = `
+"<v-container-stub tag=\\"div\\">
+  <v-row-stub tag=\\"div\\">
+    <v-col-stub tag=\\"div\\">
+      <h1>Shopping</h1>
+      <v-data-table-stub mobilebreakpoint=\\"0\\" items=\\"\\" options=\\"[object Object]\\" sortdesc=\\"\\" customsort=\\"function sortItems(items, sortBy, sortDesc, locale, customSorters) {
+          if (sortBy === null || !sortBy.length) return items;
+          var stringCollator = new Intl.Collator(locale, {
+            sensitivity: 'accent',
+            usage: 'sort'
+          });
+          return items.sort(function (a, b) {
+            var _a, _b;
+
+            for (var i = 0; i < sortBy.length; i++) {
+              var sortKey = sortBy[i];
+              var sortA = getObjectValueByPath(a, sortKey);
+              var sortB = getObjectValueByPath(b, sortKey);
+
+              if (sortDesc[i]) {
+                _a = __read([sortB, sortA], 2), sortA = _a[0], sortB = _a[1];
+              }
+
+              if (customSorters &amp;&amp; customSorters[sortKey]) {
+                var customResult = customSorters[sortKey](sortA, sortB);
+                if (!customResult) continue;
+                return customResult;
+              } // Check if both cannot be evaluated
+
+
+              if (sortA === null &amp;&amp; sortB === null) {
+                continue;
+              }
+
+              _b = __read([sortA, sortB].map(function (s) {
+                return (s || '').toString().toLocaleLowerCase();
+              }), 2), sortA = _b[0], sortB = _b[1];
+
+              if (sortA !== sortB) {
+                if (!isNaN(sortA) &amp;&amp; !isNaN(sortB)) return Number(sortA) - Number(sortB);
+                return stringCollator.compare(sortA, sortB);
+              }
+            }
+
+            return 0;
+          });
+        }\\" multisort=\\"true\\" page=\\"1\\" itemsperpage=\\"10\\" groupdesc=\\"\\" customgroup=\\"function groupItems(items, groupBy, groupDesc) {
+          var key = groupBy[0];
+          var groups = [];
+          var current = null;
+
+          for (var i = 0; i < items.length; i++) {
+            var item = items[i];
+            var val = getObjectValueByPath(item, key);
+
+            if (current !== val) {
+              current = val;
+              groups.push({
+                name: val,
+                items: []
+              });
+            }
+
+            groups[groups.length - 1].items.push(item);
+          }
+
+          return groups;
+        }\\" locale=\\"en-US\\" customfilter=\\"function defaultFilter(value, search, item) {
+          return value != null &amp;&amp; search != null &amp;&amp; typeof value !== 'boolean' &amp;&amp; value.toString().toLocaleLowerCase().indexOf(search.toLocaleLowerCase()) !== -1;
+        }\\" serveritemslength=\\"10\\" itemkey=\\"_id\\" value=\\"\\" expanded=\\"\\" noresultstext=\\"$vuetify.dataIterator.noResultsText\\" nodatatext=\\"$vuetify.noDataText\\" loadingtext=\\"$vuetify.dataIterator.loadingText\\" hidedefaultfooter=\\"true\\" selectablekey=\\"isSelectable\\" loaderheight=\\"4\\" headers=\\"[object Object],[object Object],[object Object],[object Object]\\" expandicon=\\"$expand\\" itemclass=\\"function () { [native code] }\\" class=\\"elevation-1\\"></v-data-table-stub>
+    </v-col-stub>
+  </v-row-stub>
+  <v-row-stub tag=\\"div\\">
+    <v-col-stub tag=\\"div\\">
+      <!---->
+      <v-btn-stub tag=\\"button\\" activeclass=\\"\\" bottom=\\"true\\" fixed=\\"true\\" right=\\"true\\" fab=\\"true\\" type=\\"button\\" class=\\"bg-primary\\">
+        <v-icon-stub>M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z</v-icon-stub>
+      </v-btn-stub>
+    </v-col-stub>
+  </v-row-stub>
+</v-container-stub>"
 `;

@@ -55,7 +55,7 @@
             nuxt
           >
             <v-list-item-action>
-              <v-icon>${{ item.icon }}</v-icon>
+              <v-icon>{{ item.icon }}</v-icon>
             </v-list-item-action>
             <v-list-item-content>
               <v-list-item-title>{{ item.text }}</v-list-item-title>
@@ -69,6 +69,7 @@
       app
       fixed
       class="hidden-print-only"
+      height="64"
     >
       <v-app-bar-nav-icon aria-label="menu" @click.stop="drawer = !drawer"
         ><v-progress-circular v-if="loading" indeterminate size="18" width="2"
@@ -93,17 +94,14 @@
       <user-menu />
     </v-app-bar>
     <v-main class="pb-0">
-      <nuxt style="min-height: 100vh;" keep-alive />
+      <nuxt style="min-height: 100vh;" xkeep-alive />
+      <the-footer />
     </v-main>
-    <the-footer
-      :style="{
-        marginLeft: drawer && $vuetify.breakpoint.lgAndUp ? '256px' : 0,
-      }"
-    />
   </v-app>
 </template>
 
 <script>
+import { mdiClipboardListOutline } from '@mdi/js';
 import AddToHomeScreen from '@/components/AddToHomeScreen.vue';
 import UserMenu from '@/components/UserMenu.vue';
 import TheFooter from '@/components/Layout/the-footer.vue';
@@ -124,27 +122,32 @@ export default {
     items() {
       return [
         {
-          icon: 'book',
+          icon: '$book',
           text: this.$t('layout.navigation.recipes'),
           route: { name: 'recipes' },
         },
         {
-          icon: 'store',
+          icon: '$store',
           text: this.$t('layout.navigation.products'),
           route: { name: 'products' },
         },
         {
-          icon: 'notes',
-          text: this.$t('layout.navigation.shoppinglist'),
+          icon: mdiClipboardListOutline,
+          text: 'Shopping List',
           route: { name: 'shoppinglist' },
         },
         {
-          icon: 'calendar-check',
+          icon: '$calendar-check',
           text: 'Tasks',
           route: { name: 'tasks' },
         },
         {
-          icon: 'settings',
+          icon: '$notes',
+          text: 'Notes',
+          route: { name: 'notes' },
+        },
+        {
+          icon: '$settings',
           text: this.$t('layout.navigation.settings'),
           route: { name: 'settings' },
         },

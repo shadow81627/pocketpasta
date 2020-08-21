@@ -2,8 +2,8 @@
   "@type": "Recipe",
   "aggregateRating": {
     "@type": "AggregateRating",
-    "ratingCount": "42",
-    "ratingValue": "4.93"
+    "ratingCount": "45",
+    "ratingValue": "4.94"
   },
   "author": {
     "@type": "Person",
@@ -105,7 +105,7 @@
     "description": "Delicious, cheesy, tender scalloped potatoes made vegan thanks to almond milk and nutritional yeast! Just 10 ingredients required for this classic holiday side dish!\n\nFull Recipe: https://minimalistbaker.com/easy-vegan-scalloped-potatoes/\n \nFOLLOW US!\nBlog: http://minimalistbaker.com/\nInstagram: https://instagram.com/minimalistbaker/\nTwitter: https://twitter.com/minimalistbaker\nFacebook: https://www.facebook.com/MinimalistBaker",
     "duration": "",
     "embedUrl": "https://www.youtube.com/embed/iCIZa4RFNL8?feature=oembed",
-    "name": "Scalloped Potatoes",
+    "name": "Easy Vegan Scalloped Potatoes | Minimalist Baker",
     "thumbnailUrl": "https://i.ytimg.com/vi/iCIZa4RFNL8/hqdefault.jpg",
     "uploadDate": "2018-11-18T11:30:03+00:00"
   }

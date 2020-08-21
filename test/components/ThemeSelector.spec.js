@@ -2,13 +2,13 @@ import ThemeSelector from '@/components/ThemeSelector.vue';
 import { shallowMount, createLocalVue } from '@vue/test-utils';
 import Vuex from 'vuex';
 import Vuetify from 'vuetify';
-import BootstrapVuePlugin from 'bootstrap-vue';
+
 import Vue from 'vue';
 
 const localVue = createLocalVue();
 
 Vue.use(Vuetify);
-localVue.use(BootstrapVuePlugin);
+
 localVue.use(Vuex);
 
 describe('ThemeSelector', () => {

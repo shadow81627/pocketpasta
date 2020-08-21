@@ -2,14 +2,14 @@ import Component from '@/components/List/ViewSwitcher';
 import { shallowMount, createLocalVue, RouterLinkStub } from '@vue/test-utils';
 import Vuex from 'vuex';
 import Vuetify from 'vuetify';
-import BootstrapVuePlugin from 'bootstrap-vue';
+
 import Vue from 'vue';
 
 const localVue = createLocalVue();
 let vuetify;
 
 localVue.use(Vuex);
-localVue.use(BootstrapVuePlugin);
+
 Vue.use(Vuetify);
 
 describe('ViewSwitcher', () => {

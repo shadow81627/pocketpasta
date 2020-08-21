@@ -16,6 +16,17 @@ config.mocks.$i18n = {
   ],
 };
 
+config.mocks.$pouch = {
+  changes: () => ({ on: () => ({}) }),
+  post: () => ({}),
+  put: () => ({}),
+  upsert: () => ({}),
+  find: () => ({ docs: [] }),
+};
+
+config.mocks.$auth = { user: {} };
+config.mocks.$fetchState = {};
+
 config.mocks.localePath = (route) => route;
 
 config.mocks.switchLocalePath = (lang) => lang;
