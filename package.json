@@ -100,7 +100,7 @@
     "cheerio": "1.0.0-rc.3",
     "codecov": "3.7.2",
     "commitizen": "4.2.0",
-    "cz-conventional-changelog": "3.2.0",
+    "cz-conventional-changelog": "3.2.1",
     "deep-sort-object": "1.0.2",
     "deepmerge": "4.2.2",
     "eslint": "7.7.0",
