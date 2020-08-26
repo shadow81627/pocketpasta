@@ -189,8 +189,8 @@ describe('List', () => {
 
   test('direction', () => {
     const wrapper = factory();
-    wrapper.vm.direction = 'desc';
-    expect(wrapper.vm.direction).toEqual('desc');
+    wrapper.vm.direction = 'asc';
+    expect(wrapper.vm.direction).toEqual('asc');
   });
 
   test('sortBy', () => {
