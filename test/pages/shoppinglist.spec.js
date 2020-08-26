@@ -97,20 +97,20 @@ describe('Shopping List page', () => {
 
   test('search', () => {
     const wrapper = factory();
-    wrapper.vm.search = 1;
-    expect(wrapper.vm.search).toEqual(1);
+    wrapper.vm.search = 'search';
+    expect(wrapper.vm.search).toEqual('search');
   });
 
   test('view', () => {
     const wrapper = factory();
-    wrapper.vm.view = 1;
-    expect(wrapper.vm.view).toEqual(1);
+    wrapper.vm.view = 'grid';
+    expect(wrapper.vm.view).toEqual('grid');
   });
 
   test('direction', () => {
     const wrapper = factory();
-    wrapper.vm.direction = 1;
-    expect(wrapper.vm.direction).toEqual(1);
+    wrapper.vm.direction = 'desc';
+    expect(wrapper.vm.direction).toEqual('desc');
   });
 
   test('sortBy', () => {
