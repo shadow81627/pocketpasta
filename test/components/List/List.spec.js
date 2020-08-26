@@ -177,32 +177,32 @@ describe('List', () => {
 
   test('search', () => {
     const wrapper = factory();
-    wrapper.vm.search = 1;
-    expect(wrapper.vm.search).toEqual(1);
+    wrapper.vm.search = 'search';
+    expect(wrapper.vm.search).toEqual('search');
   });
 
   test('view', () => {
     const wrapper = factory();
-    wrapper.vm.view = 1;
-    expect(wrapper.vm.view).toEqual(1);
+    wrapper.vm.view = 'grid';
+    expect(wrapper.vm.view).toEqual('grid');
   });
 
   test('direction', () => {
     const wrapper = factory();
-    wrapper.vm.direction = 1;
-    expect(wrapper.vm.direction).toEqual(1);
+    wrapper.vm.direction = 'desc';
+    expect(wrapper.vm.direction).toEqual('desc');
   });
 
   test('sortBy', () => {
     const wrapper = factory();
-    wrapper.vm.sortBy = 1;
-    expect(wrapper.vm.sortBy).toEqual(1);
+    wrapper.vm.sortBy = 'attribute';
+    expect(wrapper.vm.sortBy).toEqual('attribute');
   });
 
   test('reset', () => {
     const wrapper = factory();
-    wrapper.vm.reset = false;
-    expect(wrapper.vm.reset).toEqual(false);
+    wrapper.vm.reset = true;
+    expect(wrapper.vm.reset).toEqual(true);
   });
 
   test('groupBy', () => {
