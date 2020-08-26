@@ -50,7 +50,7 @@
     "@nuxtjs/firebase": "6.1.1",
     "@nuxtjs/google-analytics": "2.4.0",
     "@nuxtjs/markdownit": "1.2.10",
-    "@nuxtjs/pwa": "3.0.1",
+    "@nuxtjs/pwa": "3.0.2",
     "@nuxtjs/recaptcha": "0.6.2",
     "@nuxtjs/sentry": "4.3.4",
     "@nuxtjs/sitemap": "2.4.0",
