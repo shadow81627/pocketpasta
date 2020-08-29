@@ -5,7 +5,7 @@
         <v-expansion-panel-header
           :color="$vuetify.theme.dark ? '' : 'primary'"
           disable-icon-rotate
-          style="min-height: 80px;"
+          style="min-height: 80px"
           aria-label="tune"
         >
           <client-only>
@@ -97,7 +97,7 @@
                   @input="$emit('update:groupBy', $event)"
                 />
               </v-col>
-              <v-col cols="auto" style="min-width: 202px;">
+              <v-col cols="auto" style="min-width: 202px">
                 <v-menu offset-y close-on-click>
                   <template v-slot:activator="{ on, attrs }">
                     <v-btn large text v-bind="attrs" v-on="on">

@@ -15,9 +15,7 @@
       <table class="performance-facts__table">
         <thead>
           <tr>
-            <th colspan="3" class="small-info">
-              Amount Per Serving
-            </th>
+            <th colspan="3" class="small-info">Amount Per Serving</th>
           </tr>
         </thead>
         <tbody>

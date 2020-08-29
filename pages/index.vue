@@ -30,14 +30,12 @@
               contain
             />
           </v-avatar>
-          <h1 class="text-centers">
-            PocketPasta
-          </h1>
+          <h1 class="text-centers">PocketPasta</h1>
           <p class="lead font-weight-normal">
             {{ $t('landing.banner.subheading') }}
           </p>
         </div>
-        <credit style="position: absolute; right: 0; bottom: 0;" />
+        <credit style="position: absolute; right: 0; bottom: 0" />
       </div>
     </v-card>
 
