@@ -14,9 +14,7 @@ exports[`index renders properly 1`] = `
               https://res.cloudinary.com/pocketpasta/image/upload/fl_progressive/c_fit,f_auto,q_auto,w_200,h_176,dpr_3.0/v1560038491/logo_vlqvdr.png 3x
             \\" transition=\\"fade-transition\\" center=\\"\\"></v-img-stub>
         </v-avatar-stub>
-        <h1 class=\\"text-centers\\">
-          PocketPasta
-        </h1>
+        <h1 class=\\"text-centers\\">PocketPasta</h1>
         <p class=\\"lead font-weight-normal\\">
           landing.banner.subheading
         </p>

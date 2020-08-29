@@ -128,7 +128,7 @@
     "nodemon": "2.0.4",
     "normalize-text": "2.3.1",
     "pluralize": "8.0.0",
-    "prettier": "2.0.5",
+    "prettier": "2.1.1",
     "pretty-quick": "3.0.0",
     "puppeteer": "5.2.1",
     "puppeteer-extra": "3.1.15",

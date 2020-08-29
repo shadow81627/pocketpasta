@@ -19,7 +19,7 @@
 
     <v-card>
       <v-card-title class="headline grey lighten-2 text-left">
-        <span style="word-break: normal;"
+        <span style="word-break: normal"
           >Are you sure you want to {{ action }}?</span
         >
       </v-card-title>

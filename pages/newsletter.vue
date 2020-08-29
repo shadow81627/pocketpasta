@@ -60,17 +60,17 @@
             <div
               id="mce-error-response"
               class="response"
-              style="display: none;"
+              style="display: none"
             />
             <div
               id="mce-success-response"
               class="response"
-              style="display: none;"
+              style="display: none"
             />
           </div>
           <!-- real people should not fill this in and expect good things
         - do not remove this or risk form bot signups-->
-          <div style="position: absolute; left: -5000px;" aria-hidden="true">
+          <div style="position: absolute; left: -5000px" aria-hidden="true">
             <input
               type="text"
               name="b_7f69c361c7f5d97725d2e339b_c821016b08"

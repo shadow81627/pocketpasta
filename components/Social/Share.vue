@@ -1,7 +1,7 @@
 <template>
   <div
     class="a2a_kit a2a_kit_size_32 a2a_default_style d-print-none"
-    style="min-height: 32px;"
+    style="min-height: 32px"
   >
     <a
       class="a2a_dd"

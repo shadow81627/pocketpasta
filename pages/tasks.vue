@@ -249,9 +249,7 @@
           @confirm="clear(items)"
         >
           <template v-slot:activator="{ on, attrs }">
-            <v-btn color="danger" v-bind="attrs" v-on="on">
-              Clear All
-            </v-btn>
+            <v-btn color="danger" v-bind="attrs" v-on="on"> Clear All </v-btn>
           </template>
         </confirm-dialog>
 
