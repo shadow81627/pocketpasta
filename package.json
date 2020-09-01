@@ -103,7 +103,7 @@
     "cz-conventional-changelog": "3.3.0",
     "deep-sort-object": "1.0.2",
     "deepmerge": "4.2.2",
-    "eslint": "7.8.0",
+    "eslint": "7.8.1",
     "eslint-config-prettier": "6.11.0",
     "eslint-config-standard": "14.1.1",
     "eslint-config-vuetify": "0.6.1",
