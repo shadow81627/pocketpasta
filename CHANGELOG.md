@@ -1,5 +1,11 @@
 # Releases
 
+## [0.46.47](https://github.com/shadow81627/pocketpasta/compare/v0.46.46...v0.46.47) (2020-09-21)
+
+### Bug Fixes
+
+- **deps:** update dependency sortablejs to v1.12.0 ([0173779](https://github.com/shadow81627/pocketpasta/commit/0173779334b3ab971cbbdb6d592387ca6061e985))
+
 ## [0.46.46](https://github.com/shadow81627/pocketpasta/compare/v0.46.45...v0.46.46) (2020-09-17)
 
 ### Bug Fixes
