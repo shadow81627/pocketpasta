@@ -62,7 +62,7 @@
         </v-expansion-panel-content>
       </v-expansion-panel>
     </v-expansion-panels>
-    <disqus shortname="pocketpasta" style="margin-top: 16px;" />
+    <disqus shortname="pocketpasta" style="margin-top: 16px" />
   </div>
 </template>
 

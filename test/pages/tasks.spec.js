@@ -1,13 +1,13 @@
 import Component from '@/pages/tasks.vue';
 import { shallowMount, createLocalVue } from '@vue/test-utils';
 import Vuetify from 'vuetify';
-import BootstrapVuePlugin from 'bootstrap-vue';
+
 import VueRouter from 'vue-router';
 
 const localVue = createLocalVue();
 
 localVue.use(Vuetify);
-localVue.use(BootstrapVuePlugin);
+
 localVue.use(VueRouter);
 
 const router = new VueRouter();
@@ -97,20 +97,20 @@ describe('Tasks page', () => {
 
   test('search', () => {
     const wrapper = factory();
-    wrapper.vm.search = 1;
-    expect(wrapper.vm.search).toEqual(1);
+    wrapper.vm.search = 'search';
+    expect(wrapper.vm.search).toEqual('search');
   });
 
   test('view', () => {
     const wrapper = factory();
-    wrapper.vm.view = 1;
-    expect(wrapper.vm.view).toEqual(1);
+    wrapper.vm.view = 'grid';
+    expect(wrapper.vm.view).toEqual('grid');
   });
 
   test('direction', () => {
     const wrapper = factory();
-    wrapper.vm.direction = 1;
-    expect(wrapper.vm.direction).toEqual(1);
+    wrapper.vm.direction = 'asc';
+    expect(wrapper.vm.direction).toEqual('asc');
   });
 
   test('sortBy', () => {

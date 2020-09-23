@@ -20,8 +20,8 @@
     "@context": "http://schema.org/",
     "@type": "AggregateRating",
     "bestRating": 5,
-    "ratingValue": 4.769231,
-    "reviewCount": 13,
+    "ratingValue": 4.785714,
+    "reviewCount": 14,
     "worstRating": 1
   },
   "author": {
@@ -417,6 +417,210 @@
       },
       "datePublished": "2020-06-04",
       "reviewBody": "Grated 0.42lb of parmesan block and used it all. Didn’t have any of the seasonings listed except salt, pepper, garlic powder, onion powder, and oregano. Came out incredibly delicious. Was probably all the cheese ;)",
+      "reviewRating": {
+        "@type": "Rating",
+        "bestRating": 5,
+        "ratingValue": 5,
+        "worstRating": 1
+      }
+    },
+    {
+      "@context": "http://schema.org/",
+      "@type": "Review",
+      "author": {
+        "@context": "http://schema.org/",
+        "@type": "Person",
+        "name": "CyanClover"
+      },
+      "datePublished": "2019-05-10",
+      "reviewBody": "This was very good. I made it using vegetable broth for “meatless Monday”. It earned full family approval and will make it into the regular rotation. Thanks Delish!",
+      "reviewRating": {
+        "@type": "Rating",
+        "bestRating": 5,
+        "ratingValue": 5,
+        "worstRating": 1
+      }
+    },
+    {
+      "@context": "http://schema.org/",
+      "@type": "Review",
+      "author": {
+        "@context": "http://schema.org/",
+        "@type": "Person",
+        "name": "GreenBug"
+      },
+      "datePublished": "2020-03-24",
+      "reviewBody": "It was very delicious. I made it without wine but did use some lemon. I added some fresh asparagus the last 10 minutes.",
+      "reviewRating": {
+        "@type": "Rating",
+        "bestRating": 5,
+        "ratingValue": 4,
+        "worstRating": 1
+      }
+    },
+    {
+      "@context": "http://schema.org/",
+      "@type": "Review",
+      "author": {
+        "@context": "http://schema.org/",
+        "@type": "Person",
+        "name": "GoldTooth"
+      },
+      "datePublished": "2020-05-19",
+      "reviewBody": "Made it with lemon juice instead of wine and it was delicious!",
+      "reviewRating": {
+        "@type": "Rating",
+        "bestRating": 5,
+        "ratingValue": 5,
+        "worstRating": 1
+      }
+    },
+    {
+      "@context": "http://schema.org/",
+      "@type": "Review",
+      "author": {
+        "@context": "http://schema.org/",
+        "@type": "Person",
+        "name": "GoldWeights"
+      },
+      "datePublished": "2020-03-02",
+      "reviewBody": "This was the first time that I have ever made risotto.  The family loved it.",
+      "reviewRating": {
+        "@type": "Rating",
+        "bestRating": 5,
+        "ratingValue": 4,
+        "worstRating": 1
+      }
+    },
+    {
+      "@context": "http://schema.org/",
+      "@type": "Review",
+      "author": {
+        "@context": "http://schema.org/",
+        "@type": "Person",
+        "name": "Raewyn Wilkins "
+      },
+      "datePublished": "2020-07-29",
+      "reviewBody": "Wow fantastic",
+      "reviewRating": {
+        "@type": "Rating",
+        "bestRating": 5,
+        "ratingValue": 5,
+        "worstRating": 1
+      }
+    },
+    {
+      "@context": "http://schema.org/",
+      "@type": "Review",
+      "author": {
+        "@context": "http://schema.org/",
+        "@type": "Person",
+        "name": "OliveCactus"
+      },
+      "datePublished": "2020-06-04",
+      "reviewBody": "Grated 0.42lb of parmesan block and used it all. Didn’t have any of the seasonings listed except salt, pepper, garlic powder, onion powder, and oregano. Came out incredibly delicious. Was probably all the cheese ;)",
+      "reviewRating": {
+        "@type": "Rating",
+        "bestRating": 5,
+        "ratingValue": 5,
+        "worstRating": 1
+      }
+    },
+    {
+      "@context": "http://schema.org/",
+      "@type": "Review",
+      "author": {
+        "@context": "http://schema.org/",
+        "@type": "Person",
+        "name": "BlueBattery"
+      },
+      "datePublished": "2020-05-26",
+      "reviewBody": "Followed the recipe as-is - one of our new favorites! Paired with a cast-iron seared ribeye for a perfect meal!",
+      "reviewRating": {
+        "@type": "Rating",
+        "bestRating": 5,
+        "ratingValue": 5,
+        "worstRating": 1
+      }
+    },
+    {
+      "@context": "http://schema.org/",
+      "@type": "Review",
+      "author": {
+        "@context": "http://schema.org/",
+        "@type": "Person",
+        "name": "GoldButton"
+      },
+      "datePublished": "2020-05-19",
+      "reviewBody": "It was yum. Made without wine and added some lemon zest before serving.",
+      "reviewRating": {
+        "@type": "Rating",
+        "bestRating": 5,
+        "ratingValue": 4,
+        "worstRating": 1
+      }
+    },
+    {
+      "@context": "http://schema.org/",
+      "@type": "Review",
+      "author": {
+        "@context": "http://schema.org/",
+        "@type": "Person",
+        "name": "GreenBee"
+      },
+      "datePublished": "2020-05-11",
+      "reviewBody": "Was a great recipe and I definitely prefer to do it with the wine, it just adds some more flavor. I also didn’t use onions and peas and it came out a lot better in my opinion, overly this was a wonderful and delicious meal and it would make sense that it was on delish.com, so I would definitely recommend this to anyone who hasn’t yet tried it!",
+      "reviewRating": {
+        "@type": "Rating",
+        "bestRating": 5,
+        "ratingValue": 5,
+        "worstRating": 1
+      }
+    },
+    {
+      "@context": "http://schema.org/",
+      "@type": "Review",
+      "author": {
+        "@context": "http://schema.org/",
+        "@type": "Person",
+        "name": "CyanCorn"
+      },
+      "datePublished": "2020-04-26",
+      "reviewBody": "Wow, just finished cooking this recipe, My God it’s amazing, love it. The flavours are so good.Well done guys.",
+      "reviewRating": {
+        "@type": "Rating",
+        "bestRating": 5,
+        "ratingValue": 5,
+        "worstRating": 1
+      }
+    },
+    {
+      "@context": "http://schema.org/",
+      "@type": "Review",
+      "author": {
+        "@context": "http://schema.org/",
+        "@type": "Person",
+        "name": "GoldWrench"
+      },
+      "datePublished": "2020-02-28",
+      "reviewBody": "This recipe was delicoous, even when made to be vegan friendly. I used avocado oil.",
+      "reviewRating": {
+        "@type": "Rating",
+        "bestRating": 5,
+        "ratingValue": 5,
+        "worstRating": 1
+      }
+    },
+    {
+      "@context": "http://schema.org/",
+      "@type": "Review",
+      "author": {
+        "@context": "http://schema.org/",
+        "@type": "Person",
+        "name": "BlueCone"
+      },
+      "datePublished": "2019-08-22",
+      "reviewBody": "Very good and flavorful! I substituted a white cheddar for the cheese because it’s what I had on hand and it worked great! Thanks for the recipe!",
       "reviewRating": {
         "@type": "Rating",
         "bestRating": 5,

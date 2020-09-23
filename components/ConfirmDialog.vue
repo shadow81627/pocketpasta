@@ -1,5 +1,5 @@
 <template>
-  <v-dialog v-model="dialog" width="600" @change="$emit('close', false)">
+  <v-dialog v-model="dialog" width="600" attach @change="$emit('close', false)">
     <template v-slot:activator="{ on, attrs }">
       <slot v-bind="{ on, attrs }" name="activator">
         <v-btn
@@ -8,7 +8,7 @@
           aria-label="delete"
           color="danger"
           v-bind="attrs"
-          v-on="on"
+          v-on="{ ...on, ...$listeners }"
         >
           <v-icon>
             {{ mdiDelete }}
@@ -18,9 +18,10 @@
     </template>
 
     <v-card>
-      <v-card-title class="headline grey lighten-2">
-        <span>Are you sure you want to {{ action }}</span>
-        <span>?</span>
+      <v-card-title class="headline grey lighten-2 text-left">
+        <span style="word-break: normal"
+          >Are you sure you want to {{ action }}?</span
+        >
       </v-card-title>
 
       <!-- <v-card-text>

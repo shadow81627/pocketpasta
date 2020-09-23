@@ -69,6 +69,7 @@
       app
       fixed
       class="hidden-print-only"
+      height="64"
     >
       <v-app-bar-nav-icon aria-label="menu" @click.stop="drawer = !drawer"
         ><v-progress-circular v-if="loading" indeterminate size="18" width="2"
@@ -93,13 +94,9 @@
       <user-menu />
     </v-app-bar>
     <v-main class="pb-0">
-      <nuxt style="min-height: 100vh;" keep-alive />
+      <nuxt style="min-height: 100vh" xkeep-alive />
+      <the-footer />
     </v-main>
-    <the-footer
-      :style="{
-        marginLeft: drawer && $vuetify.breakpoint.lgAndUp ? '256px' : 0,
-      }"
-    />
   </v-app>
 </template>
 
@@ -136,7 +133,7 @@ export default {
         },
         {
           icon: mdiClipboardListOutline,
-          text: 'Lists',
+          text: 'Shopping List',
           route: { name: 'shoppinglist' },
         },
         {

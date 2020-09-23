@@ -9,7 +9,7 @@
       method="POST"
       action="https://formspree.io/damien.robinson@pocketpasta.com"
     >
-      <div class="hpot d-none" style="display: none;">
+      <div class="hpot d-none" style="display: none">
         <label>Leave this field empty: <input name="_gotcha" /></label>
       </div>
       <v-text-field

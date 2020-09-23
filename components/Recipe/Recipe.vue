@@ -11,7 +11,7 @@
       <div
         data-plyr-provider="youtube"
         :data-plyr-embed-id="video.embedUrl"
-        style="padding-top: 56.25%;"
+        style="padding-top: 56.25%"
       />
     </vue-plyr>
     <div v-else-if="imageData && imageData.src">
@@ -34,7 +34,7 @@
     <section>
       <v-row>
         <v-col>
-          <v-chip label style="background: none;">
+          <v-chip label style="background: none">
             <span itemprop="ratingValue">{{
               Number(aggregateRating.ratingValue).toFixed(1)
             }}</span>
@@ -47,18 +47,15 @@
               >({{ aggregateRating.ratingCount || 1 }})</span
             >
           </v-chip>
-          <v-chip v-if="recipeYield" label style="background: none;">{{
+          <v-chip v-if="recipeYield" label style="background: none">{{
             recipeYield.match(/(^\d*$)/)
               ? `${recipeYield} serving${recipeYield > 1 ? 's' : ''}`
               : recipeYield
           }}</v-chip>
-          <v-chip v-if="diet" label style="background: none;">
+          <v-chip v-if="diet" label style="background: none">
             {{ diet }}
           </v-chip>
-          <v-chip
-            label
-            style="background: none; overflow: visible; padding: 0;"
-          >
+          <v-chip label style="background: none; overflow: visible; padding: 0">
             <share class="d-inline-block" />
           </v-chip>
         </v-col>
@@ -81,7 +78,7 @@
                 <li
                   v-for="item in props.items"
                   :key="item"
-                  style="list-style: none; padding-bottom: 12px;"
+                  style="list-style: none; padding-bottom: 12px"
                 >
                   <v-card tile flat>
                     <v-card-title
@@ -146,7 +143,7 @@
             <span
               v-for="reference in sameAs"
               :key="reference"
-              style="max-width: 100%;"
+              style="max-width: 100%"
               class="d-inline-block text-truncate"
             >
               <a
@@ -161,7 +158,7 @@
         </v-expansion-panel-content>
       </v-expansion-panel>
     </v-expansion-panels>
-    <disqus shortname="pocketpasta" style="margin-top: 16px;" />
+    <disqus shortname="pocketpasta" style="margin-top: 16px" />
   </div>
 </template>
 

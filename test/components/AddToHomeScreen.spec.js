@@ -1,14 +1,13 @@
 import component from '@/components/AddToHomeScreen.vue';
 import { mount, createLocalVue } from '@vue/test-utils';
 import Vuetify from 'vuetify';
-import BootstrapVuePlugin from 'bootstrap-vue';
+
 import Vue from 'vue';
 
 const localVue = createLocalVue();
 let vuetify;
 
 Vue.use(Vuetify);
-localVue.use(BootstrapVuePlugin);
 
 const userChoice = new Promise((resolve, reject) => {
   // setTimeout(function () {
