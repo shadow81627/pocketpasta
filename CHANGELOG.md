@@ -1,5 +1,11 @@
 # Releases
 
+## [0.46.49](https://github.com/shadow81627/pocketpasta/compare/v0.46.48...v0.46.49) (2020-09-23)
+
+### Performance Improvements
+
+- **hosting:** vercel ([#1586](https://github.com/shadow81627/pocketpasta/issues/1586)) ([7f9096f](https://github.com/shadow81627/pocketpasta/commit/7f9096f08febe6e8789b9b020b2c554f06f53bd9))
+
 ## [0.46.48](https://github.com/shadow81627/pocketpasta/compare/v0.46.47...v0.46.48) (2020-09-21)
 
 ### Bug Fixes
