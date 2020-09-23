@@ -101,7 +101,7 @@
 </template>
 
 <script>
-import { mdiClipboardListOutline } from '@mdi/js';
+import { mdiClipboardListOutline, mdiFood } from '@mdi/js';
 import AddToHomeScreen from '@/components/AddToHomeScreen.vue';
 import UserMenu from '@/components/UserMenu.vue';
 import TheFooter from '@/components/Layout/the-footer.vue';
@@ -140,6 +140,11 @@ export default {
           icon: '$calendar-check',
           text: 'Tasks',
           route: { name: 'tasks' },
+        },
+        {
+          icon: mdiFood,
+          text: 'Meal Plan',
+          route: { name: 'mealplan' },
         },
         {
           icon: '$notes',
