@@ -14,6 +14,7 @@ const factory = () =>
   shallowMount(Component, {
     localVue,
     vuetify,
+    mocks: { $config: {} },
     propsData: {
       utc: true,
     },

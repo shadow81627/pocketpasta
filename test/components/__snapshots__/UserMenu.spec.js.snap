@@ -4,17 +4,6 @@ exports[`Menu renders properly 1`] = `
 "<div>
   <v-menu-stub opendelay=\\"0\\" closedelay=\\"0\\" contentclass=\\"\\" maxwidth=\\"auto\\" nudgebottom=\\"0\\" nudgeleft=\\"0\\" nudgeright=\\"0\\" nudgetop=\\"0\\" nudgewidth=\\"0\\" openonclick=\\"true\\" closeonclick=\\"true\\" closeoncontentclick=\\"true\\" maxheight=\\"auto\\" offsety=\\"true\\" origin=\\"top left\\" transition=\\"v-menu-transition\\">
     <v-card-stub loaderheight=\\"4\\" tag=\\"div\\">
-      <v-list-stub tag=\\"div\\" flat=\\"true\\">
-        <v-list-item-stub activeclass=\\"\\" to=\\"/profile\\" tag=\\"div\\" tile=\\"\\">
-          <v-list-item-avatar-stub size=\\"40\\">
-            <v-img-stub height=\\"40\\" width=\\"40\\" alt=\\"avatar\\" options=\\"[object Object]\\" position=\\"center center\\" src=\\"https://s.gravatar.com/avatar/79fbbc24ccdcbed0a7408da53bb32c49?s=480&amp;r=pg&amp;d=https%3A%2F%2Fcdn.auth0.com%2Favatars%2Fod.png\\" transition=\\"fade-transition\\" class=\\"rounded\\"></v-img-stub>
-          </v-list-item-avatar-stub>
-          <v-list-item-content-stub>
-            <!---->
-            <v-list-item-title-stub>damien.robinson@pocketpasta.com</v-list-item-title-stub>
-          </v-list-item-content-stub>
-        </v-list-item-stub>
-      </v-list-stub>
       <v-divider-stub></v-divider-stub>
       <v-list-stub tag=\\"div\\" dense=\\"true\\" flat=\\"true\\">
         <v-list-item-stub activeclass=\\"\\" tag=\\"div\\">

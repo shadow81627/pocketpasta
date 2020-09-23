@@ -5,12 +5,12 @@
       "numberOfRuns": 5,
       "url": [
         "/",
-        "/about",
-        "/recipes",
-        "/recipes/1",
-        "/recipes/2",
-        "/products",
-        "/products/2"
+        "/about/",
+        "/recipes/",
+        "/recipes/1/",
+        "/recipes/2/",
+        "/products/",
+        "/products/2/"
       ]
     },
     "assert": {

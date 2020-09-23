@@ -1,6 +1,6 @@
 <template>
   <client-only>
-    <v-col v-if="lastModified" cols="auto">
+    <v-col cols="auto">
       <v-card flat tile color="transparent">
         <v-card-text class="py-2">
           <span>Last modified: </span>
@@ -19,7 +19,9 @@ export default {
     utc: Boolean,
   },
   computed: {
-    lastModified: () => (process.client ? document.lastModified : null),
+    lastModified() {
+      return this.$config.DATE_GENERATED;
+    },
   },
 };
 </script>
