@@ -7,8 +7,5 @@ exports[`Notes page renders properly 1`] = `
       <h1>Notes</h1>
     </v-col-stub>
   </v-row-stub>
-  <v-row-stub tag=\\"div\\">
-    <v-col-stub tag=\\"div\\"><span><tiptap-vuetify-stub value=\\"\\" extensions=\\"function e(e){return t.call(this,e,r.History)||this},function e(e){return t.call(this,e,r.Blockquote)||this},function n(e){return t.call(this,e,r.Link)||this},function e(e){return t.call(this,e,r.Underline)||this},function e(e){return t.call(this,e,r.Strike)||this},function e(e){return t.call(this,e,r.Italic)||this},function e(e){return t.call(this,e,r.ListItem)||this},function e(e){return t.call(this,e,r.BulletList)||this},function e(e){return t.call(this,e,r.OrderedList)||this},function e(e){return t.call(this,e,r.TodoList)||this},function e(e){return t.call(this,e,td)||this},function e(e){return t.call(this,e,r.Heading)||this},[object Object],function e(e){return t.call(this,e,r.Bold)||this},function n(e){return t.call(this,e,r.Link)||this},function e(e){return t.call(this,e,r.Code)||this},function e(e){return t.call(this,e,r.CodeBlock)||this},function n(e){return t.call(this,e,r.Image)||this},function e(e){return t.call(this,e,r.HorizontalRule)||this},function e(e){return t.call(this,e,null)||this},function e(e){return t.call(this,e,r.HardBreak)||this}\\" placeholder=\\"Write something …\\" cardprops=\\"[object Object]\\" outputformat=\\"html\\" toolbarattributes=\\"[object Object]\\" editorproperties=\\"[object Object]\\" nativeextensions=\\"\\" type=\\"card\\"></tiptap-vuetify-stub></span></v-col-stub>
-  </v-row-stub>
 </v-container-stub>"
 `;

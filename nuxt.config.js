@@ -1,34 +1,33 @@
 const pkg = require('./package');
 const HOST = process.env.HOST || '0.0.0.0';
 const PORT = process.env.PORT || '3000';
-const BASE_URL =
+
+const BASE_URL = (
   process.env.BASE_URL ||
   process.env.DEPLOY_URL ||
   process.env.URL ||
   process.env.VERCEL_URL ||
-  `http${PORT === 433 ? 's' : ''}://${HOST}:${PORT}`;
+  `http${process.env.PORT === 433 ? 's' : ''}://${process.env.HOST}:${
+    process.env.PORT
+  }`
+).replace(/(^http[s]?)?(?::\/\/)?(.*)/, function (
+  _,
+  protocol = 'http',
+  domain,
+) {
+  return `${protocol}://${domain}`;
+});
 
 const env = {
   HOST,
   PORT,
   BASE_URL,
   VERSION: pkg.version,
-  COMMIT: process.env.npm_package_gitHead,
-
-  FIREBASE_API_KEY:
-    process.env.FIREBASE_API_KEY || 'AIzaSyDG_OMeMaXVIHJqZpTzkY_DAWV9ylNwlXM',
-  FIREBASE_AUTH_DOMAIN:
-    process.env.FIREBASE_AUTH_DOMAIN || 'staging-pocketpasta.firebaseapp.com',
-  FIREBASE_DATABASE_URL:
-    process.env.FIREBASE_DATABASE_URL ||
-    'https://staging-pocketpasta.firebaseio.com',
-  FIREBASE_PROJECT_ID: process.env.FIREBASE_PROJECT_ID || 'staging-pocketpasta',
-  FIREBASE_STORAGE_BUCKET:
-    process.env.FIREBASE_STORAGE_BUCKET || 'staging-pocketpasta.appspot.com',
-  FIREBASE_MESSAGE_SENDER_ID:
-    process.env.FIREBASE_MESSAGE_SENDER_ID || '216453269763',
-  FIREBASE_APP_ID:
-    process.env.FIREBASE_APP_ID || '1:216453269763:web:71a3fe1ca24500bb',
+  COMMIT:
+    process.env.npm_package_gitHead ||
+    process.env.TRAVIS_COMMIT ||
+    process.env.VERCEL_GITHUB_COMMIT_SHA,
+  DATE_GENERATED: new Date().toISOString(),
 };
 
 const i18nSettings = {
@@ -60,7 +59,6 @@ const preconnectLinks = [
   'https://pocketpasta.com',
   'https://res.cloudinary.com',
   'https://www.google-analytics.com',
-  'https://firebaseinstallations.googleapis.com',
   'https://www.google.com',
   'https://www.googletagmanager.com',
   'https://stats.g.doubleclick.net',
@@ -73,9 +71,6 @@ module.exports = {
 
   workbox: {
     offlineAnalytics: true,
-    // importScripts: ['/firebase-auth-sw.js'],
-    // by default the workbox module will not install the service worker in dev environment to avoid conflicts with HMR
-    // only set this true for testing and remember to always clear your browser cache in development
     dev: false,
   },
 
@@ -107,7 +102,6 @@ module.exports = {
   },
 
   router: {
-    linkActiveClass: 'active',
     middleware: ['last-known-route'],
   },
 
@@ -211,8 +205,6 @@ module.exports = {
   loading: {
     color: '#4DBA87',
   },
-  // Disable loading bar since AMP will not generate a dynamic page
-  // loading: false,
 
   /*
    ** Global CSS
@@ -235,13 +227,10 @@ module.exports = {
   modules: [
     '@nuxt/content',
     '@nuxtjs/axios',
-    '@nuxtjs/auth',
-    '@nuxtjs/eslint-module',
-    '@nuxtjs/firebase',
+    // '@nuxtjs/auth',
     '@nuxtjs/google-analytics',
     '@nuxtjs/markdownit',
     '@nuxtjs/pwa',
-    '@nuxtjs/recaptcha',
     '@nuxtjs/sentry',
     'vue-warehouse/nuxt',
     ['nuxt-i18n', i18nSettings],
@@ -251,95 +240,15 @@ module.exports = {
   ],
 
   buildModules: [
+    '@nuxtjs/eslint-module',
     '@nuxtjs/vuetify',
     '@nuxtjs/color-mode',
-    '@nuxtjs/netlify-files',
+    // '@nuxtjs/netlify-files',
   ],
-
-  dotenv: {
-    systemvars: true,
-  },
 
   eslint: {
     /* module options */
     cache: true,
-  },
-
-  recaptcha: {
-    // Hide badge element (v3)
-    hideBadge: true,
-    // Site key for requests
-    siteKey: '6LdQk5wUAAAAACVF6pTOxBSQ50_ZcNJ8EM94hBYc',
-    version: 3,
-  },
-
-  auth: {
-    // cookie: false,
-    resetOnError: true,
-    defaultStrategy: 'custom',
-    strategies: {
-      // custom: {
-      //   _scheme: '~/plugins/customStrategy.js',
-      //   // endpoints: {
-      //   //   login: {
-      //   //     url: '/api/auth/login',
-      //   //     method: 'post',
-      //   //     propertyName: 'token',
-      //   //   },
-      //   //   logout: { url: '/api/auth/logout', method: 'post' },
-      //   //   user: { url: '/api/auth/user', method: 'get', propertyName: 'user' },
-      //   // },
-      // },
-      auth0: {
-        domain: 'pocketpasta.auth0.com',
-        client_id: 'SU9fkdMw6bqMkqwEZ2pX7sk3SlxR3Qi8',
-      },
-    },
-    redirect: {
-      login: '/login',
-      logout: '/',
-      callback: '/profile',
-      home: '/profile',
-    },
-  },
-
-  firebase: {
-    config: {
-      apiKey:
-        process.env.FIREBASE_API_KEY ||
-        'AIzaSyDG_OMeMaXVIHJqZpTzkY_DAWV9ylNwlXM',
-      authDomain:
-        process.env.FIREBASE_AUTH_DOMAIN ||
-        'staging-pocketpasta.firebaseapp.com',
-      databaseURL:
-        process.env.FIREBASE_DATABASE_URL ||
-        'https://staging-pocketpasta.firebaseio.com',
-      projectId: process.env.FIREBASE_PROJECT_ID || 'staging-pocketpasta',
-      storageBucket:
-        process.env.FIREBASE_STORAGE_BUCKET ||
-        'staging-pocketpasta.appspot.com',
-      measurementId: 'G-M7TXCJEKSQ',
-      messagingSenderId:
-        process.env.FIREBASE_MESSAGE_SENDER_ID || '216453269763',
-      appId:
-        process.env.FIREBASE_APP_ID || '1:216453269763:web:71a3fe1ca24500bb',
-    },
-    onFirebaseHosting: false,
-    services: {
-      // auth: {
-      //   initialize: {
-      //     onAuthStateChangedMutation: 'setUser',
-      //     onAuthStateChangedAction: 'setUser',
-      //   },
-      // },
-      // firestore: { enablePersistence: true },
-      performance: true,
-      analytics: true,
-      // messaging: {
-      //   createServiceWorker: true,
-      //   onFirebaseHosting: true,
-      // },
-    },
   },
 
   vuetify: {

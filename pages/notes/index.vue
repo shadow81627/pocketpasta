@@ -5,10 +5,9 @@
         <h1>Notes</h1>
       </v-col>
     </v-row>
-    <v-row>
+    <!-- <v-row>
       <v-col>
         <client-only>
-          <!-- <editor v-model="content" :loading="$fetchState.pending" /> -->
           <tiptap-vuetify
             v-model="content"
             :extensions="extensions"
@@ -41,44 +40,43 @@
           </tiptap-vuetify>
         </client-only>
       </v-col>
-    </v-row>
+    </v-row> -->
   </v-container>
 </template>
 
 <script>
 import { head, debounce } from 'lodash-es';
-// import Editor from '@/components/Editor/Editor';
-import {
-  TiptapVuetify,
-  Bold,
-  Italic,
-  Strike,
-  Underline,
-  Code,
-  CodeBlock,
-  Image,
-  Paragraph,
-  Heading,
-  BulletList,
-  OrderedList,
-  ListItem,
-  Link,
-  Blockquote,
-  HardBreak,
-  HorizontalRule,
-  TodoList,
-  TodoItem,
-  History,
-} from 'tiptap-vuetify';
+// import {
+//   TiptapVuetify,
+//   Bold,
+//   Italic,
+//   Strike,
+//   Underline,
+//   Code,
+//   CodeBlock,
+//   Image,
+//   Paragraph,
+//   Heading,
+//   BulletList,
+//   OrderedList,
+//   ListItem,
+//   Link,
+//   Blockquote,
+//   HardBreak,
+//   HorizontalRule,
+//   TodoList,
+//   TodoItem,
+//   History,
+// } from 'tiptap-vuetify';
 import { mdiDelete } from '@mdi/js';
 
-import ConfirmDialog from '@/components/ConfirmDialog.vue';
+// import ConfirmDialog from '@/components/ConfirmDialog.vue';
 
 export default {
-  components: {
-    TiptapVuetify,
-    ConfirmDialog,
-  },
+  // components: {
+  //   TiptapVuetify,
+  //   ConfirmDialog,
+  // },
   fetchOnServer: false,
   async fetch() {
     const result = await this.$pouch.find({
@@ -93,35 +91,35 @@ export default {
     items: [],
     loading: false,
     mdiDelete,
-    extensions: [
-      History,
-      Blockquote,
-      Link,
-      Underline,
-      Strike,
-      Italic,
-      ListItem,
-      BulletList,
-      OrderedList,
-      TodoList,
-      TodoItem,
-      [
-        Heading,
-        {
-          options: {
-            levels: [1, 2, 3],
-          },
-        },
-      ],
-      Bold,
-      Link,
-      Code,
-      CodeBlock,
-      Image,
-      HorizontalRule,
-      Paragraph,
-      HardBreak,
-    ],
+    // extensions: [
+    //   History,
+    //   Blockquote,
+    //   Link,
+    //   Underline,
+    //   Strike,
+    //   Italic,
+    //   ListItem,
+    //   BulletList,
+    //   OrderedList,
+    //   TodoList,
+    //   TodoItem,
+    //   [
+    //     Heading,
+    //     {
+    //       options: {
+    //         levels: [1, 2, 3],
+    //       },
+    //     },
+    //   ],
+    //   Bold,
+    //   Link,
+    //   Code,
+    //   CodeBlock,
+    //   Image,
+    //   HorizontalRule,
+    //   Paragraph,
+    //   HardBreak,
+    // ],
   }),
   computed: {
     content: {
