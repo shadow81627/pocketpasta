@@ -1,15 +1,16 @@
 {
   "ci": {
     "collect": {
+      "staticDistDir": "./dist",
       "numberOfRuns": 5,
       "url": [
-        "http://localhost:3001/",
-        "http://localhost:3001/about",
-        "http://localhost:3001/recipes",
-        "http://localhost:3001/recipes/1",
-        "http://localhost:3001/recipes/2",
-        "http://localhost:3001/products",
-        "http://localhost:3001/products/2"
+        "/",
+        "/about",
+        "/recipes",
+        "/recipes/1",
+        "/recipes/2",
+        "/products",
+        "/products/2"
       ]
     },
     "assert": {
@@ -35,7 +36,9 @@
         "image-size-responsive": "warn",
 
         "aria-allowed-attr": "warn",
-        "canonical": "warn"
+        "canonical": "warn",
+
+        "non-composited-animations": "warn"
       }
     },
     "upload": {
