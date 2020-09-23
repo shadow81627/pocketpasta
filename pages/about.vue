@@ -52,7 +52,7 @@
           <div
             class="list-inline-item a2a_kit a2a_kit_size_32 a2a_default_style a2a_follow"
           >
-            <a
+            <!-- <a
               class="a2a_button_twitter"
               data-a2a-follow="Shadow81627"
               rel="noopener"
@@ -76,7 +76,7 @@
               class="a2a_button_github"
               data-a2a-follow="shadow81627"
               rel="noopener"
-            />
+            /> -->
           </div>
         </div>
       </v-col>
