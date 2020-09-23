@@ -141,11 +141,6 @@ export default {
           text: 'Tasks',
           route: { name: 'tasks' },
         },
-        // {
-        //   icon: '$notes',
-        //   text: 'Notes',
-        //   route: { name: 'notes' },
-        // },
         {
           icon: '$settings',
           text: this.$t('layout.navigation.settings'),

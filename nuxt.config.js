@@ -218,7 +218,6 @@ module.exports = {
     { src: '~/plugins/theme.js', mode: 'client' },
     { src: '~/plugins/pouch.js', mode: 'client' },
     { src: '~/middleware/last-known-route', mode: 'client' },
-    { src: '~/plugins/tiptap-vuetify', mode: 'client' },
   ],
 
   /*
@@ -303,11 +302,7 @@ module.exports = {
    ** Build configuration
    */
   build: {
-    filenames: {
-      chunk: ({ isDev }) =>
-        isDev ? '[name].js' : 'chunks/[id].[contenthash].js',
-    },
-    transpile: ['lodash-es', 'vuetify/lib', 'tiptap-vuetify'],
+    transpile: ['lodash-es', 'vuetify/lib'],
     // move component styles into css files
     // extractCSS: true,
     /*

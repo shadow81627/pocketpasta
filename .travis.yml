@@ -7,43 +7,13 @@ addons:
 
 # Cache node packages between jobs
 cache: npm
-jobs:
-  include:
-    - # require the branch name to be master
-      if: branch != master
-      env:
-        - APP_URL=https://staging.pocketpasta.com
-        - FIREBASE_PROJECT=staging
-        - SENTRY_ENVIRONMENT=staging
-        # firebase
-        - FIREBASE_API_KEY=AIzaSyDG_OMeMaXVIHJqZpTzkY_DAWV9ylNwlXM
-        - FIREBASE_AUTH_DOMAIN=staging-pocketpasta.firebaseapp.com
-        - FIREBASE_DATABASE_URL=https://staging-pocketpasta.firebaseio.com
-        - FIREBASE_PROJECT_ID=staging-pocketpasta
-        - FIREBASE_STORAGE_BUCKET=staging-pocketpasta.appspot.com
-        - FIREBASE_MESSAGING_SENDER_ID=216453269763
-        - FIREBASE_APP_ID=1:216453269763:web:71a3fe1ca24500bb
-
-    - # require the branch name to be production
-      if: branch = master
-      env:
-        - APP_URL=https://pocketpasta.com
-        - FIREBASE_PROJECT=default
-        - SENTRY_ENVIRONMENT=production
-        # firebase
-        - FIREBASE_API_KEY=AIzaSyB-2aw2OIfQzirEE6tv4YTWLMEuG6aWpbk
-        - FIREBASE_AUTH_DOMAIN=pocketpasta-46ac6.firebaseapp.com
-        - FIREBASE_DATABASE_URL=https://pocketpasta-46ac6.firebaseio.com
-        - FIREBASE_PROJECT_ID=pocketpasta-46ac6
-        - FIREBASE_STORAGE_BUCKET=pocketpasta-46ac6.appspot.com
-        - FIREBASE_MESSAGING_SENDER_ID=904516376213
-        - FIREBASE_APP_ID=1:904516376213:web:b2f6a99e9607f076
 
 script:
   - npm run lint
   - npm run test
   - npm run generate
   - npm run lhci:autorun
+  - npx semantic-release
 
 before_deploy:
   # Propose release version
@@ -52,7 +22,6 @@ before_deploy:
   - ./node_modules/.bin/sentry-cli releases new -p pocketpasta $VERSION
   # Associate commits with the release
   - ./node_modules/.bin/sentry-cli releases set-commits "$VERSION" --auto
-  - npx semantic-release
 
 deploy:
   - provider: firebase
@@ -63,16 +32,6 @@ deploy:
       secure: L/UAkAWLM/+GPflHbpFh3cPa7475WgMVd9BFKeWo89dquWyMLbFaLFaxHxYXLcWcIgUMCVe5y1g1qbPpRChDb0kHUU5ATFMUNQBiWDsjOZq8FjrtW1rNgIWpo/so1iykQGhamALoOUiqsZkKuemDknRPEjI7IZqCaflHyPhkuDmSPqA+bqFOfd+eP4GOTA9gMLbTrV7oVs6kWYv0KwlPdW/B2blzLddfYBGcU+xphffDxkMgerqP4t+IHp44T4qKsvOBBNksqEiCc5DYSSh4OWiNSeC/SzRiVFGEvz1cA0clMbtT1pNgW5E3j2lGMuzFm3Wc7sBjNQuX9CYVsy8RcEzqJ+4g6cdVhVFYxRZD11/b8SlgieBs7YrGU60ByoyAB1XqLal+cZBARtqorEzs6JLVTHEcVd4zYa9ge5GvbD736Pg/2OuL272meZo2RW4clPatoLXb1DIHljij0SVI9ry7i8oCl+s0sgPm+MSvRXFvSL9pWGFJ4LjKcTGQzQEDk2Vkb9OZgJ6acT5sjfb7Rroj0XeyM7Y9lgTOD6b9JytpLe3jCEA0EXHy4HB6rRoT+JvA8DUmWuI17/ya5K9a5PMn699GeaUc2QK/7R+wNhovJof9E+fyXtBsufMm+62J6wCn42+o7G4jbPeX0DIf9mQ4XDixpSmrmgj/UjgDbY8=
     on:
       all_branches: true
-      condition: $TRAVIS_BRANCH != master
-
-  - provider: firebase
-    # Keep dist folder for deploy
-    skip_cleanup: true
-    project: default
-    token:
-      secure: L/UAkAWLM/+GPflHbpFh3cPa7475WgMVd9BFKeWo89dquWyMLbFaLFaxHxYXLcWcIgUMCVe5y1g1qbPpRChDb0kHUU5ATFMUNQBiWDsjOZq8FjrtW1rNgIWpo/so1iykQGhamALoOUiqsZkKuemDknRPEjI7IZqCaflHyPhkuDmSPqA+bqFOfd+eP4GOTA9gMLbTrV7oVs6kWYv0KwlPdW/B2blzLddfYBGcU+xphffDxkMgerqP4t+IHp44T4qKsvOBBNksqEiCc5DYSSh4OWiNSeC/SzRiVFGEvz1cA0clMbtT1pNgW5E3j2lGMuzFm3Wc7sBjNQuX9CYVsy8RcEzqJ+4g6cdVhVFYxRZD11/b8SlgieBs7YrGU60ByoyAB1XqLal+cZBARtqorEzs6JLVTHEcVd4zYa9ge5GvbD736Pg/2OuL272meZo2RW4clPatoLXb1DIHljij0SVI9ry7i8oCl+s0sgPm+MSvRXFvSL9pWGFJ4LjKcTGQzQEDk2Vkb9OZgJ6acT5sjfb7Rroj0XeyM7Y9lgTOD6b9JytpLe3jCEA0EXHy4HB6rRoT+JvA8DUmWuI17/ya5K9a5PMn699GeaUc2QK/7R+wNhovJof9E+fyXtBsufMm+62J6wCn42+o7G4jbPeX0DIf9mQ4XDixpSmrmgj/UjgDbY8=
-    on:
-      branch: master
 
 after_deploy:
   - ./node_modules/.bin/sentry-cli releases deploys "$VERSION" new --env $SENTRY_ENVIRONMENT
@@ -89,6 +48,9 @@ env:
     - SENTRY_PROJECT=pocketpasta
     - BASE_URL=https://pocketpasta.com
     - FIREBASE_HOSTING=true
+    - APP_URL=https://staging.pocketpasta.com
+    - FIREBASE_PROJECT=staging
+    - SENTRY_ENVIRONMENT=staging
 
 notifications:
   webhooks:
