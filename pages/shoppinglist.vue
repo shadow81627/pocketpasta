@@ -245,7 +245,7 @@
       <v-col>
         <confirm-dialog
           v-if="items.length"
-          action="all your items"
+          action="delete all your items"
           @confirm="clear(items)"
         >
           <template v-slot:activator="{ on, attrs }">
@@ -269,7 +269,6 @@
 </template>
 
 <script>
-// import { Sortable } from 'sortablejs';
 import { Ripple } from 'vuetify/lib/directives';
 import {
   mdiPencil,
@@ -284,8 +283,6 @@ import { DateTime } from 'luxon';
 import ConfirmDialog from '@/components/ConfirmDialog.vue';
 import ListHeader from '@/components/List/ListHeader.vue';
 
-// Sortable.mount(new MultiDrag());
-
 export default {
   components: {
     ConfirmDialog,
@@ -296,21 +293,6 @@ export default {
     Ripple,
   },
   async fetch() {
-    // const { rows } = await this.$pouch.allDocs({
-    //   include_docs: true,
-    //   descending: true,
-    // });
-
-    // this.items = (rows || []).map((row) => row.doc);
-
-    // const sort = this.groupBy
-    //   ? Array.isArray(this.groupBy)
-    //     ? this.groupBy
-    //     : [this.groupBy]
-    //   : Array.isArray(this.sortBy)
-    //   ? this.sortBy
-    //   : [this.sortBy];
-
     this.total = (
       await this.$pouch.find({
         selector: {
@@ -326,9 +308,6 @@ export default {
         category: { $gte: null },
         type: { $eq: 'shoppinglistitem' },
       },
-      // sort: ['category', 'name'],
-      // limit: this.limit,
-      // skip: (this.page - 1) * this.limit,
     });
     const { docs = [this.defaultItem] } = result;
     this.items = docs;
@@ -359,7 +338,6 @@ export default {
         align: 'start',
         groupable: false,
       },
-      // { text: 'Due', value: 'due' },
       { text: 'Category', value: 'category', groupable: true },
       {
         value: 'actions',
@@ -473,28 +451,6 @@ export default {
         live: true,
       })
       .on('change', this.$fetch);
-
-    // const table = document.querySelector('.v-data-table table tbody');
-    // const vm = this;
-    // Sortable.create(table, {
-    //   filter: '.ignore-elements',
-    //   handle: '.handle', // Use handle so user can select text
-    //   draggable: '.v-row-group__header',
-    //   onEnd({ newIndex, oldIndex }) {
-    //     const rowSelected = head(vm.items.splice(oldIndex, 1)); // Get the selected row and remove it
-    //     vm.items.splice(newIndex, 0, rowSelected); // Move it to the new index
-
-    //     // const rowSelected = vm.items[oldIndex]; // Get the selected row and remove it
-    //     const surround = at(vm.items, newIndex--, newIndex++);
-    //     console.log({
-    //       rowSelected,
-    //       newIndex,
-    //       oldIndex,
-    //       surround,
-    //       items: vm.items,
-    //     });
-    //   },
-    // });
   },
   methods: {
     draggableIgnore: (item) => ({
