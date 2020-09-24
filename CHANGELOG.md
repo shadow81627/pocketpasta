@@ -1,5 +1,11 @@
 # Releases
 
+## [0.46.50](https://github.com/shadow81627/pocketpasta/compare/v0.46.49...v0.46.50) (2020-09-24)
+
+### Bug Fixes
+
+- **shoppinglist:** delete modal missing action ([#1588](https://github.com/shadow81627/pocketpasta/issues/1588)) ([166744e](https://github.com/shadow81627/pocketpasta/commit/166744e81bc44917730494599b925a9c1e1fcc28))
+
 ## [0.46.49](https://github.com/shadow81627/pocketpasta/compare/v0.46.48...v0.46.49) (2020-09-23)
 
 ### Performance Improvements

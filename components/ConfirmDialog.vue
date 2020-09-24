@@ -28,13 +28,7 @@
           >Are you sure you want to {{ action }}?</span
         >
       </v-card-title>
-
-      <!-- <v-card-text>
-
-            </v-card-text> -->
-
       <v-divider />
-
       <v-card-actions>
         <v-container>
           <v-row no-gutters justify="end">
