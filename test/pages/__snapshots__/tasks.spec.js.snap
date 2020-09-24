@@ -69,15 +69,39 @@ exports[`Tasks page renders properly 1`] = `
           return groups;
         }\\" locale=\\"en-US\\" customfilter=\\"function defaultFilter(value, search, item) {
           return value != null &amp;&amp; search != null &amp;&amp; typeof value !== 'boolean' &amp;&amp; value.toString().toLocaleLowerCase().indexOf(search.toLocaleLowerCase()) !== -1;
-        }\\" serveritemslength=\\"10\\" itemkey=\\"_id\\" value=\\"\\" expanded=\\"\\" noresultstext=\\"$vuetify.dataIterator.noResultsText\\" nodatatext=\\"$vuetify.noDataText\\" loadingtext=\\"$vuetify.dataIterator.loadingText\\" hidedefaultfooter=\\"true\\" selectablekey=\\"isSelectable\\" loaderheight=\\"4\\" headers=\\"[object Object],[object Object],[object Object],[object Object]\\" expandicon=\\"$expand\\" itemclass=\\"function () { [native code] }\\" class=\\"elevation-1\\"></v-data-table-stub>
+        }\\" serveritemslength=\\"10\\" itemkey=\\"_id\\" value=\\"\\" expanded=\\"\\" noresultstext=\\"$vuetify.dataIterator.noResultsText\\" nodatatext=\\"$vuetify.noDataText\\" loadingtext=\\"$vuetify.dataIterator.loadingText\\" hidedefaultfooter=\\"true\\" selectablekey=\\"isSelectable\\" loaderheight=\\"4\\" headers=\\"[object Object],[object Object],[object Object],[object Object],[object Object]\\" expandicon=\\"$expand\\" itemclass=\\"\\" class=\\"elevation-1\\"></v-data-table-stub>
     </v-col-stub>
   </v-row-stub>
   <v-row-stub tag=\\"div\\">
     <v-col-stub tag=\\"div\\">
       <!---->
-      <v-btn-stub tag=\\"button\\" activeclass=\\"\\" bottom=\\"true\\" fixed=\\"true\\" right=\\"true\\" fab=\\"true\\" type=\\"button\\" class=\\"bg-primary\\">
-        <v-icon-stub>M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z</v-icon-stub>
-      </v-btn-stub>
+      <v-dialog-stub opendelay=\\"0\\" closedelay=\\"0\\" contentclass=\\"\\" maxwidth=\\"400\\" origin=\\"center center\\" persistent=\\"true\\" retainfocus=\\"true\\" transition=\\"dialog-transition\\" width=\\"auto\\">
+        <v-card-stub loaderheight=\\"4\\" tag=\\"div\\">
+          <v-card-title-stub><span class=\\"headline\\">Create Task</span></v-card-title-stub>
+          <v-card-text-stub>
+            <v-container-stub tag=\\"div\\">
+              <v-row-stub tag=\\"div\\">
+                <v-col-stub cols=\\"12\\" tag=\\"div\\">
+                  <v-text-field-stub errorcount=\\"1\\" errormessages=\\"\\" messages=\\"\\" rules=\\"\\" successmessages=\\"\\" value=\\"\\" backgroundcolor=\\"\\" label=\\"Name\\" loaderheight=\\"2\\" clearicon=\\"$clear\\" type=\\"text\\" required=\\"\\"></v-text-field-stub>
+                </v-col-stub>
+                <v-col-stub cols=\\"12\\" tag=\\"div\\">
+                  <v-text-field-stub errorcount=\\"1\\" errormessages=\\"\\" messages=\\"\\" rules=\\"\\" successmessages=\\"\\" value=\\"\\" backgroundcolor=\\"\\" label=\\"Category\\" loaderheight=\\"2\\" clearicon=\\"$clear\\" type=\\"text\\"></v-text-field-stub>
+                </v-col-stub>
+                <v-col-stub cols=\\"12\\" tag=\\"div\\">
+                  <v-menu-stub opendelay=\\"0\\" closedelay=\\"0\\" contentclass=\\"\\" top=\\"true\\" maxwidth=\\"auto\\" minwidth=\\"290px\\" nudgebottom=\\"0\\" nudgeleft=\\"0\\" nudgeright=\\"40\\" nudgetop=\\"0\\" nudgewidth=\\"0\\" openonclick=\\"true\\" closeonclick=\\"true\\" maxheight=\\"auto\\" offsety=\\"true\\" origin=\\"top left\\" transition=\\"v-menu-transition\\">
+                    <v-date-picker-stub width=\\"290\\" eventcolor=\\"warning\\" firstdayofweek=\\"0\\" localefirstdayofyear=\\"0\\" nexticon=\\"$next\\" nextmontharialabel=\\"$vuetify.datePicker.nextMonthAriaLabel\\" nextyeararialabel=\\"$vuetify.datePicker.nextYearAriaLabel\\" previcon=\\"$prev\\" prevmontharialabel=\\"$vuetify.datePicker.prevMonthAriaLabel\\" prevyeararialabel=\\"$vuetify.datePicker.prevYearAriaLabel\\" scrollable=\\"true\\" showcurrent=\\"true\\" selecteditemstext=\\"$vuetify.datePicker.itemsSelected\\" type=\\"date\\" value=\\"2020-09-24\\"></v-date-picker-stub>
+                  </v-menu-stub>
+                </v-col-stub>
+              </v-row-stub>
+            </v-container-stub>
+          </v-card-text-stub>
+          <v-card-actions-stub>
+            <v-spacer-stub></v-spacer-stub>
+            <v-btn-stub tag=\\"button\\" activeclass=\\"\\" text=\\"true\\" type=\\"button\\">Close</v-btn-stub>
+            <v-btn-stub color=\\"primary\\" tag=\\"button\\" activeclass=\\"\\" type=\\"button\\">Save</v-btn-stub>
+          </v-card-actions-stub>
+        </v-card-stub>
+      </v-dialog-stub>
     </v-col-stub>
   </v-row-stub>
 </v-container-stub>"

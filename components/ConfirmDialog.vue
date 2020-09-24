@@ -2,18 +2,23 @@
   <v-dialog v-model="dialog" width="600" attach @change="$emit('close', false)">
     <template v-slot:activator="{ on, attrs }">
       <slot v-bind="{ on, attrs }" name="activator">
-        <v-btn
-          icon
-          title="delete"
-          aria-label="delete"
-          color="danger"
-          v-bind="attrs"
-          v-on="{ ...on, ...$listeners }"
-        >
-          <v-icon>
-            {{ mdiDelete }}
-          </v-icon>
-        </v-btn>
+        <v-tooltip bottom>
+          <template v-slot:activator="tooltip">
+            <v-btn
+              icon
+              title="delete"
+              aria-label="delete"
+              color="danger"
+              v-bind="{ ...tooltip.attrs, ...attrs }"
+              v-on="{ ...tooltip.on, ...on, ...$listeners }"
+            >
+              <v-icon>
+                {{ mdiDelete }}
+              </v-icon>
+            </v-btn>
+          </template>
+          <span>Delete</span>
+        </v-tooltip>
       </slot>
     </template>
 

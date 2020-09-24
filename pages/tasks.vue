@@ -16,7 +16,6 @@
           :page.sync="page"
           :server-items-length="total"
           :sort-by.sync="sortBy"
-          :item-class="draggableIgnore"
           hide-default-footer
         >
           <template v-slot:top>
@@ -48,31 +47,18 @@
                       single-line
                       hide-details
                       clearable
-                      xautofocus
                       dense
                       solo-inverted
                       @change="
                         (value) => {
                           saveCategory({
                             tasks: items,
-                            id: value,
+                            value,
                           });
                         }
                       "
                     />
-                    <v-edit-dialog
-                      v-else
-                      :xreturn-value="group"
-                      large
-                      @save="
-                        (value) => {
-                          saveCategory({
-                            tasks: items,
-                            id: value,
-                          });
-                        }
-                      "
-                    >
+                    <v-edit-dialog v-else large>
                       {{ group }}
                       <template v-slot:input>
                         <v-text-field
@@ -81,12 +67,11 @@
                           single-line
                           counter
                           clearable
-                          xautofocus
                           @change="
                             (value) => {
                               saveCategory({
                                 tasks: items,
-                                id: value,
+                                value,
                               });
                             }
                           "
@@ -110,98 +95,14 @@
           </template>
 
           <template v-slot:item.done="{ item }">
-            <v-simple-checkbox v-model="item.done" @input="save(item)" />
-          </template>
-
-          <template v-slot:item.name="{ item }">
-            <v-text-field
-              v-if="
-                item.isNew ||
-                !item.name ||
-                (item.name && item.name.length === 0)
-              "
-              :value="item.name"
-              label="Name"
-              single-line
-              hide-details
-              clearable
-              xautofocus
-              dense
-              solo-inverted
-              @change="
+            <v-simple-checkbox
+              :value="item.done"
+              @input="
                 (value) => {
-                  item.isNew = false;
-                  item.name = value;
-                  save(item);
+                  item.atomicSet('done', value);
                 }
               "
             />
-            <v-edit-dialog
-              v-else
-              :return-value.sync="item.name"
-              large
-              @save="
-                item.isNew = false;
-                save(item);
-              "
-            >
-              {{ item.name }}
-              <template v-slot:input>
-                <v-text-field
-                  v-model="item.name"
-                  label="Name"
-                  single-line
-                  counter
-                  clearable
-                  xautofocus
-                />
-              </template>
-            </v-edit-dialog>
-          </template>
-
-          <template v-slot:item.category="{ item }">
-            <v-text-field
-              v-if="
-                item.isNew ||
-                !item.category ||
-                (item.category && item.category.length === 0)
-              "
-              :value="item.category"
-              label="category"
-              single-line
-              hide-details
-              clearable
-              dense
-              solo-inverted
-              @change="
-                (value) => {
-                  item.isNew = false;
-                  item.category = value;
-                  save(item);
-                }
-              "
-            />
-            <v-edit-dialog
-              v-else
-              :return-value.sync="item.category"
-              large
-              @save="
-                item.isNew = false;
-                save(item);
-              "
-            >
-              {{ item.category }}
-              <template v-slot:input>
-                <v-text-field
-                  v-model="item.category"
-                  label="category"
-                  single-line
-                  counter
-                  clearable
-                  xautofocus
-                />
-              </template>
-            </v-edit-dialog>
           </template>
 
           <template v-slot:item.due="{ item }">
@@ -231,11 +132,24 @@
           </template>
 
           <template v-slot:item.actions="{ item }">
-            <!-- <v-btn icon title="edit" @click="editItem(item)">
-              <v-icon>
-                {{ icons.mdiPencil }}
-              </v-icon>
-            </v-btn> -->
+            <v-tooltip bottom>
+              <template v-slot:activator="{ on, attrs }">
+                <v-btn
+                  icon
+                  title="Edit"
+                  aria-label="Edit"
+                  v-bind="attrs"
+                  @click="editItem(item)"
+                  v-on="on"
+                >
+                  <v-icon>
+                    {{ icons.mdiPencil }}
+                  </v-icon>
+                </v-btn>
+              </template>
+              <span>Edit</span>
+            </v-tooltip>
+
             <confirm-dialog @confirm="deleteItem(item)" />
           </template>
         </v-data-table>
@@ -253,23 +167,82 @@
           </template>
         </confirm-dialog>
 
-        <v-btn
-          bottom
-          right
-          fixed
-          fab
-          class="bg-primary"
-          @click="create(defaultItem)"
-        >
-          <v-icon>{{ icons.mdiPlus }}</v-icon>
-        </v-btn>
+        <v-dialog v-model="dialog" persistent max-width="400">
+          <template v-slot:activator="{ on, attrs }">
+            <v-btn
+              bottom
+              right
+              fixed
+              fab
+              class="bg-primary"
+              v-bind="attrs"
+              v-on="on"
+            >
+              <v-icon>{{ icons.mdiPlus }}</v-icon>
+            </v-btn>
+          </template>
+          <v-card>
+            <v-card-title>
+              <span class="headline">Create Task</span>
+            </v-card-title>
+            <v-card-text>
+              <v-container>
+                <v-row>
+                  <v-col cols="12">
+                    <v-text-field
+                      v-model="editedItem.name"
+                      label="Name"
+                      required
+                    />
+                  </v-col>
+                  <v-col cols="12">
+                    <v-text-field
+                      v-model="editedItem.category"
+                      label="Category"
+                    />
+                  </v-col>
+                  <v-col cols="12">
+                    <v-menu
+                      v-model="editDatePickerMenu"
+                      :close-on-content-click="false"
+                      :nudge-right="40"
+                      offset-y
+                      top
+                      min-width="290px"
+                    >
+                      <template v-slot:activator="{ on, attrs }">
+                        <v-text-field
+                          v-model="editedItem.due"
+                          label="Due Date"
+                          :prepend-icon="icons.mdiCalendar"
+                          readonly
+                          v-bind="attrs"
+                          v-on="on"
+                        />
+                      </template>
+                      <v-date-picker
+                        v-model="editedItem.due"
+                        scrollable
+                        @input="editDatePickerMenu = false"
+                      />
+                    </v-menu>
+                  </v-col>
+                </v-row>
+              </v-container>
+            </v-card-text>
+            <v-card-actions>
+              <v-spacer />
+              <v-btn text @click="close">Close</v-btn>
+              <v-btn color="primary" @click="save(editedItem)">Save</v-btn>
+            </v-card-actions>
+          </v-card>
+        </v-dialog>
       </v-col>
     </v-row>
   </v-container>
 </template>
 
 <script>
-// import { Sortable } from 'sortablejs';
 import { Ripple } from 'vuetify/lib/directives';
 import {
   mdiPencil,
@@ -284,8 +257,6 @@ import { DateTime } from 'luxon';
 import ConfirmDialog from '@/components/ConfirmDialog.vue';
 import ListHeader from '@/components/List/ListHeader.vue';
 
-// Sortable.mount(new MultiDrag());
-
 export default {
   components: {
     ConfirmDialog,
@@ -295,44 +266,12 @@ export default {
   directives: {
     Ripple,
   },
-  async fetch() {
-    // const { rows } = await this.$pouch.allDocs({
-    //   include_docs: true,
-    //   descending: true,
-    // });
-
-    // this.items = (rows || []).map((row) => row.doc);
-
-    // const sort = this.groupBy
-    //   ? Array.isArray(this.groupBy)
-    //     ? this.groupBy
-    //     : [this.groupBy]
-    //   : Array.isArray(this.sortBy)
-    //   ? this.sortBy
-    //   : [this.sortBy];
-
-    this.total = (
-      await this.$pouch.find({
-        selector: {
-          name: { $gte: this.search },
-          category: { $gte: null },
-        },
-      })
-    ).docs.length;
-
-    const result = await this.$pouch.find({
-      selector: {
-        name: { $gte: this.search },
-        category: { $gte: null },
-        type: { $eq: 'task' },
-      },
-      // sort: ['category', 'name'],
-      // limit: this.limit,
-      // skip: (this.page - 1) * this.limit,
+  fetch() {
+    const query = this.$db.tasks.find();
+    query.$.subscribe((results = []) => {
+      this.total = results.length;
+      this.items = results;
     });
-    const { docs = [this.defaultItem] } = result;
-    this.items = docs;
-    console.log(result);
   },
   fetchOnServer: false,
   data: () => ({
@@ -350,6 +289,7 @@ export default {
       mdiPlus,
     },
     dialog: false,
+    editDatePickerMenu: false,
     deleteDialog: false,
     headers: [
       { value: 'done', align: 'start', width: 1 },
@@ -359,33 +299,29 @@ export default {
         align: 'start',
         groupable: false,
       },
-      // { text: 'Due', value: 'due' },
       { text: 'Category', value: 'category', groupable: true },
+      { text: 'Due', value: 'due' },
       {
         value: 'actions',
         sortable: false,
         filterable: false,
         align: 'right',
-        width: 1,
+        width: 'auto',
       },
     ],
     items: [],
     editedIndex: -1,
     editedItem: {
-      type: 'task',
       name: '',
       due: DateTime.local().toISODate(),
       category: '',
       done: false,
-      isNew: false,
     },
     defaultItem: {
-      type: 'task',
       name: '',
       category: '',
       due: DateTime.local().toISODate(),
       done: false,
-      isNew: true,
     },
   }),
   computed: {
@@ -435,7 +371,7 @@ export default {
     },
     sortBy: {
       get() {
-        const sortBy = this.$route.query.sortBy ?? 'category';
+        const sortBy = this.$route.query.sortBy ?? null;
         return this.items.length ? sortBy : null;
       },
       set(sortBy) {
@@ -444,7 +380,7 @@ export default {
     },
     groupBy: {
       get() {
-        const groupBy = this.$route.query.groupBy ?? 'category';
+        const groupBy = this.$route.query.groupBy ?? null;
         return this.items.length ? groupBy : null;
       },
       set(groupBy) {
@@ -466,45 +402,13 @@ export default {
     },
     '$route.query': '$fetch',
   },
-  mounted() {
-    this.$pouch
-      .changes({
-        since: 'now',
-        live: true,
-      })
-      .on('change', this.$fetch);
-
-    // const table = document.querySelector('.v-data-table table tbody');
-    // const vm = this;
-    // Sortable.create(table, {
-    //   filter: '.ignore-elements',
-    //   handle: '.handle', // Use handle so user can select text
-    //   draggable: '.v-row-group__header',
-    //   onEnd({ newIndex, oldIndex }) {
-    //     const rowSelected = head(vm.items.splice(oldIndex, 1)); // Get the selected row and remove it
-    //     vm.items.splice(newIndex, 0, rowSelected); // Move it to the new index
-
-    //     // const rowSelected = vm.items[oldIndex]; // Get the selected row and remove it
-    //     const surround = at(vm.items, newIndex--, newIndex++);
-    //     console.log({
-    //       rowSelected,
-    //       newIndex,
-    //       oldIndex,
-    //       surround,
-    //       items: vm.items,
-    //     });
-    //   },
-    // });
-  },
   methods: {
-    draggableIgnore: (item) => ({
-      'ignore-elements': true,
-    }),
-    async deleteItem({ _id }) {
-      await this.$pouch.upsert(_id, (doc) => ({
-        ...doc,
-        _deleted: true,
-      }));
+    editItem(item) {
+      this.editedItem = item.toJSON();
+      this.dialog = true;
+    },
+    async deleteItem(item) {
+      await item.remove();
     },
 
     close() {
@@ -515,12 +419,13 @@ export default {
       });
     },
 
-    async create(item = this.defaultItem) {
-      await this.$pouch.post(item);
+    create(item = this.defaultItem) {
+      this.editedItem = item;
+      this.dialog = true;
     },
 
     async save(item) {
-      await this.$pouch.put(item);
+      await this.$db.tasks.upsert(item);
       this.close();
     },
 
@@ -528,25 +433,16 @@ export default {
       this.bulkUpdate({ items, key: '_deleted', value: true });
     },
 
-    async saveCategory({ tasks, id }) {
-      const category = await this.$pouch.upsert(id, (doc) => ({
-        ...doc,
-        type: 'category',
-      }));
-
-      tasks.forEach(
-        async (task) =>
-          await this.$pouch.upsert(task._id, (doc) => ({
-            ...doc,
-            category: category.id,
-          })),
+    async saveCategory({ tasks, value }) {
+      await tasks.forEach(
+        async (task) => await task.atomicSet('category', value),
       );
     },
 
     async bulkUpdate({ items, key, value }) {
       await Promise.all(
         items.map((item) =>
-          this.$pouch.upsert(item._id, (doc) => ({
+          this.$db.tasks.upsert(item._id, (doc) => ({
             ...doc,
             [key]: value,
           })),
@@ -566,8 +462,8 @@ export default {
       // sorted query string for more cache hits
       return Object.fromEntries(
         Object.entries({
-          sortBy: sortBy && sortBy !== 'category' ? sortBy : undefined,
-          groupBy: groupBy && groupBy !== 'category' ? groupBy : undefined,
+          sortBy: sortBy && sortBy !== 'name' ? sortBy : undefined,
+          groupBy: groupBy && groupBy !== '' ? groupBy : undefined,
           search: search && search !== '' ? search : undefined,
           view: view && view !== this.layout ? view : undefined,
           direction: direction !== 'desc' ? direction : undefined,

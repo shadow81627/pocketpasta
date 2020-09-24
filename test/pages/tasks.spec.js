@@ -12,23 +12,24 @@ localVue.use(VueRouter);
 
 const router = new VueRouter();
 
-const $pouch = {
-  changes: () => ({ on: () => ({}) }),
-  post: () => ({}),
-  put: () => ({}),
-  upsert: () => ({}),
-  find: () => ({ docs: [] }),
+const $db = {
+  tasks: {
+    post: () => ({}),
+    put: () => ({}),
+    upsert: () => ({}),
+    find: () => ({ $: { subscribe: () => ({ docs: [] }) } }),
+  },
 };
 
 const factory = () =>
   shallowMount(Component, {
     localVue,
     router,
-    $pouch,
+    $db,
     mocks: {
       $auth: { user: {} },
       $fetchState: {},
-      $pouch,
+      $db,
     },
   });
 
@@ -51,12 +52,18 @@ describe('Tasks page', () => {
 
   test('deleteItem', async () => {
     const wrapper = factory();
-    expect(await wrapper.vm.deleteItem({ _id: 'test' })).toBe(undefined);
+    expect(
+      await wrapper.vm.deleteItem({ name: 'test', remove: () => {} }),
+    ).toBe(undefined);
   });
+
   test('saveCategory', async () => {
     const wrapper = factory();
     expect(
-      await wrapper.vm.saveCategory({ tasks: [{ _id: 'task' }], id: 'test' }),
+      await wrapper.vm.saveCategory({
+        tasks: [{ name: 'task' }],
+        value: 'category',
+      }),
     ).toBe(undefined);
   });
 

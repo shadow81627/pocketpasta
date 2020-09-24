@@ -218,6 +218,7 @@ module.exports = {
     { src: '~/plugins/theme.js', mode: 'client' },
     { src: '~/plugins/pouch.js', mode: 'client' },
     { src: '~/middleware/last-known-route', mode: 'client' },
+    { src: '~/plugins/db.js', mode: 'client' },
   ],
 
   /*
