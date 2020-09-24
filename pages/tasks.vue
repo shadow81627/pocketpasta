@@ -51,8 +51,9 @@
                       solo-inverted
                       @change="
                         (value) => {
-                          saveCategory({
-                            tasks: items,
+                          bulkUpdateAttribute({
+                            items,
+                            key: 'category',
                             value,
                           });
                         }
@@ -69,8 +70,9 @@
                           clearable
                           @change="
                             (value) => {
-                              saveCategory({
-                                tasks: items,
+                              bulkUpdateAttribute({
+                                items,
+                                key: 'category',
                                 value,
                               });
                             }
@@ -106,11 +108,7 @@
           </template>
 
           <template v-slot:item.due="{ item }">
-            <v-edit-dialog
-              :return-value.sync="item.due"
-              large
-              @save="save(item)"
-            >
+            <v-edit-dialog large>
               <v-chip
                 :color="
                   !item.done &&
@@ -126,7 +124,18 @@
               &nbsp;
               {{ DateTime.fromISO(item.due).toRelativeCalendar() }}
               <template v-slot:input>
-                <v-date-picker v-model="item.due" scrollable />
+                <v-date-picker
+                  :value="item.due"
+                  scrollable
+                  @change="
+                    (value) =>
+                      bulkUpdateAttribute({
+                        items: [item],
+                        key: 'due',
+                        value,
+                      })
+                  "
+                />
               </template>
             </v-edit-dialog>
           </template>
@@ -268,6 +277,8 @@ export default {
   },
   fetch() {
     const query = this.$db.tasks.find();
+    // .sort(this.sortBy);
+    this.collection = query;
     query.$.subscribe((results = []) => {
       this.total = results.length;
       this.items = results;
@@ -275,6 +286,7 @@ export default {
   },
   fetchOnServer: false,
   data: () => ({
+    collection: null,
     categories: [],
     total: 10,
     defaultLimit: -1,
@@ -430,7 +442,7 @@ export default {
     },
 
     clear(items) {
-      this.bulkUpdate({ items, key: '_deleted', value: true });
+      this.collection.remove();
     },
 
     async saveCategory({ tasks, value }) {
@@ -439,15 +451,8 @@ export default {
       );
     },
 
-    async bulkUpdate({ items, key, value }) {
-      await Promise.all(
-        items.map((item) =>
-          this.$db.tasks.upsert(item._id, (doc) => ({
-            ...doc,
-            [key]: value,
-          })),
-        ),
-      );
+    async bulkUpdateAttribute({ items, key, value }) {
+      await Promise.all(items.map((item) => item.atomicSet(key, value)));
     },
 
     query({
