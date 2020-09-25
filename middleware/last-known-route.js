@@ -1,3 +1,4 @@
+// https://css-tricks.com/storing-and-using-the-last-known-route-in-vue/
 export default function ({ route, $warehouse, app, redirect }) {
   if (process.client) {
     const LS_ROUTE_KEY = 'last_known_route';

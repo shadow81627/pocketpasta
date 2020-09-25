@@ -13,7 +13,8 @@ exports[`Footer renders properly 1`] = `
       <v-spacer-stub></v-spacer-stub>
       <v-col-stub cols=\\"auto\\" tag=\\"div\\">
         <v-card-stub loaderheight=\\"4\\" tag=\\"div\\" color=\\"transparent\\" flat=\\"true\\">
-          <v-card-text-stub><a>About</a> |
+          <v-card-text-stub><a>Home</a> |
+            <a>About</a> |
             <a>Contact</a> |
             <a>Newsletter</a></v-card-text-stub>
         </v-card-stub>
@@ -45,7 +46,8 @@ exports[`Footer renders properly without lastModified 1`] = `
       <v-spacer-stub></v-spacer-stub>
       <v-col-stub cols=\\"auto\\" tag=\\"div\\">
         <v-card-stub loaderheight=\\"4\\" tag=\\"div\\" color=\\"transparent\\" flat=\\"true\\">
-          <v-card-text-stub><a>About</a> |
+          <v-card-text-stub><a>Home</a> |
+            <a>About</a> |
             <a>Contact</a> |
             <a>Newsletter</a></v-card-text-stub>
         </v-card-stub>

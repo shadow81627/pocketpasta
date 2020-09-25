@@ -1,6 +1,7 @@
 <template>
   <v-app id="inspire" clipped-left>
     <v-navigation-drawer
+      id="navigation-drawer"
       v-model="drawer"
       :clipped="$vuetify.breakpoint.lgAndUp"
       app
@@ -71,7 +72,10 @@
       class="hidden-print-only"
       height="64"
     >
-      <v-app-bar-nav-icon aria-label="menu" @click.stop="drawer = !drawer"
+      <v-app-bar-nav-icon
+        id="app-bar-nav-icon"
+        aria-label="menu"
+        @click.stop="drawer = !drawer"
         ><v-progress-circular v-if="loading" indeterminate size="18" width="2"
       /></v-app-bar-nav-icon>
       <v-avatar width="32" height="32" tile>
