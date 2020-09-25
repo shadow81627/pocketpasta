@@ -304,7 +304,7 @@ module.exports = {
   build: {
     transpile: ['lodash-es', 'vuetify/lib'],
     // move component styles into css files
-    // extractCSS: true,
+    extractCSS: true,
     /*
      ** You can extend webpack config here
      */
