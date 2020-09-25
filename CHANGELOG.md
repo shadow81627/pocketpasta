@@ -1,5 +1,11 @@
 # Releases
 
+## [0.46.51](https://github.com/shadow81627/pocketpasta/compare/v0.46.50...v0.46.51) (2020-09-25)
+
+### Performance Improvements
+
+- use rxdb ([#1589](https://github.com/shadow81627/pocketpasta/issues/1589)) ([009f0a1](https://github.com/shadow81627/pocketpasta/commit/009f0a131dd7ea306b83b5ef7617c69bc909cef3))
+
 ## [0.46.50](https://github.com/shadow81627/pocketpasta/compare/v0.46.49...v0.46.50) (2020-09-24)
 
 ### Bug Fixes
