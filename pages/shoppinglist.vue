@@ -227,6 +227,7 @@
               right
               fixed
               fab
+              aria-label="Create a new Shopping list item"
               class="bg-primary"
               v-bind="attrs"
               v-on="on"

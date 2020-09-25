@@ -5,7 +5,12 @@
       "numberOfRuns": 5,
       "url": [
         "/",
+        "/404.html",
         "/about/",
+        "/contact/",
+        "/newsletter/",
+        "/shoppinglist/",
+        "/tasks/",
         "/recipes/",
         "/recipes/1/",
         "/recipes/2/",
