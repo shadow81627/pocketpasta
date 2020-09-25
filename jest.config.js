@@ -4,7 +4,7 @@ module.exports = {
     '^@/(.*)$': '<rootDir>/$1',
     '^~/(.*)$': '<rootDir>/$1',
     '^vue$': 'vue/dist/vue.common.js',
-    '\\.(css|less)$': '<rootDir>/test/__mocks__/styleMock.js',
+    '\\.(css|less)$': '<rootDir>/test/unit/__mocks__/styleMock.js',
     '^vuetify/lib$': 'vuetify',
     '^vuetify/lib/directives$': 'vuetify',
     '^lodash-es$': 'lodash',
@@ -14,7 +14,7 @@ module.exports = {
     '^.+\\.js$': 'babel-jest',
     '.*\\.(vue)$': 'vue-jest',
     '\\.(jpg|ico|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga|md)$':
-      '<rootDir>/test/__mocks__/fileMock.js',
+      '<rootDir>/test/unit/__mocks__/fileMock.js',
     '\\.(css|less)$': 'css-loader',
   },
   transformIgnorePatterns: ['node_modules/(?!vuetify|lodash-es)'],

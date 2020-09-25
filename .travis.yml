@@ -35,6 +35,7 @@ deploy:
 
 after_deploy:
   - ./node_modules/.bin/sentry-cli releases deploys "$VERSION" new --env $SENTRY_ENVIRONMENT
+  - npm run test:e2e
 
 env:
   global:
@@ -46,7 +47,7 @@ env:
     - secure: M+A8ISnwOzaw+KeTTyPSlzBFS2eywDSGBUh0LoudNeVWJEl0Pql4PrQCYq2KlYAXF+fgLhmt44djA9zZP8X+fRU5V81x+63FSDm0pWDiiWzaacEb2nVLn1eaaNK6eqmTvWI27nS37O9vPWSMhcv+nxrIkvrxKNvhAhuD1SPUCv9ZIJj7fT0xia50pk8+/itMe/MMqBgm3W4FwSvKvSG+VBMLB+NX9A6TTthFuIPAdk3CE9SeWTcRDLnybwIiDtMuojwCUiTac9Sg9FmuyPHZupf2o6x6j9LxzxjJZ3lrD3nFhTM8g5nup77aMaykmOGwnZLqszW8A7Y105WdXK8oOsqi9Jt6zErUpkjc+kBf5s0nEZW0RD4uMJP2PP1TvWz8lcwZHwGWcx1C3d6Twvf6JvIAi4EyvNzL4yaoM4gCa7jLgRTgASgGRpvz3JtjxosS6irZUQ4TErfYtD57ZEUWjAJh1GgIC2y4CLCgn5nWlr8gXUtH5Hro/kk71+eHnCc6gjU3OiHA217J7zCXt1GRqKa+hr/NtKbDdI1oy4WQ/Gq9dS6cK0q7KzkxMXexgpLo9BUgt6MDewdDdYc3YVQCm6DP/i3GfHF8CWNNTvgwW2tklkJta7s5t+bWWL2I5QegEJVVTjSWH1vmVO0JPvZcAC1amj/oQse1rRRedT7C/Hg=
     - SENTRY_ORG=pocketpasta
     - SENTRY_PROJECT=pocketpasta
-    - BASE_URL=https://pocketpasta.com
+    - BASE_URL=https://staging.pocketpasta.com
     - FIREBASE_HOSTING=true
     - APP_URL=https://staging.pocketpasta.com
     - FIREBASE_PROJECT=staging
