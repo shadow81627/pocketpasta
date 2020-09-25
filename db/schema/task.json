@@ -1,0 +1,26 @@
+{
+  "title": "task schema",
+  "version": 0,
+  "description": "describes a simple task",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "primary": true
+    },
+    "name": {
+      "type": "string"
+    },
+    "due": {
+      "type": "string",
+      "format": "date"
+    },
+    "category": {
+      "type": "string"
+    },
+    "done": {
+      "type": "boolean"
+    }
+  },
+  "required": ["name"]
+}

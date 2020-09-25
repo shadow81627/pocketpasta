@@ -12,23 +12,25 @@ localVue.use(VueRouter);
 
 const router = new VueRouter();
 
-const $pouch = {
-  changes: () => ({ on: () => ({}) }),
-  post: () => ({}),
-  put: () => ({}),
-  upsert: () => ({}),
-  find: () => ({ docs: [] }),
+const $db = {
+  shopping: {
+    changes: () => ({ on: () => ({}) }),
+    post: () => ({}),
+    put: () => ({}),
+    upsert: () => ({}),
+    find: () => ({ $: { subscribe: () => ({ docs: [] }) } }),
+  },
 };
 
 const factory = () =>
   shallowMount(Component, {
     localVue,
     router,
-    $pouch,
+    $db,
     mocks: {
       $auth: { user: {} },
       $fetchState: {},
-      $pouch,
+      $db,
     },
   });
 
@@ -51,12 +53,19 @@ describe('Shopping List page', () => {
 
   test('deleteItem', async () => {
     const wrapper = factory();
-    expect(await wrapper.vm.deleteItem({ _id: 'test' })).toBe(undefined);
+    expect(
+      await wrapper.vm.deleteItem({ name: 'test', remove: () => {} }),
+    ).toBe(undefined);
   });
-  test('saveCategory', async () => {
+
+  test('bulkUpdateAttribute', async () => {
     const wrapper = factory();
     expect(
-      await wrapper.vm.saveCategory({ items: [{ _id: 'task' }], id: 'test' }),
+      await wrapper.vm.bulkUpdateAttribute({
+        items: [{ name: 'task', atomicSet: () => {} }],
+        key: 'category',
+        value: 'name',
+      }),
     ).toBe(undefined);
   });
 
