@@ -57,12 +57,13 @@ describe('Tasks page', () => {
     ).toBe(undefined);
   });
 
-  test('saveCategory', async () => {
+  test('bulkUpdateAttribute', async () => {
     const wrapper = factory();
     expect(
-      await wrapper.vm.saveCategory({
-        tasks: [{ name: 'task' }],
-        value: 'category',
+      await wrapper.vm.bulkUpdateAttribute({
+        items: [{ name: 'task', atomicSet: () => {} }],
+        key: 'category',
+        value: 'name',
       }),
     ).toBe(undefined);
   });

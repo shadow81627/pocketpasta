@@ -1,4 +1,5 @@
 import taskSchema from '@/db/schema/task.json';
+import shoppingSchema from '@/db/schema/shopping.json';
 
 export default async (context, inject) => {
   const { createRxDatabase, addRxPlugin } = await import(
@@ -7,10 +8,6 @@ export default async (context, inject) => {
   const indexeddb = await import(
     /* webpackChunkName: "db" */ 'pouchdb-adapter-indexeddb'
   );
-
-  // const taskSchema = await import(
-  //   /* webpackChunkName: "db" */ '@/db/schema/task.json'
-  // );
 
   addRxPlugin(indexeddb);
 
@@ -23,6 +20,10 @@ export default async (context, inject) => {
   await db.collection({
     name: 'tasks',
     schema: taskSchema,
+  });
+  await db.collection({
+    name: 'shopping',
+    schema: shoppingSchema,
   });
 
   inject('db', db);

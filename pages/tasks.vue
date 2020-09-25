@@ -9,7 +9,7 @@
           multi-sort
           class="elevation-1"
           :group-by.sync="groupBy"
-          item-key="_id"
+          item-key="id"
           mobile-breakpoint="0"
           :loading="$fetchState.pending"
           :items-per-page.sync="limit"
@@ -168,7 +168,7 @@
       <v-col>
         <confirm-dialog
           v-if="items.length"
-          action="all your items"
+          action="delete all your items"
           @confirm="clear(items)"
         >
           <template v-slot:activator="{ on, attrs }">
@@ -192,7 +192,7 @@
           </template>
           <v-card>
             <v-card-title>
-              <span class="headline">Create Task</span>
+              <span class="headline">Task</span>
             </v-card-title>
             <v-card-text>
               <v-container>
@@ -242,7 +242,12 @@
             <v-card-actions>
               <v-spacer />
               <v-btn text @click="close">Close</v-btn>
-              <v-btn color="primary" @click="save(editedItem)">Save</v-btn>
+              <v-btn
+                color="primary"
+                @click="save(editedItem)"
+                @keydown.enter="save(editedItem)"
+                >Save</v-btn
+              >
             </v-card-actions>
           </v-card>
         </v-dialog>
@@ -262,6 +267,7 @@ import {
   mdiPlus,
 } from '@mdi/js';
 import { DateTime } from 'luxon';
+import cuid from 'cuid';
 
 import ConfirmDialog from '@/components/ConfirmDialog.vue';
 import ListHeader from '@/components/List/ListHeader.vue';
@@ -324,12 +330,14 @@ export default {
     items: [],
     editedIndex: -1,
     editedItem: {
+      id: cuid(),
       name: '',
       due: DateTime.local().toISODate(),
       category: '',
       done: false,
     },
     defaultItem: {
+      id: cuid(),
       name: '',
       category: '',
       due: DateTime.local().toISODate(),
@@ -443,12 +451,6 @@ export default {
 
     clear(items) {
       this.collection.remove();
-    },
-
-    async saveCategory({ tasks, value }) {
-      await tasks.forEach(
-        async (task) => await task.atomicSet('category', value),
-      );
     },
 
     async bulkUpdateAttribute({ items, key, value }) {

@@ -69,7 +69,7 @@ exports[`Tasks page renders properly 1`] = `
           return groups;
         }\\" locale=\\"en-US\\" customfilter=\\"function defaultFilter(value, search, item) {
           return value != null &amp;&amp; search != null &amp;&amp; typeof value !== 'boolean' &amp;&amp; value.toString().toLocaleLowerCase().indexOf(search.toLocaleLowerCase()) !== -1;
-        }\\" serveritemslength=\\"10\\" itemkey=\\"_id\\" value=\\"\\" expanded=\\"\\" noresultstext=\\"$vuetify.dataIterator.noResultsText\\" nodatatext=\\"$vuetify.noDataText\\" loadingtext=\\"$vuetify.dataIterator.loadingText\\" hidedefaultfooter=\\"true\\" selectablekey=\\"isSelectable\\" loaderheight=\\"4\\" headers=\\"[object Object],[object Object],[object Object],[object Object],[object Object]\\" expandicon=\\"$expand\\" itemclass=\\"\\" class=\\"elevation-1\\"></v-data-table-stub>
+        }\\" serveritemslength=\\"10\\" itemkey=\\"id\\" value=\\"\\" expanded=\\"\\" noresultstext=\\"$vuetify.dataIterator.noResultsText\\" nodatatext=\\"$vuetify.noDataText\\" loadingtext=\\"$vuetify.dataIterator.loadingText\\" hidedefaultfooter=\\"true\\" selectablekey=\\"isSelectable\\" loaderheight=\\"4\\" headers=\\"[object Object],[object Object],[object Object],[object Object],[object Object]\\" expandicon=\\"$expand\\" itemclass=\\"\\" class=\\"elevation-1\\"></v-data-table-stub>
     </v-col-stub>
   </v-row-stub>
   <v-row-stub tag=\\"div\\">
@@ -77,7 +77,7 @@ exports[`Tasks page renders properly 1`] = `
       <!---->
       <v-dialog-stub opendelay=\\"0\\" closedelay=\\"0\\" contentclass=\\"\\" maxwidth=\\"400\\" origin=\\"center center\\" persistent=\\"true\\" retainfocus=\\"true\\" transition=\\"dialog-transition\\" width=\\"auto\\">
         <v-card-stub loaderheight=\\"4\\" tag=\\"div\\">
-          <v-card-title-stub><span class=\\"headline\\">Create Task</span></v-card-title-stub>
+          <v-card-title-stub><span class=\\"headline\\">Task</span></v-card-title-stub>
           <v-card-text-stub>
             <v-container-stub tag=\\"div\\">
               <v-row-stub tag=\\"div\\">
