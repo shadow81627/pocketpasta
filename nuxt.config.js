@@ -1,18 +1,18 @@
 const pkg = require('./package');
+
 const HOST = process.env.HOST || '0.0.0.0';
 const PORT = process.env.PORT || '3000';
-
 const BASE_URL = (
   process.env.BASE_URL ||
   process.env.DEPLOY_URL ||
   process.env.URL ||
   process.env.VERCEL_URL ||
-  `http${process.env.PORT === 433 ? 's' : ''}://${process.env.HOST}:${
-    process.env.PORT
+  `http${PORT === 433 ? 's' : ''}://${HOST}${
+    [433, 80].includes(PORT) ? '' : `:${PORT}`
   }`
 ).replace(/(^http[s]?)?(?::\/\/)?(.*)/, function (
   _,
-  protocol = 'http',
+  protocol = 'https',
   domain,
 ) {
   return `${protocol}://${domain}`;
@@ -76,7 +76,7 @@ module.exports = {
 
   meta: {
     lang: undefined,
-    ogHost: 'https://pocketpasta.com',
+    ogHost: BASE_URL,
   },
 
   manifest: {
