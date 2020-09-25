@@ -184,6 +184,7 @@
               fixed
               fab
               class="bg-primary"
+              aria-label="Create a new Task"
               v-bind="attrs"
               v-on="on"
             >
