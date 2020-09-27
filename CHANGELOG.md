@@ -1,5 +1,11 @@
 # Releases
 
+## [0.46.52](https://github.com/shadow81627/pocketpasta/compare/v0.46.51...v0.46.52) (2020-09-27)
+
+### Bug Fixes
+
+- **shoppinglist:** sort order ([#1599](https://github.com/shadow81627/pocketpasta/issues/1599)) ([523bcfa](https://github.com/shadow81627/pocketpasta/commit/523bcfa85c79360b4f805cbca9f421ee341ffd96)), closes [#1597](https://github.com/shadow81627/pocketpasta/issues/1597)
+
 ## [0.46.51](https://github.com/shadow81627/pocketpasta/compare/v0.46.50...v0.46.51) (2020-09-25)
 
 ### Performance Improvements
