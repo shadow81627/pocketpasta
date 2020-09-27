@@ -69,7 +69,7 @@ exports[`Shopping List page renders properly 1`] = `
           return groups;
         }\\" locale=\\"en-US\\" customfilter=\\"function defaultFilter(value, search, item) {
           return value != null &amp;&amp; search != null &amp;&amp; typeof value !== 'boolean' &amp;&amp; value.toString().toLocaleLowerCase().indexOf(search.toLocaleLowerCase()) !== -1;
-        }\\" serveritemslength=\\"10\\" itemkey=\\"id\\" value=\\"\\" expanded=\\"\\" noresultstext=\\"$vuetify.dataIterator.noResultsText\\" nodatatext=\\"$vuetify.noDataText\\" loadingtext=\\"$vuetify.dataIterator.loadingText\\" hidedefaultfooter=\\"true\\" selectablekey=\\"isSelectable\\" loaderheight=\\"4\\" headers=\\"[object Object],[object Object],[object Object],[object Object]\\" expandicon=\\"$expand\\" itemclass=\\"\\" class=\\"elevation-1\\"></v-data-table-stub>
+        }\\" serveritemslength=\\"-1\\" itemkey=\\"id\\" value=\\"\\" expanded=\\"\\" noresultstext=\\"$vuetify.dataIterator.noResultsText\\" nodatatext=\\"$vuetify.noDataText\\" loadingtext=\\"$vuetify.dataIterator.loadingText\\" hidedefaultfooter=\\"true\\" selectablekey=\\"isSelectable\\" loaderheight=\\"4\\" headers=\\"[object Object],[object Object],[object Object],[object Object]\\" expandicon=\\"$expand\\" itemclass=\\"\\" class=\\"elevation-1\\"></v-data-table-stub>
     </v-col-stub>
   </v-row-stub>
   <v-row-stub tag=\\"div\\">
@@ -82,12 +82,12 @@ exports[`Shopping List page renders properly 1`] = `
             <v-container-stub tag=\\"div\\">
               <v-row-stub tag=\\"div\\">
                 <v-col-stub cols=\\"12\\" tag=\\"div\\">
-                  <v-text-field-stub errorcount=\\"1\\" errormessages=\\"\\" messages=\\"\\" rules=\\"\\" successmessages=\\"\\" value=\\"\\" backgroundcolor=\\"\\" label=\\"Name\\" loaderheight=\\"2\\" autofocus=\\"true\\" clearicon=\\"$clear\\" type=\\"text\\" required=\\"\\"></v-text-field-stub>
-                </v-col-stub>
-                <v-col-stub cols=\\"12\\" tag=\\"div\\">
                   <v-text-field-stub errorcount=\\"1\\" errormessages=\\"\\" messages=\\"\\" rules=\\"\\" successmessages=\\"\\" value=\\"\\" backgroundcolor=\\"\\" label=\\"Category\\" loaderheight=\\"2\\" clearicon=\\"$clear\\" type=\\"text\\"></v-text-field-stub>
                 </v-col-stub>
               </v-row-stub>
+              <v-col-stub cols=\\"12\\" tag=\\"div\\">
+                <v-text-field-stub errorcount=\\"1\\" errormessages=\\"\\" messages=\\"\\" rules=\\"\\" successmessages=\\"\\" value=\\"\\" backgroundcolor=\\"\\" label=\\"Name\\" loaderheight=\\"2\\" autofocus=\\"true\\" clearicon=\\"$clear\\" type=\\"text\\" required=\\"\\"></v-text-field-stub>
+              </v-col-stub>
             </v-container-stub>
           </v-card-text-stub>
           <v-card-actions-stub>

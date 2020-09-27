@@ -14,7 +14,6 @@
           :loading="$fetchState.pending"
           :items-per-page.sync="limit"
           :page.sync="page"
-          :server-items-length="total"
           :sort-by.sync="sortBy"
           hide-default-footer
         >
@@ -244,21 +243,21 @@
                 <v-row>
                   <v-col cols="12">
                     <v-text-field
-                      v-model="editedItem.name"
-                      label="Name"
-                      required
-                      autofocus
-                      @keydown.enter="save(editedItem)"
-                    />
-                  </v-col>
-                  <v-col cols="12">
-                    <v-text-field
                       v-model="editedItem.category"
                       label="Category"
                       @keydown.enter="save(editedItem)"
                     />
                   </v-col>
                 </v-row>
+                <v-col cols="12">
+                  <v-text-field
+                    v-model="editedItem.name"
+                    label="Name"
+                    required
+                    autofocus
+                    @keydown.enter="save(editedItem)"
+                  />
+                </v-col>
               </v-container>
             </v-card-text>
             <v-card-actions>
