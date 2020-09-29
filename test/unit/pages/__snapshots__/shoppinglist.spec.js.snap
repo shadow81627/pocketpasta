@@ -82,12 +82,12 @@ exports[`Shopping List page renders properly 1`] = `
             <v-container-stub tag=\\"div\\">
               <v-row-stub tag=\\"div\\">
                 <v-col-stub cols=\\"12\\" tag=\\"div\\">
-                  <v-text-field-stub errorcount=\\"1\\" errormessages=\\"\\" messages=\\"\\" rules=\\"\\" successmessages=\\"\\" value=\\"\\" backgroundcolor=\\"\\" label=\\"Category\\" loaderheight=\\"2\\" clearicon=\\"$clear\\" type=\\"text\\"></v-text-field-stub>
+                  <v-text-field-stub errorcount=\\"1\\" errormessages=\\"\\" messages=\\"\\" rules=\\"\\" successmessages=\\"\\" value=\\"\\" backgroundcolor=\\"\\" label=\\"Category\\" loaderheight=\\"2\\" clearicon=\\"$clear\\" type=\\"text\\" name=\\"shopping-category\\"></v-text-field-stub>
+                </v-col-stub>
+                <v-col-stub cols=\\"12\\" tag=\\"div\\">
+                  <v-text-field-stub errorcount=\\"1\\" errormessages=\\"\\" messages=\\"\\" rules=\\"\\" successmessages=\\"\\" value=\\"\\" backgroundcolor=\\"\\" label=\\"Name\\" loaderheight=\\"2\\" autofocus=\\"true\\" clearicon=\\"$clear\\" type=\\"text\\" name=\\"shopping-name\\" required=\\"\\"></v-text-field-stub>
                 </v-col-stub>
               </v-row-stub>
-              <v-col-stub cols=\\"12\\" tag=\\"div\\">
-                <v-text-field-stub errorcount=\\"1\\" errormessages=\\"\\" messages=\\"\\" rules=\\"\\" successmessages=\\"\\" value=\\"\\" backgroundcolor=\\"\\" label=\\"Name\\" loaderheight=\\"2\\" autofocus=\\"true\\" clearicon=\\"$clear\\" type=\\"text\\" required=\\"\\"></v-text-field-stub>
-              </v-col-stub>
             </v-container-stub>
           </v-card-text-stub>
           <v-card-actions-stub>

@@ -28,6 +28,15 @@ const env = {
     process.env.TRAVIS_COMMIT ||
     process.env.VERCEL_GITHUB_COMMIT_SHA,
   DATE_GENERATED: new Date().toISOString(),
+
+  // test creds only
+  DB_REMOTE:
+    process.env.DB_REMOTE ||
+    'https://bf11c43c-9df2-467e-806e-5deab6cacb11-bluemix.cloudant.com/staging-pocketpasta/',
+  DB_USERNAME:
+    process.env.DB_USERNAME || 'apikey-34f58f88f7374dde849265c1520784dc',
+  DB_PASSWORD:
+    process.env.DB_PASSWORD || '47df2fbe235d430a6ca43fa780096dea0b31b29c',
 };
 
 const i18nSettings = {

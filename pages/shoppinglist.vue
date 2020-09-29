@@ -42,7 +42,7 @@
                           .filter((item) => item.text)
                           .find((item) => item.value === groupBy).text
                       "
-                      :name="groupBy"
+                      name="shopping-category"
                       single-line
                       hide-details
                       clearable
@@ -63,7 +63,8 @@
                       <template v-slot:input>
                         <v-text-field
                           :value="group"
-                          label="Name"
+                          label="Category"
+                          name="shopping-category"
                           single-line
                           counter
                           clearable
@@ -113,6 +114,7 @@
                 <v-text-field
                   :value="item.name"
                   label="Name"
+                  name="shopping-name"
                   single-line
                   counter
                   clearable
@@ -135,6 +137,7 @@
               "
               :value="item.category"
               label="category"
+              name="shopping-category"
               single-line
               hide-details
               clearable
@@ -162,6 +165,7 @@
                 <v-text-field
                   v-model="item.category"
                   label="category"
+                  name="shopping-category"
                   single-line
                   counter
                   clearable
@@ -245,19 +249,21 @@
                     <v-text-field
                       v-model="editedItem.category"
                       label="Category"
+                      name="shopping-category"
+                      @keydown.enter="save(editedItem)"
+                    />
+                  </v-col>
+                  <v-col cols="12">
+                    <v-text-field
+                      v-model="editedItem.name"
+                      label="Name"
+                      name="shopping-name"
+                      required
+                      autofocus
                       @keydown.enter="save(editedItem)"
                     />
                   </v-col>
                 </v-row>
-                <v-col cols="12">
-                  <v-text-field
-                    v-model="editedItem.name"
-                    label="Name"
-                    required
-                    autofocus
-                    @keydown.enter="save(editedItem)"
-                  />
-                </v-col>
               </v-container>
             </v-card-text>
             <v-card-actions>
@@ -347,7 +353,7 @@ export default {
     items: [],
     editedIndex: -1,
     editedItem: {
-      id: cuid(),
+      id: `${cuid()}`,
       name: '',
       due: DateTime.local().toISODate(),
       category: '',
@@ -436,7 +442,7 @@ export default {
   },
   methods: {
     defaultItem: () => ({
-      id: cuid(),
+      id: `${cuid()}`,
       name: '',
       category: '',
       due: DateTime.local().toISODate(),

@@ -9,7 +9,12 @@ Vue.use(Vuetify);
 
 let vuetify;
 
-const factory = () => shallowMount(settings, { localVue, vuetify });
+const factory = () =>
+  shallowMount(settings, {
+    localVue,
+    vuetify,
+    mocks: { $warehouse: { get: () => {} }, $config: {} },
+  });
 
 describe('settings', () => {
   beforeEach(() => {
