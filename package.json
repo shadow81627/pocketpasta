@@ -86,7 +86,7 @@
     "babel-preset-vue": "2.0.2",
     "chalk": "4.1.0",
     "cheerio": "1.0.0-rc.3",
-    "codeceptjs": "2.6.11",
+    "codeceptjs": "3.0.0",
     "codeceptjs-resemblehelper": "1.9.2",
     "codecov": "3.7.2",
     "commitizen": "4.2.1",
