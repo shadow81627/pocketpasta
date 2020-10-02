@@ -30,7 +30,7 @@
     "test:e2e": "codeceptjs run --steps",
     "semantic-release": "semantic-release",
     "snyk-protect": "snyk protect",
-    "prepare": "npm run snyk-protect",
+    "xprepare": "npm run snyk-protect",
     "git-cz": "git-cz",
     "now-build": "npm run generate",
     "stylelint:fix": "npx stylelint **/*.css !**/node_modules/** !**/dist/** !**/coverage/** --fix",
