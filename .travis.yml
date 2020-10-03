@@ -13,6 +13,7 @@ script:
   - npm run test
   - npm run generate
   - npm run lhci:autorun
+  - npm run test:e2e
   - npx semantic-release
 
 before_deploy:
@@ -35,7 +36,6 @@ deploy:
 
 after_deploy:
   - ./node_modules/.bin/sentry-cli releases deploys "$VERSION" new --env $SENTRY_ENVIRONMENT
-  - npm run test:e2e
 
 env:
   global:
