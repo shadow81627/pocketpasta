@@ -65,16 +65,16 @@ describe('AddToHomeScreen', () => {
     expect(wrapper.html()).toMatchSnapshot();
   });
 
-  test("emits 'canInstall' on 'beforeinstallprompt' event", async () => {
+  test("emits 'can-install' on 'beforeinstallprompt' event", async () => {
     const beforeDestoryedSpy = jest.spyOn(component, 'destroyed');
     const wrapper = factory();
     expect(wrapper.vm).toBeTruthy();
     expect(wrapper.vm.deferredPrompt).toBe(null);
     triggerWindowEvent('beforeinstallprompt', eventMock);
     await wrapper.vm.$nextTick();
-    expect(wrapper.emitted('canInstall')).toBeTruthy();
-    expect(wrapper.emitted('canInstall').length).toBe(1);
-    expect(wrapper.emitted('canInstall')[0]).toStrictEqual([eventMock]);
+    expect(wrapper.emitted('can-install')).toBeTruthy();
+    expect(wrapper.emitted('can-install').length).toBe(1);
+    expect(wrapper.emitted('can-install')[0]).toStrictEqual([eventMock]);
     await wrapper.vm.$nextTick();
     await wrapper.trigger('click');
     expect(wrapper.vm.deferredPrompt).toBe(eventMock);

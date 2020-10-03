@@ -24,7 +24,7 @@
             :prepend-icon="item.model ? item.icon : item['icon-alt']"
             append-icon
           >
-            <template v-slot:activator>
+            <template #activator>
               <v-list-item>
                 <v-list-item-content>
                   <v-list-item-title
@@ -122,6 +122,31 @@ export default {
       drawer: false,
     };
   },
+  head() {
+    const i18nSeo = this.$nuxtI18nSeo();
+    return {
+      htmlAttrs: {
+        ...i18nSeo.htmlAttrs,
+      },
+      meta: [
+        ...i18nSeo.meta,
+        {
+          hid: 'og:url',
+          name: 'og:url',
+          property: 'og:url',
+          content: `${this.$config.BASE_URL}${this.$route.path}`,
+        },
+      ],
+      link: [
+        ...i18nSeo.link,
+        {
+          hid: 'canonical',
+          rel: 'canonical',
+          href: `${this.$config.BASE_URL}${this.$route.path}`,
+        },
+      ],
+    };
+  },
   computed: {
     items() {
       return [
@@ -157,31 +182,6 @@ export default {
     if (process.client) {
       this.loading = false;
     }
-  },
-  head() {
-    const i18nSeo = this.$nuxtI18nSeo();
-    return {
-      htmlAttrs: {
-        ...i18nSeo.htmlAttrs,
-      },
-      meta: [
-        ...i18nSeo.meta,
-        {
-          hid: 'og:url',
-          name: 'og:url',
-          property: 'og:url',
-          content: `${this.$config.BASE_URL}${this.$route.path}`,
-        },
-      ],
-      link: [
-        ...i18nSeo.link,
-        {
-          hid: 'canonical',
-          rel: 'canonical',
-          href: `${this.$config.BASE_URL}${this.$route.path}`,
-        },
-      ],
-    };
   },
 };
 </script>

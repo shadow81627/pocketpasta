@@ -84,10 +84,10 @@ import Credit from '@/components/Layout/Credit/landing-hero-image-credit';
 import linkData from '@/assets/link-data/pocketpasta.json';
 
 export default {
-  layout: 'default',
   components: {
     Credit,
   },
+  layout: 'default',
   head() {
     return {
       script: [
