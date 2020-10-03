@@ -4,7 +4,7 @@ const name = 'contact';
 
 Feature(name);
 
-Scenario('Heading 1', async (I) => {
+Scenario('Heading 1', async ({ I }) => {
   I.amOnPage(`/${name}`);
   I.see('Contact Us', 'h1');
 

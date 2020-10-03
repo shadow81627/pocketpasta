@@ -4,7 +4,7 @@ const name = 'recipes_2';
 
 Feature(name);
 
-Scenario('Heading 1', async (I) => {
+Scenario('Heading 1', async ({ I }) => {
   I.amOnPage(`/${name.replace('_', '/')}`);
   I.see('Binging with Babish: Pasta Aglio e Olio from "Chef"', 'h1');
 
