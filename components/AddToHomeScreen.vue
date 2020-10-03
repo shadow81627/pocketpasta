@@ -22,7 +22,7 @@ export default {
   created() {
     // inspired by https://www.npmjs.com/package/vue-pwa-install
     const vm = this;
-    vm.$on('canInstall', (event) => {
+    vm.$on('can-install', (event) => {
       // Prevent Chrome 67 and earlier from automatically showing the prompt:
       event.preventDefault();
 
@@ -44,7 +44,7 @@ export default {
     installHandler(event) {
       const vm = this;
       if (Boolean(event) && 'prompt' in event) {
-        vm.$emit('canInstall', event);
+        vm.$emit('can-install', event);
       }
     },
     promptInstall() {

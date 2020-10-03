@@ -1,6 +1,6 @@
 <template>
   <v-menu>
-    <template v-slot:activator="{ on }">
+    <template #activator="{ on }">
       <v-btn outlined v-on="on">
         <v-icon small>$translate</v-icon>
         <span>&nbsp;</span>

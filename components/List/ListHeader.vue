@@ -23,7 +23,7 @@
               @input="$emit('update:search', $event)"
             />
           </client-only>
-          <template v-slot:actions>
+          <template #actions>
             <client-only>
               <v-icon
                 class="ml-4"
@@ -99,7 +99,7 @@
               </v-col>
               <v-col cols="auto" style="min-width: 202px">
                 <v-menu offset-y close-on-click>
-                  <template v-slot:activator="{ on, attrs }">
+                  <template #activator="{ on, attrs }">
                     <v-btn large text v-bind="attrs" v-on="on">
                       {{ limit }}
                       <span> per page</span>
