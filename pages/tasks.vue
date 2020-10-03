@@ -18,7 +18,7 @@
           :sort-by.sync="sortBy"
           hide-default-footer
         >
-          <template v-slot:top>
+          <template #top>
             <list-header
               :headers="headers"
               :direction.sync="direction"
@@ -30,7 +30,7 @@
             />
           </template>
 
-          <template v-slot:group.header="{ group, items }">
+          <template #[`group.header`]="{ group, groupItems }">
             <td :colspan="headers.length" class="item handle">
               <v-container class="pa-0">
                 <v-row>
@@ -52,7 +52,7 @@
                       @change="
                         (value) => {
                           bulkUpdateAttribute({
-                            items,
+                            items: groupItems,
                             key: 'category',
                             value,
                           });
@@ -61,7 +61,7 @@
                     />
                     <v-edit-dialog v-else large>
                       {{ group }}
-                      <template v-slot:input>
+                      <template #input>
                         <v-text-field
                           :value="group"
                           label="Name"
@@ -71,7 +71,7 @@
                           @change="
                             (value) => {
                               bulkUpdateAttribute({
-                                items,
+                                items: groupItems,
                                 key: 'category',
                                 value,
                               });
@@ -96,7 +96,7 @@
             </td>
           </template>
 
-          <template v-slot:item.done="{ item }">
+          <template #[`item.done`]="{ item }">
             <v-simple-checkbox
               :value="item.done"
               @input="
@@ -107,7 +107,7 @@
             />
           </template>
 
-          <template v-slot:item.due="{ item }">
+          <template #[`item.due`]="{ item }">
             <v-edit-dialog large>
               <v-chip
                 :color="
@@ -123,7 +123,7 @@
               >
               &nbsp;
               {{ DateTime.fromISO(item.due).toRelativeCalendar() }}
-              <template v-slot:input>
+              <template #input>
                 <v-date-picker
                   :value="item.due"
                   scrollable
@@ -140,9 +140,9 @@
             </v-edit-dialog>
           </template>
 
-          <template v-slot:item.actions="{ item }">
+          <template #[`item.actions`]="{ item }">
             <v-tooltip bottom>
-              <template v-slot:activator="{ on, attrs }">
+              <template #activator="{ on, attrs }">
                 <v-btn
                   icon
                   title="Edit"
@@ -171,13 +171,13 @@
           action="delete all your items"
           @confirm="clear(items)"
         >
-          <template v-slot:activator="{ on, attrs }">
+          <template #activator="{ on, attrs }">
             <v-btn color="danger" v-bind="attrs" v-on="on"> Clear All </v-btn>
           </template>
         </confirm-dialog>
 
         <v-dialog v-model="dialog" persistent max-width="400">
-          <template v-slot:activator="{ on, attrs }">
+          <template #activator="{ on, attrs }">
             <v-btn
               bottom
               right
@@ -220,7 +220,7 @@
                       top
                       min-width="290px"
                     >
-                      <template v-slot:activator="{ on, attrs }">
+                      <template #activator="{ on, attrs }">
                         <v-text-field
                           v-model="editedItem.due"
                           label="Due Date"
@@ -282,16 +282,6 @@ export default {
   directives: {
     Ripple,
   },
-  fetch() {
-    const query = this.$db.tasks.find();
-    // .sort(this.sortBy);
-    this.collection = query;
-    query.$.subscribe((results = []) => {
-      this.total = results.length;
-      this.items = results;
-    });
-  },
-  fetchOnServer: false,
   data: () => ({
     collection: null,
     categories: [],
@@ -345,6 +335,22 @@ export default {
       done: false,
     },
   }),
+  fetch() {
+    const query = this.$db.tasks.find();
+    // .sort(this.sortBy);
+    this.collection = query;
+    query.$.subscribe((results = []) => {
+      this.total = results.length;
+      this.items = results;
+    });
+  },
+  fetchOnServer: false,
+
+  head() {
+    return {
+      title: 'Tasks',
+    };
+  },
   computed: {
     pages() {
       const pages = Math.ceil(this.total / this.limit);
@@ -483,12 +489,6 @@ export default {
         }).sort(),
       );
     },
-  },
-
-  head() {
-    return {
-      title: 'Tasks',
-    };
   },
 };
 </script>

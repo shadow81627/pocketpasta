@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-menu v-model="menu" offset-y>
-      <template v-slot:activator="{ on }">
+      <template #activator="{ on }">
         <v-btn
           icon
           large
