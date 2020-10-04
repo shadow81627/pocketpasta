@@ -135,7 +135,7 @@ const urls = [
   // ['https://www.budgetbytes.com/sweet-chili-tofu-bowls/'],
   // ['https://www.budgetbytes.com/spinach-orzo-salad-balsamic-vinaigrette/'],
   // ['https://www.budgetbytes.com/homemade-freezer-garlic-bread/'],
-  // ['https://www.connoisseurusveg.com/vegan-ribs/'],
+  ['https://www.connoisseurusveg.com/vegan-ribs/'],
   [
     'https://shop.coles.com.au/a/sunnybank-hills/product/onions-brown-shallots-loose',
   ],
