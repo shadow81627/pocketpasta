@@ -35,7 +35,7 @@ async function scrape(url) {
     const page = await browser.newPage();
     const timeout = 1200000; // timeout in milliseconds.
     await page.goto(url, { waitUntil: 'networkidle0', timeout });
-    await page.waitFor(15000);
+    await page.waitForTimeout(15000);
     const data = await page.evaluate(
       () => document.querySelector('*').outerHTML,
     );
@@ -91,6 +91,15 @@ async function scrape(url) {
 
         if (!linkData.datePublished) {
           linkData.datePublished = new Date();
+        }
+
+        if (url.startsWith('https://www.connoisseurusveg.com/')) {
+          linkData.image = {
+            '@type': 'ImageObject',
+            height: $('meta[property="og:image:width"]').attr('content'),
+            url: $('meta[property="og:image"]').attr('content'),
+            width: $('meta[property="og:image:height"]').attr('content'),
+          };
         }
       }
       if (type === 'Product') {
