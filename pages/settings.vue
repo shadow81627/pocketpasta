@@ -55,6 +55,35 @@
         </v-card>
       </v-col>
     </v-row>
+
+    <v-row>
+      <v-col>
+        <v-card>
+          <v-card-title>
+            <h2>Database</h2>
+          </v-card-title>
+          <v-card-subtitle>Apache CouchDB Settings</v-card-subtitle>
+          <v-container class="pt-0">
+            <v-row>
+              <v-col cols="12" class="align-self-center">
+                <v-text-field v-model="dbRemote" label="Remote URL" />
+              </v-col>
+              <v-col cols="12" sm="6" class="align-self-center">
+                <v-text-field v-model="dbUsername" label="Username" />
+              </v-col>
+              <v-col cols="12" sm="6" class="align-self-center">
+                <v-text-field
+                  v-model="dbPassword"
+                  label="Password"
+                  type="password"
+                  autocomplete="one-time-code"
+                />
+              </v-col>
+            </v-row>
+          </v-container>
+        </v-card>
+      </v-col>
+    </v-row>
   </v-container>
 </template>
 
@@ -68,6 +97,32 @@ export default {
     ThemeSelector,
     LangSwitcher,
     setting,
+  },
+  computed: {
+    dbRemote: {
+      get() {
+        return this.$warehouse.get('dbRemote') || this.$config.DB_REMOTE;
+      },
+      set(value) {
+        this.$warehouse.set('dbRemote', value);
+      },
+    },
+    dbUsername: {
+      get() {
+        return this.$warehouse.get('dbUsername') || this.$config.DB_USERNAME;
+      },
+      set(value) {
+        this.$warehouse.set('dbUsername', value);
+      },
+    },
+    dbPassword: {
+      get() {
+        return this.$warehouse.get('dbPassword') || this.$config.DB_PASSWORD;
+      },
+      set(value) {
+        this.$warehouse.set('dbPassword', value);
+      },
+    },
   },
   head() {
     return {

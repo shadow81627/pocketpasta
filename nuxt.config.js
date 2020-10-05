@@ -28,6 +28,10 @@ const env = {
     process.env.TRAVIS_COMMIT ||
     process.env.VERCEL_GITHUB_COMMIT_SHA,
   DATE_GENERATED: new Date().toISOString(),
+
+  DB_REMOTE: process.env.DB_REMOTE,
+  DB_USERNAME: process.env.DB_USERNAME,
+  DB_PASSWORD: process.env.DB_PASSWORD,
 };
 
 const i18nSettings = {
