@@ -13,7 +13,7 @@ script:
   - npm run generate
   - npm run lhci:autorun
   - npm run test:e2e
-  - npm semantic-release
+  - npm run semantic-release
 
 before_deploy:
   # Propose release version
