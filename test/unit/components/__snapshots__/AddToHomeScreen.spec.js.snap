@@ -1,3 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`AddToHomeScreen renders properly 1`] = `"<button type=\\"button\\" class=\\"v-btn v-btn--flat v-btn--icon v-btn--round theme--light v-size--default\\" aria-label=\\"install app\\" style=\\"display: none;\\"><span class=\\"v-btn__content\\"><span aria-hidden=\\"true\\" class=\\"v-icon notranslate v-icon--svg theme--light\\"><svg xmlns=\\"http://www.w3.org/2000/svg\\" viewBox=\\"0 0 24 24\\" height=\\"24\\" width=\\"24\\" role=\\"img\\" aria-hidden=\\"true\\"><path d=\\"M5,20H19V18H5M19,9H15V3H9V9H5L12,16L19,9Z\\"></path></svg></span></span></button>"`;

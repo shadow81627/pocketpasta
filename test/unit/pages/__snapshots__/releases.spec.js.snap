@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`releases page renders properly 1`] = `
-"<v-container-stub tag=\\"div\\">
-  <v-sheet-stub tag=\\"div\\" class=\\"markdown-body\\">CHANGELOG.md</v-sheet-stub>
-</v-container-stub>"
-`;

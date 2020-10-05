@@ -17,7 +17,7 @@
           :sort-by.sync="sortBy"
           hide-default-footer
         >
-          <template v-slot:top>
+          <template #top>
             <list-header
               :headers="headers"
               :direction.sync="direction"
@@ -29,7 +29,7 @@
             />
           </template>
 
-          <template v-slot:group.header="{ group, items }">
+          <template #[`group.header`]="{ group, groupItems }">
             <td :colspan="headers.length" class="item handle">
               <v-container class="pa-0">
                 <v-row>
@@ -51,7 +51,7 @@
                       @change="
                         (value) => {
                           bulkUpdateAttribute({
-                            items,
+                            items: groupItems,
                             key: 'category',
                             value,
                           });
@@ -60,7 +60,7 @@
                     />
                     <v-edit-dialog v-else large>
                       {{ group }}
-                      <template v-slot:input>
+                      <template #input>
                         <v-text-field
                           :value="group"
                           label="Category"
@@ -71,7 +71,7 @@
                           @change="
                             (value) => {
                               bulkUpdateAttribute({
-                                items,
+                                items: groupItems,
                                 key: 'category',
                                 value,
                               });
@@ -96,7 +96,7 @@
             </td>
           </template>
 
-          <template v-slot:item.done="{ item }">
+          <template #[`item.done`]="{ item }">
             <v-simple-checkbox
               :value="item.done"
               @input="
@@ -107,10 +107,10 @@
             />
           </template>
 
-          <template v-slot:item.name="{ item }">
+          <template #[`item.name`]="{ item }">
             <v-edit-dialog large>
               {{ item.name }}
-              <template v-slot:input>
+              <template #input>
                 <v-text-field
                   :value="item.name"
                   label="Name"
@@ -128,7 +128,7 @@
             </v-edit-dialog>
           </template>
 
-          <template v-slot:item.category="{ item }">
+          <template #[`item.category`]="{ item }">
             <v-text-field
               v-if="
                 item.isNew ||
@@ -161,7 +161,7 @@
               "
             >
               {{ item.category }}
-              <template v-slot:input>
+              <template #input>
                 <v-text-field
                   v-model="item.category"
                   label="category"
@@ -174,7 +174,7 @@
             </v-edit-dialog>
           </template>
 
-          <template v-slot:item.due="{ item }">
+          <template #[`item.due`]="{ item }">
             <v-edit-dialog
               :return-value.sync="item.due"
               large
@@ -194,13 +194,13 @@
               >
               &nbsp;
               {{ DateTime.fromISO(item.due).toRelativeCalendar() }}
-              <template v-slot:input>
+              <template #input>
                 <v-date-picker v-model="item.due" scrollable />
               </template>
             </v-edit-dialog>
           </template>
 
-          <template v-slot:item.actions="{ item }">
+          <template #[`item.actions`]="{ item }">
             <v-btn icon title="edit" @click="editItem(item)">
               <v-icon>
                 {{ icons.mdiPencil }}
@@ -218,13 +218,13 @@
           action="delete all your items"
           @confirm="clear(items)"
         >
-          <template v-slot:activator="{ on, attrs }">
+          <template #activator="{ on, attrs }">
             <v-btn color="danger" v-bind="attrs" v-on="on">Clear All</v-btn>
           </template>
         </confirm-dialog>
 
         <v-dialog v-model="dialog" persistent max-width="400">
-          <template v-slot:activator="{ on, attrs }">
+          <template #activator="{ on, attrs }">
             <v-btn
               bottom
               right
@@ -304,19 +304,6 @@ export default {
   directives: {
     Ripple,
   },
-  fetch() {
-    const query = this.$db.shopping.find({
-      selector: {
-        name: { $regex: `.*${this.search}.*` },
-      },
-    });
-    this.collection = query;
-    query.$.subscribe((results = []) => {
-      this.total = results.length;
-      this.items = results;
-    });
-  },
-  fetchOnServer: false,
   data: () => ({
     categories: [],
     total: 10,
@@ -360,6 +347,24 @@ export default {
       done: false,
     },
   }),
+  fetch() {
+    const query = this.$db.shopping.find({
+      selector: {
+        name: { $regex: `.*${this.search}.*` },
+      },
+    });
+    this.collection = query;
+    query.$.subscribe((results = []) => {
+      this.total = results.length;
+      this.items = results;
+    });
+  },
+  fetchOnServer: false,
+  head() {
+    return {
+      title: 'Shopping',
+    };
+  },
   computed: {
     pages() {
       const pages = Math.ceil(this.total / this.limit);
@@ -508,12 +513,6 @@ export default {
         }).sort(),
       );
     },
-  },
-
-  head() {
-    return {
-      title: 'Shopping',
-    };
   },
 };
 </script>

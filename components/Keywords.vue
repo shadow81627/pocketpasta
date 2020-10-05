@@ -18,15 +18,15 @@ export default {
       default: () => [],
     },
   },
-  computed: {
-    keywords() {
-      return this.tags.join(',');
-    },
-  },
   head() {
     return {
       meta: [{ hid: 'keywords', name: 'keywords', content: this.keywords }],
     };
+  },
+  computed: {
+    keywords() {
+      return this.tags.join(',');
+    },
   },
 };
 </script>

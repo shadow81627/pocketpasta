@@ -73,7 +73,7 @@
             hide-default-footer
             :items-per-page="-1"
           >
-            <template v-slot:default="props">
+            <template #default="props">
               <ul>
                 <li
                   v-for="item in props.items"
@@ -104,7 +104,7 @@
             hide-default-footer
             :items-per-page="-1"
           >
-            <template v-slot:default="props">
+            <template #default="props">
               <ol>
                 <li v-for="item in props.items" :key="item.text">
                   <v-card tile flat>
@@ -216,6 +216,38 @@ export default {
     },
   },
   data: () => ({ showDescription: false }),
+
+  head() {
+    const { src: image } = this.imageData || {};
+    return {
+      meta: [
+        {
+          skip: !image,
+          hid: 'og:image',
+          property: 'og:image',
+          content: image,
+        },
+        {
+          skip: !image,
+          hid: 'og:image:width',
+          property: 'og:image:width',
+          content: '640',
+        },
+        {
+          skip: !image,
+          hid: 'og:image:height',
+          property: 'og:image:height',
+          content: '360',
+        },
+      ],
+      script: [
+        {
+          json: this.linkData,
+          type: 'application/ld+json',
+        },
+      ],
+    };
+  },
   computed: {
     imageData() {
       function cloudinaryify(image) {
@@ -278,38 +310,6 @@ export default {
     Array.from(buttons).map((btn) =>
       btn.setAttribute('aria-label', 'rating-star'),
     );
-  },
-
-  head() {
-    const { src: image } = this.imageData || {};
-    return {
-      meta: [
-        {
-          skip: !image,
-          hid: 'og:image',
-          property: 'og:image',
-          content: image,
-        },
-        {
-          skip: !image,
-          hid: 'og:image:width',
-          property: 'og:image:width',
-          content: '640',
-        },
-        {
-          skip: !image,
-          hid: 'og:image:height',
-          property: 'og:image:height',
-          content: '360',
-        },
-      ],
-      script: [
-        {
-          json: this.linkData,
-          type: 'application/ld+json',
-        },
-      ],
-    };
   },
 };
 </script>

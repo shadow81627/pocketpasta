@@ -1,9 +1,9 @@
 <template>
   <v-dialog v-model="dialog" width="600" attach @change="$emit('close', false)">
-    <template v-slot:activator="{ on, attrs }">
+    <template #activator="{ on, attrs }">
       <slot v-bind="{ on, attrs }" name="activator">
         <v-tooltip bottom>
-          <template v-slot:activator="tooltip">
+          <template #activator="tooltip">
             <v-btn
               icon
               title="delete"

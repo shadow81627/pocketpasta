@@ -13,7 +13,7 @@
       :items-per-page="infinite ? total : limit"
       item-key="slug"
     >
-      <template v-slot:header>
+      <template #header>
         <list-header
           :headers="headers"
           :direction.sync="direction"
@@ -24,7 +24,7 @@
           :view.sync="view"
         />
       </template>
-      <template v-slot:default="{ items }">
+      <template #default="{ items }">
         <client-only v-if="infinite && items">
           <virtual-list
             data-key="slug"
@@ -55,7 +55,7 @@
         </v-row>
       </template>
 
-      <template v-slot:footer>
+      <template #footer>
         <v-row class="mt-2" align="center" justify="center">
           <v-col>
             <client-only>
@@ -121,6 +121,16 @@ export default {
       ],
     },
   },
+  data: () => ({
+    list: [],
+    total: null,
+    mdiSortAlphabeticalAscending,
+    mdiSortAlphabeticalDescending,
+    mdiSortVariant,
+    mdiMagnify,
+    mdiSelectGroup,
+    mdiArrowUpBold,
+  }),
   async fetch() {
     try {
       this.total = (this.search
@@ -172,16 +182,6 @@ export default {
   fetchOnServer() {
     return this.fetchOnServer;
   },
-  data: () => ({
-    list: [],
-    total: null,
-    mdiSortAlphabeticalAscending,
-    mdiSortAlphabeticalDescending,
-    mdiSortVariant,
-    mdiMagnify,
-    mdiSelectGroup,
-    mdiArrowUpBold,
-  }),
   computed: {
     itemComponent() {
       return process.browser ? ItemComponent : '';

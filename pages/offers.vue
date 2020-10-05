@@ -30,13 +30,13 @@ export default {
     Offers,
     PriceSummary,
   },
+  // fetchOnServer: false,
+  data: () => ({ list: [] }),
   async fetch() {
     const list = await this.$content('offers', { deep: true }).fetch();
     const groups = groupBy(list, 'dir');
     this.list = groups;
   },
-  // fetchOnServer: false,
-  data: () => ({ list: [] }),
   methods: {
     name(items) {
       const dir = head(items).dir;

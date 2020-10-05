@@ -4,7 +4,7 @@ const name = 'about';
 
 Feature(name);
 
-Scenario('Heading 1', async (I) => {
+Scenario('Heading 1', async ({ I }) => {
   I.amOnPage(`/${name}`);
   I.see('About PocketPasta', 'h1');
 

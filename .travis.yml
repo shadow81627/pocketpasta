@@ -10,10 +10,10 @@ cache: npm
 
 script:
   - npm run lint
-  - npm run test
   - npm run generate
   - npm run lhci:autorun
-  - npx semantic-release
+  - npm run test:e2e
+  - npm run semantic-release
 
 before_deploy:
   # Propose release version
@@ -35,7 +35,6 @@ deploy:
 
 after_deploy:
   - ./node_modules/.bin/sentry-cli releases deploys "$VERSION" new --env $SENTRY_ENVIRONMENT
-  - npm run test:e2e
 
 env:
   global:

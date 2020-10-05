@@ -104,6 +104,36 @@ export default {
     offers: { type: Object, default: () => ({}) },
     additionalProperty: { type: Array, default: () => [] },
   },
+  head() {
+    return {
+      meta: [
+        {
+          skip: !this.image,
+          hid: 'og:image',
+          property: 'og:image',
+          content: this.cloudinaryify(this.image),
+        },
+        {
+          skip: !this.image,
+          hid: 'og:image:width',
+          property: 'og:image:width',
+          content: '540',
+        },
+        {
+          skip: !this.image,
+          hid: 'og:image:height',
+          property: 'og:image:height',
+          content: '540',
+        },
+      ],
+      script: [
+        {
+          json: this.linkData,
+          type: 'application/ld+json',
+        },
+      ],
+    };
+  },
   computed: {
     nutritionData() {
       return (
@@ -155,36 +185,6 @@ export default {
         return image;
       }
     },
-  },
-  head() {
-    return {
-      meta: [
-        {
-          skip: !this.image,
-          hid: 'og:image',
-          property: 'og:image',
-          content: this.cloudinaryify(this.image),
-        },
-        {
-          skip: !this.image,
-          hid: 'og:image:width',
-          property: 'og:image:width',
-          content: '540',
-        },
-        {
-          skip: !this.image,
-          hid: 'og:image:height',
-          property: 'og:image:height',
-          content: '540',
-        },
-      ],
-      script: [
-        {
-          json: this.linkData,
-          type: 'application/ld+json',
-        },
-      ],
-    };
   },
 };
 </script>
