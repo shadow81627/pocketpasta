@@ -1,3 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`ReadMore renders properly 1`] = `"<span><span></span> <span style=\\"display: none;\\"><a href=\\"#\\">Read more</a> <a href=\\"#\\" style=\\"display: none;\\">Read less</a></span></span>"`;
