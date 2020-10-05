@@ -79,7 +79,7 @@
     "cheerio": "1.0.0-rc.3",
     "codeceptjs": "3.0.0",
     "codeceptjs-resemblehelper": "1.9.2",
-    "codecov": "3.7.2",
+    "codecov": "3.8.0",
     "commitizen": "4.2.1",
     "cz-conventional-changelog": "3.3.0",
     "deep-sort-object": "1.0.2",
