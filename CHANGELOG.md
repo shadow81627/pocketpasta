@@ -1,5 +1,11 @@
 # Releases
 
+## [0.47.0](https://github.com/shadow81627/pocketpasta/compare/v0.46.52...v0.47.0) (2020-10-05)
+
+### Features
+
+- **shopping:** sync with couchdb ([#1603](https://github.com/shadow81627/pocketpasta/issues/1603)) ([909fa18](https://github.com/shadow81627/pocketpasta/commit/909fa1808a90e8006c4940cd37d05e9bd4c01d9f)), closes [#1600](https://github.com/shadow81627/pocketpasta/issues/1600)
+
 ## [0.46.52](https://github.com/shadow81627/pocketpasta/compare/v0.46.51...v0.46.52) (2020-09-27)
 
 ### Bug Fixes
