@@ -1,3 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`ItemComponent renders properly 1`] = `"<card-stub></card-stub>"`;

@@ -10,11 +10,10 @@ cache: npm
 
 script:
   - npm run lint
-  - npm run test
   - npm run generate
   - npm run lhci:autorun
   - npm run test:e2e
-  - npx semantic-release
+  - npm semantic-release
 
 before_deploy:
   # Propose release version
