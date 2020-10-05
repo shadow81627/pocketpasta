@@ -15,6 +15,7 @@
 [![Bors enabled](https://bors.tech/images/badge_small.svg)](https://app.bors.tech/repositories/3)
 [![Total alerts](https://img.shields.io/lgtm/alerts/g/shadow81627/pocketpasta.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/shadow81627/pocketpasta/alerts/)
 [![Language grade: JavaScript](https://img.shields.io/lgtm/grade/javascript/g/shadow81627/pocketpasta.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/shadow81627/pocketpasta/context:javascript)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Fshadow81627%2Fpocketpasta)
 
 > PocketPasta is a collection of my demo apps that I build to practice my skills.
 
