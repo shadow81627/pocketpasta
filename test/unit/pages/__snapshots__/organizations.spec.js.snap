@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`organizations page renders properly 1`] = `
-"<v-container-stub tag=\\"div\\">
-  <list-stub collection=\\"organizations\\" heading=\\"Organizations\\" layout=\\"list\\" fetchonserver=\\"true\\" defaultlimit=\\"-1\\" infinite=\\"true\\" headers=\\"[object Object],[object Object],[object Object]\\"></list-stub>
-</v-container-stub>"
-`;

@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`Last Modified renders properly 1`] = `
-"<span><v-col-stub cols=\\"auto\\" tag=\\"div\\"><v-card-stub loaderheight=\\"4\\" tag=\\"div\\" color=\\"transparent\\" tile=\\"true\\" flat=\\"true\\"><v-card-text-stub class=\\"py-2\\"><span>Last modified: </span> <span>Invalid Date</span></v-card-text-stub>
-</v-card-stub>
-</v-col-stub></span>"
-`;
