@@ -1,5 +1,11 @@
 # Releases
 
+## [0.47.1](https://github.com/shadow81627/pocketpasta/compare/v0.47.0...v0.47.1) (2020-10-06)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxtjs/pwa to v3.1.0 ([191a5b6](https://github.com/shadow81627/pocketpasta/commit/191a5b638a29f00934da26e40185393ee9639db9))
+
 ## [0.47.0](https://github.com/shadow81627/pocketpasta/compare/v0.46.52...v0.47.0) (2020-10-05)
 
 ### Features
