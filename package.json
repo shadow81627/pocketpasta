@@ -31,6 +31,8 @@
     "git-cz": "git-cz",
     "now-build": "npm run generate",
     "stylelint:fix": "npx stylelint **/*.css !**/node_modules/** !**/dist/** !**/coverage/** --fix",
+    "crawl": "node scrape/crawl",
+    "openfoodfacts": "node scrape/openfoodfacts_parse_csv",
     "scrape": "node scrape && npm run format",
     "scrape:new": "node scrape --only-new && npm run format",
     "scrape:dry": "node scrape --no-scrape && npm run format"
@@ -81,6 +83,7 @@
     "codeceptjs-resemblehelper": "1.9.2",
     "codecov": "3.8.0",
     "commitizen": "4.2.1",
+    "csv-parser": "2.3.3",
     "cz-conventional-changelog": "3.3.0",
     "deep-sort-object": "1.0.2",
     "deepmerge": "4.2.2",
