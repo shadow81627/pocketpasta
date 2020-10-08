@@ -2,14 +2,15 @@
   "@type": "Recipe",
   "aggregateRating": {
     "@type": "AggregateRating",
-    "ratingCount": "47",
-    "ratingValue": "4.94"
+    "ratingCount": "50",
+    "ratingValue": "4.95"
   },
   "author": {
     "@type": "Person",
     "name": "Beth - Budget Bytes"
   },
   "cookTime": "PT25M",
+  "createdAt": "2020-10-08T06:00:15.938Z",
   "datePublished": "2016-12-15T11:09:07+00:00",
   "description": "These Vegetarian French Dip Sandwiches are fast, easy, and feature a salty-sweet herb infused vegetarian au jus for dipping. ",
   "image": [
@@ -69,5 +70,6 @@
   ],
   "recipeYield": "4",
   "sameAs": ["https://www.budgetbytes.com/vegetarian-french-dip-sandwiches/"],
-  "totalTime": "PT35M"
+  "totalTime": "PT35M",
+  "updatedAt": "2020-10-08T06:00:15.938Z"
 }

@@ -2,14 +2,15 @@
   "@type": "Recipe",
   "aggregateRating": {
     "@type": "AggregateRating",
-    "ratingCount": "133",
-    "ratingValue": "4.8"
+    "ratingCount": "139",
+    "ratingValue": "4.81"
   },
   "author": {
     "@type": "Person",
     "name": "Beth - Budget Bytes"
   },
   "cookTime": "PT30M",
+  "createdAt": "2020-10-08T05:26:02.164Z",
   "datePublished": "2019-01-23T14:29:37+00:00",
   "description": "This super easy, ultra creamy, and heavily spiced Cauliflower and Chickpea Masala will be your new favorite weeknight dinner! So much flavor, so little effort. ",
   "image": [
@@ -77,6 +78,7 @@
     "https://www.budgetbytes.com/easy-cauliflower-and-chickpea-masala/"
   ],
   "totalTime": "PT40M",
+  "updatedAt": "2020-10-08T05:26:02.164Z",
   "video": {
     "@type": "VideoObject",
     "contentUrl": "https://embed.mediavine.com/videos/k17fndc84lnhahm57nfc",

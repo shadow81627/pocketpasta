@@ -2,7 +2,7 @@
   "@type": "Recipe",
   "aggregateRating": {
     "@type": "AggregateRating",
-    "ratingCount": "132",
+    "ratingCount": "133",
     "ratingValue": "4.91"
   },
   "author": {
@@ -10,6 +10,7 @@
     "name": "Beth - Budget Bytes"
   },
   "cookTime": "PT35M",
+  "createdAt": "2020-10-08T05:45:10.340Z",
   "datePublished": "2017-02-01T14:25:39+00:00",
   "description": "This Roasted Cauliflower Salad combines sweet roasted red onions, spiced chickpeas, tender cauliflower, and a tangy lemon tahini dressing.",
   "image": [
@@ -81,6 +82,7 @@
     "https://www.budgetbytes.com/roasted-cauliflower-salad-lemon-tahini-dressing/"
   ],
   "totalTime": "PT50M",
+  "updatedAt": "2020-10-08T05:45:10.340Z",
   "video": {
     "@type": "VideoObject",
     "contentUrl": "https://embed.mediavine.com/videos/awtipjnz6z0hobtidvl4",

@@ -2,7 +2,7 @@
   "@type": "Recipe",
   "aggregateRating": {
     "@type": "AggregateRating",
-    "ratingCount": "65",
+    "ratingCount": "66",
     "ratingValue": "4.64"
   },
   "author": {
@@ -10,6 +10,7 @@
     "name": "Beth - Budget Bytes"
   },
   "cookTime": "PT20M",
+  "createdAt": "2020-10-08T05:34:56.623Z",
   "datePublished": "2015-09-05T11:24:58+00:00",
   "description": "Toss that boxed mix and make this fast and Easy Homemade Cornbread, which makes a great side dish for breakfast, lunch, or dinner! ",
   "image": [
@@ -66,6 +67,7 @@
   "recipeYield": "8",
   "sameAs": ["https://www.budgetbytes.com/everyday-cornbread/"],
   "totalTime": "PT30M",
+  "updatedAt": "2020-10-08T05:34:56.623Z",
   "video": {
     "@type": "VideoObject",
     "contentUrl": "https://embed.mediavine.com/videos/e1am122yxooxeu7qehow",

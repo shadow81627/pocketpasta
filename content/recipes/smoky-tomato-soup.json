@@ -10,6 +10,7 @@
     "name": "Beth - Budget Bytes"
   },
   "cookTime": "PT20M",
+  "createdAt": "2020-10-08T05:50:16.372Z",
   "datePublished": "2015-04-19T18:06:28+00:00",
   "description": "This rustic Smoky Tomato Soup has chunks of fire roasted tomatoes, smoked paprika, and earthy cumin. It's a fast and flavorful side to your weeknight meal.",
   "image": [
@@ -58,5 +59,6 @@
   ],
   "recipeYield": "4",
   "sameAs": ["https://www.budgetbytes.com/smoky-tomato-soup/"],
-  "totalTime": "PT30M"
+  "totalTime": "PT30M",
+  "updatedAt": "2020-10-08T05:50:16.372Z"
 }

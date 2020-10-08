@@ -10,6 +10,7 @@
     "name": "Beth - Budget Bytes"
   },
   "cookTime": "PT45M",
+  "createdAt": "2020-10-08T05:54:56.838Z",
   "datePublished": "2016-10-01T15:27:31+00:00",
   "description": "Tomato Herb Rice with White Beans and Spinach is a hearty and flavorful vegan dinner that will be loved by meat eaters and vegetarians alike.",
   "image": [
@@ -80,5 +81,6 @@
   "sameAs": [
     "https://www.budgetbytes.com/tomato-herb-rice-with-white-beans-and-spinach/"
   ],
-  "totalTime": "PT55M"
+  "totalTime": "PT55M",
+  "updatedAt": "2020-10-08T05:54:56.838Z"
 }

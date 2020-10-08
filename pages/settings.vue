@@ -98,6 +98,17 @@ export default {
     LangSwitcher,
     setting,
   },
+  head() {
+    return {
+      link: [
+        {
+          hid: 'canonical',
+          rel: 'canonical',
+          href: 'https://pocketpasta.com/settings',
+        },
+      ],
+    };
+  },
   computed: {
     dbRemote: {
       get() {
@@ -123,17 +134,6 @@ export default {
         this.$warehouse.set('dbPassword', value);
       },
     },
-  },
-  head() {
-    return {
-      link: [
-        {
-          hid: 'canonical',
-          rel: 'canonical',
-          href: 'https://pocketpasta.com/settings',
-        },
-      ],
-    };
   },
 };
 </script>

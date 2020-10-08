@@ -2,14 +2,15 @@
   "@type": "Recipe",
   "aggregateRating": {
     "@type": "AggregateRating",
-    "ratingCount": "99",
-    "ratingValue": "4.9"
+    "ratingCount": "102",
+    "ratingValue": "4.91"
   },
   "author": {
     "@type": "Person",
     "name": "Beth - Budget Bytes"
   },
   "cookTime": "PT30M",
+  "createdAt": "2020-10-08T05:24:12.574Z",
   "datePublished": "2013-04-11T19:32:00+00:00",
   "description": "These hearty vegan Black Bean and Avocado Enchiladas are stuffed with fresh ingredients and drenched in a homemade sauce for big flavor in every bite. ",
   "image": [
@@ -72,5 +73,6 @@
   ],
   "recipeYield": "5",
   "sameAs": ["https://www.budgetbytes.com/black-bean-avocado-enchiladas/"],
-  "totalTime": "PT50M"
+  "totalTime": "PT50M",
+  "updatedAt": "2020-10-08T05:24:12.574Z"
 }

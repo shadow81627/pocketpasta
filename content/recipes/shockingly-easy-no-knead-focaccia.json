@@ -4,7 +4,8 @@
     "@type": "Person",
     "name": "Sarah Jampel"
   },
-  "dateCreated": "2020-06-24T10:21:00.000-04:00",
+  "createdAt": "2020-10-08T05:48:10.394Z",
+  "dateCreated": "2020-10-07T11:31:00.000-04:00",
   "datePublished": "2020-02-22T04:00:00.000-05:00",
   "description": "If you want to fill your kitchen with the smell of fresh-baked bread but you're nervous about shaping a boule or working with a starter, focaccia is the best place to begin. We're not exaggerating when we say it requires zero skill and provides ample opportunity to be amazed by yourself and by the wonders of yeast. ",
   "image": "https://assets.bonappetit.com/photos/5e504706e23a4f0008694627/16:9/w_1000,c_limit/BBaking_WEEK3_Focaccia2.jpg",
@@ -65,5 +66,6 @@
     }
   ],
   "recipeYield": "10–12 servings",
-  "sameAs": ["https://www.bonappetit.com/recipe/easy-no-knead-focaccia"]
+  "sameAs": ["https://www.bonappetit.com/recipe/easy-no-knead-focaccia"],
+  "updatedAt": "2020-10-08T05:48:10.394Z"
 }

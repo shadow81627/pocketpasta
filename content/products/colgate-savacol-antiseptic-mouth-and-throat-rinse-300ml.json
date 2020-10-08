@@ -4,14 +4,15 @@
   "aggregateRating": {
     "@context": "http://schema.org",
     "@type": "AggregateRating",
-    "ratingCount": 5,
-    "ratingValue": 4.6
+    "ratingCount": 9,
+    "ratingValue": 5
   },
   "brand": {
     "@context": "http://schema.org",
     "@type": "Organization",
     "name": "colgate"
   },
+  "createdAt": "2020-10-08T05:12:06.014Z",
   "description": "Colgate® Savacol® Mouthwash Mint is an antiseptic mouth & throat rinse.  Colgate® Savacol® Original is an antiseptic mouth & throat rinse clinically proven to assist in the treatment of gingivitis, with a mild mind flavour. The antibacterial ingredient in Colgate® Savacol® mouthwash works to reduce the formation of plaque and aid the treatment of gingivitis.  Reduces dental plaque  May relieve discomfort of mouth ulcers.  Aids in the treatment of gingivitis  Mint flavour  This product may not be right for you. Read the label before purchase.",
   "gtin13": "9300632073375",
   "image": "https://cdn0.woolworths.media/content/wowproductimages/large/342970.jpg",
@@ -134,10 +135,173 @@
         "ratingValue": 5,
         "worstRating": 1
       }
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "Review",
+      "author": {
+        "@context": "http://schema.org",
+        "@type": "Person",
+        "name": "NicoleBMLA"
+      },
+      "datePublished": "2020-07-08T21:45:00.0000000+10:00",
+      "description": "Great for tooth aches or after dental surgery",
+      "reviewRating": {
+        "@context": "http://schema.org",
+        "@type": "Rating",
+        "bestRating": 5,
+        "ratingValue": 5,
+        "worstRating": 1
+      }
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "Review",
+      "author": {
+        "@context": "http://schema.org",
+        "@type": "Person",
+        "name": "Tabbycat"
+      },
+      "datePublished": "2020-07-04T06:45:00.0000000+10:00",
+      "description": "Very helpful product for my throat. Strengthens a sore throat.",
+      "reviewRating": {
+        "@context": "http://schema.org",
+        "@type": "Rating",
+        "bestRating": 5,
+        "ratingValue": 5,
+        "worstRating": 1
+      }
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "Review",
+      "author": {
+        "@context": "http://schema.org",
+        "@type": "Person",
+        "name": "Melinda J"
+      },
+      "datePublished": "2020-06-19T23:45:00.0000000+10:00",
+      "description": "Only product that helps get rid of mouth ulcers fast!",
+      "reviewRating": {
+        "@context": "http://schema.org",
+        "@type": "Rating",
+        "bestRating": 5,
+        "ratingValue": 5,
+        "worstRating": 1
+      }
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "Review",
+      "author": {
+        "@context": "http://schema.org",
+        "@type": "Person",
+        "name": "zigi"
+      },
+      "datePublished": "2020-06-15T13:15:00.0000000+10:00",
+      "description": "Terrific product for keeping gums healthy, but not for daily use as it can stain the teeth.",
+      "reviewRating": {
+        "@context": "http://schema.org",
+        "@type": "Rating",
+        "bestRating": 5,
+        "ratingValue": 5,
+        "worstRating": 1
+      }
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "Review",
+      "author": {
+        "@context": "http://schema.org",
+        "@type": "Person",
+        "name": "Bohm"
+      },
+      "datePublished": "2020-05-31T01:15:00.0000000+10:00",
+      "description": "Best product on market for reducing decay and gum disease",
+      "reviewRating": {
+        "@context": "http://schema.org",
+        "@type": "Rating",
+        "bestRating": 5,
+        "ratingValue": 5,
+        "worstRating": 1
+      }
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "Review",
+      "author": {
+        "@context": "http://schema.org",
+        "@type": "Person",
+        "name": "Adio"
+      },
+      "datePublished": "2019-12-29T02:30:00.0000000+11:00",
+      "description": "Years ago a dentist recommended chlorhexidine containing mouthwashes for me due to gingivitis I had at the time. They said it'd help it and help prevent it so I've always looked for that ingredient since. I've found the Savacol to be some of the easiest to use because that ingredient can make them feel a little tough on the mouth but they really work. If your mouth is more sensitive then try the alcohol free version but in either case Savacol is my go-to.",
+      "reviewRating": {
+        "@context": "http://schema.org",
+        "@type": "Rating",
+        "bestRating": 5,
+        "ratingValue": 5,
+        "worstRating": 1
+      }
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "Review",
+      "author": {
+        "@context": "http://schema.org",
+        "@type": "Person",
+        "name": "Brischick"
+      },
+      "datePublished": "2019-12-19T22:30:00.0000000+11:00",
+      "description": "Great product and recommended by dentist",
+      "reviewRating": {
+        "@context": "http://schema.org",
+        "@type": "Rating",
+        "bestRating": 5,
+        "ratingValue": 5,
+        "worstRating": 1
+      }
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "Review",
+      "author": {
+        "@context": "http://schema.org",
+        "@type": "Person",
+        "name": "7777"
+      },
+      "datePublished": "2019-12-16T19:31:00.0000000+11:00",
+      "description": "It works. Actually makes your mouth feel clean",
+      "reviewRating": {
+        "@context": "http://schema.org",
+        "@type": "Rating",
+        "bestRating": 5,
+        "ratingValue": 5,
+        "worstRating": 1
+      }
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "Review",
+      "author": {
+        "@context": "http://schema.org",
+        "@type": "Person",
+        "name": "Brons"
+      },
+      "datePublished": "2019-11-01T00:45:00.0000000+11:00",
+      "description": "This is great if you have sore gums it was recommended by my dentist",
+      "reviewRating": {
+        "@context": "http://schema.org",
+        "@type": "Rating",
+        "bestRating": 5,
+        "ratingValue": 5,
+        "worstRating": 1
+      }
     }
   ],
   "sameAs": [
     "https://www.woolworths.com.au/shop/productdetails/342970/colgate-savacol-antiseptic-mouth-throat-rinse"
   ],
-  "sku": "342970"
+  "sku": "342970",
+  "updatedAt": "2020-10-08T05:12:06.014Z"
 }

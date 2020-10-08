@@ -10,6 +10,7 @@
     "name": "Beth - Budget Bytes"
   },
   "cookTime": "PT20M",
+  "createdAt": "2020-10-08T05:48:43.466Z",
   "datePublished": "2017-04-10T15:47:44+00:00",
   "description": "With just a few ingredients you can make these easy and delicious Mushroom Broccoli Stir Fry Noodles for a fast weeknight dinner.",
   "image": [
@@ -72,6 +73,7 @@
     "https://www.budgetbytes.com/simple-mushroom-broccoli-stir-fry-noodles/"
   ],
   "totalTime": "PT25M",
+  "updatedAt": "2020-10-08T05:48:43.466Z",
   "video": {
     "@type": "VideoObject",
     "contentUrl": "https://embed.mediavine.com/videos/uwu8ei0mqdyveb6fy7of",

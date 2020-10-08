@@ -10,6 +10,7 @@
     "name": "Beth - Budget Bytes"
   },
   "cookTime": "PT30M",
+  "createdAt": "2020-10-08T05:54:25.015Z",
   "datePublished": "2016-02-18T16:55:38+00:00",
   "description": "These Oven Baked Thick Cut Garlic Parmesan Fries are robust and flavorful enough to be a meal of their own and simple enough to serve as a side dish.",
   "image": [
@@ -63,5 +64,6 @@
   "sameAs": [
     "https://www.budgetbytes.com/thick-cut-garlic-parmesan-oven-fries/"
   ],
-  "totalTime": "PT40M"
+  "totalTime": "PT40M",
+  "updatedAt": "2020-10-08T05:54:25.015Z"
 }

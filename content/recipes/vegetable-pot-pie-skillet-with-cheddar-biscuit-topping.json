@@ -2,14 +2,15 @@
   "@type": "Recipe",
   "aggregateRating": {
     "@type": "AggregateRating",
-    "ratingCount": "72",
-    "ratingValue": "4.71"
+    "ratingCount": "76",
+    "ratingValue": "4.72"
   },
   "author": {
     "@type": "Person",
     "name": "Beth - Budget Bytes"
   },
   "cookTime": "PT35M",
+  "createdAt": "2020-10-08T05:59:34.849Z",
   "datePublished": "2017-12-11T09:28:37+00:00",
   "description": "This rich and comforting Vegetable Pot Pie Skillet is made fast and easy for weeknight dinners thanks to frozen vegetables. Comfort food all in one skillet! ",
   "image": [
@@ -80,6 +81,7 @@
     "https://www.budgetbytes.com/vegetable-pot-pie-skillet-cheddar-biscuit-topping/"
   ],
   "totalTime": "PT55M",
+  "updatedAt": "2020-10-08T05:59:34.849Z",
   "video": {
     "@type": "VideoObject",
     "contentUrl": "https://embed.mediavine.com/videos/adbnefcf9xoavfo7kdky",

@@ -19,6 +19,7 @@
     "@type": "Organization",
     "name": "taylors of harrogate"
   },
+  "createdAt": "2020-10-08T05:14:30.427Z",
   "description": "Let's have a proper brew The English are a nation of tea drinkers - and that's particularly true of Yorkshire. Famous for its rolling countryside and charming tearooms, it's a place where they won't settle for anything less than a really satisfying proper brew.Our family business started blending tea in Yorkshire over 125 years ago. We buy teas from the top tea gardens and estates in East Africa, putting the best quality into our tea bags so that you get the best flavour out. Our experts taste up to 1000 teas every day before selecting the handful good enough for our blend. The high standards we live by go beyond the quality of our teas. We trade with a conscience, visiting our suppliers regularly to build long-lasting partnerships, doing business in a way that respects people and planet. ",
   "gtin13": "615357121423",
   "image": "https://cdn0.woolworths.media/content/wowproductimages/large/750176.jpg",
@@ -71,5 +72,6 @@
     "https://www.woolworths.com.au/shop/productdetails/750176/taylors-of-harrogate-yorkshire-tea-bags",
     "https://shop.coles.com.au/a/caboolture/product/taylors-harrogates-tea-yorkshire-100-pack"
   ],
-  "sku": "750176"
+  "sku": "750176",
+  "updatedAt": "2020-10-08T05:14:30.427Z"
 }

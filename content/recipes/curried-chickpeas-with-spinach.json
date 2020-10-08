@@ -10,6 +10,7 @@
     "name": "Beth - Budget Bytes"
   },
   "cookTime": "PT20M",
+  "createdAt": "2020-10-08T05:33:20.512Z",
   "datePublished": "2013-12-07T14:01:36+00:00",
   "description": "These super fast Curried Chickpeas with spinach are packed with flavor and nutrients, vegan, gluten-free, and filling! Plus they freeze great!",
   "image": [
@@ -58,6 +59,7 @@
   "recipeYield": "4",
   "sameAs": ["https://www.budgetbytes.com/curried-chickpeas-spinach/"],
   "totalTime": "PT25M",
+  "updatedAt": "2020-10-08T05:33:20.512Z",
   "video": {
     "@type": "VideoObject",
     "contentUrl": "https://embed.mediavine.com/videos/dmzomdvmndw7ylbnvvkm",

@@ -10,6 +10,7 @@
     "name": "Beth - Budget Bytes"
   },
   "cookTime": "PT20M",
+  "createdAt": "2020-10-08T05:49:14.757Z",
   "datePublished": "2020-02-05T10:53:04+00:00",
   "description": "Adding just a few ingredients to your rice can really make your meal pop. Try this Simple Sesame Rice with any of your Southeast Asian inspired meals.",
   "image": [
@@ -60,5 +61,6 @@
   ],
   "recipeYield": "4",
   "sameAs": ["https://www.budgetbytes.com/simple-sesame-rice/"],
-  "totalTime": "PT25M"
+  "totalTime": "PT25M",
+  "updatedAt": "2020-10-08T05:49:14.757Z"
 }

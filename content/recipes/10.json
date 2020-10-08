@@ -3,7 +3,7 @@
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "4.9",
-    "reviewCount": "440"
+    "reviewCount": "450"
   },
   "author": {
     "@type": "Person",
@@ -11,6 +11,7 @@
   },
   "cookingMethod": "Baking",
   "cookTime": "PT25M",
+  "createdAt": "2020-10-08T05:16:27.181Z",
   "datePublished": "2020-01-01",
   "description": "Even if you've never made homemade bread or worked with yeast before, this homemade artisan bread is for you. Watch the video tutorial above and review the recipe instructions and recipe notes prior to beginning. If you’re new to working with yeast, reference my Baking with Yeast Guide for answers to common yeast FAQs.",
   "image": [
@@ -304,11 +305,116 @@
         "@type": "Rating",
         "ratingValue": "5"
       }
+    },
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Ale"
+      },
+      "datePublished": "2020-08-09",
+      "reviewBody": "Loved the recipe! Easy to execute and incredible results. I do have a comment: I lost the crispy crust once the bread cooled off ( it came out perfect out of the oven and we devoured one loaf!).. Any ideas why? Thanks!",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5"
+      }
+    },
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Ria"
+      },
+      "datePublished": "2020-08-11",
+      "reviewBody": "I made this today with thyme and rosemary and IT IS THE BEST! \r\n\r\nMy only problem with it is my dough’s a little wet than what it shown in the pictures so next time I might add a little more flour.",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5"
+      }
+    },
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "M"
+      },
+      "datePublished": "2020-08-19",
+      "reviewBody": "This recipe is great. I've cooked it about 3 times, and my bread never has as many air bubbles as your pictures do. More than normal bread, but no big ones. I refridgerated the bread for about 27 hours. Do you have any suggestions? :)",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5"
+      }
+    },
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Caleb"
+      },
+      "datePublished": "2020-08-21",
+      "reviewBody": "great recipe! My 1st time making bread, but I think that 2 teaspoons of salt is just way too much. Made my 1st loaf extremely salty. To the point of inedibility. But with that in mind I made a 2nd loaf with less salt and it turned out amazing!",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4"
+      }
+    },
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Harvey"
+      },
+      "datePublished": "2020-08-19",
+      "reviewBody": "Absolutely terrific recipe!  I left it in the refrigerator for about 18 hrs as suggested.  The loaves came out perfectly with beautiful texture and taste.  Thanks so much Sally!",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5"
+      }
+    },
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Christine"
+      },
+      "datePublished": "2020-08-20",
+      "reviewBody": "I have used this recipe quite a few times and now my family cannot have store bought bread! Next time I want to try baking this on my lodge cast iron skillet. Does the temperature or time in the oven have to change if I bake the bread in a skillet?\r\nThank you!",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5"
+      }
+    },
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "caro"
+      },
+      "datePublished": "2020-08-20",
+      "reviewBody": "everything was perfect except it was weirdly salty? I used the amount specified so not sure why this is!",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "4"
+      }
+    },
+    {
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": "Penny"
+      },
+      "datePublished": "2020-08-24",
+      "reviewBody": "Just let my first attempt cool enough to slice. Thank you. I've been dreaming about this bread for weeks.",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5"
+      }
     }
   ],
   "sameAs": ["https://sallysbakingaddiction.com/homemade-artisan-bread/"],
   "suitableForDiet": "https://schema.org/VeganDiet",
   "totalTime": "PT4H25M",
+  "updatedAt": "2020-10-08T05:16:27.181Z",
   "url": "https://sallysbakingaddiction.com/homemade-artisan-bread/",
   "video": {
     "@context": "http://schema.org",

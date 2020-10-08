@@ -2,14 +2,15 @@
   "@type": "Recipe",
   "aggregateRating": {
     "@type": "AggregateRating",
-    "ratingCount": "109",
-    "ratingValue": "4.79"
+    "ratingCount": "111",
+    "ratingValue": "4.8"
   },
   "author": {
     "@type": "Person",
     "name": "Beth - Budget Bytes"
   },
   "cookTime": "PT40M",
+  "createdAt": "2020-10-08T05:51:47.576Z",
   "datePublished": "2015-06-04T18:01:15+00:00",
   "description": "This one pot Spanish Chickpeas and rice has big flavor thanks to liberal dose of spices, artichoke hearts, and fresh lemon. ",
   "image": [
@@ -74,6 +75,7 @@
   "recipeYield": "4",
   "sameAs": ["https://www.budgetbytes.com/spanish-chickpeas-and-rice/"],
   "totalTime": "PT50M",
+  "updatedAt": "2020-10-08T05:51:47.576Z",
   "video": {
     "@type": "VideoObject",
     "contentUrl": "https://embed.mediavine.com/videos/qrbyoq8ktvtpi2k4ha06",

@@ -2,14 +2,15 @@
   "@type": "Recipe",
   "aggregateRating": {
     "@type": "AggregateRating",
-    "ratingCount": "65",
-    "ratingValue": "4.8"
+    "ratingCount": "67",
+    "ratingValue": "4.81"
   },
   "author": {
     "@type": "Person",
     "name": "Beth - Budget Bytes"
   },
   "cookTime": "PT20M",
+  "createdAt": "2020-10-08T05:43:06.008Z",
   "datePublished": "2015-06-23T12:54:22+00:00",
   "description": "This smoky, sweet, and creamy One Pot Roasted Red Pepper Pasta cooks in one single pot and can be on the table in about 30 minutes. ",
   "image": [
@@ -68,6 +69,7 @@
   "recipeYield": "6",
   "sameAs": ["https://www.budgetbytes.com/one-pot-roasted-red-pepper-pasta/"],
   "totalTime": "PT30M",
+  "updatedAt": "2020-10-08T05:43:06.008Z",
   "video": {
     "@type": "VideoObject",
     "contentUrl": "https://embed.mediavine.com/videos/sgyd0wpsc3lzccvxvkxr",

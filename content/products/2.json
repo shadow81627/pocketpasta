@@ -47,6 +47,7 @@
     "@type": "Organization",
     "name": "san remo"
   },
+  "createdAt": "2020-10-08T05:10:07.574Z",
   "description": "San Remo Spaghetti contains no artificial colourings, flavourings or preservatives. Cooks in 12 minutes.",
   "gtin13": "9310155100434",
   "image": "https://cdn0.woolworths.media/content/wowproductimages/large/043974.jpg",
@@ -99,5 +100,6 @@
     "https://www.woolworths.com.au/shop/productdetails/43974/san-remo-spaghetti-pasta-no-5",
     "https://shop.coles.com.au/a/a-national/product/san-remo-pasta-spag-no-5-standard"
   ],
-  "sku": "43974"
+  "sku": "43974",
+  "updatedAt": "2020-10-08T05:10:07.574Z"
 }

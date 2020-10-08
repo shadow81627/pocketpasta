@@ -10,6 +10,7 @@
     "name": "Beth - Budget Bytes"
   },
   "cookTime": "PT15M",
+  "createdAt": "2020-10-08T05:55:31.603Z",
   "datePublished": "2019-06-29T16:53:30+00:00",
   "description": "This Tomato Mozzarella Pasta Salad with homemade Parmesan Balsamic Vinaigrette is the perfect light and fresh summer meal. Perfect for potlucks!",
   "image": [
@@ -72,6 +73,7 @@
   "recipeYield": "6",
   "sameAs": ["https://www.budgetbytes.com/tomato-mozzarella-pasta-salad/"],
   "totalTime": "PT25M",
+  "updatedAt": "2020-10-08T05:55:31.603Z",
   "video": {
     "@type": "VideoObject",
     "contentUrl": "https://embed.mediavine.com/videos/f5bq487k55a7nanxknph",

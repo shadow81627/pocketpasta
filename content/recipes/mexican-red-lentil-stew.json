@@ -2,7 +2,7 @@
   "@type": "Recipe",
   "aggregateRating": {
     "@type": "AggregateRating",
-    "ratingCount": "78",
+    "ratingCount": "80",
     "ratingValue": "4.89"
   },
   "author": {
@@ -10,6 +10,7 @@
     "name": "Adapted from Andrea Meyers"
   },
   "cookTime": "PT40M",
+  "createdAt": "2020-10-08T05:41:29.944Z",
   "datePublished": "2009-12-19T15:20:00+00:00",
   "description": "Smoky roasted tomatoes, fresh lime juice, and a handful of potent spices make this Mexican Red Lentil Stew anything but ordinary.",
   "image": [
@@ -19,6 +20,16 @@
     "https://www.budgetbytes.com/wp-content/uploads/2009/12/Mexican-Red-Lentil-Stew-above-1-480x270.jpg"
   ],
   "name": "Mexican Red Lentil Stew",
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "calories": "268.64 kcal",
+    "carbohydrateContent": "46.67 g",
+    "fatContent": "3.41 g",
+    "fiberContent": "8.29 g",
+    "proteinContent": "14.91 g",
+    "servingSize": "1.5 Cups",
+    "sodiumContent": "908.99 mg"
+  },
   "prepTime": "PT10M",
   "recipeIngredient": [
     "2 cups dry red lentils ($3.46*)",
@@ -63,5 +74,6 @@
   ],
   "recipeYield": "7",
   "sameAs": ["https://www.budgetbytes.com/mexican-lentil-stew/"],
-  "totalTime": "PT50M"
+  "totalTime": "PT50M",
+  "updatedAt": "2020-10-08T05:41:29.944Z"
 }

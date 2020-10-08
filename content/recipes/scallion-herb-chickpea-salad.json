@@ -2,13 +2,14 @@
   "@type": "Recipe",
   "aggregateRating": {
     "@type": "AggregateRating",
-    "ratingCount": "32",
+    "ratingCount": "33",
     "ratingValue": "4.97"
   },
   "author": {
     "@type": "Person",
     "name": "Beth - Budget Bytes"
   },
+  "createdAt": "2020-10-08T05:46:10.838Z",
   "datePublished": "2019-03-10T15:39:12+00:00",
   "description": "Light, bright, and full of spring flavors, this Scallion Herb Chickpea Salad will keep you full all afternoon. Serve as a sandwich, wrap, or salad! ",
   "image": [
@@ -19,6 +20,16 @@
   ],
   "keywords": "cold lunch, Hot Sandwich, meal prep",
   "name": "Scallion Herb Chickpea Salad",
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "calories": "415.85 kcal",
+    "carbohydrateContent": "49.5 g",
+    "fatContent": "19 g",
+    "fiberContent": "18.9 g",
+    "proteinContent": "17.7 g",
+    "servingSize": "1.5 Cups",
+    "sodiumContent": "702.9 mg"
+  },
   "prepTime": "PT10M",
   "recipeIngredient": [
     "1 avocado ($0.79)",
@@ -47,6 +58,7 @@
   "recipeYield": "2",
   "sameAs": ["https://www.budgetbytes.com/scallion-herb-chickpea-salad/"],
   "totalTime": "PT10M",
+  "updatedAt": "2020-10-08T05:46:10.838Z",
   "video": {
     "@type": "VideoObject",
     "contentUrl": "https://embed.mediavine.com/videos/izufvmegtioncmlnxblh",

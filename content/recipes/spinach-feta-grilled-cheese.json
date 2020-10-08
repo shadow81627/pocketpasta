@@ -10,6 +10,7 @@
     "name": "Beth - Budget Bytes"
   },
   "cookTime": "PT20M",
+  "createdAt": "2020-10-08T05:52:49.590Z",
   "datePublished": "2013-08-31T11:44:15+00:00",
   "description": "Take your grilled cheese game to the next level with this Spinach Feta Grilled Cheese, featuring garlic, red pepper, and TWO cheeses!",
   "image": [
@@ -56,5 +57,6 @@
   ],
   "recipeYield": "2",
   "sameAs": ["https://www.budgetbytes.com/spinach-feta-grilled-cheese/"],
-  "totalTime": "PT30M"
+  "totalTime": "PT30M",
+  "updatedAt": "2020-10-08T05:52:49.590Z"
 }

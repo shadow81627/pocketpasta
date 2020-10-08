@@ -229,6 +229,7 @@ async function scrape(url) {
       }
 
       const data = sortobject({
+        createdAt: new Date(),
         ...linkData,
         sameAs,
         mainEntityOfPage: undefined,
@@ -237,6 +238,7 @@ async function scrape(url) {
         '@type': type,
         '@id': undefined,
         '@context': undefined,
+        updatedAt: new Date(),
       });
       return data;
     }

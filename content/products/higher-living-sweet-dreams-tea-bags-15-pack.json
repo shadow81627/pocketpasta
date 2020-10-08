@@ -14,6 +14,7 @@
     "@type": "Organization",
     "name": "higher living"
   },
+  "createdAt": "2020-10-08T05:12:30.132Z",
   "description": "Inspiring InfusionWe make our infusions with the finest quality organic ingredients for a better, brighter, bolder cup and an altogether more uplifting experience.Organic StandardsHigher Living infusions use quality ingredients grown to the highest organic standards and we aim to avoid the use of synthetic pesticides and fertilisers. We're UK-owned and all our products are packed in Great Britain.Nice At Night TimeOur relaxing evening infusion combines lemon balm, lavender and chamomile with a soothing blend of herbs.",
   "gtin13": "811639040028",
   "image": "https://cdn0.woolworths.media/content/wowproductimages/large/701038.jpg",
@@ -50,5 +51,6 @@
   "sameAs": [
     "https://www.woolworths.com.au/shop/productdetails/701038/higher-living-sweet-dreams-tea-bags"
   ],
-  "sku": "701038"
+  "sku": "701038",
+  "updatedAt": "2020-10-08T05:12:30.133Z"
 }

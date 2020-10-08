@@ -20,8 +20,8 @@
     "@context": "http://schema.org/",
     "@type": "AggregateRating",
     "bestRating": 5,
-    "ratingValue": 4.9534883,
-    "reviewCount": 43,
+    "ratingValue": 4.9574466,
+    "reviewCount": 47,
     "worstRating": 1
   },
   "author": {
@@ -29,6 +29,7 @@
     "name": "Lena Abraham"
   },
   "cookTime": "PT0S",
+  "createdAt": "2020-10-08T05:23:42.504Z",
   "dateModified": "2019-12-19T19:23:00Z",
   "datePublished": "2015-07-09T16:44:00Z",
   "description": "This recipe from Delish.com is truly the Best-Ever Farro Salad.",
@@ -697,6 +698,278 @@
         "ratingValue": 5,
         "worstRating": 1
       }
+    },
+    {
+      "@context": "http://schema.org/",
+      "@type": "Review",
+      "author": {
+        "@context": "http://schema.org/",
+        "@type": "Person",
+        "name": "RedTree"
+      },
+      "datePublished": "2020-06-08",
+      "reviewBody": "I LOVE this recipe! One of my favorites. I sometimes switch it up in the summer and use peaches and burrata instead of apples and parmesan.",
+      "reviewRating": {
+        "@type": "Rating",
+        "bestRating": 5,
+        "ratingValue": 5,
+        "worstRating": 1
+      }
+    },
+    {
+      "@context": "http://schema.org/",
+      "@type": "Review",
+      "author": {
+        "@context": "http://schema.org/",
+        "@type": "Person",
+        "name": "OrangeBike"
+      },
+      "datePublished": "2020-02-22",
+      "reviewBody": "I love this salad!  The first time I made it exactly as written...perfect!  The second time I made some substitutions to use ingredients I had on hand—dried cranberries and apricots instead of apples, pepitas and walnuts instead of pecans.  It is now my go-to when I am asked to bring a dish.",
+      "reviewRating": {
+        "@type": "Rating",
+        "bestRating": 5,
+        "ratingValue": 5,
+        "worstRating": 1
+      }
+    },
+    {
+      "@context": "http://schema.org/",
+      "@type": "Review",
+      "author": {
+        "@context": "http://schema.org/",
+        "@type": "Person",
+        "name": "GreenAirBalloon"
+      },
+      "datePublished": "2020-01-19",
+      "reviewBody": "This is fabulous! I did add a thinly sliced blood orange but otherwise I followed the recipe as written. Served with cold roasted chicken breasts and fresh fruit, we had an outstanding meal, my husband asked that I add this to the rotation.",
+      "reviewRating": {
+        "@type": "Rating",
+        "bestRating": 5,
+        "ratingValue": 5,
+        "worstRating": 1
+      }
+    },
+    {
+      "@context": "http://schema.org/",
+      "@type": "Review",
+      "author": {
+        "@context": "http://schema.org/",
+        "@type": "Person",
+        "name": "PurpleStrawberry"
+      },
+      "datePublished": "2020-05-17",
+      "reviewBody": "This has to be my favorite recipe. I made it for a potluck and my friend's food snob husband asked for the recipe, it's now in their regular potluck/party rotation, too. \n\nThe parmesan really adds to the salad, but I've made the recipe without it (sometimes for vegan friends, sometimes because it wasn't on hand) and it's still amazing. \n\nI came back to this recipe today for the fried shallots and dressing - I drizzled it over pan fried purple potatoes and mushrooms and finished with the shallots on top. So good!",
+      "reviewRating": {
+        "@type": "Rating",
+        "bestRating": 5,
+        "ratingValue": 5,
+        "worstRating": 1
+      }
+    },
+    {
+      "@context": "http://schema.org/",
+      "@type": "Review",
+      "author": {
+        "@context": "http://schema.org/",
+        "@type": "Person",
+        "name": "CyanSeahorse"
+      },
+      "datePublished": "2020-03-26",
+      "reviewBody": "I used chicken stock, dry white wine and fresh thyme to boil the farro and added orange slices to the salad. It was great!",
+      "reviewRating": {
+        "@type": "Rating",
+        "bestRating": 5,
+        "ratingValue": 5,
+        "worstRating": 1
+      }
+    },
+    {
+      "@context": "http://schema.org/",
+      "@type": "Review",
+      "author": {
+        "@context": "http://schema.org/",
+        "@type": "Person",
+        "name": "BluePizza"
+      },
+      "datePublished": "2020-02-02",
+      "reviewBody": "Perfect as is. I have made this three times and it has outshined the main dish every time",
+      "reviewRating": {
+        "@type": "Rating",
+        "bestRating": 5,
+        "ratingValue": 5,
+        "worstRating": 1
+      }
+    },
+    {
+      "@context": "http://schema.org/",
+      "@type": "Review",
+      "author": {
+        "@context": "http://schema.org/",
+        "@type": "Person",
+        "name": "OliveBug"
+      },
+      "datePublished": "2020-05-14",
+      "reviewBody": "outstanding salad - healthful, flavorful, visually appealing - home fun!  I used kale instead of arugula because it holds up better.  Omitted basil and parsley (didn't have any on hand). The dressing is fabulous - would be good on other things too!",
+      "reviewRating": {
+        "@type": "Rating",
+        "bestRating": 5,
+        "ratingValue": 5,
+        "worstRating": 1
+      }
+    },
+    {
+      "@context": "http://schema.org/",
+      "@type": "Review",
+      "author": {
+        "@context": "http://schema.org/",
+        "@type": "Person",
+        "name": "foodclayart"
+      },
+      "datePublished": "2020-02-18",
+      "reviewBody": "Sub-ed 1/2 water, 1/2 beef bone broth for the stock, just cuz I had it on hand. This salad is SOOOO good. I love the chewiness of the farro. (It is new to me.) And the fried shallots, what a lovely depth of flavor for both the dressing and the crispies for the salad. Thanks, I'll be doing this again.",
+      "reviewRating": {
+        "@type": "Rating",
+        "bestRating": 5,
+        "ratingValue": 5,
+        "worstRating": 1
+      }
+    },
+    {
+      "@context": "http://schema.org/",
+      "@type": "Review",
+      "author": {
+        "@context": "http://schema.org/",
+        "@type": "Person",
+        "name": "BlueCherries"
+      },
+      "datePublished": "2020-04-20",
+      "reviewBody": "I’ve made this salad several times and it is delicious. The whole family loves it and it’s a also a great option to bring to potluck meals. The last time I made it I added bacon and the boys in the family rated it a 10!!",
+      "reviewRating": {
+        "@type": "Rating",
+        "bestRating": 5,
+        "ratingValue": 5,
+        "worstRating": 1
+      }
+    },
+    {
+      "@context": "http://schema.org/",
+      "@type": "Review",
+      "author": {
+        "@context": "http://schema.org/",
+        "@type": "Person",
+        "name": "mbsickonic"
+      },
+      "datePublished": "2020-02-08",
+      "reviewBody": "Awesome farro salad!  Added sauted chicken and was a huge hit in our house.  Thanks for sharing recipe.  Will definitely make again!",
+      "reviewRating": {
+        "@type": "Rating",
+        "bestRating": 5,
+        "ratingValue": 5,
+        "worstRating": 1
+      }
+    },
+    {
+      "@context": "http://schema.org/",
+      "@type": "Review",
+      "author": {
+        "@context": "http://schema.org/",
+        "@type": "Person",
+        "name": "Elfie"
+      },
+      "datePublished": "2020-05-12",
+      "reviewBody": "Made this today and then realized...no arugula or any type of greens, but I did have everything for the grain salad.  My husband only shops once a month while we are on lockdown, soooo.  Farro salad it is.  Wow!  It was phenomenal even without the greens!  Definitely eat as the 'meal' or even as a side.  We think it is a keeper here.",
+      "reviewRating": {
+        "@type": "Rating",
+        "bestRating": 5,
+        "ratingValue": 5,
+        "worstRating": 1
+      }
+    },
+    {
+      "@context": "http://schema.org/",
+      "@type": "Review",
+      "author": {
+        "@context": "http://schema.org/",
+        "@type": "Person",
+        "name": "Craftyone20895"
+      },
+      "datePublished": "2020-08-06",
+      "reviewBody": "This was delicious.  Even the more cautious eaters liked it!  Added dried cranberries for color and some extra shallots!  Will be making this again— it’s a perfect summer dish!",
+      "reviewRating": {
+        "@type": "Rating",
+        "bestRating": 5,
+        "ratingValue": 5,
+        "worstRating": 1
+      }
+    },
+    {
+      "@context": "http://schema.org/",
+      "@type": "Review",
+      "author": {
+        "@context": "http://schema.org/",
+        "@type": "Person",
+        "name": "Mercoco"
+      },
+      "datePublished": "2020-08-11",
+      "reviewBody": "Substituted spelt berries for the farro and radish microgreens for the arugula.  I finely chopped half an onion to flavor the oil (instead of shallot) and then added them to the salad.  Also added just a pinch of bacon crumbles, my lids licked the bowl.  Absolutely delicious.   Thank you for sharing this.",
+      "reviewRating": {
+        "@type": "Rating",
+        "bestRating": 5,
+        "ratingValue": 5,
+        "worstRating": 1
+      }
+    },
+    {
+      "@context": "http://schema.org/",
+      "@type": "Review",
+      "author": {
+        "@context": "http://schema.org/",
+        "@type": "Person",
+        "name": "CyanFries"
+      },
+      "datePublished": "2020-04-11",
+      "reviewBody": "Just okay. Seems to have too much vinegar & not enough basil. Kids liked the shallot bits best. The farro cooked in broth is very tasty. But seriously the whole kitchen smells acidic.",
+      "reviewRating": {
+        "@type": "Rating",
+        "bestRating": 5,
+        "ratingValue": 3,
+        "worstRating": 1
+      }
+    },
+    {
+      "@context": "http://schema.org/",
+      "@type": "Review",
+      "author": {
+        "@context": "http://schema.org/",
+        "@type": "Person",
+        "name": "OliveWrench"
+      },
+      "datePublished": "2020-06-25",
+      "reviewBody": "This was absolutely incredible. I would highly recommend, easy to make and so so yummy. Definitely going to be a go-to recipe!",
+      "reviewRating": {
+        "@type": "Rating",
+        "bestRating": 5,
+        "ratingValue": 5,
+        "worstRating": 1
+      }
+    },
+    {
+      "@context": "http://schema.org/",
+      "@type": "Review",
+      "author": {
+        "@context": "http://schema.org/",
+        "@type": "Person",
+        "name": "GreenProcessor"
+      },
+      "datePublished": "2020-05-21",
+      "reviewBody": "I used kale, spinach, and pear. I eat a lot of salads and this one was incredible. Flavor bomb!",
+      "reviewRating": {
+        "@type": "Rating",
+        "bestRating": 5,
+        "ratingValue": 5,
+        "worstRating": 1
+      }
     }
   ],
   "sameAs": [
@@ -704,6 +977,7 @@
   ],
   "thumbnailUrl": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/190307-farro-salad-288-1553552692.jpg?crop=0.671xw:1.00xh;0.196xw,0&resize=100:*",
   "totalTime": "PT1H10M",
+  "updatedAt": "2020-10-08T05:23:42.504Z",
   "url": "https://www.delish.com/cooking/recipe-ideas/recipes/a43059/best-farro-salad-recipe/",
   "video": {
     "@type": "VideoObject",

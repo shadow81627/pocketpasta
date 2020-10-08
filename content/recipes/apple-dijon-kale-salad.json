@@ -9,6 +9,7 @@
     "@type": "Person",
     "name": "Beth - Budget Bytes"
   },
+  "createdAt": "2020-10-08T05:21:28.613Z",
   "datePublished": "2012-06-23T18:15:00+00:00",
   "description": "This Apple Dijon Kale Salad is tangy, sweet, and crunchy with Granny Smith apples, walnuts, raisins, and a homemade Dijon vinaigrette.",
   "image": [
@@ -58,5 +59,6 @@
   ],
   "recipeYield": "4",
   "sameAs": ["https://www.budgetbytes.com/apple-dijon-kale-salad/"],
-  "totalTime": "PT20M"
+  "totalTime": "PT20M",
+  "updatedAt": "2020-10-08T05:21:28.613Z"
 }

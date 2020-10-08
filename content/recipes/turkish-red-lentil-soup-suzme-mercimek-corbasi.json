@@ -1,5 +1,6 @@
 {
   "@type": "Recipe",
+  "about": [],
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingCount": "15",
@@ -13,6 +14,7 @@
     "sameAs": ["https://www.thespruceeats.com/elizabeth-taviloglu-3274117"]
   },
   "cookTime": "PT25M",
+  "createdAt": "2020-10-08T05:56:25.531Z",
   "dateModified": "2019-11-10T01:16:49.293Z",
   "datePublished": "2012-07-12T21:36:48.000Z",
   "description": "This hearty soup is perfect for the cold winter months with lentils, carrots, potatoes, and spices. It's also an important part of Ramadan.",
@@ -118,5 +120,6 @@
   "sameAs": [
     "https://www.thespruceeats.com/turkish-red-lentil-soup-suzme-mercimek-corbasi-recipe-3274346"
   ],
-  "totalTime": "PT30M"
+  "totalTime": "PT30M",
+  "updatedAt": "2020-10-08T05:56:25.531Z"
 }

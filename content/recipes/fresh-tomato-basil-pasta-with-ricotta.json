@@ -10,6 +10,7 @@
     "name": "Beth - Budget Bytes"
   },
   "cookTime": "PT15M",
+  "createdAt": "2020-10-08T05:35:48.272Z",
   "datePublished": "2018-05-24T13:48:40+00:00",
   "description": "It only takes a few fresh ingredients make this Fresh Tomato Basil Pasta with Ricotta, the perfect light lunch or dinner for summer! ",
   "image": [
@@ -74,5 +75,6 @@
   "sameAs": [
     "https://www.budgetbytes.com/fresh-tomato-basil-pasta-with-ricotta/"
   ],
-  "totalTime": "PT25M"
+  "totalTime": "PT25M",
+  "updatedAt": "2020-10-08T05:35:48.273Z"
 }

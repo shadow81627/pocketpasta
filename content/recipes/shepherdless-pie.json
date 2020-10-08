@@ -1,5 +1,6 @@
 {
   "@type": "Recipe",
+  "createdAt": "2020-10-08T05:47:37.114Z",
   "dateModified": "2020-02-26T06:37:53.161Z",
   "datePublished": "2020-02-13T13:00:00.00Z",
   "description": "A vegan twist on the classic shepherds pie. Made with lentils, mushrooms and a polenta topping, it's just as hearty as the original and oh-so tasty!",
@@ -72,5 +73,6 @@
     "https://www.womensweeklyfood.com.au/recipes/shepherdless-pie-31497"
   ],
   "totalTime": "PT1H",
+  "updatedAt": "2020-10-08T05:47:37.115Z",
   "url": "https://www.womensweeklyfood.com.au/recipes/shepherdless-pie-31497"
 }

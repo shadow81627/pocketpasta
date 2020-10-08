@@ -10,6 +10,7 @@
     "name": "Beth - Budget Bytes"
   },
   "cookTime": "PT15M",
+  "createdAt": "2020-10-08T05:56:57.509Z",
   "datePublished": "2016-07-25T14:20:12+00:00",
   "description": "Ultimate Southwest Scrambled Eggs make a fast and filling dinner or brunch, and are a great way to use up leftover ingredients in the kitchen.",
   "image": [
@@ -71,5 +72,6 @@
   ],
   "recipeYield": "4",
   "sameAs": ["https://www.budgetbytes.com/ultimate-southwest-scrambled-eggs/"],
-  "totalTime": "PT25M"
+  "totalTime": "PT25M",
+  "updatedAt": "2020-10-08T05:56:57.509Z"
 }

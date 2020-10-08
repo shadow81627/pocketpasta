@@ -3,10 +3,11 @@
   "aggregateRating": {
     "@type": "AggregateRating",
     "bestRating": "100",
-    "ratingCount": "206",
+    "ratingCount": "217",
     "ratingValue": "92",
     "worstRating": "0"
   },
+  "createdAt": "2020-10-08T05:15:28.186Z",
   "datePublished": "2018-06-08T23:54:54",
   "description": "Here's what you need: extra virgin olive oil, small onion, celery, garlic, fresh basil, canned whole peeled tomato, salt, dried spathetti, freshly grated parmigiano-reggiano cheese, carrots",
   "image": "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/162208.jpg",
@@ -88,6 +89,7 @@
   ],
   "suitableForDiet": "https://schema.org/VeganDiet",
   "tool": "Tongs",
+  "updatedAt": "2020-10-08T05:15:28.186Z",
   "video": {
     "@type": "VideoObject",
     "contentUrl": "https://vid.tasty.co/output/97978/landscape_480/1528506768",

@@ -1,5 +1,6 @@
 {
   "@type": "Recipe",
+  "createdAt": "2020-10-08T05:31:23.443Z",
   "datePublished": "2016-03-30",
   "description": "This elegant side dish is a wonderful alternative to roast potatoes. ",
   "image": "http://cdn.jamieoliver.com/recipe-database/xtra_med/Ckrd6gTOKtPBfco-_U_Qbv.jpg",
@@ -103,5 +104,6 @@
     "https://schema.org/GlutenFreeDiet",
     "https://schema.org/VegetarianDiet"
   ],
-  "totalTime": "PT1H"
+  "totalTime": "PT1H",
+  "updatedAt": "2020-10-08T05:31:23.443Z"
 }

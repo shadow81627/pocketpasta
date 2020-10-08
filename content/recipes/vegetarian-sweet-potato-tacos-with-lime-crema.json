@@ -10,6 +10,7 @@
     "name": "Beth - Budget Bytes"
   },
   "cookTime": "PT20M",
+  "createdAt": "2020-10-08T06:00:49.786Z",
   "datePublished": "2015-07-16T11:20:39+00:00",
   "description": "These light and refreshing Sweet Potato Tacos are filled with a simple sweet potato and black bean hash, and topped with a tangy lime crema. ",
   "image": [
@@ -70,5 +71,6 @@
   ],
   "recipeYield": "4",
   "sameAs": ["https://www.budgetbytes.com/sweet-potato-tacos-with-lime-crema/"],
-  "totalTime": "PT40M"
+  "totalTime": "PT40M",
+  "updatedAt": "2020-10-08T06:00:49.786Z"
 }

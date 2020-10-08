@@ -10,6 +10,7 @@
     "name": "Beth - Budget Bytes"
   },
   "cookTime": "PT45M",
+  "createdAt": "2020-10-08T05:58:31.446Z",
   "datePublished": "2012-11-06T15:29:00+00:00",
   "description": "This hearty Vegan Red Lentil Stew is packed with vegetables for tons of flavor, and will keep you warm and full in the cold winter weather!",
   "image": [
@@ -64,5 +65,6 @@
   ],
   "recipeYield": "6",
   "sameAs": ["https://www.budgetbytes.com/vegan-red-lentil-stew/"],
-  "totalTime": "PT50M"
+  "totalTime": "PT50M",
+  "updatedAt": "2020-10-08T05:58:31.447Z"
 }

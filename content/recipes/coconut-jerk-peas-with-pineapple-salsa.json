@@ -10,6 +10,7 @@
     "name": "Beth - Budget Bytes"
   },
   "cookTime": "PT20M",
+  "createdAt": "2020-10-08T05:29:29.805Z",
   "datePublished": "2017-06-05T11:59:26+00:00",
   "description": "These rich and spicy Coconut Jerk Peas are super simple to make and pair brilliantly with a sweet and vibrant pineapple salsa. ",
   "image": [
@@ -72,5 +73,6 @@
   ],
   "recipeYield": "4",
   "sameAs": ["https://www.budgetbytes.com/coconut-jerk-peas-pineapple-salsa/"],
-  "totalTime": "PT30M"
+  "totalTime": "PT30M",
+  "updatedAt": "2020-10-08T05:29:29.805Z"
 }

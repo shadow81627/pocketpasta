@@ -2,14 +2,15 @@
   "@type": "Recipe",
   "aggregateRating": {
     "@type": "AggregateRating",
-    "ratingCount": "7",
-    "ratingValue": "3.72"
+    "ratingCount": "9",
+    "ratingValue": "4"
   },
   "author": {
     "@type": "Person",
     "name": "Beth - Budget Bytes"
   },
   "cookTime": "PT15M",
+  "createdAt": "2020-10-08T05:34:24.544Z",
   "datePublished": "2018-09-15T10:08:00+00:00",
   "description": "French Bread Pizza is the perfect budget-friendly fast and easy weeknight dinner. Customize the toppings to fit your taste buds or what you have on hand! ",
   "image": [
@@ -53,5 +54,6 @@
   ],
   "recipeYield": "4",
   "sameAs": ["https://www.budgetbytes.com/french-bread-pizza/"],
-  "totalTime": "PT20M"
+  "totalTime": "PT20M",
+  "updatedAt": "2020-10-08T05:34:24.544Z"
 }

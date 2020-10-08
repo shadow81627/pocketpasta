@@ -6,6 +6,7 @@
     "@type": "Organization",
     "name": "twinings"
   },
+  "createdAt": "2020-10-08T05:13:40.554Z",
   "gtin13": "70177176112",
   "image": "https://cdn0.woolworths.media/content/wowproductimages/large/575845.jpg",
   "name": "Twinings Digest  18 pack",
@@ -41,5 +42,6 @@
   "sameAs": [
     "https://www.woolworths.com.au/shop/productdetails/575845/twinings-digest"
   ],
-  "sku": "575845"
+  "sku": "575845",
+  "updatedAt": "2020-10-08T05:13:40.554Z"
 }
