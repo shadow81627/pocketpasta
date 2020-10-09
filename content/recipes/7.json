@@ -174,59 +174,6 @@
     }
   ],
   "recipeYield": "12 servings",
-  "review": [
-    {
-      "@context": "http://schema.org/",
-      "@type": "Review",
-      "author": {
-        "@context": "http://schema.org/",
-        "@type": "Person",
-        "name": "OrangeCloud"
-      },
-      "datePublished": "2020-02-01",
-      "reviewBody": "These were delicious, what you have to do when you are layering it is to remember the towel will crumble if lopsided. So Layered mine evenly all the way up my 28 inch can to the brim? So when i turned it over and let it sit for a min. And when I removed the can they did not tumble over\n They were beautiful and  a big huge hit thanks for your belp",
-      "reviewRating": {
-        "@type": "Rating",
-        "bestRating": 5,
-        "ratingValue": 5,
-        "worstRating": 1
-      }
-    },
-    {
-      "@context": "http://schema.org/",
-      "@type": "Review",
-      "author": {
-        "@context": "http://schema.org/",
-        "@type": "Person",
-        "name": "RedTeepee"
-      },
-      "datePublished": "2020-02-01",
-      "reviewBody": "These were delicious, what you have to do when you are layering it is to remember the towel will crumble if lopsided. So Layered mine evenly all the way up my 28 inch can to the brim? So when i turned it over and let it sit for a min. And when I removed the can they did not tumble over\n They were beautiful and  a big huge hit thanks for your belp",
-      "reviewRating": {
-        "@type": "Rating",
-        "bestRating": 5,
-        "ratingValue": 5,
-        "worstRating": 1
-      }
-    },
-    {
-      "@context": "http://schema.org/",
-      "@type": "Review",
-      "author": {
-        "@context": "http://schema.org/",
-        "@type": "Person",
-        "name": "GoldGuitar"
-      },
-      "datePublished": "2020-02-01",
-      "reviewBody": "These were delicious, what you have to do when you are layering it is to remember the towel will crumble if lopsided. So Layered mine evenly all the way up my 28 inch can to the brim? So when i turned it over and let it sit for a min. And when I removed the can they did not tumble over\n They were beautiful and  a big huge hit thanks for your belp",
-      "reviewRating": {
-        "@type": "Rating",
-        "bestRating": 5,
-        "ratingValue": 5,
-        "worstRating": 1
-      }
-    }
-  ],
   "sameAs": [
     "https://www.delish.com/cooking/recipe-ideas/a25751125/trash-can-nachos-recipe/",
     "https://www.foodnetwork.com/recipes/guy-fieri/trash-can-nachos-3582107"

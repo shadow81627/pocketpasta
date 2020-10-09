@@ -2,6 +2,7 @@
   "@type": "Offer",
   "availability": "http://schema.org/InStock",
   "availabilityStarts": "2020-06-27T00:54:36.059Z",
+  "createdAt": "2020-10-09T03:10:08.947Z",
   "itemCondition": "http://schema.org/NewCondition",
   "offeredBy": "Woolworths",
   "potentialAction": {
@@ -14,5 +15,6 @@
     "@type": "Organization",
     "name": "Woolworths"
   },
+  "updatedAt": "2020-10-09T03:10:08.947Z",
   "url": "https://www.woolworths.com.au/shop/productdetails/793384/sanitarium-so-good-long-life-unsweetened-almond-coconut-milk"
 }

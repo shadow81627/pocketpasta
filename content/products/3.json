@@ -51,7 +51,7 @@
   "description": "Oreo Original Cookies is a choc cookie sandwich with sweet vanilla creme.  Share more Oreo Cookies than ever before with family and friends with the convenient Oreo 370g sharing pack. 39 Oreo Cookies in a plastic tray with a resealable seal for freshnesss. They'll be sure to be a hit at your next event. The pack made for sharing!",
   "gtin13": "9300650430440",
   "image": "https://cdn0.woolworths.media/content/wowproductimages/large/073032.jpg",
-  "name": "Oreo Family Pack Original  370g",
+  "name": "Oreo Family Pack Original 370g",
   "offers": {
     "@type": "AggregateOffer",
     "highPrice": 4.5,
@@ -95,11 +95,10 @@
     ],
     "priceCurrency": "AUD"
   },
-  "review": [],
   "sameAs": [
     "https://www.woolworths.com.au/shop/productdetails/73032/oreo-family-pack-original",
     "https://shop.coles.com.au/a/national/product/oreo-family-pack-biscuits-creme-original"
   ],
   "sku": "73032",
-  "updatedAt": "2020-10-08T05:10:54.696Z"
+  "updatedAt": "2020-10-09T00:27:31.505Z"
 }

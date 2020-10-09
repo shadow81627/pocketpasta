@@ -1,0 +1,47 @@
+{
+  "@type": "Product",
+  "additionalProperty": [
+    {
+      "name": "Size",
+      "value": "approx. 200g"
+    },
+    {
+      "name": "Unit Price",
+      "value": "$13.00 per 1Kg"
+    }
+  ],
+  "brand": "Coles",
+  "createdAt": "2020-10-09T00:07:46.217Z",
+  "description": "Coles Brown Onion Shallots loose",
+  "image": "https://shop.coles.com.au/wcsstore/Coles-CAS/images/5/1/3/5134809.jpg",
+  "name": "Brown Onion Shallots loose",
+  "offers": {
+    "@type": "AggregateOffer",
+    "highPrice": 2.6,
+    "lowPrice": 2.6,
+    "offerCount": 1,
+    "offers": [
+      {
+        "@context": "http://schema.org",
+        "@type": "Offer",
+        "availability": "https://schema.org/InStock",
+        "availabilityStarts": "2020-10-09T00:07:46.212Z",
+        "itemCondition": "https://schema.org/NewCondition",
+        "offeredBy": "Coles",
+        "price": "2.60",
+        "priceCurrency": "AUD",
+        "seller": {
+          "@type": "Organization",
+          "name": "Coles"
+        },
+        "url": "https://shop.coles.com.au/a/national/product/onions-brown-shallots-loose"
+      }
+    ],
+    "priceCurrency": "AUD"
+  },
+  "sameAs": [
+    "https://shop.coles.com.au/a/sunnybank-hills/product/onions-brown-shallots-loose"
+  ],
+  "sku": "5134809",
+  "updatedAt": "2020-10-09T00:28:47.539Z"
+}

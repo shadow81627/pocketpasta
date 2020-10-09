@@ -1,5 +1,5 @@
 const fs = require('fs').promises;
-const puppeteer = require('puppeteer');
+const { firefox } = require('playwright');
 const cheerio = require('cheerio');
 
 const crawled = [];
@@ -8,13 +8,12 @@ async function crawl(url, origin = new URL(url).origin) {
   const browserOptions = {
     headless: false,
     slowMo: 250,
-    devtools: true,
     waitUntil: 'networkidle0',
     defaultViewport: null,
   };
-  const browser = await puppeteer.launch(browserOptions);
+  const browser = await firefox.launch(browserOptions);
   try {
-    // fetch puppeteer browser rendered html
+    // fetch browser rendered html
     const page = await browser.newPage();
     const timeout = 1200000; // timeout in milliseconds.
     await page.goto(url, { waitUntil: 'networkidle0', timeout });

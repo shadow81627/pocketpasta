@@ -2,6 +2,7 @@
   "@type": "Offer",
   "availability": "https://schema.org/OutOfStock",
   "availabilityStarts": "2020-06-27T00:51:25.485Z",
+  "createdAt": "2020-10-09T03:45:14.941Z",
   "itemCondition": "https://schema.org/NewCondition",
   "offeredBy": "Coles",
   "price": "1.20",
@@ -10,5 +11,6 @@
     "@type": "Organization",
     "name": "Coles"
   },
+  "updatedAt": "2020-10-09T03:45:14.941Z",
   "url": "https://shop.coles.com.au/a/national/product/annalisa-tomatoes-peeled"
 }

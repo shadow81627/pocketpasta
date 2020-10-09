@@ -1,25 +1,25 @@
 {
-  "@context": "http://schema.org",
   "@type": "Recipe",
   "aggregateRating": {
     "@type": "AggregateRating",
-    "ratingCount": "1",
-    "ratingValue": "3.9"
+    "ratingCount": "161",
+    "ratingValue": "3.85"
   },
   "author": {
     "@type": "Person",
     "name": "Heidi Swanson"
   },
   "cookTime": "PT25M",
+  "createdAt": "2020-10-09T02:48:24.108Z",
   "datePublished": "2018-11-15T14:23:18+00:00",
-  "description": "A delicious, simple split pea soup made from an impossibly short list of ingredients.",
+  "description": "A delicious, simple vegetarian split pea soup made from an impossibly short list of ingredients. Seriously, just five!",
   "image": [
     "https://images.101cookbooks.com/vegetarian-split-pea-soup-h2.jpg?w=680&auto=format",
     "https://images.101cookbooks.com/vegetarian-split-pea-soup-2.jpg?w=1000&auto=format",
     "https://images.101cookbooks.com/vegetarian-split-pea-soup-2.jpg?w=800&h=800&fp-z=2&fp-y=.5&fp-x=.5&fit=crop&crop=entropy"
   ],
   "keywords": "split pea soup",
-  "name": "Split Pea Soup",
+  "name": "Vegetarian Split Pea Soup",
   "nutrition": {
     "@type": "NutritionInformation",
     "calories": "259 kcal",
@@ -60,5 +60,6 @@
   "recipeYield": "6",
   "sameAs": ["https://www.101cookbooks.com/vegetarian-split-pea-soup/"],
   "suitableForDiet": "https://schema.org/VeganDiet",
-  "totalTime": "PT30M"
+  "totalTime": "PT30M",
+  "updatedAt": "2020-10-09T04:10:48.766Z"
 }

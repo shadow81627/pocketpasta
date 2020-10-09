@@ -1,16 +1,16 @@
 {
   "@type": "Offer",
   "availability": "https://schema.org/InStock",
-  "availabilityStarts": "2020-06-27T06:20:35.385Z",
-  "createdAt": "2020-10-09T02:40:03.660Z",
+  "availabilityStarts": "2020-10-09T00:07:46.212Z",
+  "createdAt": "2020-10-09T03:08:48.535Z",
   "itemCondition": "https://schema.org/NewCondition",
   "offeredBy": "Coles",
-  "price": "1.20",
+  "price": "2.60",
   "priceCurrency": "AUD",
   "seller": {
     "@type": "Organization",
     "name": "Coles"
   },
-  "updatedAt": "2020-10-09T02:40:03.660Z",
-  "url": "https://shop.coles.com.au/a/national/product/coles-pasta-large-shells"
+  "updatedAt": "2020-10-09T03:08:48.536Z",
+  "url": "https://shop.coles.com.au/a/national/product/onions-brown-shallots-loose"
 }
