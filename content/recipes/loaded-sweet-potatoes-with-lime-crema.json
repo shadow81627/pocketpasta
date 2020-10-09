@@ -10,6 +10,7 @@
     "name": "Beth - Budget Bytes"
   },
   "cookTime": "PT30M",
+  "createdAt": "2020-10-08T05:40:27.842Z",
   "datePublished": "2019-01-12T13:19:20+00:00",
   "description": "Loaded Sweet Potatoes are the perfect pre-portioned item for your weekly meal prep. They reheat well and can be customized to fit your needs. ",
   "image": [
@@ -77,5 +78,6 @@
   "sameAs": [
     "https://www.budgetbytes.com/loaded-sweet-potatoes-with-chipotle-lime-crema/"
   ],
-  "totalTime": "PT45M"
+  "totalTime": "PT45M",
+  "updatedAt": "2020-10-08T05:40:27.842Z"
 }

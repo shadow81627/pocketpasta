@@ -1,0 +1,16 @@
+{
+  "@type": "Offer",
+  "availability": "https://schema.org/InStock",
+  "availabilityStarts": "2020-10-09T04:13:31.923Z",
+  "createdAt": "2020-10-09T04:13:31.938Z",
+  "itemCondition": "https://schema.org/NewCondition",
+  "offeredBy": "Coles",
+  "price": "6.00",
+  "priceCurrency": "AUD",
+  "seller": {
+    "@type": "Organization",
+    "name": "Coles"
+  },
+  "updatedAt": "2020-10-09T04:13:31.938Z",
+  "url": "https://shop.coles.com.au/a/national/product/pukka-tea-detox"
+}

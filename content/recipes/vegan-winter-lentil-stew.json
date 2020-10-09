@@ -2,14 +2,15 @@
   "@type": "Recipe",
   "aggregateRating": {
     "@type": "AggregateRating",
-    "ratingCount": "138",
-    "ratingValue": "4.9"
+    "ratingCount": "141",
+    "ratingValue": "4.91"
   },
   "author": {
     "@type": "Person",
     "name": "Beth - Budget Bytes"
   },
   "cookTime": "PT50M",
+  "createdAt": "2020-10-08T05:59:03.068Z",
   "datePublished": "2018-10-18T11:51:32+00:00",
   "description": "A rich and hearty medley of vegetables, lentils, and herbs makes this freezer-friendly Vegan Winter Lentil Stew the perfect cold-weather comfort food. ",
   "image": [
@@ -76,6 +77,7 @@
   "recipeYield": "8",
   "sameAs": ["https://www.budgetbytes.com/vegan-winter-lentil-stew/"],
   "totalTime": "PT60M",
+  "updatedAt": "2020-10-08T05:59:03.068Z",
   "video": {
     "@type": "VideoObject",
     "contentUrl": "https://embed.mediavine.com/videos/lltqqhio4tb0xrwsncyn",

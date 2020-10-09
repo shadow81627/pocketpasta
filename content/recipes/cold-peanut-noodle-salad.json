@@ -2,7 +2,7 @@
   "@type": "Recipe",
   "aggregateRating": {
     "@type": "AggregateRating",
-    "ratingCount": "50",
+    "ratingCount": "52",
     "ratingValue": "4.91"
   },
   "author": {
@@ -10,6 +10,7 @@
     "name": "Beth - Budget Bytes"
   },
   "cookTime": "PT10M",
+  "createdAt": "2020-10-08T05:29:59.048Z",
   "datePublished": "2019-06-04T15:27:54+00:00",
   "description": "This Cold Peanut Noodle Salad with homemade peanut lime dressing is the perfect meal prep for summer! No reheating necessary.",
   "image": [
@@ -71,6 +72,7 @@
   "recipeYield": "4",
   "sameAs": ["https://www.budgetbytes.com/cold-peanut-noodle-salad/"],
   "totalTime": "PT30M",
+  "updatedAt": "2020-10-08T05:29:59.048Z",
   "video": {
     "@type": "VideoObject",
     "contentUrl": "https://embed.mediavine.com/videos/ro1wcw0rfxlmtrarodeh",

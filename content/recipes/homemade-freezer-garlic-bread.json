@@ -10,6 +10,7 @@
     "name": "Adapted from Love to be in the Kitchen"
   },
   "cookTime": "PT15M",
+  "createdAt": "2020-10-08T05:37:51.890Z",
   "datePublished": "2018-08-04T19:36:22+00:00",
   "description": "Make your own homemade freezer garlic bread slices, ready to bake on demand. Bake two or ten frozen slices at a time, ready in minutes! ",
   "image": [
@@ -57,6 +58,7 @@
   "recipeYield": "12",
   "sameAs": ["https://www.budgetbytes.com/homemade-freezer-garlic-bread/"],
   "totalTime": "PT30M",
+  "updatedAt": "2020-10-08T05:37:51.890Z",
   "video": {
     "@type": "VideoObject",
     "contentUrl": "https://embed.mediavine.com/videos/io0desbxrn53ntjigjem",

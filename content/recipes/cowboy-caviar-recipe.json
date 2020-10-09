@@ -9,6 +9,7 @@
     "@type": "Person",
     "name": "Beth - Budget Bytes"
   },
+  "createdAt": "2020-10-08T05:30:29.843Z",
   "datePublished": "2018-07-16T12:34:50+00:00",
   "description": "Cowboy Caviar is like a cross between a bean salad and fresh salsa with its colorful mix of beans, vegetables, and a fresh lime infused dressing.",
   "image": [
@@ -63,6 +64,7 @@
   "recipeYield": "10",
   "sameAs": ["https://www.budgetbytes.com/cowboy-caviar/"],
   "totalTime": "PT15M",
+  "updatedAt": "2020-10-08T05:30:29.843Z",
   "video": {
     "@type": "VideoObject",
     "contentUrl": "https://embed.mediavine.com/videos/ao9ucpfashdx83o2mcqw",

@@ -10,6 +10,7 @@
     "name": "Lisa Lin"
   },
   "cookTime": "PT3M",
+  "createdAt": "2020-10-08T05:35:17.756Z",
   "datePublished": "2015-01-12",
   "description": "This egg fried in a rice is a great single-serving meal for days when you feel too lazy to cook. Adapted from Meals in a Mug. ",
   "image": [
@@ -118,6 +119,7 @@
   ],
   "sameAs": ["https://healthynibblesandbits.com/egg-fried-rice-mug/"],
   "totalTime": "PT9M",
+  "updatedAt": "2020-10-08T05:35:17.756Z",
   "url": "https://healthynibblesandbits.com/egg-fried-rice-mug/",
   "video": {
     "@context": "http://schema.org",

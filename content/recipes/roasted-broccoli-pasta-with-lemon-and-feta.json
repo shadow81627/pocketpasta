@@ -2,7 +2,7 @@
   "@type": "Recipe",
   "aggregateRating": {
     "@type": "AggregateRating",
-    "ratingCount": "11",
+    "ratingCount": "14",
     "ratingValue": "5"
   },
   "author": {
@@ -10,6 +10,7 @@
     "name": "Beth - Budget Bytes"
   },
   "cookTime": "PT25M",
+  "createdAt": "2020-10-08T05:44:39.124Z",
   "datePublished": "2020-01-26T18:51:21+00:00",
   "description": "Roasted Broccoli Pasta with Lemon and Feta is an incredibly simple pasta dish with big flavors. An easy, fast, and delicious weeknight dinner!",
   "image": [
@@ -70,5 +71,15 @@
   "sameAs": [
     "https://www.budgetbytes.com/roasted-broccoli-pasta-with-lemon-and-feta/"
   ],
-  "totalTime": "PT40M"
+  "totalTime": "PT40M",
+  "updatedAt": "2020-10-08T05:44:39.124Z",
+  "video": {
+    "@type": "VideoObject",
+    "contentUrl": "https://embed.mediavine.com/videos/p3ipbssria3pwff6ve0o",
+    "description": "Roasted Broccoli Pasta with Lemon and Feta is an incredibly simple pasta dish with big flavors. An easy, fast, and delicious weeknight dinner!",
+    "duration": "PT55S",
+    "name": "Roasted Broccoli Pasta with Lemon and Feta",
+    "thumbnailUrl": "https://mediavine-res.cloudinary.com/image/upload/s--Lbz6nkb2--/c_limit,f_auto,fl_lossy,h_1080,q_auto,w_1920/v1600014137/h9lz0kanysymx7igtrrc.jpg",
+    "uploadDate": "2020-09-13T16:22:06+00:00"
+  }
 }

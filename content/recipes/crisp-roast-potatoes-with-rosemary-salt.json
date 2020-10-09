@@ -1,6 +1,7 @@
 {
   "@type": "Recipe",
   "cookTime": "PT1H35M",
+  "createdAt": "2020-10-08T05:32:19.746Z",
   "dateModified": "2019-12-05T23:59:44.082Z",
   "datePublished": "2019-12-05T13:00:00.00Z",
   "description": "Soft and fluffy on the inside, crispy on the outside and with fragrant rosemary salt these roast potatoes will complement your Christmas lunch.",
@@ -55,5 +56,6 @@
     "https://www.womensweeklyfood.com.au/recipes/crisp-roast-potatoes-with-rosemary-salt-31376"
   ],
   "totalTime": "PT1H35M",
+  "updatedAt": "2020-10-08T05:32:19.746Z",
   "url": "https://www.womensweeklyfood.com.au/recipes/crisp-roast-potatoes-with-rosemary-salt-31376"
 }

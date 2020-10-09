@@ -2,7 +2,7 @@
   "@type": "Recipe",
   "aggregateRating": {
     "@type": "AggregateRating",
-    "ratingCount": "133",
+    "ratingCount": "134",
     "ratingValue": "4.91"
   },
   "author": {
@@ -10,6 +10,7 @@
     "name": "Beth - Budget Bytes"
   },
   "cookTime": "PT35M",
+  "createdAt": "2020-10-08T05:28:58.111Z",
   "datePublished": "2014-01-01T20:19:24+00:00",
   "description": "This Chunky Lentil and Vegetable Soup is packed with hearty flavor, texture, and good-for-you vegetables! ",
   "image": [
@@ -67,5 +68,6 @@
   ],
   "recipeYield": "8",
   "sameAs": ["https://www.budgetbytes.com/chunky-lentil-vegetable-soup/"],
-  "totalTime": "PT45M"
+  "totalTime": "PT45M",
+  "updatedAt": "2020-10-08T05:28:58.111Z"
 }

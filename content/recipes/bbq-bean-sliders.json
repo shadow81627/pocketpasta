@@ -2,7 +2,7 @@
   "@type": "Recipe",
   "aggregateRating": {
     "@type": "AggregateRating",
-    "ratingCount": "26",
+    "ratingCount": "27",
     "ratingValue": "4.97"
   },
   "author": {
@@ -10,6 +10,7 @@
     "name": "Beth - Budget Bytes"
   },
   "cookTime": "PT15M",
+  "createdAt": "2020-10-08T05:22:43.469Z",
   "datePublished": "2013-10-23T17:49:30+00:00",
   "description": "These BBQ Bean Sliders topped with a homemade creamy coleslaw are a quick dinner fix when you're craving BBQ and don't have time for slow cooking meat!",
   "image": [
@@ -73,5 +74,6 @@
   ],
   "recipeYield": "4",
   "sameAs": ["https://www.budgetbytes.com/bbq-bean-sliders/"],
-  "totalTime": "PT30M"
+  "totalTime": "PT30M",
+  "updatedAt": "2020-10-08T05:22:43.469Z"
 }

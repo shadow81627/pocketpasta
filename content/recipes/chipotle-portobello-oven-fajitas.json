@@ -10,6 +10,7 @@
     "name": "Beth - Budget Bytes"
   },
   "cookTime": "PT40M",
+  "createdAt": "2020-10-08T05:28:27.398Z",
   "datePublished": "2016-06-11T13:06:52+00:00",
   "description": "Chipotle Portobello Oven Fajitas are an easy weeknight dinner, packed with flavor, color, and good-for-you vegetables. They're vegan, too!",
   "image": [
@@ -67,5 +68,6 @@
   ],
   "recipeYield": "4",
   "sameAs": ["https://www.budgetbytes.com/chipotle-portobello-oven-fajitas/"],
-  "totalTime": "PT55M"
+  "totalTime": "PT55M",
+  "updatedAt": "2020-10-08T05:28:27.398Z"
 }

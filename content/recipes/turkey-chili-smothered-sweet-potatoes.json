@@ -10,6 +10,7 @@
     "name": "Beth - Budget Bytes"
   },
   "cookTime": "PT60M",
+  "createdAt": "2020-10-08T05:56:02.574Z",
   "datePublished": "2020-02-25T15:29:51+00:00",
   "description": "Tender baked sweet potatoes smothered with turkey and bean chili, then topped with melty cheddar. Turkey Chili Smothered Sweet Potatoes are an easy dinner!",
   "image": [
@@ -70,5 +71,6 @@
   "sameAs": [
     "https://www.budgetbytes.com/turkey-chili-smothered-sweet-potatoes/"
   ],
-  "totalTime": "PT70M"
+  "totalTime": "PT70M",
+  "updatedAt": "2020-10-08T05:56:02.574Z"
 }

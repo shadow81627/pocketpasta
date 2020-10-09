@@ -1,0 +1,51 @@
+{
+  "@type": "Product",
+  "additionalProperty": [
+    {
+      "name": "Size",
+      "value": "40g"
+    },
+    {
+      "name": "Unit Price",
+      "value": "$0.30 per 1Ea"
+    },
+    {
+      "name": "Country Of Origin",
+      "value": "Made in the UK"
+    }
+  ],
+  "brand": "Pukka",
+  "createdAt": "2020-10-09T04:13:31.935Z",
+  "description": "Pukka Organic Feel New Herbal Tea Sachets 20 pack",
+  "image": "https://shop.coles.com.au/wcsstore/Coles-CAS/images/3/2/4/3248750.jpg",
+  "name": "Organic Feel New Herbal Tea Sachets 20 pack",
+  "offers": {
+    "@type": "AggregateOffer",
+    "highPrice": 6,
+    "lowPrice": 6,
+    "offerCount": 1,
+    "offers": [
+      {
+        "@context": "http://schema.org",
+        "@type": "Offer",
+        "availability": "https://schema.org/InStock",
+        "availabilityStarts": "2020-10-09T04:13:31.923Z",
+        "itemCondition": "https://schema.org/NewCondition",
+        "offeredBy": "Coles",
+        "price": "6.00",
+        "priceCurrency": "AUD",
+        "seller": {
+          "@type": "Organization",
+          "name": "Coles"
+        },
+        "url": "https://shop.coles.com.au/a/national/product/pukka-tea-detox"
+      }
+    ],
+    "priceCurrency": "AUD"
+  },
+  "sameAs": [
+    "https://shop.coles.com.au/a/sunnybank-hills/product/pukka-tea-detox"
+  ],
+  "sku": "3248750",
+  "updatedAt": "2020-10-09T04:13:31.926Z"
+}

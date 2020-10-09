@@ -2,7 +2,7 @@
   "@type": "Recipe",
   "aggregateRating": {
     "@type": "AggregateRating",
-    "ratingCount": "53",
+    "ratingCount": "55",
     "ratingValue": "4.84"
   },
   "author": {
@@ -10,6 +10,7 @@
     "name": "Adapted from The New York Times"
   },
   "cookTime": "PT25M",
+  "createdAt": "2020-10-08T05:50:47.796Z",
   "datePublished": "2016-04-14T18:44:51+00:00",
   "description": "Eggs poached in a rich and smoky tomato sauce speckled with white beans, this Smoky White Bean Shakshuka is a filling and inexpensive breakfast or dinner! BudgetBytes.com",
   "image": [
@@ -69,5 +70,6 @@
   ],
   "recipeYield": "4",
   "sameAs": ["https://www.budgetbytes.com/smoky-white-bean-shakshuka/"],
-  "totalTime": "PT30M"
+  "totalTime": "PT30M",
+  "updatedAt": "2020-10-08T05:50:47.796Z"
 }

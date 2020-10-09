@@ -10,6 +10,7 @@
     "name": "Beth - Budget Bytes"
   },
   "cookTime": "PT15M",
+  "createdAt": "2020-10-08T05:37:21.304Z",
   "datePublished": "2018-05-04T12:45:16+00:00",
   "description": "Garlicky greens and creamy ricotta pair perfectly on this light and fresh Garlicky Kale and Ricotta Pizza. It’s the perfect pizza for summer! ",
   "image": [
@@ -59,5 +60,6 @@
   ],
   "recipeYield": "4",
   "sameAs": ["https://www.budgetbytes.com/garlicky-kale-and-ricotta-pizza/"],
-  "totalTime": "PT30M"
+  "totalTime": "PT30M",
+  "updatedAt": "2020-10-08T05:37:21.304Z"
 }

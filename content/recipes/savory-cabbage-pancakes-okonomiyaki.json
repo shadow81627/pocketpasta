@@ -10,6 +10,7 @@
     "name": "Beth - Budget Bytes"
   },
   "cookTime": "PT20M",
+  "createdAt": "2020-10-08T05:45:40.792Z",
   "datePublished": "2016-08-31T16:28:37+00:00",
   "description": "Savory Cabbage Pancakes are a fun and filling way to use up pantry leftovers. Fill them and top them with whatever your heart desires! ",
   "image": [
@@ -72,5 +73,6 @@
   "sameAs": [
     "https://www.budgetbytes.com/savory-cabbage-pancakes-okonomiyaki/"
   ],
-  "totalTime": "PT40M"
+  "totalTime": "PT40M",
+  "updatedAt": "2020-10-08T05:45:40.792Z"
 }

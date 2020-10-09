@@ -2,7 +2,7 @@
   "@type": "Recipe",
   "aggregateRating": {
     "@type": "AggregateRating",
-    "ratingCount": "31",
+    "ratingCount": "35",
     "ratingValue": "5"
   },
   "author": {
@@ -10,6 +10,7 @@
     "name": "Beth - Budget Bytes"
   },
   "cookTime": "PT20M",
+  "createdAt": "2020-10-08T05:39:55.878Z",
   "datePublished": "2019-07-20T16:18:08+00:00",
   "description": "This Lemony Artichoke and Quinoa Salad is a light and refreshing summer salad that holds up well in the refrigerator and is perfect for meal prep!",
   "image": [
@@ -68,6 +69,7 @@
   "recipeYield": "4",
   "sameAs": ["https://www.budgetbytes.com/lemony-artichoke-and-quinoa-salad/"],
   "totalTime": "PT40M",
+  "updatedAt": "2020-10-08T05:39:55.878Z",
   "video": {
     "@type": "VideoObject",
     "contentUrl": "https://embed.mediavine.com/videos/pqay5mejfiq5hrooincu",

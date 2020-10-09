@@ -2,14 +2,15 @@
   "@type": "Recipe",
   "aggregateRating": {
     "@type": "AggregateRating",
-    "ratingCount": "23",
-    "ratingValue": "4.87"
+    "ratingCount": "24",
+    "ratingValue": "4.88"
   },
   "author": {
     "@type": "Person",
     "name": "Beth - Budget Bytes"
   },
   "cookTime": "PT30M",
+  "createdAt": "2020-10-08T05:40:59.851Z",
   "datePublished": "2018-07-02T15:49:27+00:00",
   "description": "Perfect for stashing in the freezer, these Make Ahead Bean and Cheese Burritos will save you on busy weeknights!",
   "image": [
@@ -91,5 +92,6 @@
   "sameAs": [
     "https://www.budgetbytes.com/make-ahead-bean-and-cheese-burritos/"
   ],
-  "totalTime": "PT50M"
+  "totalTime": "PT50M",
+  "updatedAt": "2020-10-08T05:40:59.851Z"
 }

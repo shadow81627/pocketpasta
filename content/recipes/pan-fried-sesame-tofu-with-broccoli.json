@@ -2,7 +2,7 @@
   "@type": "Recipe",
   "aggregateRating": {
     "@type": "AggregateRating",
-    "ratingCount": "134",
+    "ratingCount": "136",
     "ratingValue": "4.73"
   },
   "author": {
@@ -10,6 +10,7 @@
     "name": "Beth - Budget Bytes"
   },
   "cookTime": "PT15M",
+  "createdAt": "2020-10-08T05:43:37.365Z",
   "datePublished": "2016-02-25T18:47:52+00:00",
   "description": "This Pan Fried Sesame Tofu is seriously crispy and drenched in a tangy sesame sauce. Broccoli florets and cooked rice make it a meal.",
   "image": [
@@ -82,5 +83,6 @@
   "sameAs": [
     "https://www.budgetbytes.com/pan-fried-sesame-tofu-with-broccoli/"
   ],
-  "totalTime": "PT60M"
+  "totalTime": "PT60M",
+  "updatedAt": "2020-10-08T05:43:37.365Z"
 }

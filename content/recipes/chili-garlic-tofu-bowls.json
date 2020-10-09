@@ -2,7 +2,7 @@
   "@type": "Recipe",
   "aggregateRating": {
     "@type": "AggregateRating",
-    "ratingCount": "34",
+    "ratingCount": "35",
     "ratingValue": "4.98"
   },
   "author": {
@@ -10,6 +10,7 @@
     "name": "Beth - Budget Bytes"
   },
   "cookTime": "PT30M",
+  "createdAt": "2020-10-08T05:27:29.711Z",
   "datePublished": "2016-09-14T13:01:40+00:00",
   "description": "Chili Garlic Tofu Bowls are a fiber and flavor filled healthy lunch that you can pre-pack for your week ahead",
   "image": [
@@ -77,5 +78,6 @@
   ],
   "recipeYield": "4",
   "sameAs": ["https://www.budgetbytes.com/chili-garlic-tofu-bowls/"],
-  "totalTime": "PT60M"
+  "totalTime": "PT60M",
+  "updatedAt": "2020-10-08T05:27:29.712Z"
 }

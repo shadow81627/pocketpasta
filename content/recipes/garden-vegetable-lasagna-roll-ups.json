@@ -10,6 +10,7 @@
     "name": "Beth - Budget Bytes"
   },
   "cookTime": "PT40M",
+  "createdAt": "2020-10-08T05:36:49.893Z",
   "datePublished": "2015-07-30T18:05:14+00:00",
   "description": "With a rainbow of vegetables and a trio of cheeses, these Garden Vegetable Lasagna Roll Ups are a flavorful and filling meal. Freezer friendly, too! ",
   "image": [
@@ -78,5 +79,6 @@
   ],
   "recipeYield": "6",
   "sameAs": ["https://www.budgetbytes.com/garden-vegetable-lasagna-roll-ups/"],
-  "totalTime": "PT70M"
+  "totalTime": "PT70M",
+  "updatedAt": "2020-10-08T05:36:49.893Z"
 }

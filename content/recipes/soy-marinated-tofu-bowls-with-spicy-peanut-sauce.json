@@ -10,6 +10,7 @@
     "name": "Beth - Budget Bytes"
   },
   "cookTime": "PT60M",
+  "createdAt": "2020-10-08T05:51:19.132Z",
   "datePublished": "2017-12-09T11:44:22+00:00",
   "description": "These vegan Soy Marinated Tofu Bowls are full of rich flavors and plenty of texture to keep your taste buds happy and your belly full. ",
   "image": [
@@ -89,5 +90,6 @@
   "sameAs": [
     "https://www.budgetbytes.com/soy-marinated-tofu-bowls-spicy-peanut-sauce/"
   ],
-  "totalTime": "PT80M"
+  "totalTime": "PT80M",
+  "updatedAt": "2020-10-08T05:51:19.132Z"
 }

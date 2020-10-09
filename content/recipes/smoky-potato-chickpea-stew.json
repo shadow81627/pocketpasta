@@ -2,7 +2,7 @@
   "@type": "Recipe",
   "aggregateRating": {
     "@type": "AggregateRating",
-    "ratingCount": "75",
+    "ratingCount": "77",
     "ratingValue": "4.95"
   },
   "author": {
@@ -10,6 +10,7 @@
     "name": "Beth - Budget Bytes"
   },
   "cookTime": "PT60M",
+  "createdAt": "2020-10-08T05:49:45.074Z",
   "datePublished": "2017-11-29T12:49:26+00:00",
   "description": "This Smoky Potato Chickpea Stew is a hearty and filling plant-based dish that will keep you full and warm this winter!",
   "image": [
@@ -73,6 +74,7 @@
   "recipeYield": "6",
   "sameAs": ["https://www.budgetbytes.com/smoky-potato-chickpea-stew/"],
   "totalTime": "PT70M",
+  "updatedAt": "2020-10-08T05:49:45.074Z",
   "video": {
     "@type": "VideoObject",
     "contentUrl": "https://embed.mediavine.com/videos/w5qrd4hsdmftofms8hmy",

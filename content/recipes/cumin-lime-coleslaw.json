@@ -9,6 +9,7 @@
     "@type": "Person",
     "name": "Beth - Budget Bytes"
   },
+  "createdAt": "2020-10-08T05:32:49.828Z",
   "datePublished": "2015-03-25T18:00:57+00:00",
   "description": "Fresh lime juice and earthy cumin give this Cumin Lime Coleslaw a light, fresh, and summery flavor. Perfect for summer BBQ or any southwest inspired meal.",
   "image": [
@@ -56,5 +57,6 @@
   ],
   "recipeYield": "6",
   "sameAs": ["https://www.budgetbytes.com/cumin-lime-coleslaw/"],
-  "totalTime": "PT30M"
+  "totalTime": "PT30M",
+  "updatedAt": "2020-10-08T05:32:49.828Z"
 }

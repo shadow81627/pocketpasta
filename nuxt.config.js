@@ -74,7 +74,7 @@ module.exports = {
   target: 'static',
 
   workbox: {
-    offlineAnalytics: true,
+    // offlineAnalytics: true,
     dev: false,
   },
 

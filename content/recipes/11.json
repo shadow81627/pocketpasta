@@ -10,6 +10,7 @@
     "name": "Kate Hackworthy | Veggie Desserts"
   },
   "cookTime": "PT20M",
+  "createdAt": "2020-10-08T05:16:54.247Z",
   "datePublished": "2018-11-18T15:00:26+00:00",
   "description": "These vegan gluten-free Spanish beans are packed with flavour, but are so easy to make in less than 20 minutes with just 7 ingredients! Perfect served with rice or fresh bread and only 125 calories per serving.",
   "image": [
@@ -19,7 +20,7 @@
     "https://veggiedesserts.com/wp-content/uploads/2016/06/SpanishWhiteBeans-480x270.jpg"
   ],
   "keywords": "spanish beans, spanish recipe, tapas, vegan gluten free",
-  "name": "Vegan Spanish Beans with Tomatoes",
+  "name": "Spanish Beans with Tomatoes",
   "nutrition": {
     "@type": "NutritionInformation",
     "calories": "125 kcal",
@@ -71,6 +72,7 @@
   "sameAs": ["https://veggiedesserts.com/spanish-beans-tomatoes/"],
   "suitableForDiet": "https://schema.org/VeganDiet",
   "totalTime": "PT25M",
+  "updatedAt": "2020-10-08T05:16:54.247Z",
   "video": {
     "@type": "VideoObject",
     "contentUrl": "https://embed.mediavine.com/videos/fyqzt8lidx6wppbpv3gs",

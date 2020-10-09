@@ -10,6 +10,7 @@
     "name": "Beth - Budget Bytes"
   },
   "cookTime": "PT30M",
+  "createdAt": "2020-10-08T05:25:31.652Z",
   "datePublished": "2011-02-21T20:05:00+00:00",
   "description": "Broccoli shells n' cheese is a classic American dish that goes well along side any meal, or as a hearty side dish. 100% real, 100% homemade.",
   "image": [
@@ -19,6 +20,16 @@
     "https://www.budgetbytes.com/wp-content/uploads/2011/02/Broccoli-Shells-and-Cheese-above-480x270.jpg"
   ],
   "name": "Broccoli Shells n' Cheese",
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "calories": "679.88 kcal",
+    "carbohydrateContent": "61.85 g",
+    "fatContent": "35.38 g",
+    "fiberContent": "4 g",
+    "proteinContent": "29.65 g",
+    "servingSize": "1 Serving",
+    "sodiumContent": "850.38 mg"
+  },
   "prepTime": "PT10M",
   "recipeIngredient": [
     "8 oz. pasta ($0.55)",
@@ -63,5 +74,6 @@
   ],
   "recipeYield": "4",
   "sameAs": ["https://www.budgetbytes.com/broccoli-shells-n-cheese/"],
-  "totalTime": "PT40M"
+  "totalTime": "PT40M",
+  "updatedAt": "2020-10-08T05:25:31.652Z"
 }

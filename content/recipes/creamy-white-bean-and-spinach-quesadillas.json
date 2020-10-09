@@ -2,7 +2,7 @@
   "@type": "Recipe",
   "aggregateRating": {
     "@type": "AggregateRating",
-    "ratingCount": "43",
+    "ratingCount": "46",
     "ratingValue": "4.94"
   },
   "author": {
@@ -10,6 +10,7 @@
     "name": "Beth - Budget Bytes"
   },
   "cookTime": "PT10M",
+  "createdAt": "2020-10-08T05:31:54.088Z",
   "datePublished": "2019-02-19T14:44:50+00:00",
   "description": "Crispy on the outside, creamy on the inside, these insanely delicious Creamy White Bean and Spinach Quesadillas make an awesomely fast weeknight dinner. ",
   "image": [
@@ -69,6 +70,7 @@
     "https://www.budgetbytes.com/creamy-white-bean-and-spinach-quesadillas/"
   ],
   "totalTime": "PT20M",
+  "updatedAt": "2020-10-08T05:31:54.088Z",
   "video": {
     "@type": "VideoObject",
     "contentUrl": "https://embed.mediavine.com/videos/wunjmod238ozviqmzjhf",

@@ -1,0 +1,16 @@
+{
+  "@type": "Offer",
+  "availability": "https://schema.org/InStock",
+  "availabilityStarts": "2020-10-09T00:07:46.212Z",
+  "createdAt": "2020-10-09T03:08:48.535Z",
+  "itemCondition": "https://schema.org/NewCondition",
+  "offeredBy": "Coles",
+  "price": "2.60",
+  "priceCurrency": "AUD",
+  "seller": {
+    "@type": "Organization",
+    "name": "Coles"
+  },
+  "updatedAt": "2020-10-09T03:08:48.536Z",
+  "url": "https://shop.coles.com.au/a/national/product/onions-brown-shallots-loose"
+}

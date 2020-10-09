@@ -10,6 +10,7 @@
     "name": "Beth - Budget Bytes"
   },
   "cookTime": "PT20M",
+  "createdAt": "2020-10-08T05:36:18.060Z",
   "datePublished": "2016-10-08T16:44:52+00:00",
   "description": "Fried Cabbage and Noodles is a simple and inexpensive comfort food that can be served as a side dish or the base to full meal.",
   "image": [
@@ -63,5 +64,6 @@
   ],
   "recipeYield": "4",
   "sameAs": ["https://www.budgetbytes.com/fried-cabbage-and-noodles/"],
-  "totalTime": "PT25M"
+  "totalTime": "PT25M",
+  "updatedAt": "2020-10-08T05:36:18.060Z"
 }

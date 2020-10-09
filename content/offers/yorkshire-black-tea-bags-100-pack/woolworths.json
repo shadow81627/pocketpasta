@@ -2,6 +2,7 @@
   "@type": "Offer",
   "availability": "http://schema.org/InStock",
   "availabilityStarts": "2020-06-27T00:56:30.779Z",
+  "createdAt": "2020-10-09T03:11:28.614Z",
   "itemCondition": "http://schema.org/NewCondition",
   "offeredBy": "Woolworths",
   "potentialAction": {
@@ -14,5 +15,6 @@
     "@type": "Organization",
     "name": "Woolworths"
   },
+  "updatedAt": "2020-10-09T03:11:28.614Z",
   "url": "https://www.woolworths.com.au/shop/productdetails/750176/taylors-of-harrogate-yorkshire-tea-bags"
 }

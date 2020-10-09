@@ -2,14 +2,15 @@
   "@type": "Recipe",
   "aggregateRating": {
     "@type": "AggregateRating",
-    "ratingCount": "60",
-    "ratingValue": "4.95"
+    "ratingCount": "61",
+    "ratingValue": "4.96"
   },
   "author": {
     "@type": "Person",
     "name": "Beth - Budget Bytes"
   },
   "cookTime": "PT40M",
+  "createdAt": "2020-10-08T05:31:01.046Z",
   "datePublished": "2019-07-13T19:00:50+00:00",
   "description": "These rich, creamy, and earthy Coconut Curry Lentils are an easy and delicious vegan option for dinner or weekly meal prep!",
   "image": [
@@ -75,6 +76,7 @@
     "https://www.budgetbytes.com/creamy-coconut-curry-lentils-with-spinach/"
   ],
   "totalTime": "PT45M",
+  "updatedAt": "2020-10-08T05:31:01.046Z",
   "video": {
     "@type": "VideoObject",
     "contentUrl": "https://embed.mediavine.com/videos/cszu5igarnurncpmbfcm",

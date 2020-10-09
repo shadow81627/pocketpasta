@@ -9,6 +9,7 @@
     "@type": "Person",
     "name": "Beth - Budget Bytes"
   },
+  "createdAt": "2020-10-08T05:39:23.339Z",
   "datePublished": "2017-02-21T12:58:00+00:00",
   "description": "Homemade hummus is quick, easy, and inexpensive, and can be made with several different flavor add-ins. Here are four delicious flavors to try.",
   "image": [
@@ -55,5 +56,6 @@
   ],
   "recipeYield": "6",
   "sameAs": ["https://www.budgetbytes.com/hummus-four-flavors/"],
-  "totalTime": "PT5M"
+  "totalTime": "PT5M",
+  "updatedAt": "2020-10-08T05:39:23.339Z"
 }

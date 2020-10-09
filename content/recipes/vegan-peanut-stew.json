@@ -2,7 +2,7 @@
   "@type": "Recipe",
   "aggregateRating": {
     "@type": "AggregateRating",
-    "ratingCount": "164",
+    "ratingCount": "168",
     "ratingValue": "4.84"
   },
   "author": {
@@ -10,6 +10,7 @@
     "name": "Beth - Budget Bytes"
   },
   "cookTime": "PT45M",
+  "createdAt": "2020-10-08T05:57:59.928Z",
   "datePublished": "2019-01-24T12:31:56+00:00",
   "description": "With a rich peanut and tomato sauce, sweet potatoes, collard greens, and crunchy peanuts, this Vegan Peanut Stew is comfort in a bowl! ",
   "image": [
@@ -75,5 +76,6 @@
   ],
   "recipeYield": "6",
   "sameAs": ["https://www.budgetbytes.com/african-peanut-stew-vegan/"],
-  "totalTime": "PT55M"
+  "totalTime": "PT55M",
+  "updatedAt": "2020-10-08T05:57:59.928Z"
 }

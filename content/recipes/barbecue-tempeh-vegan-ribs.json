@@ -10,6 +10,7 @@
     "name": "Alissa Saenz"
   },
   "cookTime": "PT30M",
+  "createdAt": "2020-10-09T00:40:21.978Z",
   "datePublished": "2018-06-29T10:18:47+00:00",
   "description": "Smoky, savory, and slathered in sweet and zippy homemade barbecue sauce, these barbecue ribs are made from tempeh! Cook them in the oven or on the grill for a meatless summer feast!",
   "image": {
@@ -119,5 +120,6 @@
   ],
   "recipeYield": "2",
   "sameAs": ["https://www.connoisseurusveg.com/vegan-ribs/"],
-  "totalTime": "PT45M"
+  "totalTime": "PT45M",
+  "updatedAt": "2020-10-09T00:40:21.972Z"
 }

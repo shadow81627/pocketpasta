@@ -49,6 +49,7 @@
     "@type": "Organization",
     "name": "annalisa"
   },
+  "createdAt": "2020-10-08T05:09:22.015Z",
   "description": "Annalisa Italian Peeled Tomatoes In Tomato Juice a 100% Italian Tomatoes.",
   "gtin13": "8002560200564",
   "image": "https://cdn0.woolworths.media/content/wowproductimages/large/037810.jpg",
@@ -101,10 +102,10 @@
       "value": 400
     }
   },
-  "review": [],
   "sameAs": [
     "https://www.woolworths.com.au/shop/productdetails/37810/annalisa-tomatoes-peeled",
     "https://shop.coles.com.au/a/a-national/product/annalisa-tomatoes-peeled"
   ],
-  "sku": "37810"
+  "sku": "37810",
+  "updatedAt": "2020-10-09T00:25:46.431Z"
 }

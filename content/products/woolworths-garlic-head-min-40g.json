@@ -6,10 +6,11 @@
     "@type": "Organization",
     "name": "woolworths"
   },
+  "createdAt": "2020-10-08T05:14:05.294Z",
   "description": "Bulb made up of segments called cloves, covered by a papery shell. The most common varieties of garlic contain 10 cloves (or segments) with white skin. Other varieties have pink or purple skin and larger cloves. As a rule, the smaller the clove, the stronger the taste. It is a member of the allium family that also includes onions, chives, shallots, spring onions and leeks.What to look forLook for firm well-shaped cloves. Buy in small amounts and break off the cloves only when needed. Garlic dries out once detached. bulb of garlic has had its roots trimmed, one at a time. Garlic is never labelled since it sheds its skin if a label is applied to it.AvailabilityAll year.StoreKeep in a cool dry place away from the sunlight. Avoid placing in plastic bags, or storing in the refrigerator or everything in the refrigerator will end up tasting of garlic. Avoid storing next to ginger as ginger dehydrates garlic.How to prepareSeparate cloves from bulbs, remove papery skin unless roasting when skin can be left on. Cut bulbs in half crosswise and brush with oil to roast. To remove skin, press the clove under the flat side of a knife and the skin will come off easily. Chop the garlic very finely or crush it with the side of a knife. Alternatively, use a garlic crusher.Ways to eatGarlic can be eaten raw or cooked. Raw garlic produces a strong, pungent flavour while cooking gives a more mellow flavour. The longer garlic is cooked, the milder and sweeter the flavour. It's usually used in small amounts, 2-3 cloves to a dish. Garlic burns easily, so take care when frying or sautéing. It can be used in vegetable dishes, meats, soups, dips, stir fries, braises and stews. Add whole unpeeled cloves into a roasting pan with meat or vegetables. Cut a whole head in half horizontally and roast in a little olive oil. When cooked, serve as it is, or squeeze the roasted flesh out and serve on crostini or fresh bread.Cooking MethodsRoast, braise, stew, stir fry.",
   "gtin13": "0260139000009",
   "image": "https://cdn0.woolworths.media/content/wowproductimages/large/713429.jpg",
-  "name": "Woolworths Garlic Head",
+  "name": "Woolworths Garlic Head Each",
   "offers": {
     "@type": "AggregateOffer",
     "highPrice": 0.96,
@@ -38,9 +39,9 @@
     ],
     "priceCurrency": "AUD"
   },
-  "review": [],
   "sameAs": [
     "https://www.woolworths.com.au/shop/productdetails/713429/woolworths-garlic-head"
   ],
-  "sku": "713429"
+  "sku": "713429",
+  "updatedAt": "2020-10-09T01:21:37.164Z"
 }

@@ -2,7 +2,7 @@
   "@type": "Recipe",
   "aggregateRating": {
     "@type": "AggregateRating",
-    "ratingCount": "19",
+    "ratingCount": "20",
     "ratingValue": "4.95"
   },
   "author": {
@@ -10,6 +10,7 @@
     "name": "Beth - Budget Bytes"
   },
   "cookTime": "PT30M",
+  "createdAt": "2020-10-08T05:33:54.784Z",
   "datePublished": "2015-03-14T13:28:36+00:00",
   "description": "Sweet oven roasted carrots balance the earthy and spicy flavor of curry powder in these incredibly simple but flavorful Curry Roasted Carrots.",
   "image": [
@@ -53,5 +54,6 @@
   ],
   "recipeYield": "2",
   "sameAs": ["https://www.budgetbytes.com/curry-roasted-carrots/"],
-  "totalTime": "PT45M"
+  "totalTime": "PT45M",
+  "updatedAt": "2020-10-08T05:33:54.784Z"
 }

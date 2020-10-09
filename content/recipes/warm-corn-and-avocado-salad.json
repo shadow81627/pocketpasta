@@ -10,6 +10,7 @@
     "name": "Beth - Budget Bytes"
   },
   "cookTime": "PT7M",
+  "createdAt": "2020-10-08T06:01:23.792Z",
   "datePublished": "2016-05-07T11:04:06+00:00",
   "description": "Warm Corn and Avocado Salad makes the perfect light and fresh side dish for enchiladas, grilled meats, tacos, or any summer meal.",
   "image": [
@@ -57,5 +58,6 @@
   ],
   "recipeYield": "4",
   "sameAs": ["https://www.budgetbytes.com/warm-corn-avocado-salad/"],
-  "totalTime": "PT17M"
+  "totalTime": "PT17M",
+  "updatedAt": "2020-10-08T06:01:23.792Z"
 }

@@ -2,14 +2,15 @@
   "@type": "Recipe",
   "aggregateRating": {
     "@type": "AggregateRating",
-    "ratingCount": "38",
-    "ratingValue": "4.72"
+    "ratingCount": "43",
+    "ratingValue": "4.75"
   },
   "author": {
     "@type": "Person",
     "name": "Beth - Budget Bytes"
   },
   "cookTime": "PT30M",
+  "createdAt": "2020-10-08T05:26:32.706Z",
   "datePublished": "2013-05-07T13:29:00+00:00",
   "description": "Chana saag is a creamy chickpea and spinach curry that comes together quickly, is full of warm spices, filling, and vegan! Perfect for meal prep!",
   "image": [
@@ -19,7 +20,7 @@
     "https://www.budgetbytes.com/wp-content/uploads/2013/05/Chana-Saag-bowls-with-rice-480x270.jpg"
   ],
   "keywords": "Chickpea Recipes, Easy Vegan Dinners",
-  "name": "Chana Saag",
+  "name": "Chana Saag Curry",
   "nutrition": {
     "@type": "NutritionInformation",
     "calories": "360.03 kcal",
@@ -74,5 +75,6 @@
   ],
   "recipeYield": "6",
   "sameAs": ["https://www.budgetbytes.com/chana-saag/"],
-  "totalTime": "PT40M"
+  "totalTime": "PT40M",
+  "updatedAt": "2020-10-08T05:26:32.706Z"
 }

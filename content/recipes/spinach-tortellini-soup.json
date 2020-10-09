@@ -10,6 +10,7 @@
     "name": "Beth - Budget Bytes"
   },
   "cookTime": "PT25M",
+  "createdAt": "2020-10-08T05:53:21.426Z",
   "datePublished": "2012-09-02T13:38:00+00:00",
   "description": "A quick and easy spinach tortellini soup full of veggies and a rich tomato broth. It's perfect for freezing, so save some for a rainy day!",
   "image": [
@@ -60,5 +61,6 @@
   ],
   "recipeYield": "8",
   "sameAs": ["https://www.budgetbytes.com/spinach-tortellini-soup/"],
-  "totalTime": "PT30M"
+  "totalTime": "PT30M",
+  "updatedAt": "2020-10-08T05:53:21.426Z"
 }
