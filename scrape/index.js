@@ -171,7 +171,9 @@ function parseDuration(duration) {
       !content.sameAs.some((item) => urlBlacklist.includes(item)) &&
       (!content.updatedAt ||
         DateTime.fromISO(content.updatedAt) <
-          DateTime.local().minus({ days: 1 }))
+          DateTime.local().minus({
+            days: content['@type'] === 'Recipe' ? 30 : 1,
+          }))
     ) {
       urls.push(content.sameAs);
       for (const url of content.sameAs) {
