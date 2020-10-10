@@ -294,6 +294,7 @@ import { debounce } from 'lodash-es';
 
 import ConfirmDialog from '@/components/ConfirmDialog.vue';
 import ListHeader from '@/components/List/ListHeader.vue';
+import { init } from '@/db';
 
 export default {
   components: {
@@ -347,19 +348,22 @@ export default {
       done: false,
     },
   }),
-  fetch() {
-    const query = this.$db.shopping.find({
+  async fetch() {
+    this.$db = await init({
+      remote: this.$warehouse.get('dbRemote') || this.$config.DB_REMOTE,
+      username: this.$warehouse.get('dbUsername') || this.$config.DB_USERNAME,
+      password: this.$warehouse.get('dbPassword') || this.$config.DB_PASSWORD,
+    });
+    this.collection = this.$db.shopping.find({
       selector: {
         name: { $regex: `.*${this.search}.*` },
       },
     });
-    this.collection = query;
-    query.$.subscribe((results = []) => {
+    this.sub = this.collection.$.subscribe((results = []) => {
       this.total = results.length;
       this.items = results;
     });
   },
-  fetchOnServer: false,
   head() {
     return {
       title: 'Shopping',
@@ -437,6 +441,7 @@ export default {
       },
     },
   },
+  fetchOnServer: false,
   watch: {
     dialog(val) {
       val || this.close();
@@ -444,6 +449,11 @@ export default {
     '$route.query': debounce(function () {
       this.$fetch();
     }, 500),
+  },
+  beforeDestroy() {
+    if (this.sub) {
+      this.sub.unsubscribe();
+    }
   },
   methods: {
     defaultItem: () => ({

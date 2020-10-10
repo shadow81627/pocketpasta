@@ -106,7 +106,7 @@ module.exports = {
   },
 
   router: {
-    middleware: ['last-known-route'],
+    // middleware: ['last-known-route'],
   },
 
   publicRuntimeConfig: {
@@ -219,9 +219,9 @@ module.exports = {
    ** Plugins to load before mounting the App
    */
   plugins: [
-    { src: '~/plugins/theme.js', mode: 'client' },
-    { src: '~/middleware/last-known-route', mode: 'client' },
-    { src: '~/plugins/db.js', mode: 'client' },
+    // { src: '~/plugins/theme.js', mode: 'client' },
+    // { src: '~/middleware/last-known-route', mode: 'client' },
+    // { src: '~/plugins/db.js', mode: 'client' },
   ],
 
   /*
