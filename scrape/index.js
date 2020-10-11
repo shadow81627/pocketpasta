@@ -1,4 +1,5 @@
 const { readFile, writeFile, mkdir } = require('fs').promises;
+const fs = require('fs');
 const path = require('path');
 const _ = require('lodash');
 const slugify = require('slugify');
@@ -45,6 +46,17 @@ const argv = yargs
 const urls = [
   // ['https://www.connoisseurusveg.com/vegan-ribs/']
   // ['https://shop.coles.com.au/a/sunnybank-hills/product/pukka-tea-detox'],
+  // ['https://bakeplaysmile.com/best-banana-bread/'],
+  [
+    'https://shop.coles.com.au/a/sunnybank-hills/product/coles-natures-kitchen-lentil-spag-bolognese',
+  ],
+  [
+    'https://shop.coles.com.au/a/sunnybank-hills/product/coles-natures-kitchen-meat-free-butter-chicken',
+  ],
+  ['https://shop.coles.com.au/a/sunnybank-hills/product/coles-hard-tofu'],
+  [
+    'https://shop.coles.com.au/a/sunnybank-hills/product/coles-meat-free-chicken-tenderloins-3512916p',
+  ],
 ];
 
 const urlBlacklist = [
@@ -52,6 +64,20 @@ const urlBlacklist = [
 ];
 
 const fileUrlMap = {};
+
+function parseInstructions(instructions) {
+  if (typeof instructions === 'string') {
+    return formatString(instructions).match(/[^.!?]+[.!?]+[^)]/g);
+  }
+  if (Array.isArray(instructions)) {
+    if (_.head(instructions).itemListElement) {
+      return _.head(instructions).itemListElement;
+    } else {
+      return instructions;
+    }
+  }
+  return instructions || [];
+}
 
 const pipe = (...fns) => (x) => fns.reduce((v, f) => f(v), x);
 
@@ -71,6 +97,7 @@ function formatString(value) {
     str.replace(/\s+([.!?,;])/g, '$1');
 
   return pipe(
+    String,
     he.decode,
     removeHtml,
     replaceFractionSlash,
@@ -153,23 +180,12 @@ function parseDuration(duration) {
   for await (const filename of getFiles(`content/${argv.collection}`)) {
     const file = await readFile(filename, { encoding: 'utf8' });
     const content = JSON.parse(file);
-    // && urls.length === 0
-    if (
-      content &&
-      !content.sameAs &&
-      content.slug &&
-      content.author &&
-      content.author === 'Yaman Agarwal'
-    ) {
-      // if recipe and author is Yaman Agarwal then cooking shooking so url = https://cscom-2019.web.app/${slug}
-      content.sameAs = [`https://cscom-2019.web.app/${content.slug}`];
-    }
-
     if (
       !argv['only-new'] &&
       content.sameAs &&
       !content.sameAs.some((item) => urlBlacklist.includes(item)) &&
-      (!content.updatedAt ||
+      (!argv.scrape ||
+        !content.updatedAt ||
         DateTime.fromISO(content.updatedAt) <
           DateTime.local().minus({
             days: content['@type'] === 'Recipe' ? 30 : 1,
@@ -317,18 +333,47 @@ function parseDuration(duration) {
         const recipeInstructions =
           recipeInstructionsChunkData.recipeInstructions;
 
-        const recipeInstructionsArray =
-          (typeof recipeInstructions === 'string'
-            ? formatString(recipeInstructions).match(/[^.!?]+[.!?]+[^)]/g)
-            : // deal try and handle groups...?
-            recipeInstructions &&
-              recipeInstructions.length > 0 &&
-              recipeInstructions[0].group
-            ? recipeInstructions[0].group.steps
-            : recipeInstructions) || [];
+        const recipeInstructionsArray = parseInstructions(recipeInstructions);
 
         linkData.recipeInstructions = _.uniq(
           fromatInstructions(recipeInstructionsArray),
+        );
+      }
+
+      if (linkData.author && linkData.author['@type'] === 'Person') {
+        const slug = slugify(linkData.author.name, {
+          lower: true,
+          strict: true,
+        });
+        const personPath = `content/people/${slug}.json`;
+        const oldPerson = fs.existsSync(path)
+          ? JSON.parse(
+              await readFile(personPath, {
+                encoding: 'utf8',
+              }),
+            )
+          : {};
+        const author = { ...oldPerson, ...linkData.author };
+        const sameAs = _.uniq([
+          ...(author.sameAs || []),
+          ...(linkData.sameAs || []),
+        ]);
+        if (argv.scrape) {
+          author.updatedAt = new Date();
+        }
+        await writeFile(
+          personPath,
+          JSON.stringify(
+            sortobject({
+              ...author,
+              sameAs,
+              '@type': 'Person',
+              '@id': undefined,
+              '@context': undefined,
+            }),
+            undefined,
+            2,
+          ) + '\n',
         );
       }
 
@@ -343,28 +388,37 @@ function parseDuration(duration) {
           lowPrice: Math.min(..._.map(linkData.offers.offers, 'price')),
           offerCount: linkData.offers.offers.length,
         };
-        linkData.offers.offers.map(async (offer) => {
+        linkData.offers.offers.map(async (newOffer) => {
+          const offerSlug = slugify(newOffer.offeredBy, {
+            lower: true,
+            strict: true,
+          });
           const folder = `content/offers/${slug}`;
+          const offerPath = `${folder}/${offerSlug}.json`;
           await mkdir(folder, { recursive: true });
+          const oldOffer = fs.existsSync(offerPath)
+            ? JSON.parse(
+                await readFile(offerPath, {
+                  encoding: 'utf8',
+                }),
+              )
+            : {};
+          const offer = {
+            ...oldOffer,
+            ...newOffer,
+            '@type': 'Offer',
+            '@id': undefined,
+            '@context': undefined,
+          };
           if (!offer.createdAt) {
             offer.createdAt = new Date();
           }
+          if (argv.scrape || !offer.updatedAt) {
+            offer.updatedAt = new Date();
+          }
           await writeFile(
-            `${folder}/${slugify(offer.offeredBy, {
-              lower: true,
-              strict: true,
-            })}.json`,
-            JSON.stringify(
-              sortobject({
-                ...offer,
-                '@type': 'Offer',
-                '@id': undefined,
-                '@context': undefined,
-                updatedAt: new Date(),
-              }),
-              undefined,
-              2,
-            ) + '\n',
+            offerPath,
+            JSON.stringify(sortobject(offer), undefined, 2) + '\n',
           );
         });
       }

@@ -1,0 +1,93 @@
+{
+  "@type": "Recipe",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingCount": "52",
+    "ratingValue": "5"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Lucy - Bake Play Smile"
+  },
+  "cookTime": "PT60M",
+  "createdAt": "2020-10-11T06:48:25.534Z",
+  "datePublished": "2020-08-21T04:00:00+00:00",
+  "description": "A delicious one-bowl banana bread that is so quick and easy to prepare!",
+  "image": [
+    "https://bakeplaysmile.com/wp-content/uploads/2020/07/Banana-Bread-6.jpg",
+    "https://bakeplaysmile.com/wp-content/uploads/2020/07/Banana-Bread-6-500x500.jpg",
+    "https://bakeplaysmile.com/wp-content/uploads/2020/07/Banana-Bread-6-500x375.jpg",
+    "https://bakeplaysmile.com/wp-content/uploads/2020/07/Banana-Bread-6-480x270.jpg"
+  ],
+  "keywords": "banana bread",
+  "name": "Cafe Style Banana Bread",
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "calories": "187 kcal",
+    "carbohydrateContent": "30 g",
+    "cholesterolContent": "37 mg",
+    "fatContent": "7 g",
+    "fiberContent": "1 g",
+    "proteinContent": "3 g",
+    "saturatedFatContent": "4 g",
+    "servingSize": "1 serving",
+    "sodiumContent": "226 mg",
+    "sugarContent": "16 g"
+  },
+  "prepTime": "PT5M",
+  "recipeCategory": ["breads and loaves"],
+  "recipeCuisine": "western",
+  "recipeIngredient": [
+    "120 g unsalted butter (softened)",
+    "200 g brown sugar",
+    "4 bananas (mashed, see notes)",
+    "2 eggs",
+    "225 g (1 1/2 cups) plain flour",
+    "1 tsp bi-carbonate of soda (also known as baking soda)",
+    "1 tsp salt",
+    "1 tsp vanilla extract"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "Preheat oven to 160 degrees celsius fan-forced (or 170 degrees non fan-forced). Grease a non-stick loaf tin (approximately 21cm X 11cm or 8 inch X 4.5 inch). See notes."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Place the softened butter and brown sugar into a bowl. Beat with a stand mixer or hand-held beaters for 2 minutes or until pale and fluffy."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Add the mashed banana and the eggs to the creamed butter mixture. Beat for 30 seconds or until well combined."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Sift the plain flour and bi-carbonate soda (baking soda) into the bowl."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Add the salt and vanilla extract and fold together with a spoon."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Pour the mixture into the prepared tin. Sprinkle a little raw sugar over the top (optional)."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Cook for 1 hour or until a skewer inserted into the middle comes out clean or with a few crumbs."
+    }
+  ],
+  "recipeYield": "16",
+  "sameAs": ["https://bakeplaysmile.com/best-banana-bread/"],
+  "totalTime": "PT65M",
+  "updatedAt": "2020-10-11T06:48:25.526Z",
+  "video": {
+    "@type": "VideoObject",
+    "contentUrl": "https://embed.mediavine.com/videos/twmoohukzfnw5zstwikz",
+    "description": "A delicious and moist cafe-style banana bread recipe that takes just 5 minutes to make. The perfect way to use up ripe bananas!",
+    "duration": "PT49S",
+    "name": "Banana Bread | Cafe-Style",
+    "thumbnailUrl": "https://mediavine-res.cloudinary.com/image/upload/s--JeHC7LqP--/c_limit,f_auto,fl_lossy,h_1080,q_auto,w_1920/v1595363096/flhxltubenm7a2xke2ac.jpg",
+    "uploadDate": "2020-07-21T20:24:50+00:00"
+  }
+}

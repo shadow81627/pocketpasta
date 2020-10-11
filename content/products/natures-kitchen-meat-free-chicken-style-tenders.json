@@ -1,0 +1,55 @@
+{
+  "@type": "Product",
+  "additionalProperty": [
+    {
+      "name": "Ingredients",
+      "value": "Water, Textured Wheat Protein [Wheat Protein, Wheat Flour], Vegan Chicken Flavour [Coconut Oil, Maltodextrin, Natural Flavouring, Yeast Extract, Salt, Flavour Enhancer (L-Cysteine) Dehydrated Garlic, Rosemary], Canola Oil, Thickener [Maize Starch, Wheat Protein, Thickener (461) Pea Protein, Potato Fibre, Dried Yeast], Potato Starch."
+    },
+    {
+      "name": "Servings Per Pack",
+      "value": "2.0"
+    },
+    {
+      "name": "Size",
+      "value": "240g"
+    },
+    {
+      "name": "Unit Price",
+      "value": "$2.92 per 100G"
+    }
+  ],
+  "brand": "Coles",
+  "createdAt": "2020-10-11T08:20:28.098Z",
+  "description": "Deliciously Vegan",
+  "image": "https://shop.coles.com.au/wcsstore/Coles-CAS/images/3/5/1/3512916.jpg",
+  "name": "Nature's Kitchen Meat Free Chicken Style Tenders",
+  "offers": {
+    "@type": "AggregateOffer",
+    "highPrice": 7,
+    "lowPrice": 7,
+    "offerCount": 1,
+    "offers": [
+      {
+        "@context": "http://schema.org",
+        "@type": "Offer",
+        "availability": "https://schema.org/InStock",
+        "availabilityStarts": "2020-10-11T08:20:28.093Z",
+        "itemCondition": "https://schema.org/NewCondition",
+        "offeredBy": "Coles",
+        "price": "7.00",
+        "priceCurrency": "AUD",
+        "seller": {
+          "@type": "Organization",
+          "name": "Coles"
+        },
+        "url": "https://shop.coles.com.au/a/national/product/coles-meat-free-chicken-tenderloins-3512916p"
+      }
+    ],
+    "priceCurrency": "AUD"
+  },
+  "sameAs": [
+    "https://shop.coles.com.au/a/sunnybank-hills/product/coles-meat-free-chicken-tenderloins-3512916p"
+  ],
+  "sku": "3512916",
+  "updatedAt": "2020-10-11T08:20:28.095Z"
+}
