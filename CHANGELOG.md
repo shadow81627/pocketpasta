@@ -1,5 +1,11 @@
 # Releases
 
+## [0.47.4](https://github.com/shadow81627/pocketpasta/compare/v0.47.3...v0.47.4) (2020-10-11)
+
+### Performance Improvements
+
+- **db:** create only on pages where it is used ([#1643](https://github.com/shadow81627/pocketpasta/issues/1643)) ([cf6e350](https://github.com/shadow81627/pocketpasta/commit/cf6e3501bc48958d46e1319d59b2789b1ec6f6db))
+
 ## [0.47.3](https://github.com/shadow81627/pocketpasta/compare/v0.47.2...v0.47.3) (2020-10-07)
 
 ### Bug Fixes
