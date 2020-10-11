@@ -2,6 +2,8 @@
   "@context": "http://schema.org",
   "@type": "Recipe",
   "name": "Roast Taters",
+  "createdAt": "2020-10-11T23:19:05.204Z",
+  "updatedAt": "2020-10-11T23:19:05.204Z",
   "image": "https://images.unsplash.com/photo-1586965858003-397da6484df9?ixid=eyJhcHBfaWQiOjEyMDd9",
   "suitableForDiet": "https://schema.org/VeganDiet",
   "author": {

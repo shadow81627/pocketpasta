@@ -1,6 +1,7 @@
 {
   "@type": "Recipe",
   "author": "Yaman Agarwal",
+  "createdAt": "2020-10-11T23:19:05.204Z",
   "description": "Rejoice all your fond memories with this Traditional Atta Biscuits.. Today, lets make the same in a Cooker, Yeah! Its easy to make, and delicious to eat.. Another recipe in our Eggless Baking Without Oven Series! These crunchy biscuits, made with atta or wheat flour are healthy(Eh, Oh! Ofcourse healthier than the Maida ones), and the flavor of the biscuits made with ghee is fantabulous. Awesomelicious Biscuits!",
   "image": "https://i.ytimg.com/vi/Uta78WwtRXQ/maxresdefault.jpg",
   "keywords": "eggless baking, eggless baking without oven, atta biscuit recipe, atta cookies, eggless cookies, eggless biscuits, biscuit recipe without oven, biscuits in cooker, biscuit recipe, how to make cookies at home, how to make biscuits at home, how to make biscuits in cooker",
@@ -80,6 +81,7 @@
     }
   ],
   "sameAs": ["https://cscom-2019.web.app/atta-biscuits-recipe/"],
+  "updatedAt": "2020-10-11T23:19:05.204Z",
   "video": {
     "@type": "VideoObject",
     "contentUrl": "https://www.youtube.com/watch?v=Uta78WwtRXQ",
