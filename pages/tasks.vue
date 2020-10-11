@@ -272,6 +272,7 @@ import cuid from 'cuid';
 
 import ConfirmDialog from '@/components/ConfirmDialog.vue';
 import ListHeader from '@/components/List/ListHeader.vue';
+import { init } from '@/db';
 
 export default {
   components: {
@@ -283,7 +284,6 @@ export default {
     Ripple,
   },
   data: () => ({
-    collection: null,
     categories: [],
     total: 10,
     defaultLimit: -1,
@@ -335,11 +335,14 @@ export default {
       done: false,
     },
   }),
-  fetch() {
-    const query = this.$db.tasks.find();
-    // .sort(this.sortBy);
-    this.collection = query;
-    query.$.subscribe((results = []) => {
+  async fetch() {
+    this.$db = await init({
+      remote: this.$warehouse.get('dbRemote') || this.$config.DB_REMOTE,
+      username: this.$warehouse.get('dbUsername') || this.$config.DB_USERNAME,
+      password: this.$warehouse.get('dbPassword') || this.$config.DB_PASSWORD,
+    });
+    this.collection = this.$db.tasks.find();
+    this.sub = this.collection.$.subscribe((results = []) => {
       this.total = results.length;
       this.items = results;
     });
@@ -428,6 +431,11 @@ export default {
       val || this.close();
     },
     '$route.query': '$fetch',
+  },
+  beforeDestroy() {
+    if (this.sub) {
+      this.sub.unsubscribe();
+    }
   },
   methods: {
     editItem(item) {
