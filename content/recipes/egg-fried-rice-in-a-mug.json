@@ -63,60 +63,6 @@
     }
   ],
   "recipeYield": "1",
-  "review": [
-    {
-      "@type": "Review",
-      "author": {
-        "@type": "Person",
-        "name": "Maggie"
-      },
-      "datePublished": "2015-01-12",
-      "reviewBody": "What an amazing idea! I never thought I can make fried rice this easily. And they look great! Save and pinned :)",
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "5"
-      }
-    },
-    {
-      "@type": "Review",
-      "author": {
-        "@type": "Person",
-        "name": "Michelle @ Vitamin Sunshine"
-      },
-      "datePublished": "2015-01-14",
-      "reviewBody": "I love this idea for a quick dinner for 1! When Alex isn't home, I usually just have yogurt and fruit for dinner :) I am too lazy to cook for myself-- it somehow isn't so much fun when no one is around to appreciate it!\r\n\r\nFunny story about your first attempt at cooking! My brother and I were always creating (terrible) meals when my parents weren't home! We didn't care how they turned out-- just top with maple syrup??!",
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "5"
-      }
-    },
-    {
-      "@type": "Review",
-      "author": {
-        "@type": "Person",
-        "name": "Martin"
-      },
-      "datePublished": "2015-01-31",
-      "reviewBody": "Oh yeah, I do LOVE rice, LOVE fried rice, LOVE the sound of the recipe! \r\n\r\nThanks so much for posting : )",
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "5"
-      }
-    },
-    {
-      "@type": "Review",
-      "author": {
-        "@type": "Person",
-        "name": "Robin Hamilton @Wellness Wires"
-      },
-      "datePublished": "2018-10-08",
-      "reviewBody": "Oh my! This this egg fried rice in a mug was delicious – and so easy to make! Will have to try this for my family. Thanks so much!",
-      "reviewRating": {
-        "@type": "Rating",
-        "ratingValue": "5"
-      }
-    }
-  ],
   "sameAs": ["https://healthynibblesandbits.com/egg-fried-rice-mug/"],
   "totalTime": "PT9M",
   "updatedAt": "2020-10-08T05:35:17.756Z",

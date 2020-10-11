@@ -1,0 +1,55 @@
+{
+  "@type": "Product",
+  "additionalProperty": [
+    {
+      "name": "Ingredients",
+      "value": "INGREDIENTS LIST:Meat Free Butter Chicken Style Curry (57%), Cooked Mixed Grain Rice (43%).Meat Free Butter Chicken Style Curry contains: Water, Chicken Style Pieces (25%) [Water, Soy Protein Isolate, Wheat Gluten, Soy Protein Concentrate, Pea Starch, Pea Fibre, Seasoning (Salt, Rice, Spices, Sugar, Dextrose, Maize Starch, Herbs, Thickener (1442), Yeast Extract, Vegetable Powders, Smoke Oil, Natural Colour (Caramel 1))], Coconut Cream (20%) [Coconut Cream, Thickener (415), Stabilisers (412, 407)], Red Masala Sauce (14%) [Onion Paste, Water, Tomato Paste, Sunflower Oil, Garlic Paste, Ginger Puree, Spices, Salt, Acidity Regulator (330), Garam Masala Spice, Natural Colour (Paprika Oleoresins)], Tomato Paste (10%) [Tomato, Acidity Regulator (330)], Sugar, Lemon Juice from Concentrate, Corn Starch, Tandoori Marinade (0.5%) [Natural Colour (Paprika Oleoresins)], Garam Masala Spice, Salt.C"
+    },
+    {
+      "name": "Servings Per Pack",
+      "value": "1.0"
+    },
+    {
+      "name": "Size",
+      "value": "350g"
+    },
+    {
+      "name": "Unit Price",
+      "value": "$2.14 per 100G"
+    }
+  ],
+  "brand": "Coles",
+  "createdAt": "2020-10-11T08:19:47.731Z",
+  "description": "Coles Nature's Kitchen Meat Free Butter Chicken",
+  "image": "https://shop.coles.com.au/wcsstore/Coles-CAS/images/3/6/4/3649648.jpg",
+  "name": "Nature's Kitchen Meat Free Butter Chicken",
+  "offers": {
+    "@type": "AggregateOffer",
+    "highPrice": 7.5,
+    "lowPrice": 7.5,
+    "offerCount": 1,
+    "offers": [
+      {
+        "@context": "http://schema.org",
+        "@type": "Offer",
+        "availability": "https://schema.org/InStock",
+        "availabilityStarts": "2020-10-11T08:19:47.726Z",
+        "itemCondition": "https://schema.org/NewCondition",
+        "offeredBy": "Coles",
+        "price": "7.50",
+        "priceCurrency": "AUD",
+        "seller": {
+          "@type": "Organization",
+          "name": "Coles"
+        },
+        "url": "https://shop.coles.com.au/a/national/product/coles-natures-kitchen-meat-free-butter-chicken"
+      }
+    ],
+    "priceCurrency": "AUD"
+  },
+  "sameAs": [
+    "https://shop.coles.com.au/a/sunnybank-hills/product/coles-natures-kitchen-meat-free-butter-chicken"
+  ],
+  "sku": "3649648",
+  "updatedAt": "2020-10-11T08:19:47.728Z"
+}

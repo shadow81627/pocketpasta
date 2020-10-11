@@ -1,0 +1,55 @@
+{
+  "@type": "Product",
+  "additionalProperty": [
+    {
+      "name": "Ingredients",
+      "value": "INGREDIENTS LIST:Lentil Bolognese (68%), Cooked Spaghetti Pasta (32%).Lentil Bolognese contains: Water, Tomato Passata (28%) (Tomato, Acidity Regulator (330)), Lentils (12%), Onion, Carrot (2%), Celery (2%), Canola Oil, Soy Protein, Vegan Red Wine, Crushed Garlic, Salt, Parsley, Basil, Corn Starch, Oregano, White Pepper.Cooked Spaghetti Pasta contains: Spaghetti (Durum Wheat, Durum Wheat Semolina), Canola Oil."
+    },
+    {
+      "name": "Servings Per Pack",
+      "value": "1.0"
+    },
+    {
+      "name": "Size",
+      "value": "350g"
+    },
+    {
+      "name": "Unit Price",
+      "value": "$2.14 per 100G"
+    }
+  ],
+  "brand": "Coles",
+  "createdAt": "2020-10-11T08:19:27.408Z",
+  "description": "Coles Natures Kitchen Lentil Spag Bolognese",
+  "image": "https://shop.coles.com.au/wcsstore/Coles-CAS/images/3/4/6/3468031.jpg",
+  "name": "Natures Kitchen Lentil Spag Bolognese",
+  "offers": {
+    "@type": "AggregateOffer",
+    "highPrice": 7.5,
+    "lowPrice": 7.5,
+    "offerCount": 1,
+    "offers": [
+      {
+        "@context": "http://schema.org",
+        "@type": "Offer",
+        "availability": "https://schema.org/InStock",
+        "availabilityStarts": "2020-10-11T08:19:27.401Z",
+        "itemCondition": "https://schema.org/NewCondition",
+        "offeredBy": "Coles",
+        "price": "7.50",
+        "priceCurrency": "AUD",
+        "seller": {
+          "@type": "Organization",
+          "name": "Coles"
+        },
+        "url": "https://shop.coles.com.au/a/national/product/coles-natures-kitchen-lentil-spag-bolognese"
+      }
+    ],
+    "priceCurrency": "AUD"
+  },
+  "sameAs": [
+    "https://shop.coles.com.au/a/sunnybank-hills/product/coles-natures-kitchen-lentil-spag-bolognese"
+  ],
+  "sku": "3468031",
+  "updatedAt": "2020-10-11T08:19:27.405Z"
+}

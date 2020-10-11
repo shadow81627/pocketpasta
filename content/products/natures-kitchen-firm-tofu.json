@@ -1,0 +1,55 @@
+{
+  "@type": "Product",
+  "additionalProperty": [
+    {
+      "name": "Ingredients",
+      "value": " Soybean, Water, Mineral Salt (511)."
+    },
+    {
+      "name": "Servings Per Pack",
+      "value": "3.0"
+    },
+    {
+      "name": "Size",
+      "value": "300g"
+    },
+    {
+      "name": "Unit Price",
+      "value": "$0.77 per 100G"
+    }
+  ],
+  "brand": "Coles",
+  "createdAt": "2020-10-11T08:20:07.854Z",
+  "description": "Deliciously Vegan",
+  "image": "https://shop.coles.com.au/wcsstore/Coles-CAS/images/2/7/5/2752255.jpg",
+  "name": "Nature's Kitchen Firm Tofu",
+  "offers": {
+    "@type": "AggregateOffer",
+    "highPrice": 2.3,
+    "lowPrice": 2.3,
+    "offerCount": 1,
+    "offers": [
+      {
+        "@context": "http://schema.org",
+        "@type": "Offer",
+        "availability": "https://schema.org/InStock",
+        "availabilityStarts": "2020-10-11T08:20:07.852Z",
+        "itemCondition": "https://schema.org/NewCondition",
+        "offeredBy": "Coles",
+        "price": "2.30",
+        "priceCurrency": "AUD",
+        "seller": {
+          "@type": "Organization",
+          "name": "Coles"
+        },
+        "url": "https://shop.coles.com.au/a/national/product/coles-hard-tofu"
+      }
+    ],
+    "priceCurrency": "AUD"
+  },
+  "sameAs": [
+    "https://shop.coles.com.au/a/sunnybank-hills/product/coles-hard-tofu"
+  ],
+  "sku": "2752255",
+  "updatedAt": "2020-10-11T08:20:07.853Z"
+}
