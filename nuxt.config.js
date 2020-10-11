@@ -106,7 +106,7 @@ module.exports = {
   },
 
   router: {
-    middleware: ['last-known-route'],
+    // middleware: ['last-known-route'],
   },
 
   publicRuntimeConfig: {
