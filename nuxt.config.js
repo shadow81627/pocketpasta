@@ -34,31 +34,6 @@ const env = {
   DB_PASSWORD: process.env.DB_PASSWORD,
 };
 
-const i18nSettings = {
-  baseUrl: BASE_URL,
-  seo: false,
-  defaultLocale: 'en',
-  vueI18n: {
-    fallbackLocale: 'en',
-  },
-  locales: [
-    {
-      code: 'en',
-      name: 'English',
-      iso: 'en-US',
-      file: 'en-US.js',
-    },
-    {
-      code: 'fr',
-      name: 'Français',
-      iso: 'fr-FR',
-      file: 'fr-FR.js',
-    },
-  ],
-  lazy: true,
-  langDir: 'lang/',
-};
-
 const preconnectLinks = [
   'https://pocketpasta.com',
   'https://res.cloudinary.com',
@@ -84,8 +59,8 @@ module.exports = {
   },
 
   manifest: {
-    name: pkg.name,
-    short_name: 'pocketpasta',
+    name: 'PocketPasta',
+    short_name: 'PocketPasta',
     description: pkg.description,
     start_url: '/?utm_source=a2hs&utm_medium=none&standalone=true',
     scope: '/',
@@ -133,10 +108,10 @@ module.exports = {
    ** Headers of the page
    */
   head: {
-    // htmlAttrs: { 'data-vue-meta-server-rendered': '' },
     titleTemplate: (titleChunk) => {
-      // If undefined or blank then we don't need the hyphen
-      return titleChunk ? `${titleChunk} | PocketPasta` : 'PocketPasta';
+      return titleChunk && titleChunk !== 'PocketPasta'
+        ? `${titleChunk} | PocketPasta`
+        : 'PocketPasta';
     },
     noscript: [
       {
@@ -154,9 +129,11 @@ module.exports = {
       },
       {
         property: 'og:title',
+        title: 'PocketPasta',
         template: (titleChunk) => {
-          // If undefined or blank then we don't need the hyphen
-          return titleChunk ? `${titleChunk} - PocketPasta` : 'PocketPasta';
+          return titleChunk && titleChunk !== 'PocketPasta'
+            ? `${titleChunk} | PocketPasta`
+            : 'PocketPasta';
         },
         hid: 'og:title',
       },
@@ -236,7 +213,7 @@ module.exports = {
     '@nuxtjs/pwa',
     '@nuxtjs/sentry',
     'vue-warehouse/nuxt',
-    ['nuxt-i18n', i18nSettings],
+    'nuxt-i18n',
 
     // keep sitemap last
     '@nuxtjs/sitemap',
@@ -300,6 +277,31 @@ module.exports = {
   content: {
     // Only search in title and description
     fullTextSearchFields: ['name', 'description', 'keywords'],
+  },
+
+  i18n: {
+    baseUrl: BASE_URL,
+    seo: false,
+    defaultLocale: 'en',
+    vueI18n: {
+      fallbackLocale: 'en',
+    },
+    locales: [
+      {
+        code: 'en',
+        name: 'English',
+        iso: 'en-US',
+        file: 'en-US.js',
+      },
+      // {
+      //   code: 'fr',
+      //   name: 'Français',
+      //   iso: 'fr-FR',
+      //   file: 'fr-FR.js',
+      // },
+    ],
+    lazy: true,
+    langDir: 'lang/',
   },
 
   /*

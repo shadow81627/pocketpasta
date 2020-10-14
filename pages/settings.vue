@@ -100,13 +100,7 @@ export default {
   },
   head() {
     return {
-      link: [
-        {
-          hid: 'canonical',
-          rel: 'canonical',
-          href: 'https://pocketpasta.com/settings',
-        },
-      ],
+      link: [],
     };
   },
   computed: {
