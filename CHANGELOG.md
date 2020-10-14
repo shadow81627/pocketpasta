@@ -1,5 +1,11 @@
 # Releases
 
+## [0.47.9](https://github.com/shadow81627/pocketpasta/compare/v0.47.8...v0.47.9) (2020-10-14)
+
+### Bug Fixes
+
+- **meta:** remove duplicate canonical url ([#1660](https://github.com/shadow81627/pocketpasta/issues/1660)) ([4f6bad7](https://github.com/shadow81627/pocketpasta/commit/4f6bad7e0211e70f23126c93a214e519b5c3c049))
+
 ## [0.47.8](https://github.com/shadow81627/pocketpasta/compare/v0.47.7...v0.47.8) (2020-10-14)
 
 ### Bug Fixes
