@@ -137,14 +137,7 @@ export default {
           content: `${this.$config.BASE_URL}${this.$route.path}`,
         },
       ],
-      link: [
-        ...i18nSeo.link,
-        {
-          hid: 'canonical',
-          rel: 'canonical',
-          href: `${this.$config.BASE_URL}${this.$route.path}`,
-        },
-      ],
+      link: [...i18nSeo.link],
     };
   },
   computed: {
