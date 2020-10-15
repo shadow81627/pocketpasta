@@ -1,5 +1,11 @@
 # Releases
 
+## [0.47.11](https://github.com/shadow81627/pocketpasta/compare/v0.47.10...v0.47.11) (2020-10-15)
+
+### Bug Fixes
+
+- **deps:** update dependency nuxt to v2.14.7 ([9531dac](https://github.com/shadow81627/pocketpasta/commit/9531dac2112660aaad654cda8d8cd35e48340745))
+
 ## [0.47.10](https://github.com/shadow81627/pocketpasta/compare/v0.47.9...v0.47.10) (2020-10-14)
 
 ### Bug Fixes
