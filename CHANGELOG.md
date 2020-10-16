@@ -1,5 +1,11 @@
 # Releases
 
+## [0.47.12](https://github.com/shadow81627/pocketpasta/compare/v0.47.11...v0.47.12) (2020-10-16)
+
+### Bug Fixes
+
+- **shoppinglist:** rename group header items to group items ([#1670](https://github.com/shadow81627/pocketpasta/issues/1670)) ([7367fce](https://github.com/shadow81627/pocketpasta/commit/7367fcebaae24d1fcd01b79a893fe702aae549af))
+
 ## [0.47.11](https://github.com/shadow81627/pocketpasta/compare/v0.47.10...v0.47.11) (2020-10-15)
 
 ### Bug Fixes
