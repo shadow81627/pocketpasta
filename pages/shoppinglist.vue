@@ -29,7 +29,7 @@
             />
           </template>
 
-          <template #[`group.header`]="{ group, groupItems }">
+          <template #[`group.header`]="{ group, items: groupItems }">
             <td :colspan="headers.length" class="item handle">
               <v-container class="pa-0">
                 <v-row>
