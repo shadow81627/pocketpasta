@@ -1,0 +1,100 @@
+{
+  "@type": "Recipe",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "bestRating": "100",
+    "ratingCount": "148",
+    "ratingValue": "96",
+    "worstRating": "0"
+  },
+  "createdAt": "2020-10-18T00:41:28.796Z",
+  "datePublished": "2018-06-29T20:11:06",
+  "description": "Here's what you need: olive oil, kale, salt, garlic, pine nuts, red pepper flake, sun-dried tomato, flatbreads, hummus",
+  "image": "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/166822.jpg",
+  "name": "Mediterranean Flatbread Recipe by Tasty",
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "calories": "564 calories",
+    "carbohydrateContent": "68 grams",
+    "fatContent": "27 grams",
+    "fiberContent": "19 grams",
+    "proteinContent": "26 grams",
+    "sugarContent": "19 grams"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tasty.co/favicon.ico"
+    },
+    "name": "Tasty"
+  },
+  "recipeCategory": "Lunch",
+  "recipeIngredient": [
+    "olive oil, to taste",
+    "4 cups kale, chopped",
+    "salt, to taste",
+    "2 cloves garlic, minced",
+    "2 tablespoons pine nuts",
+    "red pepper flake, to taste",
+    "1/3 cup sun-dried tomato",
+    "2 flatbreads",
+    "4 tablespoons hummus"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "In a medium skillet, heat a drizzle of olive oil over medium heat. Once the oil begins to shimmer, add the kale and cook for 3-4 minutes, until semi-wilted. Season with a pinch of salt."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Add a splash of water and continue to cook for 3-4 minutes until the kale is mostly wilted."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Add another drizzle of olive oil and the garlic, pine nuts, and red pepper flakes to the pan. Cook for another 3-4 minutes until the garlic is fragrant and the pine nuts are toasted."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Add the sun-dried tomatoes and cook for 2-3 more minutes until the kale is completely wilted and tender. Transfer the kale mixture to a bowl and set aside."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "In the same pan, add a drizzle of oil from the jar of sun-dried tomatoes. Heat the flatbreads, 1 at a time, for 2-3 minutes on each side until golden brown."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Transfer the flatbreads to a cutting board and spread with the hummus. Spoon the kale mixture on top and cut into quarters."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Sprinkle with more red pepper flakes, if desired, and serve."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Enjoy!"
+    }
+  ],
+  "recipeYield": "2 servings",
+  "sameAs": ["https://tasty.co/recipe/mediterranean-flatbread"],
+  "tool": "Dry Measuring Cups",
+  "totalTime": "PT30M",
+  "updatedAt": "2020-10-18T00:41:28.795Z",
+  "video": {
+    "@type": "VideoObject",
+    "contentUrl": "https://vid.tasty.co/output/100664/landscape_480/1530551884",
+    "description": "Here's what you need: olive oil, kale, salt, garlic, pine nuts, red pepper flake, sun-dried tomato, flatbreads, hummus",
+    "duration": "PT5M10S",
+    "name": "Mediterranean Flatbread Recipe by Tasty",
+    "publisher": {
+      "@type": "Organization",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://tasty.co/favicon.ico"
+      },
+      "name": "Tasty"
+    },
+    "thumbnailUrl": "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/166822.jpg",
+    "uploadDate": "2018-06-29T20:11:06"
+  }
+}
