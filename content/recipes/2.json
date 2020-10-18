@@ -45,6 +45,7 @@
   "sameAs": ["https://www.bingingwithbabish.com/recipes/2017/5/4/aglioeolio"],
   "suitableForDiet": "https://schema.org/VeganDiet",
   "totalTime": "PT32M",
+  "updatedAt": "2020-10-14T01:02:07.751Z",
   "video": {
     "@type": "VideoObject",
     "contentUrl": "https://www.youtube.com/watch?v=bJUiWdM__Qw",

@@ -1,0 +1,96 @@
+{
+  "@type": "Recipe",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "bestRating": "100",
+    "ratingCount": "1166",
+    "ratingValue": "98",
+    "worstRating": "0"
+  },
+  "createdAt": "2020-10-18T00:41:09.993Z",
+  "datePublished": "2018-02-15T16:48:57",
+  "description": "Here's what you need: refined coconut oil, small onion, garlic, ginger, sweet paprika, cumin, dried coriander, cayenne, chickpeas, sweet potato, fire roasted crushed tomato, vegetable broth, fresh spinach",
+  "image": "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/159381b1d4784e49a751d1d34a5efcc3/HealthyAndHeartSoupsThatWillFillYouUpFBFINAL.jpg",
+  "name": "Chickpea Sweet Potato Stew Recipe by Tasty",
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "calories": "357 calories",
+    "carbohydrateContent": "56 grams",
+    "fatContent": "10 grams",
+    "fiberContent": "14 grams",
+    "proteinContent": "13 grams",
+    "sugarContent": "15 grams"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tasty.co/favicon.ico"
+    },
+    "name": "Tasty"
+  },
+  "recipeCategory": "Dinner",
+  "recipeIngredient": [
+    "2 tablespoons refined coconut oil",
+    "1 small onion, diced",
+    "3 cloves garlic, minced",
+    "1 teaspoon ginger, minced",
+    "1 tablespoon sweet paprika",
+    "1/2 teaspoon cumin",
+    "1/4 teaspoon dried coriander",
+    "1/8 teaspoon cayenne",
+    "15 oz chickpeas, 1 can, drained and rinsed",
+    "2 cups sweet potato, peeled and diced",
+    "15 oz fire roasted crushed tomato, 1 can",
+    "3 cups vegetable broth",
+    "5 oz fresh spinach"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "In large pot or Dutch oven, heat the coconut oil over medium heat. Once the oil begins to shimmer, add the onion and cook for 4-5 minutes, or until the onion is semi-translucent."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Add the garlic and ginger, and cook for 2-3 more minutes, until fragrant. Then add the sweet paprika, cumin, coriander, and cayenne and cook for 2 more minutes, until fragrant."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Add the chickpeas, sweet potatoes, crushed tomatoes, and vegetable broth, and bring to a boil. Reduce the heat to medium-low and simmer for 15-20 minutes, or until the sweet potatoes are tender."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Add the spinach and stir until wilted."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Serve immediately."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Enjoy!"
+    }
+  ],
+  "recipeYield": "4 servings",
+  "sameAs": ["https://tasty.co/recipe/chickpea-sweet-potato-stew"],
+  "tool": "Sieve",
+  "totalTime": "PT30M",
+  "updatedAt": "2020-10-18T00:41:09.992Z",
+  "video": {
+    "@type": "VideoObject",
+    "contentUrl": "https://vid.tasty.co/output/79256/landscape_480/1518729800",
+    "description": "Here's what you need: refined coconut oil, small onion, garlic, ginger, sweet paprika, cumin, dried coriander, cayenne, chickpeas, sweet potato, fire roasted crushed tomato, vegetable broth, fresh spinach",
+    "duration": "PT4M11S",
+    "name": "Chickpea Sweet Potato Stew Recipe by Tasty",
+    "publisher": {
+      "@type": "Organization",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://tasty.co/favicon.ico"
+      },
+      "name": "Tasty"
+    },
+    "thumbnailUrl": "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/159381b1d4784e49a751d1d34a5efcc3/HealthyAndHeartSoupsThatWillFillYouUpFBFINAL.jpg",
+    "uploadDate": "2018-02-15T16:48:57"
+  }
+}
