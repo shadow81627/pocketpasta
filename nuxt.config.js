@@ -69,6 +69,10 @@ module.exports = {
     theme_color: '#4DBA87',
   },
 
+  icon: {
+    sizes: [16, 32, 36, 48, 64, 72, 96, 120, 144, 152, 180, 192, 200, 384, 512],
+  },
+
   publicRuntimeConfig: {
     ...env,
   },
