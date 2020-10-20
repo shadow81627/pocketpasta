@@ -45,11 +45,11 @@ const preconnectLinks = [
 ];
 
 module.exports = {
-  mode: 'universal',
+  srr: true,
   target: 'static',
 
   workbox: {
-    // offlineAnalytics: true,
+    offlineAnalytics: true,
     dev: false,
   },
 
@@ -67,41 +67,14 @@ module.exports = {
     display: 'standalone',
     background_color: '#4DBA87',
     theme_color: '#4DBA87',
-    shortcuts: [
-      {
-        name: 'Shopping List',
-        url: '/shoppinglist?utm_source=a2hs&utm_medium=none&standalone=true',
-        icons: [{ src: '/icon.png', sizes: '512x512' }],
-      },
-    ],
   },
 
   icon: {
     sizes: [16, 32, 36, 48, 64, 72, 96, 120, 144, 152, 180, 192, 200, 384, 512],
   },
 
-  router: {
-    // middleware: ['last-known-route'],
-  },
-
   publicRuntimeConfig: {
     ...env,
-  },
-
-  server: {
-    timing: {
-      total: true,
-    },
-  },
-
-  render: {
-    http2: {
-      push: true,
-      pushAssets: (req, res, publicPath, preloadFiles) =>
-        preloadFiles.map(
-          (f) => `<${publicPath}${f.file}>; rel=preload; as=${f.asType}`,
-        ),
-    },
   },
 
   /*
@@ -177,7 +150,6 @@ module.exports = {
   generate: {
     // if you want to use '404.html' instead of the default '200.html'
     fallback: true,
-    // exclude: ['/shoppinglist', '/tasks'],
   },
 
   /*
@@ -207,7 +179,6 @@ module.exports = {
   modules: [
     '@nuxt/content',
     '@nuxtjs/axios',
-    // '@nuxtjs/auth',
     '@nuxtjs/google-analytics',
     '@nuxtjs/markdownit',
     '@nuxtjs/pwa',
@@ -223,7 +194,6 @@ module.exports = {
     '@nuxtjs/eslint-module',
     '@nuxtjs/vuetify',
     '@nuxtjs/color-mode',
-    // '@nuxtjs/netlify-files',
   ],
 
   eslint: {
@@ -233,9 +203,7 @@ module.exports = {
 
   vuetify: {
     optionsPath: './vuetify.options.js',
-    // customVariables: ['~/assets/scss/vuetify.scss'],
     treeShake: true,
-    // theme: { disable: true },
     defaultAssets: false,
   },
 
@@ -293,12 +261,6 @@ module.exports = {
         iso: 'en-US',
         file: 'en-US.js',
       },
-      // {
-      //   code: 'fr',
-      //   name: 'Français',
-      //   iso: 'fr-FR',
-      //   file: 'fr-FR.js',
-      // },
     ],
     lazy: true,
     langDir: 'lang/',
@@ -309,31 +271,5 @@ module.exports = {
    */
   build: {
     transpile: ['lodash-es', 'vuetify/lib'],
-    // move component styles into css files
-    // extractCSS: true,
-    /*
-     ** You can extend webpack config here
-     */
-    extend(config, ctx) {
-      // Run ESLint on save
-      if (ctx.isDev && ctx.isClient) {
-        config.module.rules.push({
-          enforce: 'pre',
-          test: /\.(js|vue)$/,
-          loader: 'eslint-loader',
-          exclude: /(node_modules)/,
-        });
-      }
-
-      // Web Worker support
-      if (ctx.isClient) {
-        config.module.rules.push({
-          test: /\.worker\.js$/,
-          // use: { loader: 'worker-loader' },
-          loader: 'worker-loader',
-          exclude: /(node_modules)/,
-        });
-      }
-    },
   },
 };
