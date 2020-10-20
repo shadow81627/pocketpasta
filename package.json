@@ -62,7 +62,7 @@
   "devDependencies": {
     "@commitlint/cli": "11.0.0",
     "@commitlint/config-conventional": "11.0.0",
-    "@lhci/cli": "0.5.0",
+    "@lhci/cli": "0.5.1",
     "@mdi/js": "5.7.55",
     "@nuxtjs/color-mode": "2.0.0",
     "@nuxtjs/eslint-config": "4.0.0",
