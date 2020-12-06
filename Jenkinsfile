@@ -11,10 +11,9 @@ pipeline {
     stages {
         stage('Install') {
             steps {
-                sh 'whoami'
-                sh 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >>   /etc/apt/sources.list'
-                sh 'wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | apt-key add -'
-                sh 'apt-get install -y google-chrome-stable'
+                sh 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list'
+                sh 'wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb'
+                sh 'apt install ./google-chrome-stable_current_amd64.deb'
                 sh 'export CHROME_PATH=$(which google-chrome-stable)'
                 sh 'npm ci'
             }
