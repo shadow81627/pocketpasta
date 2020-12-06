@@ -6,5 +6,5 @@ ENV HOST 0.0.0.0
 COPY package*.json ./
 RUN npm ci
 COPY . .
-RUN npm run build:modern
+RUN npm run generate
 CMD ["npm" "start"]
