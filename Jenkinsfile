@@ -5,13 +5,15 @@ pipeline {
     }
     stages {
         stage('Install') {
-            sh 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" | sudo tee -a /etc/apt/sources.list.d/google.list'
-            sh 'wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -'
-            sh 'curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -'
-            sh 'sudo apt-get install -y google-chrome-stable'
-            sh 'export CHROME_PATH=$(which google-chrome-stable)'
-            sh 'export LHCI_BUILD_CONTEXT__EXTERNAL_BUILD_URL="$BUILD_URL"'
-            sh 'npm ci'
+            steps {
+                sh 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" | sudo tee -a /etc/apt/sources.list.d/google.list'
+                sh 'wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -'
+                sh 'curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -'
+                sh 'sudo apt-get install -y google-chrome-stable'
+                sh 'export CHROME_PATH=$(which google-chrome-stable)'
+                sh 'export LHCI_BUILD_CONTEXT__EXTERNAL_BUILD_URL="$BUILD_URL"'
+                sh 'npm ci'
+            }
         }
         stage('Build') {
             steps {
