@@ -2,7 +2,7 @@ pipeline {
     agent {
         docker {
             image 'node:12'
-            args '-u root'
+            args '-u root --cap-add=SYS_ADMIN'
         }
     }
     environment {
@@ -26,6 +26,7 @@ pipeline {
         }
         stage('Test') {
             steps {
+                sh 'su - node'
                 sh 'npm run lint'
                 sh 'npm run lhci:autorun'
                 sh 'npm run test:e2e'
