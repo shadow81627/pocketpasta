@@ -1,5 +1,13 @@
 # Releases
 
+## [0.47.24](https://github.com/shadow81627/pocketpasta/compare/v0.47.23...v0.47.24) (2020-12-13)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxtjs/pwa to v3.3.2 ([#1779](https://github.com/shadow81627/pocketpasta/issues/1779)) ([c80114e](https://github.com/shadow81627/pocketpasta/commit/c80114ed8702964e66178fe7dd4cde4a38ab9d31))
+- **deps:** update dependency nuxt to v2.14.9 ([#1783](https://github.com/shadow81627/pocketpasta/issues/1783)) ([3b389cc](https://github.com/shadow81627/pocketpasta/commit/3b389ccbc28091f1ec6b88f91bbca1d677344b99))
+- **deps:** update dependency rxdb to v9.10.1 ([c41a6d5](https://github.com/shadow81627/pocketpasta/commit/c41a6d548651540e1e69d69e5b59d8b9217af0a9))
+
 ## [0.47.23](https://github.com/shadow81627/pocketpasta/compare/v0.47.22...v0.47.23) (2020-11-27)
 
 ### Bug Fixes
