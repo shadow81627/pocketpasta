@@ -271,5 +271,11 @@ module.exports = {
    */
   build: {
     transpile: ['lodash-es', 'vuetify/lib'],
+    extend(config, { isClient }) {
+      // Extend only webpack config for client-bundle
+      if (isClient) {
+        config.devtool = 'source-map';
+      }
+    },
   },
 };
