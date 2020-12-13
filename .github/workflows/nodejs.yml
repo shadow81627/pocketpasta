@@ -40,5 +40,8 @@ jobs:
       - name: Build 🔨
         run: npm run generate
 
+      - name: Test 🧪
+        run: npm run test:e2e
+
       - name: Lighthouse 💡
         run: npm run lhci:autorun
