@@ -42,7 +42,9 @@
         "aria-allowed-attr": "warn",
         "canonical": "warn",
 
-        "non-composited-animations": "warn"
+        "non-composited-animations": "warn",
+
+        "uses-text-compression": "warn"
       }
     },
     "upload": {
