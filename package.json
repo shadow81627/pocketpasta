@@ -64,7 +64,7 @@
     "@commitlint/config-conventional": "11.0.0",
     "@lhci/cli": "0.5.1",
     "@mdi/js": "5.8.55",
-    "@nuxtjs/color-mode": "2.0.0",
+    "@nuxtjs/color-mode": "2.0.2",
     "@nuxtjs/eslint-config": "5.0.0",
     "@nuxtjs/eslint-module": "3.0.1",
     "@nuxtjs/vuetify": "1.11.2",
