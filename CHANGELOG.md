@@ -1,5 +1,11 @@
 # Releases
 
+## [0.47.30](https://github.com/shadow81627/pocketpasta/compare/v0.47.29...v0.47.30) (2020-12-16)
+
+### Bug Fixes
+
+- **deps:** update dependency vue-virtual-scroll-list to v2.3.2 ([5234779](https://github.com/shadow81627/pocketpasta/commit/5234779263f2689cd309aca2ab4351426adfa4af))
+
 ## [0.47.29](https://github.com/shadow81627/pocketpasta/compare/v0.47.28...v0.47.29) (2020-12-16)
 
 ### Bug Fixes
