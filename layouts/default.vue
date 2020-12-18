@@ -5,6 +5,7 @@
       v-model="drawer"
       :clipped="$vuetify.breakpoint.lgAndUp"
       app
+      disable-resize-watcher
       class="hidden-print-only"
     >
       <v-list dense>
