@@ -1,5 +1,11 @@
 # Releases
 
+## [0.47.32](https://github.com/shadow81627/pocketpasta/compare/v0.47.31...v0.47.32) (2020-12-18)
+
+### Bug Fixes
+
+- package.json & package-lock.json to reduce vulnerabilities ([#1806](https://github.com/shadow81627/pocketpasta/issues/1806)) ([7b5b04e](https://github.com/shadow81627/pocketpasta/commit/7b5b04e590a1918082bf34adc7e673414e3acb01))
+
 ## [0.47.31](https://github.com/shadow81627/pocketpasta/compare/v0.47.30...v0.47.31) (2020-12-18)
 
 ### Bug Fixes
