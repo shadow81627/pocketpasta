@@ -1,5 +1,11 @@
 # Releases
 
+## [0.47.33](https://github.com/shadow81627/pocketpasta/compare/v0.47.32...v0.47.33) (2020-12-18)
+
+### Bug Fixes
+
+- **navigation drawer:** disable resize watcher ([#1805](https://github.com/shadow81627/pocketpasta/issues/1805)) ([82373b8](https://github.com/shadow81627/pocketpasta/commit/82373b86af19028d61d6c0d7fdaf0ee02d1abf98))
+
 ## [0.47.32](https://github.com/shadow81627/pocketpasta/compare/v0.47.31...v0.47.32) (2020-12-18)
 
 ### Bug Fixes
