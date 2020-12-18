@@ -1,5 +1,11 @@
 # Releases
 
+## [0.47.31](https://github.com/shadow81627/pocketpasta/compare/v0.47.30...v0.47.31) (2020-12-18)
+
+### Bug Fixes
+
+- **deps:** update actions/setup-node requirement to v2.1.4 ([#1808](https://github.com/shadow81627/pocketpasta/issues/1808)) ([c6ec1c9](https://github.com/shadow81627/pocketpasta/commit/c6ec1c9524ca3b8380719a16a3acd609628a26cf))
+
 ## [0.47.30](https://github.com/shadow81627/pocketpasta/compare/v0.47.29...v0.47.30) (2020-12-16)
 
 ### Bug Fixes
