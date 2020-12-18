@@ -1,5 +1,53 @@
 # Releases
 
+## [0.47.32](https://github.com/shadow81627/pocketpasta/compare/v0.47.31...v0.47.32) (2020-12-18)
+
+### Bug Fixes
+
+- package.json & package-lock.json to reduce vulnerabilities ([#1806](https://github.com/shadow81627/pocketpasta/issues/1806)) ([7b5b04e](https://github.com/shadow81627/pocketpasta/commit/7b5b04e590a1918082bf34adc7e673414e3acb01))
+
+## [0.47.31](https://github.com/shadow81627/pocketpasta/compare/v0.47.30...v0.47.31) (2020-12-18)
+
+### Bug Fixes
+
+- **deps:** update actions/setup-node requirement to v2.1.4 ([#1808](https://github.com/shadow81627/pocketpasta/issues/1808)) ([c6ec1c9](https://github.com/shadow81627/pocketpasta/commit/c6ec1c9524ca3b8380719a16a3acd609628a26cf))
+
+## [0.47.30](https://github.com/shadow81627/pocketpasta/compare/v0.47.29...v0.47.30) (2020-12-16)
+
+### Bug Fixes
+
+- **deps:** update dependency vue-virtual-scroll-list to v2.3.2 ([5234779](https://github.com/shadow81627/pocketpasta/commit/5234779263f2689cd309aca2ab4351426adfa4af))
+
+## [0.47.29](https://github.com/shadow81627/pocketpasta/compare/v0.47.28...v0.47.29) (2020-12-16)
+
+### Bug Fixes
+
+- **deps:** update dependency rxdb to v9.11.0 ([b60ede5](https://github.com/shadow81627/pocketpasta/commit/b60ede598113973492478939dfa996d3cb37b573))
+
+## [0.47.28](https://github.com/shadow81627/pocketpasta/compare/v0.47.27...v0.47.28) (2020-12-16)
+
+### Bug Fixes
+
+- **deps:** update dependency nuxt-i18n to v6.16.0 ([ae3c44e](https://github.com/shadow81627/pocketpasta/commit/ae3c44e6ffde89401f98923b2410428636c0b151))
+
+## [0.47.27](https://github.com/shadow81627/pocketpasta/compare/v0.47.26...v0.47.27) (2020-12-14)
+
+### Bug Fixes
+
+- **deps:** update dependency nuxt to v2.14.11 ([6654d95](https://github.com/shadow81627/pocketpasta/commit/6654d95ecaeff088dadcbe461fa7e28bbe699acf))
+
+## [0.47.26](https://github.com/shadow81627/pocketpasta/compare/v0.47.25...v0.47.26) (2020-12-14)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxtjs/axios to v5.12.3 ([10a5ec5](https://github.com/shadow81627/pocketpasta/commit/10a5ec5f3ed0022050eb432d3aa04f1f457dafb7))
+
+## [0.47.25](https://github.com/shadow81627/pocketpasta/compare/v0.47.24...v0.47.25) (2020-12-14)
+
+### Bug Fixes
+
+- **deps:** update dependency cross-env to v7.0.3 ([2361845](https://github.com/shadow81627/pocketpasta/commit/2361845f9af552d5c0d4edd34c2bc7ead4eab144))
+
 ## [0.47.24](https://github.com/shadow81627/pocketpasta/compare/v0.47.23...v0.47.24) (2020-12-13)
 
 ### Bug Fixes
