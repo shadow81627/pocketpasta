@@ -10,12 +10,8 @@ const BASE_URL = (
   `http${PORT === 433 ? 's' : ''}://${HOST}${
     [433, 80].includes(PORT) ? '' : `:${PORT}`
   }`
-).replace(/(^http[s]?)?(?::\/\/)?(.*)/, function (
-  _,
-  protocol = 'https',
-  domain,
-) {
-  return `${protocol}://${domain}`;
+).replace(/(^http[s]?)?(?::\/\/)?(.*)/, function (_, protocol, domain) {
+  return `${protocol || 'https'}://${domain}`;
 });
 
 const env = {
