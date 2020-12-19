@@ -55,7 +55,7 @@
     "store": "2.0.12",
     "utility-opentype": "0.1.4",
     "vue-disqus": "4.0.1",
-    "vue-plyr": "6.0.4",
+    "vue-plyr": "7.0.0",
     "vue-virtual-scroll-list": "2.3.2",
     "vue-warehouse": "2.2.0"
   },
