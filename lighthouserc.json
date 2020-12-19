@@ -25,26 +25,19 @@
         "total-byte-weight": "warn",
         "uses-rel-preconnect": "warn",
         "uses-optimized-images": "warn",
-
         "color-contrast": "warn",
         "unused-css-rules": "warn",
         "uses-http2": "warn",
-
         "font-display": "warn",
         "uses-passive-event-listeners": "warn",
         "dom-size": "warn",
-
         "unused-javascript": "warn",
-        "meta-viewport": "warn",
-        "maskable-icon": "warn",
         "image-size-responsive": "warn",
-
         "aria-allowed-attr": "warn",
         "canonical": "warn",
-
         "non-composited-animations": "warn",
-
-        "uses-text-compression": "warn"
+        "uses-text-compression": "warn",
+        "valid-source-maps": "warn"
       }
     },
     "upload": {
