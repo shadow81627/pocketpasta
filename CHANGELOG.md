@@ -1,5 +1,11 @@
 # Releases
 
+## [0.47.38](https://github.com/shadow81627/pocketpasta/compare/v0.47.37...v0.47.38) (2020-12-28)
+
+### Performance Improvements
+
+- **recipe:** lazy youtube ([#1829](https://github.com/shadow81627/pocketpasta/issues/1829)) ([9a36a55](https://github.com/shadow81627/pocketpasta/commit/9a36a556397856757ae4bf42fa60a1d9dd0fbe73))
+
 ## [0.47.37](https://github.com/shadow81627/pocketpasta/compare/v0.47.36...v0.47.37) (2020-12-20)
 
 ### Bug Fixes
