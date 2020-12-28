@@ -6,7 +6,13 @@
     </p>
 
     <vue-plyr
-      v-if="video && video.embedUrl && video.embedUrl.includes('youtube')"
+      v-if="
+        video &&
+        video.embedUrl &&
+        video.embedUrl.includes('youtube') &&
+        videoClicked
+      "
+      :options="{ autoplay: true }"
     >
       <div
         data-plyr-provider="youtube"
@@ -26,7 +32,33 @@
         sizes="(max-width: 1140px) 100vw, 1140px"
         min-width="100%"
         contain
-      />
+        @click="videoClicked = true"
+      >
+        <v-container
+          v-if="video && video.embedUrl && video.embedUrl.includes('youtube')"
+          fluid
+          class="fill-height align-items-end justify-start"
+        >
+          <v-row align="center" justify="center">
+            <v-col class="text-center" cols="12">
+              <button
+                type="button"
+                class="plyr__control plyr__control--overlaid"
+                data-plyr="play"
+                aria-label="Play"
+                style="display: block"
+              >
+                <svg id="plyr-play" viewBox="0 0 18 18">
+                  <path
+                    d="M15.562 8.1L3.87.225c-.818-.562-1.87 0-1.87.9v15.75c0 .9 1.052 1.462 1.87.9L15.563 9.9c.584-.45.584-1.35 0-1.8z"
+                  />
+                </svg>
+                <span class="plyr__sr-only">Play</span>
+              </button>
+            </v-col>
+          </v-row>
+        </v-container>
+      </v-img>
     </div>
     <!-- <p>Author: {{ author }}</p> -->
     <!-- <p>Published: {{ datePublished }}</p> -->
@@ -215,7 +247,7 @@ export default {
       }),
     },
   },
-  data: () => ({ showDescription: false }),
+  data: () => ({ showDescription: false, videoClicked: false }),
 
   head() {
     const { src: image } = this.imageData || {};
