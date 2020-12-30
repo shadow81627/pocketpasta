@@ -47,6 +47,12 @@ module.exports = {
   workbox: {
     offlineAnalytics: true,
     dev: false,
+    runtimeCaching: [
+      {
+        urlPattern: 'https://res.cloudinary.com/.*',
+        handler: 'CacheFirst',
+      },
+    ],
   },
 
   meta: {
