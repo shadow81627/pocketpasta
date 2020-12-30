@@ -1,5 +1,11 @@
 # Releases
 
+## [0.47.39](https://github.com/shadow81627/pocketpasta/compare/v0.47.38...v0.47.39) (2020-12-30)
+
+### Performance Improvements
+
+- **images:** cache cloudinary url in service worker ([#1831](https://github.com/shadow81627/pocketpasta/issues/1831)) ([a5e6f6e](https://github.com/shadow81627/pocketpasta/commit/a5e6f6e4862ad249f2fcce147351f0e243a0dfa8))
+
 ## [0.47.38](https://github.com/shadow81627/pocketpasta/compare/v0.47.37...v0.47.38) (2020-12-28)
 
 ### Performance Improvements
