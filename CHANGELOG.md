@@ -1,5 +1,11 @@
 # Releases
 
+## [0.47.46](https://github.com/shadow81627/pocketpasta/compare/v0.47.45...v0.47.46) (2021-01-22)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxtjs/sentry to v5 ([d055768](https://github.com/shadow81627/pocketpasta/commit/d0557680121efb51441f7253e2f9d85218233383))
+
 ## [0.47.45](https://github.com/shadow81627/pocketpasta/compare/v0.47.44...v0.47.45) (2021-01-20)
 
 ### Bug Fixes
