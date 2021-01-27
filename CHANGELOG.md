@@ -1,5 +1,11 @@
 # Releases
 
+## [0.47.48](https://github.com/shadow81627/pocketpasta/compare/v0.47.47...v0.47.48) (2021-01-27)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxtjs/pwa to v3.3.5 ([833669d](https://github.com/shadow81627/pocketpasta/commit/833669d88322b2d371b75f6e260a8f0d825e942a))
+
 ## [0.47.47](https://github.com/shadow81627/pocketpasta/compare/v0.47.46...v0.47.47) (2021-01-25)
 
 ### Bug Fixes
