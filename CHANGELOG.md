@@ -1,5 +1,11 @@
 # Releases
 
+## [0.47.49](https://github.com/shadow81627/pocketpasta/compare/v0.47.48...v0.47.49) (2021-02-01)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxt/content to v1.12.0 ([46b1caa](https://github.com/shadow81627/pocketpasta/commit/46b1caa6f764aa0280492821ceeb589ec355bc74))
+
 ## [0.47.48](https://github.com/shadow81627/pocketpasta/compare/v0.47.47...v0.47.48) (2021-01-27)
 
 ### Bug Fixes
