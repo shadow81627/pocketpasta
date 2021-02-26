@@ -1,5 +1,11 @@
 # Releases
 
+## [0.47.54](https://github.com/shadow81627/pocketpasta/compare/v0.47.53...v0.47.54) (2021-02-26)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxtjs/axios to v5.13.1 ([4ecf6a7](https://github.com/shadow81627/pocketpasta/commit/4ecf6a7eeb5bc782590faa10bd96cf5fa26620e1))
+
 ## [0.47.53](https://github.com/shadow81627/pocketpasta/compare/v0.47.52...v0.47.53) (2021-02-26)
 
 ### Bug Fixes
