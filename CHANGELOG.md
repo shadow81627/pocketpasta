@@ -1,5 +1,11 @@
 # Releases
 
+## [0.47.59](https://github.com/shadow81627/pocketpasta/compare/v0.47.58...v0.47.59) (2021-03-02)
+
+### Bug Fixes
+
+- **deps:** update dependency lodash-es to v4.17.21 ([7cbdd91](https://github.com/shadow81627/pocketpasta/commit/7cbdd91eccc1983d8351bea0d48db7960605a693))
+
 ## [0.47.58](https://github.com/shadow81627/pocketpasta/compare/v0.47.57...v0.47.58) (2021-03-02)
 
 ### Bug Fixes
