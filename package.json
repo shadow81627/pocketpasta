@@ -105,7 +105,7 @@
     "vuetify-loader": "1.7.2"
   },
   "engines": {
-    "node": "12.x"
+    "node": "14.x"
   },
   "snyk": true,
   "config": {
