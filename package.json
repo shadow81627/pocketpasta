@@ -60,8 +60,8 @@
     "vue-warehouse": "2.2.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "11.0.0",
-    "@commitlint/config-conventional": "11.0.0",
+    "@commitlint/cli": "12.0.1",
+    "@commitlint/config-conventional": "12.0.1",
     "@lhci/cli": "0.6.1",
     "@mdi/js": "5.9.55",
     "@nuxtjs/color-mode": "2.0.3",
