@@ -240,7 +240,7 @@
           </template>
           <v-card>
             <v-card-title>
-              <span class="headline">Shopping</span>
+              <span class="text-h5">Shopping</span>
             </v-card-title>
             <v-card-text>
               <v-container>
