@@ -35,7 +35,7 @@
           <v-card-title title-tag="h2" class="h4 text-break text-wrap">
             {{ name }}
           </v-card-title>
-          <v-card-subtitle class="text-wrap subtitle-1">{{
+          <v-card-subtitle class="text-wrap text-subtitle-1">{{
             truncate(description)
           }}</v-card-subtitle>
         </v-col>

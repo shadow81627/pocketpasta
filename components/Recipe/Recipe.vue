@@ -114,7 +114,7 @@
                 >
                   <v-card tile flat>
                     <v-card-title
-                      class="subtitle-1 text-break text-wrap py-0"
+                      class="text-subtitle-1 text-break text-wrap py-0"
                       >{{ item }}</v-card-title
                     >
                   </v-card>
@@ -140,7 +140,7 @@
               <ol>
                 <li v-for="item in props.items" :key="item.text">
                   <v-card tile flat>
-                    <v-card-text class="subtitle-1 text-break text-wrap">{{
+                    <v-card-text class="text-subtitle-1 text-break text-wrap">{{
                       item.text
                     }}</v-card-text>
                   </v-card>

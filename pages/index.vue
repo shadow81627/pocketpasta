@@ -45,7 +45,7 @@
           <v-col cols="12" align-self="center">
             <v-card class="elevation-0 transparent">
               <v-card-title primary-title class="layout justify-center">
-                <div class="headline">{{ $t('landing.contact.heading') }}</div>
+                <div class="text-h5">{{ $t('landing.contact.heading') }}</div>
               </v-card-title>
               <v-list class="transparent">
                 <v-list-item>

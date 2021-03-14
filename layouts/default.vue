@@ -15,7 +15,7 @@
               <v-subheader v-if="item.heading">{{ item.heading }}</v-subheader>
             </v-col>
             <v-col cols="6" class="text-center">
-              <a href="#!" class="body-2 black--text">EDIT</a>
+              <a href="#!" class="text-body-2 black--text">EDIT</a>
             </v-col>
           </v-row>
           <v-list-group
