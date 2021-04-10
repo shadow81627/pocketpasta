@@ -172,7 +172,7 @@ export default {
       try {
         await this.$axios.get('/sanctum/csrf-cookie');
         await this.$axios.post('/register', {
-          name: `${this.form.firstname}${this.form.firstname}`,
+          name: `${this.form.firstname} ${this.form.firstname}`,
           ...this.form,
         });
         await this.$auth.loginWith('laravelSanctum', {
