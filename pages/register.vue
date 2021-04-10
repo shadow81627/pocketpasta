@@ -2,26 +2,34 @@
   <v-container fluid class="fluid">
     <v-row justify="center" align="center" class="row">
       <v-col
-        cols="6"
         sm="12"
         md="6"
-        class="text-center teal darken-2 xs"
+        class="text-center teal darken-2 d-sm-none d-md-block"
         style="height: 100vh"
       >
-        <v-row justify="center" align="center" style="height: 80vh">
+        <v-row justify="center" align="center" style="height: 100vh">
           <v-col>
+            <v-avatar width="200" height="176" tile class="mx-auto">
+              <v-img
+                src="https://res.cloudinary.com/pocketpasta/image/upload/fl_progressive/c_fit,f_auto,q_auto,w_200,h_176,dpr_auto/v1560038491/logo_vlqvdr.png"
+                srcset="
+                https://res.cloudinary.com/pocketpasta/image/upload/fl_progressive/c_fit,f_auto,q_auto,w_200,h_176,dpr_auto/v1560038491/logo_vlqvdr.png 1x,
+                https://res.cloudinary.com/pocketpasta/image/upload/fl_progressive/c_fit,f_auto,q_auto,w_200,h_176,dpr_2.0/v1560038491/logo_vlqvdr.png 2x,
+                https://res.cloudinary.com/pocketpasta/image/upload/fl_progressive/c_fit,f_auto,q_auto,w_200,h_176,dpr_3.0/v1560038491/logo_vlqvdr.png 3x
+              "
+                alt="Pasta on a sheet of paper"
+                width="200"
+                height="176"
+                center
+                contain
+              />
+            </v-avatar>
             <h2 class="white--text">PocketPasta</h2>
           </v-col>
         </v-row>
       </v-col>
 
-      <v-col
-        cols="6"
-        sm="12"
-        md="6"
-        class="text-center xs"
-        style="height: 100vh"
-      >
+      <v-col cols="6" sm="12" md="6" class="text-center xs">
         <h1>Register</h1>
         <p>Please complete this form to create an account</p>
         <validation-observer ref="obs" v-slot="{ handleSubmit }">
@@ -155,7 +163,7 @@ export default {
   }),
   head() {
     return {
-      title: 'Login',
+      title: 'Register',
     };
   },
   methods: {
