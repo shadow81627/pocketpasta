@@ -1,5 +1,11 @@
 # Releases
 
+## [0.48.1](https://github.com/shadow81627/pocketpasta/compare/v0.48.0...v0.48.1) (2021-04-10)
+
+### Bug Fixes
+
+- **vee validate:** transpile rules ([#1913](https://github.com/shadow81627/pocketpasta/issues/1913)) ([27a4140](https://github.com/shadow81627/pocketpasta/commit/27a41404ee3d3ac86af870bec6ce196255de2b05))
+
 ## [0.48.0](https://github.com/shadow81627/pocketpasta/compare/v0.47.63...v0.48.0) (2021-04-10)
 
 ### Features
