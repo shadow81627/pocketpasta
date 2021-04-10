@@ -1,5 +1,11 @@
 # Releases
 
+## [0.48.0](https://github.com/shadow81627/pocketpasta/compare/v0.47.63...v0.48.0) (2021-04-10)
+
+### Features
+
+- login page ([#1912](https://github.com/shadow81627/pocketpasta/issues/1912)) ([dde67e8](https://github.com/shadow81627/pocketpasta/commit/dde67e8f637e551e7c154d86c14ed7e64bcfe22c))
+
 ## [0.47.63](https://github.com/shadow81627/pocketpasta/compare/v0.47.62...v0.47.63) (2021-04-01)
 
 ### Bug Fixes
