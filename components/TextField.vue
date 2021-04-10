@@ -3,6 +3,7 @@
     v-slot="{ errors, valid }"
     :name="$attrs.label"
     :rules="rules"
+    :vid="$attrs.vid"
   >
     <v-text-field
       outlined

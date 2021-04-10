@@ -22,11 +22,8 @@
         class="text-center xs"
         style="height: 100vh"
       >
-        <h1>Login</h1>
-        <p>
-          Please complete this form to create an account or
-          <nuxt-link to="/register">register</nuxt-link>
-        </p>
+        <h1>Register</h1>
+        <p>Please complete this form to create an account</p>
         <validation-observer ref="obs" v-slot="{ handleSubmit }">
           <v-form
             ref="form"
@@ -35,6 +32,26 @@
             novalidte
             @submit.prevent="handleSubmit(submit)"
           >
+            <v-row>
+              <v-col cols="6">
+                <text-field
+                  v-model="form.firstname"
+                  label="First Name"
+                  name="firstname"
+                  required
+                  rules="required|max:255"
+                />
+              </v-col>
+              <v-col cols="6">
+                <text-field
+                  v-model="form.lastname"
+                  label="Last Name"
+                  name="lastname"
+                  required
+                  rules="required|max:255"
+                />
+              </v-col>
+            </v-row>
             <v-row>
               <v-col cols="12">
                 <text-field
@@ -48,14 +65,25 @@
               </v-col>
             </v-row>
             <v-row>
-              <v-col cols="12">
+              <v-col cols="6">
                 <text-field
                   v-model="form.password"
                   type="password"
-                  rules="required|password|max:255"
+                  rules="required|password|confirmed:password_confirmation|max:255"
                   label="Password"
                   name="password"
                   required
+                />
+              </v-col>
+              <v-col cols="6">
+                <text-field
+                  v-model="form.password_confirmation"
+                  type="password"
+                  rules="required|password|max:255"
+                  label="Password Confirmation"
+                  name="password_confirmation"
+                  required
+                  vid="password_confirmation"
                 />
               </v-col>
             </v-row>
@@ -64,7 +92,7 @@
               class="teal darken-2 white--text mt-5"
               :loading="submitting"
             >
-              Login
+              Register
             </v-btn>
           </v-form>
         </validation-observer>
@@ -93,10 +121,10 @@
 // https://blog.logrocket.com/how-to-implement-form-validation-with-vuetify-in-a-vue-js-app/
 import { ValidationObserver, extend } from 'vee-validate';
 import { messages } from 'vee-validate/dist/locale/en.json';
-import { required, email, max } from 'vee-validate/dist/rules';
+import { required, email, max, confirmed } from 'vee-validate/dist/rules';
 import { mdiClose } from '@mdi/js';
 import TextField from '@/components/TextField';
-const rules = { required, email, max };
+const rules = { required, email, max, confirmed };
 for (const [rule, validation] of Object.entries(rules)) {
   extend(rule, {
     ...validation,
@@ -134,6 +162,11 @@ export default {
     async submit() {
       this.submitting = true;
       try {
+        await this.$axios.get('/sanctum/csrf-cookie');
+        await this.$axios.post('/register', {
+          name: `${this.form.firstname}${this.form.firstname}`,
+          ...this.form,
+        });
         await this.$auth.loginWith('laravelSanctum', {
           data: this.form,
         });
