@@ -284,7 +284,7 @@ module.exports = {
    ** Build configuration
    */
   build: {
-    transpile: ['lodash-es', 'vuetify/lib'],
+    transpile: ['lodash-es', 'vuetify/lib', 'vee-validate/dist/rules'],
     extend(config, { isClient }) {
       // Extend only webpack config for client-bundle
       if (isClient) {
