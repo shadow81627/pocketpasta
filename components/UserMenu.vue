@@ -11,21 +11,21 @@
           v-on="on"
         >
           <v-avatar size="32px" tile width="32" min-width="32">
-            <!-- <v-img
+            <v-img
               v-if="$auth.user && $auth.user.picture"
               :src="$auth.user.picture"
               width="32"
               height="32"
               min-width="32"
               alt="avatar"
-            /> -->
+            />
             <v-icon>{{ mdiAccountCircle }}</v-icon>
           </v-avatar>
         </v-btn>
       </template>
 
       <v-card>
-        <!-- <v-list v-if="$auth.loggedIn" flat>
+        <v-list v-if="$auth.loggedIn" flat>
           <v-list-item tile to="/profile">
             <v-list-item-avatar>
               <v-img
@@ -45,7 +45,7 @@
               <v-list-item-title>{{ $auth.user.email }}</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
-        </v-list> -->
+        </v-list>
 
         <v-divider />
 
@@ -62,7 +62,7 @@
               }}</v-list-item-title>
             </v-list-item-content>
           </v-list-item>
-          <!-- <template v-if="$auth.loggedIn">
+          <template v-if="$auth.loggedIn">
             <v-list-item @click="$auth.logout()">
               <v-list-item-icon>
                 <v-icon>{{ mdiLogout }}</v-icon>
@@ -81,7 +81,7 @@
                 <v-list-item-title>{{ $t('layout.login') }}</v-list-item-title>
               </v-list-item-content>
             </v-list-item>
-          </template> -->
+          </template>
         </v-list>
       </v-card>
     </v-menu>

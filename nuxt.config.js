@@ -13,11 +13,13 @@ const BASE_URL = (
 ).replace(/(^http[s]?)?(?::\/\/)?(.*)/, function (_, protocol, domain) {
   return `${protocol || 'https'}://${domain}`;
 });
+const API_URL = process.env.API_URL || 'https://api.pocketpasta.com';
 
 const env = {
   HOST,
   PORT,
   BASE_URL,
+  API_URL,
   VERSION: pkg.version,
   COMMIT:
     process.env.npm_package_gitHead ||
@@ -181,6 +183,7 @@ module.exports = {
   modules: [
     '@nuxt/content',
     '@nuxtjs/axios',
+    '@nuxtjs/auth-next',
     '@nuxtjs/google-analytics',
     '@nuxtjs/markdownit',
     '@nuxtjs/pwa',
@@ -197,6 +200,15 @@ module.exports = {
     '@nuxtjs/vuetify',
     '@nuxtjs/color-mode',
   ],
+
+  auth: {
+    strategies: {
+      laravelSanctum: {
+        provider: 'laravel/sanctum',
+        url: env.API_URL,
+      },
+    },
+  },
 
   eslint: {
     /* module options */
@@ -242,6 +254,7 @@ module.exports = {
   axios: {
     // See https://github.com/nuxt-community/axios-module#options
     https: true,
+    credentials: true,
   },
 
   content: {
