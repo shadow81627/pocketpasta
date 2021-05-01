@@ -52,7 +52,7 @@
     "pouchdb-adapter-http": "7.2.2",
     "pouchdb-adapter-indexeddb": "7.2.2",
     "rxdb": "9.18.0",
-    "rxjs": "6.6.6",
+    "rxjs": "6.6.7",
     "store": "2.0.12",
     "utility-opentype": "0.1.4",
     "vee-validate": "3.4.5",
