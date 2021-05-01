@@ -1,5 +1,11 @@
 # Releases
 
+## [0.48.2](https://github.com/shadow81627/pocketpasta/compare/v0.48.1...v0.48.2) (2021-05-01)
+
+### Bug Fixes
+
+- **deps:** bump actions/cache from v2.1.4 to v2.1.5 ([#1914](https://github.com/shadow81627/pocketpasta/issues/1914)) ([b6917e0](https://github.com/shadow81627/pocketpasta/commit/b6917e021941b78e5fc6c1c84e12f8757daab1a5))
+
 ## [0.48.1](https://github.com/shadow81627/pocketpasta/compare/v0.48.0...v0.48.1) (2021-04-10)
 
 ### Bug Fixes
