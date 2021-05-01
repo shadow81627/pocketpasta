@@ -1,5 +1,11 @@
 # Releases
 
+## [0.48.3](https://github.com/shadow81627/pocketpasta/compare/v0.48.2...v0.48.3) (2021-05-01)
+
+### Bug Fixes
+
+- **deps:** update dependency rxdb to v9.18.0 ([639b6e6](https://github.com/shadow81627/pocketpasta/commit/639b6e683268add76fea6b496b49637512c2ec1d))
+
 ## [0.48.2](https://github.com/shadow81627/pocketpasta/compare/v0.48.1...v0.48.2) (2021-05-01)
 
 ### Bug Fixes
