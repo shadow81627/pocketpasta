@@ -98,7 +98,7 @@
     "playwright": "1.10.0",
     "prettier": "2.2.1",
     "pretty-quick": "3.1.0",
-    "sass": "1.32.6",
+    "sass": "1.32.12",
     "sass-loader": "10.1.1",
     "semantic-release": "17.4.1",
     "serve-handler": "6.1.3",
