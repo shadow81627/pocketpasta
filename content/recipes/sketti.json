@@ -8,8 +8,8 @@
   "cookTime": "PT22M",
   "createdAt": "2021-05-05T04:18:18Z",
   "datePublished": "2021-05-05",
-  "description": "Sketti",
-  "image": [],
+  "description": "A simple meal for a simple boi.",
+  "image": "https://res.cloudinary.com/pocketpasta/image/upload/v1620189495/recipes/PXL_20210504_081257770_nc7ydu.jpg",
   "keywords": "Pasta, Sketti",
   "name": "Sketti",
   "nutrition": {
@@ -79,7 +79,7 @@
     }
   ],
   "recipeYield": "4 servings",
-  "sameAs": [],
+  "sameAs": ["https://tasty.co/recipe/audrey-hepburns-spaghetti-al-pomodoro"],
   "suitableForDiet": "https://schema.org/VeganDiet",
   "totalTime": "PT32M",
   "updatedAt": "2021-05-05T04:18:18Z"

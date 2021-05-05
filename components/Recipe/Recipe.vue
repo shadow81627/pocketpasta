@@ -298,6 +298,7 @@ export default {
         } else {
           return {
             src: image,
+            srcset: [],
           };
         }
       }
