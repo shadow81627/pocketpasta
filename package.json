@@ -90,7 +90,7 @@
     "eslint-plugin-prettier": "3.4.0",
     "eslint-plugin-promise": "5.1.0",
     "eslint-plugin-standard": "4.1.0",
-    "eslint-plugin-unicorn": "27.0.0",
+    "eslint-plugin-unicorn": "31.0.0",
     "eslint-plugin-vue": "7.9.0",
     "fibers": "5.0.0",
     "husky": "4.3.8",
