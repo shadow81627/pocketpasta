@@ -1,5 +1,11 @@
 # Releases
 
+## [0.48.9](https://github.com/shadow81627/pocketpasta/compare/v0.48.8...v0.48.9) (2021-05-06)
+
+### Bug Fixes
+
+- **deps:** bump actions/setup-dotnet from v1 to v1.8.0 ([#1946](https://github.com/shadow81627/pocketpasta/issues/1946)) ([6388a29](https://github.com/shadow81627/pocketpasta/commit/6388a29d7ae56e3b178ffd7f984d350a0af9b010))
+
 ## [0.48.8](https://github.com/shadow81627/pocketpasta/compare/v0.48.7...v0.48.8) (2021-05-04)
 
 ### Bug Fixes
