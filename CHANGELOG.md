@@ -1,5 +1,11 @@
 # Releases
 
+## [0.48.10](https://github.com/shadow81627/pocketpasta/compare/v0.48.9...v0.48.10) (2021-05-06)
+
+### Bug Fixes
+
+- **deps:** update dependency rxjs to v7 ([92b3220](https://github.com/shadow81627/pocketpasta/commit/92b32207db7bad6363e2e85e4406623dd74dfeab))
+
 ## [0.48.9](https://github.com/shadow81627/pocketpasta/compare/v0.48.8...v0.48.9) (2021-05-06)
 
 ### Bug Fixes
