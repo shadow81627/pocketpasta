@@ -205,6 +205,8 @@ module.exports = {
     '@nuxt/image',
   ],
 
+  components: ['~/components'],
+
   auth: {
     strategies: {
       laravelSanctum: {
@@ -221,8 +223,21 @@ module.exports = {
 
   image: {
     provider: env.IMAGE_PROVIDER,
+    providers: {
+      cloudinary_upload: {
+        provider: 'cloudinary',
+        options: {
+          baseURL: `https://res.cloudinary.com/${env.CLOUDINARY_NAME}/image/upload/`,
+        },
+      },
+    },
     cloudinary: {
-      baseURL: `https://res.cloudinary.com/${env.CLOUDINARY_NAME}/image/upload/`,
+      baseURL: `https://res.cloudinary.com/${env.CLOUDINARY_NAME}/image/fetch/`,
+      options: {
+        quality: 'auto',
+        format: 'auto',
+        dpr: 'auto',
+      },
     },
     screens: {
       placeholder: 10,
@@ -234,19 +249,33 @@ module.exports = {
     },
     domains: [env.HOST, 'res.cloudinary.com'],
     presets: {
-      default: {
+      hero: {
+        sizes: 'xs:100vw sm:100vw md:100vw lg:100vw xl:100vw',
         modifiers: {
           quality: 'auto',
           format: 'auto',
           dpr: 'auto',
+          // ar: '16:9',
+          // c: 'fill',
         },
       },
-      hero: {
+      og: {
+        sizes: 'xs:100vw sm:100vw md:100vw lg:100vw xl:100vw',
         modifiers: {
-          crop: 'fit',
           quality: 'auto',
           format: 'auto',
           dpr: 'auto',
+          // height: 630,
+          width: 1280,
+          c: 'fill',
+        },
+      },
+      placeholder: {
+        modifiers: {
+          quality: 'auto',
+          format: 'auto',
+          dpr: 'auto',
+          width: 10,
         },
       },
     },

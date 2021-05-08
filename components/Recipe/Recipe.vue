@@ -21,17 +21,12 @@
       />
     </vue-plyr>
     <div v-else-if="imageData && imageData.src">
-      <v-img
-        :src="imageData.src"
-        :srcset="imageData.srcset.join(',')"
+      <Hero
+        :src="Array.isArray(image) ? image[0] : image"
         :alt="name"
         itemprop="image"
-        :xwidth="640"
-        :xheight="360"
-        :aspect-ratio="640 / 360"
-        sizes="(max-width: 1140px) 100vw, 1140px"
-        min-width="100%"
-        contain
+        xcontain
+        :gradient="null"
         @click="videoClicked = true"
       >
         <v-container
@@ -58,7 +53,7 @@
             </v-col>
           </v-row>
         </v-container>
-      </v-img>
+      </Hero>
     </div>
     <!-- <p>Author: {{ author }}</p> -->
     <!-- <p>Published: {{ datePublished }}</p> -->

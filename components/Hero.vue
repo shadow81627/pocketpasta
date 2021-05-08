@@ -1,25 +1,19 @@
 <template>
-  <v-container class="pa-0 hidden-print-only" fluid>
+  <v-container class="pa-0 hidden-print-only" fluid v-on="$listeners">
     <v-row no-gutters align="center" justify="center">
       <v-col cols="12" align-self="center">
-        <v-card :color="color" flat dark tile>
+        <v-card :color="color" flat tile>
           <v-img
-            :lazy-src="$img(src, { width: 10, quality: 70 })"
-            :src="$img(src, { quality: 70, height: 500 })"
-            :srcset="
-              _srcset(src, {
-                modifiers: { height: 500, width: 1280 },
-                preset: 'hero',
-              }).srcset
-            "
-            :height="height"
-            :sizes="
-              _srcset(src, {
-                modifiers: { height: 500, width: 1280 },
-                preset: 'hero',
-              }).size
-            "
+            :lazy-src="$img(src, {}, { preset: 'placeholder' })"
+            :src="_srcset(src, { preset: 'hero' }).src"
+            :srcset="_srcset(src, { preset: 'hero' }).srcset"
+            :alt="alt"
+            max-height="80vh"
+            :sizes="_srcset(src, { preset: 'hero' }).size"
             :gradient="gradient"
+            :contain="contain"
+            color="grey"
+            :aspect-ratio="16 / 9"
           >
             <slot>
               <v-container
@@ -53,6 +47,7 @@ export default {
     heading: { type: String, default: null },
     subheading: { type: String, default: null },
     alt: { type: String, default: '' },
+    contain: { type: Boolean, default: undefined },
     gradient: {
       type: String,
       default: 'rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)',
@@ -74,10 +69,11 @@ export default {
         {
           hid: 'og:image',
           property: 'og:image',
-          content: `${this.$config.BASE_URL}${this.$img(this.src, {
-            width: 1280,
-            height: 630,
-          })}`,
+          content: `${this.$config.BASE_URL}${this.$img(
+            this.src,
+            {},
+            { preset: 'og' },
+          )}`,
         },
         {
           hid: 'og:image:width',
@@ -94,10 +90,11 @@ export default {
         {
           rel: 'preload',
           as: 'image',
-          href: `${this.$config.BASE_URL}${this.$img(this.src, {
-            width: 1280,
-            height: 630,
-          })}`,
+          href: `${this.$config.BASE_URL}${this.$img(
+            this.src,
+            {},
+            { preset: 'hero' },
+          )}`,
           imagesrcset: this._srcset.srcset,
           imagesizes: this._srcset.size,
         },

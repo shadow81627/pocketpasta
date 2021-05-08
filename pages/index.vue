@@ -9,6 +9,8 @@
           background-size: cover;
           background-image: url(${$img(
             '/fl_progressive/ar_16:9,c_fill,f_auto,q_auto,dpr_auto,g_south,w_auto/c_limit,w_1920/v1559982334/hero_rko6us.jpg',
+            {},
+            { provider: 'cloudinary_upload' },
           )});
         `"
       >
@@ -26,7 +28,7 @@
                     width: 200,
                     height: 176,
                   },
-                  { preset: 'default' },
+                  { provider: 'cloudinary_upload' },
                 )
               "
               alt="Pasta on a sheet of paper"
@@ -112,11 +114,6 @@ export default {
 </script>
 
 <style scoped>
-.banner-image-background {
-  background-size: cover;
-  background-image: url('https://res.cloudinary.com/pocketpasta/image/upload/fl_progressive/ar_16:9,c_fill,f_auto,q_auto,dpr_auto,g_south,w_auto/c_limit,w_1920/v1559982334/hero_rko6us.jpg');
-}
-
 /*
  * Dummy devices (replace them with your own or something else entirely!)
  */
