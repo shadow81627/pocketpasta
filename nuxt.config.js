@@ -29,6 +29,9 @@ const env = {
 
   CLOUDINARY_NAME: 'pocketpasta',
   IMAGE_PROVIDER: 'cloudinary',
+  SENTRY_DSN:
+    process.env.SENTRY_DSN ||
+    'https://46d059ea02a240dfbb89bfaa4926f463@sentry.io/1411042',
 
   DB_REMOTE: process.env.DB_REMOTE,
   DB_USERNAME: process.env.DB_USERNAME,
@@ -294,7 +297,7 @@ module.exports = {
 
   sentry: {
     // Enter your project's DSN here
-    dsn: 'https://46d059ea02a240dfbb89bfaa4926f463@sentry.io/1411042',
+    dsn: env.SENTRY_DSN,
     // enable sentry-webpack-plugin used to send releases to Sentry
     // publishRelease: true,
     disabled: process.env.NODE_ENV !== 'production',
