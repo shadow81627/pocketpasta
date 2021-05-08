@@ -1,0 +1,86 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Recipe",
+  "author": {
+    "@type": "Person",
+    "name": "Makayla Harding"
+  },
+  "cookTime": "PT22M",
+  "createdAt": "2021-05-05T04:18:18Z",
+  "datePublished": "2021-05-05",
+  "description": "A simple meal for a simple boi.",
+  "image": "https://res.cloudinary.com/pocketpasta/image/upload/v1620189495/recipes/PXL_20210504_081257770_nc7ydu.jpg",
+  "keywords": "Pasta, Sketti",
+  "name": "Sketti",
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "calories": "1509 calories"
+  },
+  "prepTime": "PT10M",
+  "recipeCategory": "Dinner",
+  "recipeCuisine": "Italian",
+  "recipeIngredient": [
+    "1 carrot",
+    "1 celery stick, rinsed",
+    "1/2 tablespoon good quality olive oil",
+    "1 tablespoon italian herb mix",
+    "1 tablespoon red wine",
+    "1/2 lb dry linguine",
+    "1 can diced tomatos"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "Dice 1 carrot."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Dice 1 celery stick."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Add olive oil to frying pan."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Fry diced carrot and celery in olive oil on medium-high heat for 5-10 mins until you can see them changing colour and texture a little bit."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Deglaze with the wine (enough to cover the bottom of the pan and get your veggies floating a little)."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Cook until the sharp alcohol smell goes away (a min or so)."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Add a tablespoon of seasoning."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Add tin of diced tomatoes."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Fill the tomato tin about halfway with water and add."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Bring to a boil on max heat and then drop it down to low."
+    },
+    {
+      "@type": "HowToStep",
+      "text": " Keep an eye on it until the sauce has reduced down and the veggies are soft. It might need more water if it's getting too dry and the veggies aren't ready yet."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Season with salt and pepper at the end."
+    }
+  ],
+  "recipeYield": "4 servings",
+  "sameAs": ["https://tasty.co/recipe/audrey-hepburns-spaghetti-al-pomodoro"],
+  "suitableForDiet": "https://schema.org/VeganDiet",
+  "totalTime": "PT32M",
+  "updatedAt": "2021-05-05T04:18:18Z"
+}
