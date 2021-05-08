@@ -1,5 +1,11 @@
 # Releases
 
+## [0.48.11](https://github.com/shadow81627/pocketpasta/compare/v0.48.10...v0.48.11) (2021-05-08)
+
+### Bug Fixes
+
+- **deps:** update dependency @nuxtjs/auth-next to v5.0.0-1620457172.0cf714c ([4a88679](https://github.com/shadow81627/pocketpasta/commit/4a886792f7456874cbd77fb4e5055b73d9f438ff))
+
 ## [0.48.10](https://github.com/shadow81627/pocketpasta/compare/v0.48.9...v0.48.10) (2021-05-06)
 
 ### Bug Fixes
