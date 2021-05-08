@@ -7,7 +7,9 @@
           position: relative;
           overflow: hidden;
           background-size: cover;
-          background-image: url('https://res.cloudinary.com/pocketpasta/image/upload/fl_progressive/ar_16:9,c_fill,f_auto,q_auto,dpr_auto,g_south,w_auto/c_limit,w_1920/v1559982334/hero_rko6us.jpg');
+          background-image: url(${$img(
+            '/fl_progressive/ar_16:9,c_fill,f_auto,q_auto,dpr_auto,g_south,w_auto/c_limit,w_1920/v1559982334/hero_rko6us.jpg',
+          )});
         `"
       >
         <div class="product-device shadow-sm d-none d-md-block" />
@@ -17,11 +19,15 @@
         <div class="col-md-5 pa-lg-12 mx-auto my-5">
           <v-avatar width="200" height="176" tile class="mx-auto">
             <v-img
-              src="https://res.cloudinary.com/pocketpasta/image/upload/fl_progressive/c_fit,f_auto,q_auto,w_200,h_176,dpr_auto/v1560038491/logo_vlqvdr.png"
-              srcset="
-                https://res.cloudinary.com/pocketpasta/image/upload/fl_progressive/c_fit,f_auto,q_auto,w_200,h_176,dpr_auto/v1560038491/logo_vlqvdr.png 1x,
-                https://res.cloudinary.com/pocketpasta/image/upload/fl_progressive/c_fit,f_auto,q_auto,w_200,h_176,dpr_2.0/v1560038491/logo_vlqvdr.png 2x,
-                https://res.cloudinary.com/pocketpasta/image/upload/fl_progressive/c_fit,f_auto,q_auto,w_200,h_176,dpr_3.0/v1560038491/logo_vlqvdr.png 3x
+              :src="
+                $img(
+                  '/v1560038491/logo_vlqvdr.png',
+                  {
+                    width: 200,
+                    height: 176,
+                  },
+                  { preset: 'default' },
+                )
               "
               alt="Pasta on a sheet of paper"
               width="200"
@@ -83,10 +89,13 @@
 import Credit from '@/components/Layout/Credit/landing-hero-image-credit';
 import linkData from '@/assets/link-data/pocketpasta.json';
 
+import ImageSources from '@/mixins/srcset';
+
 export default {
   components: {
     Credit,
   },
+  mixins: [ImageSources],
   layout: 'default',
   head() {
     return {
