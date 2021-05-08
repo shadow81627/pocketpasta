@@ -20,18 +20,13 @@
         style="padding-top: 56.25%"
       />
     </vue-plyr>
-    <div v-else-if="imageData && imageData.src">
-      <v-img
-        :src="imageData.src"
-        :srcset="imageData.srcset.join(',')"
+    <div v-else-if="imageData">
+      <Hero
+        :src="imageData"
         :alt="name"
         itemprop="image"
-        :xwidth="640"
-        :xheight="360"
-        :aspect-ratio="640 / 360"
-        sizes="(max-width: 1140px) 100vw, 1140px"
-        min-width="100%"
-        contain
+        xcontain
+        :gradient="null"
         @click="videoClicked = true"
       >
         <v-container
@@ -58,7 +53,7 @@
             </v-col>
           </v-row>
         </v-container>
-      </v-img>
+      </Hero>
     </div>
     <!-- <p>Author: {{ author }}</p> -->
     <!-- <p>Published: {{ datePublished }}</p> -->
@@ -250,28 +245,7 @@ export default {
   data: () => ({ showDescription: false, videoClicked: false }),
 
   head() {
-    const { src: image } = this.imageData || {};
     return {
-      meta: [
-        {
-          skip: !image,
-          hid: 'og:image',
-          property: 'og:image',
-          content: image,
-        },
-        {
-          skip: !image,
-          hid: 'og:image:width',
-          property: 'og:image:width',
-          content: '640',
-        },
-        {
-          skip: !image,
-          hid: 'og:image:height',
-          property: 'og:image:height',
-          content: '360',
-        },
-      ],
       script: [
         {
           json: this.linkData,
@@ -282,25 +256,6 @@ export default {
   },
   computed: {
     imageData() {
-      function cloudinaryify(image) {
-        if (!image.startsWith('https://res.cloudinary.com')) {
-          return {
-            src: `https://res.cloudinary.com/pocketpasta/image/fetch/fl_progressive/w_640,h_360,ar_16:9,c_fill,f_auto,q_auto/${image}`,
-            srcset: [
-              `https://res.cloudinary.com/pocketpasta/image/fetch/fl_progressive/w_320,h_180,ar_16:9,c_fill,f_auto,q_auto/${image} 320w`,
-              `https://res.cloudinary.com/pocketpasta/image/fetch/fl_progressive/w_640,h_360,ar_16:9,c_fill,f_auto,q_auto/${image} 640w`,
-              `https://res.cloudinary.com/pocketpasta/image/fetch/fl_progressive/w_768,h_432,ar_16:9,c_fill,f_auto,q_auto/${image} 768w`,
-              `https://res.cloudinary.com/pocketpasta/image/fetch/fl_progressive/w_1024,h_576,ar_16:9,c_fill,f_auto,q_auto/${image} 1024w`,
-              `https://res.cloudinary.com/pocketpasta/image/fetch/fl_progressive/w_1280,h_720,ar_16:9,c_fill,f_auto,q_auto/${image} 1280w`,
-              `https://res.cloudinary.com/pocketpasta/image/fetch/fl_progressive/w_1366,h_768,ar_16:9,c_fill,f_auto,q_auto/${image} 1366w`,
-            ],
-          };
-        } else {
-          return {
-            src: image,
-          };
-        }
-      }
       const image = Array.isArray(this.image) ? this.image[0] : this.image;
       if (image) {
         if (
@@ -309,9 +264,9 @@ export default {
           !Array.isArray(image)
         ) {
           const { url } = image;
-          return cloudinaryify(url);
+          return url;
         } else {
-          return cloudinaryify(image);
+          return image;
         }
       } else {
         return null;

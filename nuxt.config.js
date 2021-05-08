@@ -27,6 +27,9 @@ const env = {
     process.env.VERCEL_GITHUB_COMMIT_SHA,
   DATE_GENERATED: new Date().toISOString(),
 
+  CLOUDINARY_NAME: 'pocketpasta',
+  IMAGE_PROVIDER: 'cloudinary',
+
   DB_REMOTE: process.env.DB_REMOTE,
   DB_USERNAME: process.env.DB_USERNAME,
   DB_PASSWORD: process.env.DB_PASSWORD,
@@ -199,7 +202,10 @@ module.exports = {
     '@nuxtjs/eslint-module',
     '@nuxtjs/vuetify',
     '@nuxtjs/color-mode',
+    '@nuxt/image',
   ],
+
+  components: ['~/components'],
 
   auth: {
     strategies: {
@@ -213,6 +219,66 @@ module.exports = {
   eslint: {
     /* module options */
     cache: true,
+  },
+
+  image: {
+    provider: env.IMAGE_PROVIDER,
+    providers: {
+      cloudinary_upload: {
+        provider: 'cloudinary',
+        options: {
+          baseURL: `https://res.cloudinary.com/${env.CLOUDINARY_NAME}/image/upload/`,
+        },
+      },
+    },
+    cloudinary: {
+      baseURL: `https://res.cloudinary.com/${env.CLOUDINARY_NAME}/image/fetch/`,
+      options: {
+        quality: 'auto',
+        format: 'auto',
+        dpr: 'auto',
+      },
+    },
+    screens: {
+      placeholder: 10,
+      xs: 320,
+      sm: 600,
+      md: 960,
+      lg: 1280,
+      xl: 1920,
+    },
+    domains: [env.HOST, 'res.cloudinary.com'],
+    presets: {
+      hero: {
+        sizes: 'xs:100vw sm:100vw md:100vw lg:100vw xl:100vw',
+        modifiers: {
+          quality: 'auto',
+          format: 'auto',
+          dpr: 'auto',
+          // ar: '16:9',
+          // c: 'fill',
+        },
+      },
+      og: {
+        sizes: 'xs:100vw sm:100vw md:100vw lg:100vw xl:100vw',
+        modifiers: {
+          quality: 'auto',
+          format: 'auto',
+          dpr: 'auto',
+          // height: 630,
+          width: 1280,
+          c: 'fill',
+        },
+      },
+      placeholder: {
+        modifiers: {
+          quality: 'auto',
+          format: 'auto',
+          dpr: 'auto',
+          width: 10,
+        },
+      },
+    },
   },
 
   vuetify: {

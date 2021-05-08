@@ -8,20 +8,37 @@
     elevation="4"
     class="flex d-flex flex-column"
   >
-    <v-img
+    <v-avatar
       v-show="layout === 'columns'"
-      :src="source({ image: imageUrl, height: 256, width: 'auto' }).src"
-      :srcset="source({ image: imageUrl, height: 256, width: 'auto' }).srcset"
-      itemprop="image"
+      color="grey"
       height="256"
-      max-height="256"
-      :alt="name"
-    />
+      width="auto"
+      tile
+    >
+      <v-img
+        :lazy-src="$img(imageUrl, {}, { preset: 'placeholder' })"
+        :src="
+          _srcset(imageUrl, {
+            sizes: 'xs:100vw sm:50vw md:33vw lg:25vw',
+          }).src
+        "
+        :srcset="
+          _srcset(imageUrl, {
+            sizes: 'xs:100vw sm:50vw md:33vw lg:25vw',
+          }).srcset
+        "
+        itemprop="image"
+        height="256"
+        max-height="256"
+        :alt="name"
+      />
+    </v-avatar>
     <v-container>
       <v-row class="align-center justify-center" no-gutters>
         <v-col v-show="layout !== 'columns'" cols="auto">
-          <v-avatar class="ma-sm-3" size="128" tile>
+          <v-avatar class="ma-sm-3" size="128" tile color="grey">
             <v-img
+              :lazy-src="$img(imageUrl, {}, { preset: 'placeholder' })"
               :src="source({ image: imageUrl }).src"
               :srcset="source({ image: imageUrl }).srcset"
               height="128"
@@ -45,7 +62,9 @@
 </template>
 
 <script>
+import ImageSources from '@/mixins/srcset';
 export default {
+  mixins: [ImageSources],
   inheritAttrs: false,
   props: {
     type: { type: String, required: true },
