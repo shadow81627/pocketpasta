@@ -16,7 +16,6 @@
       tile
     >
       <v-img
-        :lazy-src="$img(imageUrl, {}, { preset: 'placeholder' })"
         :src="
           _srcset(imageUrl, {
             sizes: 'xs:100vw sm:50vw md:33vw lg:25vw',
