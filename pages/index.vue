@@ -2,7 +2,15 @@
   <div>
     <v-card dark>
       <div
-        class="position-relative overflow-hidden pa-3 pa-md-12 text-center bg-dark text-light text-shadow banner-image-background"
+        class="
+          position-relative
+          overflow-hidden
+          pa-3 pa-md-12
+          text-center
+          bg-dark
+          text-light text-shadow
+          banner-image-background
+        "
         :style="`
           position: relative;
           overflow: hidden;

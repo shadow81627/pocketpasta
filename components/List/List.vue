@@ -133,18 +133,19 @@ export default {
   }),
   async fetch() {
     try {
-      this.total = (this.search
-        ? await this.$content(this.collection, { deep: this.deep })
-            .only(['id'])
-            .where({ '@type': { $in: collections } })
-            .search(this.search)
-            .sortBy(this.sortBy, this.direction)
-            .fetch()
-        : await this.$content(this.collection, { deep: this.deep })
-            .only(['id'])
-            .where({ '@type': { $in: collections } })
-            .sortBy(this.sortBy, this.direction)
-            .fetch()
+      this.total = (
+        this.search
+          ? await this.$content(this.collection, { deep: this.deep })
+              .only(['id'])
+              .where({ '@type': { $in: collections } })
+              .search(this.search)
+              .sortBy(this.sortBy, this.direction)
+              .fetch()
+          : await this.$content(this.collection, { deep: this.deep })
+              .only(['id'])
+              .where({ '@type': { $in: collections } })
+              .sortBy(this.sortBy, this.direction)
+              .fetch()
       ).length;
 
       const content = this.$content(this.collection, { deep: this.deep })
