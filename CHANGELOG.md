@@ -1,5 +1,11 @@
 # Releases
 
+## [0.48.14](https://github.com/shadow81627/pocketpasta/compare/v0.48.13...v0.48.14) (2021-05-12)
+
+### Bug Fixes
+
+- **deps:** bump actions/checkout from 2 to 2.3.4 ([#1973](https://github.com/shadow81627/pocketpasta/issues/1973)) ([fe8af10](https://github.com/shadow81627/pocketpasta/commit/fe8af10dd9d871b9be7223cbbfdcbae83e5084f6))
+
 ## [0.48.13](https://github.com/shadow81627/pocketpasta/compare/v0.48.12...v0.48.13) (2021-05-09)
 
 ### Bug Fixes
