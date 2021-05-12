@@ -1,4 +1,5 @@
 const http = require('http');
+const { devices } = require('playwright');
 const { setHeadlessWhen } = require('@codeceptjs/configure');
 const handler = require('serve-handler');
 
@@ -16,10 +17,11 @@ exports.config = {
   tests: './test/e2e/*_test.js',
   output: './test/e2e/output',
   helpers: {
-    Puppeteer: {
+    Playwright: {
       url: 'http://localhost:3001',
       show: true,
       waitForNavigation: 'networkidle0',
+      emulate: devices['iPhone 7'],
     },
     ResembleHelper: {
       require: 'codeceptjs-resemblehelper',
