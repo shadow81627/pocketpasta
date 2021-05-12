@@ -1,8 +1,8 @@
 /* eslint-disable no-undef */
 
-const name = 'home';
+const slug = 'home';
 
-Feature(name);
+Feature(slug);
 
 Scenario('Heading 1', async ({ I }) => {
   I.amOnPage(`/`);
@@ -12,6 +12,6 @@ Scenario('Heading 1', async ({ I }) => {
   I.see('Recipes', '#navigation-drawer');
   I.wait(5);
 
-  I.saveScreenshot(`${name}.png`);
-  await I.seeVisualDiff(`${name}.png`);
+  I.saveScreenshot(`${slug}.png`);
+  await I.seeVisualDiff(`${slug}.png`);
 });

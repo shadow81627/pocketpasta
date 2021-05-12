@@ -1,13 +1,14 @@
 /* eslint-disable no-undef */
 
-const name = 'newsletter';
+const slug = 'newsletter';
 
-Feature(name);
+Feature(slug);
 
 Scenario('Heading 1', async ({ I }) => {
-  I.amOnPage(`/${name}`);
+  I.amOnPage(`/${slug}`);
   I.see('Subscribe to our mailing list', 'h1');
+  I.wait(5);
 
-  I.saveScreenshot(`${name}.png`);
-  await I.seeVisualDiff(`${name}.png`);
+  I.saveScreenshot(`${slug}.png`);
+  await I.seeVisualDiff(`${slug}.png`);
 });
