@@ -55,8 +55,8 @@ export default {
       type: String,
       default: 'rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)',
     },
-    width: { type: [Number, String], default: 1280 },
-    height: { type: [Number, String], default: 500 },
+    width: { type: [Number, String], default: null },
+    height: { type: [Number, String], default: null },
     color: {
       type: String,
       default: null,
