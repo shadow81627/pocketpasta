@@ -33,6 +33,9 @@ const env = {
     process.env.SENTRY_DSN ||
     'https://46d059ea02a240dfbb89bfaa4926f463@sentry.io/1411042',
 
+  SUPABASE_URL: process.env.SUPABASE_URL,
+  SUPABASE_KEY: process.env.SUPABASE_KEY,
+
   DB_REMOTE: process.env.DB_REMOTE,
   DB_USERNAME: process.env.DB_USERNAME,
   DB_PASSWORD: process.env.DB_PASSWORD,
@@ -195,6 +198,7 @@ module.exports = {
     '@nuxtjs/pwa',
     '@nuxtjs/sentry',
     'vue-warehouse/nuxt',
+    'nuxt-supabase',
     'nuxt-i18n',
 
     // keep sitemap last
@@ -293,6 +297,11 @@ module.exports = {
   googleAnalytics: {
     id: 'UA-125711214-1',
     dev: false,
+  },
+
+  supabase: {
+    supabaseUrl: env.SUPABASE_URL,
+    supabaseKey: env.SUPABASE_KEY,
   },
 
   sentry: {
