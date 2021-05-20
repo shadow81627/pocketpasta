@@ -2,6 +2,10 @@
   <div class="product" itemscope itemtype="http://schema.org/Product">
     <v-row>
       <v-col cols="12" md="6">
+        <h1 itemprop="name">{{ name }}</h1>
+        <p itemprop="description">{{ description }}</p>
+      </v-col>
+      <v-col cols="12" md="6">
         <Hero
           v-if="image"
           :src="image"
@@ -14,10 +18,6 @@
           :gradient="null"
           :aspect-ratio="null"
         />
-      </v-col>
-      <v-col cols="12" md="6">
-        <h1 itemprop="name">{{ name }}</h1>
-        <p itemprop="description">{{ description }}</p>
       </v-col>
     </v-row>
 
