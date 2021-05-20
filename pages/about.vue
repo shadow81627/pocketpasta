@@ -10,7 +10,7 @@
           PocketPasta is a collection of my demo apps that I build to practice
           my skills.
         </p>
-        <vue-plyr>
+        <VuePlyr>
           <div
             data-plyr-provider="youtube"
             data-plyr-embed-id="W0StMCfs5Ew"
@@ -19,7 +19,7 @@
               background-image: url('https://i.ytimg.com/vi/W0StMCfs5Ew/maxresdefault.jpg');
             "
           />
-        </vue-plyr>
+        </VuePlyr>
       </v-col>
     </v-row>
 
@@ -44,7 +44,7 @@
           <strong>About:<span>&nbsp;</span></strong>
           <span>{{ damien.description }}</span>
         </p>
-        <keywords
+        <Keywords
           :tags="damien.keywords ? damien.keywords.split(',') : []"
           label="Skills"
         />

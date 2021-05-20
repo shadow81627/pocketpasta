@@ -1,5 +1,5 @@
 <template>
-  <card v-bind="source" :type="source['@type']" :layout="view" />
+  <Card v-bind="source" :type="source['@type']" :layout="view" />
 </template>
 
 <script>

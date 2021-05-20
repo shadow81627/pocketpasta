@@ -1,5 +1,5 @@
 <template>
-  <list
+  <List
     v-bind="{
       heading: $t('recipes.heading'),
       layout: 'columns',

@@ -30,13 +30,13 @@
       >
         <v-expansion-panel-header>
           <h2>Sellers</h2>
-          <price-summary v-bind="offerData"
+          <PriceSummary v-bind="offerData"
         /></v-expansion-panel-header>
         <v-expansion-panel-content eager>
-          <offers v-bind="offerData" />
+          <Offers v-bind="offerData" />
         </v-expansion-panel-content>
       </v-expansion-panel>
-      <nutrition-fact-table
+      <NutritionFactTable
         v-if="nutritionData"
         v-bind="nutritionData"
         class="my-4"
@@ -47,7 +47,7 @@
         </v-expansion-panel-header>
         <v-expansion-panel-content>
           <div class="list-group-flush">
-            <keywords
+            <Keywords
               :tags="(keywords || []).split(',')"
               :label="null"
               class="list-group-item"
@@ -56,7 +56,7 @@
         </v-expansion-panel-content>
       </v-expansion-panel>
     </v-expansion-panels>
-    <disqus shortname="pocketpasta" style="margin-top: 16px" />
+    <Disqus shortname="pocketpasta" style="margin-top: 16px" />
   </div>
 </template>
 

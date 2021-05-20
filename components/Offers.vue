@@ -2,7 +2,7 @@
   <v-list>
     <v-list-item v-for="offer in offers" :key="offer.offeredBy">
       <strong v-if="offer.price" itemprop="price">
-        <price :currency="offer.priceCurrency" :price="offer.price" />
+        <Price :currency="offer.priceCurrency" :price="offer.price" />
       </strong>
       <span>&nbsp;</span>
       <a

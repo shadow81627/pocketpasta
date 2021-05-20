@@ -32,7 +32,7 @@
       <v-col cols="6" sm="12" md="6" class="text-center xs">
         <h1>Register</h1>
         <p>Please complete this form to create an account</p>
-        <validation-observer ref="obs" v-slot="{ handleSubmit }">
+        <ValidationObserver ref="obs" v-slot="{ handleSubmit }">
           <v-form
             ref="form"
             class="mx-2"
@@ -42,7 +42,7 @@
           >
             <v-row>
               <v-col cols="6">
-                <text-field
+                <TextField
                   v-model="form.firstname"
                   label="First Name"
                   name="firstname"
@@ -51,7 +51,7 @@
                 />
               </v-col>
               <v-col cols="6">
-                <text-field
+                <TextField
                   v-model="form.lastname"
                   label="Last Name"
                   name="lastname"
@@ -62,7 +62,7 @@
             </v-row>
             <v-row>
               <v-col cols="12">
-                <text-field
+                <TextField
                   v-model="form.email"
                   type="email"
                   label="Email"
@@ -74,7 +74,7 @@
             </v-row>
             <v-row>
               <v-col cols="6">
-                <text-field
+                <TextField
                   v-model="form.password"
                   type="password"
                   rules="required|password|confirmed:password_confirmation|max:255"
@@ -84,7 +84,7 @@
                 />
               </v-col>
               <v-col cols="6">
-                <text-field
+                <TextField
                   v-model="form.password_confirmation"
                   type="password"
                   rules="required|password|max:255"
@@ -103,7 +103,7 @@
               Register
             </v-btn>
           </v-form>
-        </validation-observer>
+        </ValidationObserver>
       </v-col>
     </v-row>
     <client-only>

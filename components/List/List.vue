@@ -14,7 +14,7 @@
       item-key="slug"
     >
       <template #header>
-        <list-header
+        <ListHeader
           :headers="headers"
           :direction.sync="direction"
           :sort-by.sync="sortBy"
@@ -26,7 +26,7 @@
       </template>
       <template #default="{ items }">
         <client-only v-if="infinite && items">
-          <virtual-list
+          <VirtualList
             data-key="slug"
             :data-sources="items"
             :data-component="itemComponent"
@@ -50,7 +50,7 @@
             :lg="view === 'columns' ? 3 : 12"
             class="d-flex flex-column"
           >
-            <card v-bind="item" :type="item['@type']" :layout="view" />
+            <Card v-bind="item" :type="item['@type']" :layout="view" />
           </v-col>
         </v-row>
       </template>

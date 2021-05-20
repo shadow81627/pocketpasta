@@ -9,10 +9,10 @@
         >
           <v-card-title>{{ name(items) }}</v-card-title>
           <v-card-subtitle
-            ><price-summary v-bind="offerData(items)"
+            ><PriceSummary v-bind="offerData(items)"
           /></v-card-subtitle>
           <v-card-text>
-            <offers :offers="items" />
+            <Offers :offers="items" />
           </v-card-text>
         </v-card>
       </v-col>

@@ -19,7 +19,7 @@
           hide-default-footer
         >
           <template #top>
-            <list-header
+            <ListHeader
               :headers="headers"
               :direction.sync="direction"
               :sort-by.sync="sortBy"
@@ -159,14 +159,14 @@
               <span>Edit</span>
             </v-tooltip>
 
-            <confirm-dialog @confirm="deleteItem(item)" />
+            <ConfirmDialog @confirm="deleteItem(item)" />
           </template>
         </v-data-table>
       </v-col>
     </v-row>
     <v-row>
       <v-col>
-        <confirm-dialog
+        <ConfirmDialog
           v-if="items.length"
           action="delete all your items"
           @confirm="clear(items)"
@@ -174,7 +174,7 @@
           <template #activator="{ on, attrs }">
             <v-btn color="danger" v-bind="attrs" v-on="on"> Clear All </v-btn>
           </template>
-        </confirm-dialog>
+        </ConfirmDialog>
 
         <v-dialog v-model="dialog" persistent max-width="400">
           <template #activator="{ on, attrs }">

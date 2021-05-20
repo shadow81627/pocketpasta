@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <list
+    <List
       v-bind="{
         heading: 'Organizations',
         layout: 'list',

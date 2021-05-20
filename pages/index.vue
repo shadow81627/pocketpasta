@@ -51,7 +51,7 @@
             {{ $t('landing.banner.subheading') }}
           </p>
         </div>
-        <credit style="position: absolute; right: 0; bottom: 0" />
+        <Credit style="position: absolute; right: 0; bottom: 0" />
       </div>
     </v-card>
 

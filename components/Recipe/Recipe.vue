@@ -2,10 +2,10 @@
   <div class="recipe">
     <h1 itemprop="name">{{ name }}</h1>
     <p itemprop="description">
-      <read-more :text="description" />
+      <ReadMore :text="description" />
     </p>
 
-    <vue-plyr
+    <VuePlyr
       v-if="
         video &&
         video.embedUrl &&
@@ -19,7 +19,7 @@
         :data-plyr-embed-id="video.embedUrl"
         style="padding-top: 56.25%"
       />
-    </vue-plyr>
+    </VuePlyr>
     <div v-else-if="imageData">
       <Hero
         :src="imageData"
@@ -83,7 +83,7 @@
             {{ diet }}
           </v-chip>
           <v-chip label style="background: none; overflow: visible; padding: 0">
-            <share class="d-inline-block" />
+            <Share class="d-inline-block" />
           </v-chip>
         </v-col>
       </v-row>
@@ -146,14 +146,14 @@
           <p v-else>{{ recipeInstructions }}</p>
         </v-expansion-panel-content>
       </v-expansion-panel>
-      <nutrition-fact-table v-if="nutrition" v-bind="nutrition" class="mb-4" />
+      <NutritionFactTable v-if="nutrition" v-bind="nutrition" class="mb-4" />
       <v-expansion-panel v-if="keywords" class="mb-2 d-print-none">
         <v-expansion-panel-header>
           <h2>Tags</h2>
         </v-expansion-panel-header>
         <v-expansion-panel-content>
           <div class="list-group-flush">
-            <keywords
+            <Keywords
               :tags="keywords.split(',')"
               :label="null"
               class="list-group-item"
@@ -185,7 +185,7 @@
         </v-expansion-panel-content>
       </v-expansion-panel>
     </v-expansion-panels>
-    <disqus shortname="pocketpasta" style="margin-top: 16px" />
+    <Disqus shortname="pocketpasta" style="margin-top: 16px" />
   </div>
 </template>
 
