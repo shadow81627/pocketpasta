@@ -1,5 +1,11 @@
 # Releases
 
+## [0.48.21](https://github.com/shadow81627/pocketpasta/compare/v0.48.20...v0.48.21) (2021-05-20)
+
+### Bug Fixes
+
+- **product:** use hero component ([#2004](https://github.com/shadow81627/pocketpasta/issues/2004)) ([dc286c9](https://github.com/shadow81627/pocketpasta/commit/dc286c98650884b3d6e56ea653f7dfbfca1b7916))
+
 ## [0.48.20](https://github.com/shadow81627/pocketpasta/compare/v0.48.19...v0.48.20) (2021-05-19)
 
 ### Bug Fixes
