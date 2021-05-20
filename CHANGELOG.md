@@ -1,5 +1,11 @@
 # Releases
 
+## [0.48.22](https://github.com/shadow81627/pocketpasta/compare/v0.48.21...v0.48.22) (2021-05-20)
+
+### Bug Fixes
+
+- **theme:** timeout for mounted set theme ([#2006](https://github.com/shadow81627/pocketpasta/issues/2006)) ([7fd87c2](https://github.com/shadow81627/pocketpasta/commit/7fd87c26fcc251bd495af9f1b7f0c8bceb4fc336))
+
 ## [0.48.21](https://github.com/shadow81627/pocketpasta/compare/v0.48.20...v0.48.21) (2021-05-20)
 
 ### Bug Fixes
