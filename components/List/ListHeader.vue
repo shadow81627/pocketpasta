@@ -115,7 +115,7 @@
                     </v-list-item>
                   </v-list>
                 </v-menu>
-                <view-switcher
+                <ViewSwitcher
                   :value="view"
                   @input="$emit('update:view', $event)"
                 />

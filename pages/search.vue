@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <list
+    <List
       v-bind="{
         heading: 'Search',
         layout: 'list',

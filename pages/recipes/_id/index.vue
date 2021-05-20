@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <recipe v-bind="recipe" />
+    <Recipe v-bind="recipe" />
     <!-- <v-btn
       fab
       bottom

@@ -95,12 +95,12 @@
         <span class="brand d-none d-sm-flex">PocketPasta</span>
       </v-toolbar-title>
       <v-spacer />
-      <add-to-home-screen icon />
-      <user-menu />
+      <AddToHomeScreen icon />
+      <UserMenu />
     </v-app-bar>
     <v-main class="pb-0">
       <nuxt style="min-height: 100vh" xkeep-alive />
-      <the-footer />
+      <TheFooter />
     </v-main>
   </v-app>
 </template>

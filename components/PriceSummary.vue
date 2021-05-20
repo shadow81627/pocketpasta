@@ -1,12 +1,12 @@
 <template>
   <span v-if="offerCount">
     <strong itemprop="lowPrice">
-      <price :price="lowPrice" :currency="priceCurrency"
+      <Price :price="lowPrice" :currency="priceCurrency"
     /></strong>
     <span v-show="highPrice !== lowPrice">
       <span>-</span>
       <strong itemprop="highPrice">
-        <price :price="highPrice" :currency="priceCurrency" />
+        <Price :price="highPrice" :currency="priceCurrency" />
       </strong>
     </span>
     <span itemprop="offerCount">({{ offerCount }})</span>

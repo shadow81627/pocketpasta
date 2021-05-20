@@ -1,5 +1,5 @@
 <template>
-  <validation-provider
+  <ValidationProvider
     v-slot="{ errors, valid }"
     :name="$attrs.label"
     :rules="rules"
@@ -16,7 +16,7 @@
     >
       <slot slot="append-outer" name="append-outer" />
     </v-text-field>
-  </validation-provider>
+  </ValidationProvider>
 </template>
 
 <script>

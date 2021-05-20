@@ -1,5 +1,5 @@
 <template>
-  <list
+  <List
     v-bind="{
       heading: $t('products.heading'),
       layout: 'list',

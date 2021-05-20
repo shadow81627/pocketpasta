@@ -16,10 +16,7 @@
       >{{ part }}</span
     ></span
   >
-  <number-text
-    v-else-if="Array.isArray(text.split(numberRegex))"
-    :text="text"
-  />
+  <NumberText v-else-if="Array.isArray(text.split(numberRegex))" :text="text" />
   <span v-else>{{ text }}</span>
 </template>
 

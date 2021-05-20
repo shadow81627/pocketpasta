@@ -36,7 +36,7 @@
           Please complete this form to create an account or
           <nuxt-link to="/register">register</nuxt-link>
         </p>
-        <validation-observer ref="obs" v-slot="{ handleSubmit }">
+        <ValidationObserver ref="obs" v-slot="{ handleSubmit }">
           <v-form
             ref="form"
             class="mx-2"
@@ -46,7 +46,7 @@
           >
             <v-row>
               <v-col cols="12">
-                <text-field
+                <TextField
                   v-model="form.email"
                   type="email"
                   label="Email"
@@ -58,7 +58,7 @@
             </v-row>
             <v-row>
               <v-col cols="12">
-                <text-field
+                <TextField
                   v-model="form.password"
                   type="password"
                   rules="required|password|max:255"
@@ -76,7 +76,7 @@
               Login
             </v-btn>
           </v-form>
-        </validation-observer>
+        </ValidationObserver>
       </v-col>
     </v-row>
     <client-only>

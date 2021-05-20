@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <product v-bind="item" />
+    <Product v-bind="item" />
   </div>
 </template>
 

@@ -35,7 +35,7 @@
           </v-card-title>
 
           <setting v-bind="$t('settings.style.theme-label')">
-            <theme-selector aria-labelledby="theme-label" />
+            <ThemeSelector aria-labelledby="theme-label" />
           </setting>
         </v-card>
       </v-col>
@@ -50,7 +50,7 @@
             </h2>
           </v-card-title>
           <setting v-bind="$t('settings.content.language')">
-            <lang-switcher />
+            <LangSwitcher />
           </setting>
         </v-card>
       </v-col>
