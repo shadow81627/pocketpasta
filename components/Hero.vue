@@ -10,10 +10,12 @@
             :alt="alt"
             max-height="80vh"
             :sizes="_srcset(src, { preset: 'hero' }).size"
+            :width="width"
+            :height="height"
             :gradient="gradient"
             :contain="contain"
             color="grey"
-            :aspect-ratio="16 / 9"
+            :aspect-ratio="aspectRatio"
           >
             <slot>
               <v-container
@@ -44,6 +46,7 @@ import ImageSources from '@/mixins/srcset';
 export default {
   mixins: [ImageSources],
   props: {
+    aspectRatio: { type: Number, default: 16 / 9 },
     heading: { type: String, default: null },
     subheading: { type: String, default: null },
     alt: { type: String, default: '' },

@@ -2,28 +2,22 @@
   <div class="product" itemscope itemtype="http://schema.org/Product">
     <v-row>
       <v-col cols="12" md="6">
-        <h1 itemprop="name">{{ name }}</h1>
-        <p itemprop="description">{{ description }}</p>
-      </v-col>
-      <v-col cols="12" md="6">
-        <v-img
+        <Hero
           v-if="image"
-          :src="cloudinaryify(image)"
-          :srcset="
-            [
-              `${cloudinaryify(image, 110)} 110w`,
-              `${cloudinaryify(image, 220)} 220w`,
-              `${cloudinaryify(image, 540)} 540w`,
-              `${cloudinaryify(image, 1080)} 1080w`,
-            ].join(',')
-          "
+          :src="image"
           :alt="name"
           width="540"
           height="540"
           itemprop="image"
           sizes="(max-width: 768px) 50vw, 100vw"
           contain
+          :gradient="null"
+          :aspect-ratio="null"
         />
+      </v-col>
+      <v-col cols="12" md="6">
+        <h1 itemprop="name">{{ name }}</h1>
+        <p itemprop="description">{{ description }}</p>
       </v-col>
     </v-row>
 
@@ -106,26 +100,6 @@ export default {
   },
   head() {
     return {
-      meta: [
-        {
-          skip: !this.image,
-          hid: 'og:image',
-          property: 'og:image',
-          content: this.cloudinaryify(this.image),
-        },
-        {
-          skip: !this.image,
-          hid: 'og:image:width',
-          property: 'og:image:width',
-          content: '540',
-        },
-        {
-          skip: !this.image,
-          hid: 'og:image:height',
-          property: 'og:image:height',
-          content: '540',
-        },
-      ],
       script: [
         {
           json: this.linkData,
@@ -178,13 +152,6 @@ export default {
   },
   methods: {
     range,
-    cloudinaryify(image, width = 540) {
-      if (!image.startsWith('https://res.cloudinary.com')) {
-        return `https://res.cloudinary.com/pocketpasta/image/fetch/w_${width},h_${width},ar_1:1,c_fill,f_auto,q_auto/${image}`;
-      } else {
-        return image;
-      }
-    },
   },
 };
 </script>
