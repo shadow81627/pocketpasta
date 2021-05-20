@@ -7,8 +7,7 @@
     "**/dist/**": true,
     "**/coverage/**": true,
     "**/.nuxt/**": true,
-    "**/sw.js": true,
-    "**/.firebase/**": true
+    "**/sw.js": true
   },
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
