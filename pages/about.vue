@@ -97,8 +97,11 @@ export default {
     Keywords,
     VuePlyr,
   },
+  async asyncData({ $content }) {
+    return { damien: await $content('damien').fetch() };
+  },
   data() {
-    return { damien: this.$store.state.damien };
+    return { damien: {} };
   },
   head() {
     return {
