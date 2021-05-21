@@ -112,7 +112,7 @@ export default {
       ],
       script: [
         {
-          json: this.linkData,
+          json: this.linkData(),
           type: 'application/ld+json',
         },
       ],
@@ -145,13 +145,16 @@ export default {
         return null;
       }
     },
-    linkData() {
+  },
+  methods: {
+    range,
+    async linkData() {
       const type = ['Product'];
       if (this.nutritionData) {
         type.push('MenuItem');
       }
       return {
-        ...this.$props,
+        ...(await this.$content('products', this.id).fetch()),
         offers: { ...this.offerData, '@type': 'AggregateOffer' },
         nutrition: this.nutritionData || undefined,
         additionalProperty: undefined,
@@ -159,9 +162,6 @@ export default {
         '@context': 'http://schema.org',
       };
     },
-  },
-  methods: {
-    range,
   },
 };
 </script>
