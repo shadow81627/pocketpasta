@@ -97,7 +97,6 @@
 
 <script>
 import Credit from '@/components/Layout/Credit/landing-hero-image-credit';
-import linkData from '@/assets/link-data/pocketpasta.json';
 
 import ImageSources from '@/mixins/srcset';
 
@@ -107,11 +106,11 @@ export default {
   },
   mixins: [ImageSources],
   layout: 'default',
-  head() {
+  async head() {
     return {
       script: [
         {
-          json: linkData,
+          json: await this.$content('pocketpasta').fetch(),
           type: 'application/ld+json',
         },
       ],
