@@ -1,5 +1,11 @@
 # Releases
 
+## [0.48.25](https://github.com/shadow81627/pocketpasta/compare/v0.48.24...v0.48.25) (2021-05-24)
+
+### Bug Fixes
+
+- **deps:** update dependency vee-validate to v3.4.6 ([440ea1a](https://github.com/shadow81627/pocketpasta/commit/440ea1ac2d7a34d2554570c7a93b520839871f20))
+
 ## [0.48.24](https://github.com/shadow81627/pocketpasta/compare/v0.48.23...v0.48.24) (2021-05-22)
 
 ### Bug Fixes
