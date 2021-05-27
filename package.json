@@ -55,7 +55,7 @@
     "rxjs": "7.1.0",
     "store": "2.0.12",
     "utility-opentype": "0.1.4",
-    "vee-validate": "3.4.6",
+    "vee-validate": "3.4.7",
     "vue-disqus": "4.0.1",
     "vue-plyr": "6.0.4",
     "vue-virtual-scroll-list": "2.3.2",
