@@ -98,7 +98,7 @@
     "playwright": "1.11.1",
     "prettier": "2.3.0",
     "pretty-quick": "3.1.0",
-    "sass": "1.34.1",
+    "sass": "1.32.12",
     "sass-loader": "10.2.0",
     "semantic-release": "17.4.3",
     "serve-handler": "6.1.3",
@@ -107,7 +107,8 @@
     "vuetify-loader": "1.7.2"
   },
   "engines": {
-    "node": "14.x"
+    "node": "14.x",
+    "npm": "7.x"
   },
   "snyk": true,
   "config": {
