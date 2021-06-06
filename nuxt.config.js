@@ -194,6 +194,7 @@ module.exports = {
     '@nuxtjs/markdownit',
     '@nuxtjs/pwa',
     '@nuxtjs/sentry',
+    '@dansmaculotte/nuxt-security',
     'vue-warehouse/nuxt',
     'nuxt-i18n',
 
@@ -315,6 +316,29 @@ module.exports = {
       lastmod: new Date(),
       // lastmodrealtime: true,
     },
+  },
+
+  security: {
+    hsts: {
+      maxAge: 15552000,
+      includeSubDomains: true,
+      preload: true,
+    },
+    csp: {
+      directives: {
+        defaultSrc: ["'self'"],
+        scriptSrc: ["'self'"],
+        objectSrc: ["'self'"],
+      },
+      reportOnly: false,
+    },
+    referrer: 'same-origin',
+    securityFile: {
+      contacts: ['mailto:damien.robinson@pocketpasta.com'],
+      canonical: 'https://pocketpasta.com/.well-know/security.txt',
+      preferredLanguages: ['en'],
+    },
+    additionalHeaders: true,
   },
 
   /*
