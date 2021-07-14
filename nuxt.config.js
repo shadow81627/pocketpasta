@@ -20,6 +20,7 @@ const env = {
   PORT,
   BASE_URL,
   API_URL,
+  API_TOKEN: process.env.API_TOKEN,
   VERSION: pkg.version,
   COMMIT:
     process.env.npm_package_gitHead ||
@@ -181,6 +182,7 @@ module.exports = {
     { src: '~/plugins/theme.js', mode: 'client' },
     // { src: '~/middleware/last-known-route', mode: 'client' },
     // { src: '~/plugins/db.js', mode: 'client' },
+    { src: '~plugins/vue-api-query' },
   ],
 
   /*
@@ -321,8 +323,17 @@ module.exports = {
    ** Axios module configuration
    */
   axios: {
-    // See https://github.com/nuxt-community/axios-module#options
     credentials: true,
+    baseURL: env.API_URL,
+    proxy: true,
+    debug: true,
+  },
+
+  proxy: {
+    '/api/': {
+      target: env.API_URL,
+      pathRewrite: { '^/api': '/' },
+    },
   },
 
   content: {

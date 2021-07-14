@@ -9,11 +9,26 @@
 </template>
 
 <script>
+import Product from '@/models/Product';
 import List from '@/components/List/List';
 export default {
   components: {
     List,
   },
+  async fetch() {
+    try {
+      // this.$axios.setToken(
+      //   //
+      //   this.$config.API_TOKEN,
+      //   // 'Bearer',
+      // );
+      const products = await new Product().get();
+      console.log('products', products);
+    } catch (e) {
+      // console.log(e);
+    }
+  },
+  // fetchOnServer: false,
   head() {
     return {
       meta: [
