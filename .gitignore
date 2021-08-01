@@ -91,3 +91,6 @@ sw.*
 
 # only generated sitemap
 sitemap.xml
+
+# prevent npm lock file being commited when using yarn.lock instread
+package-lock.json

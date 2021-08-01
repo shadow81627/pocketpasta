@@ -1,4 +1,4 @@
-name: Node CI
+name: Node
 
 on:
   pull_request:
@@ -7,12 +7,7 @@ on:
 
 jobs:
   main:
-    runs-on: ${{ matrix.os }}
-
-    strategy:
-      matrix:
-        os: [ubuntu-latest]
-        node: [14]
+    runs-on: ubuntu-18.04
 
     steps:
       - name: Install fonts
@@ -24,29 +19,22 @@ jobs:
       - name: Setup node env 🏗
         uses: actions/setup-node@v2.1.5
         with:
-          node-version: ${{ matrix.node }}
-
-      - name: Cache node_modules 📦
-        uses: actions/cache@v2.1.6
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
+          node-version: 14
+          cache: yarn
 
       - name: Install dependencies 👨🏻‍💻
-        run: npm ci
+        run: yarn install
 
       - name: Lint ✨
-        run: npm run lint
+        run: yarn run lint
 
       - name: Build 🔨
-        run: npm run generate
+        run: yarn run generate
 
       - name: Test 🧪
-        run: npm run test:e2e
+        run: yarn run test:e2e
 
       - name: Lighthouse 💡
-        run: npm run lhci:autorun
+        run: yarn run lhci:autorun
         env:
           LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}

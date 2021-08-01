@@ -17,18 +17,18 @@
   "scripts": {
     "dev": "cross-env NODE_ENV=development nuxt",
     "build": "nuxt build --modern",
-    "build:analyze": "npm run build -- --analyze",
+    "build:analyze": "yarn run build -- --analyze",
     "start": "nuxt start",
     "generate": "nuxt generate --modern",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "lint:fix": "eslint --ext .js,.vue, --ignore-path .gitignore . --fix",
     "lhci:autorun": "lhci autorun",
-    "test": "npm run test:e2e",
+    "test": "yarn run test:e2e",
     "test:e2e": "codeceptjs run --steps",
     "semantic-release": "semantic-release",
     "snyk-protect": "snyk protect",
     "git-cz": "git-cz",
-    "now-build": "npm run generate",
+    "now-build": "yarn run generate",
     "stylelint:fix": "npx stylelint **/*.css !**/node_modules/** !**/dist/** !**/coverage/** --fix"
   },
   "dependencies": {
@@ -109,8 +109,9 @@
     "vuetify-loader": "1.7.2"
   },
   "engines": {
-    "node": "14.x",
-    "npm": "7.x"
+    "node": ">=14.x",
+    "npm": "please-use-yarn",
+    "yarn": "1.x"
   },
   "snyk": true,
   "config": {
