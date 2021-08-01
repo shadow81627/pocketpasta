@@ -93,9 +93,7 @@
     "eslint-plugin-prettier": "3.4.0",
     "eslint-plugin-promise": "5.1.0",
     "eslint-plugin-unicorn": "33.0.1",
-    "fibers": "5.0.0",
     "husky": "6.0.0",
-    "node-sass": "6.0.0",
     "playwright": "1.12.2",
     "prettier": "2.3.1",
     "pretty-quick": "3.1.0",
@@ -111,7 +109,7 @@
   "engines": {
     "node": ">=14.x",
     "npm": "please-use-yarn",
-    "yarn": "1.x"
+    "yarn": "2.x"
   },
   "snyk": true,
   "config": {

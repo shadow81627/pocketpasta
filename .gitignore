@@ -94,3 +94,12 @@ sitemap.xml
 
 # prevent npm lock file being commited when using yarn.lock instread
 package-lock.json
+
+# yarn
+.yarn/*
+!.yarn/cache
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
