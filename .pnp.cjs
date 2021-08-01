@@ -78,6 +78,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-promise", "virtual:b9e820823519785bf6fbc09a9cbfacb90c8dfb5cce55655ef303458b8321ad2f37a11ab14f9605f2de6e0cebb3fee5bb881a1a9bc6d65744202cd4e30dc03d4d#npm:5.1.0"],
             ["eslint-plugin-unicorn", "virtual:b9e820823519785bf6fbc09a9cbfacb90c8dfb5cce55655ef303458b8321ad2f37a11ab14f9605f2de6e0cebb3fee5bb881a1a9bc6d65744202cd4e30dc03d4d#npm:33.0.1"],
             ["eslint-plugin-vue", "virtual:b9e820823519785bf6fbc09a9cbfacb90c8dfb5cce55655ef303458b8321ad2f37a11ab14f9605f2de6e0cebb3fee5bb881a1a9bc6d65744202cd4e30dc03d4d#npm:7.15.0"],
+            ["eslint-plugin-vuetify", "virtual:b9e820823519785bf6fbc09a9cbfacb90c8dfb5cce55655ef303458b8321ad2f37a11ab14f9605f2de6e0cebb3fee5bb881a1a9bc6d65744202cd4e30dc03d4d#npm:1.0.1"],
             ["github-markdown-css", "npm:4.0.0"],
             ["husky", "npm:6.0.0"],
             ["lodash-es", "npm:4.17.21"],
@@ -12272,6 +12273,25 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             "vuetify"
           ],
           "linkType": "HARD",
+        }],
+        ["virtual:b9e820823519785bf6fbc09a9cbfacb90c8dfb5cce55655ef303458b8321ad2f37a11ab14f9605f2de6e0cebb3fee5bb881a1a9bc6d65744202cd4e30dc03d4d#npm:1.0.1", {
+          "packageLocation": "./.yarn/__virtual__/eslint-plugin-vuetify-virtual-6313a7e4a6/0/cache/eslint-plugin-vuetify-npm-1.0.1-1487492daf-073e3da9d5.zip/node_modules/eslint-plugin-vuetify/",
+          "packageDependencies": [
+            ["eslint-plugin-vuetify", "virtual:b9e820823519785bf6fbc09a9cbfacb90c8dfb5cce55655ef303458b8321ad2f37a11ab14f9605f2de6e0cebb3fee5bb881a1a9bc6d65744202cd4e30dc03d4d#npm:1.0.1"],
+            ["@types/eslint", null],
+            ["@types/vuetify", null],
+            ["eslint", "npm:7.28.0"],
+            ["eslint-plugin-vue", "virtual:b9e820823519785bf6fbc09a9cbfacb90c8dfb5cce55655ef303458b8321ad2f37a11ab14f9605f2de6e0cebb3fee5bb881a1a9bc6d65744202cd4e30dc03d4d#npm:7.15.0"],
+            ["requireindex", "npm:1.2.0"],
+            ["vuetify", "virtual:b9e820823519785bf6fbc09a9cbfacb90c8dfb5cce55655ef303458b8321ad2f37a11ab14f9605f2de6e0cebb3fee5bb881a1a9bc6d65744202cd4e30dc03d4d#npm:2.5.1"]
+          ],
+          "packagePeers": [
+            "@types/eslint",
+            "@types/vuetify",
+            "eslint",
+            "vuetify"
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["eslint-scope", [
@@ -21324,6 +21344,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-promise", "virtual:b9e820823519785bf6fbc09a9cbfacb90c8dfb5cce55655ef303458b8321ad2f37a11ab14f9605f2de6e0cebb3fee5bb881a1a9bc6d65744202cd4e30dc03d4d#npm:5.1.0"],
             ["eslint-plugin-unicorn", "virtual:b9e820823519785bf6fbc09a9cbfacb90c8dfb5cce55655ef303458b8321ad2f37a11ab14f9605f2de6e0cebb3fee5bb881a1a9bc6d65744202cd4e30dc03d4d#npm:33.0.1"],
             ["eslint-plugin-vue", "virtual:b9e820823519785bf6fbc09a9cbfacb90c8dfb5cce55655ef303458b8321ad2f37a11ab14f9605f2de6e0cebb3fee5bb881a1a9bc6d65744202cd4e30dc03d4d#npm:7.15.0"],
+            ["eslint-plugin-vuetify", "virtual:b9e820823519785bf6fbc09a9cbfacb90c8dfb5cce55655ef303458b8321ad2f37a11ab14f9605f2de6e0cebb3fee5bb881a1a9bc6d65744202cd4e30dc03d4d#npm:1.0.1"],
             ["github-markdown-css", "npm:4.0.0"],
             ["husky", "npm:6.0.0"],
             ["lodash-es", "npm:4.17.21"],
