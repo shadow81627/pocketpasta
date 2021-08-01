@@ -258,6 +258,9 @@
 </template>
 
 <script>
+import ConfirmDialog from '@/components/ConfirmDialog.vue';
+import ListHeader from '@/components/List/ListHeader.vue';
+import { init } from '@/db';
 import { Ripple } from 'vuetify/lib/directives';
 import {
   mdiPencil,
@@ -269,10 +272,6 @@ import {
 } from '@mdi/js';
 import { DateTime } from 'luxon';
 import cuid from 'cuid';
-
-import ConfirmDialog from '@/components/ConfirmDialog.vue';
-import ListHeader from '@/components/List/ListHeader.vue';
-import { init } from '@/db';
 
 export default {
   components: {

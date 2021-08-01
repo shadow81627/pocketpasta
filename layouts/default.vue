@@ -122,10 +122,10 @@
 </template>
 
 <script>
-import { mdiClipboardListOutline } from '@mdi/js';
 import AddToHomeScreen from '@/components/AddToHomeScreen.vue';
 import UserMenu from '@/components/UserMenu.vue';
 import TheFooter from '@/components/Layout/the-footer.vue';
+import { mdiClipboardListOutline } from '@mdi/js';
 export default {
   components: {
     AddToHomeScreen,
