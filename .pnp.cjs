@@ -63,6 +63,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["codeceptjs", "virtual:b9e820823519785bf6fbc09a9cbfacb90c8dfb5cce55655ef303458b8321ad2f37a11ab14f9605f2de6e0cebb3fee5bb881a1a9bc6d65744202cd4e30dc03d4d#npm:3.0.7"],
             ["codeceptjs-resemblehelper", "npm:1.9.3"],
             ["commitizen", "npm:4.2.4"],
+            ["consola", "npm:2.15.3"],
             ["cross-env", "npm:7.0.3"],
             ["cuid", "npm:2.1.8"],
             ["cz-conventional-changelog", "npm:3.3.0"],
@@ -85,12 +86,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["faker", "npm:5.5.3"],
             ["github-markdown-css", "npm:4.0.0"],
             ["husky", "npm:6.0.0"],
+            ["json5", "npm:2.2.0"],
             ["lodash-es", "npm:4.17.21"],
             ["luxon", "npm:1.27.0"],
+            ["markdown-it", "npm:12.1.0"],
             ["nuxt", "npm:2.15.6"],
             ["nuxt-i18n", "npm:6.27.0"],
             ["playwright", "npm:1.12.2"],
             ["plyr", "npm:3.6.4"],
+            ["pnp-webpack-plugin", "npm:1.7.0"],
             ["pouchdb-adapter-http", "npm:7.2.2"],
             ["pouchdb-adapter-indexeddb", "npm:7.2.2"],
             ["prettier", "npm:2.3.1"],
@@ -11712,6 +11716,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
+        ["npm:2.1.0", {
+          "packageLocation": "./.yarn/cache/entities-npm-2.1.0-b27b8aebc6-a10a877e48.zip/node_modules/entities/",
+          "packageDependencies": [
+            ["entities", "npm:2.1.0"]
+          ],
+          "linkType": "HARD",
+        }],
         ["npm:2.2.0", {
           "packageLocation": "./.yarn/cache/entities-npm-2.2.0-0fc8d5b2f7-19010dacaf.zip/node_modules/entities/",
           "packageDependencies": [
@@ -17612,6 +17623,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["uc.micro", "npm:1.0.6"]
           ],
           "linkType": "HARD",
+        }],
+        ["npm:3.0.2", {
+          "packageLocation": "./.yarn/cache/linkify-it-npm-3.0.2-55fc9f4a37-08e14854ec.zip/node_modules/linkify-it/",
+          "packageDependencies": [
+            ["linkify-it", "npm:3.0.2"],
+            ["uc.micro", "npm:1.0.6"]
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["listhen", [
@@ -18549,6 +18568,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["markdown-it", [
+        ["npm:12.1.0", {
+          "packageLocation": "./.yarn/cache/markdown-it-npm-12.1.0-139bf47623-affeafccac.zip/node_modules/markdown-it/",
+          "packageDependencies": [
+            ["markdown-it", "npm:12.1.0"],
+            ["argparse", "npm:2.0.1"],
+            ["entities", "npm:2.1.0"],
+            ["linkify-it", "npm:3.0.2"],
+            ["mdurl", "npm:1.0.1"],
+            ["uc.micro", "npm:1.0.6"]
+          ],
+          "linkType": "HARD",
+        }],
         ["npm:8.4.2", {
           "packageLocation": "./.yarn/cache/markdown-it-npm-8.4.2-55847d41d0-ad17146693.zip/node_modules/markdown-it/",
           "packageDependencies": [
@@ -21773,6 +21804,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["codeceptjs", "virtual:b9e820823519785bf6fbc09a9cbfacb90c8dfb5cce55655ef303458b8321ad2f37a11ab14f9605f2de6e0cebb3fee5bb881a1a9bc6d65744202cd4e30dc03d4d#npm:3.0.7"],
             ["codeceptjs-resemblehelper", "npm:1.9.3"],
             ["commitizen", "npm:4.2.4"],
+            ["consola", "npm:2.15.3"],
             ["cross-env", "npm:7.0.3"],
             ["cuid", "npm:2.1.8"],
             ["cz-conventional-changelog", "npm:3.3.0"],
@@ -21795,12 +21827,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["faker", "npm:5.5.3"],
             ["github-markdown-css", "npm:4.0.0"],
             ["husky", "npm:6.0.0"],
+            ["json5", "npm:2.2.0"],
             ["lodash-es", "npm:4.17.21"],
             ["luxon", "npm:1.27.0"],
+            ["markdown-it", "npm:12.1.0"],
             ["nuxt", "npm:2.15.6"],
             ["nuxt-i18n", "npm:6.27.0"],
             ["playwright", "npm:1.12.2"],
             ["plyr", "npm:3.6.4"],
+            ["pnp-webpack-plugin", "npm:1.7.0"],
             ["pouchdb-adapter-http", "npm:7.2.2"],
             ["pouchdb-adapter-indexeddb", "npm:7.2.2"],
             ["prettier", "npm:2.3.1"],
