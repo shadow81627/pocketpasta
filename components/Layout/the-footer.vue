@@ -5,12 +5,12 @@
         <v-col cols="auto">
           <v-card flat color="transparent">
             <v-card-text>
-              <span>Version: {{ $config.VERSION }}</span>
-              <span>|</span>
-              <span>Commit: </span>
+              <span>{{ $config.VERSION }}</span>
+              <span v-if="$config.COMMIT">{{ shortHash($config.COMMIT) }}</span>
+              <span v-if="$config.VERSION || $config.COMMIT">|</span>
               <nuxt-link :to="localePath({ name: 'releases' })"
                 ><span>
-                  {{ shortHash($config.COMMIT || $config.TRAVIS_COMMIT) }}</span
+                  {{ shortHash($config.COMMIT) || 'Changelog' }}</span
                 ></nuxt-link
               >
             </v-card-text>
