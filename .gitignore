@@ -103,3 +103,6 @@ package-lock.json
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+
+/.yarn/releases/** binary
+/.yarn/plugins/** binary
