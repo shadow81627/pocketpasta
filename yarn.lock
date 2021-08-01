@@ -10373,7 +10373,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"faker@npm:^5.5.1":
+"faker@npm:5.5.3":
   version: 5.5.3
   resolution: "faker@npm:5.5.3"
   checksum: 684fd64c8d3897e54248f95b4f6319f75d97691b8500cd13adf4af2c28f9204f766c1d1aaa6b41338f0beaaa87256c3132f8708a1a8f189d122b92f6b98081c3
@@ -18267,6 +18267,7 @@ fsevents@~2.3.2:
     cross-env: 7.0.3
     cuid: 2.1.8
     cz-conventional-changelog: 3.3.0
+    debug: 4.3.2
     eslint: 7.28.0
     eslint-config-prettier: 8.3.0
     eslint-config-standard: 16.0.3
@@ -18283,7 +18284,7 @@ fsevents@~2.3.2:
     eslint-plugin-unicorn: 33.0.1
     eslint-plugin-vue: 7.15.0
     eslint-plugin-vuetify: 1.0.1
-    faker: ^5.5.1
+    faker: 5.5.3
     github-markdown-css: 4.0.0
     husky: 6.0.0
     json5: 2.2.0
