@@ -22,9 +22,7 @@ const env = {
   API_URL,
   VERSION: pkg.version,
   COMMIT:
-    process.env.npm_package_gitHead ||
-    process.env.TRAVIS_COMMIT ||
-    process.env.VERCEL_GITHUB_COMMIT_SHA,
+    process.env.npm_package_gitHead || process.env.VERCEL_GITHUB_COMMIT_SHA,
   DATE_GENERATED: new Date().toISOString(),
 
   CLOUDINARY_NAME: 'pocketpasta',

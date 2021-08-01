@@ -127,11 +127,11 @@
 
 <script>
 // https://blog.logrocket.com/how-to-implement-form-validation-with-vuetify-in-a-vue-js-app/
+import TextField from '@/components/TextField';
 import { ValidationObserver, extend } from 'vee-validate';
 import { messages } from 'vee-validate/dist/locale/en.json';
 import { required, email, max, confirmed } from 'vee-validate/dist/rules';
 import { mdiClose } from '@mdi/js';
-import TextField from '@/components/TextField';
 const rules = { required, email, max, confirmed };
 for (const [rule, validation] of Object.entries(rules)) {
   extend(rule, {

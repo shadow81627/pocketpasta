@@ -1,5 +1,9 @@
 {
-  "eslint.validate": ["vue", "javascript", "javascriptreact"],
+  "eslint.validate": [
+    "vue",
+    "javascript",
+    "javascriptreact"
+  ],
   "editor.formatOnSave": true,
   "vetur.validation.template": false,
   "files.exclude": {
@@ -14,5 +18,11 @@
   },
   "i18n-ally.localesPaths": [
     "lang"
-  ]
+  ],
+  "search.exclude": {
+    "**/.yarn": true,
+    "**/.pnp.*": true
+  },
+  "eslint.nodePath": ".yarn/sdks",
+  "prettier.prettierPath": ".yarn/sdks/prettier/index.js"
 }
