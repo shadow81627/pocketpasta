@@ -1,5 +1,12 @@
 # Releases
 
+## [0.48.38](https://github.com/shadow81627/pocketpasta/compare/v0.48.37...v0.48.38) (2021-08-01)
+
+### Bug Fixes
+
+- **deps:** bump actions/setup-dotnet from 1.8.0 to 1.8.1 ([#2094](https://github.com/shadow81627/pocketpasta/issues/2094)) ([b8933ea](https://github.com/shadow81627/pocketpasta/commit/b8933eac1366f9ac61cf67aa627d57f159c268cf))
+- **deps:** bump github/codeql-action from 1.0.2 to 1.0.8 ([#2093](https://github.com/shadow81627/pocketpasta/issues/2093)) ([fc3b328](https://github.com/shadow81627/pocketpasta/commit/fc3b3288ace05cd268cd0f191906a56fc1ad2b2f))
+
 ## [0.48.37](https://github.com/shadow81627/pocketpasta/compare/v0.48.36...v0.48.37) (2021-06-19)
 
 ### Bug Fixes
