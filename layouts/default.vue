@@ -72,6 +72,7 @@
       fixed
       class="hidden-print-only"
       height="64"
+      xcolor="#59ecc0"
     >
       <v-app-bar-nav-icon
         id="app-bar-nav-icon"
@@ -92,7 +93,22 @@
       </v-avatar>
 
       <v-toolbar-title>
-        <span class="brand d-none d-sm-flex">PocketPasta</span>
+        <span
+          class="brand d-none d-sm-flex text-shadow xfont-weight-bold pr-2"
+          style="
+            xcolor: #d3af37;
+            x-webkit-text-stroke: 1px #1b1b1b;
+            xcolor: white;
+          "
+          >PocketPasta</span
+        >
+        <!-- <img
+          :src="require('@/assets/pocketpasta-logo-text-test.svg?inline')"
+          height="28"
+          alt="PocketPasta"
+          onerror="javascript:this.style.display = 'none'"
+          style="vertical-align: text-bottom"
+        /> -->
       </v-toolbar-title>
       <v-spacer />
       <AddToHomeScreen icon />
@@ -190,5 +206,9 @@ export default {
 /* no pointer events */
 .pointer-events-none {
   pointer-events: none;
+}
+
+.text-shadow {
+  text-shadow: #a1a1a1 0.1em 0.1em 0.175em;
 }
 </style>
