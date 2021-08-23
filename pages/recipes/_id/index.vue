@@ -79,7 +79,7 @@
                 >
               </v-chip>
               <v-chip v-if="recipeYield" label style="background: none">{{
-                recipeYield.match(/(^\d*$)/)
+                String(recipeYield).match(/(^\d*$)/)
                   ? `${recipeYield} serving${recipeYield > 1 ? 's' : ''}`
                   : recipeYield
               }}</v-chip>
