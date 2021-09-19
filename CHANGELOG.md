@@ -1,5 +1,11 @@
 # Releases
 
+## [0.48.41](https://github.com/shadow81627/pocketpasta/compare/v0.48.40...v0.48.41) (2021-09-19)
+
+### Bug Fixes
+
+- **deps:** update dependency @dansmaculotte/nuxt-security to v0.0.5 ([569b6aa](https://github.com/shadow81627/pocketpasta/commit/569b6aa1fc5c2f71e1b68166359611202e1924ce))
+
 ## [0.48.40](https://github.com/shadow81627/pocketpasta/compare/v0.48.39...v0.48.40) (2021-09-18)
 
 ### Bug Fixes
