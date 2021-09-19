@@ -18638,7 +18638,7 @@ fsevents@~2.3.2:
     vue-virtual-scroll-list: 2.3.2
     vue-warehouse: 2.2.0
     vuetify: 2.5.8
-    vuetify-loader: 1.7.2
+    vuetify-loader: 1.7.3
     webpack: 5.47.1
   languageName: unknown
   linkType: soft
@@ -25108,22 +25108,7 @@ resolve@~1.7.1:
   languageName: node
   linkType: hard
 
-"vuetify-loader@npm:1.7.2":
-  version: 1.7.2
-  resolution: "vuetify-loader@npm:1.7.2"
-  dependencies:
-    decache: ^4.6.0
-    file-loader: ^6.2.0
-    loader-utils: ^2.0.0
-  peerDependencies:
-    vue-template-compiler: ^2.6.10
-    vuetify: ^1.3.0 || ^2.0.0
-    webpack: ^4.0.0 || ^5.0.0
-  checksum: 990b237d85728cfbd417e3b6f3d47b30271f1d0d817f7dc129098f04db0e707d621b51df6f1c3636219a4f550c3bdc17e9e39e3d1b6354b7401d840439d9a053
-  languageName: node
-  linkType: hard
-
-"vuetify-loader@npm:^1.7.2":
+"vuetify-loader@npm:1.7.3, vuetify-loader@npm:^1.7.2":
   version: 1.7.3
   resolution: "vuetify-loader@npm:1.7.3"
   dependencies:
