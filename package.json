@@ -32,7 +32,7 @@
     "stylelint:fix": "npx stylelint **/*.css !**/node_modules/** !**/dist/** !**/coverage/** --fix"
   },
   "dependencies": {
-    "@dansmaculotte/nuxt-security": "0.0.4",
+    "@dansmaculotte/nuxt-security": "0.0.5",
     "@nuxt/content": "1.14.0",
     "@nuxtjs/auth": "4.9.1",
     "@nuxtjs/auth-next": "5.0.0-1622918202.e815752",

@@ -1544,16 +1544,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@dansmaculotte/nuxt-security@npm:0.0.4":
-  version: 0.0.4
-  resolution: "@dansmaculotte/nuxt-security@npm:0.0.4"
+"@dansmaculotte/nuxt-security@npm:0.0.5":
+  version: 0.0.5
+  resolution: "@dansmaculotte/nuxt-security@npm:0.0.5"
   dependencies:
     consola: ^2.15.0
-    feature-policy: ^0.6.0
+    feature-policy: 0.6.0
     helmet-csp: ^3.3.1
     hsts: ^2.2.0
+    permissions-policy: 0.6.0
     referrer-policy: ^1.2.0
-  checksum: 6b444fc72f78e484ca9c135ab6c91040799ed0775ff2f5a816fa9e5ecc37cfa7afe44ae9e14a18ddb274a2d17fc1548d383c52bc2bc14bfdb32775374c6aeb00
+  checksum: 1bc4c383a011f6bb71412b2f82675dafa760756d77c50dff682778ba6b6cab6e49f042f0e60774c7e8273c20fd80c52d70ca1d13302483cb782b6c5d986a8633
   languageName: node
   linkType: hard
 
@@ -10693,7 +10694,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"feature-policy@npm:^0.6.0":
+"feature-policy@npm:0.6.0":
   version: 0.6.0
   resolution: "feature-policy@npm:0.6.0"
   checksum: 10bfac755c9aa3c5a1d0942f21751ccdaacb82994b66171995c3cc5d6841e4e075e86dca4ff4a37a05ddf8a251114d82b33f1fb4d91427c4b3c0b56a755d6f90
@@ -18388,6 +18389,13 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
+"permissions-policy@npm:0.6.0":
+  version: 0.6.0
+  resolution: "permissions-policy@npm:0.6.0"
+  checksum: 79d7834463eeffccab543b9f47a14071e374e78e1d1b5e60b7561223ea7f3a4ca74f7d03b3b99aa68b2afad042841a33c5e95e5ba1491c5a8b9375852ca30ad3
+  languageName: node
+  linkType: hard
+
 "picomatch@npm:^2.0.4, picomatch@npm:^2.0.5, picomatch@npm:^2.2.1, picomatch@npm:^2.2.3":
   version: 2.3.0
   resolution: "picomatch@npm:2.3.0"
@@ -18556,7 +18564,7 @@ fsevents@~2.3.2:
     "@codeceptjs/configure": 0.6.2
     "@commitlint/cli": 12.1.4
     "@commitlint/config-conventional": 12.1.4
-    "@dansmaculotte/nuxt-security": 0.0.4
+    "@dansmaculotte/nuxt-security": 0.0.5
     "@lhci/cli": 0.6.1
     "@mdi/js": 5.9.55
     "@nuxt/content": 1.14.0
