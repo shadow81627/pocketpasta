@@ -2379,9 +2379,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxtjs/auth-next@npm:5.0.0-1622918202.e815752":
-  version: 5.0.0-1622918202.e815752
-  resolution: "@nuxtjs/auth-next@npm:5.0.0-1622918202.e815752"
+"@nuxtjs/auth-next@npm:5.0.0-1624817847.21691f1":
+  version: 5.0.0-1624817847.21691f1
+  resolution: "@nuxtjs/auth-next@npm:5.0.0-1624817847.21691f1"
   dependencies:
     "@nuxtjs/axios": ^5.13.0
     axios: ^0.21.1
@@ -2394,7 +2394,7 @@ __metadata:
     requrl: ^3.0.2
   peerDependencies:
     vue: "*"
-  checksum: 67c92e42df97a72d69005c46c3a9d202a40902cfc343acd6d6a3289f579747302022437b0ffe2c6cd9b94ca534b45b3ee6d6efb156af4e7a79e51db16a8ce01d
+  checksum: 36ac5e399ecc6a007685d5a8012a392e0934db3f0d66e65bcab380efb9eec3914cac92706f200383ad23bc601401434b5ca212da5c8489373c537eb9f2642750
   languageName: node
   linkType: hard
 
@@ -18570,7 +18570,7 @@ fsevents@~2.3.2:
     "@nuxt/content": 1.14.0
     "@nuxt/image": 0.4.14
     "@nuxtjs/auth": 4.9.1
-    "@nuxtjs/auth-next": 5.0.0-1622918202.e815752
+    "@nuxtjs/auth-next": 5.0.0-1624817847.21691f1
     "@nuxtjs/axios": 5.13.6
     "@nuxtjs/color-mode": 2.0.10
     "@nuxtjs/eslint-config": 6.0.1
