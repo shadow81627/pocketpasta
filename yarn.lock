@@ -7137,9 +7137,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"codeceptjs-resemblehelper@npm:1.9.3":
-  version: 1.9.3
-  resolution: "codeceptjs-resemblehelper@npm:1.9.3"
+"codeceptjs-resemblehelper@npm:1.9.4":
+  version: 1.9.4
+  resolution: "codeceptjs-resemblehelper@npm:1.9.4"
   dependencies:
     assert: ^1.5.0
     aws-sdk: ^2.662.0
@@ -7149,7 +7149,7 @@ __metadata:
     mz: ^2.7.0
     path: ^0.12.7
     resemblejs: ^3.2.4
-  checksum: 50614094cce9624562286d168a94ff40cb43c9759bc243fcdebec2265340a7ab025e8161c10525eb9ec0abbc913a0178b24ea11d4036288644a8f747b4fb1437
+  checksum: 40bdaaa6a5c52c2679c9c74df5e5926445f77c0d2210068633054498de4d4f34d741aea0bee6137c2a4c94ab9350242fc1d993cfdf30bdc1b4da67fc79e88132
   languageName: node
   linkType: hard
 
@@ -18589,7 +18589,7 @@ fsevents@~2.3.2:
     babel-eslint: 10.1.0
     cheerio: 1.0.0-rc.10
     codeceptjs: 3.0.7
-    codeceptjs-resemblehelper: 1.9.3
+    codeceptjs-resemblehelper: 1.9.4
     commitizen: 4.2.4
     consola: 2.15.3
     cross-env: 7.0.3
