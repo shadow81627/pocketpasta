@@ -1,5 +1,11 @@
 # Releases
 
+## [0.48.45](https://github.com/shadow81627/pocketpasta/compare/v0.48.44...v0.48.45) (2021-09-20)
+
+### Bug Fixes
+
+- **deps:** update dependency vue-virtual-scroll-list to v2.3.3 ([f788c08](https://github.com/shadow81627/pocketpasta/commit/f788c08158a3219813f65a9b538b9ad2ef6215a1))
+
 ## [0.48.44](https://github.com/shadow81627/pocketpasta/compare/v0.48.43...v0.48.44) (2021-09-20)
 
 ### Bug Fixes
