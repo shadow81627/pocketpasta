@@ -18638,7 +18638,7 @@ fsevents@~2.3.2:
     stylelint: 13.13.1
     stylelint-config-prettier: 8.0.2
     utility-opentype: 0.1.4
-    vee-validate: 3.4.9
+    vee-validate: 3.4.13
     vue: 2.6.14
     vue-disqus: 4.0.1
     vue-plyr: 6.0.4
@@ -24868,12 +24868,12 @@ resolve@~1.7.1:
   languageName: node
   linkType: hard
 
-"vee-validate@npm:3.4.9":
-  version: 3.4.9
-  resolution: "vee-validate@npm:3.4.9"
+"vee-validate@npm:3.4.13":
+  version: 3.4.13
+  resolution: "vee-validate@npm:3.4.13"
   peerDependencies:
     vue: ^2.5.18
-  checksum: 5c5100998839d9815b048e21f1b9ae64793d92b12542e1e911507d9bfeef519484a40ff3ad04a5dc90dfb6e5cf7ce781b5ee76ab430c029664ef31f8fbe71478
+  checksum: e06b874f5dc5527f859e33923a67ab6b920384e163d81a8db4f4daf5b9fa0098c48422da3babac8064ae81d68860403034d476c0713e0f634ffcb50d4dd4b61b
   languageName: node
   linkType: hard
 
