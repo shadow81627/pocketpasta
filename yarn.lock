@@ -2442,13 +2442,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxtjs/color-mode@npm:2.0.10":
-  version: 2.0.10
-  resolution: "@nuxtjs/color-mode@npm:2.0.10"
+"@nuxtjs/color-mode@npm:2.1.1":
+  version: 2.1.1
+  resolution: "@nuxtjs/color-mode@npm:2.1.1"
   dependencies:
     defu: ^5.0.0
     lodash.template: ^4.5.0
-  checksum: 6c732abf254bad59a2a898837b92b4e36824aedfa148a4bdb4cd8a9def35b9734793d51288ce5b56557f6e0da760e96ec1a96903fbde253c7dffcbb7fc5cb375
+  checksum: a3b6579efb72aa7d83da9cd04371f70917c20d5aaa21f572ab4845d99e1a4f67f11e8f5b997d6197801afb1c76007478fd0a5436b985d8c3a17354556ace2aff
   languageName: node
   linkType: hard
 
@@ -18597,7 +18597,7 @@ fsevents@~2.3.2:
     "@nuxtjs/auth": 4.9.1
     "@nuxtjs/auth-next": 5.0.0-1624817847.21691f1
     "@nuxtjs/axios": 5.13.6
-    "@nuxtjs/color-mode": 2.0.10
+    "@nuxtjs/color-mode": 2.1.1
     "@nuxtjs/eslint-config": 6.0.1
     "@nuxtjs/eslint-module": 3.0.2
     "@nuxtjs/google-analytics": 2.4.0
