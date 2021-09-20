@@ -2152,24 +2152,29 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/image@npm:0.4.14":
-  version: 0.4.14
-  resolution: "@nuxt/image@npm:0.4.14"
+"@nuxt/image@npm:0.6.0":
+  version: 0.6.0
+  resolution: "@nuxt/image@npm:0.6.0"
   dependencies:
+    consola: ^2.15.3
     defu: ^5.0.0
     fs-extra: ^10.0.0
     hasha: ^5.2.2
     image-meta: ^0.0.1
-    ipx: ^0.6.1
+    ipx: ^0.8.0
     is-https: ^4.0.0
     lru-cache: ^6.0.0
     node-fetch: ^2.6.1
     p-limit: ^3.1.0
     rc9: ^1.2.0
     requrl: ^3.0.2
-    ufo: ^0.7.5
+    semver: ^7.3.5
+    ufo: ^0.7.9
     upath: ^2.0.1
-  checksum: bcddce800fb7c95f2ad13d1d3c3050d1c0fb9eda65dd902f23fc32c524e01ca6c7ef91ae16494c4e8b0358f47b9bb39f9a93592a54a81239f26aea1b3c057716
+  dependenciesMeta:
+    ipx:
+      optional: true
+  checksum: 32c530e2923d82429391c19af9e191271dbb6467467f33dfb2e75ea8b8e5144b580b6983a208abb7e8fb28d021b72480e1a9bb4a4f6de6b9893f7dc19cdf22f9
   languageName: node
   linkType: hard
 
@@ -7268,13 +7273,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"color@npm:^3.0.0, color@npm:^3.1.3":
+"color@npm:^3.0.0":
   version: 3.2.1
   resolution: "color@npm:3.2.1"
   dependencies:
     color-convert: ^1.9.3
     color-string: ^1.6.0
   checksum: f81220e8b774d35865c2561be921f5652117638dcda7ca4029262046e37fc2444ac7bbfdd110cf1fd9c074a4ee5eda8f85944ffbdda26186b602dd9bb05f6400
+  languageName: node
+  linkType: hard
+
+"color@npm:^4.0.1":
+  version: 4.0.1
+  resolution: "color@npm:4.0.1"
+  dependencies:
+    color-convert: ^2.0.1
+    color-string: ^1.6.0
+  checksum: 46b1e7c6a5d5b1db5e0a8f1f32eea015a1923c9a591cbef67e20b439d67fe8043a7c3beb96c602f0055068909c3ee73bc8ee1817e76a25861a92f64430d6118f
   languageName: node
   linkType: hard
 
@@ -13068,9 +13083,9 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"ipx@npm:^0.6.1":
-  version: 0.6.7
-  resolution: "ipx@npm:0.6.7"
+"ipx@npm:^0.8.0":
+  version: 0.8.0
+  resolution: "ipx@npm:0.8.0"
   dependencies:
     consola: ^2.15.3
     defu: ^5.0.0
@@ -13081,12 +13096,12 @@ fsevents@~2.3.2:
     is-valid-path: ^0.1.1
     listhen: ^0.2.4
     node-fetch: ^2.6.1
-    sharp: ^0.28.3
-    ufo: ^0.7.5
+    sharp: ^0.29.0
+    ufo: ^0.7.9
     xss: ^1.0.9
   bin:
     ipx: dist/cli.js
-  checksum: 4c0ec7d590d1df9f5326f1d32a9e9bd337e2653f6e0f290a782bbfab6486afea585b9cc327d37e72988b4d7617a23959b8679ca3655831baebb73d9723599d29
+  checksum: 3f9de49cc38cbd20d002fb844cea477f18d8f5f90fecdb6e664d28114f20c1eca1509066f1992290a58bc632319ab6179ffe075ed7edf3265e85ab98dd148b6c
   languageName: node
   linkType: hard
 
@@ -16799,12 +16814,12 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"node-addon-api@npm:^3.2.0":
-  version: 3.2.1
-  resolution: "node-addon-api@npm:3.2.1"
+"node-addon-api@npm:^4.1.0":
+  version: 4.2.0
+  resolution: "node-addon-api@npm:4.2.0"
   dependencies:
     node-gyp: latest
-  checksum: 2369986bb0881ccd9ef6bacdf39550e07e089a9c8ede1cbc5fc7712d8e2faa4d50da0e487e333d4125f8c7a616c730131d1091676c9d499af1d74560756b4a18
+  checksum: 52ea6ff01a882766ceec74a0752c0cf9571fa72559a7a3e8969779fa5ae113a2d63cb54dd267fa83a533ab2b7617131d4a6996114701f4ca27246d2513b0e5a5
   languageName: node
   linkType: hard
 
@@ -18578,7 +18593,7 @@ fsevents@~2.3.2:
     "@lhci/cli": 0.6.1
     "@mdi/js": 5.9.55
     "@nuxt/content": 1.14.0
-    "@nuxt/image": 0.4.14
+    "@nuxt/image": 0.6.0
     "@nuxtjs/auth": 4.9.1
     "@nuxtjs/auth-next": 5.0.0-1624817847.21691f1
     "@nuxtjs/axios": 5.13.6
@@ -19783,7 +19798,7 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"prebuild-install@npm:^6.1.2":
+"prebuild-install@npm:^6.1.4":
   version: 6.1.4
   resolution: "prebuild-install@npm:6.1.4"
   dependencies:
@@ -21921,20 +21936,20 @@ resolve@~1.7.1:
   languageName: node
   linkType: hard
 
-"sharp@npm:^0.28.3":
-  version: 0.28.3
-  resolution: "sharp@npm:0.28.3"
+"sharp@npm:^0.29.0":
+  version: 0.29.1
+  resolution: "sharp@npm:0.29.1"
   dependencies:
-    color: ^3.1.3
+    color: ^4.0.1
     detect-libc: ^1.0.3
-    node-addon-api: ^3.2.0
+    node-addon-api: ^4.1.0
     node-gyp: latest
-    prebuild-install: ^6.1.2
+    prebuild-install: ^6.1.4
     semver: ^7.3.5
     simple-get: ^3.1.0
     tar-fs: ^2.1.1
     tunnel-agent: ^0.6.0
-  checksum: ae25a81817dfa985ac5f9cb38d1add959a7740514c144aca5f414f3552909a22beb53d6d3613353a1fe7616ac43f2e50da60ce216352af5ee4efea32a442dfe5
+  checksum: 10e47d82069882d247b95713f0bd42514cb7f6c5dddc83225553a335fa167ac9b2b9f6d118dd38de0069893218156390b1373aa63637b2bfdc27a6a09aa071b2
   languageName: node
   linkType: hard
 
@@ -24211,7 +24226,7 @@ resolve@~1.7.1:
   languageName: node
   linkType: hard
 
-"ufo@npm:^0.7.2, ufo@npm:^0.7.4, ufo@npm:^0.7.5":
+"ufo@npm:^0.7.2, ufo@npm:^0.7.4, ufo@npm:^0.7.9":
   version: 0.7.9
   resolution: "ufo@npm:0.7.9"
   checksum: 8a141889382dfe9fe42af625316ea0bc60e287ed81275befa699d3c099af44232720ea7b72d5ea738e4766e79adb8dc901bd7f788f9c2057d0ec2389d9f06df5
