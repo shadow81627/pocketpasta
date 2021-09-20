@@ -18643,7 +18643,7 @@ fsevents@~2.3.2:
     vue-disqus: 4.0.1
     vue-plyr: 6.0.4
     vue-template-compiler: 2.6.14
-    vue-virtual-scroll-list: 2.3.2
+    vue-virtual-scroll-list: 2.3.3
     vue-warehouse: 2.2.0
     vuetify: 2.5.8
     vuetify-loader: 1.7.3
@@ -25087,10 +25087,10 @@ resolve@~1.7.1:
   languageName: node
   linkType: hard
 
-"vue-virtual-scroll-list@npm:2.3.2":
-  version: 2.3.2
-  resolution: "vue-virtual-scroll-list@npm:2.3.2"
-  checksum: 206fb98694c890f89cba0c9e03d5147ce624e2991f724435f5c7484469d21a2596f38a60d02138f6a5d4a7d5e7a6c4518e884448214cca91385a90d3802ef3a5
+"vue-virtual-scroll-list@npm:2.3.3":
+  version: 2.3.3
+  resolution: "vue-virtual-scroll-list@npm:2.3.3"
+  checksum: 1e10e8358d87499bb000d321bb28b88d9348ea6bf8b4c550217c78f90fd3f5ca47f3b745b9cb89c4c92dae11e7c30496550df2bf3dbf7d41cda14bddbd5fb65a
   languageName: node
   linkType: hard
 
