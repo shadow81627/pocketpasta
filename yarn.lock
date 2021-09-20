@@ -7169,9 +7169,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"codeceptjs@npm:3.0.7":
-  version: 3.0.7
-  resolution: "codeceptjs@npm:3.0.7"
+"codeceptjs@npm:3.1.2":
+  version: 3.1.2
+  resolution: "codeceptjs@npm:3.1.2"
   dependencies:
     "@codeceptjs/configure": ^0.6.2
     "@codeceptjs/helper": ^1.0.2
@@ -7204,11 +7204,12 @@ __metadata:
     requireg: ^0.2.2
     resq: ^1.10.0
     sprintf-js: ^1.1.1
+    uuid: ^8.3.2
   peerDependencies:
     faker: ^5.5.1
   bin:
     codeceptjs: bin/codecept.js
-  checksum: fd8597075faab0f172a76a8de23dd47f51d1803bbae66f99b60db025c871446e356e9e48db76f1161c0ba319bac94dfea3779994a129ee9d4ba4366b7def0341
+  checksum: 60cf0f6e27a2c4809f0a343428c2fefce5336469291d9afbbf8acf77a6400f2a90ede397ecb6a31c46cf5c559eae2859faa2bafbd364a10ed51e2841c1fefef6
   languageName: node
   linkType: hard
 
@@ -18611,7 +18612,7 @@ fsevents@~2.3.2:
     "@types/lodash-es": 4.17.5
     babel-eslint: 10.1.0
     cheerio: 1.0.0-rc.10
-    codeceptjs: 3.0.7
+    codeceptjs: 3.1.2
     codeceptjs-resemblehelper: 1.9.4
     commitizen: 4.2.4
     consola: 2.15.3
