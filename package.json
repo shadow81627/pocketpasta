@@ -104,7 +104,7 @@
     "faker": "5.5.3",
     "husky": "6.0.0",
     "json5": "2.2.0",
-    "markdown-it": "12.1.0",
+    "markdown-it": "12.2.0",
     "playwright": "1.12.2",
     "pnp-webpack-plugin": "1.7.0",
     "prettier": "2.3.1",
