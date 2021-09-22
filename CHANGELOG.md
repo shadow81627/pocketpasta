@@ -1,5 +1,11 @@
 # Releases
 
+## [0.48.46](https://github.com/shadow81627/pocketpasta/compare/v0.48.45...v0.48.46) (2021-09-22)
+
+### Bug Fixes
+
+- **deps:** update dependency luxon to v1.28.0 ([c673f92](https://github.com/shadow81627/pocketpasta/commit/c673f92b80fb1794e2630b609345795c89dbd08b))
+
 ## [0.48.45](https://github.com/shadow81627/pocketpasta/compare/v0.48.44...v0.48.45) (2021-09-20)
 
 ### Bug Fixes
