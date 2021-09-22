@@ -14307,10 +14307,10 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"luxon@npm:1.27.0":
-  version: 1.27.0
-  resolution: "luxon@npm:1.27.0"
-  checksum: 5e6b17cb01c010c59fc50335c08c58fdf79219b3dc92f968ccedd81cfdfe5db19465108ee9198c4f1882b1fbc6cf33c98b74483b6a18a15656e0e305bade332c
+"luxon@npm:1.28.0":
+  version: 1.28.0
+  resolution: "luxon@npm:1.28.0"
+  checksum: 5250cb9f138b6048eeb0b3a9044a4ac994d0058f680c72a0da4b6aeaec8612460385639cba2b1052ef6d5564879e9ed144d686f26d9d97b38ab920d82e18281c
   languageName: node
   linkType: hard
 
@@ -17365,7 +17365,7 @@ fsevents@~2.3.2:
     husky: 6.0.0
     json5: 2.2.0
     lodash-es: 4.17.21
-    luxon: 1.27.0
+    luxon: 1.28.0
     markdown-it: 12.2.0
     nuxt: 2.15.8
     nuxt-i18n: 6.27.0
