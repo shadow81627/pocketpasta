@@ -65,8 +65,8 @@
   },
   "devDependencies": {
     "@codeceptjs/configure": "0.7.0",
-    "@commitlint/cli": "12.1.4",
-    "@commitlint/config-conventional": "12.1.4",
+    "@commitlint/cli": "13.1.0",
+    "@commitlint/config-conventional": "13.1.0",
     "@lhci/cli": "0.6.1",
     "@mdi/js": "5.9.55",
     "@nuxt/image": "0.6.0",
