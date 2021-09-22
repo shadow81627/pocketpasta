@@ -17401,7 +17401,7 @@ fsevents@~2.3.2:
     semantic-release: 17.4.7
     semver: 7.3.5
     serve-handler: 6.1.3
-    snyk: 1.717.0
+    snyk: 1.720.0
     store: 2.0.12
     stylelint: 13.13.1
     stylelint-config-prettier: 8.0.2
@@ -20831,12 +20831,12 @@ resolve@~1.7.1:
   languageName: node
   linkType: hard
 
-"snyk@npm:1.717.0":
-  version: 1.717.0
-  resolution: "snyk@npm:1.717.0"
+"snyk@npm:1.720.0":
+  version: 1.720.0
+  resolution: "snyk@npm:1.720.0"
   bin:
     snyk: bin/snyk
-  checksum: 4ca66ce6bac723b7c75e32a5b4756611585c09b86064800876ab2ab1d92d206c517dde9af89a500cdcb58d6e2322bd62e180e93237d68fa9b23c0bb259a6212b
+  checksum: 85977225de726b4f029d47839d07fe6784b0fdcabdb5b6b35224620b32d3b45f41ea1fedbb2d9ebd7c7a6005dc3fc1ea2e719eb5430982d5c18a1debb7a41c6e
   languageName: node
   linkType: hard
 
