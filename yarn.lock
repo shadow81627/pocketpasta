@@ -1232,12 +1232,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:7.14.0":
-  version: 7.14.0
-  resolution: "@babel/runtime@npm:7.14.0"
+"@babel/runtime@npm:7.14.6":
+  version: 7.14.6
+  resolution: "@babel/runtime@npm:7.14.6"
   dependencies:
     regenerator-runtime: ^0.13.4
-  checksum: 257dc2594355dd8798455f25b6f2f9a00f162b427391265752933e0e3337b3b14661d09283187d5039ae3764f723890ffe767e995c73d662f1d515bdf48e5ade
+  checksum: 927ffed7871f2ed29f967a8dad7a72aa10662f93b6735a89d664a161fa4dc2074b8947ca159a8a0a49cec9a71c8de473d7c2b22d3de0ee4d7dd06d24a7f98018
   languageName: node
   linkType: hard
 
@@ -3311,15 +3311,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/express@npm:4.17.11":
-  version: 4.17.11
-  resolution: "@types/express@npm:4.17.11"
+"@types/express@npm:4.17.12":
+  version: 4.17.12
+  resolution: "@types/express@npm:4.17.12"
   dependencies:
     "@types/body-parser": "*"
     "@types/express-serve-static-core": ^4.17.18
     "@types/qs": "*"
     "@types/serve-static": "*"
-  checksum: 4f57fb2a3c6dcc8d0eb70fc7714bef986424a2f934ef41a3478d039e7a1d258cbea2fc077067d1b246e1c7968190cf229026dc478ca53a7a05d3a0ddc47b3be9
+  checksum: 5869f575f66e5ea891a00fd253719577a1afe8d39fba47f3f24539188dac351d61f4511a168c6b5b5c902c724b26809950421325887896f5e23f28a3a2aa9458
   languageName: node
   linkType: hard
 
@@ -3375,10 +3375,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/is-my-json-valid@npm:0.0.20":
-  version: 0.0.20
-  resolution: "@types/is-my-json-valid@npm:0.0.20"
-  checksum: 29222e8402fe0d4fa1e9b869e89b734ef728b86352ed82e16e377e5d8c7d5b10a22ca362f33f65bf3ab3c732a2370695bd00873a5d5a6274ab49102d1e3f0c5c
+"@types/is-my-json-valid@npm:2.18.0":
+  version: 2.18.0
+  resolution: "@types/is-my-json-valid@npm:2.18.0"
+  dependencies:
+    is-my-json-valid: "*"
+  checksum: f47139529d4bf17274ca7a881be2863f4d864449dc295605c5d83b170a5ae4afeca30fa7bd9d2081517aadf4ef08cae3c3d9b31a59b43ad137d25175a3d453f8
   languageName: node
   linkType: hard
 
@@ -5503,18 +5505,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"broadcast-channel@npm:3.5.3":
-  version: 3.5.3
-  resolution: "broadcast-channel@npm:3.5.3"
+"broadcast-channel@npm:3.7.0":
+  version: 3.7.0
+  resolution: "broadcast-channel@npm:3.7.0"
   dependencies:
     "@babel/runtime": ^7.7.2
-    detect-node: ^2.0.4
+    detect-node: ^2.1.0
     js-sha3: 0.8.0
     microseconds: 0.2.0
     nano-time: 1.0.0
+    oblivious-set: 1.0.0
     rimraf: 3.0.2
     unload: 2.2.0
-  checksum: 47d145a2523256f61b2ba8959c1ab4e94d7a3f0fcdd9583bac27668cb98fcda06db8eb8c75dca1900b81873633c53f5f1480a5f90c8e81a9b56cdc504f15e6a1
+  checksum: 803794c48dcce7f03aca69797430bd8b1c4cfd70b7de22079cd89567eeffaa126a1db98c7c2d86af8131d9bb41ed367c0fef96dfb446151c927b831572c621fc
   languageName: node
   linkType: hard
 
@@ -8110,10 +8113,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"defekt@npm:7.1.0":
-  version: 7.1.0
-  resolution: "defekt@npm:7.1.0"
-  checksum: 7368ada45af523870983a0a9a1bf37b4127dcc28de1554404a50bf7a2b6b60297280fea9ae859e07757bb50ce8c321d5e5a56b46cda4d6798ada0ffbb8d1a6c1
+"defekt@npm:7.2.3":
+  version: 7.2.3
+  resolution: "defekt@npm:7.2.3"
+  checksum: e3f03a7a7623a359f59ab7fd8aa12dc2b0cd2f1c706f5372ef088640dc0f000398c34686ae30faf3f8db1c7e17a360a28dc3135b603a4155bbf60ffbdd11fa8e
   languageName: node
   linkType: hard
 
@@ -8341,7 +8344,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"detect-node@npm:^2.0.4":
+"detect-node@npm:^2.0.4, detect-node@npm:^2.1.0":
   version: 2.1.0
   resolution: "detect-node@npm:2.1.0"
   checksum: 832184ec458353e41533ac9c622f16c19f7c02d8b10c303dfd3a756f56be93e903616c0bb2d4226183c9351c15fc0b3dba41a17a2308262afabcfa3776e6ae6e
@@ -9571,14 +9574,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"event-reduce-js@npm:1.2.0":
-  version: 1.2.0
-  resolution: "event-reduce-js@npm:1.2.0"
+"event-reduce-js@npm:1.4.0":
+  version: 1.4.0
+  resolution: "event-reduce-js@npm:1.4.0"
   dependencies:
     array-push-at-sort-position: 1.2.0
     binary-decision-diagram: 1.3.1
     object-path: 0.11.5
-  checksum: ef9b8350a859b1450f052a3dda044b38298d7084f77154646bcbe22940dc12adf57bba8e3027f1ecd62072b6014e610cefa68986d9634c7b22b7845359304b37
+  checksum: 5fe3f6b2fe56f4f3c632e77145c0293d2d4ddcd053b410301c2725619c0297742385d16a512d4396832eb626d0bf37b906c68d42fdd29a7af89924b039f0f754
   languageName: node
   linkType: hard
 
@@ -10626,15 +10629,15 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"get-graphql-from-jsonschema@npm:8.0.0":
-  version: 8.0.0
-  resolution: "get-graphql-from-jsonschema@npm:8.0.0"
+"get-graphql-from-jsonschema@npm:8.0.8":
+  version: 8.0.8
+  resolution: "get-graphql-from-jsonschema@npm:8.0.8"
   dependencies:
     "@types/common-tags": 1.8.0
     "@types/json-schema": 7.0.7
     common-tags: 1.8.0
-    defekt: 7.1.0
-  checksum: d9693947ce21e456048109fc526c972f1cdb3a6062dbe5f81e676d325ac6bd674b045fad58be05d138f1b36dc34420d99e562c659a1de10b1c2e8fb62d162c52
+    defekt: 7.2.3
+  checksum: b169545a87923ac31b0b03107e701ffa408fd82ef5f71aafbb88ae085157ea131099fad12047738da55d5ef51fc5699930f39b690c89bc4578432182b4e96261
   languageName: node
   linkType: hard
 
@@ -12738,7 +12741,7 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"is-my-json-valid@npm:2.20.5":
+"is-my-json-valid@npm:*, is-my-json-valid@npm:2.20.5":
   version: 2.20.5
   resolution: "is-my-json-valid@npm:2.20.5"
   dependencies:
@@ -13480,10 +13483,10 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"jsonschema-key-compression@npm:1.2.0":
-  version: 1.2.0
-  resolution: "jsonschema-key-compression@npm:1.2.0"
-  checksum: 4e03e29b86412b30a9c82e5b2625f0676ce7245665579a1ebe4fe36061170baa3882404bed4ae5ef5de0e13ca744cd115c2235276f0c4f7cbf325f0000d639a8
+"jsonschema-key-compression@npm:1.4.0":
+  version: 1.4.0
+  resolution: "jsonschema-key-compression@npm:1.4.0"
+  checksum: 0145edce3613e1698723dd0ef33f72c20a6e53dca8b4c185f3825ad3cbaf9077cda6958dd5dc687029bae784ffe22821bbf656bb3d0bb3ca8acd2bcb7b659cfa
   languageName: node
   linkType: hard
 
@@ -16382,6 +16385,13 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
+"oblivious-set@npm:1.0.0":
+  version: 1.0.0
+  resolution: "oblivious-set@npm:1.0.0"
+  checksum: f31740ea9c3a8242ad2324e4ebb9a35359fbc2e6e7131731a0fc1c8b7b1238eb07e4c8c631a38535243a7b8e3042b7e89f7dc2a95d2989afd6f80bd5793b0aab
+  languageName: node
+  linkType: hard
+
 "on-finished@npm:^2.3.0, on-finished@npm:~2.3.0":
   version: 2.3.0
   resolution: "on-finished@npm:2.3.0"
@@ -17384,7 +17394,7 @@ fsevents@~2.3.2:
     pouchdb-adapter-indexeddb: 7.2.2
     prettier: 2.4.1
     pretty-quick: 3.1.1
-    rxdb: 9.20.0
+    rxdb: 9.21.0
     rxjs: 7.1.0
     sass: 1.42.0
     sass-loader: 10.2.0
@@ -20063,34 +20073,34 @@ resolve@~1.7.1:
   languageName: node
   linkType: hard
 
-"rxdb@npm:9.20.0":
-  version: 9.20.0
-  resolution: "rxdb@npm:9.20.0"
+"rxdb@npm:9.21.0":
+  version: 9.21.0
+  resolution: "rxdb@npm:9.21.0"
   dependencies:
-    "@babel/runtime": 7.14.0
+    "@babel/runtime": 7.14.6
     "@types/clone": 2.1.0
     "@types/cors": 2.8.10
     "@types/deep-equal": 1.0.1
-    "@types/express": 4.17.11
-    "@types/is-my-json-valid": 0.0.20
+    "@types/express": 4.17.12
+    "@types/is-my-json-valid": 2.18.0
     "@types/object-path": 0.11.0
     "@types/pouchdb-core": 7.0.6
     "@types/pouchdb-find": 6.3.6
     "@types/pouchdb-replication": 6.4.2
     "@types/spark-md5": 3.0.2
-    broadcast-channel: 3.5.3
+    broadcast-channel: 3.7.0
     clone: ^2.1.2
     cors: 2.8.5
     crypto-js: 4.0.0
     custom-idle-queue: 3.0.1
     deep-equal: ^2.0.1
-    event-reduce-js: 1.2.0
+    event-reduce-js: 1.4.0
     express: 4.17.1
-    get-graphql-from-jsonschema: 8.0.0
+    get-graphql-from-jsonschema: 8.0.8
     graphql-client: 2.0.1
     is-electron: 2.2.0
     is-my-json-valid: 2.20.5
-    jsonschema-key-compression: 1.2.0
+    jsonschema-key-compression: 1.4.0
     modifyjs: 0.3.1
     object-path: 0.11.5
     pouchdb-adapter-http: 7.2.2
@@ -20104,11 +20114,11 @@ resolve@~1.7.1:
     random-token: 0.0.8
     spark-md5: ^3.0.1
     url: ^0.11.0
-    util: 0.12.3
+    util: 0.12.4
     z-schema: 5.0.1
   peerDependencies:
     rxjs: ^7.0.1
-  checksum: 6c6c4f836c63650b4eebfde446a8fd0d019246307cf5d6ce100f47b91e936fe07e7ec0c807d34a87f5114f9b1bb25f0a77778032dee1a7c997f7bbec338e71b7
+  checksum: 1c1e78840bda1e9e9199a26808135dc0bfdab0d351758a92f65563afc693378249b1db468a69957b54b2ed2cf06aca126143f9452cdba0f217821eefe8df49ef
   languageName: node
   linkType: hard
 
@@ -22864,9 +22874,9 @@ resolve@~1.7.1:
   languageName: node
   linkType: hard
 
-"util@npm:0.12.3":
-  version: 0.12.3
-  resolution: "util@npm:0.12.3"
+"util@npm:0.12.4":
+  version: 0.12.4
+  resolution: "util@npm:0.12.4"
   dependencies:
     inherits: ^2.0.3
     is-arguments: ^1.0.4
@@ -22874,7 +22884,7 @@ resolve@~1.7.1:
     is-typed-array: ^1.1.3
     safe-buffer: ^5.1.2
     which-typed-array: ^1.1.2
-  checksum: e64d4a901999017d3125ba20d66f3f97429240ed1f7cf60a705abba8a4901277b909250677f616e043cd49f7ce5e4f2f4df5aa3960e8fdf83941f828f3643e9a
+  checksum: 8eac7a6e6b341c0f1b3eb73bbe5dfcae31a7e9699c8fc3266789f3e95f7637946a7700dcf1904dbd3749a58a36760ebf7acf4bb5b717f7468532a8a79f44eff0
   languageName: node
   linkType: hard
 
