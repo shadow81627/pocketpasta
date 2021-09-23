@@ -1232,12 +1232,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:7.14.6":
-  version: 7.14.6
-  resolution: "@babel/runtime@npm:7.14.6"
+"@babel/runtime@npm:7.14.8":
+  version: 7.14.8
+  resolution: "@babel/runtime@npm:7.14.8"
   dependencies:
     regenerator-runtime: ^0.13.4
-  checksum: 927ffed7871f2ed29f967a8dad7a72aa10662f93b6735a89d664a161fa4dc2074b8947ca159a8a0a49cec9a71c8de473d7c2b22d3de0ee4d7dd06d24a7f98018
+  checksum: d2dd0ce51ddab78ac93928b04042425145d0dc8cc2b70150d47934f8703f55702eb0b2894f9bd47f66794ad04d8bb03a6a847d0138fbb7aa0b970b5ccd5cc8b7
   languageName: node
   linkType: hard
 
@@ -3160,17 +3160,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/clone@npm:2.1.0":
-  version: 2.1.0
-  resolution: "@types/clone@npm:2.1.0"
-  checksum: 72a2f2dfce0af10caf1dd01f48fd909ef5a6be535313e7a34a1b7065b815f0c5b19a264c0c4f59de6a5b6c20ac535bab3fbb9d6e9fbea80c74b446d1ed56554c
+"@types/clone@npm:2.1.1":
+  version: 2.1.1
+  resolution: "@types/clone@npm:2.1.1"
+  checksum: bda9668b9d6e0875d64bbe00763676f566e8647bc224333a03ac7fd66655dfed56a98a9f8304d0145c4411b964649c84c4d1a03adbdb6547eafb9ab8f303d254
   languageName: node
   linkType: hard
 
-"@types/common-tags@npm:1.8.0":
-  version: 1.8.0
-  resolution: "@types/common-tags@npm:1.8.0"
-  checksum: eafc204e3deb288bb921567fd2f7b4e07184f520ae06f4d5630f54ddcbdd9431caee38e868c4d26a61f15f51f0c82977f8b4846331af31532fd28f6c36fe61cc
+"@types/common-tags@npm:1.8.1":
+  version: 1.8.1
+  resolution: "@types/common-tags@npm:1.8.1"
+  checksum: bec6f68c8c434834380abd1dc057aa6ba26661bb0c65c700b65049e9b104d7be96a987d93dbe8726be68554a23a52514a6967d8903fdb51fb8c78cf909d1e4c1
   languageName: node
   linkType: hard
 
@@ -3201,10 +3201,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/cors@npm:2.8.10":
-  version: 2.8.10
-  resolution: "@types/cors@npm:2.8.10"
-  checksum: f87e2f7bb6b4e3a143713a8e6def1791c47e8b3d344d30b6a190cae729de2f50df656c51fc92d5bdf7c5536cb32624f73bab244f6396a35aae0119e7c7bbad73
+"@types/cors@npm:2.8.12":
+  version: 2.8.12
+  resolution: "@types/cors@npm:2.8.12"
+  checksum: 8c45f112c7d1d2d831b4b266f2e6ed33a1887a35dcbfe2a18b28370751fababb7cd045e745ef84a523c33a25932678097bf79afaa367c6cb3fa0daa7a6438257
   languageName: node
   linkType: hard
 
@@ -3271,7 +3271,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/express@npm:*":
+"@types/express@npm:*, @types/express@npm:4.17.13":
   version: 4.17.13
   resolution: "@types/express@npm:4.17.13"
   dependencies:
@@ -3280,18 +3280,6 @@ __metadata:
     "@types/qs": "*"
     "@types/serve-static": "*"
   checksum: 12a2a0e6c4b993fc0854bec665906788aea0d8ee4392389d7a98a5de1eefdd33c9e1e40a91f3afd274011119c506f7b4126acb97fae62ae20b654974d44cba12
-  languageName: node
-  linkType: hard
-
-"@types/express@npm:4.17.12":
-  version: 4.17.12
-  resolution: "@types/express@npm:4.17.12"
-  dependencies:
-    "@types/body-parser": "*"
-    "@types/express-serve-static-core": ^4.17.18
-    "@types/qs": "*"
-    "@types/serve-static": "*"
-  checksum: 5869f575f66e5ea891a00fd253719577a1afe8d39fba47f3f24539188dac351d61f4511a168c6b5b5c902c724b26809950421325887896f5e23f28a3a2aa9458
   languageName: node
   linkType: hard
 
@@ -3370,10 +3358,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/json-schema@npm:7.0.7":
-  version: 7.0.7
-  resolution: "@types/json-schema@npm:7.0.7"
-  checksum: ea3b409235862d28122751158f4054e729e31ad844bd7b8b23868f38c518047b1c0e8e4e7cc293e02c31a2fb8cfc8a4506c2de2a745cf78b218e064fb8898cd4
+"@types/json-schema@npm:7.0.8":
+  version: 7.0.8
+  resolution: "@types/json-schema@npm:7.0.8"
+  checksum: f1d0fe76ab1db93846f36a9179faa44b9b66f2f5f44597e46e65456a1c998f632c63b94ed347058ed1a230cbf95a9a164b4daf4d70aa3d651d5033f7856df83c
   languageName: node
   linkType: hard
 
@@ -3453,15 +3441,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node-fetch@npm:*":
-  version: 3.0.2
-  resolution: "@types/node-fetch@npm:3.0.2"
-  dependencies:
-    node-fetch: "*"
-  checksum: b9f97bc4219c37f70299133b36389719cf4adacad46cea80df70f77d4a9f6999ea5be18a1ab90b34239b684cae032adeec10756cce8d2ae81c17f5e4c56fd4e9
-  languageName: node
-  linkType: hard
-
 "@types/node-sass@npm:*":
   version: 4.11.2
   resolution: "@types/node-sass@npm:4.11.2"
@@ -3499,10 +3478,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/object-path@npm:0.11.0":
-  version: 0.11.0
-  resolution: "@types/object-path@npm:0.11.0"
-  checksum: 9456365c913e527f596cb1a3b214e8fed708ed87432ba84e2711c5731396cc898216f035c30aefb99d03f00d2c4f6cfd83236eb3320dcfa00ec1a52aa2e81e7c
+"@types/object-path@npm:0.11.1":
+  version: 0.11.1
+  resolution: "@types/object-path@npm:0.11.1"
+  checksum: 007e819d1d9dc830491b60023b1502ef1e421416d9953d6fefcda7d06eb91548eef8ee30073a9cfb6a834ac977042f6e1a761cde2d6a7973b06ddca753be91e3
   languageName: node
   linkType: hard
 
@@ -3529,7 +3508,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/pouchdb-core@npm:*":
+"@types/pouchdb-core@npm:*, @types/pouchdb-core@npm:7.0.8":
   version: 7.0.8
   resolution: "@types/pouchdb-core@npm:7.0.8"
   dependencies:
@@ -3539,42 +3518,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/pouchdb-core@npm:7.0.6":
-  version: 7.0.6
-  resolution: "@types/pouchdb-core@npm:7.0.6"
-  dependencies:
-    "@types/debug": "*"
-    "@types/node-fetch": "*"
-    "@types/pouchdb-find": "*"
-  checksum: 2daef1fcdd29713dfccb28dd74a7ec6681a7fec1847f2c731ead0830dcb0e01fcb38ffc787ba984a1d552e209cc1799d18256a9e64369f16221cd62e3e0fed92
-  languageName: node
-  linkType: hard
-
 "@types/pouchdb-find@npm:*":
   version: 6.3.7
   resolution: "@types/pouchdb-find@npm:6.3.7"
   dependencies:
     "@types/pouchdb-core": "*"
   checksum: 425cbfac52eb7776c5ba5f07fd6b6d5cda03d2f8a95565a181da82083c6e566ebfaca5fd6c1f5698e8b39b884caca08e801fe0f85e0873df27ee902efdf0b120
-  languageName: node
-  linkType: hard
-
-"@types/pouchdb-find@npm:6.3.6":
-  version: 6.3.6
-  resolution: "@types/pouchdb-find@npm:6.3.6"
-  dependencies:
-    "@types/pouchdb-core": "*"
-  checksum: 09102c35f666fc3ab1154b969bbdb1fd8c58d7de180df5ec6a1e8bc8ff8f2413dea45ef19b4672d2c54f97520c3799c703b7b304f9e054162c9dd2817307f138
-  languageName: node
-  linkType: hard
-
-"@types/pouchdb-replication@npm:6.4.2":
-  version: 6.4.2
-  resolution: "@types/pouchdb-replication@npm:6.4.2"
-  dependencies:
-    "@types/pouchdb-core": "*"
-    "@types/pouchdb-find": "*"
-  checksum: ce8732e91e261efaa5909617ae7a3efea517cced528c4043def4524eab2b7b658a361100811fb0fbbaf62f4e97718b73381fc3dbd4bbf38d8c06ea98d0e868a4
   languageName: node
   linkType: hard
 
@@ -7864,13 +7813,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"data-uri-to-buffer@npm:^3.0.1":
-  version: 3.0.1
-  resolution: "data-uri-to-buffer@npm:3.0.1"
-  checksum: c59c3009686a78c071806b72f4810856ec28222f0f4e252aa495ec027ed9732298ceea99c50328cf59b151dd34cbc3ad6150bbb43e41fc56fa19f48c99e9fc30
-  languageName: node
-  linkType: hard
-
 "dateformat@npm:^3.0.0":
   version: 3.0.3
   resolution: "dateformat@npm:3.0.3"
@@ -8042,6 +7984,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"deep-freeze@npm:0.0.1":
+  version: 0.0.1
+  resolution: "deep-freeze@npm:0.0.1"
+  checksum: 1e43c98e44c7849382d9f896e679d48a1b5bf40993f7cc858e3730ef4e2ba387b9b7b7fe722cac34febe7f6a564cd242c27bbc319e8df793c2a287f21e5ba038
+  languageName: node
+  linkType: hard
+
 "deep-is@npm:^0.1.3, deep-is@npm:~0.1.3":
   version: 0.1.4
   resolution: "deep-is@npm:0.1.4"
@@ -8065,10 +8014,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"defekt@npm:7.2.3":
-  version: 7.2.3
-  resolution: "defekt@npm:7.2.3"
-  checksum: e3f03a7a7623a359f59ab7fd8aa12dc2b0cd2f1c706f5372ef088640dc0f000398c34686ae30faf3f8db1c7e17a360a28dc3135b603a4155bbf60ffbdd11fa8e
+"defekt@npm:7.3.2":
+  version: 7.3.2
+  resolution: "defekt@npm:7.3.2"
+  checksum: 935fa5b6750665b13b6f26d3a8bf9aee6ed86b3150f0b397413a6740b9242ec6943b16b6760ba622c27f02e5e2194392a853e62fd1abcba23995cff94c49bc9d
   languageName: node
   linkType: hard
 
@@ -9942,15 +9891,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fetch-blob@npm:^3.1.2":
-  version: 3.1.2
-  resolution: "fetch-blob@npm:3.1.2"
-  dependencies:
-    web-streams-polyfill: ^3.0.3
-  checksum: 3e3717cf30da9f204aee83dded63f1a9f9c8bda7a0dc59648f89eeb1e88ee592231f4d922e1f119e1390383520768594dd3a1fe5e844f2f2f014d17ce04213a5
-  languageName: node
-  linkType: hard
-
 "fetch-cookie@npm:0.10.1":
   version: 0.10.1
   resolution: "fetch-cookie@npm:0.10.1"
@@ -10580,15 +10520,15 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"get-graphql-from-jsonschema@npm:8.0.8":
-  version: 8.0.8
-  resolution: "get-graphql-from-jsonschema@npm:8.0.8"
+"get-graphql-from-jsonschema@npm:8.0.13":
+  version: 8.0.13
+  resolution: "get-graphql-from-jsonschema@npm:8.0.13"
   dependencies:
-    "@types/common-tags": 1.8.0
-    "@types/json-schema": 7.0.7
+    "@types/common-tags": 1.8.1
+    "@types/json-schema": 7.0.8
     common-tags: 1.8.0
-    defekt: 7.2.3
-  checksum: b169545a87923ac31b0b03107e701ffa408fd82ef5f71aafbb88ae085157ea131099fad12047738da55d5ef51fc5699930f39b690c89bc4578432182b4e96261
+    defekt: 7.3.2
+  checksum: 2a89fb3439e13c6c62e8ddfe5344aa21ad518790ae214cb980c180733df3c87a1c4c0a5dcd2371b3acde81ad975fcc4fdff9ffd08eb4a590a3a55ba1b69be3f4
   languageName: node
   linkType: hard
 
@@ -15616,16 +15556,6 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"node-fetch@npm:*":
-  version: 3.0.0
-  resolution: "node-fetch@npm:3.0.0"
-  dependencies:
-    data-uri-to-buffer: ^3.0.1
-    fetch-blob: ^3.1.2
-  checksum: 50224bf682a0bc3d44faee0f38df6269d8ae646de343595ef37f9d94b4322d3763a49819fb7b2df9330fcae16e0a20e5fb129dfed8725cf0e8f720277db7611c
-  languageName: node
-  linkType: hard
-
 "node-fetch@npm:2.6.0":
   version: 2.6.0
   resolution: "node-fetch@npm:2.6.0"
@@ -17363,7 +17293,7 @@ fsevents@~2.3.2:
     pouchdb-adapter-indexeddb: 7.2.2
     prettier: 2.4.1
     pretty-quick: 3.1.1
-    rxdb: 9.21.0
+    rxdb: 10.0.3
     rxjs: 7.3.0
     sass: 1.42.1
     sass-loader: 10.2.0
@@ -20042,20 +19972,18 @@ resolve@~1.7.1:
   languageName: node
   linkType: hard
 
-"rxdb@npm:9.21.0":
-  version: 9.21.0
-  resolution: "rxdb@npm:9.21.0"
+"rxdb@npm:10.0.3":
+  version: 10.0.3
+  resolution: "rxdb@npm:10.0.3"
   dependencies:
-    "@babel/runtime": 7.14.6
-    "@types/clone": 2.1.0
-    "@types/cors": 2.8.10
+    "@babel/runtime": 7.14.8
+    "@types/clone": 2.1.1
+    "@types/cors": 2.8.12
     "@types/deep-equal": 1.0.1
-    "@types/express": 4.17.12
+    "@types/express": 4.17.13
     "@types/is-my-json-valid": 2.18.0
-    "@types/object-path": 0.11.0
-    "@types/pouchdb-core": 7.0.6
-    "@types/pouchdb-find": 6.3.6
-    "@types/pouchdb-replication": 6.4.2
+    "@types/object-path": 0.11.1
+    "@types/pouchdb-core": 7.0.8
     "@types/spark-md5": 3.0.2
     broadcast-channel: 3.7.0
     clone: ^2.1.2
@@ -20063,15 +19991,17 @@ resolve@~1.7.1:
     crypto-js: 4.0.0
     custom-idle-queue: 3.0.1
     deep-equal: ^2.0.1
+    deep-freeze: 0.0.1
     event-reduce-js: 1.4.0
     express: 4.17.1
-    get-graphql-from-jsonschema: 8.0.8
+    get-graphql-from-jsonschema: 8.0.13
     graphql-client: 2.0.1
     is-electron: 2.2.0
     is-my-json-valid: 2.20.5
     jsonschema-key-compression: 1.4.0
     modifyjs: 0.3.1
     object-path: 0.11.5
+    oblivious-set: 1.0.0
     pouchdb-adapter-http: 7.2.2
     pouchdb-all-dbs: 1.1.1
     pouchdb-core: 7.2.2
@@ -20086,8 +20016,8 @@ resolve@~1.7.1:
     util: 0.12.4
     z-schema: 5.0.1
   peerDependencies:
-    rxjs: ^7.0.1
-  checksum: 1c1e78840bda1e9e9199a26808135dc0bfdab0d351758a92f65563afc693378249b1db468a69957b54b2ed2cf06aca126143f9452cdba0f217821eefe8df49ef
+    rxjs: ^7.1.0
+  checksum: e264c8a0b4a42585534d3574e47d8c16cb3be40d44b774d04d624d814a688ae3aa7b162c09eea6bef4895796f58f828c5c1745f4d37f5b4eb8b9cda09a0c36a0
   languageName: node
   linkType: hard
 
@@ -23302,13 +23232,6 @@ resolve@~1.7.1:
   version: 1.1.4
   resolution: "web-namespaces@npm:1.1.4"
   checksum: 5149842ccbfbc56fe4f8758957b3f8c8616a281874a5bb84aa1b305e4436a9bad853d21c629a7b8f174902449e1489c7a6c724fccf60965077c5636bd8aed42b
-  languageName: node
-  linkType: hard
-
-"web-streams-polyfill@npm:^3.0.3":
-  version: 3.1.1
-  resolution: "web-streams-polyfill@npm:3.1.1"
-  checksum: dac85f0a990fb1ddcd15e2eda8ce4696bc9bc567e34cfdaeb9e740e26417d8649a6f466468907f50fd6e09967c25e0cf1f296c30aef9650ab7b118d5f69fb176
   languageName: node
   linkType: hard
 
