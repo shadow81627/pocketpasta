@@ -1,5 +1,11 @@
 # Releases
 
+## [0.48.52](https://github.com/shadow81627/pocketpasta/compare/v0.48.51...v0.48.52) (2021-09-26)
+
+### Reverts
+
+- Revert "fix(deps): update dependency rxdb to v10" ([80b93b6](https://github.com/shadow81627/pocketpasta/commit/80b93b6f037ccd13634cc63fa900fe26195817a9))
+
 ## [0.48.51](https://github.com/shadow81627/pocketpasta/compare/v0.48.50...v0.48.51) (2021-09-23)
 
 ### Bug Fixes
