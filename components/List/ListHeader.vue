@@ -129,7 +129,6 @@
 </template>
 
 <script>
-import ViewSwitcher from '@/components/List/ViewSwitcher.vue';
 import {
   mdiSortAlphabeticalAscending,
   mdiSortAlphabeticalDescending,
@@ -138,6 +137,7 @@ import {
   mdiSelectGroup,
   mdiTune,
 } from '@mdi/js';
+import ViewSwitcher from '@/components/List/ViewSwitcher.vue';
 
 export default {
   components: { ViewSwitcher },

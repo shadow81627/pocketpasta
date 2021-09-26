@@ -88,8 +88,8 @@
 </template>
 
 <script>
-import Keywords from '@/components/Keywords';
 import VuePlyr from 'vue-plyr/dist/vue-plyr.ssr.js';
+import Keywords from '@/components/Keywords';
 import 'plyr/dist/plyr.css';
 
 export default {
