@@ -8,10 +8,11 @@
               <span>{{ $config.VERSION }}</span>
               <span v-if="$config.COMMIT">{{ shortHash($config.COMMIT) }}</span>
               <span v-if="$config.VERSION || $config.COMMIT">|</span>
-              <nuxt-link :to="localePath({ name: 'releases' })"
-                ><span>
-                  {{ shortHash($config.COMMIT) || 'Changelog' }}</span
-                ></nuxt-link
+              <a
+                href="https://github.com/shadow81627/pocketpasta/releases"
+                target="_blank"
+                rel="noopener"
+                ><span> {{ shortHash($config.COMMIT) || 'Changelog' }}</span></a
               >
             </v-card-text>
           </v-card>
