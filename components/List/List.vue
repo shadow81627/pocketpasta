@@ -84,9 +84,6 @@
 <script>
 // import { chunk, head } from 'lodash-es';
 
-import ItemComponent from '@/components/List/ItemComponent.vue';
-import ListHeader from '@/components/List/ListHeader.vue';
-import Card from '@/components/List/Card';
 import VirtualList from 'vue-virtual-scroll-list';
 import {
   mdiSortAlphabeticalAscending,
@@ -97,6 +94,9 @@ import {
   mdiArrowUpBold,
 } from '@mdi/js';
 import { debounce } from 'lodash-es';
+import ItemComponent from '@/components/List/ItemComponent.vue';
+import ListHeader from '@/components/List/ListHeader.vue';
+import Card from '@/components/List/Card';
 const collections = ['Recipe', 'Product'];
 export default {
   components: {

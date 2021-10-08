@@ -279,9 +279,6 @@
 </template>
 
 <script>
-import ConfirmDialog from '@/components/ConfirmDialog.vue';
-import ListHeader from '@/components/List/ListHeader.vue';
-import { init } from '@/db';
 import { Ripple } from 'vuetify/lib/directives';
 import {
   mdiPencil,
@@ -294,6 +291,9 @@ import {
 import { DateTime } from 'luxon';
 import cuid from 'cuid';
 import { debounce } from 'lodash-es';
+import { init } from '@/db';
+import ListHeader from '@/components/List/ListHeader.vue';
+import ConfirmDialog from '@/components/ConfirmDialog.vue';
 
 export default {
   components: {
