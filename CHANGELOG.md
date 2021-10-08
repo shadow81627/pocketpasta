@@ -1,5 +1,11 @@
 # Releases
 
+## [0.48.53](https://github.com/shadow81627/pocketpasta/compare/v0.48.52...v0.48.53) (2021-10-08)
+
+### Bug Fixes
+
+- **deps:** bump github/codeql-action from 1.0.15 to 1.0.17 ([#2165](https://github.com/shadow81627/pocketpasta/issues/2165)) ([e44a43a](https://github.com/shadow81627/pocketpasta/commit/e44a43aad7613da82f1f60e00164d86bdd20a9a4))
+
 ## [0.48.52](https://github.com/shadow81627/pocketpasta/compare/v0.48.51...v0.48.52) (2021-09-26)
 
 ### Reverts
