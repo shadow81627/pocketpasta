@@ -93,22 +93,7 @@
       </v-avatar>
 
       <v-toolbar-title>
-        <span
-          class="brand d-none d-sm-flex text-shadow xfont-weight-bold pr-2"
-          style="
-            xcolor: #d3af37;
-            x-webkit-text-stroke: 1px #1b1b1b;
-            xcolor: white;
-          "
-          >PocketPasta</span
-        >
-        <!-- <img
-          :src="require('@/assets/pocketpasta-logo-text-test.svg?inline')"
-          height="28"
-          alt="PocketPasta"
-          onerror="javascript:this.style.display = 'none'"
-          style="vertical-align: text-bottom"
-        /> -->
+        <span class="brand d-none d-sm-flex pr-2">PocketPasta</span>
       </v-toolbar-title>
       <v-spacer />
       <AddToHomeScreen icon />
