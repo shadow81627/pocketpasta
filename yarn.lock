@@ -16888,7 +16888,7 @@ fsevents@~2.3.2:
     pouchdb-adapter-indexeddb: 7.2.2
     prettier: 2.4.1
     rxdb: 9.21.0
-    rxjs: 7.3.0
+    rxjs: 7.4.0
     sass: 1.42.1
     sass-loader: 10.2.0
     semantic-release: 18.0.0
@@ -19583,12 +19583,12 @@ resolve@~1.7.1:
   languageName: node
   linkType: hard
 
-"rxjs@npm:7.3.0":
-  version: 7.3.0
-  resolution: "rxjs@npm:7.3.0"
+"rxjs@npm:7.4.0":
+  version: 7.4.0
+  resolution: "rxjs@npm:7.4.0"
   dependencies:
     tslib: ~2.1.0
-  checksum: e63adb8808ea6c299a020d56d2af92bcf71efe641adf838499932e29b8f5fd5ff00873653ad48ba3ecf6c9fc11c3c595acf995e8d456f9d8cb85c7d37a1fd72e
+  checksum: 6b33172a760dcad6882fdc836ee8cf1ebe160dd7eaad95c45a12338ffdaa96eb41e48e6c25bbd3d1fdf45075949ff447954bc17a9d01c688558a67967d09c114
   languageName: node
   linkType: hard
 
