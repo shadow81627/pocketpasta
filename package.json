@@ -47,7 +47,7 @@
     "luxon": "2.0.2",
     "nuxt": "2.15.8",
     "nuxt-i18n": "6.28.1",
-    "plyr": "3.6.4",
+    "plyr": "3.6.9",
     "pouchdb-adapter-http": "7.2.2",
     "pouchdb-adapter-indexeddb": "7.2.2",
     "rxdb": "9.21.0",

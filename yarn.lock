@@ -7064,7 +7064,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"core-js@npm:^3.10.1, core-js@npm:^3.8.1":
+"core-js@npm:^3.10.1":
   version: 3.18.2
   resolution: "core-js@npm:3.18.2"
   checksum: 4a09d170d8135a1f1c458f6aef786ba18bfb81fa6dab106561dd5379b9d175400ed012c2a30eee921b6e5bd53842ce32fb02ffd57d2984e157de622d9439dc5c
@@ -16849,16 +16849,16 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"plyr@npm:3.6.4":
-  version: 3.6.4
-  resolution: "plyr@npm:3.6.4"
+"plyr@npm:3.6.9":
+  version: 3.6.9
+  resolution: "plyr@npm:3.6.9"
   dependencies:
-    core-js: ^3.8.1
+    core-js: ^3.10.1
     custom-event-polyfill: ^1.0.7
     loadjs: ^4.2.0
     rangetouch: ^2.0.1
     url-polyfill: ^1.1.12
-  checksum: 292a695b7ff831220181c582aa721ca3638bde3b108ab3079a82a3f66e29381bff1e84e9b104dd7053b21f6ede0cc5f573af1b2fd4cb0bd9d6835d567f0b0d51
+  checksum: 9c3a66469a6e41569d7da5f71db328c745cb77f2fe0666f45ccd7dc5593f1b0cc94066fc1b38fbd007d3dd2a6ea5413e80cb174beb7d5bffb2dae0d9fb6596dc
   languageName: node
   linkType: hard
 
@@ -16944,7 +16944,7 @@ fsevents@~2.3.2:
     nuxt: 2.15.8
     nuxt-i18n: 6.28.1
     playwright: 1.15.2
-    plyr: 3.6.4
+    plyr: 3.6.9
     pouchdb-adapter-http: 7.2.2
     pouchdb-adapter-indexeddb: 7.2.2
     prettier: 2.4.1
