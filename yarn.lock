@@ -9036,7 +9036,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-vuetify@npm:1.0.1, eslint-plugin-vuetify@npm:^1.0.0-beta.6":
+"eslint-plugin-vuetify@npm:1.1.0":
+  version: 1.1.0
+  resolution: "eslint-plugin-vuetify@npm:1.1.0"
+  dependencies:
+    eslint-plugin-vue: ^7.0.0
+    requireindex: ^1.2.0
+  peerDependencies:
+    eslint: ^6.2.0 || ^7.0.0 || ^8.0.0
+    vuetify: ^2.0.0
+  checksum: 986d0d145a4b790458242d09964b3b5727cfc12ec2f84a9730a9c37067ef78babf5f524cbd98c299293f8d1ad6e247fc7a92dd2c6406c523652a9b1a913dcef9
+  languageName: node
+  linkType: hard
+
+"eslint-plugin-vuetify@npm:^1.0.0-beta.6":
   version: 1.0.1
   resolution: "eslint-plugin-vuetify@npm:1.0.1"
   dependencies:
@@ -17029,7 +17042,7 @@ fsevents@~2.3.2:
     eslint-plugin-standard: 5.0.0
     eslint-plugin-unicorn: 37.0.1
     eslint-plugin-vue: 7.20.0
-    eslint-plugin-vuetify: 1.0.1
+    eslint-plugin-vuetify: 1.1.0
     lodash-es: 4.17.21
     luxon: 2.0.2
     nuxt: 2.15.8

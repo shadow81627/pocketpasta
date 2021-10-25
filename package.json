@@ -94,7 +94,7 @@
     "eslint-plugin-standard": "5.0.0",
     "eslint-plugin-unicorn": "37.0.1",
     "eslint-plugin-vue": "7.20.0",
-    "eslint-plugin-vuetify": "1.0.1",
+    "eslint-plugin-vuetify": "1.1.0",
     "playwright": "1.15.2",
     "prettier": "2.4.1",
     "sass": "1.42.1",
