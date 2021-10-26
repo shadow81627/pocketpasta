@@ -2045,9 +2045,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/content@npm:1.14.0":
-  version: 1.14.0
-  resolution: "@nuxt/content@npm:1.14.0"
+"@nuxt/content@npm:1.15.0":
+  version: 1.15.0
+  resolution: "@nuxt/content@npm:1.15.0"
   dependencies:
     "@lokidb/full-text-search": ^2.1.0
     "@lokidb/loki": ^2.1.0
@@ -2067,6 +2067,7 @@ __metadata:
     hookable: ^4.4.1
     html-tags: ^3.1.0
     js-yaml: 4.0.0
+    json5: ^2.2.0
     mdast-util-to-hast: ^10.2.0
     mkdirp: ^1.0.4
     node-req: ^2.1.2
@@ -2089,7 +2090,7 @@ __metadata:
     unist-builder: ^2.0.3
     ws: ^7.4.3
     xml2js: ^0.4.23
-  checksum: c76ae929479f71b4d36e6b91726779f9fe129142d0fdc8b165838372063d4a64aa21bf35b33e50bdb1c94addbfb5bcc009f335bea704f241dddbfc54b31b650a
+  checksum: 7eadcd4707a810ee3bcd2618ba8b7f9213773cd78cb73c3f50966958857b1e851f73ec48d6cbafcd2d23168caabd9b89558f6cc23a632d051e781825094ce7bc
   languageName: node
   linkType: hard
 
@@ -13117,7 +13118,7 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"json5@npm:^2.1.1, json5@npm:^2.1.2":
+"json5@npm:^2.1.1, json5@npm:^2.1.2, json5@npm:^2.2.0":
   version: 2.2.0
   resolution: "json5@npm:2.2.0"
   dependencies:
@@ -17025,7 +17026,7 @@ fsevents@~2.3.2:
     "@dansmaculotte/nuxt-security": 0.0.5
     "@lhci/cli": 0.6.1
     "@mdi/js": 6.4.95
-    "@nuxt/content": 1.14.0
+    "@nuxt/content": 1.15.0
     "@nuxt/image": 0.6.0
     "@nuxtjs/auth": 4.9.1
     "@nuxtjs/auth-next": 5.0.0-1624817847.21691f1
