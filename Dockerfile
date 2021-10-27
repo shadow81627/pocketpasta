@@ -1,5 +1,5 @@
 # build stage
-FROM node:16 as build-stage
+FROM node:17 as build-stage
 WORKDIR /app
 ENV PORT 8080
 ENV HOST 0.0.0.0
