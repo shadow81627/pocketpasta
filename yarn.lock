@@ -2747,6 +2747,105 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@orbit/coordinator@npm:0.16.7":
+  version: 0.16.7
+  resolution: "@orbit/coordinator@npm:0.16.7"
+  dependencies:
+    "@orbit/core": ^0.16.3
+    "@orbit/data": ^0.16.7
+    "@orbit/utils": ^0.16.3
+  checksum: d3332f8b9462038b3e1009810cef2bfc9a526cbce2f4e6566dc36d2b9a04aedffa3396dad6bd520610536b05d5c9946a0420b2b3a5df03bdb9e0c23238de911f
+  languageName: node
+  linkType: hard
+
+"@orbit/core@npm:0.16.3, @orbit/core@npm:^0.16.3":
+  version: 0.16.3
+  resolution: "@orbit/core@npm:0.16.3"
+  dependencies:
+    "@orbit/utils": ^0.16.3
+  checksum: b0b8cc3ee831176fa152d1946758acb1f7554626f09dd77804463eee34f7531f0db60a1bb76df15bfd602af53adc6ef79b20818285acf905f5870a615351bf88
+  languageName: node
+  linkType: hard
+
+"@orbit/data@npm:0.16.7, @orbit/data@npm:^0.16.7":
+  version: 0.16.7
+  resolution: "@orbit/data@npm:0.16.7"
+  dependencies:
+    "@orbit/core": ^0.16.3
+    "@orbit/utils": ^0.16.3
+  checksum: 5e27764c0a2d72cbc4fe9cf13fadfe0137ca19ae137dd62bcbada1a34076fc3663150df67fc60fd0e3c506c7eb32c5db70437ce33a66a6aaa2224c639944ee5e
+  languageName: node
+  linkType: hard
+
+"@orbit/immutable@npm:^0.16.3":
+  version: 0.16.3
+  resolution: "@orbit/immutable@npm:0.16.3"
+  checksum: 9254e278e0a8bba475765424b95a87d984b5583090f06a61df193ace3242f30da5ff55d21d341b757e3501b03f90996e8a55354f230e33f94c324038ed379dfd
+  languageName: node
+  linkType: hard
+
+"@orbit/indexeddb@npm:0.16.7":
+  version: 0.16.7
+  resolution: "@orbit/indexeddb@npm:0.16.7"
+  dependencies:
+    "@orbit/core": ^0.16.3
+    "@orbit/data": ^0.16.7
+    "@orbit/record-cache": ^0.16.7
+    "@orbit/utils": ^0.16.3
+  checksum: d4da639888fdadeb3cd55bc9d0eabd6418adf3c7036c0a529de320e8d5817e34d99b230cd9ddfb50d027e57ed830aace1470ad8aee214cd7ad09b816b948fbd8
+  languageName: node
+  linkType: hard
+
+"@orbit/jsonapi@npm:0.16.7":
+  version: 0.16.7
+  resolution: "@orbit/jsonapi@npm:0.16.7"
+  dependencies:
+    "@orbit/core": ^0.16.3
+    "@orbit/data": ^0.16.7
+    "@orbit/serializers": ^0.16.3
+    "@orbit/utils": ^0.16.3
+  checksum: bac4e3c6d6f3f7355f6e1a60bb7dd1bbd43b223bf82f4eb952394d5be5e701d3ec00435cdcec8912f928227df943a465b88dc4e3c8f37546340624aa06974f5c
+  languageName: node
+  linkType: hard
+
+"@orbit/memory@npm:0.16.7":
+  version: 0.16.7
+  resolution: "@orbit/memory@npm:0.16.7"
+  dependencies:
+    "@orbit/core": ^0.16.3
+    "@orbit/data": ^0.16.7
+    "@orbit/immutable": ^0.16.3
+    "@orbit/record-cache": ^0.16.7
+    "@orbit/utils": ^0.16.3
+  checksum: ac6aba99d2bc2009f1f152ebc0d101c06add552d18ea9bb7cc87bb0ce2da09247f2f052df9e3ab5f98ea483556a4f0aa35ee596cb95e7d671071a83d63011423
+  languageName: node
+  linkType: hard
+
+"@orbit/record-cache@npm:^0.16.7":
+  version: 0.16.7
+  resolution: "@orbit/record-cache@npm:0.16.7"
+  dependencies:
+    "@orbit/core": ^0.16.3
+    "@orbit/data": ^0.16.7
+    "@orbit/utils": ^0.16.3
+  checksum: 339839ca723eca3ae95fb27958e5c2932a26d276d3ccecea8948a91516212f47ce2c21e6930cee3d43d44532f1ec6f8fa0b1197895cc45a8adb9936a06163364
+  languageName: node
+  linkType: hard
+
+"@orbit/serializers@npm:^0.16.3":
+  version: 0.16.3
+  resolution: "@orbit/serializers@npm:0.16.3"
+  checksum: 63742205065dece66b7de03acc80b380dceba97d4a22ac30f662997fd717794c2e1335bcab19f311a724da06bab6561fe7a4ef032f98b9ec7f5bc5b48efb18c8
+  languageName: node
+  linkType: hard
+
+"@orbit/utils@npm:^0.16.3":
+  version: 0.16.3
+  resolution: "@orbit/utils@npm:0.16.3"
+  checksum: 7b7cb70fcc25355aec7120cb1c1e05e3e4d8a44e1a1fe9a13fe98a9021fe700817d6fe872a03b5a97e09aa799acf865d43701b3a5641b47060a782eb6dc2687d
+  languageName: node
+  linkType: hard
+
 "@polka/url@npm:^1.0.0-next.20":
   version: 1.0.0-next.21
   resolution: "@polka/url@npm:1.0.0-next.21"
@@ -16946,6 +17045,12 @@ fsevents@~2.3.2:
     "@nuxtjs/sentry": 5.1.4
     "@nuxtjs/sitemap": 2.4.0
     "@nuxtjs/vuetify": 1.12.1
+    "@orbit/coordinator": 0.16.7
+    "@orbit/core": 0.16.3
+    "@orbit/data": 0.16.7
+    "@orbit/indexeddb": 0.16.7
+    "@orbit/jsonapi": 0.16.7
+    "@orbit/memory": 0.16.7
     "@semantic-release/changelog": 6.0.0
     "@semantic-release/git": 10.0.0
     "@types/lodash-es": 4.17.5

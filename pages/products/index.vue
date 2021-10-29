@@ -1,19 +1,33 @@
 <template>
-  <List
+  <div>
+    {{ products }}
+    <!-- <List
     v-bind="{
       heading: $t('products.heading'),
       layout: 'list',
       collection: 'products',
     }"
-  />
+  /> -->
+  </div>
 </template>
 
 <script>
-import List from '@/components/List/List';
+import { remote } from '@/db/orbit';
+// import List from '@/components/List/List';
 export default {
   components: {
-    List,
+    // List,
   },
+  data: () => ({ products: [] }),
+  async fetch() {
+    console.log('fetch');
+    const products = await remote.query((q) =>
+      q.findRecords('product').sort('name'),
+    );
+    this.products = products;
+    console.log('products', products);
+  },
+  fetchOnServer: false,
   head() {
     return {
       meta: [
