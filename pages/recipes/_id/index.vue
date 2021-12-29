@@ -120,10 +120,13 @@
                           >{{ item }}</v-card-title
                         >
                         <v-card-actions class="ml-auto">
-                          <v-btn icon @click="add(item)">
-                            <v-icon title="Add to shopping list">{{
-                              mdiCartPlus
-                            }}</v-icon>
+                          <v-btn
+                            icon
+                            aria-label="Add to shopping list"
+                            title="Add to shopping list"
+                            @click="add(item)"
+                          >
+                            <v-icon>{{ mdiCartPlus }}</v-icon>
                           </v-btn>
                         </v-card-actions>
                       </v-card>
