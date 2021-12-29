@@ -50,13 +50,6 @@ export const remote = new JSONAPISource({
   schema,
   name: 'remote',
   host: `${process.env.API_URL ?? 'http://localhost'}/api/v1`,
-  defaultFetchSettings: {
-    headers: {
-      Authorization: 'Bearer 5ZEsd8VuhlHWjRtSHhYpELMxqxNidSbe6fjtJA0',
-      'X-XSRF-TOKEN':
-        'eyJpdiI6IlpFNjdMV2Zhc2JjN29VRS9sdXV6elE9PSIsInZhbHVlIjoiKyt0MVR3K2h1alhvdHpIRTkvZWJ6UnpQTHAyK3hpcWswUjcvK2pqcVZpYy9xN1NhZmYzeUY2L2pnRldZMTRiYlhPOUJhcDhpK3RncXNDeG1Db2x3aVl2WWdpZzlCQlUwWTgvVGszT2xPSEJDd1JpNi9JTVJtNExvS1dEd3l5MmoiLCJtYWMiOiIwYWY5YmFlM2I0Y2M1MDliMjcwYzMyNjk1NmExNjU3ZjNlNGEzODU2Y2RjZTFjYWE4ZjE4YTJhY2JjNWYwMDU2IiwidGFnIjoiIn0=',
-    },
-  },
 });
 
 if (process.client) {

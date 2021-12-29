@@ -8,14 +8,8 @@
     elevation="4"
     class="flex d-flex flex-column"
   >
-    <v-avatar
-      v-show="layout === 'columns'"
-      color="grey"
-      height="256"
-      width="auto"
-      tile
-    >
-      <v-img
+    <v-avatar color="grey" height="256" width="auto" tile>
+      <!-- <v-img
         :lazy-src="$img(imageUrl, {}, { preset: 'placeholder' })"
         :src="
           _srcset(imageUrl, {
@@ -31,23 +25,10 @@
         height="256"
         max-height="256"
         :alt="name"
-      />
+      /> -->
     </v-avatar>
     <v-container>
       <v-row class="align-center justify-center" no-gutters>
-        <v-col v-show="layout !== 'columns'" cols="auto">
-          <v-avatar class="ma-sm-3" size="128" tile color="grey">
-            <v-img
-              :lazy-src="$img(imageUrl, {}, { preset: 'placeholder' })"
-              :src="source({ image: imageUrl }).src"
-              :srcset="source({ image: imageUrl }).srcset"
-              height="128"
-              width="128"
-              itemprop="image"
-              :alt="name"
-            />
-          </v-avatar>
-        </v-col>
         <v-col cols="12" sm="" style="min-width: 224px">
           <v-card-title title-tag="h2" class="h4 text-break text-wrap">
             {{ name }}
@@ -72,7 +53,6 @@ export default {
     name: { type: String, default: null },
     description: { type: String, default: undefined },
     image: { type: [String, Object, Array], default: null },
-    layout: { type: String, default: null },
   },
   computed: {
     path() {
@@ -98,7 +78,8 @@ export default {
   },
   methods: {
     truncate(text = '', stop = 150, clamp = '...') {
-      return `${text.slice(0, stop)}${stop < text.length ? clamp : ''}`;
+      // return `${text.slice(0, stop)}${stop < text.length ? clamp : ''}`;
+      return text;
     },
     cloudinaryify({ image, width = 128, height = 128 }) {
       if (image) {

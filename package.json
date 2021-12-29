@@ -49,6 +49,8 @@
     "@orbit/jsonapi": "0.16.7",
     "@orbit/memory": "0.16.7",
     "cuid": "2.1.8",
+    "ky": "0.24.0",
+    "ky-universal": "0.8.2",
     "lodash-es": "4.17.21",
     "luxon": "2.0.2",
     "nuxt": "2.15.8",
