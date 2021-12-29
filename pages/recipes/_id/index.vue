@@ -343,7 +343,6 @@ export default {
         id: `${cuid()}`,
         name: item,
         category: '',
-        due: new Date().toISOString(),
         done: false,
       };
       await this.$db.shopping.upsert(_item);
