@@ -1,5 +1,11 @@
 # Releases
 
+## [0.49.1](https://github.com/shadow81627/pocketpasta/compare/v0.49.0...v0.49.1) (2021-12-29)
+
+### Bug Fixes
+
+- **recipe:** remove add shopping due date ([8320f11](https://github.com/shadow81627/pocketpasta/commit/8320f11e6b70d8211977278933f59e33e065185c))
+
 ## [0.49.0](https://github.com/shadow81627/pocketpasta/compare/v0.48.56...v0.49.0) (2021-12-29)
 
 ### Features
