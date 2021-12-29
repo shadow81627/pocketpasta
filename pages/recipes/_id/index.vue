@@ -114,11 +114,21 @@
                       :key="item"
                       style="list-style: none; padding-bottom: 12px"
                     >
-                      <v-card tile flat>
+                      <v-card tile flat class="d-flex">
                         <v-card-title
                           class="text-subtitle-1 text-break text-wrap py-0"
                           >{{ item }}</v-card-title
                         >
+                        <v-card-actions class="ml-auto">
+                          <v-btn
+                            icon
+                            aria-label="Add to shopping list"
+                            title="Add to shopping list"
+                            @click="add(item)"
+                          >
+                            <v-icon>{{ mdiCartPlus }}</v-icon>
+                          </v-btn>
+                        </v-card-actions>
                       </v-card>
                     </li>
                   </ul>
@@ -204,9 +214,12 @@
 </template>
 
 <script>
+import { init } from '@/db';
+import cuid from 'cuid';
 import { Disqus } from 'vue-disqus';
 import VuePlyr from 'vue-plyr/dist/vue-plyr.ssr.js';
 import 'plyr/dist/plyr.css';
+import { mdiCartPlus } from '@mdi/js';
 export default {
   components: {
     Disqus,
@@ -239,6 +252,7 @@ export default {
   },
   data() {
     return {
+      mdiCartPlus,
       id: 0,
       showDescription: false,
       videoClicked: false,
@@ -303,6 +317,13 @@ export default {
       }
     },
   },
+  async created() {
+    this.$db = await init({
+      remote: this.$warehouse.get('dbRemote') || this.$config.DB_REMOTE,
+      username: this.$warehouse.get('dbUsername') || this.$config.DB_USERNAME,
+      password: this.$warehouse.get('dbPassword') || this.$config.DB_PASSWORD,
+    });
+  },
   mounted() {
     const buttons = document.getElementsByTagName('button');
     Array.from(buttons).map((btn) =>
@@ -316,6 +337,16 @@ export default {
         '@type': 'Recipe',
         '@context': 'http://schema.org/',
       };
+    },
+    async add(item) {
+      const _item = {
+        id: `${cuid()}`,
+        name: item,
+        category: '',
+        due: new Date().toISOString(),
+        done: false,
+      };
+      await this.$db.shopping.upsert(_item);
     },
   },
 };
