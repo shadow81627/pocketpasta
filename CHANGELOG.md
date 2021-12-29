@@ -1,5 +1,11 @@
 # Releases
 
+## [0.49.0](https://github.com/shadow81627/pocketpasta/compare/v0.48.56...v0.49.0) (2021-12-29)
+
+### Features
+
+- **recipe:** ingredient add to shopping list ([#2209](https://github.com/shadow81627/pocketpasta/issues/2209)) ([58f7e84](https://github.com/shadow81627/pocketpasta/commit/58f7e8420145b7369f5f88ac8ff1705ac90f0827))
+
 ## [0.48.56](https://github.com/shadow81627/pocketpasta/compare/v0.48.55...v0.48.56) (2021-10-26)
 
 ### Bug Fixes
