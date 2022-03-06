@@ -40,7 +40,7 @@
 
 <script>
 import ky from 'ky-universal';
-import Orbit from '@orbit/core';
+import { Orbit } from '@orbit/core';
 import { remote } from '@/db/orbit';
 export default {
   data: () => ({ items: [] }),

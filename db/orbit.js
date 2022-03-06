@@ -1,19 +1,20 @@
-import Coordinator, {
+import {
+  Coordinator,
   RequestStrategy,
   SyncStrategy,
   LogLevel,
 } from '@orbit/coordinator';
-import { Schema } from '@orbit/data';
-import MemorySource from '@orbit/memory';
-import IndexedDBSource from '@orbit/indexeddb';
+import { RecordSchema } from '@orbit/records';
+import { MemorySource } from '@orbit/memory';
+import { IndexedDBSource } from '@orbit/indexeddb';
 
-import JSONAPISource from '@orbit/jsonapi';
+import { JSONAPISource } from '@orbit/jsonapi';
 
 const STRING = 'string';
 const NUMBER = 'number';
 const DATETIME = 'datetime';
 
-const schema = new Schema({
+const schema = new RecordSchema({
   models: {
     tag: {
       name: { type: STRING },
@@ -38,7 +39,7 @@ const schema = new Schema({
         updatedAt: { type: DATETIME },
       },
       relationships: {
-        tags: { type: 'hasMany', model: 'tag', inverse: 'products' },
+        tags: { kind: 'hasMany', type: 'tag', inverse: 'products' },
       },
     },
   },
