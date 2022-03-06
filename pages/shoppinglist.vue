@@ -223,56 +223,11 @@
           </template>
         </ConfirmDialog>
 
-        <v-dialog v-model="dialog" persistent max-width="400">
-          <template #activator="{ on, attrs }">
-            <v-btn
-              bottom
-              right
-              fixed
-              fab
-              aria-label="Create a new Shopping list item"
-              class="bg-primary"
-              v-bind="attrs"
-              v-on="on"
-            >
-              <v-icon>{{ icons.mdiPlus }}</v-icon>
-            </v-btn>
-          </template>
-          <v-card>
-            <v-card-title>
-              <span class="text-h5">Shopping</span>
-            </v-card-title>
-            <v-card-text>
-              <v-container>
-                <v-row>
-                  <v-col cols="12">
-                    <v-text-field
-                      v-model="editedItem.category"
-                      label="Category"
-                      name="shopping-category"
-                      @keydown.enter="save(editedItem)"
-                    />
-                  </v-col>
-                  <v-col cols="12">
-                    <v-text-field
-                      v-model="editedItem.name"
-                      label="Name"
-                      name="shopping-name"
-                      required
-                      autofocus
-                      @keydown.enter="save(editedItem)"
-                    />
-                  </v-col>
-                </v-row>
-              </v-container>
-            </v-card-text>
-            <v-card-actions>
-              <v-spacer />
-              <v-btn text @click="close">Close</v-btn>
-              <v-btn color="primary" @click="save(editedItem)">Save</v-btn>
-            </v-card-actions>
-          </v-card>
-        </v-dialog>
+        <EditShoppingListItem
+          v-model="editedItem"
+          :dialog="dialog"
+          @dialog="(val) => (dialog = val)"
+        ></EditShoppingListItem>
       </v-col>
     </v-row>
   </v-container>
@@ -294,11 +249,12 @@ import {
 import { DateTime } from 'luxon';
 import cuid from 'cuid';
 import { debounce } from 'lodash-es';
-
+import EditShoppingListItem from '@/components/EditShoppingListItem.vue';
 export default {
   components: {
     ConfirmDialog,
     ListHeader,
+    EditShoppingListItem,
   },
 
   directives: {
@@ -338,7 +294,6 @@ export default {
       },
     ],
     items: [],
-    editedIndex: -1,
     editedItem: {
       id: `${cuid()}`,
       name: '',
@@ -442,8 +397,8 @@ export default {
   },
   fetchOnServer: false,
   watch: {
-    dialog(val) {
-      val || this.close();
+    editedItem(val) {
+      console.log('editedItem', val);
     },
     '$route.query': debounce(function () {
       this.$fetch();
@@ -471,14 +426,6 @@ export default {
       await item.remove();
     },
 
-    close() {
-      this.dialog = false;
-      this.$nextTick(() => {
-        this.editedItem = Object.assign({}, this.defaultItem());
-        this.editedIndex = -1;
-      });
-    },
-
     create(item = this.defaultItem()) {
       this.editedItem = item;
       this.dialog = true;
@@ -486,7 +433,7 @@ export default {
 
     async save(item) {
       await this.$db.shopping.upsert(item);
-      this.close();
+      this.dialog = false;
     },
 
     clear(items) {
