@@ -17613,7 +17613,6 @@ __metadata:
     stylelint-config-prettier: 9.0.3
     utility-opentype: 0.1.4
     vee-validate: 3.4.13
-    vue: 2.6.14
     vue-disqus: 4.0.1
     vue-plyr: 6.0.4
     vue-virtual-scroll-list: 2.3.3
@@ -23541,13 +23540,6 @@ __metadata:
     vuex:
       optional: true
   checksum: 90b5c2742da5846382f2afa29cf0564cb33c4131789c5ab5fca63854dcfcbf67cf4678f30b8d4123185a2b60094f2bcc2e59155e037abd412efde0518785e3cc
-  languageName: node
-  linkType: hard
-
-"vue@npm:2.6.14":
-  version: 2.6.14
-  resolution: "vue@npm:2.6.14"
-  checksum: 23524a1bdca094d62cb3491a46317eed75184b5d61d28fa846ea5d2b241c1cc7084fc67ee259d47a50a6d0bbc33ecaceb7bb52bff81312fe7da07263f3419942
   languageName: node
   linkType: hard
 
