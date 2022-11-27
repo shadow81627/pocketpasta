@@ -110,5 +110,6 @@
     "node": ">=14.x",
     "npm": "please-use-yarn",
     "yarn": "3.x"
-  }
+  },
+  "packageManager": "yarn@3.3.0"
 }
