@@ -1560,9 +1560,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@dansmaculotte/nuxt-security@npm:0.0.5":
-  version: 0.0.5
-  resolution: "@dansmaculotte/nuxt-security@npm:0.0.5"
+"@dansmaculotte/nuxt-security@npm:0.0.6":
+  version: 0.0.6
+  resolution: "@dansmaculotte/nuxt-security@npm:0.0.6"
   dependencies:
     consola: ^2.15.0
     feature-policy: 0.6.0
@@ -1570,7 +1570,7 @@ __metadata:
     hsts: ^2.2.0
     permissions-policy: 0.6.0
     referrer-policy: ^1.2.0
-  checksum: 1bc4c383a011f6bb71412b2f82675dafa760756d77c50dff682778ba6b6cab6e49f042f0e60774c7e8273c20fd80c52d70ca1d13302483cb782b6c5d986a8633
+  checksum: 189e7b165862ff561c05f6d89bcf6de8f106f7beeb1daea0d0ca46eeb0aeef345c9bc228d30f0fafdad96e43c70f053e19c72a72ea1cc30cdbd525f8b5f4ef36
   languageName: node
   linkType: hard
 
@@ -17561,7 +17561,7 @@ __metadata:
     "@codeceptjs/configure": 0.7.0
     "@commitlint/cli": 13.2.1
     "@commitlint/config-conventional": 13.2.0
-    "@dansmaculotte/nuxt-security": 0.0.5
+    "@dansmaculotte/nuxt-security": 0.0.6
     "@lhci/cli": 0.6.1
     "@mdi/js": 6.4.95
     "@nuxt/content": 1.15.0
