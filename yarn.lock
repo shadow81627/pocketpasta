@@ -2693,17 +2693,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxtjs/sentry@npm:5.1.4":
-  version: 5.1.4
-  resolution: "@nuxtjs/sentry@npm:5.1.4"
+"@nuxtjs/sentry@npm:5.1.7":
+  version: 5.1.7
+  resolution: "@nuxtjs/sentry@npm:5.1.7"
   dependencies:
-    "@sentry/browser": ^6.13.2
-    "@sentry/integrations": ^6.13.2
-    "@sentry/node": ^6.13.2
-    "@sentry/webpack-plugin": ^1.17.1
+    "@sentry/browser": ^6.17.3
+    "@sentry/integrations": ^6.17.3
+    "@sentry/node": ^6.17.3
+    "@sentry/webpack-plugin": ^1.18.4
     consola: ^2.15.3
     lodash.mergewith: ^4.6.2
-  checksum: 676fecf91550507b168522982f7568838594acaf7f878fcaca994b7eb6a2fe821c6540e29b80e01a0c69bba460ebc2cc45a8ca4a23dd40111e025ad9f6381f6f
+  checksum: 64142a0186d2d5af4ae1e4bf21fb58cf23f2344b01dbd02a96405740c8de703cb6e3ed9047f6bbe404e0cabfce866db2fe741e85ab2f78ee508de5fee33ae31c
   languageName: node
   linkType: hard
 
@@ -3153,7 +3153,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sentry/browser@npm:^6.13.2":
+"@sentry/browser@npm:^6.17.3":
   version: 6.19.7
   resolution: "@sentry/browser@npm:6.19.7"
   dependencies:
@@ -3206,7 +3206,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sentry/integrations@npm:^6.13.2":
+"@sentry/integrations@npm:^6.17.3":
   version: 6.19.7
   resolution: "@sentry/integrations@npm:6.19.7"
   dependencies:
@@ -3229,7 +3229,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sentry/node@npm:^6.13.2":
+"@sentry/node@npm:^6.17.3":
   version: 6.19.7
   resolution: "@sentry/node@npm:6.19.7"
   dependencies:
@@ -3262,7 +3262,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sentry/webpack-plugin@npm:^1.17.1":
+"@sentry/webpack-plugin@npm:^1.18.4":
   version: 1.20.0
   resolution: "@sentry/webpack-plugin@npm:1.20.0"
   dependencies:
@@ -17575,7 +17575,7 @@ __metadata:
     "@nuxtjs/google-analytics": 2.4.0
     "@nuxtjs/markdownit": 2.0.0
     "@nuxtjs/pwa": 3.3.5
-    "@nuxtjs/sentry": 5.1.4
+    "@nuxtjs/sentry": 5.1.7
     "@nuxtjs/sitemap": 2.4.0
     "@nuxtjs/vuetify": 1.12.1
     "@semantic-release/changelog": 6.0.0
