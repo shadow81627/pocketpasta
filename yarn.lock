@@ -1345,13 +1345,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@codeceptjs/configure@npm:0.7.0":
-  version: 0.7.0
-  resolution: "@codeceptjs/configure@npm:0.7.0"
+"@codeceptjs/configure@npm:0.10.0":
+  version: 0.10.0
+  resolution: "@codeceptjs/configure@npm:0.10.0"
   dependencies:
     lodash.merge: ^4.6.2
     lodash.mergewith: ^4.6.2
-  checksum: 9dac975f7297fad5eeebdcabb21691f3d31e9d93f8a765a3a8fb8d38e7227b7398d90d2824b8bdd0e6d1a09ec4a619ecbf21ac745addf8d2ed6623e26a3d472d
+  peerDependencies:
+    codeceptjs: ">= 2.3.3"
+  checksum: e4556a9c1fdea92ede4a9bae296403d677bf89d5070cf53e7637d62062e00bf40c09fa34345d2fbca468c31d33bc0b3fdc3626e67f8d74a6d589f1e060e52f81
   languageName: node
   linkType: hard
 
@@ -17558,7 +17560,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "pocketpasta@workspace:."
   dependencies:
-    "@codeceptjs/configure": 0.7.0
+    "@codeceptjs/configure": 0.10.0
     "@commitlint/cli": 13.2.1
     "@commitlint/config-conventional": 13.2.0
     "@dansmaculotte/nuxt-security": 0.0.5
