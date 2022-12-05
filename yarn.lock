@@ -2724,16 +2724,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxtjs/vuetify@npm:1.12.1":
-  version: 1.12.1
-  resolution: "@nuxtjs/vuetify@npm:1.12.1"
+"@nuxtjs/vuetify@npm:1.12.3":
+  version: 1.12.3
+  resolution: "@nuxtjs/vuetify@npm:1.12.3"
   dependencies:
     deepmerge: ^4.2.2
     sass: ~1.32.13
     sass-loader: ^10.2.0
-    vuetify: ^2.5.3
-    vuetify-loader: ^1.7.2
-  checksum: e7f3df4aeb34b8fcfb3f99cacf5fd3de7e5e429f8b8b9ac5eda6a64a863ef0c9803f37b24b0fef262bab671f5e911df25848a976109e67142157a13cf501875d
+    vuetify: ^2.6
+    vuetify-loader: ^1.7.3
+  checksum: bfadb3641330e29c76bc278768cf6dbe371360508cc94801c209c5d37dc360ed29bc2265da3db14f3d2940a9171db09f488edd1413c9a41c05f13bc2ecb8a651
   languageName: node
   linkType: hard
 
@@ -17577,7 +17577,7 @@ __metadata:
     "@nuxtjs/pwa": 3.3.5
     "@nuxtjs/sentry": 5.1.4
     "@nuxtjs/sitemap": 2.4.0
-    "@nuxtjs/vuetify": 1.12.1
+    "@nuxtjs/vuetify": 1.12.3
     "@semantic-release/changelog": 6.0.0
     "@semantic-release/git": 10.0.0
     "@types/lodash-es": 4.17.5
@@ -23595,7 +23595,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vuetify-loader@npm:^1.7.2":
+"vuetify-loader@npm:^1.7.3":
   version: 1.9.2
   resolution: "vuetify-loader@npm:1.9.2"
   dependencies:
@@ -23631,7 +23631,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vuetify@npm:^2.2.28, vuetify@npm:^2.5.3":
+"vuetify@npm:^2.2.28, vuetify@npm:^2.6":
   version: 2.6.12
   resolution: "vuetify@npm:2.6.12"
   peerDependencies:
