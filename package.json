@@ -57,7 +57,7 @@
     "vee-validate": "3.4.13",
     "vue-disqus": "4.0.1",
     "vue-plyr": "6.0.4",
-    "vue-virtual-scroll-list": "2.3.3",
+    "vue-virtual-scroll-list": "2.3.5",
     "vue-warehouse": "2.2.0"
   },
   "devDependencies": {

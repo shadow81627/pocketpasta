@@ -17625,7 +17625,7 @@ __metadata:
     vee-validate: 3.4.13
     vue-disqus: 4.0.1
     vue-plyr: 6.0.4
-    vue-virtual-scroll-list: 2.3.3
+    vue-virtual-scroll-list: 2.3.5
     vue-warehouse: 2.2.0
     vuetify: 2.5.10
     vuetify-loader: 1.7.3
@@ -23548,10 +23548,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vue-virtual-scroll-list@npm:2.3.3":
-  version: 2.3.3
-  resolution: "vue-virtual-scroll-list@npm:2.3.3"
-  checksum: 1e10e8358d87499bb000d321bb28b88d9348ea6bf8b4c550217c78f90fd3f5ca47f3b745b9cb89c4c92dae11e7c30496550df2bf3dbf7d41cda14bddbd5fb65a
+"vue-virtual-scroll-list@npm:2.3.5":
+  version: 2.3.5
+  resolution: "vue-virtual-scroll-list@npm:2.3.5"
+  checksum: bcf131dcacabbb6443dd622d4f205d51b47d4e1557e225e3813211b82f2261e6ecf00d6e7712d9b1b2146585b566cef838944d6bc32fc73c7b7a6dedca63c5e0
   languageName: node
   linkType: hard
 
