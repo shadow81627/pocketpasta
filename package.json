@@ -104,7 +104,7 @@
     "stylelint": "14.0.1",
     "stylelint-config-prettier": "9.0.3",
     "vuetify": "2.5.10",
-    "vuetify-loader": "1.7.3"
+    "vuetify-loader": "1.9.2"
   },
   "engines": {
     "node": ">=14.x",
