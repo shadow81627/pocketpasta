@@ -2624,15 +2624,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxtjs/eslint-module@npm:3.0.2":
-  version: 3.0.2
-  resolution: "@nuxtjs/eslint-module@npm:3.0.2"
+"@nuxtjs/eslint-module@npm:3.1.0":
+  version: 3.1.0
+  resolution: "@nuxtjs/eslint-module@npm:3.1.0"
   dependencies:
-    consola: ^2.15.0
-    eslint-webpack-plugin: ^2.4.1
+    consola: ^2.15.3
+    defu: ^6.0.0
+    eslint-webpack-plugin: ^2.6.0
   peerDependencies:
     eslint: ">=7"
-  checksum: 767e9db55d1bbc64d5b98af4412bd86266841396c3b6a0f9c6278dc202dc6e8a4411e229c49ec852c2ce523b899cb6b4a8acbb33d8409481cdd02d628ef5a1d4
+  checksum: a43329386d10464a7a2dedfad502c1a5a5f5f1c118e594e6c9eab6748c6bc59d2eee1f7035c36ae12267c57daae940e6a6310e78f485e6bc253af9f2ac848bb1
   languageName: node
   linkType: hard
 
@@ -9480,7 +9481,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-webpack-plugin@npm:^2.4.1":
+"eslint-webpack-plugin@npm:^2.6.0":
   version: 2.7.0
   resolution: "eslint-webpack-plugin@npm:2.7.0"
   dependencies:
@@ -17571,7 +17572,7 @@ __metadata:
     "@nuxtjs/axios": 5.13.6
     "@nuxtjs/color-mode": 2.1.1
     "@nuxtjs/eslint-config": 7.0.0
-    "@nuxtjs/eslint-module": 3.0.2
+    "@nuxtjs/eslint-module": 3.1.0
     "@nuxtjs/google-analytics": 2.4.0
     "@nuxtjs/markdownit": 2.0.0
     "@nuxtjs/pwa": 3.3.5
