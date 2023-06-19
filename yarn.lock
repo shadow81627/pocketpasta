@@ -2202,9 +2202,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/content@npm:1.15.0":
-  version: 1.15.0
-  resolution: "@nuxt/content@npm:1.15.0"
+"@nuxt/content@npm:1.15.1":
+  version: 1.15.1
+  resolution: "@nuxt/content@npm:1.15.1"
   dependencies:
     "@lokidb/full-text-search": ^2.1.0
     "@lokidb/loki": ^2.1.0
@@ -2247,7 +2247,7 @@ __metadata:
     unist-builder: ^2.0.3
     ws: ^7.4.3
     xml2js: ^0.4.23
-  checksum: 7eadcd4707a810ee3bcd2618ba8b7f9213773cd78cb73c3f50966958857b1e851f73ec48d6cbafcd2d23168caabd9b89558f6cc23a632d051e781825094ce7bc
+  checksum: 3d7e1af85dce5af0e5e041634029b20c1fc0223cdecdf6029322d6da2f81118539fe57802e721ba4e414e13788777e895a83329795acf6fd0352e19addc33dff
   languageName: node
   linkType: hard
 
@@ -17564,7 +17564,7 @@ __metadata:
     "@dansmaculotte/nuxt-security": 0.0.5
     "@lhci/cli": 0.6.1
     "@mdi/js": 6.4.95
-    "@nuxt/content": 1.15.0
+    "@nuxt/content": 1.15.1
     "@nuxt/image": 0.6.0
     "@nuxtjs/auth": 4.9.1
     "@nuxtjs/auth-next": 5.0.0-1624817847.21691f1
