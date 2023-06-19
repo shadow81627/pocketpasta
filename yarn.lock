@@ -2548,22 +2548,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxtjs/auth-next@npm:5.0.0-1624817847.21691f1":
-  version: 5.0.0-1624817847.21691f1
-  resolution: "@nuxtjs/auth-next@npm:5.0.0-1624817847.21691f1"
+"@nuxtjs/auth-next@npm:5.0.0-1667386184.dfbbb54":
+  version: 5.0.0-1667386184.dfbbb54
+  resolution: "@nuxtjs/auth-next@npm:5.0.0-1667386184.dfbbb54"
   dependencies:
-    "@nuxtjs/axios": ^5.13.0
-    axios: ^0.21.1
-    body-parser: ^1.19.0
+    "@nuxtjs/axios": ^5.13.6
+    axios: ^0.26.1
+    body-parser: ^1.19.2
     consola: ^2.15.3
-    cookie: ^0.4.1
-    defu: ^3.2.2
+    cookie: ^0.4.2
+    defu: ^5.0.1
     hasha: ^5.2.2
     jwt-decode: ^3.1.2
     requrl: ^3.0.2
   peerDependencies:
     vue: "*"
-  checksum: 36ac5e399ecc6a007685d5a8012a392e0934db3f0d66e65bcab380efb9eec3914cac92706f200383ad23bc601401434b5ca212da5c8489373c537eb9f2642750
+  checksum: 610a98d0673106d3b031cb36f145b0db2349880e63ac4752c1a35def508c734e8ef7c99a90d5dcac26edfad4d9a3c4b46e1b81190dcaa22974d0950277a04091
   languageName: node
   linkType: hard
 
@@ -2583,7 +2583,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxtjs/axios@npm:5.13.6, @nuxtjs/axios@npm:^5.13.0, @nuxtjs/axios@npm:^5.9.5":
+"@nuxtjs/axios@npm:5.13.6, @nuxtjs/axios@npm:^5.13.6, @nuxtjs/axios@npm:^5.9.5":
   version: 5.13.6
   resolution: "@nuxtjs/axios@npm:5.13.6"
   dependencies:
@@ -5262,6 +5262,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"axios@npm:^0.26.1":
+  version: 0.26.1
+  resolution: "axios@npm:0.26.1"
+  dependencies:
+    follow-redirects: ^1.14.8
+  checksum: d9eb58ff4bc0b36a04783fc9ff760e9245c829a5a1052ee7ca6013410d427036b1d10d04e7380c02f3508c5eaf3485b1ae67bd2adbfec3683704745c8d7a6e1a
+  languageName: node
+  linkType: hard
+
 "babel-eslint@npm:10.1.0, babel-eslint@npm:^10.1.0":
   version: 10.1.0
   resolution: "babel-eslint@npm:10.1.0"
@@ -5515,7 +5524,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"body-parser@npm:1.20.1, body-parser@npm:^1.19.0":
+"body-parser@npm:1.20.1, body-parser@npm:^1.19.0, body-parser@npm:^1.19.2":
   version: 1.20.1
   resolution: "body-parser@npm:1.20.1"
   dependencies:
@@ -7420,7 +7429,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cookie@npm:^0.4.0, cookie@npm:^0.4.1":
+"cookie@npm:^0.4.0, cookie@npm:^0.4.1, cookie@npm:^0.4.2":
   version: 0.4.2
   resolution: "cookie@npm:0.4.2"
   checksum: a00833c998bedf8e787b4c342defe5fa419abd96b32f4464f718b91022586b8f1bafbddd499288e75c037642493c83083da426c6a9080d309e3bd90fd11baa9b
@@ -8322,7 +8331,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"defu@npm:^5.0.0":
+"defu@npm:^5.0.0, defu@npm:^5.0.1":
   version: 5.0.1
   resolution: "defu@npm:5.0.1"
   checksum: f65556c2e8aa7789080f04c1d52fd7188d8258d9bc7f673e5bedc6be33eb6150f41844ac96aec99c798e47eb9beb97dae03c24edd73d3ddc643e4c7c72124606
@@ -10447,7 +10456,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"follow-redirects@npm:^1.0.0, follow-redirects@npm:^1.14.0":
+"follow-redirects@npm:^1.0.0, follow-redirects@npm:^1.14.0, follow-redirects@npm:^1.14.8":
   version: 1.15.2
   resolution: "follow-redirects@npm:1.15.2"
   peerDependenciesMeta:
@@ -17567,7 +17576,7 @@ __metadata:
     "@nuxt/content": 1.15.0
     "@nuxt/image": 0.6.0
     "@nuxtjs/auth": 4.9.1
-    "@nuxtjs/auth-next": 5.0.0-1624817847.21691f1
+    "@nuxtjs/auth-next": 5.0.0-1667386184.dfbbb54
     "@nuxtjs/axios": 5.13.6
     "@nuxtjs/color-mode": 2.1.1
     "@nuxtjs/eslint-config": 7.0.0
