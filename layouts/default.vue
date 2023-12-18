@@ -1,9 +1,8 @@
 <template>
-  <v-app id="inspire" clipped-left>
+  <v-app clipped-left>
     <v-navigation-drawer
       id="navigation-drawer"
       v-model="drawer"
-      app
       disable-resize-watcher
       class="hidden-print-only"
     >
@@ -26,7 +25,12 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-    <v-app-bar app fixed class="hidden-print-only" height="64" xcolor="#59ecc0">
+    <v-app-bar
+      class="hidden-print-only"
+      height="64"
+      xcolor="#59ecc0"
+      :order="-1"
+    >
       <v-app-bar-nav-icon
         id="app-bar-nav-icon"
         aria-label="menu"
@@ -36,15 +40,14 @@
         <v-icon v-else icon="$menu"></v-icon>
       </v-app-bar-nav-icon>
       <v-avatar width="32" height="32" tile>
-        <!-- <v-img
-          :src="$icon(32)"
-          :srcset="`${$icon(32)} 1x, ${$icon(64)} 2x`"
+        <v-img
+          src="/favicon.ico"
           width="32"
           height="32"
           alt="PocketPasta"
           contain
           onerror="javascript:this.style.display = 'none'"
-        /> -->
+        />
       </v-avatar>
 
       <v-toolbar-title>
@@ -52,7 +55,14 @@
       </v-toolbar-title>
       <v-spacer />
     </v-app-bar>
-    <v-main class="pb-0">
+    <v-main
+      class="pb-0"
+      style="padding-top: 64px"
+      role="main"
+      itemprop="mainContentOfPage"
+      itemscope
+      itemtype="https://schema.org/WebPageElement"
+    >
       <slot style="min-height: 100vh"></slot>
     </v-main>
   </v-app>
