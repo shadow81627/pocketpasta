@@ -1,0 +1,36 @@
+name: Node
+
+on:
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  main:
+    runs-on: ubuntu-18.04
+
+    steps:
+      - name: Checkout 🛎
+        uses: actions/checkout@v2.3.5
+
+      - name: Setup node env 🏗
+        uses: actions/setup-node@v2.4.1
+        with:
+          cache: yarn
+
+      - name: Install dependencies 👨🏻‍💻
+        run: yarn install
+
+      - name: Lint ✨
+        run: yarn run lint
+
+      - name: Build 🔨
+        run: yarn run build
+
+      # - name: Test 🧪
+      #   run: yarn run test:e2e
+
+      # - name: Lighthouse 💡
+      #   run: yarn run lhci:autorun
+      #   env:
+      #     LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
