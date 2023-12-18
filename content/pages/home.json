@@ -1,0 +1,8 @@
+{
+  "icon": "carbon:home",
+  "name": "Home",
+  "route": "index",
+  "show_tab": true,
+  "show_footer": true,
+  "pos": "1/1"
+}
