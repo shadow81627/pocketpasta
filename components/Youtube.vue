@@ -5,6 +5,7 @@
       position: relative;
       overflow: hidden;
       width: 100%;
+      background-size: cover;
     "
     :style="{
       backgroundImage: `url(https://i.ytimg.com/vi/${videoId}/maxresdefault.jpg)`,
