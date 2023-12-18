@@ -10,7 +10,7 @@
         <v-list-item
           v-for="item in items"
           :key="item.name"
-          :to="item.route"
+          :to="{ name: item.route }"
           exact
           class="text-decoration-none"
         >
@@ -71,6 +71,23 @@
 
 <script>
 export default {
+  async setup() {
+    const { data: items } = await useAsyncData(
+      "layout-pages",
+      () => queryContent("pages").find(),
+      {
+        // server: false,
+        transform(data) {
+          const items = data.map((item) => ({
+            ...item,
+            pos: fractionToDecimal(item.pos),
+          }));
+          return useSortBy(items, ["show_tab", "pos"]);
+        },
+      },
+    );
+    return { items };
+  },
   data() {
     return {
       loading: true,
@@ -95,42 +112,6 @@ export default {
       ],
       link: [...i18nSeo.link],
     };
-  },
-  computed: {
-    items() {
-      return [
-        {
-          icon: "carbon:home",
-          name: "Home",
-          route: "/",
-        },
-        // {
-        //   icon: "$book",
-        //   text: "layout.navigation.recipes",
-        //   route: { name: "recipes" },
-        // },
-        // {
-        //   icon: "$store",
-        //   text: "layout.navigation.products",
-        //   route: { name: "products" },
-        // },
-        // {
-        //   // icon: mdiClipboardListOutline,
-        //   text: "Shopping List",
-        //   route: { name: "shoppinglist" },
-        // },
-        // {
-        //   icon: "$calendar-check",
-        //   text: "Tasks",
-        //   route: { name: "tasks" },
-        // },
-        // {
-        //   icon: "$settings",
-        //   text: "layout.navigation.settings",
-        //   route: { name: "settings" },
-        // },
-      ];
-    },
   },
   mounted() {
     if (process.client) {
