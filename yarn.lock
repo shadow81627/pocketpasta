@@ -1792,6 +1792,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@fastify/accept-negotiator@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "@fastify/accept-negotiator@npm:1.1.0"
+  checksum: 1cb9a298c992b812869158ddc6093557a877b30e5f77618a7afea985a0667c50bc7113593bf0f7f9dc9b82b94c16e8ab127a0afc3efde6677fd645539f6d08e5
+  languageName: node
+  linkType: hard
+
 "@fastify/busboy@npm:^2.0.0":
   version: 2.1.0
   resolution: "@fastify/busboy@npm:2.1.0"
@@ -2355,6 +2362,28 @@ __metadata:
   bin:
     devtools: cli.mjs
   checksum: 57b702769bab025f154daff7e5ac177b043ad0e9e5debcef54ee57a2fb6249a582380ad584a0293649971ae5aadc176711f223f91057fb6809cdc31fb1fb468d
+  languageName: node
+  linkType: hard
+
+"@nuxt/image@npm:1.1.0":
+  version: 1.1.0
+  resolution: "@nuxt/image@npm:1.1.0"
+  dependencies:
+    "@nuxt/kit": "npm:^3.8.2"
+    consola: "npm:^3.2.3"
+    defu: "npm:^6.1.3"
+    h3: "npm:^1.9.0"
+    image-meta: "npm:^0.2.0"
+    ipx: "npm:^2.0.2"
+    node-fetch-native: "npm:^1.4.1"
+    ohash: "npm:^1.1.3"
+    pathe: "npm:^1.1.1"
+    std-env: "npm:^3.5.0"
+    ufo: "npm:^1.3.2"
+  dependenciesMeta:
+    ipx:
+      optional: true
+  checksum: 218272acd0408f0113a5addd350187edc9729cca225a3637291f35b117f862b50162463b0bf84b09781f1102cee983143d353c13828d0bb26b67ef0081b1e525
   languageName: node
   linkType: hard
 
@@ -4468,7 +4497,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"commander@npm:^2.20.0":
+"commander@npm:^2.20.0, commander@npm:^2.20.3":
   version: 2.20.3
   resolution: "commander@npm:2.20.3"
   checksum: 74c781a5248c2402a0a3e966a0a2bba3c054aad144f5c023364be83265e796b20565aa9feff624132ff629aa64e16999fa40a743c10c12f7c61e96a794b99288
@@ -4665,6 +4694,13 @@ __metadata:
   bin:
     cssesc: bin/cssesc
   checksum: 6bcfd898662671be15ae7827120472c5667afb3d7429f1f917737f3bf84c4176003228131b643ae74543f17a394446247df090c597bb9a728cce298606ed0aa7
+  languageName: node
+  linkType: hard
+
+"cssfilter@npm:0.0.10":
+  version: 0.0.10
+  resolution: "cssfilter@npm:0.0.10"
+  checksum: 478a227a616fb6e9bb338eb95f690df141b86231ec737cbea574484f31a09a51db894b4921afc4987459dae08d584355fd689ff2a7a7c7a74de4bb4c072ce553
   languageName: node
   linkType: hard
 
@@ -6810,6 +6846,32 @@ __metadata:
   languageName: node
   linkType: hard
 
+"ipx@npm:^2.0.2":
+  version: 2.0.2
+  resolution: "ipx@npm:2.0.2"
+  dependencies:
+    "@fastify/accept-negotiator": "npm:^1.1.0"
+    citty: "npm:^0.1.4"
+    consola: "npm:^3.2.3"
+    defu: "npm:^6.1.3"
+    destr: "npm:^2.0.2"
+    etag: "npm:^1.8.1"
+    h3: "npm:^1.8.2"
+    image-meta: "npm:^0.2.0"
+    listhen: "npm:^1.5.5"
+    ofetch: "npm:^1.3.3"
+    pathe: "npm:^1.1.1"
+    sharp: "npm:^0.32.6"
+    svgo: "npm:^3.0.3"
+    ufo: "npm:^1.3.1"
+    unstorage: "npm:^1.9.0"
+    xss: "npm:^1.0.14"
+  bin:
+    ipx: bin/ipx.mjs
+  checksum: e867f6b899c7c452878fe2c37e8428b2e7532827cafbb795404d9f1631e5ca0733132dda21e4eea9208d3bb1a30a864d02b7cd3fef945e280c0a0c86ac935ef1
+  languageName: node
+  linkType: hard
+
 "iron-webcrypto@npm:^1.0.0":
   version: 1.0.0
   resolution: "iron-webcrypto@npm:1.0.0"
@@ -8862,6 +8924,7 @@ __metadata:
   resolution: "pocketpasta@workspace:."
   dependencies:
     "@nuxt/devtools": "npm:latest"
+    "@nuxt/image": "npm:1.1.0"
     "@nuxtjs/eslint-config-typescript": "npm:12.1.0"
     "@types/eslint": "npm:^8"
     "@typescript-eslint/parser": "npm:6.14.0"
@@ -10614,7 +10677,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"svgo@npm:^3.0.5":
+"svgo@npm:^3.0.3, svgo@npm:^3.0.5":
   version: 3.1.0
   resolution: "svgo@npm:3.1.0"
   dependencies:
@@ -11209,7 +11272,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"unstorage@npm:^1.10.1":
+"unstorage@npm:^1.10.1, unstorage@npm:^1.9.0":
   version: 1.10.1
   resolution: "unstorage@npm:1.10.1"
   dependencies:
@@ -12059,6 +12122,18 @@ __metadata:
   version: 4.0.0
   resolution: "xml-name-validator@npm:4.0.0"
   checksum: c1bfa219d64e56fee265b2bd31b2fcecefc063ee802da1e73bad1f21d7afd89b943c9e2c97af2942f60b1ad46f915a4c81e00039c7d398b53cf410e29d3c30bd
+  languageName: node
+  linkType: hard
+
+"xss@npm:^1.0.14":
+  version: 1.0.14
+  resolution: "xss@npm:1.0.14"
+  dependencies:
+    commander: "npm:^2.20.3"
+    cssfilter: "npm:0.0.10"
+  bin:
+    xss: bin/xss
+  checksum: 0a9b4d71781c8418a0327e86e5991dffe8d8b58d465d391ea74e3fa102168d1aa70a438c85d6af90e76f457bbb6041350b700bff7ad10077c5d816512f10ee0d
   languageName: node
   linkType: hard
 
