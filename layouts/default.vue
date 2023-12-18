@@ -6,7 +6,11 @@
       disable-resize-watcher
       class="hidden-print-only"
     >
-      <v-list dense :role="undefined">
+      <v-list
+        v-if="Array.isArray(items) && items.length"
+        dense
+        :role="undefined"
+      >
         <v-list-item
           v-for="item in items"
           :key="item.name"
@@ -32,6 +36,7 @@
       :order="-1"
     >
       <v-app-bar-nav-icon
+        v-if="Array.isArray(items) && items.length"
         id="app-bar-nav-icon"
         aria-label="menu"
         @click.stop="drawer = !drawer"
@@ -82,7 +87,7 @@ export default {
             ...item,
             pos: fractionToDecimal(item.pos),
           }));
-          return useSortBy(items, ["show_tab", "pos"]);
+          return useSortBy(items, ["pos"]);
         },
       },
     );

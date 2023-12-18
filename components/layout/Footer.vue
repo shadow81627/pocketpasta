@@ -5,10 +5,31 @@
         <v-col cols="auto">
           <v-card flat color="transparent">
             <v-card-text>
-              <nuxt-link to="/">Home</nuxt-link> |
-              <nuxt-link to="/about">About</nuxt-link> |
-              <nuxt-link to="/contact">Contact</nuxt-link> |
-              <nuxt-link to="/newsletter">Newsletter</nuxt-link>
+              <v-list
+                v-if="Array.isArray(items) && items.length"
+                dense
+                :role="undefined"
+                class="d-flex"
+              >
+                <v-list-item
+                  v-for="item in items"
+                  :key="item.name"
+                  :to="{ name: item.route }"
+                  exact
+                  :active="false"
+                  class="text-decoration-none"
+                >
+                  <template #prepend>
+                    <v-list-item-action style="margin-right: 8px">
+                      <BaseIcon :icon="item.icon"></BaseIcon>
+                    </v-list-item-action>
+                  </template>
+                  <v-list-item-title
+                    style="font-size: 16px; line-height: 1.4"
+                    >{{ item.name }}</v-list-item-title
+                  >
+                </v-list-item>
+              </v-list>
             </v-card-text>
           </v-card>
         </v-col>
@@ -65,16 +86,32 @@
 
 <script>
 export default defineNuxtComponent({
-  setup() {
+  async setup() {
     const config = useRuntimeConfig();
 
     const version = config.public.VERSION;
     const commit = config.public.COMMIT;
 
+    const { data: items } = await useAsyncData(
+      "layout-footer-pages",
+      () => queryContent("layout/footer").find(),
+      {
+        // server: false,
+        transform(data) {
+          const items = data.map((item) => ({
+            ...item,
+            pos: fractionToDecimal(item.pos),
+          }));
+          return useSortBy(items, ["pos"]);
+        },
+      },
+    );
+
     return {
       utc: false,
       version,
       commit,
+      items,
     };
   },
   methods: {
