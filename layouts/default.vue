@@ -64,6 +64,7 @@
       itemtype="https://schema.org/WebPageElement"
     >
       <slot style="min-height: 100vh"></slot>
+      <LayoutFooter></LayoutFooter>
     </v-main>
   </v-app>
 </template>

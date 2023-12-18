@@ -1,13 +1,13 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import vuetify, { transformAssetUrls } from "vite-plugin-vuetify";
-import { version } from "./package";
+import pkg from "./package";
 
 const env = {
   // HOST,
   // PORT,
   // BASE_URL,
   // API_URL,
-  VERSION: version,
+  VERSION: pkg.version,
   COMMIT:
     process.env.npm_package_gitHead || process.env.VERCEL_GITHUB_COMMIT_SHA,
   DATE_GENERATED: new Date().toISOString(),
@@ -25,6 +25,12 @@ const env = {
 
 export default defineNuxtConfig({
   devtools: { enabled: true },
+
+  publicRuntimeConfig: {
+    public: {
+      ...env,
+    },
+  },
 
   build: {
     transpile: ["vuetify"],
