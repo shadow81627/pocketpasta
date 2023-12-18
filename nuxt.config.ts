@@ -5,7 +5,7 @@ export default defineNuxtConfig({
   build: {
     transpile: ["vuetify"],
   },
-  modules: [],
+  modules: ["nuxt-icon"],
   vite: {
     vue: {
       template: {
