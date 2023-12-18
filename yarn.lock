@@ -7693,6 +7693,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"mailgo@npm:0.12.2":
+  version: 0.12.2
+  resolution: "mailgo@npm:0.12.2"
+  checksum: a990bd830c9e5dce962792ae13013f4b4bb94fad37028fc5bb4e3be2b6e34061077cbec9f7c8c146b000e82c51596f1ae0c99e534327315be680e33c49b98786
+  languageName: node
+  linkType: hard
+
 "make-dir@npm:^3.1.0":
   version: 3.1.0
   resolution: "make-dir@npm:3.1.0"
@@ -8933,6 +8940,7 @@ __metadata:
     eslint: "npm:8.56.0"
     eslint-config-prettier: "npm:9.1.0"
     eslint-plugin-prettier: "npm:5.0.1"
+    mailgo: "npm:0.12.2"
     nuxt: "npm:3.8.2"
     nuxt-icon: "npm:0.6.7"
     prettier: "npm:3.1.1"

@@ -46,6 +46,7 @@
   },
   "packageManager": "yarn@4.0.2",
   "dependencies": {
-    "@nuxt/image": "1.1.0"
+    "@nuxt/image": "1.1.0",
+    "mailgo": "0.12.2"
   }
 }

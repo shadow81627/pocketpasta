@@ -33,7 +33,7 @@
 </template>
 
 <script>
-// import mailgo from "mailgo";
+import mailgo from "mailgo";
 export default {
   props: {
     items: {
@@ -42,11 +42,11 @@ export default {
       default: () => [],
     },
   },
-  // created() {
-  //   if (process.client) {
-  //     mailgo();
-  //   }
-  // },
+  created() {
+    if (process.client) {
+      mailgo();
+    }
+  },
   methods: {
     stripped(href = "") {
       return href.replace(/^mailto:/, "").replace(/^tel:/, "");
