@@ -73,8 +73,8 @@
 export default {
   async setup() {
     const { data: items } = await useAsyncData(
-      "layout-pages",
-      () => queryContent("pages").find(),
+      "layout-sidebar-pages",
+      () => queryContent("layout/sidebar").find(),
       {
         // server: false,
         transform(data) {
