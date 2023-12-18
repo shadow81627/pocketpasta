@@ -46,7 +46,7 @@
           </div>
           <h1 class="text-centers">PocketPasta</h1>
           <p class="lead font-weight-normal">
-            {{ "landing.banner.subheading" }}
+            Eat spagetti to forgetti your regretti
           </p>
         </div>
         <UnsplashCredit style="position: absolute; right: 0; bottom: 0" />
