@@ -36,7 +36,23 @@ export default defineNuxtConfig({
     transpile: ["vuetify"],
   },
 
-  modules: ["nuxt-icon", "@vite-pwa/nuxt", "@nuxt/image"],
+  modules: [
+    "nuxt-icon",
+    "@vite-pwa/nuxt",
+    "@nuxt/image",
+    "@nuxt/content",
+    "nuxt-lodash",
+    "@unocss/nuxt",
+  ],
+
+  unocss: {
+    typography: true,
+    webFonts: {
+      fonts: {
+        sans: "Roboto",
+      },
+    },
+  },
 
   pwa: {
     icons: [
