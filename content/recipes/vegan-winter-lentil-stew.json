@@ -1,0 +1,90 @@
+{
+  "@type": "Recipe",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingCount": "141",
+    "ratingValue": "4.91"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Beth - Budget Bytes"
+  },
+  "cookTime": "PT50M",
+  "createdAt": "2020-10-08T05:59:03.068Z",
+  "datePublished": "2018-10-18T11:51:32+00:00",
+  "description": "A rich and hearty medley of vegetables, lentils, and herbs makes this freezer-friendly Vegan Winter Lentil Stew the perfect cold-weather comfort food. ",
+  "image": [
+    "https://www.budgetbytes.com/wp-content/uploads/2018/10/Vegan-WInter-Lentil-Stew-dip-bread.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2018/10/Vegan-WInter-Lentil-Stew-dip-bread-500x500.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2018/10/Vegan-WInter-Lentil-Stew-dip-bread-500x375.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2018/10/Vegan-WInter-Lentil-Stew-dip-bread-480x270.jpg"
+  ],
+  "keywords": "Freezer Friendly, Vegan, Vegetarian",
+  "name": "Vegan Winter Lentil Stew",
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "calories": "249.2 kcal",
+    "carbohydrateContent": "45.91 g",
+    "fatContent": "3.99 g",
+    "fiberContent": "7.86 g",
+    "proteinContent": "9.88 g",
+    "servingSize": "1.5 Cups",
+    "sodiumContent": "964.61 mg"
+  },
+  "prepTime": "PT10M",
+  "recipeIngredient": [
+    "2 Tbsp olive oil ($0.32)",
+    "1 yellow onion ($0.32)",
+    "4 cloves garlic ($0.32)",
+    "4 carrots (about 1/2 lb.) ($0.45)",
+    "4 stalks celery ($0.75)",
+    "2 lbs potatoes ($0.70)",
+    "1 cup brown lentils ($0.49)",
+    "1 tsp dried rosemary ($0.10)",
+    "1/2 tsp dried thyme ($0.05)",
+    "2 Tbsp Dijon mustard ($0.09)",
+    "1.5 Tbsp soy sauce ($0.09)",
+    "1 Tbsp brown sugar ($0.04)",
+    "6 cups vegetable broth ($0.78)",
+    "1 cup frozen peas ($0.38)"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "Dice the onion and mince the garlic. Add the olive oil, onion, and garlic to a large soup pot and begin to sauté over medium heat."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "While the onion and garlic are sautéing, dice the celery, then add it to the pot and continue to sauté. As the celery, onion, and garlic are sautéing, peel and chop the carrots into half rounds. Add the carrots to the pot and continue to sauté."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "As the onion, garlic, celery, and carrots are sautéing, peel and cube the potatoes into 3/4 to 1-inch pieces. Add the cubed potatoes to the pot along with the lentils, rosemary, thyme, Dijon, soy sauce, brown sugar, and vegetable broth."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Briefly stir the ingredients to combine, then place a lid on the pot, turn the heat up to high, and bring the stew up to a boil. Once it reaches a boil, turn the heat down to low and let it simmer for 30 minutes, stirring occasionally."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Toward the end of the simmer time, when the potatoes are very soft, begin to mash the potatoes a bit as you stir. This will help thicken the stew."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Finally, after 30 minutes, stir in the frozen peas and allow them to heat through. Taste the stew and add salt if needed (this will depend on the salt content of your broth, I did not add any extra). Serve hot and enjoy!"
+    }
+  ],
+  "recipeYield": "8",
+  "sameAs": ["https://www.budgetbytes.com/vegan-winter-lentil-stew/"],
+  "totalTime": "PT60M",
+  "updatedAt": "2020-10-08T05:59:03.068Z",
+  "video": {
+    "@type": "VideoObject",
+    "contentUrl": "https://embed.mediavine.com/videos/lltqqhio4tb0xrwsncyn",
+    "description": "A rich and hearty medley of vegetables, lentils, and herbs makes this freezer-friendly Vegan Winter Lentil Stew the perfect cold-weather comfort food.",
+    "duration": "PT55S",
+    "name": "Vegan Winter Lentil Stew",
+    "thumbnailUrl": "https://mediavine-res.cloudinary.com/image/upload/s--pHBKjjCC--/c_limit,f_auto,fl_lossy,h_1080,q_auto,w_1920/v1550278247/moxkfse5hlw5xf2g8sly.jpg",
+    "uploadDate": "2019-02-13T22:00:26+00:00"
+  }
+}

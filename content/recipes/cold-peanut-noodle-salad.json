@@ -1,0 +1,85 @@
+{
+  "@type": "Recipe",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingCount": "52",
+    "ratingValue": "4.91"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Beth - Budget Bytes"
+  },
+  "cookTime": "PT10M",
+  "createdAt": "2020-10-08T05:29:59.048Z",
+  "datePublished": "2019-06-04T15:27:54+00:00",
+  "description": "This Cold Peanut Noodle Salad with homemade peanut lime dressing is the perfect meal prep for summer! No reheating necessary.",
+  "image": [
+    "https://www.budgetbytes.com/wp-content/uploads/2019/06/Cold-Peanut-Noodle-Salad-add-dressing.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2019/06/Cold-Peanut-Noodle-Salad-add-dressing-500x500.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2019/06/Cold-Peanut-Noodle-Salad-add-dressing-500x375.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2019/06/Cold-Peanut-Noodle-Salad-add-dressing-480x270.jpg"
+  ],
+  "keywords": "cold lunch, Lunch Meal Prep, Summer Recipes",
+  "name": "Cold Peanut Noodle Salad",
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "calories": "637.13 kcal",
+    "carbohydrateContent": "65.73 g",
+    "fatContent": "34.55 g",
+    "fiberContent": "14 g",
+    "proteinContent": "19.65 g",
+    "servingSize": "2 Cups",
+    "sodiumContent": "405.95 mg"
+  },
+  "prepTime": "PT20M",
+  "recipeIngredient": [
+    "3 Tbsp natural-style peanut butter ($0.21)",
+    "1 Tbsp brown sugar ($0.04)",
+    "1 clove garlic, minced ($0.08)",
+    "1/2 tsp grated fresh ginger ($0.05)",
+    "1 medium lime, juiced (2 Tbsp juice) ($0.69)",
+    "2 tsp soy sauce ($0.08)",
+    "1/4 cup neutral oil* ($0.82)",
+    "8 oz. whole wheat spaghetti ($0.55)",
+    "4 cups finely shredded red cabbage ($1.12)",
+    "2 carrots ($0.22)",
+    "1/2 bunch cilantro (about 1/2 cup chopped) ($0.75)",
+    "4 green onions (about 1/2 cup sliced) ($0.45)",
+    "1/2 cup peanuts, chopped ($0.24)"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "To make the peanut lime dressing, combine all the ingredients in a bowl or blender. Whisk or blend until smooth. Set the dressing aside."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Bring a pot of water to a boil for the whole wheat spaghetti. Break the spaghetti in half to make it easier to stir into the salad ingredients later. Once the water is boiling, add the spaghetti, and continue to boil until the pasta is tender. Drain in a colander and rinse it briefly with cold water to cool it off. Let the pasta drain well."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Meanwhile, shred the cabbage as finely as possible using either a knife or the shredding attachment of a food processor. Shred the carrots using a large-holed cheese grater. Roughly chop the cilantro and peanuts. Slice the green onion."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Combine the cooled and well drained pasta in a large bowl with the cabbage, carrots, cilantro, green onion, and peanuts. Toss the salad until the ingredients are evenly combined."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Serve the salad and peanut lime dressing immediately, or divide the undressed salad between four containers (about 2 cups each) and divide the dressing between four smaller containers (about 2 Tbsp or slightly more each). Refrigerate up to 4-5 days."
+    }
+  ],
+  "recipeYield": "4",
+  "sameAs": ["https://www.budgetbytes.com/cold-peanut-noodle-salad/"],
+  "totalTime": "PT30M",
+  "updatedAt": "2020-10-08T05:29:59.048Z",
+  "video": {
+    "@type": "VideoObject",
+    "contentUrl": "https://embed.mediavine.com/videos/ro1wcw0rfxlmtrarodeh",
+    "description": "This Cold Peanut Noodle Salad with homemade peanut lime dressing is the perfect meal prep for summer! No reheating necessary.",
+    "duration": "PT61S",
+    "name": "Cold Peanut Noodle Salad",
+    "thumbnailUrl": "https://mediavine-res.cloudinary.com/image/upload/s--_Bxpe5UQ--/c_limit,f_auto,fl_lossy,h_1080,q_auto,w_1920/v1568133275/b91xk8plpjenpzxgmyrd.jpg",
+    "uploadDate": "2019-09-10T16:34:22+00:00"
+  }
+}

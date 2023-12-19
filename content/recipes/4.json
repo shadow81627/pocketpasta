@@ -1,0 +1,44 @@
+{
+  "@context": "http://schema.org",
+  "@type": "Recipe",
+  "name": "Roast Taters",
+  "createdAt": "2020-10-11T23:19:05.204Z",
+  "updatedAt": "2020-10-11T23:19:05.204Z",
+  "image": "https://images.unsplash.com/photo-1586965858003-397da6484df9?ixid=eyJhcHBfaWQiOjEyMDd9",
+  "suitableForDiet": "https://schema.org/VeganDiet",
+  "author": {
+    "@type": "Person",
+    "name": "Kandice Long"
+  },
+  "datePublished": "2019-06-10",
+  "description": "If you’ve ever wondered how to trick a pasta-loving kid (or perhaps even a carb-obsessed adult) into eating more vegetables, then a “Roast Taters” may just be the very green answer to your prayers. This virtually carb-free creation consists of seven layers of vitamin-rich veggies including a base of Roast Taters, layers of sliced Roast Taters and slivers of red Roast Taters.",
+  "prepTime": "PT10M",
+  "cookTime": "PT45M",
+  "totalTime": "PT55M",
+  "keywords": "Roast Taters",
+  "recipeYield": "2 servings",
+  "recipeCategory": "Dinner",
+  "recipeIngredient": ["2 potatoes", "1/2 cup olive oil", "salt"],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "Preheat the oven to 180ºC - 220ºC. Peel and chop the potatoes into chunks, roughly the size of golf balls."
+    },
+    {
+      "@type": "HowToStep",
+      "text": " Parboil the potatoes in a pan of boiling, salted water for 10 minutes, drain, place in a plastic container with some oil and s&p (enough to coat the taters) shaking them to chuff up the edges."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Place some baking paper in a large roasting tray & add some unpeeled garlic, herbs (sage or rosemary leaves are good) if you like."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Take your roasted vege to the next level by adding a couple of extra flavours into the mix. A dash of balsamic or red wine vinegar, from a spray-bottle, in the final few minutes of roasting will deepen the flavour and add a deliciously subtle tang. Fragrant woody herbs work particularly well with roast potatoes. Sage, rosemary, thyme and bay leaves are brilliant choices. Pair with garlic and other citrus flavours such as shavings of lemon peel or mandarin/orange."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Place the tray in the oven and cook for 45 minutes, or until golden and crisp."
+    }
+  ]
+}

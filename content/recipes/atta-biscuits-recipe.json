@@ -1,0 +1,95 @@
+{
+  "@type": "Recipe",
+  "author": "Yaman Agarwal",
+  "createdAt": "2020-10-11T23:19:05.204Z",
+  "description": "Rejoice all your fond memories with this Traditional Atta Biscuits.. Today, lets make the same in a Cooker, Yeah! Its easy to make, and delicious to eat.. Another recipe in our Eggless Baking Without Oven Series! These crunchy biscuits, made with atta or wheat flour are healthy(Eh, Oh! Ofcourse healthier than the Maida ones), and the flavor of the biscuits made with ghee is fantabulous. Awesomelicious Biscuits!",
+  "image": "https://i.ytimg.com/vi/Uta78WwtRXQ/maxresdefault.jpg",
+  "keywords": "eggless baking, eggless baking without oven, atta biscuit recipe, atta cookies, eggless cookies, eggless biscuits, biscuit recipe without oven, biscuits in cooker, biscuit recipe, how to make cookies at home, how to make biscuits at home, how to make biscuits in cooker",
+  "name": "Atta Biscuits Recipe - In Cooker - Eggless Baking Without Oven",
+  "recipeIngredient": [
+    "2 finely chopped Onions",
+    "1/4 cup Coconut",
+    "1/4 cup roughly diced Potato",
+    "1/4 cup roughly diced Carrots",
+    "1/4 cup small florets Cauliflower",
+    "1/4 cup chopped Beans",
+    "50g cubes Paneer",
+    "2 tbsp + as required to shallow fry veggies Oil",
+    "1/2 tspCumin Seeds",
+    "1/4 tsp Asafoetida",
+    "4-5 Curry Leaves",
+    "2 {slit} Green Chilis",
+    "3 + 1 Dry Red Chilis",
+    "2 Bay Leaf",
+    "1/2 tbsp Ginger Garlic Paste",
+    "6 Medium Blended Tomatoes",
+    "as per taste Salt",
+    "1 tsp Kashmiri Red Chili Powder",
+    "1/4 tsp Black Pepper",
+    "1 tsp Amchoor Powder",
+    "1 tsp Garam Masala",
+    "1 tsp Sambhar Masala",
+    "1/4 tsp Sugar",
+    "handful [chopped] Coriander",
+    "1/2 tsp Corn Flour",
+    "1/4 cup {roughly diced} Capsicum",
+    "3 tbsp Coconut Milk",
+    "1 tsp Tadka Garnish : Oil",
+    "1/2 tsp Mustard Seeds",
+    "Split Bengal Gram / Chana Dal- 1/2 tsp",
+    "Split Skinless Black Gram / Dhuli Urad Dal- 1/2 tsp",
+    "2-3 Curry Leaves",
+    "1 Dry Red Chili",
+    "1 tsp {finely chopped} Coriander"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "Take a big pressure cooker or a idli cooker and add in the 2 cups of salt to it. Place a wire rack and a perforated plate. Cover and remove whistle(if using pressure cooker) or loosen whistle(if using idli cooker)."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "In a bowl, mix atta, baking powder, salt, sugar, now break the cold ghee into small pieces and rub that in the atta. Make sure the ghee is very cold and is solidified."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Add in the milk and mix well. Now pop this in the freezer for 10 mins."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Now heat the cooker in med flame, so that while we're ready with the biscuits, the cooker will also be preheated and ready."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Once the dough is cold, sprinkle some atta in a rolling board/working platform. Now shape the dough and make it smooth."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Roll it gently to about 2 cms or as your preference. Traditional ones are very thin like 1 cm. Now cut the biscuits using a knife or a cookie cutter."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Grease a plate or a cake tin with some ghee and place the cookies. Transfer the cake tin to the cooker and bake the cookies for 10 mins in low-med flame."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Keep an eye, some stoves med flame might not be same as mine. Cookies can burn in a matter of few seconds. Keep checking cookies after 7-8 mins."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Once the cookies are baked, let them cool and then munch in!"
+    }
+  ],
+  "sameAs": ["https://cscom-2019.web.app/atta-biscuits-recipe/"],
+  "updatedAt": "2020-10-11T23:19:05.204Z",
+  "video": {
+    "@type": "VideoObject",
+    "contentUrl": "https://www.youtube.com/watch?v=Uta78WwtRXQ",
+    "description": "Rejoice all your fond memories with this Traditional Atta Biscuits.. Today, lets make the same in a Cooker, Yeah! Its easy to make, and delicious to eat.. Another recipe in our Eggless Baking Without Oven Series! These crunchy biscuits, made with atta or wheat flour are healthy(Eh, Oh! Ofcourse healthier than the Maida ones), and the flavor of the biscuits made with ghee is fantabulous. Awesomelicious Biscuits!",
+    "duration": "PT4M13S",
+    "embedUrl": "https://www.youtube.com/embed/Uta78WwtRXQ",
+    "name": "Binging with Babish: Pasta Aglio e Olio from \"Chef\"",
+    "thumbnailUrl": "https://i.ytimg.com/vi/Uta78WwtRXQ/maxresdefault.jpg",
+    "uploadDate": "2014-02-26T00:00:00+00:00"
+  }
+}

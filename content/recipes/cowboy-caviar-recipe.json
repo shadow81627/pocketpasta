@@ -1,0 +1,77 @@
+{
+  "@type": "Recipe",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingCount": "38",
+    "ratingValue": "4.93"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Beth - Budget Bytes"
+  },
+  "createdAt": "2020-10-08T05:30:29.843Z",
+  "datePublished": "2018-07-16T12:34:50+00:00",
+  "description": "Cowboy Caviar is like a cross between a bean salad and fresh salsa with its colorful mix of beans, vegetables, and a fresh lime infused dressing.",
+  "image": [
+    "https://www.budgetbytes.com/wp-content/uploads/2016/07/Cowboy-Caviar-above-1.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2016/07/Cowboy-Caviar-above-1-500x480.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2016/07/Cowboy-Caviar-above-1-500x375.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2016/07/Cowboy-Caviar-above-1-480x270.jpg"
+  ],
+  "keywords": "easy, gluten free, Vegan, Vegetarian",
+  "name": "Cowboy Caviar Recipe",
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "calories": "131.14 kcal",
+    "carbohydrateContent": "19.73 g",
+    "fatContent": "4.53 g",
+    "fiberContent": "6.33 g",
+    "proteinContent": "6.57 g",
+    "servingSize": "1 serving",
+    "sodiumContent": "342.44 mg"
+  },
+  "prepTime": "PT15M",
+  "recipeIngredient": [
+    "1 15oz. can black beans ($0.89 )",
+    "1 15oz. can black eyed peas ($1.09)",
+    "1 bell pepper (any color) ($1.50)",
+    "2 Roma tomatoes ($0.86)",
+    "1 jalapeño ($0.12)",
+    "1/4 red onion ($0.20)",
+    "1/4 bunch fresh cilantro ($0.20)",
+    "2 Tbsp olive oil",
+    "1 fresh lime (2 Tbsp juice) ($0.33)",
+    "1/2 Tbsp balsamic vinegar ($0.10)",
+    "1/2 tsp chili powder* ($0.05)",
+    "1 tsp ground cumin ($0.10)",
+    "1/2 tsp salt ($0.02)",
+    "1/2 tsp sugar ($0.02)"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "Rinse and drain both cans of beans in a colander. Let the excess water drain as you prepare the vegetables."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Finely dice the bell pepper, tomatoes, jalapeño, and red onion. Try to dice the vegetables into pieces that are roughly the same size as the beans. For a less spicy salad, scrape the seeds out of the jalapeño before dicing. Roughly chop the cilantro. Place the drained beans, bell pepper, tomatoes, jalapeño, onion, and cilantro in a large bowl."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "In a small bowl, whisk together the olive oil, 2 Tbsp of juice from the lime, balsamic vinegar, chili powder, cumin, salt, and sugar. Pour the dressing over the salad, then stir until everything is well coated. Serve immediately, or refrigerate until ready to eat."
+    }
+  ],
+  "recipeYield": "10",
+  "sameAs": ["https://www.budgetbytes.com/cowboy-caviar/"],
+  "totalTime": "PT15M",
+  "updatedAt": "2020-10-08T05:30:29.843Z",
+  "video": {
+    "@type": "VideoObject",
+    "contentUrl": "https://embed.mediavine.com/videos/ao9ucpfashdx83o2mcqw",
+    "description": "Cowboy Caviar is like a cross between a bean salad and fresh salsa with its colorful mix of beans, vegetables, and a fresh lime infused dressing.",
+    "duration": "PT54S",
+    "name": "Cowboy Caviar",
+    "thumbnailUrl": "https://mediavine-res.cloudinary.com/image/upload/s--4lPF1v2Y--/c_limit,f_auto,fl_lossy,h_1080,q_auto,w_1920/v1562518809/y0d2e8ke6ypysx9onmsb.jpg",
+    "uploadDate": "2019-07-07T16:59:26+00:00"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "@type": "Recipe",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingCount": "20",
+    "ratingValue": "4.55"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Beth - Budget Bytes"
+  },
+  "cookTime": "PT25M",
+  "createdAt": "2020-10-08T05:53:21.426Z",
+  "datePublished": "2012-09-02T13:38:00+00:00",
+  "description": "A quick and easy spinach tortellini soup full of veggies and a rich tomato broth. It's perfect for freezing, so save some for a rainy day!",
+  "image": [
+    "https://www.budgetbytes.com/wp-content/uploads/2012/09/SpinachTortelliniSoupclose.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2012/09/SpinachTortelliniSoupclose-500x480.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2012/09/SpinachTortelliniSoupclose-500x375.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2012/09/SpinachTortelliniSoupclose-480x270.jpg"
+  ],
+  "name": "Spinach Tortellini Soup",
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "calories": "199.54 kcal",
+    "carbohydrateContent": "30.28 g",
+    "fatContent": "6.78 g",
+    "fiberContent": "3.64 g",
+    "proteinContent": "7.79 g",
+    "servingSize": "1 Serving",
+    "sodiumContent": "788.56 mg"
+  },
+  "prepTime": "PT5M",
+  "recipeIngredient": [
+    "2 Tbsp olive oil ($0.32)",
+    "1 yellow onion ($0.57)",
+    "4 cloves garlic ($0.15)",
+    "1 28oz. can tomato sauce ($1.50)",
+    "1 28oz. can crushed or diced tomatoes ($1.50)",
+    "4 cups vegetable broth ($0.52)",
+    "1.5 tsp dried basil ($0.05)",
+    "1.5 tsp dried oregano ($0.05)",
+    "freshly cracked black pepper ($0.05)",
+    "12 oz. frozen cheese tortellini ($2.99)",
+    "10 oz. frozen spinach ($1.25)",
+    "salt to taste ($0.05)"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "Dice the onion and mince the garlic. Cook both in a large pot along with the olive oil over medium-low heat until they are soft and translucent (about 5 minutes)."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Add the can of tomato sauce, the can of crushed (or diced) tomatoes, and vegetable broth to the pot. Add the basil, oregano, a healthy dose of freshly cracked pepper, and stir to combine. Increase the heat to medium-high and bring up to a simmer (about 10 minutes)."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Add the frozen tortellini and frozen spinach (no need to thaw either one). Cook over medium-high heat, stirring occasionally to break up the frozen spinach. Cook until the heated through, the spinach has completely incorporated, and the tortellini is tender (about 10 minutes). Season to taste with salt, if needed."
+    }
+  ],
+  "recipeYield": "8",
+  "sameAs": ["https://www.budgetbytes.com/spinach-tortellini-soup/"],
+  "totalTime": "PT30M",
+  "updatedAt": "2020-10-08T05:53:21.426Z"
+}

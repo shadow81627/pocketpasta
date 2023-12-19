@@ -1,0 +1,73 @@
+{
+  "@type": "Recipe",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingCount": "19",
+    "ratingValue": "4.85"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Beth - Budget Bytes"
+  },
+  "cookTime": "PT40M",
+  "createdAt": "2020-10-08T05:28:27.398Z",
+  "datePublished": "2016-06-11T13:06:52+00:00",
+  "description": "Chipotle Portobello Oven Fajitas are an easy weeknight dinner, packed with flavor, color, and good-for-you vegetables. They're vegan, too!",
+  "image": [
+    "https://www.budgetbytes.com/wp-content/uploads/2016/06/Chipotle-Portobello-Fajitas-side-1.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2016/06/Chipotle-Portobello-Fajitas-side-1-500x480.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2016/06/Chipotle-Portobello-Fajitas-side-1-500x375.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2016/06/Chipotle-Portobello-Fajitas-side-1-480x270.jpg"
+  ],
+  "name": "Chipotle Portobello Oven Fajitas",
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "calories": "517.5 kcal",
+    "carbohydrateContent": "62.55 g",
+    "fatContent": "27.08 g",
+    "fiberContent": "6.9 g",
+    "proteinContent": "11.23 g",
+    "servingSize": "1 Serving",
+    "sodiumContent": "1087.45 mg"
+  },
+  "prepTime": "PT15M",
+  "recipeIngredient": [
+    "1 Tbsp chili powder* ($0.30)",
+    "1/2 tsp chipotle powder ($0.05)",
+    "1/2 tsp onion powder ($0.05)",
+    "1 tsp cumin ($0.10)",
+    "1/2 tsp garlic powder ($0.05)",
+    "1 tsp sugar** ($0.02)",
+    "1/2 tsp salt ($0.02)",
+    "2 portobello mushroom caps ($2.64)",
+    "2 bell peppers (any color) ($2.94)",
+    "2 yellow onions ($0.69)",
+    "3 Tbsp olive oil ($0.48)",
+    "8 small (6 inch) flour tortillas ($1.16)",
+    "1 avocado ($1.49)",
+    "Handful cilantro (optional) ($0.25)",
+    "1 fresh lime ($0.50)"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "Preheat the oven to 400oF. In a small bowl, stir together all the ingredients for the fajita spice mix"
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Slice the portobellos, bell peppers, and onions into 1/4 inch wide strips. Place the sliced vegetables in a large 9x13 inch casserole dish or on a large baking sheet. Drizzle the olive oil over the vegetables then sprinkle the fajita spice mix over top. Use your hands to toss the vegetables until everything is well coated in oil and spices."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Roast the vegetables in the fully preheated oven for 40 minutes, or until the vegetables are slightly wilted and the edges have a nice brown color. Stir the vegetables half way through the roasting time to make sure everything gets even exposure to the hot air."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "After removing the vegetables from the oven, squeeze fresh lime juice over top. Sprinkle chopped cilantro over the vegetables. To serve the fajitas, scoop a small amount of the roasted vegetables into each tortilla and add a slice of avocado."
+    }
+  ],
+  "recipeYield": "4",
+  "sameAs": ["https://www.budgetbytes.com/chipotle-portobello-oven-fajitas/"],
+  "totalTime": "PT55M",
+  "updatedAt": "2020-10-08T05:28:27.398Z"
+}

@@ -1,0 +1,63 @@
+{
+  "@type": "Recipe",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingCount": "17",
+    "ratingValue": "4.83"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Beth - Budget Bytes"
+  },
+  "cookTime": "PT7M",
+  "createdAt": "2020-10-08T06:01:23.792Z",
+  "datePublished": "2016-05-07T11:04:06+00:00",
+  "description": "Warm Corn and Avocado Salad makes the perfect light and fresh side dish for enchiladas, grilled meats, tacos, or any summer meal.",
+  "image": [
+    "https://www.budgetbytes.com/wp-content/uploads/2016/05/Warm-Corn-and-Avocado-Salad-above-1.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2016/05/Warm-Corn-and-Avocado-Salad-above-1-500x480.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2016/05/Warm-Corn-and-Avocado-Salad-above-1-500x375.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2016/05/Warm-Corn-and-Avocado-Salad-above-1-480x270.jpg"
+  ],
+  "keywords": "Corn Salad, Easy Side Dish, Potluck Recipes",
+  "name": "Warm Corn and Avocado Salad",
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "calories": "251.43 kcal",
+    "carbohydrateContent": "30.8 g",
+    "fatContent": "15.3 g",
+    "fiberContent": "7.5 g",
+    "proteinContent": "4.78 g",
+    "servingSize": "1 Serving",
+    "sodiumContent": "218.05 mg"
+  },
+  "prepTime": "PT10M",
+  "recipeIngredient": [
+    "2 Tbsp cooking oil ($0.08)",
+    "1 lb. frozen corn kernels, thawed ($1.45)",
+    "Salt and Pepper to taste ( $0.05)",
+    "1/4 tsp cumin ($0.03)",
+    "1/4 red onion ($0.15)",
+    "1 avocado ( $0.69)",
+    "1/4 bunch cilantro ( $0.20)",
+    "1 lime ( $0.50)"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "Make sure to let the corn thaw completely. Heat the cooking oil in a large skillet over medium-high heat. When the oil is very hot and shimmering, add the thawed corn and sauté until the corn becomes golden brown and blistered. Remove the corn from the skillet and place it in a large bowl, season with a pinch of salt, pepper, and 1/4 tsp cumin. Allow the corn to cool slightly."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "While the corn is cooling, prepare the remaining vegetables. Finely dice the red onion, roughly chop the cilantro, and cube the avocado. Add the onion, cilantro, and avocado to the bowl with the corn. Stir briefly."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Squeeze the juice from half the lime over the salad, stir, and taste. Adjust the salt and lime juice as needed. Serve immediately, or refrigerate until ready to eat."
+    }
+  ],
+  "recipeYield": "4",
+  "sameAs": ["https://www.budgetbytes.com/warm-corn-avocado-salad/"],
+  "totalTime": "PT17M",
+  "updatedAt": "2020-10-08T06:01:23.792Z"
+}

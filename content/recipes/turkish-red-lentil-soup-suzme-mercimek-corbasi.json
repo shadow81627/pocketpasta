@@ -1,0 +1,125 @@
+{
+  "@type": "Recipe",
+  "about": [],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingCount": "15",
+    "ratingValue": "5"
+  },
+  "author": {
+    "@type": "Person",
+    "description": "Food writer Elizabeth Taviloğlu learned Turkish cooking hands-on in Turkey where she has lived and traveled for more than 24 years.",
+    "knowsAbout": ["Turkish food"],
+    "name": "Elizabeth Taviloglu",
+    "sameAs": ["https://www.thespruceeats.com/elizabeth-taviloglu-3274117"]
+  },
+  "cookTime": "PT25M",
+  "createdAt": "2020-10-08T05:56:25.531Z",
+  "dateModified": "2019-11-10T01:16:49.293Z",
+  "datePublished": "2012-07-12T21:36:48.000Z",
+  "description": "This hearty soup is perfect for the cold winter months with lentils, carrots, potatoes, and spices. It's also an important part of Ramadan.",
+  "headline": "Turkish Red Lentil Soup (Süzme Mercimek Çorbası)",
+  "image": [
+    {
+      "@type": "ImageObject",
+      "height": 2250,
+      "url": "https://www.thespruceeats.com/thmb/L55VE93v35OuHzYAwmxPwfEZwWs=/4000x2250/smart/filters:no_upscale()/mercimek-ET-56a993ca5f9b58b7d0fcee8a.JPG",
+      "width": 4000
+    },
+    {
+      "@type": "ImageObject",
+      "height": 3000,
+      "url": "https://www.thespruceeats.com/thmb/OFCCFY9r8Jjb3NWA34AamS3dLh8=/4000x3000/smart/filters:no_upscale()/mercimek-ET-56a993ca5f9b58b7d0fcee8a.JPG",
+      "width": 4000
+    },
+    {
+      "@type": "ImageObject",
+      "height": 3000,
+      "url": "https://www.thespruceeats.com/thmb/9JhPOO4xWCAKpVVfsHBRRe6IXwM=/3000x3000/smart/filters:no_upscale()/mercimek-ET-56a993ca5f9b58b7d0fcee8a.JPG",
+      "width": 3000
+    }
+  ],
+  "keywords": "Lentil",
+  "name": "Turkish Red Lentil Soup (Süzme Mercimek Çorbası)",
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "calories": "229 kcal",
+    "carbohydrateContent": "39 g",
+    "cholesterolContent": "0 mg",
+    "fatContent": "5 g",
+    "fiberContent": "6 g",
+    "proteinContent": "9 g",
+    "saturatedFatContent": "1 g",
+    "servingSize": "4 to 6 cups (servings)",
+    "sodiumContent": "342 mg",
+    "unsaturatedFatContent": "2 g"
+  },
+  "prepTime": "PT5M",
+  "publisher": {
+    "@type": "Organization",
+    "brand": "The Spruce Eats",
+    "logo": {
+      "@type": "ImageObject",
+      "height": 109,
+      "url": "https://www.thespruceeats.com/thmb/f3m_vtGjmtpclj77cP5o_vmsxBM=/361x109/filters:no_upscale():max_bytes(150000):strip_icc()/thespruceeats2x-a1e29f658c6a4903ad453641f794cb18.png",
+      "width": 361
+    },
+    "name": "The Spruce Eats",
+    "publishingPrinciples": "https://www.thespruceeats.com/about-us-4776236#editorial-guidelines",
+    "url": "https://www.thespruceeats.com"
+  },
+  "recipeCategory": "Appetizer, Dinner, Lunch, Soup",
+  "recipeCuisine": "Middle Eastern",
+  "recipeIngredient": [
+    "1 small onion",
+    "1 small carrot",
+    "1 small potato",
+    "3/4 cup red lentils",
+    "1 teaspoon cumin powder",
+    "Salt and pepper to taste",
+    "6 cups (1 1/2 liters) water",
+    "2 tablespoons butter or margarine",
+    "1 tablespoon all-purpose flour",
+    "Garnish: hot pepper flakes"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "Gather the ingredients."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Peel and coarsely chop onion, carrot, and potato and place into a large saucepan. Add the red lentils, cumin, salt and pepper to taste, and water. Bring to a boil then reduce the heat to low and cover."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Let the mixture simmer slowly until the vegetables are very soft and the lentils fall apart. Remove the pan from the heat."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "To make a smooth mixture, press the contents through a fine wire mesh strainer using a wooden spoon, or process in your food processor or blender. Hand blenders (immersion blenders) are great for puréeing the soup right in the pot."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "In a small skillet, melt the butter or margarine and then add the flour. Stir the mixture for a few seconds then add it to the soup (don't let the flour burn)."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Stir well, then let the soup simmer on low for about 15 minutes. Adjust the seasonings to your taste."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "If the soup seems too thick add a little more water. Serve hot with chunks of crusty bread and a wedge of lemon."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Enjoy!"
+    }
+  ],
+  "recipeYield": "4 to 6 cups (servings)",
+  "sameAs": [
+    "https://www.thespruceeats.com/turkish-red-lentil-soup-suzme-mercimek-corbasi-recipe-3274346"
+  ],
+  "totalTime": "PT30M",
+  "updatedAt": "2020-10-08T05:56:25.531Z"
+}

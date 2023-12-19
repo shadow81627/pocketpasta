@@ -1,0 +1,85 @@
+{
+  "@type": "Recipe",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingCount": "14",
+    "ratingValue": "5"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Beth - Budget Bytes"
+  },
+  "cookTime": "PT25M",
+  "createdAt": "2020-10-08T05:44:39.124Z",
+  "datePublished": "2020-01-26T18:51:21+00:00",
+  "description": "Roasted Broccoli Pasta with Lemon and Feta is an incredibly simple pasta dish with big flavors. An easy, fast, and delicious weeknight dinner!",
+  "image": [
+    "https://www.budgetbytes.com/wp-content/uploads/2020/01/Roasted-Broccoli-Pasta-with-Lemon-and-Feta-bowl.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2020/01/Roasted-Broccoli-Pasta-with-Lemon-and-Feta-bowl-500x500.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2020/01/Roasted-Broccoli-Pasta-with-Lemon-and-Feta-bowl-500x375.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2020/01/Roasted-Broccoli-Pasta-with-Lemon-and-Feta-bowl-480x270.jpg"
+  ],
+  "keywords": "Broccoli Pasta, Easy dinner recipes, Roasted broccoli",
+  "name": "Roasted Broccoli Pasta with Lemon and Feta",
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "calories": "345.7 kcal",
+    "carbohydrateContent": "50.93 g",
+    "fatContent": "12.03 g",
+    "fiberContent": "10.38 g",
+    "proteinContent": "13 g",
+    "servingSize": "1 serving",
+    "sodiumContent": "204.83 mg"
+  },
+  "prepTime": "PT15M",
+  "recipeIngredient": [
+    "1 lb. broccoli crowns ($1.79)",
+    "1 Tbsp olive oil ($0.16)",
+    "1 tsp steak seasoning ($0.10)",
+    "1 fresh lemon ($0.39)",
+    "8 oz. whole wheat penne pasta ($0.50)",
+    "2 Tbsp butter ($0.20)",
+    "1 oz. crumbled feta ($0.55)"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "Preheat the oven to 400oF. Cut the broccoli into small florets. Line a baking sheet with parchment paper, then spread the florets out over the baking sheet. Drizzle the broccoli with olive oil and sprinkle the steak seasoning over top. Toss the broccoli until it is well coated in oil and seasoning."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Roast the broccoli for 20-25 minutes, or until it is brown and crispy on the edges."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "While the broccoli is roasting, prepare the rest of the dish. Bring a pot of water to boil for the penne. Once boiling, add the pasta, and continue to boil until the pasta is tender (8-10 minutes). Reserve about 1/2 cup of the starchy pasta water, then drain the pasta in a colander."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "While the pasta is boiling, zest a lemon, then cut it into wedges."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Return the drained pasta to the pot (heat turned off). Add the roasted broccoli florets, the butter, about 1 tsp lemon zest, and the juice from two of the lemon wedges. Stir the ingredients together, letting the residual heat from the pasta melt the butter. If the pasta seems too dry, add a splash or two of the reserved pasta water."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Top the pasta with crumbled feta and a pinch or two more steak seasoning, if desired. Serve with extra lemon wedges."
+    }
+  ],
+  "recipeYield": "4",
+  "sameAs": [
+    "https://www.budgetbytes.com/roasted-broccoli-pasta-with-lemon-and-feta/"
+  ],
+  "totalTime": "PT40M",
+  "updatedAt": "2020-10-08T05:44:39.124Z",
+  "video": {
+    "@type": "VideoObject",
+    "contentUrl": "https://embed.mediavine.com/videos/p3ipbssria3pwff6ve0o",
+    "description": "Roasted Broccoli Pasta with Lemon and Feta is an incredibly simple pasta dish with big flavors. An easy, fast, and delicious weeknight dinner!",
+    "duration": "PT55S",
+    "name": "Roasted Broccoli Pasta with Lemon and Feta",
+    "thumbnailUrl": "https://mediavine-res.cloudinary.com/image/upload/s--Lbz6nkb2--/c_limit,f_auto,fl_lossy,h_1080,q_auto,w_1920/v1600014137/h9lz0kanysymx7igtrrc.jpg",
+    "uploadDate": "2020-09-13T16:22:06+00:00"
+  }
+}

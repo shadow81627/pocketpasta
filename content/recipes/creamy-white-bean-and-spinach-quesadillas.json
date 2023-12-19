@@ -1,0 +1,83 @@
+{
+  "@type": "Recipe",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingCount": "46",
+    "ratingValue": "4.94"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Beth - Budget Bytes"
+  },
+  "cookTime": "PT10M",
+  "createdAt": "2020-10-08T05:31:54.088Z",
+  "datePublished": "2019-02-19T14:44:50+00:00",
+  "description": "Crispy on the outside, creamy on the inside, these insanely delicious Creamy White Bean and Spinach Quesadillas make an awesomely fast weeknight dinner. ",
+  "image": [
+    "https://www.budgetbytes.com/wp-content/uploads/2019/02/Creamy-WHite-Bean-and-Spinach-Quesadillas-close.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2019/02/Creamy-WHite-Bean-and-Spinach-Quesadillas-close-500x500.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2019/02/Creamy-WHite-Bean-and-Spinach-Quesadillas-close-500x375.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2019/02/Creamy-WHite-Bean-and-Spinach-Quesadillas-close-480x270.jpg"
+  ],
+  "keywords": "easy, Snack, Vegetarian",
+  "name": "Creamy White Bean and Spinach Quesadillas",
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "calories": "462.35 kcal",
+    "carbohydrateContent": "51.08 g",
+    "fatContent": "20.03 g",
+    "fiberContent": "9 g",
+    "proteinContent": "17.83 g",
+    "servingSize": "1 Serving",
+    "sodiumContent": "929.9 mg"
+  },
+  "prepTime": "PT10M",
+  "recipeIngredient": [
+    "1 15oz. can cannellini beans ($0.69)",
+    "3/4 tsp chili powder ($0.05)",
+    "1/4 tsp ground cumin ($0.03)",
+    "1/8 tsp garlic powder ($0.02)",
+    "1/8 tsp salt ($0.02)",
+    "2 cups fresh spinach ($0.87)",
+    "4 oz. pepper jack cheese, shredded ($1.00)",
+    "1/2 cup sour cream ($0.35)",
+    "4 8-inch flour tortillas ($0.96)"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "Rinse and drain the cannellini beans well. Once well drained, transfer them to a bowl and add the chili powder, cumin, garlic powder, and salt. Stir to combine the beans with the spices."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Roughly chop the spinach into smaller pieces. Add the spinach, cheese, and sour cream to the bowl with the beans, then stir to combine."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Divide the spinach and bean mixture between the four tortillas, then fold them in half to close."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Cook the quesadillas, one or two at a time, in a skillet* over medium heat until the tortillas are brown and crispy and the filling is melted and gooey (3-5 minutes each side)."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Cut the quesadillas in half, then serve."
+    }
+  ],
+  "recipeYield": "4",
+  "sameAs": [
+    "https://www.budgetbytes.com/creamy-white-bean-and-spinach-quesadillas/"
+  ],
+  "totalTime": "PT20M",
+  "updatedAt": "2020-10-08T05:31:54.088Z",
+  "video": {
+    "@type": "VideoObject",
+    "contentUrl": "https://embed.mediavine.com/videos/wunjmod238ozviqmzjhf",
+    "description": "Crispy on the outside, creamy on the inside, these insanely delicious Creamy White Bean and Spinach Quesadillas make an awesomely fast weeknight dinner.",
+    "duration": "PT56S",
+    "name": "Creamy White Bean and Spinach Quesadillas",
+    "thumbnailUrl": "https://mediavine-res.cloudinary.com/image/upload/s--uOXDXAkh--/c_limit,f_auto,fl_lossy,h_1080,q_auto,w_1920/v1552860986/h9sj8ubr2tnnn1c8i1y0.jpg",
+    "uploadDate": "2019-03-17T22:15:16+00:00"
+  }
+}

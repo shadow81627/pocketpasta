@@ -1,0 +1,83 @@
+{
+  "@type": "Recipe",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingCount": "23",
+    "ratingValue": "4.87"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Beth - Budget Bytes"
+  },
+  "cookTime": "PT30M",
+  "createdAt": "2020-10-08T05:40:27.842Z",
+  "datePublished": "2019-01-12T13:19:20+00:00",
+  "description": "Loaded Sweet Potatoes are the perfect pre-portioned item for your weekly meal prep. They reheat well and can be customized to fit your needs. ",
+  "image": [
+    "https://www.budgetbytes.com/wp-content/uploads/2019/01/Loaded-Sweet-Potatoes-single.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2019/01/Loaded-Sweet-Potatoes-single-500x500.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2019/01/Loaded-Sweet-Potatoes-single-500x375.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2019/01/Loaded-Sweet-Potatoes-single-480x270.jpg"
+  ],
+  "keywords": "Vegetarian",
+  "name": "Loaded Sweet Potatoes with Lime Crema",
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "calories": "403.65 kcal",
+    "carbohydrateContent": "62.23 g",
+    "fatContent": "13.53 g",
+    "fiberContent": "12.95 g",
+    "proteinContent": "10.43 g",
+    "servingSize": "1 Serving",
+    "sodiumContent": "796.3 mg"
+  },
+  "prepTime": "PT15M",
+  "recipeIngredient": [
+    "2 lbs. sweet potatoes ($1.93)",
+    "2 Tbsp olive oil, divided ($0.26)",
+    "2 tsp jerk seasoning (or seasoning salt of choice) ($0.20)",
+    "1 clove garlic ($0.08)",
+    "1 red bell pepper ($1.50)",
+    "1 15oz. can black beans, drained ($0.59)",
+    "1/4 tsp ground cumin ($0.03)",
+    "1/2 tsp salt, divided ($0.04)",
+    "1 lime, zested and juiced ($o.22)",
+    "1/2 cup sour cream ($0.45)",
+    "1/2 tsp chipotle powder ($0.02)",
+    "1/4 tsp garlic powder ($0.02)",
+    "1 jalapeño (optional), sliced thin ($0.10)",
+    "1 green onion, sliced ($0.10)"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "Preheat the oven to 400oF. To make the Chipotle Lime crema, zest and juice the lime. Combine the sour cream with 1 Tbsp lime juice, about 1/2 tsp lime zest, the chipotle powder, garlic powder, and 1/4 tsp salt. Stir the ingredients together, then refrigerate until ready to use."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Wash then dry the sweet potatoes. Use a fork to prick the skins several times all over. Slice the sweet potatoes in half lengthwise, then use 1 Tbsp olive oil to coat the surface of all four pieces."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Season the cut sides of the sweet potatoes with Jerk Seasoning, or whatever seasoning salt you prefer. Coat the surface of a baking sheet with a thin layer of oil, then place the sweet potatoes cut side down. Bake the sweet potatoes for 30 minutes, or until they are soft, you can see the juices oozing out from underneath, and the skins look a little wrinkly."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "While the sweet potatoes are baking, Mince a clove of garlic, dice the red bell pepper, slice the jalapeño and green onion."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Add the minced garlic to a skillet with the remaining 1 Tbsp olive oil. Sauté over medium heat for one minute, then add the diced bell pepper. Sauté the pepper for 2-3 minutes, or just until it begins to soften, then add the black beans, cumin, salt, and green onion. Stir and cook until the beans are heated through."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "When the sweet potatoes come out of the oven, use a spatula to flip them over. Mash the flesh of the sweet potatoes with a fork, then pile the bean and pepper mixture over top. Add the sliced jalapeño and a dollop (or drizzle) of the chipotle lime crema to each, then serve."
+    }
+  ],
+  "recipeYield": "4",
+  "sameAs": [
+    "https://www.budgetbytes.com/loaded-sweet-potatoes-with-chipotle-lime-crema/"
+  ],
+  "totalTime": "PT45M",
+  "updatedAt": "2020-10-08T05:40:27.842Z"
+}

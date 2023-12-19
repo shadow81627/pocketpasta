@@ -1,0 +1,61 @@
+{
+  "@type": "Recipe",
+  "cookTime": "PT1H35M",
+  "createdAt": "2020-10-08T05:32:19.746Z",
+  "dateModified": "2019-12-05T23:59:44.082Z",
+  "datePublished": "2019-12-05T13:00:00.00Z",
+  "description": "Soft and fluffy on the inside, crispy on the outside and with fragrant rosemary salt these roast potatoes will complement your Christmas lunch.",
+  "image": {
+    "@type": "ImageObject",
+    "height": 800,
+    "url": "https://d3lp4xedbqa8a5.cloudfront.net/s3/digital-cougar-assets/awwfood/2019/11/27/1574829085768_C1589741Maggie208.jpg?width=600&height=315&quality=75&mode=crop",
+    "width": 800
+  },
+  "keywords": "Potato",
+  "name": "Crisp roast potatoes with rosemary salt",
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "servingSize": "Serves 8"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Australian Women's Weekly"
+  },
+  "recipeCategory": "Side",
+  "recipeCuisine": "Modern Australian",
+  "recipeIngredient": [
+    "2.5 kg Sebago or Dutch Cream potatoes",
+    "vegetable oil, for roasting",
+    "1 tablespoon sea salt flakes",
+    "2 teaspoons fresh rosemary leaves, chopped finely"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "Preheat the oven to 200°C (180° fan-forced). Peel potatoes; cut in half, or in quarters if they're large – just make sure the pieces are evenly sized so they cook at the same time. Place the potatoes in a large pan of cold salted water and bring to the boil. Boil for around 15 minutes or until the cut edges are just starting to soften, and a knife or skewer goes easily into the potato. Don't cook any further than this or the potatoes will fall apart."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Meanwhile, put about 1cm of vegetable oil into a roasting pan. Place the pan in the oven until the oil is hot. Drain the potatoes very well. It is critical that they are dry."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Very carefully lower the potatoes into the hot oil. Gently turn them, so that the whole surface area of each potato has a coating of oil. Place the pan back in the oven and cook for about 1 hour, turning the potatoes once or twice, until they are crisp and golden brown."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "In a small bowl, combine the salt, rosemary and freshly ground black pepper."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Drain potatoes on paper towels. Sprinkle with rosemary salt while still hot."
+    }
+  ],
+  "recipeYield": "Serves 8",
+  "sameAs": [
+    "https://www.womensweeklyfood.com.au/recipes/crisp-roast-potatoes-with-rosemary-salt-31376"
+  ],
+  "totalTime": "PT1H35M",
+  "updatedAt": "2020-10-08T05:32:19.746Z",
+  "url": "https://www.womensweeklyfood.com.au/recipes/crisp-roast-potatoes-with-rosemary-salt-31376"
+}

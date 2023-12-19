@@ -1,0 +1,110 @@
+{
+  "@type": "Recipe",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "bestRating": "100",
+    "ratingCount": "323",
+    "ratingValue": "96",
+    "worstRating": "0"
+  },
+  "cookingMethod": "Bake",
+  "createdAt": "2020-10-18T00:40:13.503Z",
+  "datePublished": "2018-06-01T14:14:33",
+  "description": "Here's what you need: sweet potato, garlic powder, paprika, salt, pepper, olive oil, pumpkin seeds, chili powder, maple syrup, tahini, lemon juice, water, kale, quinoa, red onion",
+  "image": "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/f2bc5630200b4288a45be24846e1ae50/ProteinPackedSaladsFBFINAL.jpg",
+  "name": "Kale & Sweet Potato Salad Recipe by Tasty",
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "calories": "765 calories",
+    "carbohydrateContent": "103 grams",
+    "fatContent": "29 grams",
+    "fiberContent": "12 grams",
+    "proteinContent": "24 grams",
+    "sugarContent": "9 grams"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tasty.co/favicon.ico"
+    },
+    "name": "Tasty"
+  },
+  "recipeCategory": "Lunch",
+  "recipeIngredient": [
+    "1 1/2 cups sweet potato, diced",
+    "1/2 teaspoon garlic powder",
+    "2 teaspoons paprika",
+    "salt, to taste",
+    "pepper, to taste",
+    "olive oil, to taste",
+    "1/2 cup pumpkin seeds",
+    "2 teaspoons chili powder",
+    "2 tablespoons maple syrup, divided",
+    "1/2 cup tahini",
+    "1 1/2 tablespoons lemon juice",
+    "3 tablespoons water",
+    "1 bunch kale, stemmed and torn into large pieces",
+    "3 cups quinoa",
+    "1/2 cup red onion, diced"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "Preheat the oven to 375°F (190°C)."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Add the sweet potatoes to a baking sheet. Sprinkle with the garlic powder, paprika, salt, and pepper, and drizzle with olive oil. Toss until the sweet potato is well-coated in the spices, then spread out evenly. Bake for 15 minutes, or until tender."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "In a small bowl, add the pumpkin seeds, chili powder, 1 tablespoon maple syrup, and salt, and mix until well-combined. Spread the pumpkin seeds out on a baking sheet so they’re not touching each other."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Add to the oven with the sweet potato and bake for 10 minutes, stirring halfway through, until toasted."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "In a liquid measuring cup, combine the tahini, remaining tablespoon of maple syrup, lemon juice, salt, and pepper. Mix well, then add 1 tablespoon of water at a time until desired consistency is reached."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "In a large bowl, drizzle the kale with olive oil. Massage with your hands until the kale is tender and has reduced in volume by about a third."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Add the quinoa, roasted sweet potatoes, red onion, and pumpkin seeds. Drizzle with tahini dressing and toss well."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Serve with more dressing if desired."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Enjoy!"
+    }
+  ],
+  "recipeYield": "4 servings",
+  "sameAs": ["https://tasty.co/recipe/kale-sweet-potato-salad"],
+  "tool": "Mixing Bowl",
+  "updatedAt": "2020-10-18T00:40:13.501Z",
+  "video": {
+    "@type": "VideoObject",
+    "contentUrl": "https://vid.tasty.co/output/97091/landscape_480/1528137197",
+    "description": "Here's what you need: sweet potato, garlic powder, paprika, salt, pepper, olive oil, pumpkin seeds, chili powder, maple syrup, tahini, lemon juice, water, kale, quinoa, red onion",
+    "duration": "PT5M26S",
+    "name": "Kale & Sweet Potato Salad Recipe by Tasty",
+    "publisher": {
+      "@type": "Organization",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://tasty.co/favicon.ico"
+      },
+      "name": "Tasty"
+    },
+    "thumbnailUrl": "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/f2bc5630200b4288a45be24846e1ae50/ProteinPackedSaladsFBFINAL.jpg",
+    "uploadDate": "2018-06-01T14:14:33"
+  }
+}

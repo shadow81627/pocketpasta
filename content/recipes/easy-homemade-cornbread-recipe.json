@@ -1,0 +1,80 @@
+{
+  "@type": "Recipe",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingCount": "66",
+    "ratingValue": "4.64"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Beth - Budget Bytes"
+  },
+  "cookTime": "PT20M",
+  "createdAt": "2020-10-08T05:34:56.623Z",
+  "datePublished": "2015-09-05T11:24:58+00:00",
+  "description": "Toss that boxed mix and make this fast and Easy Homemade Cornbread, which makes a great side dish for breakfast, lunch, or dinner! ",
+  "image": [
+    "https://www.budgetbytes.com/wp-content/uploads/2015/09/Everyday-Cornbread-V2.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2015/09/Everyday-Cornbread-V2-500x500.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2015/09/Everyday-Cornbread-V2-500x375.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2015/09/Everyday-Cornbread-V2-480x270.jpg"
+  ],
+  "keywords": "easy, Side Dish, Vegetarian",
+  "name": "Easy Homemade Cornbread Recipe",
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "calories": "241.23 kcal",
+    "carbohydrateContent": "35.39 g",
+    "fatContent": "9.15 g",
+    "fiberContent": "1.19 g",
+    "proteinContent": "4.79 g",
+    "servingSize": "1 Serving",
+    "sodiumContent": "352.61 mg"
+  },
+  "prepTime": "PT10M",
+  "recipeIngredient": [
+    "1 cup yellow cornmeal ($0.24)",
+    "1 cup all-purpose flour ($0.15)",
+    "1/4 cup sugar ($0.20)",
+    "4 tsp baking powder ($0.24)",
+    "1/2 tsp salt ($0.02)",
+    "1 cup milk ($0.31)",
+    "1 large egg ($0.27)",
+    "1/4 cup cooking oil ($0.08)"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "Preheat the oven to 425 degrees and coat the inside of a 9-inch pie plate, cast iron skillet, or 8x8 casserole dish with non-stick spray (or butter for more flavor)."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "In a large bowl, stir together the cornmeal, flour, sugar, baking powder, and salt until evenly combined."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "In a separate bowl, whisk together the milk, egg, and oil."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Pour the bowl of wet ingredients into the bowl of dry ingredients and stir just until everything is moist. Avoid over stirring. It's okay if there are a few lumps."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Pour the batter into the prepared dish and bake for about 20 minutes, or until the top and edges are golden brown. Cut into 8 pieces and serve."
+    }
+  ],
+  "recipeYield": "8",
+  "sameAs": ["https://www.budgetbytes.com/everyday-cornbread/"],
+  "totalTime": "PT30M",
+  "updatedAt": "2020-10-08T05:34:56.623Z",
+  "video": {
+    "@type": "VideoObject",
+    "contentUrl": "https://embed.mediavine.com/videos/e1am122yxooxeu7qehow",
+    "description": "Toss that boxed mix and make this fast and Easy Homemade Cornbread, which makes a great side dish for breakfast, lunch, or dinner!",
+    "duration": "PT75S",
+    "name": "Easy Homemade Cornbread",
+    "thumbnailUrl": "https://mediavine-res.cloudinary.com/image/upload/s--ZT6GWrW0--/c_limit,f_auto,fl_lossy,h_1080,q_auto,w_1920/v1594652426/eykx2fexls4c7v3gbrxi.jpg",
+    "uploadDate": "2020-07-13T15:00:16+00:00"
+  }
+}

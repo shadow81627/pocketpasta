@@ -1,0 +1,92 @@
+{
+  "@type": "Recipe",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingCount": "757",
+    "ratingValue": "4.48"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "adapted recipe from Kirbiecravings.com"
+  },
+  "cookTime": "PT1M",
+  "createdAt": "2020-10-08T05:42:03.124Z",
+  "datePublished": "2018-03-21T07:30:17+00:00",
+  "description": "Learn how to make my amazing Microwave Mug Pizza recipe in just minutes. You can add any toppings you'd like and it's faster and better than pizza delivery!",
+  "image": [
+    "https://www.biggerbolderbaking.com/wp-content/uploads/2016/01/IMG_9114.jpg",
+    "https://www.biggerbolderbaking.com/wp-content/uploads/2016/01/IMG_9114-500x500.jpg",
+    "https://www.biggerbolderbaking.com/wp-content/uploads/2016/01/IMG_9114-500x375.jpg",
+    "https://www.biggerbolderbaking.com/wp-content/uploads/2016/01/IMG_9114-480x270.jpg"
+  ],
+  "keywords": "Miccrowave Mug Pizza, Microwave Mug Pizza, Microwave Pizza",
+  "name": "Microwave Mug Pizza (Microwave Mug Meals)",
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "calories": "342 kcal",
+    "carbohydrateContent": "27 g",
+    "cholesterolContent": "22 mg",
+    "fatContent": "20 g",
+    "fiberContent": "1 g",
+    "proteinContent": "10 g",
+    "saturatedFatContent": "5 g",
+    "servingSize": "1 g",
+    "sodiumContent": "998 mg",
+    "sugarContent": "4 g"
+  },
+  "prepTime": "PT5M",
+  "recipeCategory": ["Dinner"],
+  "recipeCuisine": "Italian",
+  "recipeIngredient": [
+    "4 tablespoons all purpose flour",
+    "1/8 teaspoon baking powder",
+    "1/16 teaspoon baking soda",
+    "1/8 teaspoon salt",
+    "3 tablespoons milk",
+    "1 tablespoon olive oil",
+    "1 tablespoon marinara sauce",
+    "1 generous tablespoon shredded mozzarella cheese",
+    "5 mini pepperoni",
+    "1/2 teaspoon dried Italian herbs (basil or oregano will work)"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "Mix the flour, baking powder, baking soda and salt together in a microwavable mug."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Add in the milk and oil then mix together. There might be some lumps but that is ok."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Spoon on the marinara sauce and spread it around the surface of the batter."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Sprinkle on the cheese, pepperoni, and dried herbs."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Microwave for 1 minute 10 - 1 minute 20 seconds, or until it rises up and the toppings are bubbling (timing is based on my 1200W microwave so your timing might vary)."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Enjoy straight away."
+    }
+  ],
+  "recipeYield": "1",
+  "sameAs": ["https://www.biggerbolderbaking.com/microwave-mug-pizza/"],
+  "totalTime": "PT6M",
+  "updatedAt": "2020-10-08T05:42:03.124Z",
+  "video": {
+    "@type": "VideoObject",
+    "contentUrl": "https://www.youtube.com/watch?v=6eslIRo9als",
+    "description": "My World-Famous Microwave Mug Meals are chef-tested and approved! Make a Mug Pizza, Brownie in a Mug & more easy microwave recipes! GET THE RECIPES: http://bit.ly/MugMealRecipes\nBUY my NEW Mug Meals Mug & Spork Set here: https://shop.biggerbolderbaking.com/\n\nSUBSCRIBE HERE: http://bit.ly/GemmasBoldBakers\n\nHi Bold Bakers! Mug Cake recipes & Breakfasts were just the beginning. Now I have Microwave Mug Recipes for every meal including Mug Pizza (a real Microwave Pizza in minutes!), Macaroni & Cheese, a Chocolate Brownie in a mug & More! You won't believe the delicious and nutritious microwave recipes you can make in just minutes! So let's get micro-baking!\n\nMORE MUG CAKES & MEALS\n* Get 100 Mug Meal recipes on my website including Mug Pizza, Mug Donut & many more: http://bit.ly/GemsMugMeals, plus get my FREE Mug Meals Ebook!\n* Make a 3-Layer Microwave Cake: http://bit.ly/GemsMicrowaveCake\n\nABOUT GEMMA\nHi Bold Bakers! I’m Gemma Stafford, a professional chef originally from Ireland, and I’m passionate about sharing my years of baking experience to show you how to make simple, game-changing baking recipes with over-the-top results! Join more than 1 Million other Bold Bakers in the community for new videos at 8:30am Pacific Time every Sunday and Thursday!\n\nFOLLOW ME HERE, BOLD BAKERS!\n* Website (All written recipes can be found here): https://www.BiggerBolderBaking.com\n* Facebook: https://www.Facebook.com/BiggerBolderBaking\n* Instagram: https://instagram.com/gemma_stafford/\n* Pinterest: https://www.pinterest.com/gemstafford/\n* Twitter: https://twitter.com/gemstaff16\n\nGET THE WRITTEN RECIPES (includes instructions and measurements): http://bit.ly/MugMealRecipes",
+    "duration": "PT6M56S",
+    "embedUrl": "https://www.youtube.com/embed/6eslIRo9als?feature=oembed",
+    "name": "5 Microwave Mug Meals (Mug Pizza, Brownie in a Mug & More!) | Gemma's Bigger Bolder Baking",
+    "thumbnailUrl": "https://i.ytimg.com/vi/6eslIRo9als/hqdefault.jpg",
+    "uploadDate": "2016-01-07T16:30:28+00:00"
+  }
+}

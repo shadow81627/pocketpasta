@@ -1,0 +1,80 @@
+{
+  "@type": "Recipe",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingCount": "43",
+    "ratingValue": "4.75"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Beth - Budget Bytes"
+  },
+  "cookTime": "PT30M",
+  "createdAt": "2020-10-08T05:26:32.706Z",
+  "datePublished": "2013-05-07T13:29:00+00:00",
+  "description": "Chana saag is a creamy chickpea and spinach curry that comes together quickly, is full of warm spices, filling, and vegan! Perfect for meal prep!",
+  "image": [
+    "https://www.budgetbytes.com/wp-content/uploads/2013/05/Chana-Saag-bowls-with-rice.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2013/05/Chana-Saag-bowls-with-rice-500x500.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2013/05/Chana-Saag-bowls-with-rice-500x375.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2013/05/Chana-Saag-bowls-with-rice-480x270.jpg"
+  ],
+  "keywords": "Chickpea Recipes, Easy Vegan Dinners",
+  "name": "Chana Saag Curry",
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "calories": "360.03 kcal",
+    "carbohydrateContent": "61.18 g",
+    "fatContent": "8.57 g",
+    "fiberContent": "8 g",
+    "proteinContent": "11.2 g",
+    "servingSize": "1 serving",
+    "sodiumContent": "660.27 mg"
+  },
+  "prepTime": "PT10M",
+  "recipeIngredient": [
+    "1.5 cups long grain white rice ($0.95)",
+    "1 yellow onion ($0.32)",
+    "2 cloves garlic ($0.16)",
+    "1 Tbsp grated fresh ginger ($0.30)",
+    "2 Tbsp olive oil ($0.32)",
+    "1 Tbsp curry powder hot or mild ($0.30)",
+    "1 tsp ground cumin ($0.10)",
+    "3/4 tsp salt ($0.03)",
+    "1 tomato ($0.31)",
+    "1 lb. frozen chopped spinach ($1.60)",
+    "1 15oz. can chickpeas ($0.49)",
+    "1/2 cup water ($0.00)",
+    "1 13oz. can coconut milk ($2.79)"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "Begin the rice first. Add the rice and 3 cups water to a sauce pot. Cover with a lid, place the pot over high heat, and bring it up to a boil. Once boiling, reduce the heat to low and let simmer for 15 minutes. After 15 minutes, turn the heat off, and let the rice rest for 10 minutes, undisturbed, with the lid in place. Fluff with a fork just before serving."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "While the rice is cooking, begin the curry. Dice the onion, mince the garlic, and grate the ginger. Add the onion, garlic, and ginger to a large skillet with the olive oil and sauté over medium-low heat for about 5 minutes, or until the onion is soft. While these are cooking, dice the tomato."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Add the curry powder and cumin to the skillet and continue to stir and cook for one minute more. Add the diced tomato and salt. Continue to cook for about five minutes more, or until the tomato has broken down."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Drain the chickpeas in a colander and give them a quick rinse. Add the rinsed chickpeas, frozen spinach, and a half cup of water to the skillet. Stir everything together and then bring it up to a simmer over medium heat. Let the mixture simmer for five minutes to allow the flavors to blend."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "After five minutes, turn the heat down to medium-low and add the coconut milk. Depending on how thick you want the sauce, you can either just heat through or let it simmer until thickened. Leave your chana saag chunky,or, if preferred, use an immersion blender to purée some of the mixture. Once it’s heated through, adjust the salt to your liking."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Serve the creamy chickpeas and spinach over a bowl of warm rice."
+    }
+  ],
+  "recipeYield": "6",
+  "sameAs": ["https://www.budgetbytes.com/chana-saag/"],
+  "totalTime": "PT40M",
+  "updatedAt": "2020-10-08T05:26:32.706Z"
+}

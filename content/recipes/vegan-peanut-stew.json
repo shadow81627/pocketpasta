@@ -1,0 +1,81 @@
+{
+  "@type": "Recipe",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingCount": "168",
+    "ratingValue": "4.84"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Beth - Budget Bytes"
+  },
+  "cookTime": "PT45M",
+  "createdAt": "2020-10-08T05:57:59.928Z",
+  "datePublished": "2019-01-24T12:31:56+00:00",
+  "description": "With a rich peanut and tomato sauce, sweet potatoes, collard greens, and crunchy peanuts, this Vegan Peanut Stew is comfort in a bowl! ",
+  "image": [
+    "https://www.budgetbytes.com/wp-content/uploads/2014/08/West-African-Peanut-Stew-eat.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2014/08/West-African-Peanut-Stew-eat-500x500.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2014/08/West-African-Peanut-Stew-eat-500x375.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2014/08/West-African-Peanut-Stew-eat-480x270.jpg"
+  ],
+  "keywords": "gluten free, Vegan, Vegetarian",
+  "name": "Vegan Peanut Stew",
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "calories": "467.9 kcal",
+    "carbohydrateContent": "63.43 g",
+    "fatContent": "19.62 g",
+    "fiberContent": "9.45 g",
+    "proteinContent": "14.7 g",
+    "servingSize": "1.5 Cups",
+    "sodiumContent": "1341.67 mg"
+  },
+  "prepTime": "PT10M",
+  "recipeIngredient": [
+    "1 Tbsp olive oil ($0.16)",
+    "4 cloves garlic ($0.32)",
+    "1 Tbsp grated fresh ginger ($0.30)",
+    "1 sweet potato (about 1 lb.) ($1.47)",
+    "1 medium onion ($0.21)",
+    "1 tsp cumin ($0.10)",
+    "1/4 tsp crushed red pepper ($0.02)",
+    "1 6oz. can tomato paste ($0.45)",
+    "1/2 cup natural style peanut butter ($0.55)",
+    "6 cups vegetable broth ($0.78)",
+    "1/2 bunch collard greens (4-6 cups chopped) ($0.99)",
+    "1/4 bunch cilantro ($0.25)",
+    "4.5 cups cooked brown rice ($0.53)",
+    "1/3 cup chopped peanuts ($0.16)"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "Peel and grate the ginger using a small holed cheese grater. Mince the garlic, and dice the onion. Sauté the onion, ginger, and garlic in a large pot with the olive oil over medium heat for 2-3 minutes, or until the onion becomes soft and translucent."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "While the onion, ginger, and garlic are sautéing, peel and dice the sweet potato into 1/2-inch cubes. Add the sweet potato cubes, cumin, and red pepper to the pot and continue to sauté for about 5 minutes."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Add the tomato paste, peanut butter, and vegetable broth to the pot. Stir until the peanut butter and tomato paste have mostly dissolved into the broth. Place a lid on the pot and turn the heat up to high. Allow the stew to come up to a boil. Once it reaches a boil, turn the heat down to medium-low and allow it to simmer for 15-20 minutes, or until the sweet potatoes are very soft."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "While the soup is simmering, prepare the collard greens. Use a sharp knife to remove each stem (cut along the side of each stem), then stack the leaves and cut them into 1/2-inch wide strips. Place the chopped collard greens in a colander and rinse very well"
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Once the stew has simmered for 15-20 minutes and the sweet potatoes are very soft, stir in the collard greens. Let the stew simmer for about 5 minutes more, then begin to smash the sweet potatoes against the side of the pot to help thicken the stew."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Finally, taste the stew and add salt or red pepper, if desired. Serve the stew with a scoop of cooked rice (about 3/4 cup), a few chopped peanuts, fresh cilantro, and a drizzle of sriracha, if desired."
+    }
+  ],
+  "recipeYield": "6",
+  "sameAs": ["https://www.budgetbytes.com/african-peanut-stew-vegan/"],
+  "totalTime": "PT55M",
+  "updatedAt": "2020-10-08T05:57:59.928Z"
+}

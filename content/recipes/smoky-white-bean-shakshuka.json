@@ -1,0 +1,75 @@
+{
+  "@type": "Recipe",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingCount": "55",
+    "ratingValue": "4.84"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Adapted from The New York Times"
+  },
+  "cookTime": "PT25M",
+  "createdAt": "2020-10-08T05:50:47.796Z",
+  "datePublished": "2016-04-14T18:44:51+00:00",
+  "description": "Eggs poached in a rich and smoky tomato sauce speckled with white beans, this Smoky White Bean Shakshuka is a filling and inexpensive breakfast or dinner! BudgetBytes.com",
+  "image": [
+    "https://www.budgetbytes.com/wp-content/uploads/2016/04/Smoky-White-Bean-Shakshuka-dip-400x300-1.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2016/04/Smoky-White-Bean-Shakshuka-dip-400x300-1-400x270.jpg"
+  ],
+  "keywords": "Eggs in Tomato Sauce, Poached Eggs, Savory Breakfast Recipes",
+  "name": "Smoky White Bean Shakshuka",
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "calories": "380.63 kcal",
+    "carbohydrateContent": "47.2 g",
+    "fatContent": "12.53 g",
+    "fiberContent": "10.43 g",
+    "proteinContent": "20.23 g",
+    "servingSize": "1 Serving",
+    "sodiumContent": "716.38 mg"
+  },
+  "prepTime": "PT5M",
+  "recipeIngredient": [
+    "2 Tbsp olive oil ($0.32)",
+    "4 cloves garlic ($0.32)",
+    "1 yellow onion ($0.16)",
+    "1 28oz. can whole peeled tomatoes ($1.69)",
+    "1/2 Tbsp smoked paprika ($0.15)",
+    "1 tsp ground cumin ($0.10)",
+    "1/2 tsp dried oregano ($0.05)",
+    "1/8 tsp crushed red pepper ($0.02)",
+    "Freshly cracked black pepper ($0.05)",
+    "1/4 tsp salt, or to taste ($0.02)",
+    "1 15oz. can cannellini beans ($1.19)",
+    "4 large eggs ($1.10)",
+    "1 handful fresh parsley, chopped ($0.20)",
+    "2 oz. feta, crumbled ($1.12)"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "Mince the garlic and finely dice the onion. Cook both in a large deep skillet with olive oil over medium heat until the onions are soft and transparent (about 5 minutes)."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Add the canned tomatoes and their juices, crushing the tomatoes with your hands as you add them to the skillet. Add the smoked paprika, cumin, oregano, red pepper flakes, and some freshly cracked pepper as well. Stir to combine."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Allow the sauce to come to a simmer. Let the sauce simmer, stirring occasionally, for 5-7 minutes, or until it has thickened slightly. Add 1/4 tsp salt, then taste the sauce and adjust the salt or other spices to your liking."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Drain the white beans, add them to the skillet, then stir to combine. Allow the skillet to return to a simmer. Simmer for 2-3 minutes more."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Crack four eggs into the skillet, then place a lid on top and let them simmer for 5 minutes, or until the whites are set but the yolks are still soft. Top the skillet with the crumbled feta and chopped parsley."
+    }
+  ],
+  "recipeYield": "4",
+  "sameAs": ["https://www.budgetbytes.com/smoky-white-bean-shakshuka/"],
+  "totalTime": "PT30M",
+  "updatedAt": "2020-10-08T05:50:47.796Z"
+}

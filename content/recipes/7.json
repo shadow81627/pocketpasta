@@ -1,0 +1,195 @@
+{
+  "@graph": [
+    {
+      "@type": "Question",
+      "suggestedAnswer": [
+        {
+          "@type": "Answer",
+          "text": "Yes"
+        },
+        {
+          "@type": "Answer",
+          "text": "No"
+        }
+      ],
+      "text": "Do you make your own nacho cheese sauce?"
+    }
+  ],
+  "@type": "Recipe",
+  "aggregateRating": {
+    "@context": "http://schema.org/",
+    "@type": "AggregateRating",
+    "bestRating": 5,
+    "ratingValue": 5,
+    "reviewCount": 1,
+    "worstRating": 1
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Damien Robinson"
+  },
+  "cookTime": "PT0S",
+  "createdAt": "2020-10-08T05:19:21.612Z",
+  "dateModified": "2019-01-16T20:17:00Z",
+  "datePublished": "2019-01-15T16:26:36.788962Z",
+  "description": "Wow everyone with Trash Can Nachos from Delish.com.",
+  "headline": "Trash Can Nachos",
+  "image": {
+    "@type": "ImageObject",
+    "height": 1080,
+    "thumbnail": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-trashcan-nachos-still002-1547568061.jpg?crop=0.564xw:1.00xh;0.220xw,0&resize=100:*",
+    "url": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-trashcan-nachos-still002-1547568061.jpg",
+    "width": 1920
+  },
+  "keywords": "Super Bowl recipes, Tex Mex recipes, tex mex nachoes, nachos appetizers, feed a crowd, low sugar nachos, homemade pico de gallo, homemade salsa, easy salsa recipe, easy pico de gallo, pico de gallo nachos, easy ground beef, ground beef recipes, spicy ground beef, homemade cheese sauce, cheddar sauce, cholula cheddar cheese sauce, nacho tower, trash can nachos, guy fieri nachos",
+  "name": "Trash Can Nachos",
+  "prepTime": "PT20M",
+  "publisher": {
+    "@type": "Organization",
+    "logo": {
+      "@type": "ImageObject",
+      "height": 60,
+      "url": "https://assets.hearstapps.com/sites/delish/assets/images/logos/logo-jsonld.58eed96.png",
+      "width": 219
+    },
+    "name": "Delish"
+  },
+  "recipeCategory": ["low sugar", "feed a crowd", "Super Bowl", "appetizers"],
+  "recipeCuisine": "American",
+  "recipeIngredient": [
+    "2 small tomatoes, chopped",
+    "1/2 c. diced red onion",
+    "1 jalapeño, seeded and minced",
+    "1/4 c. freshly chopped cilantro",
+    "1 tbsp. lime juice",
+    "Kosher salt",
+    "Freshly ground black pepper",
+    "1 tbsp. extra-virgin olive oil",
+    "1 lb. ground beef",
+    "3 cloves garlic, minced",
+    "1/2 tsp. ground cumin",
+    "1/2 tsp. paprika",
+    "1/2 tsp. Cholula® Original Hot Sauce",
+    "2 tbsp. butter",
+    "2 tbsp. all-purpose flour",
+    "2 c. whole milk",
+    "2 c. shredded cheddar",
+    "1 lb. sour cream",
+    "1 (12-oz.) bag thick tortilla chips",
+    "1 (15.5-oz.) can black beans, rinsed and drained",
+    "Cholula® Original Hot Sauce, for drizzling"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "In a medium bowl, combine tomatoes, onion, jalapeño, cilantro, and lime juice."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Season with salt and pepper."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "In a large skillet, heat oil over medium-high heat."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Add the ground beef and season with salt and pepper."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Cook, stirring occasionally, until no pink remains, about 6 minutes."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Drain excess fat, then add garlic, cumin, paprika, and Cholula hot sauce, and cook, stirring until fragrant, about 1 minute more."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Remove from the heat and set aside."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "In a medium pot, melt butter over medium heat."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Add flour and stir, 1 minute."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Slowly whisk in milk, then continue to cook over medium, stirring constantly until thickened, about 6 minutes."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Remove from the heat and stir in Cholula hot sauce and cheddar."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Season with salt and pepper."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Set aside 1/2 cup of the pico de gallo, 1/2 cup of the shredded cheese, and 1/2 cup of the sour cream, for garnishing the nachos."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "In the bottom of a 110-oz."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "tin can, spread a thin layer of cheese sauce."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Using a 1/4 of the tortilla chips, make an even layer of chips over the cheese sauce."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Top with 1/3 of the remaining cheese sauce, 1/3 of the cooked beef, 1/3 of the black beans, 1/3 of the shredded cheese, 1/3 of the remaining pico de gallo, and 1/3 of the remaining sour cream."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Drizzle with Cholula."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Repeat layering the chips, cheese sauce, beef, black beans, remaining shredded cheese, pico de gallo, sour cream, and Cholula two more times."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Layer the remaining nacho chips on top."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Place a dinner plate on top of the can and carefully flip over and slowly remove the tin from the nachos, leaving a nacho tower behind."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Top the nacho tower with the reserved sour cream, pico de gallo, and shredded cheese."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Drizzle with Cholula before serving."
+    }
+  ],
+  "recipeYield": "12 servings",
+  "sameAs": [
+    "https://www.delish.com/cooking/recipe-ideas/a25751125/trash-can-nachos-recipe/",
+    "https://www.foodnetwork.com/recipes/guy-fieri/trash-can-nachos-3582107"
+  ],
+  "thumbnailUrl": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-trashcan-nachos-still002-1547568061.jpg?crop=0.564xw:1.00xh;0.220xw,0&resize=100:*",
+  "totalTime": "PT40M",
+  "updatedAt": "2020-10-08T05:19:21.612Z",
+  "url": "https://www.delish.com/cooking/recipe-ideas/a25751125/trash-can-nachos-recipe/",
+  "video": {
+    "@type": "VideoObject",
+    "contentUrl": "https://streaming.hearstdigitalstudios.com/d492c46d-7b93-4cbd-8ebc-1753ceff9efc/video_rover_16x9_1080p_hd_1547510109_95252.mp4",
+    "description": "The most Delish way to make nachos ever.",
+    "duration": "PT1M33S",
+    "embedUrl": "https://glimmer.hearstapps.com/?id=94a991a2-ae94-46f5-a9f0-975295a4bb7b",
+    "name": "Trash Can Nachos",
+    "thumbnailUrl": "https://hips.hearstapps.com/vidthumb/images/delish-trashcan-nachos-still001-1547510236.jpg",
+    "uploadDate": "2019-01-14T23:54:35.498710Z"
+  }
+}

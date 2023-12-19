@@ -1,0 +1,76 @@
+{
+  "@type": "Recipe",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingCount": "19",
+    "ratingValue": "4.74"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Beth - Budget Bytes"
+  },
+  "cookTime": "PT10M",
+  "createdAt": "2020-10-08T05:47:09.688Z",
+  "datePublished": "2019-02-02T16:54:02+00:00",
+  "description": "These Sesame Tempeh Bowls are a great vegan alternative to sesame chicken and only take about 20 minutes to make. An easy fast vegan meal prep! ",
+  "image": [
+    "https://www.budgetbytes.com/wp-content/uploads/2019/02/Sesame-Tempeh-eat.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2019/02/Sesame-Tempeh-eat-500x500.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2019/02/Sesame-Tempeh-eat-500x375.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2019/02/Sesame-Tempeh-eat-480x270.jpg"
+  ],
+  "keywords": "easy, Vegan, Vegetarian",
+  "name": "Sesame Tempeh Bowls",
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "calories": "441.63 kcal",
+    "carbohydrateContent": "68.25 g",
+    "fatContent": "11.18 g",
+    "fiberContent": "5.03 g",
+    "proteinContent": "20.83 g",
+    "servingSize": "1 Serving",
+    "sodiumContent": "909.33 mg"
+  },
+  "prepTime": "PT10M",
+  "recipeIngredient": [
+    "1/4 cup soy sauce ($0.24)",
+    "2 Tbsp water ($0.00)",
+    "1 Tbsp sesame oil ($0.33)",
+    "3 Tbsp brown sugar ($0.12)",
+    "1 Tbsp rice vinegar ($0.12)",
+    "1 tsp grated fresh ginger ($0.10)",
+    "2 cloves garlic, minced ($0.16)",
+    "1 Tbsp sesame seeds ($0.08)",
+    "1/2 Tbsp cornstarch ($0.2)",
+    "8 oz. tempeh ($2.50)",
+    "2 green onions, sliced ($0.11)",
+    "4 cups cooked jasmine rice* ($0.70)",
+    "1 lb. frozen broccoli florets ($2.26)"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "Begin by mixing together the sesame sauce. In a medium bowl, stir together the soy sauce, 2 Tbsp water, sesame oil, brown sugar, rice vinegar, grated ginger, minced garlic, sesame seeds, and cornstarch until the cornstarch is dissolved. Set the sauce aside."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Cut the brick of tempeh into 8 squares, then cut each square diagonally into a triangle. Turn each triangle on its side and slice it in half so you have two thinner triangles. To achieve the proper tempeh to sauce ratio, you don't want thick pieces."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Place the tempeh in a large skillet and add 1/2 cup water. Place the skillet over medium-high heat and let the tempeh simmer until all of the water evaporates (about 5-8 minutes). Flip the tempeh a couple times as it simmers."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Once the water has evaporated, turn the heat down to medium and pour in the sesame sauce. The skillet will still be quite hot, so the sauce may begin to thicken immediately. Stir the tempeh in the sauce until the sauce has thickened (1-2 minutes), then remove it from the heat immediately to prevent further evaporation and thickening."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "To build the bowls, place one cup of rice in each dish, top with 1/4 of the sesame tempeh, 1/4 of the broccoli florets, and a sprinkle of green onion."
+    }
+  ],
+  "recipeYield": "4",
+  "sameAs": ["https://www.budgetbytes.com/sesame-tempeh-bowls/"],
+  "totalTime": "PT20M",
+  "updatedAt": "2020-10-08T05:47:09.688Z"
+}

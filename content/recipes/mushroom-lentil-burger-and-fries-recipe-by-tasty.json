@@ -1,0 +1,138 @@
+{
+  "@type": "Recipe",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "bestRating": "100",
+    "ratingCount": "349",
+    "ratingValue": "94",
+    "worstRating": "0"
+  },
+  "cookingMethod": "Bake",
+  "createdAt": "2020-10-18T00:40:32.309Z",
+  "datePublished": "2018-04-18T14:40:51",
+  "description": "Here's what you need: flax meal, water, olive oil, mushrooms, soy sauce, smoked paprika, small onion, garlic, salt, pepper, lentils, oats, russet potatoes, olive oil, garlic powder, paprika, salt, pepper, burger buns, dijon mustard, sliced tomato, fresh arugula, ketchup",
+  "image": "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/9c497c8b57444de191a89fd8414b95a5/HowToEatVeganOnABudgetFBFinalNEW.jpg",
+  "name": "Mushroom Lentil Burger & Fries Recipe by Tasty",
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "calories": "811 calories",
+    "carbohydrateContent": "133 grams",
+    "fatContent": "20 grams",
+    "fiberContent": "14 grams",
+    "proteinContent": "27 grams",
+    "sugarContent": "11 grams"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tasty.co/favicon.ico"
+    },
+    "name": "Tasty"
+  },
+  "recipeCategory": "Dinner",
+  "recipeIngredient": [
+    "1 tablespoon flax meal",
+    "3 tablespoons water",
+    "3 tablespoons olive oil, divided",
+    "8 oz mushrooms, finely chopped",
+    "1 tablespoon soy sauce",
+    "1/2 teaspoon smoked paprika",
+    "1 small onion, diced",
+    "2 cloves garlic, minced",
+    "1/2 teaspoon salt",
+    "1/2 teaspoon pepper",
+    "1 1/2 cups lentils, cooked",
+    "1 cup oats",
+    "4 russet potatoes, cut in wedges",
+    "olive oil, to taste",
+    "1 1/2 teaspoons garlic powder",
+    "1 1/2 teaspoons paprika",
+    "salt, to taste",
+    "pepper, to taste",
+    "5 burger buns",
+    "dijon mustard",
+    "sliced tomato",
+    "fresh arugula",
+    "ketchup, for serving"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "Preheat the oven to 400°F (200°C)."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "To make the flax egg, combine the flax meal and water in a small bowl and stir. Set aside."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "In a large saucepan, heat 1 tablespoon of olive oil over medium heat."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Once the oil begins to shimmer, add the mushrooms and cook until most of the juices have evaporated, 7-8 minutes."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Add the soy sauce and paprika and cook for 2-3 more minutes. Set aside in a large bowl."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Heat another tablespoon of olive oil over medium heat. Once the oil begins to shimmer, add the onion and cook for 3-5 minutes, until semi-translucent. Add the garlic and cook for 2 minutes. Add the salt and pepper and cook for another 2 minutes."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Transfer the onion to a food processor, then add the lentils, oats, and flax egg. Pulse until chunky, about 10-15 pulses."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Transfer the lentil mixture to the bowl with the mushrooms. Mix well, using your hands if needed, then shape into 5 patties. Place on a baking sheet and cover with plastic wrap, then freeze for 20 minutes."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "While the patties are freezing, prepare the fries. In a medium bowl, toss the potatoes, a drizzle of olive oil, the paprika, garlic powder, salt, and pepper until well-coated."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Spread the fries on a baking sheet and bake for 15 minutes."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Remove the patties from freezer. In a large saucepan, heat the remaining tablespoon of olive oil over medium heat. Once the oil begins to shimmer, add 2-3 patties, careful not to overcrowd the pan. Cook for 5 minutes, then flip and cook for 5 minutes on other side. Repeat with the remaining patties."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "To assemble the burgers, top each bun with a patty, then layer on dijon mustard, tomato slices, and arugula."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Serve the fries with ketchup."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Enjoy!"
+    }
+  ],
+  "recipeYield": "5 servings",
+  "sameAs": ["https://tasty.co/recipe/mushroom-lentil-burger-fries"],
+  "tool": "Oven Mitts",
+  "updatedAt": "2020-10-18T00:40:32.307Z",
+  "video": {
+    "@type": "VideoObject",
+    "contentUrl": "https://vid.tasty.co/output/90034/landscape_480/1524075673",
+    "description": "Here's what you need: flax meal, water, olive oil, mushrooms, soy sauce, smoked paprika, small onion, garlic, salt, pepper, lentils, oats, russet potatoes, olive oil, garlic powder, paprika, salt, pepper, burger buns, dijon mustard, sliced tomato, fresh arugula, ketchup",
+    "duration": "PT3M47S",
+    "name": "Mushroom Lentil Burger & Fries Recipe by Tasty",
+    "publisher": {
+      "@type": "Organization",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://tasty.co/favicon.ico"
+      },
+      "name": "Tasty"
+    },
+    "thumbnailUrl": "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/9c497c8b57444de191a89fd8414b95a5/HowToEatVeganOnABudgetFBFinalNEW.jpg",
+    "uploadDate": "2018-04-18T14:40:51"
+  }
+}

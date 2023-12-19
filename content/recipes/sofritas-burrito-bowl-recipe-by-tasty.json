@@ -1,0 +1,102 @@
+{
+  "@type": "Recipe",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "bestRating": "100",
+    "ratingCount": "466",
+    "ratingValue": "97",
+    "worstRating": "0"
+  },
+  "cookTime": "PT15M",
+  "createdAt": "2020-10-18T00:40:51.122Z",
+  "datePublished": "2018-04-18T14:36:21",
+  "description": "This protein-packed alternative to meat comes together with a medley of spices and soy sauce. Simply break apart your favorite extra firm tofu, mix in soy sauce, chili powder, garlic powder, cumin, paprika, and cayenne, and cook until browned. Serve it in a bowl with rice or lettuce, and use it as a taco filling.",
+  "image": "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/f4a003406c30412ba569d7ff08c839e5/HowToEatVeganOnABudgetFBFinalNEW.jpg",
+  "name": "Sofritas Burrito Bowl Recipe by Tasty",
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "calories": "1224 calories",
+    "carbohydrateContent": "217 grams",
+    "fatContent": "26 grams",
+    "fiberContent": "19 grams",
+    "proteinContent": "36 grams",
+    "sugarContent": "10 grams"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tasty.co/favicon.ico"
+    },
+    "name": "Tasty"
+  },
+  "recipeCategory": "Dinner",
+  "recipeCuisine": "Mexican",
+  "recipeIngredient": [
+    "1 tablespoon olive oil",
+    "1/2 cup onion, finely chopped",
+    "7 oz extra firm tofu, 1/2 block",
+    "1 tablespoon soy sauce",
+    "1 teaspoon chili powder",
+    "3/4 teaspoon garlic powder",
+    "1/2 teaspoon cumin",
+    "1/4 teaspoon paprika",
+    "1 pinch cayenne pepper",
+    "2 cups brown rice, cooked",
+    "2 cups shredded lettuce",
+    "1/2 cup black beans",
+    "1/2 cup corn, fire-roasted",
+    "1/3 cup pico de gallo",
+    "1/2 cup guacamole",
+    "1/4 cup red onion, pickled",
+    "fresh cilantro, for garnish"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "In a large saucepan, heat the olive oil over medium heat. Once the oil begins to shimmer, add the onion and cook until semi-translucent, 3-4 minutes."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Use your hands to crumble the tofu into the pan, then use a spatula to continue to break apart while cooking for 3-4 minutes, until slightly browned."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Add the soy sauce, chili powder, garlic powder, cumin, paprika, and cayenne. Continue to cook and break the tofu apart until browned and crumbly."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "To assemble, spread brown rice on the bottom of a bowl, then layer on lettuce, black beans, corn, tofu sofritas, pico de gallo, guacamole, and onions."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Serve topped with cilantro."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Enjoy!"
+    }
+  ],
+  "recipeYield": "2 servings",
+  "sameAs": ["https://tasty.co/recipe/sofritas-burrito-bowl"],
+  "tool": "Pyrex",
+  "totalTime": "PT15M",
+  "updatedAt": "2020-10-18T00:40:51.121Z",
+  "video": {
+    "@type": "VideoObject",
+    "contentUrl": "https://vid.tasty.co/output/90034/landscape_480/1524075673",
+    "description": "This protein-packed alternative to meat comes together with a medley of spices and soy sauce. Simply break apart your favorite extra firm tofu, mix in soy sauce, chili powder, garlic powder, cumin, paprika, and cayenne, and cook until browned. Serve it in a bowl with rice or lettuce, and use it as a taco filling.",
+    "duration": "PT3M47S",
+    "name": "Sofritas Burrito Bowl Recipe by Tasty",
+    "publisher": {
+      "@type": "Organization",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://tasty.co/favicon.ico"
+      },
+      "name": "Tasty"
+    },
+    "thumbnailUrl": "https://img.buzzfeed.com/thumbnailer-prod-us-east-1/f4a003406c30412ba569d7ff08c839e5/HowToEatVeganOnABudgetFBFinalNEW.jpg",
+    "uploadDate": "2018-04-18T14:36:21"
+  }
+}

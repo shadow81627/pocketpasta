@@ -1,0 +1,59 @@
+{
+  "@type": "Recipe",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingCount": "18",
+    "ratingValue": "4.56"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Beth - Budget Bytes"
+  },
+  "cookTime": "PT45M",
+  "createdAt": "2020-10-08T05:28:00.659Z",
+  "datePublished": "2016-02-22T19:31:07+00:00",
+  "description": "Chili Roasted Sweet Potatoes are an easy and flavorful side dish for any southwest inspired meal. Perfect for busy weeknights and meal prep!",
+  "image": [
+    "https://www.budgetbytes.com/wp-content/uploads/2016/02/Chili-Roasted-Sweet-Potatoes-2.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2016/02/Chili-Roasted-Sweet-Potatoes-2-500x480.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2016/02/Chili-Roasted-Sweet-Potatoes-2-500x375.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2016/02/Chili-Roasted-Sweet-Potatoes-2-480x270.jpg"
+  ],
+  "keywords": "Easy Side Dish, Roasted Vegetables, Sweet Potato Recipe",
+  "name": "Chili Roasted Sweet Potatoes",
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "calories": "260.8 kcal",
+    "carbohydrateContent": "46.78 g",
+    "fatContent": "7.15 g",
+    "fiberContent": "7.53 g",
+    "proteinContent": "3.85 g",
+    "servingSize": "1 Serving",
+    "sodiumContent": "330 mg"
+  },
+  "prepTime": "PT10M",
+  "recipeIngredient": [
+    "2 lbs. sweet potatoes ($2.08)",
+    "1 Tbsp chili powder* ($0.30)",
+    "2 Tbsp olive oil ($0.24)",
+    "1/4 tsp salt (or to taste) ($0.02)"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "Preheat the oven to 400oF. Line a baking sheet with aluminum foil."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Wash and peel the sweet potatoes, then cut them into 1/2 inch cubes. Place the cubed sweet potatoes into a large bowl and drizzle with the olive oil, chili powder, and salt. Toss the potatoes until evenly coated in oil and spices."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Spread the seasoned sweet potatoes out over the prepared baking sheet so they are in a single layer. Roast the potatoes in the preheated oven for 45 minutes, stirring once half way through. After 45 minutes, the sweet potatoes should be soft and slightly browned on the edges. Total cooking time will ultimately depend on the size of your cubes."
+    }
+  ],
+  "recipeYield": "4",
+  "sameAs": ["https://www.budgetbytes.com/chili-roasted-sweet-potatoes/"],
+  "totalTime": "PT55M",
+  "updatedAt": "2020-10-08T05:28:00.659Z"
+}

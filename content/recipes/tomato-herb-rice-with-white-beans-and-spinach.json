@@ -1,0 +1,86 @@
+{
+  "@type": "Recipe",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingCount": "37",
+    "ratingValue": "4.55"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Beth - Budget Bytes"
+  },
+  "cookTime": "PT45M",
+  "createdAt": "2020-10-08T05:54:56.838Z",
+  "datePublished": "2016-10-01T15:27:31+00:00",
+  "description": "Tomato Herb Rice with White Beans and Spinach is a hearty and flavorful vegan dinner that will be loved by meat eaters and vegetarians alike.",
+  "image": [
+    "https://www.budgetbytes.com/wp-content/uploads/2016/10/Tomato-Herb-Rice-with-White-Beans-and-Spinach-spoon-1.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2016/10/Tomato-Herb-Rice-with-White-Beans-and-Spinach-spoon-1-500x500.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2016/10/Tomato-Herb-Rice-with-White-Beans-and-Spinach-spoon-1-500x375.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2016/10/Tomato-Herb-Rice-with-White-Beans-and-Spinach-spoon-1-480x270.jpg"
+  ],
+  "keywords": "One Pot Meal, Skillet Meal, Vegetarian Dinner",
+  "name": "Tomato Herb Rice with White Beans and Spinach",
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "calories": "316 kcal",
+    "carbohydrateContent": "55.77 g",
+    "fatContent": "5.6 g",
+    "fiberContent": "7.37 g",
+    "proteinContent": "11.75 g",
+    "servingSize": "1 Serving",
+    "sodiumContent": "766.47 mg"
+  },
+  "prepTime": "PT10M",
+  "recipeIngredient": [
+    "2 Tbsp olive oil ($0.22)",
+    "2 cloves garlic ($0.16)",
+    "1/2 tsp dried oregano ($0.05)",
+    "1/2 tsp dried basil ($0.05)",
+    "1/4 tsp dried thyme ($0.03)",
+    "1/4 tsp dried rosemary ($0.03)",
+    "1 pinch crushed red pepper ($0.02)",
+    "Freshly cracked black pepper ($0.05)",
+    "3 oz. tomato paste (about 1/4 cup) ($0.33)",
+    "1/2 tsp brown sugar ($0.02)",
+    "1/4 tsp salt ($0.02)",
+    "1 yellow onion ($0.25)",
+    "1 15oz. can fire roasted diced tomatoes ($1.50)",
+    "1 15oz. can cannellini beans ($1.29)",
+    "1/4 lb. frozen chopped spinach ($0.43)",
+    "1 cup uncooked long grain white rice ($0.48)",
+    "1.5 cups vegetable broth* ($0.19)"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "Place the spinach in a bowl and allow it to thaw slightly as you prepare the beginning of the recipe."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Dice the onion and mince the garlic. Set the onion aside. Add the olive oil, minced garlic, oregano, basil, thyme, rosemary, a pinch of crushed red pepper, and a little freshly cracked black pepper (about 10 cranks of a pepper mill) to a heavy bottomed pot or deep skillet. Sauté the garlic and spices over medium-low heat for about one minute."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Add the tomato paste and brown sugar to the pot and continue to sauté for 2-3 minutes, or until the tomato paste takes on a deep burgundy color. Add the onion and salt and continue to sauté for a few minutes more, or until the onions become soft and transparent."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Meanwhile, drain and rinse the cannellini beans in a colander. Add the diced tomatoes (with juices), cannellini beans, spinach, and uncooked rice to the pot. Pour in the vegetable broth and stir briefly to combine the ingredients."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Place a lid on the pot and turn the heat up to medium-high. Allow the contents to come up to a boil. Once it reaches a boil, turn the heat down to the lowest setting that allows the liquid to maintain a simmer. Let the pot simmer for 15-20 minutes, or until most of the liquid is absorbed (there may still be some around the edges. Turn the heat off and let the pot rest, undisturbed, for 10 additional minutes."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Finally, fluff the contents of the pot with a fork, making sure to not stir vigorously. Serve immediately."
+    }
+  ],
+  "recipeYield": "6",
+  "sameAs": [
+    "https://www.budgetbytes.com/tomato-herb-rice-with-white-beans-and-spinach/"
+  ],
+  "totalTime": "PT55M",
+  "updatedAt": "2020-10-08T05:54:56.838Z"
+}

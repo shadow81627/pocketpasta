@@ -1,0 +1,81 @@
+{
+  "@type": "Recipe",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5",
+    "reviewCount": "5"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Lisa Lin"
+  },
+  "cookTime": "PT3M",
+  "createdAt": "2020-10-08T05:35:17.756Z",
+  "datePublished": "2015-01-12",
+  "description": "This egg fried in a rice is a great single-serving meal for days when you feel too lazy to cook. Adapted from Meals in a Mug. ",
+  "image": [
+    "https://healthynibblesandbits.com/wp-content/uploads/2015/06/Egg-Fried-Rice-In-A-Mug-FF-225x225.jpg",
+    "https://healthynibblesandbits.com/wp-content/uploads/2015/06/Egg-Fried-Rice-In-A-Mug-FF-260x195.jpg",
+    "https://healthynibblesandbits.com/wp-content/uploads/2015/06/Egg-Fried-Rice-In-A-Mug-FF-320x180.jpg",
+    "https://healthynibblesandbits.com/wp-content/uploads/2015/06/Egg-Fried-Rice-In-A-Mug-FF.jpg"
+  ],
+  "name": "Egg Fried Rice in a Mug",
+  "nutrition": {
+    "@type": "nutritionInformation",
+    "calories": "0",
+    "carbohydrateContent": "0 g",
+    "cholesterolContent": "0 mg",
+    "fatContent": "0 g",
+    "fiberContent": "0 g",
+    "proteinContent": "0 g",
+    "saturatedFatContent": "0 g",
+    "sodiumContent": "0 mg",
+    "sugarContent": "0 g",
+    "transFatContent": "0 g",
+    "unsaturatedFatContent": "0 g"
+  },
+  "prepTime": "PT5M",
+  "recipeIngredient": [
+    "1 cup cooked jasmine rice",
+    "2 tablespoons frozen peas",
+    "2 tablespoons chopped red pepper",
+    "1/2 stalk of green onion, sliced",
+    "small pinch of mung bean sprouts",
+    "small pinch of shredded purple cabbage",
+    "1 large egg",
+    "1 tablespoon low-sodium soy sauce",
+    "1/2 teaspoon sesame oil",
+    "1/2 teaspoon onion powder",
+    "1/4 teaspoon five-spice powder"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "Place the rice into a large mug. Lay the peas, red pepper, green onion, mung bean sprouts and cabbage on top. Cover the mug with cling film. Using a knife, puncture one or two small holes through the film. This step is important! You don’t want to scald yourself. Microwave on high for 1 minute 15 seconds."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "In the meantime, beat the egg and mix in the seasonings (soy sauce, sesame oil, onion powder and five-spice powder). Pour the egg mixture into the mug, and stir with the vegetables and rice."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Cover the mug with cling film again, and microwave for 1 minute 15 seconds to 1 minute 30 seconds. Take the mug out of the microwave, and give everything a good stir. Let the fried rice stand for a minute to finish cooking. Use a fork to fluff up the rice and serve."
+    }
+  ],
+  "recipeYield": "1",
+  "sameAs": ["https://healthynibblesandbits.com/egg-fried-rice-mug/"],
+  "totalTime": "PT9M",
+  "updatedAt": "2020-10-08T05:35:17.756Z",
+  "url": "https://healthynibblesandbits.com/egg-fried-rice-mug/",
+  "video": {
+    "@context": "http://schema.org",
+    "@type": "VideoObject",
+    "contentUrl": "https://www.youtube.com/watch?v=8SNOHk9VcuE",
+    "description": "Want a quick and easy meal without cleaning too many dishes? This Gluten-Free Egg Fried Rice in a Mug is for you! It takes less than 10 minutes to make, and it's delicious! Yes, you can cook tasty food in your microwave! Full recipe: https://healthynibblesandbits.com/gluten-free-egg-fried-rice-in-a-mug/\n\nCooking Note: if you can adjust the power settings of your microwave, cook this dish at a power setting of 8 or 9 out of 10. \n\nFollow me here: \n♥ Blog: https://healthynibblesandbits.com\n♥ Instagram: http://instagram.com/healthynibblesandbits\n♥ Twitter: http://twitter.com/healthynibs\n♥ Facebook: http://facebook.com/healthynibblesandbits\n♥ Pinterest: http://facebook.com/healthynibs",
+    "duration": "PT1M",
+    "embedUrl": "https://www.youtube.com/embed/8SNOHk9VcuE?feature=oembed",
+    "name": "Gluten-Free Egg Fried Rice in a Mug",
+    "thumbnailUrl": ["https://i.ytimg.com/vi/8SNOHk9VcuE/hqdefault.jpg"],
+    "uploadDate": "2016-02-22"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "@type": "Recipe",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingCount": "37",
+    "ratingValue": "5"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Beth - Budget Bytes"
+  },
+  "cookTime": "PT20M",
+  "createdAt": "2020-10-08T05:52:49.590Z",
+  "datePublished": "2013-08-31T11:44:15+00:00",
+  "description": "Take your grilled cheese game to the next level with this Spinach Feta Grilled Cheese, featuring garlic, red pepper, and TWO cheeses!",
+  "image": [
+    "https://www.budgetbytes.com/wp-content/uploads/2013/08/Spinach-Feta-Grilled-Cheese-front-1.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2013/08/Spinach-Feta-Grilled-Cheese-front-1-500x480.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2013/08/Spinach-Feta-Grilled-Cheese-front-1-500x375.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2013/08/Spinach-Feta-Grilled-Cheese-front-1-480x270.jpg"
+  ],
+  "name": "Spinach Feta Grilled Cheese",
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "calories": "360.85 kcal",
+    "carbohydrateContent": "37.5 g",
+    "fatContent": "15.55 g",
+    "fiberContent": "3.35 g",
+    "proteinContent": "19.55 g",
+    "servingSize": "1 Serving",
+    "sodiumContent": "1131.05 mg"
+  },
+  "prepTime": "PT10M",
+  "recipeIngredient": [
+    "1/2 Tbsp olive oil ($0.08)",
+    "1 clove garlic ($0.08)",
+    "1/4 lb frozen cut spinach ($0.38)",
+    "Pinch of salt and pepper ($0.05)",
+    "2 ciabatta rolls ($1.33)",
+    "1 cup shredded mozzarella cheese ($1.00)",
+    "1 oz feta cheese ($0.43)",
+    "pinch red pepper flakes (optional) ($0.05)"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "Mince the garlic and add it to a skillet with the olive oil. Cook over medium-low heat for 1-2 minutes, or until it begins to soften. Add the frozen spinach, turn the heat up to medium, and cook for about 5 minutes, or until heated through and most of the excess moisture has evaporated away. Season lightly with salt and pepper."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Cut the rolls in half. Add about 1/4 cup of shredded mozzarella and 1/2 oz. of feta to the bottom half of each roll. Divide the cooked spinach between the two sandwiches, then top with a pinch of red pepper flakes, plus 1/4 more shredded mozzarella on each."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Place the top half of the ciabatta roll on the sandwiches and transfer them to a large non-stick skillet. Fill a large pot with a few inches of water to create weight, then place the pot on top of the sandwiches to press them down like a panini press. Turn the heat on to medium-low and cook until the sandwiches are crispy on the bottom. Carefully flip the sandwiches, place the weighted pot back on top, and cook until crispy on the other side and the cheese is melted. Serve warm."
+    }
+  ],
+  "recipeYield": "2",
+  "sameAs": ["https://www.budgetbytes.com/spinach-feta-grilled-cheese/"],
+  "totalTime": "PT30M",
+  "updatedAt": "2020-10-08T05:52:49.590Z"
+}

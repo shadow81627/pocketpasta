@@ -1,0 +1,83 @@
+{
+  "@type": "Recipe",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingCount": "35",
+    "ratingValue": "4.98"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Beth - Budget Bytes"
+  },
+  "cookTime": "PT30M",
+  "createdAt": "2020-10-08T05:27:29.711Z",
+  "datePublished": "2016-09-14T13:01:40+00:00",
+  "description": "Chili Garlic Tofu Bowls are a fiber and flavor filled healthy lunch that you can pre-pack for your week ahead",
+  "image": [
+    "https://www.budgetbytes.com/wp-content/uploads/2016/09/Chili-Garlic-Tofu-Bowls-close-1.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2016/09/Chili-Garlic-Tofu-Bowls-close-1-500x500.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2016/09/Chili-Garlic-Tofu-Bowls-close-1-500x375.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2016/09/Chili-Garlic-Tofu-Bowls-close-1-480x270.jpg"
+  ],
+  "keywords": "bowl meals, Lunch Meal Prep, vegan meal prep",
+  "name": "Chili Garlic Tofu Bowls",
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "calories": "421.43 kcal",
+    "carbohydrateContent": "61.45 g",
+    "fatContent": "12.4 g",
+    "fiberContent": "6.35 g",
+    "proteinContent": "17.73 g",
+    "servingSize": "1 Serving",
+    "sodiumContent": "1261.83 mg"
+  },
+  "prepTime": "PT30M",
+  "recipeIngredient": [
+    "1 bunch kale ($1.50)",
+    "1 Tbsp cooking oil ($0.02)",
+    "2 cloves garlic ($0.16)",
+    "1 Tbsp soy sauce ($0.09)",
+    "1 tsp toasted sesame oil ($0.11)",
+    "1 Tbsp sesame seeds ($0.08)",
+    "14 oz block firm tofu $2.00 ($2.00)",
+    "2 Tbsp chili garlic sauce* ($0.42)",
+    "1 Tbsp brown sugar ($0.04)",
+    "4 cups cooked brown rice ($0.64)",
+    "1 lime ($0.33)",
+    "1/4 bunch cilantro (optional) ($0.25)"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "Remove the tofu from its package and wrap it in a clean, lint-free kitchen towel or a few layers of paper towel. Place the wrapped tofu between two plates and place something heavy on top (like a pot full of water). Let the tofu press for at least 30 minutes."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "While the tofu is pressing, prepare the kale. Remove the stems from the kale, then cut the leaves into one-inch wide strips. Rinse the leaves well in a colander with cool water. Let drain."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Mince the garlic and add it to large pot with one tablespoon cooking oil. Sauté over medium heat for about one minute. Add the washed kale and continue to stir and cook until the kale is wilted (about five minutes). Stir in the soy sauce, sesame oil, and sesame seeds. Set the kale aside."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Prepare the sauce for the tofu. In a small bowl, stir together the chili garlic sauce, soy sauce, and brown sugar. Once the tofu is finished pressing, cut it into small cubes or rectangles."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Heat a large skillet over medium-high heat. Once hot, add one tablespoon of cooking oil. Tilt the skillet to make sure the surface is completely covered. Add the tofu pieces. Let them fry until golden brown on bottom, then flip and fry until golden brown on the other side. Continue until the pieces are golden brown on most sides. (The tofu will stick until it is browned, at which point it will loosen from the skillet, so don't try to move or flip the tofu pieces too early.)"
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Once the tofu is browned on most sides, turn off the heat, pour the prepared chili garlic sauce into the skillet, and stir to coat. The sauce will thicken slightly and absorb into the tofu."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "To build the bowls, add one cup of cooked rice to each bowl along with 1/4 of the sesame kale and 1/4 of the chili garlic tofu pieces. Slice a lime into wedges and serve each bowl with one or two wedges and a few sprigs of fresh cilantro. Squeeze fresh lime juice over the bowl just before eating."
+    }
+  ],
+  "recipeYield": "4",
+  "sameAs": ["https://www.budgetbytes.com/chili-garlic-tofu-bowls/"],
+  "totalTime": "PT60M",
+  "updatedAt": "2020-10-08T05:27:29.712Z"
+}

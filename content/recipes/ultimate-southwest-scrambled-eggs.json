@@ -1,0 +1,77 @@
+{
+  "@type": "Recipe",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingCount": "13",
+    "ratingValue": "4.85"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Beth - Budget Bytes"
+  },
+  "cookTime": "PT15M",
+  "createdAt": "2020-10-08T05:56:57.509Z",
+  "datePublished": "2016-07-25T14:20:12+00:00",
+  "description": "Ultimate Southwest Scrambled Eggs make a fast and filling dinner or brunch, and are a great way to use up leftover ingredients in the kitchen.",
+  "image": [
+    "https://www.budgetbytes.com/wp-content/uploads/2016/07/Ultimate-Southwest-Scrambled-Eggs-spoon-1.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2016/07/Ultimate-Southwest-Scrambled-Eggs-spoon-1-500x480.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2016/07/Ultimate-Southwest-Scrambled-Eggs-spoon-1-500x375.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2016/07/Ultimate-Southwest-Scrambled-Eggs-spoon-1-480x270.jpg"
+  ],
+  "keywords": "Breakfast ideas, Brunch Recipes",
+  "name": "Ultimate Southwest Scrambled Eggs",
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "calories": "458.5 kcal",
+    "carbohydrateContent": "33.25 g",
+    "fatContent": "22.93 g",
+    "fiberContent": "12.3 g",
+    "proteinContent": "30.75 g",
+    "servingSize": "1 Serving",
+    "sodiumContent": "1182.15 mg"
+  },
+  "prepTime": "PT10M",
+  "recipeIngredient": [
+    "8 large eggs ($2.16)",
+    "1/4 cup milk ($0.08)",
+    "salt and pepper ($0.05)",
+    "1 Tbsp butter ($0.08)",
+    "1 15oz. can black beans ($0.89)",
+    "1 4oz. can diced green chiles ($0.87)",
+    "1/4 cup taco sauce ($0.48)",
+    "4 oz. pepper jack, shredded ($1.00)",
+    "2 green onions ($0.17)",
+    "1 small tomato ($0.34)"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "Rinse the can of beans in a colander and let drain as you prepare the eggs."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "In a large bowl, combine the eggs, milk, a pinch of salt, and pepper. Whisk until fairly smooth."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Heat a large skillet over medium-low heat. Once hot, add the butter and let it melt. Spread the butter over the surface of the skillet with a spatula. Pour the whisked eggs into the skillet and gently fold them with the spatula as they begin to set. Avoid over stirring the eggs."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "When the eggs are bout 75% set (still soft, moist, and fluid around the edges), add the drained beans and chopped green chiles (no need to drain the chiles). Gently fold the beans and chiles into the scrambled eggs. Drizzle taco sauce over the eggs, then top with pepper jack."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Place a lid on the skillet and let it warm for about 5 more minutes, or until the eggs are fully set and the cheese on top is melted."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "While the eggs are warming through, slice the green onions and dice the tomato. Top the eggs with the fresh tomato and green onion just before serving."
+    }
+  ],
+  "recipeYield": "4",
+  "sameAs": ["https://www.budgetbytes.com/ultimate-southwest-scrambled-eggs/"],
+  "totalTime": "PT25M",
+  "updatedAt": "2020-10-08T05:56:57.509Z"
+}

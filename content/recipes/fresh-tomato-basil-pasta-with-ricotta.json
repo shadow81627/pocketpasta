@@ -1,0 +1,80 @@
+{
+  "@type": "Recipe",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingCount": "18",
+    "ratingValue": "4.73"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Beth - Budget Bytes"
+  },
+  "cookTime": "PT15M",
+  "createdAt": "2020-10-08T05:35:48.272Z",
+  "datePublished": "2018-05-24T13:48:40+00:00",
+  "description": "It only takes a few fresh ingredients make this Fresh Tomato Basil Pasta with Ricotta, the perfect light lunch or dinner for summer! ",
+  "image": [
+    "https://www.budgetbytes.com/wp-content/uploads/2018/05/Fresh-Tomato-Basil-Pasta-with-Ricotta-plate.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2018/05/Fresh-Tomato-Basil-Pasta-with-Ricotta-plate-500x500.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2018/05/Fresh-Tomato-Basil-Pasta-with-Ricotta-plate-500x375.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2018/05/Fresh-Tomato-Basil-Pasta-with-Ricotta-plate-480x270.jpg"
+  ],
+  "name": "Fresh Tomato Basil Pasta with Ricotta",
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "calories": "495.68 kcal",
+    "carbohydrateContent": "75.08 g",
+    "fatContent": "15.33 g",
+    "fiberContent": "9.33 g",
+    "proteinContent": "15.13 g",
+    "servingSize": "1 Serving",
+    "sodiumContent": "278.5 mg"
+  },
+  "prepTime": "PT10M",
+  "recipeIngredient": [
+    "12 oz. pasta (any shape) ($1.00)",
+    "2 Tbsp olive oil ($0.26)",
+    "2 cloves garlic ($0.16)",
+    "2 pints grape tomatoes ($3.98)",
+    "1 Tbsp butter ($0.13)",
+    "1/2 cup fresh basil, loosely packed ($2.49)",
+    "1/2 cup whole milk ricotta ($0.57)",
+    "salt & pepper to taste ($0.10)"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "Bring a large pot of water to a boil for the pasta. Once boiling, add the pasta and continue to boil until the pasta is tender. Reserve about one cup of the starchy pasta water, then drain the pasta in a colander."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "While the pasta is cooking, prepare the rest of the recipe. Slice the grape tomatoes in half and slice or roughly chop the basil. Mince the garlic."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Add the olive oil to a large skillet and place it over medium heat. Once hot, add the garlic and sauté for just one minute to take the raw edge off the garlic."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Add the grape tomatoes and a pinch of salt to the skillet. Stir to combine, then place a lid on the skillet and let the tomato simmer for about 10 minutes, stirring occasionally. Let the tomatoes simmer just until they begin to break down and they have released their juices. The tomatoes should just be beginning to lose their shape and their skins should appear a bit wrinkled."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Turn the heat off and add the butter, most of the basil (save some to garnish with), and some freshly cracked pepper. Stir until the butter is melted, then taste and adjust the salt and pepper as needed. You want it to be slightly on the salty side, as the saltiness will dilute a bit once it's combined with the pasta."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Add the cooked and drained pasta and stir to coat the pasta in the tomato sauce. Add a splash or two of the reserved pasta water if the mixture appears dry."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Top the pasta with dollops of ricotta, a little more pepper, and any reserved basil, then serve!"
+    }
+  ],
+  "recipeYield": "4",
+  "sameAs": [
+    "https://www.budgetbytes.com/fresh-tomato-basil-pasta-with-ricotta/"
+  ],
+  "totalTime": "PT25M",
+  "updatedAt": "2020-10-08T05:35:48.273Z"
+}

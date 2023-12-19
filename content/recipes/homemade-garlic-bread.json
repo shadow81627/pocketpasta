@@ -1,0 +1,60 @@
+{
+  "@type": "Recipe",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingCount": "16",
+    "ratingValue": "4.94"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Beth - Budget Bytes"
+  },
+  "cookTime": "PT15M",
+  "createdAt": "2020-10-08T05:38:23.761Z",
+  "datePublished": "2010-03-06T14:37:00+00:00",
+  "description": "Homemade Garlic Bread is twice as nice for half the price of it's frozen store bought counterpart! ",
+  "image": [
+    "https://www.budgetbytes.com/wp-content/uploads/2010/03/Homemade-Garlic-Bread-front.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2010/03/Homemade-Garlic-Bread-front-500x500.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2010/03/Homemade-Garlic-Bread-front-500x375.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2010/03/Homemade-Garlic-Bread-front-480x270.jpg"
+  ],
+  "name": "Homemade Garlic Bread",
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "calories": "183.9 kcal",
+    "carbohydrateContent": "24.83 g",
+    "fatContent": "7.24 g",
+    "fiberContent": "1.1 g",
+    "proteinContent": "5.22 g",
+    "servingSize": "1 Serving",
+    "sodiumContent": "349.08 mg"
+  },
+  "prepTime": "PT10M",
+  "recipeIngredient": [
+    "1 loaf French bread, approx. 24\" long ($1.29)",
+    "4 Tbsp butter, room temperature ($0.44)",
+    "2 Tbsp olive oil ($0.32)",
+    "3 cloves garlic, minced ($0.24)",
+    "1/4 cup fresh parsley, chopped ($0.12)",
+    "a pinch salt ($0.02)"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "Preheat the oven to 400oF. In a bowl, stir together the room temperature butter, olive oil, minced garlic, chopped parsley, and a pinch of salt until relatively smooth."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Cut the French bread into two 12\" long pieces, then cut each piece open lengthwise. Lay the bread on a baking sheet cut sides facing up. Spread the garlic butter mixture evenly over the open surfaces of the bread.*"
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Bake the bread for 10-15 minutes, or until the edges are golden brown and crispy. Cut the bread into 2-inch sections and serve hot."
+    }
+  ],
+  "recipeYield": "12",
+  "sameAs": ["https://www.budgetbytes.com/garlic-bread/"],
+  "totalTime": "PT25M",
+  "updatedAt": "2020-10-08T05:38:23.761Z"
+}

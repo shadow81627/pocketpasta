@@ -1,0 +1,66 @@
+{
+  "@type": "Recipe",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingCount": "5",
+    "ratingValue": "5"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Beth - Budget Bytes"
+  },
+  "cookTime": "PT20M",
+  "createdAt": "2020-10-08T05:49:14.757Z",
+  "datePublished": "2020-02-05T10:53:04+00:00",
+  "description": "Adding just a few ingredients to your rice can really make your meal pop. Try this Simple Sesame Rice with any of your Southeast Asian inspired meals.",
+  "image": [
+    "https://www.budgetbytes.com/wp-content/uploads/2020/02/Sesame-Rice-served.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2020/02/Sesame-Rice-served-500x500.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2020/02/Sesame-Rice-served-500x375.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2020/02/Sesame-Rice-served-480x270.jpg"
+  ],
+  "keywords": "Easy Side Dish, Rice Recipe",
+  "name": "Simple Sesame Rice",
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "calories": "206.43 kcal",
+    "carbohydrateContent": "36.38 g",
+    "fatContent": "4.9 g",
+    "fiberContent": "1.13 g",
+    "proteinContent": "3.45 g",
+    "servingSize": "0.75 cup",
+    "sodiumContent": "242.33 mg"
+  },
+  "prepTime": "PT5M",
+  "recipeIngredient": [
+    "1 clove garlic ($0.08)",
+    "1 Tbsp butter ($0.13)",
+    "1 cup long grain jasmine rice ($0.67)",
+    "1.75 cups water ($0.00)",
+    "1 Tbsp soy sauce ($0.06)",
+    "1/2 Tbsp toasted sesame oil ($0.15)",
+    "1 tsp sesame seeds ($0.02)"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "Mince the garlic and add it to a medium sauce pot with the butter. Sauté the garlic for 1-2 minutes over medium heat, or just until the garlic begins to soften and becomes very fragrant."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Add the rice to the pot and continue to stir and cook for 2-3 minutes more to toast the rice."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Carefully add the water and soy sauce, then give the pot a brief stir to combine. Place a lid on the pot, turn the heat up to high, and allow it to come to a full boil. Once boiling, reduce the heat to low and let it simmer for 15 minutes."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "After 15 minutes, turn the heat off and let the rice rest, undisturbed and with the lid in place, for 5 minutes. After 5 minutes, remove the lid and fluff the rice with a fork. Drizzle the toasted sesame oil over top, add the sesame seeds, and gently fold the rice until the sesame oil and seeds are distributed throughout. Serve warm."
+    }
+  ],
+  "recipeYield": "4",
+  "sameAs": ["https://www.budgetbytes.com/simple-sesame-rice/"],
+  "totalTime": "PT25M",
+  "updatedAt": "2020-10-08T05:49:14.757Z"
+}

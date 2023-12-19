@@ -1,0 +1,71 @@
+{
+  "@type": "Recipe",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingCount": "33",
+    "ratingValue": "4.97"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Beth - Budget Bytes"
+  },
+  "createdAt": "2020-10-08T05:46:10.838Z",
+  "datePublished": "2019-03-10T15:39:12+00:00",
+  "description": "Light, bright, and full of spring flavors, this Scallion Herb Chickpea Salad will keep you full all afternoon. Serve as a sandwich, wrap, or salad! ",
+  "image": [
+    "https://www.budgetbytes.com/wp-content/uploads/2019/03/Scallion-Herb-Chickpea-Salad-Sandwich-hand.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2019/03/Scallion-Herb-Chickpea-Salad-Sandwich-hand-500x500.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2019/03/Scallion-Herb-Chickpea-Salad-Sandwich-hand-500x375.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2019/03/Scallion-Herb-Chickpea-Salad-Sandwich-hand-480x270.jpg"
+  ],
+  "keywords": "cold lunch, Hot Sandwich, meal prep",
+  "name": "Scallion Herb Chickpea Salad",
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "calories": "415.85 kcal",
+    "carbohydrateContent": "49.5 g",
+    "fatContent": "19 g",
+    "fiberContent": "18.9 g",
+    "proteinContent": "17.7 g",
+    "servingSize": "1.5 Cups",
+    "sodiumContent": "702.9 mg"
+  },
+  "prepTime": "PT10M",
+  "recipeIngredient": [
+    "1 avocado ($0.79)",
+    "1/2 cup Greek yogurt ($0.44)",
+    "1 tsp lemon juice ($0.04)",
+    "1/4 tsp salt ($0.02)",
+    "1/4 cup chopped fresh parsley ($0.25)",
+    "1/4 cup chopped fresh cilantro ($0.20)",
+    "1/4 cup sliced scallions (about two) ($0.23)",
+    "1 15oz. can chickpeas ($0.49)"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "Place the avocado, yogurt, lemon juice, salt, parsley, cilantro, and scallions in a bowl. Mash the ingredients together until combined. It's okay if the avocado is a bit chunky still."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Drain the can of chickpeas, then add them to the bowl with the avocado dressing. Stir and mash the chickpeas into the dressing. Taste the salad and add salt if needed."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Serve the salad over a bed of greens, between two slices of bread, in a pita, or wrapped in a tortilla."
+    }
+  ],
+  "recipeYield": "2",
+  "sameAs": ["https://www.budgetbytes.com/scallion-herb-chickpea-salad/"],
+  "totalTime": "PT10M",
+  "updatedAt": "2020-10-08T05:46:10.838Z",
+  "video": {
+    "@type": "VideoObject",
+    "contentUrl": "https://embed.mediavine.com/videos/izufvmegtioncmlnxblh",
+    "description": "Light, bright, and full of spring flavors, this Scallion Herb Chickpea Salad will keep you full all afternoon. Serve as a sandwich, wrap, or salad!",
+    "duration": "PT46S",
+    "name": "Scallion Herb Chickpea Salad",
+    "thumbnailUrl": "https://mediavine-res.cloudinary.com/image/upload/s--sUndX3iX--/c_limit,f_auto,fl_lossy,h_1080,q_auto,w_1920/v1556930022/urx7cckw5jqan55sc6va.jpg",
+    "uploadDate": "2019-05-04T00:33:21+00:00"
+  }
+}

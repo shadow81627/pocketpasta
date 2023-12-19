@@ -1,0 +1,114 @@
+{
+  "@type": "Recipe",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingCount": "48",
+    "ratingValue": "4.94"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Minimalist Baker"
+  },
+  "cookTime": "PT55M",
+  "createdAt": "2020-10-08T05:20:26.115Z",
+  "datePublished": "2018-11-18T03:00:09+00:00",
+  "description": "Delicious, cheesy, tender scalloped potatoes made vegan thanks to almond milk and nutritional yeast! Just 10 ingredients required for this classic holiday side dish!",
+  "image": [
+    "https://minimalistbaker.com/wp-content/uploads/2018/10/Scalloped-Potatoes-SQUARE.jpg",
+    "https://minimalistbaker.com/wp-content/uploads/2018/10/Scalloped-Potatoes-SQUARE-500x500.jpg",
+    "https://minimalistbaker.com/wp-content/uploads/2018/10/Scalloped-Potatoes-SQUARE-500x375.jpg",
+    "https://minimalistbaker.com/wp-content/uploads/2018/10/Scalloped-Potatoes-SQUARE-480x270.jpg"
+  ],
+  "keywords": "scalloped potatoes",
+  "name": "Easy Vegan Scalloped Potatoes",
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "calories": "238 kcal",
+    "carbohydrateContent": "24.8 g",
+    "fatContent": "12.5 g",
+    "fiberContent": "3.8 g",
+    "proteinContent": "8.5 g",
+    "saturatedFatContent": "1.6 g",
+    "servingSize": "1 serving",
+    "sodiumContent": "342 mg",
+    "sugarContent": "1.1 g"
+  },
+  "prepTime": "PT15M",
+  "recipeCategory": ["Side"],
+  "recipeCuisine": "Gluten-Free",
+  "recipeIngredient": [
+    "2 1/2 Tbsp olive oil or avocado oil (if avoiding oil, sub water)",
+    "4 cloves garlic (minced / 4 cloves yield ~2 Tbsp or 12 g)",
+    "1/4 tsp each sea salt and black pepper (plus more to taste)",
+    "2 1/2 Tbsp cornstarch or arrowroot",
+    "1 1/2 cups unsweetened plain almond milk",
+    "1/2 cup vegetable broth (or store-bought)",
+    "1/8 tsp ground nutmeg",
+    "4-5 Tbsp nutritional yeast",
+    "2-3 medium Yukon gold potatoes (very thinly sliced)",
+    "1/4 cup vegan parmesan cheese (divided)",
+    "1/4 tsp paprika (optional)",
+    "Fresh parsley (optional)"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "Preheat oven to 350 degrees F (176 C). Heat a large rimmed, oven-safe cast-iron (or metal) skillet over medium heat. We used a 10-inch cast-iron and found it to be perfect for this recipe."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Once skillet is hot, add olive oil, garlic, salt, and pepper. Sauté for 1-2 minutes, stirring frequently, until just lightly golden brown."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Add cornstarch or arrowroot and whisk to incorporate. Cook for 1 minute."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Add almond milk a little at a time, whisking to incorporate. Be sure not to flood pan. Whisk and go slowly to prevent clumps from forming. Continue until all of the almond milk has been added. Then add vegetable broth. Whisk to incorporate."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Reduce heat to low. Let simmer for 4-5 minutes to thicken, whisking frequently."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Turn off heat and remove skillet from burner. Transfer sauce to blender and add nutmeg, a pinch more salt, pepper, and nutritional yeast."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Blend on high until creamy and smooth. Taste and adjust seasonings as needed, adding more nutmeg, salt, pepper, or nutritional yeast to taste. Mixture should be very cheesy and savory to season the potatoes well, so don’t be timid."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Lightly rinse out skillet (or grab a similar size baking dish) and generously grease with oil or vegan butter all the way up the sides. Lay down half the sliced potatoes and season with salt and pepper. Toss to coat. Then lay flat and sprinkle on 2 Tbsp (10 g) vegan parmesan cheese (amount as original recipe is written // use half of total if altering batch size). Add remaining potatoes, season with a bit more salt and pepper, and loosely toss."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Pour sauce over the potatoes and add remaining 2 Tbsp (10 g) vegan parmesan cheese (amount as original recipe is written // use half of total if altering batch size). Push down with your fingers to submerge the potatoes. The sauce should just cover the potatoes, so remove any potatoes that are well above the surface."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Cover with foil and bake on middle rack of oven for 20 minutes. Then remove foil and bake for another 40-45 minutes (a total of 1 hour - 1 hour 5 minutes). Potatoes are done when knife inserted into the potatoes comes out without effort and the top is golden brown and bubbly."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Remove from oven and let cool for 10 minutes before serving. As an optional garnish, top with fresh parsley and a dash of paprika for extra color. Store leftovers covered in the refrigerator up to 2-3 days or in the freezer up to 1 month. Reheat in a hot oven and rehydrate with more almond milk as needed."
+    }
+  ],
+  "recipeYield": "4",
+  "sameAs": ["https://minimalistbaker.com/easy-vegan-scalloped-potatoes/"],
+  "suitableForDiet": "https://schema.org/VeganDiet",
+  "totalTime": "PT70M",
+  "updatedAt": "2020-10-08T05:20:26.115Z",
+  "video": {
+    "@type": "VideoObject",
+    "contentUrl": "https://www.youtube.com/watch?v=iCIZa4RFNL8",
+    "description": "Delicious, cheesy, tender scalloped potatoes made vegan thanks to almond milk and nutritional yeast! Just 10 ingredients required for this classic holiday side dish!\n\nFull Recipe: https://minimalistbaker.com/easy-vegan-scalloped-potatoes/\n \nFOLLOW US!\nBlog: http://minimalistbaker.com/\nInstagram: https://instagram.com/minimalistbaker/\nTwitter: https://twitter.com/minimalistbaker\nFacebook: https://www.facebook.com/MinimalistBaker",
+    "duration": "",
+    "embedUrl": "https://www.youtube.com/embed/iCIZa4RFNL8?feature=oembed",
+    "name": "Easy Vegan Scalloped Potatoes | Minimalist Baker",
+    "thumbnailUrl": "https://i.ytimg.com/vi/iCIZa4RFNL8/hqdefault.jpg",
+    "uploadDate": "2018-11-18T11:30:03+00:00"
+  }
+}

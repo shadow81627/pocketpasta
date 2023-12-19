@@ -1,0 +1,95 @@
+{
+  "@type": "Recipe",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingCount": "37",
+    "ratingValue": "4.9"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Beth - Budget Bytes"
+  },
+  "cookTime": "PT60M",
+  "createdAt": "2020-10-08T05:51:19.132Z",
+  "datePublished": "2017-12-09T11:44:22+00:00",
+  "description": "These vegan Soy Marinated Tofu Bowls are full of rich flavors and plenty of texture to keep your taste buds happy and your belly full. ",
+  "image": [
+    "https://www.budgetbytes.com/wp-content/uploads/2017/12/Soy-Marinated-Tofu-Bowls-with-Peanut-Sauce-finished.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2017/12/Soy-Marinated-Tofu-Bowls-with-Peanut-Sauce-finished-500x500.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2017/12/Soy-Marinated-Tofu-Bowls-with-Peanut-Sauce-finished-500x375.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2017/12/Soy-Marinated-Tofu-Bowls-with-Peanut-Sauce-finished-480x270.jpg"
+  ],
+  "name": "Soy Marinated Tofu Bowls with Spicy Peanut Sauce",
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "calories": "654.75 kcal",
+    "carbohydrateContent": "88.35 g",
+    "fatContent": "24.7 g",
+    "fiberContent": "7.2 g",
+    "proteinContent": "23.18 g",
+    "servingSize": "1 Serving",
+    "sodiumContent": "948.63 mg"
+  },
+  "prepTime": "PT20M",
+  "recipeIngredient": [
+    "14 oz. firm tofu ($1.99)",
+    "1 Tbsp light oil* ($0.06)",
+    "2 Tbsp soy sauce ($0.12)",
+    "1 clove garlic, minced ($0.08)",
+    "1 Tbsp brown sugar ($0.03)",
+    "2 cups brown rice ($1.20)",
+    "3.25 cups water ($0.00)",
+    "1/2 tsp salt ($0.02)",
+    "1 Tbsp toasted sesame oil ($0.26)",
+    "1/4 cup natural style creamy peanut butter ($0.36)",
+    "1 Tbsp Sriracha ($0.09)",
+    "1 tsp soy sauce ($0.02)",
+    "1 tsp grated fresh ginger ($0.10)",
+    "1 tsp brown sugar ($0.01)",
+    "3 Tbsp hot water ($0.00)",
+    "1 tsp oil for pan frying ($0.02)",
+    "1/2 lb. snap peas*** ($2.50)",
+    "2 green onions, sliced ($0.25)",
+    "1 Tbsp sesame seeds ($0.08)"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "Begin by pressing the tofu for about 30 minutes to remove the excess moisture. Place the block of tofu between two flat plates, rimmed baking sheets, or cutting boards and place something heavy on top, like a cast iron skillet or a pot full of water. If using cutting boards or something without a rim to hold in the water that seeps out, place paper towels or a clean dishcloth under the tofu to catch the liquid as it is expelled."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "While the tofu is pressing, begin the rice. Cook your rice according to the package directions, making sure to include salt. Once the rice has cooked, fluff it with a fork and then drizzle 1/2 Tbsp toasted sesame oil over top. Fold the oil into the rice, making sure not to stir too vigorously, then repeat with the second 1/2 Tbsp of sesame oil. The rice should now have a wonderful toasty nutty flavor and aroma. Set the rice aside."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Once the tofu has pressed, pour off the excess liquid. Slice the block of tofu into 16 triangles (I cut the thickness of the block in half, then cut the stacked halves into quarters, and each piece into two triangles). Place the tofu pieces in a shallow bowl or dish."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "In a small bowl, stir together the ingredients for the tofu marinade: oil, soy sauce, minced garlic, and brown sugar. Pour the marinade over the tofu pieces and turn them all to make sure all sides are coated. Allow the tofu to marinate for about 20 minutes, turning the pieces once or twice during that time. After 20 minutes, most of the marinade should be absorbed."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "While the tofu is marinating and the rice is cooking prepare the spicy peanut sauce. In a bowl stir together the peanut butter, sriracha, soy sauce, grated ginger, brown sugar, and enough hot water to create a smooth sauce (3-4 Tbsp). Set the sauce aside."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Once the tofu has marinated, heat a large non-stick skillet over medium flame. Add just a splash of oil to the skillet (about 1 tsp) and swirl to coat the skillet. Add the tofu pieces and any remaining marinade, and cook on each side until deeply browned."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Once the tofu pieces are browned, remove them from the skillet and add the snap peas. Quickly sauté the snap peas in the skillet until they turn bright green and are still crisp. You just want to remove the raw edge. Remove them from the skillet to prevent over cooking."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "To build the bowls, add about 1.5 cups sesame rice to each bowl and then top with 1/4 of the tofu pieces and snap peas. Drizzle spicy peanut sauce over each bowl and then sprinkle sliced green onions and sesame seeds over each."
+    }
+  ],
+  "recipeYield": "4",
+  "sameAs": [
+    "https://www.budgetbytes.com/soy-marinated-tofu-bowls-spicy-peanut-sauce/"
+  ],
+  "totalTime": "PT80M",
+  "updatedAt": "2020-10-08T05:51:19.132Z"
+}

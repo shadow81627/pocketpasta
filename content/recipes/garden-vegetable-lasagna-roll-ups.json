@@ -1,0 +1,84 @@
+{
+  "@type": "Recipe",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingCount": "24",
+    "ratingValue": "4.96"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Beth - Budget Bytes"
+  },
+  "cookTime": "PT40M",
+  "createdAt": "2020-10-08T05:36:49.893Z",
+  "datePublished": "2015-07-30T18:05:14+00:00",
+  "description": "With a rainbow of vegetables and a trio of cheeses, these Garden Vegetable Lasagna Roll Ups are a flavorful and filling meal. Freezer friendly, too! ",
+  "image": [
+    "https://www.budgetbytes.com/wp-content/uploads/2015/07/Garden-Vegetable-Roll-Ups-dish-2.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2015/07/Garden-Vegetable-Roll-Ups-dish-2-500x500.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2015/07/Garden-Vegetable-Roll-Ups-dish-2-500x375.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2015/07/Garden-Vegetable-Roll-Ups-dish-2-480x270.jpg"
+  ],
+  "keywords": "freezer meals, lasagna, vegetable lasagna",
+  "name": "Garden Vegetable Lasagna Roll Ups",
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "calories": "462.07 kcal",
+    "carbohydrateContent": "69.32 g",
+    "fatContent": "12.02 g",
+    "fiberContent": "4.3 g",
+    "proteinContent": "18.48 g",
+    "servingSize": "2 Rolls",
+    "sodiumContent": "297.2 mg"
+  },
+  "prepTime": "PT30M",
+  "recipeIngredient": [
+    "1 lb. lasagna noodles ($2.15)",
+    "1 Tbsp cooking oil ($0.04)",
+    "2 cloves garlic ($0.16)",
+    "1 yellow onion ($0.70)",
+    "8 oz. button mushrooms ($1.78)",
+    "1 zucchini ($0.84)",
+    "2 carrots ($0.22)",
+    "1 tsp dried oregano ($0.10)",
+    "Salt and Pepper to taste ($0.10)",
+    "15 oz. ricotta cheese ($1.94)",
+    "1 cup shredded mozzarella ($1.33)",
+    "1/4 cup grated Parmesan ($0.36)",
+    "1 24oz. jar pasta sauce ($1.98)"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "Boil a large pot of water. Once the water is boiling, add the lasagna noodles and boil just until tender. Drain the pasta in a colander and set aside."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "While the lasagna noodles are boiling, prepare the vegetable mix. Mince the garlic and dice the onion. Add the cooking oil to a large skillet, along with the garlic and onion, and sauté over medium heat until the onions are transparent."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "While the onions are cooking, rinse and thinly slice the mushrooms. Add the mushrooms to the skillet and continue to sauté. While the mushrooms are cooking, grate the zucchini and carrots on a large holed cheese grater. Add the zucchini and carrots to the skillet, along with the oregano, about 1/4 tsp salt, and some freshly cracked pepper. Continue to sauté until most of the moisture has evaporated (juice should no longer pool on the bottom of the skillet). Remove the skillet from the heat and allow it to cool slightly."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Next, prepare the cheese mix. In a large bowl, combine the ricotta, mozzarella, Parmesan, and 1/4 tsp salt. Stir until they are evenly combined. Add the slightly cooled sautéed vegetables and stir to combine again. Taste and adjust the salt or pepper if needed."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Carefully lay out a few lasagna noodles at a time on a flat surface. Add approximately 1/3 cup of the vegetable and cheese mixture to each noodle, then spread the mixture from end to end, leaving about a 1/2 inch bare at each end of the noodle. Once covered in the filling, roll the noodles up. You should get approximately finished 12 roll ups (you may have extra noodles)."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "To bake the roll ups, preheat the oven to 350oF. Coat a 9x9 casserole dish with non-stick spray. Spread about 1/4 of the pasta sauce in the bottom of the casserole dish, then arrange the roll ups on top. Pour the remaining sauce over top. Bake for 40 minutes, or until heated through."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "To freeze the roll ups, Place two roll ups each in a freezer and microwave safe container, then pour sauce over top. Freeze for up to three months. Reheat in the microwave when ready to eat."
+    }
+  ],
+  "recipeYield": "6",
+  "sameAs": ["https://www.budgetbytes.com/garden-vegetable-lasagna-roll-ups/"],
+  "totalTime": "PT70M",
+  "updatedAt": "2020-10-08T05:36:49.893Z"
+}

@@ -1,0 +1,81 @@
+{
+  "@type": "Recipe",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingCount": "112",
+    "ratingValue": "4.73"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Beth - Budget Bytes"
+  },
+  "cookTime": "PT25M",
+  "createdAt": "2020-10-08T05:42:34.444Z",
+  "datePublished": "2016-01-11T16:21:14+00:00",
+  "description": "This rich and comforting One Pot Vegetarian Chili Mac and Cheese is the perfect quick and easy weeknight meal. Works great for meal prep! ",
+  "image": [
+    "https://www.budgetbytes.com/wp-content/uploads/2016/01/Cheesy-Vegetarian-Chili-Mac-close-1.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2016/01/Cheesy-Vegetarian-Chili-Mac-close-1-500x480.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2016/01/Cheesy-Vegetarian-Chili-Mac-close-1-500x375.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2016/01/Cheesy-Vegetarian-Chili-Mac-close-1-480x270.jpg"
+  ],
+  "keywords": "Easy Dinner, One Pot Meal, vegetarian pasta",
+  "name": "One Pot Cheesy Vegetarian Chili Mac",
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "calories": "400.38 kcal",
+    "carbohydrateContent": "74.7 g",
+    "fatContent": "3.89 g",
+    "fiberContent": "15.18 g",
+    "proteinContent": "19.29 g",
+    "servingSize": "1 Serving",
+    "sodiumContent": "921.28 mg"
+  },
+  "prepTime": "PT10M",
+  "recipeIngredient": [
+    "1 Tbsp olive oil ($0.16)",
+    "1 yellow onion ($0.31)",
+    "2 cloves garlic ($0.16)",
+    "2 Tbsp flour ($0.02)",
+    "2 Tbsp chili powder* ($0.60)",
+    "1 15oz. can diced tomatoes ($0.79)",
+    "1 15oz. can tomato sauce ($0.88)",
+    "1 15oz. can kidney beans ($0.89)",
+    "1 15oz. can black beans ($1.15)",
+    "1 15oz. can pinto beans ($1.49)",
+    "1 cup frozen corn kernels ($0.44)",
+    "2 cups vegetable broth ($0.26)",
+    "2 cups uncooked macaroni noodles ($0.50)",
+    "1 cup shredded sharp cheddar ($1.25)"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "Dice the onion and mince the garlic. Sauté the onion and garlic with olive oil in the bottom of a large pot (5 qt) over medium heat for 2-3 minutes, or until the onions are soft and transparent."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Add the flour and chili powder to the sautéed onions and garlic. Continue to stir and sauté for about two minutes, or just until the flour and chili powder begin to coat the bottom of the pot."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Drain and rinse the kidney beans, black beans, and pinto beans. Add the diced tomatoes, tomato sauce, all three beans, corn, and vegetable broth to the pot. Stir to combine and to dissolve any flour and chili powder off the bottom of the pot."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Add the uncooked macaroni noodles and stir to combine. Place a lid on the pot, turn the heat up to medium high, and let the pot come up to a boil. Stir every other minute or so to loosen the noodles from the bottom of the pot as it heats up."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "When the pot reaches a boil, turn the heat down to low, or just above low, so it continues to gently simmer. Let the pot gently simmer for 12-15 minutes, or until the pasta is tender and the liquid is thick and saucy. Stir frequently as it simmers to make sure the pasta does not stick to the bottom of the pot."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Once the pasta is tender, add the shredded cheddar and stir it in until melted. Serve hot."
+    }
+  ],
+  "recipeYield": "8",
+  "sameAs": ["https://www.budgetbytes.com/cheesy-vegetarian-chili-mac/"],
+  "totalTime": "PT35M",
+  "updatedAt": "2020-10-08T05:42:34.444Z"
+}

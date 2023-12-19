@@ -1,0 +1,78 @@
+{
+  "@type": "Recipe",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingCount": "28",
+    "ratingValue": "4.93"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Beth - Budget Bytes"
+  },
+  "cookTime": "PT20M",
+  "createdAt": "2020-10-08T05:29:29.805Z",
+  "datePublished": "2017-06-05T11:59:26+00:00",
+  "description": "These rich and spicy Coconut Jerk Peas are super simple to make and pair brilliantly with a sweet and vibrant pineapple salsa. ",
+  "image": [
+    "https://www.budgetbytes.com/wp-content/uploads/2017/06/Coconut-Jerk-Peas-close.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2017/06/Coconut-Jerk-Peas-close-500x500.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2017/06/Coconut-Jerk-Peas-close-500x375.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2017/06/Coconut-Jerk-Peas-close-480x270.jpg"
+  ],
+  "keywords": "meal prep, Peas, Vegan Dinner",
+  "name": "Coconut Jerk Peas with Pineapple Salsa",
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "calories": "486.78 kcal",
+    "carbohydrateContent": "92.53 g",
+    "fatContent": "7.03 g",
+    "fiberContent": "10.73 g",
+    "proteinContent": "15.38 g",
+    "servingSize": "1 Serving",
+    "sodiumContent": "1431.18 mg"
+  },
+  "prepTime": "PT10M",
+  "recipeIngredient": [
+    "1 Tbsp olive oil ($0.13)",
+    "1 yellow onion ($0.32)",
+    "2 cloves garlic ($0.16)",
+    "1 lb. frozen black eyed peas or purple hull peas ($1.99)",
+    "1 cup water ($0.00)",
+    "1-2 Tbsp jerk seasoning* ($0.60)",
+    "1 14oz. can coconut milk ($2.19)",
+    "1/4 tsp salt, or to taste ($0.02)",
+    "4 cups cooked rice ($0.75)",
+    "2 cups chopped pineapple** ($0.67)",
+    "1/4 red onion ($0.17)",
+    "1 lime ($0.34)",
+    "1/4 bunch fresh cilantro ($0.21)",
+    "1/2 tsp salt, or to taste ($0.05)",
+    "2-3 green onions, sliced ($0.20)"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "Dice the onion and mince the garlic. Add both to a medium sauce pot with the olive oil and sauté over medium heat for 2-3 minutes, or until the onions are soft and transparent."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Add the peas to the pot along with the water and 1 Tbsp of jerk seasoning. Stir to combine. Place a lid on the pot, turn the heat to medium-high, and allow it to come to a boil. Once it reaches a boil, turn the heat down to medium-low, and let it simmer for 15 minutes, or until the peas are very tender."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "While the peas are simmering, prepare the pineapple salsa. Chop the pineapple into very small pieces. Finely dice the red onion. Pull the cilantro leaves from their stems and give them a rough chop. Combine the pineapple, onion, cilantro, juice from half the lime, and salt in a bowl. Stir to combine, then taste, and adjust the lime or salt if needed. Set the salsa aside."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Once the peas are very tender, turn the heat down to low, and add the coconut milk. Stir and heat through. Smash some of the peas against the side of the pot to help thicken the mixture. Taste the peas and add more jerk seasoning and salt until they are very well seasoned. You want the peas to be heavily seasoned because once they're poured over the plain rice, the seasoning will seem diluted."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "To serve, place a cup of cooked rice in a bowl and add about 1 cup of the jerk peas with the coconut broth. Top with 1/2 cup of pineapple salsa, and a sprinkle of sliced green onions. Enjoy!"
+    }
+  ],
+  "recipeYield": "4",
+  "sameAs": ["https://www.budgetbytes.com/coconut-jerk-peas-pineapple-salsa/"],
+  "totalTime": "PT30M",
+  "updatedAt": "2020-10-08T05:29:29.805Z"
+}

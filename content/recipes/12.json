@@ -1,0 +1,65 @@
+{
+  "@type": "Recipe",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingCount": "161",
+    "ratingValue": "3.85"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Heidi Swanson"
+  },
+  "cookTime": "PT25M",
+  "createdAt": "2020-10-09T02:48:24.108Z",
+  "datePublished": "2018-11-15T14:23:18+00:00",
+  "description": "A delicious, simple vegetarian split pea soup made from an impossibly short list of ingredients. Seriously, just five!",
+  "image": [
+    "https://images.101cookbooks.com/vegetarian-split-pea-soup-h2.jpg?w=680&auto=format",
+    "https://images.101cookbooks.com/vegetarian-split-pea-soup-2.jpg?w=1000&auto=format",
+    "https://images.101cookbooks.com/vegetarian-split-pea-soup-2.jpg?w=800&h=800&fp-z=2&fp-y=.5&fp-x=.5&fit=crop&crop=entropy"
+  ],
+  "keywords": "split pea soup",
+  "name": "Vegetarian Split Pea Soup",
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "calories": "259 kcal",
+    "carbohydrateContent": "43 g",
+    "fatContent": "3 g",
+    "fiberContent": "17 g",
+    "proteinContent": "16 g",
+    "servingSize": "1 serving",
+    "sodiumContent": "409 mg",
+    "sugarContent": "6 g"
+  },
+  "prepTime": "PT5M",
+  "recipeCategory": ["Lunch", "Main Course", "Soup"],
+  "recipeCuisine": "American",
+  "recipeIngredient": [
+    "1 tablespoon extra virgin olive oil",
+    "2 large onions, chopped",
+    "1 teaspoon fine-grain sea salt",
+    "2 cups dried split green peas, picked over and rinsed",
+    "5 cups water, plus more to finish",
+    "juice of 1 lemon (reserve the zest)",
+    "a few pinches of smoked paprika, olive oil, toasted almonds, and/or, scallions"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "Add olive oil to a big pot over med-high heat. Stir in onions and salt and cook until the onions soften, just a minute or two. Add the split peas and water. Bring to a boil, dial down the heat, and simmer for 20 minutes, or until the peas are cooked through (but still a touch al dente)."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Using a large cup or mug ladle half of the soup into a bowl and set aside. Using a hand blender (or regular blender) puree the soup that is still remaining in the pot. Stir the reserved (still chunky) soup back into the puree - you should have a soup that is nicely textured. If you need to thin the soup out with more water (or stock) do so a bit at a time - there are times I need to add up to 3 1/2 cups extra."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Stir in the lemon juice and taste. If the soup needs more salt (likely), add more a bit at a time until the flavor of the soup really pops."
+    }
+  ],
+  "recipeYield": "6",
+  "sameAs": ["https://www.101cookbooks.com/vegetarian-split-pea-soup/"],
+  "suitableForDiet": "https://schema.org/VeganDiet",
+  "totalTime": "PT30M",
+  "updatedAt": "2020-10-09T04:10:48.766Z"
+}

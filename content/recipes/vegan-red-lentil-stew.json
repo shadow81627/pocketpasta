@@ -1,0 +1,70 @@
+{
+  "@type": "Recipe",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingCount": "35",
+    "ratingValue": "4.92"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Beth - Budget Bytes"
+  },
+  "cookTime": "PT45M",
+  "createdAt": "2020-10-08T05:58:31.446Z",
+  "datePublished": "2012-11-06T15:29:00+00:00",
+  "description": "This hearty Vegan Red Lentil Stew is packed with vegetables for tons of flavor, and will keep you warm and full in the cold winter weather!",
+  "image": [
+    "https://www.budgetbytes.com/wp-content/uploads/2012/11/RedLentilStewabove.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2012/11/RedLentilStewabove-500x480.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2012/11/RedLentilStewabove-500x375.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2012/11/RedLentilStewabove-480x270.jpg"
+  ],
+  "name": "Vegan Red Lentil Stew",
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "calories": "239.5 kcal",
+    "carbohydrateContent": "37.6 g",
+    "fatContent": "6.55 g",
+    "fiberContent": "5.27 g",
+    "proteinContent": "9.43 g",
+    "servingSize": "1 Serving",
+    "sodiumContent": "1163.77 mg"
+  },
+  "prepTime": "PT5M",
+  "recipeIngredient": [
+    "2 Tbsp olive oil ($0.24)",
+    "1 medium yellow onion ($0.28)",
+    "2 cloves garlic ($0.16)",
+    "3 oz tomato paste ($0.26)",
+    "1 cup dry red lentils ($1.20)",
+    "1/2 lb carrots ($0.55)",
+    "1 medium potato ($0.49)",
+    "6 cups vegetable broth** ($0.78)",
+    "1 Tbsp cumin ($0.15)",
+    "1 tsp smoked paprika ($0.10)",
+    "3/4 tsp salt ($0.05)",
+    "1/8 tsp cayenne pepper ($0.02)"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "Dice the onion and mince the garlic. Cook both in a large pot with olive oil over medium heat until soft and transparent (about 5 minutes). Add the tomato paste and continue to stir and cook for about 3-4 minutes more. The tomato paste will caramelize during this time, which will make it sweeter and cause it to look slightly darker."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "While the ingredients in the first step are cooking, peel and dice the potato and carrots. Rinse the lentils. Once the tomato paste has caramelized, add the carrots, potato, and lentils to the pot."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Also add 6 cups of vegetable broth, cumin, smoked paprika, and cayenne pepper. Give everything a good stir to make sure it’s mixed well. Place a lid on top, turn the heat up to high, and bring the soup to a boil. As soon as it reaches a full boil, turn the heat down to its lowest level and allow it to simmer for 30 minutes."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "After it has simmered for 30 minutes give the pot a stir and add the salt, starting with 1/2 teaspoon. Add more if desired. I used about 3/4 teaspoon total. Serve hot!"
+    }
+  ],
+  "recipeYield": "6",
+  "sameAs": ["https://www.budgetbytes.com/vegan-red-lentil-stew/"],
+  "totalTime": "PT50M",
+  "updatedAt": "2020-10-08T05:58:31.447Z"
+}

@@ -1,0 +1,88 @@
+{
+  "@type": "Recipe",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingCount": "136",
+    "ratingValue": "4.73"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Beth - Budget Bytes"
+  },
+  "cookTime": "PT15M",
+  "createdAt": "2020-10-08T05:43:37.365Z",
+  "datePublished": "2016-02-25T18:47:52+00:00",
+  "description": "This Pan Fried Sesame Tofu is seriously crispy and drenched in a tangy sesame sauce. Broccoli florets and cooked rice make it a meal.",
+  "image": [
+    "https://www.budgetbytes.com/wp-content/uploads/2016/02/Pan-Fried-Sesame-Tofu-with-Broccoli-Close-1.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2016/02/Pan-Fried-Sesame-Tofu-with-Broccoli-Close-1-500x480.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2016/02/Pan-Fried-Sesame-Tofu-with-Broccoli-Close-1-500x375.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2016/02/Pan-Fried-Sesame-Tofu-with-Broccoli-Close-1-480x270.jpg"
+  ],
+  "name": "Pan Fried Sesame Tofu with Broccoli",
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "calories": "647.07 kcal",
+    "carbohydrateContent": "85.93 g",
+    "fatContent": "28.13 g",
+    "fiberContent": "6.03 g",
+    "proteinContent": "24.4 g",
+    "servingSize": "1 Serving",
+    "sodiumContent": "1881.13 mg"
+  },
+  "prepTime": "PT45M",
+  "recipeIngredient": [
+    "1/4 cup soy sauce ($0.20)",
+    "2 Tbsp water ($0.00)",
+    "1 Tbsp toasted sesame oil ($0.33)",
+    "2 Tbsp brown sugar ($0.08)",
+    "2 Tbsp rice vinegar ($0.22)",
+    "1 Tbsp grated fresh ginger ($0.10)",
+    "2 cloves garlic, minced ($0.16)",
+    "2 Tbsp sesame seeds ($0.15)",
+    "1 Tbsp cornstarch ($0.04)",
+    "14 oz block extra-firm tofu ($1.99)",
+    "Pinch of salt ($0.02)",
+    "2 Tbsp cornstarch ($0.08)",
+    "2 Tbsp neutral oil (vegetable, canola, peanut) ($0.04)",
+    "1/2 lb frozen broccoli florets ($1.00)",
+    "3-4 green onions, sliced ($0.23)",
+    "4 cups cooked rice ($0.88)"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "Place a few folded paper towels or a clean, lint-free dish cloth on a large plate. Remove the tofu from the package and place it on the towels. Place more towels on top, cover with a second plate, and then weigh the top plate down with a few canned goods or a pot filled with water. Press the tofu for at least 30 minutes to extract excess water (refrigerate if pressing for longer)."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "While the tofu is pressing, prepare the sauce so that the flavors have time to blend. In a small bowl combine the soy sauce, water, sesame oil, brown sugar, rice vinegar, grated ginger, minced garlic, sesame seeds, and cornstarch. Stir until the brown sugar and cornstarch are dissolved, then set the sauce aside."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Cut the pressed tofu into 1-inch cubes, then season with a pinch of salt. Sprinkle 1 Tbsp cornstarch over the cubes, then toss to coat. Repeat with the second tablespoon of cornstarch, or until the tofu cubes have a nice even coating of cornstarch."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Heat a large skillet over medium flame. Once hot, add 2 Tbsp oil and tilt the skillet until the bottom is coated in a thick layer of oil. Add the dusted tofu cubes and let cook until golden brown on the bottom. Use a spatula to turn the cubes to an uncooked side, and cook until golden brown again. Continue this process until brown and crispy on all sides, then remove the crispy tofu to a clean plate."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Add the frozen broccoli to the hot skillet and briefly stir fry until slightly browned on the edges. Don't worry if it's not thawed through yet, it will warm through after adding the sauce. Lower the heat to medium-low."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Give the bowl of sauce a good stir, then pour it into the skillet with the broccoli. Stir and cook until the sauce begins to bubble and thicken (this should happen very quickly). Once thickened, turn off the heat and stir in the cooked tofu cubes."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Serve the tofu and broccoli over a bed of cooked rice, topped with sliced green onions."
+    }
+  ],
+  "recipeYield": "3",
+  "sameAs": [
+    "https://www.budgetbytes.com/pan-fried-sesame-tofu-with-broccoli/"
+  ],
+  "totalTime": "PT60M",
+  "updatedAt": "2020-10-08T05:43:37.365Z"
+}

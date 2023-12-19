@@ -1,0 +1,78 @@
+{
+  "@type": "Recipe",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingCount": "78",
+    "ratingValue": "4.75"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Beth - Budget Bytes"
+  },
+  "cookTime": "PT20M",
+  "createdAt": "2020-10-08T05:45:40.792Z",
+  "datePublished": "2016-08-31T16:28:37+00:00",
+  "description": "Savory Cabbage Pancakes are a fun and filling way to use up pantry leftovers. Fill them and top them with whatever your heart desires! ",
+  "image": [
+    "https://www.budgetbytes.com/wp-content/uploads/2016/08/Cabbage-Pancake-Okonomiyaki-above-1.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2016/08/Cabbage-Pancake-Okonomiyaki-above-1-500x500.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2016/08/Cabbage-Pancake-Okonomiyaki-above-1-500x375.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2016/08/Cabbage-Pancake-Okonomiyaki-above-1-480x270.jpg"
+  ],
+  "keywords": "Cabbage Recipes, Recipes for Leftovers",
+  "name": "Savory Cabbage Pancakes (Okonomiyaki)",
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "calories": "263.32 kcal",
+    "carbohydrateContent": "23.6 g",
+    "fatContent": "16.65 g",
+    "fiberContent": "2.95 g",
+    "proteinContent": "5.9 g",
+    "servingSize": "1 Serving",
+    "sodiumContent": "449.58 mg"
+  },
+  "prepTime": "PT20M",
+  "recipeIngredient": [
+    "2 extra large eggs ($0.53)",
+    "1/2 cup water ($0.00)",
+    "1.5 Tbsp soy sauce ($0.14)",
+    "1 Tbsp toasted sesame oil ($0.33)",
+    "3/4 to 1 cup all-purpose flour ($0.07)",
+    "4-5 cups shredded green cabbage ($1.78)",
+    "1 carrot ( $0.11)",
+    "3 green onions ($0.17)",
+    "2 Tbsp oil for frying ($0.04)",
+    "1/4 cup mayonnaise ($0.28)",
+    "2 Tbsp sriracha ($0.10)",
+    "1/2 Tbsp sesame seeds ($0.04)",
+    "2 green onions ($0.11)"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "Remove any wilted leaves from the outside of the cabbage. Cut the cabbage into quarters and remove the core. Thinly slice or shred half of the cabbage, or until you have 4-5 cups shredded cabbage. Peel the carrot and shred it using a large-holed cheese grater. Slice the green onions."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "In a large bowl, whisk together the eggs, water, soy sauce, and sesame oil until smooth. Begin whisking in the flour, 1/4 cup at a time, until it forms a thick, smooth batter (about 3/4 to1 cup total flour)."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Add the cabbage, carrots, and green onion to the batter and stir until the vegetables are mixed and everything is evenly coated in batter."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Heat 1/2 Tbsp oil in a non-stick or cast iron skillet over medium heat. Once hot, add 3/4 cup of the vegetable and batter mixture. Press it down into the hot skillet to form a circle, about 6 inches in diameter and 1/2 inch thick. Place a cover on the skillet to hold in the steam, which will help the cabbage soften as it cooks. Cook the pancake until golden brown on the bottom (3-5 minutes), then flip and cook until golden brown on the second side. Pile the cooked pancakes on a plate and cover with foil to keep warm until ready to eat. Add more oil to the skillet as needed as you cook the pancakes."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "To prepare the sriracha mayo, mix together 1/4 cup mayonnaise and 2 Tbsp sriracha in a small bowl. Drizzle the sriracha mayo over the pancakes just before serving, followed with a sprinkle of sesame seeds and sliced green onion."
+    }
+  ],
+  "recipeYield": "6",
+  "sameAs": [
+    "https://www.budgetbytes.com/savory-cabbage-pancakes-okonomiyaki/"
+  ],
+  "totalTime": "PT40M",
+  "updatedAt": "2020-10-08T05:45:40.792Z"
+}

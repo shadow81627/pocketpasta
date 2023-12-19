@@ -1,0 +1,64 @@
+{
+  "@type": "Recipe",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingCount": "27",
+    "ratingValue": "4.89"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Beth - Budget Bytes"
+  },
+  "createdAt": "2020-10-08T05:21:28.613Z",
+  "datePublished": "2012-06-23T18:15:00+00:00",
+  "description": "This Apple Dijon Kale Salad is tangy, sweet, and crunchy with Granny Smith apples, walnuts, raisins, and a homemade Dijon vinaigrette.",
+  "image": [
+    "https://www.budgetbytes.com/wp-content/uploads/2012/06/Apple-Dijon-Kale-Salad-H1.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2012/06/Apple-Dijon-Kale-Salad-H1-500x500.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2012/06/Apple-Dijon-Kale-Salad-H1-500x375.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2012/06/Apple-Dijon-Kale-Salad-H1-480x270.jpg"
+  ],
+  "keywords": "Meal Salad, Vegan",
+  "name": "Apple Dijon Kale Salad",
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "calories": "344.48 kcal",
+    "carbohydrateContent": "20.7 g",
+    "fatContent": "28.65 g",
+    "fiberContent": "4.83 g",
+    "proteinContent": "5.45 g",
+    "servingSize": "1 Serving",
+    "sodiumContent": "238.15 mg"
+  },
+  "prepTime": "PT20M",
+  "recipeIngredient": [
+    "1/3 cup olive oil ($0.69)",
+    "1/4 cup apple cider vinegar ($0.24)",
+    "1 clove garlic ($0.08)",
+    "1 1/2 Tbsp Dijon mustard ($0.14)",
+    "1/4 tsp salt ($0.02)",
+    "10-15 cranks freshly cracked pepper ($0.05)",
+    "1/2 lb chopped kale (about one bunch) ($2.32)",
+    "1 medium granny smith apple ($0.79)",
+    "1/4 cup raisins ($0.27)",
+    "1/2 cup walnut halves ($0.80)"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "Rinse the kale well in a colander under cool running water. Allow the kale to drain as you prepare the rest of the salad."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "In a blender combine the olive oil, apple cider vinegar, Dijon mustard, clove of garlic, salt, and pepper. Blend until the garlic is minced and the dressing is smooth."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Wash the apple and slice it into thin wedges, or dice it into cubes. Roughly chop the walnut halves. Make sure the kale is as dry as possible and then add it to a large bowl along with the apples, walnuts, and raisins. Starting with just half, drizzle the dressing over the salad and toss to coat. Add more dressing as desired (I used the whole batch)."
+    }
+  ],
+  "recipeYield": "4",
+  "sameAs": ["https://www.budgetbytes.com/apple-dijon-kale-salad/"],
+  "totalTime": "PT20M",
+  "updatedAt": "2020-10-08T05:21:28.613Z"
+}

@@ -1,0 +1,85 @@
+{
+  "@type": "Recipe",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingCount": "52",
+    "ratingValue": "4.91"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "MinShien"
+  },
+  "cookTime": "PT30M",
+  "createdAt": "2022-11-27T02:54:03.784Z",
+  "datePublished": "2019-07-09T14:57:27+00:00",
+  "description": "A classic Vietnamese recipe! Vermichelli noodles topped with grilled pork, crunchy veggies and garnishes, served with a flavor bursting sauce. Make this classic Asian dish at home!",
+  "image": {
+    "@type": "ImageObject",
+    "height": 1200,
+    "mime": "image/jpeg",
+    "url": "https://www.joyousapron.com/wp-content/uploads/2019/07/vietnamese-vermicelli-noodle-bowl-sq-pic.jpg",
+    "width": 1200
+  },
+  "keywords": "Grilled Pork Noodle Bowl, Vietnamese Grilled Pork, Vietnamese Noodle Bowl, Vietnamese Pork Noodle Bowl, Vietnamese Rice Noodle, Vietnamese Vermicelli Bowl",
+  "name": "Vietnamese Noodle Bowl with Grilled Pork",
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "calories": "731 kcal",
+    "carbohydrateContent": "103 g",
+    "cholesterolContent": "93 mg",
+    "fatContent": "19 g",
+    "fiberContent": "5 g",
+    "proteinContent": "36 g",
+    "saturatedFatContent": "5 g",
+    "servingSize": "1 serving",
+    "sodiumContent": "1784 mg",
+    "sugarContent": "52 g",
+    "unsaturatedFatContent": "13 g"
+  },
+  "prepTime": "PT30M",
+  "recipeCategory": "Main Course",
+  "recipeCuisine": "asian",
+  "recipeIngredient": [
+    "2 lbs pork shoulder",
+    "1/2 cup brown sugar",
+    "2 tbsp fish sauce",
+    "1/2 tbsp soy sauce",
+    "3-4 cloves garlic",
+    "1 tbsp shallots",
+    "~2 inch lemongrass (bottom white part)",
+    "3 tbsp vegetable oil",
+    "7-8 oz dried rice vermicelli noodles",
+    "1 1/2 cups cucumber (shredded)",
+    "1 1/2 cups carrots (shredded)",
+    "1/2 cup rice vinegar",
+    "1/2 cup hot water",
+    "1/4 cup sugar",
+    "A few leaves lettuce",
+    "A handful cilantro",
+    "A handful mint leaves",
+    "1/2 cup peanuts (chopped)",
+    "1 fresh lime",
+    "3 tbsp sugar",
+    "2-3 tbsp freshly squeezed lime juice (or to taste)",
+    "1/4 tsp red pepper flakes (or to taste)"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "Remove some of the fat from pork shoulders (but it is not necessary to remove all the fat), and slice pork into thin slices. Bring them into a large ziplock bag."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Combine and blend the rest of the ingredients listed under \"Grilled Pork\" in food processor/blender to create marinate, and add to zip lock bag. Make sure pork is evenly coated with marinate. Marinade pork for at least 1 hour, or up to a few hours."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Grill pork on a grill pan or outdoor grill. Pork can be pan-fried on a skillet as well. Grill under indirect heat (if using charcoal grill), or medium/low heat (if using grill pan, electric grill, or skillet) to make sure the insides of the pork is completely cook. Note that because there is sugar in the marinate, pork will brown/burn quickly on the outside."
+    }
+  ],
+  "recipeYield": "4",
+  "sameAs": [
+    "https://www.joyousapron.com/vietnamese-noodle-bowl/#recipe"
+  ],
+  "updatedAt": "2022-11-27T02:54:03.775Z"
+}

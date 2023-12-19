@@ -1,0 +1,65 @@
+{
+  "@type": "Recipe",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingCount": "8",
+    "ratingValue": "5"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Beth - Budget Bytes"
+  },
+  "cookTime": "PT15M",
+  "createdAt": "2020-10-08T05:37:21.304Z",
+  "datePublished": "2018-05-04T12:45:16+00:00",
+  "description": "Garlicky greens and creamy ricotta pair perfectly on this light and fresh Garlicky Kale and Ricotta Pizza. It’s the perfect pizza for summer! ",
+  "image": [
+    "https://www.budgetbytes.com/wp-content/uploads/2018/05/Garlicky-Kale-and-Ricotta-Pizza-close.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2018/05/Garlicky-Kale-and-Ricotta-Pizza-close-500x500.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2018/05/Garlicky-Kale-and-Ricotta-Pizza-close-500x375.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2018/05/Garlicky-Kale-and-Ricotta-Pizza-close-480x270.jpg"
+  ],
+  "name": "Garlicky Kale and Ricotta Pizza",
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "calories": "498.15 kcal",
+    "carbohydrateContent": "57.8 g",
+    "fatContent": "21.58 g",
+    "fiberContent": "3.33 g",
+    "proteinContent": "21.1 g",
+    "servingSize": "1 Serving",
+    "sodiumContent": "811.4 mg"
+  },
+  "prepTime": "PT15M",
+  "recipeIngredient": [
+    "1 Tbsp olive oil ($0.13)",
+    "1 clove garlic, minced ($0.08)",
+    "6 cups torn kale leaves ($0.50)",
+    "1 large pizza dough* ($0.32)",
+    "1/4 tsp garlic powder ($0.02)",
+    "1 cup whole milk ricotta ($1.13)",
+    "1 cup shredded mozzarella ($1.25)"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "Preheat your oven to 400oF. If your kale is still on the stem, pull the leaves from the stems and tear them into 2-inch pieces. Rinse the kale well in a colander."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Place the minced garlic and olive oil in a large pot and sauté over medium heat for about one minute, or just until the garlic is soft and fragrant. Add the kale and continue to sauté for about 5 minutes, or until it has wilted. Season with a pinch of salt."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Stretch your pizza dough (about 12-14\") and place it on your pizza pan. In a small dish, combine the olive oil and garlic powder, then brush it onto the surface of the dough. Scatter the sautéed kale over the surface, then top with dollops of ricotta. Finally, sprinkle the shredded mozzarella over top."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Bake the pizza for 15-20 minutes, or until the crust has browned, the cheese is melted, and the cheese has begun to brown on the edges. Slice the pizza into 8 pieces, and serve."
+    }
+  ],
+  "recipeYield": "4",
+  "sameAs": ["https://www.budgetbytes.com/garlicky-kale-and-ricotta-pizza/"],
+  "totalTime": "PT30M",
+  "updatedAt": "2020-10-08T05:37:21.304Z"
+}

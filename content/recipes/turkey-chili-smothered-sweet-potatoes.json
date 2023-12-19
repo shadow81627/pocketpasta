@@ -1,0 +1,76 @@
+{
+  "@type": "Recipe",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingCount": "21",
+    "ratingValue": "4.91"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Beth - Budget Bytes"
+  },
+  "cookTime": "PT60M",
+  "createdAt": "2020-10-08T05:56:02.574Z",
+  "datePublished": "2020-02-25T15:29:51+00:00",
+  "description": "Tender baked sweet potatoes smothered with turkey and bean chili, then topped with melty cheddar. Turkey Chili Smothered Sweet Potatoes are an easy dinner!",
+  "image": [
+    "https://www.budgetbytes.com/wp-content/uploads/2015/12/Turkey-Chili-Smothered-Sweet-Potatoes-side-2.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2015/12/Turkey-Chili-Smothered-Sweet-Potatoes-side-2-500x500.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2015/12/Turkey-Chili-Smothered-Sweet-Potatoes-side-2-500x375.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2015/12/Turkey-Chili-Smothered-Sweet-Potatoes-side-2-480x270.jpg"
+  ],
+  "keywords": "meal prep ideas, stuffed sweet potatoes",
+  "name": "Turkey Chili Smothered Sweet Potatoes",
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "calories": "610.63 kcal",
+    "carbohydrateContent": "86.1 g",
+    "fatContent": "18.08 g",
+    "fiberContent": "17.83 g",
+    "proteinContent": "25.23 g",
+    "servingSize": "1 each",
+    "sodiumContent": "905.75 mg"
+  },
+  "prepTime": "PT10M",
+  "recipeIngredient": [
+    "1 Tbsp olive oil ($0.16)",
+    "1/2 lb. ground turkey ($2.00)",
+    "1 yellow onion ($0.32)",
+    "2 cloves garlic ($0.16)",
+    "1 15oz. can diced tomatoes ($0.59)",
+    "3 oz. tomato paste (1/2 of a 6oz. can) ($0.25)",
+    "1 15oz. can black beans ($0.79)",
+    "1 Tbsp chili powder ($0.30)",
+    "1/2 tsp dried oregano ($0.05)",
+    "1/2 tsp ground cumin ($0.05)",
+    "1 cup water ($0.00)",
+    "1/2 tsp Salt ($0.02)",
+    "4 small sweet potatoes (3/4 lb. each) ($3.94)",
+    "1/2 cup shredded cheddar cheese ($0.43)",
+    "Cilantro or green onions for garnish ($0.25)"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "Preheat the oven to 400oF. Wash the sweet potatoes well, then prick the skins several times with a fork. Place the sweet potatoes on a baking sheet or in a baking dish and bake for 60 minutes, or until soft and oozing from the fork holes."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "While the sweet potatoes are baking, prepare the small batch of chili. Add the ground turkey and olive oil to a large pot. Sauté the turkey over medium heat. While the turkey is cooking, dice the yellow onion and mince the garlic. Add the onions and garlic to the pot and continue to sauté until the onions are soft and translucent."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Drain the beans and add them to the pot along with the diced tomatoes (with juices), tomato paste, chili powder, oregano, cumin, and water. Stir to combine. Allow the chili to come up to a simmer, then reduce the heat and let simmer until the sweet potatoes have finished baking, stirring occasionally. Taste and add salt to taste (about 1/2 tsp)."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Once the sweet potatoes are finished baking, carefully slice each one open lengthwise and slightly mash the insides. Spoon about 3/4 cup chili over each potato, then top with 2 Tbsp shredded cheddar. Return the potatoes to the oven for a few minutes to melt the cheese. Top with cilantro or sliced green onions just before serving."
+    }
+  ],
+  "recipeYield": "4",
+  "sameAs": [
+    "https://www.budgetbytes.com/turkey-chili-smothered-sweet-potatoes/"
+  ],
+  "totalTime": "PT70M",
+  "updatedAt": "2020-10-08T05:56:02.574Z"
+}

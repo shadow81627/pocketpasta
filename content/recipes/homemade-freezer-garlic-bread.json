@@ -1,0 +1,71 @@
+{
+  "@type": "Recipe",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingCount": "24",
+    "ratingValue": "4.88"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Adapted from Love to be in the Kitchen"
+  },
+  "cookTime": "PT15M",
+  "createdAt": "2020-10-08T05:37:51.890Z",
+  "datePublished": "2018-08-04T19:36:22+00:00",
+  "description": "Make your own homemade freezer garlic bread slices, ready to bake on demand. Bake two or ten frozen slices at a time, ready in minutes! ",
+  "image": [
+    "https://www.budgetbytes.com/wp-content/uploads/2015/03/Freezer-Garlic-Bread-close.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2015/03/Freezer-Garlic-Bread-close-500x500.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2015/03/Freezer-Garlic-Bread-close-500x375.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2015/03/Freezer-Garlic-Bread-close-480x270.jpg"
+  ],
+  "keywords": "easy, Freezer Friendly",
+  "name": "Homemade Freezer Garlic Bread",
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "calories": "175.27 kcal",
+    "carbohydrateContent": "17.78 g",
+    "fatContent": "10.27 g",
+    "fiberContent": "0.73 g",
+    "proteinContent": "3.44 g",
+    "servingSize": "1 Serving",
+    "sodiumContent": "296.68 mg"
+  },
+  "prepTime": "PT15M",
+  "recipeIngredient": [
+    "8 Tbsp salted butter, room temperature ($1.04)",
+    "2 Tbsp olive oil ($0.32)",
+    "4 cloves garlic, minced ($0.32)",
+    "1/4 tsp garlic powder ($0.02)",
+    "1/4 tsp salt ($0.02)",
+    "1 Tbsp dried parsley ( $0.30)",
+    "1 loaf French bread ($1.00)"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "Add the butter, olive oil, minced garlic, garlic powder, salt, and parsley to a bowl. Mix the ingredients together until they form a fairly smooth mixture."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Slice the French bread into 1-inch thick slices (12-16 slices, depending on the size of the loaf). Add 1/2 to 1 Tbsp of the garlic spread to each slice of bread and spread it from edge to edge. Arrange the slices on a baking sheet and then place them in the freezer for about 30 minutes to allow the butter to firm up. Once firm, transfer the garlic bread to a gallon-sized freezer bag for longer storage. Store in the freezer up to three months."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "To cook the frozen slices of garlic bread, preheat the oven to 400 degrees. Once the oven is heated, take as many slices out of the freezer as you'd like, and place them on a baking sheet. Bake for 10-15 minutes, or until the edges are golden brown.* If you prefer a softer garlic bread without crispy edges, wrap the slices in foil before baking."
+    }
+  ],
+  "recipeYield": "12",
+  "sameAs": ["https://www.budgetbytes.com/homemade-freezer-garlic-bread/"],
+  "totalTime": "PT30M",
+  "updatedAt": "2020-10-08T05:37:51.890Z",
+  "video": {
+    "@type": "VideoObject",
+    "contentUrl": "https://embed.mediavine.com/videos/io0desbxrn53ntjigjem",
+    "description": "Make your own homemade freezer garlic bread slices, ready to bake on demand. Bake two or ten frozen slices at a time, ready in minutes!",
+    "duration": "PT61S",
+    "name": "Freezer Garlic Bread",
+    "thumbnailUrl": "https://mediavine-res.cloudinary.com/image/upload/s--wSDiLge1--/c_limit,f_auto,fl_lossy,h_1080,q_auto,w_1920/v1558733849/eytc3xzm3okby2zvbm9o.jpg",
+    "uploadDate": "2019-05-24T21:36:56+00:00"
+  }
+}

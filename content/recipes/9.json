@@ -1,0 +1,169 @@
+{
+  "@graph": [
+    {
+      "@type": "Question",
+      "suggestedAnswer": [
+        {
+          "@type": "Answer",
+          "text": "Mushroom."
+        },
+        {
+          "@type": "Answer",
+          "text": "Butternut squash."
+        }
+      ],
+      "text": "Which risotto do you prefer?"
+    }
+  ],
+  "@type": "Recipe",
+  "aggregateRating": {
+    "@context": "http://schema.org/",
+    "@type": "AggregateRating",
+    "bestRating": 5,
+    "ratingValue": 4.785714,
+    "reviewCount": 14,
+    "worstRating": 1
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Lauren Miyashiro"
+  },
+  "cookTime": "PT0S",
+  "createdAt": "2020-10-08T05:20:52.724Z",
+  "dateModified": "2020-05-19T17:17:00Z",
+  "datePublished": "2017-08-30T22:02:00Z",
+  "description": "This Mushroom Risotto from Delish.com is worth every bit of stirring. ",
+  "headline": "Mushroom Risotto",
+  "image": {
+    "@type": "ImageObject",
+    "height": 1667,
+    "thumbnail": "https://hips.hearstapps.com/del.h-cdn.co/assets/17/35/1600x1600/square-1504128527-delish-mushroom-risotto.jpg?resize=100:*",
+    "url": "https://hips.hearstapps.com/del.h-cdn.co/assets/17/35/1504128527-delish-mushroom-risotto.jpg",
+    "width": 2500
+  },
+  "keywords": "mushroom risotto recipe, weeknight dinner recipes, easy italian recipes, risotto recipe, how to make risotto, arborio rice",
+  "name": "Mushroom Risotto",
+  "prepTime": "PT15M",
+  "publisher": {
+    "@type": "Organization",
+    "logo": {
+      "@type": "ImageObject",
+      "height": 60,
+      "url": "https://assets.hearstapps.com/sites/delish/assets/images/logos/logo-jsonld.58eed96.png",
+      "width": 219
+    },
+    "name": "Delish"
+  },
+  "recipeCategory": ["date night", "dinner"],
+  "recipeCuisine": "Italian",
+  "recipeIngredient": [
+    "8 c. low-sodium chicken or vegetable broth",
+    "1 tbsp. extra-virgin olive oil",
+    "1 onion, finely chopped",
+    "2 tbsp. butter, divided",
+    "2 cloves garlic, minced",
+    "1 lb. button mushrooms, sliced",
+    "1 bay leaf",
+    "4 sprigs thyme, leaves removed",
+    "kosher salt",
+    "Freshly ground black pepper",
+    "2 c. arborio rice",
+    "1/2 c. white wine",
+    "1 c. freshly grated Parmesan",
+    "3/4 c. frozen peas, thawed",
+    "2 tbsp. chopped fresh parsley"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "In a medium saucepan over medium heat, bring chicken broth to a simmer."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Reduce heat to low."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "In a large pot or Dutch oven, heat oil."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Add onion and cook, stirring often, until translucent, about 5 minutes."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Add 1 tablespoon butter, garlic, mushrooms, bay leaf and thyme."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Cook until the mushrooms have softened and are golden, about 4 more minutes, then season with salt and pepper."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Remove mixture from the pot."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Melt remaining tablespoon butter in the pot and add the arborio rice, stirring quickly."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Cook until the grains are well-coated and smell slightly toasty, about 2 minutes."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Add the wine and cook until the wine has mostly absorbed."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "With a ladle, add about 1 cup hot broth."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Stirring often, cook until the rice has mostly absorbed liquid."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Add remaining broth about 1 cup at a time, continuing to allow the rice to absorb each addition of broth before adding more."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Stir often and cook until the risotto is al dente and creamy, not mushy."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "(You might not need all the broth."
+    },
+    {
+      "@type": "HowToStep",
+      "text": ") Add the mushroom mixture back into the rice."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Stir in Parmesan and peas then garnish with parsley."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Serve warm."
+    }
+  ],
+  "recipeYield": "4 servings",
+  "sameAs": [
+    "https://www.delish.com/cooking/recipe-ideas/recipes/a55215/easy-mushroom-risotto-recipe/"
+  ],
+  "suitableForDiet": "https://schema.org/VeganDiet",
+  "thumbnailUrl": "https://hips.hearstapps.com/del.h-cdn.co/assets/17/35/1600x1600/square-1504128527-delish-mushroom-risotto.jpg?resize=100:*",
+  "totalTime": "PT1H",
+  "updatedAt": "2020-10-08T05:20:52.724Z",
+  "url": "https://www.delish.com/cooking/recipe-ideas/recipes/a55215/easy-mushroom-risotto-recipe/",
+  "video": {
+    "@type": "VideoObject",
+    "contentUrl": "https://streaming.hearstdigitalstudios.com/3b13f843-0197-4262-a9eb-e10360922b5a/video_rover_16x9_1080p_hd_1589907984_38317.mp4",
+    "description": "SO creamy!",
+    "duration": "PT1M8S",
+    "embedUrl": "https://glimmer.hearstapps.com/?id=d3db60fb-6499-422c-afb6-bdd2821c0aa1",
+    "name": "You'll Feel Like A Pro After Making This Mushroom Risotto",
+    "thumbnailUrl": "https://hips.hearstapps.com/delish/assets/17/35/1504128527-delish-mushroom-risotto.jpg",
+    "uploadDate": "2020-05-19T17:05:45.856540Z"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "@type": "Recipe",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingCount": "22",
+    "ratingValue": "4.82"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Beth - Budget Bytes"
+  },
+  "createdAt": "2020-10-08T05:32:49.828Z",
+  "datePublished": "2015-03-25T18:00:57+00:00",
+  "description": "Fresh lime juice and earthy cumin give this Cumin Lime Coleslaw a light, fresh, and summery flavor. Perfect for summer BBQ or any southwest inspired meal.",
+  "image": [
+    "https://www.budgetbytes.com/wp-content/uploads/2015/03/Cumin-Lime-Slaw-above-1.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2015/03/Cumin-Lime-Slaw-above-1-500x480.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2015/03/Cumin-Lime-Slaw-above-1-500x375.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2015/03/Cumin-Lime-Slaw-above-1-480x270.jpg"
+  ],
+  "name": "Cumin Lime Coleslaw",
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "calories": "170.48 kcal",
+    "carbohydrateContent": "10.65 g",
+    "fatContent": "13.97 g",
+    "fiberContent": "3.72 g",
+    "proteinContent": "2 g",
+    "servingSize": "1 Serving",
+    "sodiumContent": "349.73 mg"
+  },
+  "prepTime": "PT30M",
+  "recipeIngredient": [
+    "1/2 cup mayonnaise ($0.66)",
+    "2 Tbsp fresh lime juice (about 1/2 lime) ($0.69)",
+    "1 tsp ground cumin ($0.10)",
+    "1/2 tsp salt ($0.02)",
+    "pinch cayenne pepper ($0.02)",
+    "1 tsp sugar ($0.02)",
+    "1/2 head green cabbage(about 1.25 lbs or 6 cups shredded) ($0.84)",
+    "2 carrots ($0.27)",
+    "1/2 bunch green onions ($0.38)"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "Prepare the coleslaw dressing by stirring together the mayonnaise, lime juice, cumin, salt, sugar, and a pinch of cayenne pepper. Refrigerate the dressing until ready to use."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Cut the cabbage into quarters, the remove the core from each section. Cut the quarters in half one more time to make thin wedges, then cut across the wedges into thin strips. Peel the carrots, then use a large holed cheese grater to shred the carrots. Thinly slice the green onions."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Combine the shredded cabbage, carrots, and green onions in a large bowl. Pour the dressing over top, then stir until everything is well coated in dressing. Serve immediately or refrigerate until ready to serve. After refrigerating, make sure to stir the slaw well before serving."
+    }
+  ],
+  "recipeYield": "6",
+  "sameAs": ["https://www.budgetbytes.com/cumin-lime-coleslaw/"],
+  "totalTime": "PT30M",
+  "updatedAt": "2020-10-08T05:32:49.828Z"
+}

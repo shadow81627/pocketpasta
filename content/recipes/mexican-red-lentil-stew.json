@@ -1,0 +1,79 @@
+{
+  "@type": "Recipe",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingCount": "80",
+    "ratingValue": "4.89"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Adapted from Andrea Meyers"
+  },
+  "cookTime": "PT40M",
+  "createdAt": "2020-10-08T05:41:29.944Z",
+  "datePublished": "2009-12-19T15:20:00+00:00",
+  "description": "Smoky roasted tomatoes, fresh lime juice, and a handful of potent spices make this Mexican Red Lentil Stew anything but ordinary.",
+  "image": [
+    "https://www.budgetbytes.com/wp-content/uploads/2009/12/Mexican-Red-Lentil-Stew-above-1.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2009/12/Mexican-Red-Lentil-Stew-above-1-500x480.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2009/12/Mexican-Red-Lentil-Stew-above-1-500x375.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2009/12/Mexican-Red-Lentil-Stew-above-1-480x270.jpg"
+  ],
+  "name": "Mexican Red Lentil Stew",
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "calories": "268.64 kcal",
+    "carbohydrateContent": "46.67 g",
+    "fatContent": "3.41 g",
+    "fiberContent": "8.29 g",
+    "proteinContent": "14.91 g",
+    "servingSize": "1.5 Cups",
+    "sodiumContent": "908.99 mg"
+  },
+  "prepTime": "PT10M",
+  "recipeIngredient": [
+    "2 cups dry red lentils ($3.46*)",
+    "1 Tbsp olive oil ($0.16)",
+    "1 medium onion ($0.37)",
+    "3-4 stalks celery ($0.79)",
+    "4 cloves garlic ($0.32)",
+    "2 14.5 oz cans fire roasted diced tomatoes ($2.38)",
+    "1/2 Tbsp chili powder ($0.15)",
+    "1 tsp cumin ($0.10)",
+    "1/2 tsp turmeric ($0.05)",
+    "4 cups vegetable broth ($0.52**)",
+    "10-15 dashes hot sauce ($0.15)",
+    "1 medium lime ($0.39)",
+    "1/2 bunch cilantro ($0.50)"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "Add the dry lentils to a medium pot. Cover with water, swish to rinse, then drain off as much water as possible. Repeat this process until the water remains mostly clear. After draining off the last rinse, add four cups of water, place a lid on top, and bring the lentils to a boil over high heat. Once it reaches a boil, turn off the heat and let sit with a lid on for about 20 minutes."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "While the lentils are cooking, begin the rest of the stew. Dice the onion and mince the garlic. Sauté both in a large pot with olive oil over medium-low heat until soft and transparent."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "While the onions and garlic cook, rinse and dice the celery. Add the diced celery to the pot and continue to sauté for a few minutes more, or just until the celery begins to soften."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Add the diced tomatoes (with juices), chili powder, cumin, turmeric, and hot sauce to the pot. Stir to combine."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "The lentils should be finished cooking at this point. Drain off as much of the cooking water as possible, then add the lentils to the pot along with the vegetable broth. Stir to combine, then allow the soup to simmer over medium-low heat for about 15 minutes. The lentils will soften and break down further as they simmer, helping to thicken the stew."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Pull the cilantro leaves from the stems, give them a rough chop, then stir them into the stew. Squeeze the juice of the lime into the broth and stir to combine. Taste the stew and adjust the salt or hot sauce if desired."
+    }
+  ],
+  "recipeYield": "7",
+  "sameAs": ["https://www.budgetbytes.com/mexican-lentil-stew/"],
+  "totalTime": "PT50M",
+  "updatedAt": "2020-10-08T05:41:29.944Z"
+}

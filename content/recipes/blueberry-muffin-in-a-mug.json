@@ -1,0 +1,75 @@
+{
+  "@type": "Recipe",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingCount": "1",
+    "ratingValue": "5"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "The Typical Mom"
+  },
+  "cookTime": "PT2M",
+  "createdAt": "2020-10-08T05:24:33.559Z",
+  "datePublished": "2020-05-01T08:36:53+00:00",
+  "description": "This blueberry muffin in a mug recipe is so good and a great way to make breakfast in the microwave in one minute for one person. You don't have to share!",
+  "image": [
+    "https://temeculablogs.com/wp-content/uploads/2019/08/Blueberry-Muffin-in-a-Mug.jpg",
+    "https://temeculablogs.com/wp-content/uploads/2019/08/Blueberry-Muffin-in-a-Mug-500x500.jpg",
+    "https://temeculablogs.com/wp-content/uploads/2019/08/Blueberry-Muffin-in-a-Mug-500x375.jpg",
+    "https://temeculablogs.com/wp-content/uploads/2019/08/Blueberry-Muffin-in-a-Mug-480x270.jpg"
+  ],
+  "keywords": "blueberry, muffin, mug, mug cake",
+  "name": "Blueberry Muffin in a Mug",
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "calories": "583 kcal",
+    "carbohydrateContent": "83 g",
+    "cholesterolContent": "67 mg",
+    "fatContent": "26 g",
+    "fiberContent": "2 g",
+    "proteinContent": "7 g",
+    "saturatedFatContent": "16 g",
+    "servingSize": "3 oz",
+    "sodiumContent": "235 mg",
+    "sugarContent": "49 g"
+  },
+  "prepTime": "PT3M",
+  "recipeCategory": ["Breakfast", "Dessert", "Snack"],
+  "recipeCuisine": "American",
+  "recipeIngredient": [
+    "1/3 c flour (all purpose)",
+    "1 tbsp brown sugar",
+    "2.5 tbsp sugar",
+    "1/4 tsp baking powder",
+    "2 tbsp butter (salted, melted)",
+    "1/2 tsp vanilla",
+    "1/4 c milk (2% or whole)",
+    "1/4 c blueberries (fresh is best)"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "In a small dish melt your butter in the microwave for 30 seconds."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "In your mug stir together the flour, sugar, brown sugar, and baking powder well."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Pour in your melted butter, milk, and vanilla and stir so you have batter and no powder is left."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Gently fold in your fresh blueberries."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Put into the microwave for 2 minutes. Eat immediately for best results."
+    }
+  ],
+  "recipeYield": "1",
+  "sameAs": ["https://temeculablogs.com/blueberry-muffin-in-a-mug/"],
+  "updatedAt": "2020-10-08T05:24:33.559Z"
+}

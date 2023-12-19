@@ -1,0 +1,86 @@
+{
+  "@type": "Recipe",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingCount": "21",
+    "ratingValue": "4.91"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Beth - Budget Bytes"
+  },
+  "cookTime": "PT15M",
+  "createdAt": "2020-10-08T05:55:31.603Z",
+  "datePublished": "2019-06-29T16:53:30+00:00",
+  "description": "This Tomato Mozzarella Pasta Salad with homemade Parmesan Balsamic Vinaigrette is the perfect light and fresh summer meal. Perfect for potlucks!",
+  "image": [
+    "https://www.budgetbytes.com/wp-content/uploads/2019/06/Add-Parmesan-Balsamic-Vinaigrette-to-Tomato-Mozzarella-Pasta-Salad.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2019/06/Add-Parmesan-Balsamic-Vinaigrette-to-Tomato-Mozzarella-Pasta-Salad-500x500.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2019/06/Add-Parmesan-Balsamic-Vinaigrette-to-Tomato-Mozzarella-Pasta-Salad-500x375.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2019/06/Add-Parmesan-Balsamic-Vinaigrette-to-Tomato-Mozzarella-Pasta-Salad-480x270.jpg"
+  ],
+  "keywords": "Breakfast Meal Prep, Cold Pasta Salad, Potluck Recipes",
+  "name": "Tomato Mozzarella Pasta Salad",
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "calories": "429.18 kcal",
+    "carbohydrateContent": "36.62 g",
+    "fatContent": "24.6 g",
+    "fiberContent": "3.03 g",
+    "proteinContent": "15.67 g",
+    "servingSize": "1.5 Cups",
+    "sodiumContent": "567.75 mg"
+  },
+  "prepTime": "PT10M",
+  "recipeIngredient": [
+    "8 oz. bowtie pasta ($0.67)",
+    "salt for pasta water ($0.02)",
+    "3 cups fresh spinach ($1.20)",
+    "1 pint grape tomatoes ($2.50)",
+    "8 oz. mozzarella* ($2.60)",
+    "1/3 cup olive oil ($0.55)",
+    "3 Tbsp balsamic vinegar ($0.41)",
+    "2 Tbsp mayonnaise ($0.17)",
+    "2 Tbsp grated Parmesan ($0.22)",
+    "1/2 Tbsp Dijon mustard ($0.09)",
+    "1 clove garlic, minced ($0.08)",
+    "1/2 tsp dried basil ($0.05)",
+    "1/4 tsp salt ($0.01)",
+    "freshly cracked pepper ($0.02)"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "Fill a pot with water and add two large pinches of salt. Cover the pot and bring it to a boil over high heat. Once boiling, add the pasta and continue to boil until the pasta is tender. Drain the pasta in a colander, give it a brief rinse with cool water, and let it drain well while you prepare the rest of the salad."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "While waiting for the pasta to cook, prepare the rest of the salad. Start with the Parmesan Balsamic Vinaigrette. Combine all the dressing ingredients in a jar or blender. Either blend until combined or shake your jar until the ingredients are well combined. Set the dressing aside until needed."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Roughly chop the spinach and slice the grape tomatoes in half. Dice the mozzarella into 1/2-inch cubes."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Add the spinach, tomatoes, and mozzarella to a large bowl. Once the pasta is well drained and mostly cool, add it to the bowl with the mozzarella and vegetables. Make sure the pasta is no longer hot, so it doesn't wilt the spinach or melt the cheese."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Toss the ingredients to combine. If serving the salad later, store it like this without dressing. If serving immediately, add half of the dressing and toss to coat. Add more dressing as desired."
+    }
+  ],
+  "recipeYield": "6",
+  "sameAs": ["https://www.budgetbytes.com/tomato-mozzarella-pasta-salad/"],
+  "totalTime": "PT25M",
+  "updatedAt": "2020-10-08T05:55:31.603Z",
+  "video": {
+    "@type": "VideoObject",
+    "contentUrl": "https://embed.mediavine.com/videos/f5bq487k55a7nanxknph",
+    "description": "This Tomato Mozzarella Pasta Salad with homemade Parmesan Balsamic Vinaigrette is the perfect light and fresh summer meal. Perfect for potlucks!",
+    "duration": "PT60S",
+    "name": "Tomato and Mozzarella Pasta Salad",
+    "thumbnailUrl": "https://mediavine-res.cloudinary.com/image/upload/s--E5D0ATPt--/c_limit,f_auto,fl_lossy,h_1080,q_auto,w_1920/v1583607295/h4lxw1i2xmmmoowvvknw.jpg",
+    "uploadDate": "2020-03-07T18:54:29+00:00"
+  }
+}

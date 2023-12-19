@@ -1,0 +1,79 @@
+{
+  "@type": "Recipe",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingCount": "27",
+    "ratingValue": "4.97"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Beth - Budget Bytes"
+  },
+  "cookTime": "PT15M",
+  "createdAt": "2020-10-08T05:22:43.469Z",
+  "datePublished": "2013-10-23T17:49:30+00:00",
+  "description": "These BBQ Bean Sliders topped with a homemade creamy coleslaw are a quick dinner fix when you're craving BBQ and don't have time for slow cooking meat!",
+  "image": [
+    "https://www.budgetbytes.com/wp-content/uploads/2013/10/BBQ-Bean-Slider-side.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2013/10/BBQ-Bean-Slider-side-500x500.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2013/10/BBQ-Bean-Slider-side-500x375.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2013/10/BBQ-Bean-Slider-side-480x270.jpg"
+  ],
+  "keywords": "BBQ Sliders, Easy Dinner, Vegetarian BBQ",
+  "name": "BBQ Bean Sliders",
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "calories": "598.6 kcal",
+    "carbohydrateContent": "84.4 g",
+    "fatContent": "25.5 g",
+    "fiberContent": "16 g",
+    "proteinContent": "14.8 g",
+    "servingSize": "1 slider",
+    "sodiumContent": "2583.1 mg"
+  },
+  "prepTime": "PT15M",
+  "recipeIngredient": [
+    "1 Tbsp olive oil ($0.16)",
+    "1 small yellow onion ($0.32)",
+    "1 clove garlic ($0.08)",
+    "1 15oz. can black beans ($0.89)",
+    "1 15oz. can pinto beans ($0.89)",
+    "1/2 cup BBQ sauce ($0.27)",
+    "1/2 tsp smoked paprika (optional) ($0.05)",
+    "4 hamburger buns ($1.66)",
+    "1/2 14oz. bag coleslaw mix (shredded cabbage, about 3 cups) ($0.75)",
+    "3 green onions ($0.17)",
+    "1/3 cup mayonnaise ($0.55)",
+    "1/2 Tbsp honey ($0.06)",
+    "1 tsp Dijon mustard ($0.03)",
+    "1 tsp red wine or apple cider vinegar ($0.02)",
+    "1/4 tsp salt ($0.02)",
+    "Freshly cracked black pepper ($0.03)"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "Dice the onion and mince the garlic. Add the onion, garlic, and olive oil to a large skillet and cook over medium heat until the onion is soft and translucent (about 5 minutes)."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Rinse and drain the pinto and black beans in a colander. Add the drained beans, BBQ sauce, and smoked paprika to the skillet with the onions and garlic. Stir to combine and then cook over medium-low heat until warmed through (stir occasionally)."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "While the beans and BBQ sauce are heating, prepare the creamy coleslaw. Add the cabbage coleslaw mix to a large bowl. Slice the green onions and add them to the bowl with the cabbage."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "In a separate small bowl, make the dressing for the slaw. Stir together the mayonnaise, honey, Dijon, vinegar, salt, and pepper until smooth. Add the dressing to the bowl with the slaw mix and green onions, then stir to combine."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "To make the sliders, add a heaping 1/2 cup of BBQ beans to each bun, then top with 1/2 cup of the slaw. Enjoy!"
+    }
+  ],
+  "recipeYield": "4",
+  "sameAs": ["https://www.budgetbytes.com/bbq-bean-sliders/"],
+  "totalTime": "PT30M",
+  "updatedAt": "2020-10-08T05:22:43.469Z"
+}

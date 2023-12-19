@@ -1,0 +1,59 @@
+{
+  "@type": "Recipe",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingCount": "9",
+    "ratingValue": "4"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Beth - Budget Bytes"
+  },
+  "cookTime": "PT15M",
+  "createdAt": "2020-10-08T05:34:24.544Z",
+  "datePublished": "2018-09-15T10:08:00+00:00",
+  "description": "French Bread Pizza is the perfect budget-friendly fast and easy weeknight dinner. Customize the toppings to fit your taste buds or what you have on hand! ",
+  "image": [
+    "https://www.budgetbytes.com/wp-content/uploads/2010/11/Finished-French-Bread-Pizza.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2010/11/Finished-French-Bread-Pizza-500x500.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2010/11/Finished-French-Bread-Pizza-500x375.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2010/11/Finished-French-Bread-Pizza-480x270.jpg"
+  ],
+  "keywords": "Dinner, easy, Fast, Pizza",
+  "name": "Easy French Bread Pizza",
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "calories": "366.85 kcal",
+    "carbohydrateContent": "49.38 g",
+    "fatContent": "12.4 g",
+    "fiberContent": "2.3 g",
+    "proteinContent": "15.7 g",
+    "servingSize": "1 Serving",
+    "sodiumContent": "789.5 mg"
+  },
+  "prepTime": "PT5M",
+  "recipeIngredient": [
+    "1 French loaf ($0.99)",
+    "1/2 cup pizza sauce ($0.42)",
+    "4 oz. shredded mozzarella (about 1 cup shredded) ($1.04)",
+    "toppings of your choice (variable)"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "Preheat the oven to 400oF. Cut the French loaf in half lengthwise, then cut each half open into two pieces. Place the pieces of French Bread, cut side up, on a large baking sheet."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Top each piece of bread with about 2 Tbsp pizza sauce and 1 oz. (or 1/4 cup shredded) mozzarella. Add any additional toppings you desire."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Bake the pizzas in the preheated oven for 10-15 minutes, or until the cheese is melted and bubbly, and the bread is slightly brown and crispy on the edges. Serve hot."
+    }
+  ],
+  "recipeYield": "4",
+  "sameAs": ["https://www.budgetbytes.com/french-bread-pizza/"],
+  "totalTime": "PT20M",
+  "updatedAt": "2020-10-08T05:34:24.544Z"
+}

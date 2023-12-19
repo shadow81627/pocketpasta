@@ -1,0 +1,88 @@
+{
+  "@type": "Recipe",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingCount": "111",
+    "ratingValue": "4.8"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Beth - Budget Bytes"
+  },
+  "cookTime": "PT40M",
+  "createdAt": "2020-10-08T05:51:47.576Z",
+  "datePublished": "2015-06-04T18:01:15+00:00",
+  "description": "This one pot Spanish Chickpeas and rice has big flavor thanks to liberal dose of spices, artichoke hearts, and fresh lemon. ",
+  "image": [
+    "https://www.budgetbytes.com/wp-content/uploads/2015/06/Spanish-Chickpeas-and-Rice-bowl-above.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2015/06/Spanish-Chickpeas-and-Rice-bowl-above-500x480.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2015/06/Spanish-Chickpeas-and-Rice-bowl-above-500x375.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2015/06/Spanish-Chickpeas-and-Rice-bowl-above-480x270.jpg"
+  ],
+  "keywords": "easy, One Pot, Vegan, Vegetarian",
+  "name": "Spanish Chickpeas and Rice",
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "calories": "486.25 kcal",
+    "carbohydrateContent": "83.03 g",
+    "fatContent": "10.98 g",
+    "fiberContent": "15.28 g",
+    "proteinContent": "16.08 g",
+    "servingSize": "1 Serving",
+    "sodiumContent": "1348.43 mg"
+  },
+  "prepTime": "PT10M",
+  "recipeIngredient": [
+    "2 Tbsp olive oil ($0.32)",
+    "2 cloves garlic ($0.16)",
+    "1/2 Tbsp smoked paprika ($0.15)",
+    "1 tsp ground cumin ($0.10)",
+    "1/2 tsp dried oregano ($0.05)",
+    "1/4 tsp cayenne pepper ($0.02)",
+    "Freshly cracked black pepper ($0.05)",
+    "1 yellow onion ($0.36)",
+    "1 cup uncooked long grain white rice ($0.33)",
+    "1 15oz. can diced tomatoes ($0.79)",
+    "1 15oz. can quartered artichoke hearts ($2.50)",
+    "1 19oz. can chickpeas ($1.89)",
+    "1.5 cups vegetable broth* ($0.18)",
+    "1/2 tsp salt (or to taste) ($0.02)",
+    "1/4 bunch fresh parsley ($0.22)",
+    "1 fresh lemon ( $0.25)"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "Mince the garlic and add it to a large deep skillet along with the olive oil. Cook over medium-low heat for 1-2 minutes, or just until soft and fragrant. Add the smoked paprika, cumin, oregano, cayenne pepper, and some freshly cracked black pepper to the skillet. Stir and sauté the spices in the hot oil for one more minute."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Dice the onion and add it to the skillet. Sauté the onion until it is soft and translucent (about 5 min). Add the rice and sauté for 2 minutes more."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Drain the chickpeas and artichoke hearts, then add them to the skillet along with the can of diced tomatoes (with juices), vegetable broth, and a half teaspoon of salt. Roughly chop the parsley and add it to the skillet, reserving a small amount to sprinkle over the finished dish. Stir all the ingredients in the skillet until evenly combined."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Place a lid on the skillet and turn the heat up to medium-high. Allow the skillet to come to a boil. Once it reaches a boil, turn the heat down to low and let simmer for 20 minutes. Make sure it's simmering the whole time and adjust the heat up slightly if necessary to keep it simmering."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "After simmering for 20 minutes, turn the heat off and let it rest for 5 minutes without removing the lid. Finally, remove the lid, fluff with a fork and top with the remaining chopped parsley. Cut the lemon into wedges and squeeze the fresh juice over each bowl."
+    }
+  ],
+  "recipeYield": "4",
+  "sameAs": ["https://www.budgetbytes.com/spanish-chickpeas-and-rice/"],
+  "totalTime": "PT50M",
+  "updatedAt": "2020-10-08T05:51:47.576Z",
+  "video": {
+    "@type": "VideoObject",
+    "contentUrl": "https://embed.mediavine.com/videos/qrbyoq8ktvtpi2k4ha06",
+    "description": "This vegan one pot Spanish Chickpeas and rice has big flavor thanks to liberal dose of spices, artichoke hearts, and fresh lemon.",
+    "duration": "PT66S",
+    "name": "Spanish Chickpeas and Rice",
+    "thumbnailUrl": "https://mediavine-res.cloudinary.com/image/upload/s--viLLyEVe--/c_limit,f_auto,fl_lossy,h_1080,q_auto,w_1920/v1550275714/a2azviprwplxv8sccqsh.jpg",
+    "uploadDate": "2019-02-13T22:54:05+00:00"
+  }
+}

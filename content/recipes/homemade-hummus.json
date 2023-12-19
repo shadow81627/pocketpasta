@@ -1,0 +1,61 @@
+{
+  "@type": "Recipe",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingCount": "25",
+    "ratingValue": "4.96"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Beth - Budget Bytes"
+  },
+  "createdAt": "2020-10-08T05:39:23.339Z",
+  "datePublished": "2017-02-21T12:58:00+00:00",
+  "description": "Homemade hummus is quick, easy, and inexpensive, and can be made with several different flavor add-ins. Here are four delicious flavors to try.",
+  "image": [
+    "https://www.budgetbytes.com/wp-content/uploads/2010/05/Homemade-Hummus-dip.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2010/05/Homemade-Hummus-dip-500x500.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2010/05/Homemade-Hummus-dip-500x375.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2010/05/Homemade-Hummus-dip-480x270.jpg"
+  ],
+  "keywords": "easy, gluten free, No-Cook, Quick, Vegan, Vegetarian",
+  "name": "Homemade Hummus",
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "calories": "201.53 kcal",
+    "carbohydrateContent": "18.55 g",
+    "fatContent": "11.5 g",
+    "fiberContent": "5.92 g",
+    "proteinContent": "7.4 g",
+    "servingSize": "1 Serving",
+    "sodiumContent": "371.85 mg"
+  },
+  "prepTime": "PT5M",
+  "recipeIngredient": [
+    "1 15oz. can chickpeas* ($0.79)",
+    "2 Tbsp olive oil ($0.26)",
+    "1/4 cup lemon juice ($0.182)",
+    "1/4 cup tahini ($0.85)",
+    "1 clove garlic ($0.08)",
+    "1/2 tsp salt ($0.05)",
+    "1/4 tsp ground cumin ($0.03)"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "Drain the chickpeas. Place the drained chickpeas in a food processor along with the olive oil, lemon juice, tahini, garlic, salt, and cumin."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Pulse the mixture until it is fairly smooth. If the mixture is too dry to process smoothly, add a couple tablespoons of water, extra olive oil, or liquid from the canned chickpeas."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Taste the hummus and adjust the salt, cumin, lemon, or garlic to your liking."
+    }
+  ],
+  "recipeYield": "6",
+  "sameAs": ["https://www.budgetbytes.com/hummus-four-flavors/"],
+  "totalTime": "PT5M",
+  "updatedAt": "2020-10-08T05:39:23.339Z"
+}

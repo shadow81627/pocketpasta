@@ -1,0 +1,64 @@
+{
+  "@type": "Recipe",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingCount": "20",
+    "ratingValue": "4.8"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Beth - Budget Bytes"
+  },
+  "cookTime": "PT20M",
+  "createdAt": "2020-10-08T05:50:16.372Z",
+  "datePublished": "2015-04-19T18:06:28+00:00",
+  "description": "This rustic Smoky Tomato Soup has chunks of fire roasted tomatoes, smoked paprika, and earthy cumin. It's a fast and flavorful side to your weeknight meal.",
+  "image": [
+    "https://www.budgetbytes.com/wp-content/uploads/2015/04/Smoky-Tomato-Soup-front-1.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2015/04/Smoky-Tomato-Soup-front-1-500x480.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2015/04/Smoky-Tomato-Soup-front-1-500x375.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2015/04/Smoky-Tomato-Soup-front-1-480x270.jpg"
+  ],
+  "name": "Smoky Tomato Soup",
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "calories": "136.7 kcal",
+    "carbohydrateContent": "16.1 g",
+    "fatContent": "6.93 g",
+    "fiberContent": "4.58 g",
+    "proteinContent": "2.55 g",
+    "servingSize": "1.25 Cups",
+    "sodiumContent": "617.43 mg"
+  },
+  "prepTime": "PT10M",
+  "recipeIngredient": [
+    "2 Tbsp olive oil ($0.32)",
+    "1 small yellow onion ($0.36)",
+    "2 cloves garlic ($0.16)",
+    "2 Tbsp tomato paste ($0.11)",
+    "1/2 Tbsp smoked paprika ($0.15)",
+    "1/2 tsp cumin ($0.05)",
+    "2 15oz. cans fire roasted diced tomatoes ($2.78)",
+    "1 cup vegetable broth ($0.12)",
+    "1/2 tsp brown sugar ($0.02)",
+    "Freshly cracked pepper to taste ($0.05)"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "Finely dice the onion and mince the garlic. Add them to a soup pot with the olive oil and cook over medium heat until the onions are soft and translucent."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Add the tomato paste, smoked paprika, and cumin to the pot. Continue to stir and cook for about two minutes to slightly caramelize the tomato paste and toast the spices."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Add the cans of fire roasted tomatoes, vegetable broth, brown sugar, and some freshly cracked pepper. Stir to combine and heat through (about 10 minutes). Taste and adjust the seasoning if needed (salt may be needed depending on the brand of broth used)."
+    }
+  ],
+  "recipeYield": "4",
+  "sameAs": ["https://www.budgetbytes.com/smoky-tomato-soup/"],
+  "totalTime": "PT30M",
+  "updatedAt": "2020-10-08T05:50:16.372Z"
+}

@@ -1,0 +1,93 @@
+{
+  "@type": "Recipe",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingCount": "28",
+    "ratingValue": "4.97"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Alissa"
+  },
+  "cookTime": "PT25M",
+  "createdAt": "2020-10-08T05:18:57.074Z",
+  "datePublished": "2017-02-13T10:47:00+00:00",
+  "description": "This vegan hot and sour soup is made with crispy tofu, bok choy and shiitake mushrooms, simmered up in a spicy, gingery broth.",
+  "image": {
+    "@type": "ImageObject",
+    "height": "1200",
+    "url": "https://www.connoisseurusveg.com/wp-content/uploads/2013/05/vegan-hot-and-sour-soup-fb.jpg",
+    "width": "900"
+  },
+  "name": "Vegan Hot and Sour Soup with Bok Choy",
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "calories": "294 kcal",
+    "carbohydrateContent": "21.3 g",
+    "fatContent": "14.6 g",
+    "fiberContent": "3.8 g",
+    "proteinContent": "21.3 g",
+    "saturatedFatContent": "3.1 g",
+    "servingSize": "1 serving",
+    "sodiumContent": "2096 mg",
+    "sugarContent": "7.6 g"
+  },
+  "prepTime": "PT10M",
+  "recipeCategory": ["Soup"],
+  "recipeCuisine": "American",
+  "recipeIngredient": [
+    "2 tablespoons vegetable oil, (divided)",
+    "1 tablespoon freshly grated ginger",
+    "4-5 garlic cloves, (minced)",
+    "8 cups vegetable broth",
+    "4 ounces shiitake mushrooms, (stemmed and sliced)",
+    "8 ounces can bamboo shoots, (sliced)",
+    "14 ounce block of firm tofu, (drained, pressed, and cut into 1/2 inch cubes)",
+    "1 medium bunch bok choy, (green parts only, sliced into strips)",
+    "2 tablespoons rice vinegar",
+    "2 tablespoons Asian chili paste, (or to taste)",
+    "1 tablespoons soy sauce",
+    "1 tablespoons organic granulated sugar",
+    "2 tablespoons cornstarch mixed with 1/4 cup cold water",
+    "6 scallions, (sliced)",
+    "1/4 cup fresh cilantro, (finely chopped)",
+    "Toasted sesame seeds for topping, (optional)"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "Heat 1 tablespoon of oil in large saucepan over medium heat. Add ginger and garlic and sauté for about one minute, being careful to avoid burning."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Add broth, raise heat, and bring to boil. Lower heat and add mushrooms and bamboo shoots, and simmer for about ten minutes."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "While your broth simmers away, heat the remaining tablespoon of oil in large skillet over medium heat. Add tofu and cook on each side until it begins to brown. Remove it from the pan and transfer to a plate."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Once the broth has simmered for ten minutes, stir in the bok choy, vinegar, chili paste, soy sauce and sugar. Simmer an additional ten minutes. Taste test the broth and adjust the seasonings to your liking."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Add tofu and cornstarch mixture into the broth, stir well, and remove from heat."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Stir in the scallions and cilantro, setting just a bit of each aside."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Ladle the soup into bowls and top with remaining scallions and cilantro, and optionally, a few sesame seeds."
+    }
+  ],
+  "recipeYield": "4",
+  "sameAs": [
+    "https://www.connoisseurusveg.com/hot-and-sour-soup-with-bok-choy/#recipe"
+  ],
+  "suitableForDiet": "https://schema.org/VeganDiet",
+  "totalTime": "PT35M",
+  "updatedAt": "2020-10-08T05:18:57.074Z"
+}

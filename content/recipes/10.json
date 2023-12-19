@@ -1,0 +1,93 @@
+{
+  "@type": "Recipe",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "450"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Sally"
+  },
+  "cookingMethod": "Baking",
+  "cookTime": "PT25M",
+  "createdAt": "2020-10-08T05:16:27.181Z",
+  "datePublished": "2020-01-01",
+  "description": "Even if you've never made homemade bread or worked with yeast before, this homemade artisan bread is for you. Watch the video tutorial above and review the recipe instructions and recipe notes prior to beginning. If you’re new to working with yeast, reference my Baking with Yeast Guide for answers to common yeast FAQs.",
+  "image": [
+    "https://cdn.sallysbakingaddiction.com/wp-content/uploads/2019/12/homemade-artisan-bread.jpg",
+    "https://cdn.sallysbakingaddiction.com/wp-content/uploads/2019/12/homemade-artisan-bread-225x225.jpg",
+    "https://cdn.sallysbakingaddiction.com/wp-content/uploads/2019/12/homemade-artisan-bread-260x195.jpg",
+    "https://cdn.sallysbakingaddiction.com/wp-content/uploads/2019/12/homemade-artisan-bread-320x180.jpg"
+  ],
+  "keywords": "bread, loaf",
+  "name": "Homemade Artisan Bread (With or Without Dutch Oven)",
+  "prepTime": "PT4H",
+  "recipeCategory": "Bread",
+  "recipeCuisine": "American",
+  "recipeIngredient": [
+    "3 and 1/4 cups (420g) bread flour (spoon & leveled), plus more for hands and pan",
+    "2 teaspoons instant yeast",
+    "2 teaspoons coarse salt (see note)",
+    "1 and 1/2 cups (360ml) cool water",
+    "optional: cornmeal for dusting pan"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "In a large un-greased mixing bowl, whisk the flour, yeast, and salt together. Pour in the cool water and gently mix together with a rubber spatula or wooden spoon. The dough will seem dry and shaggy, but keep working it until all the flour is moistened. If needed, use your hands (as I do in the video tutorial above) to work the dough ingredients together. The dough will be sticky. Shape into a ball in the bowl as best you can."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Cover the dough tightly with plastic wrap or aluminum foil and set on the counter at room temperature (honestly any normal room temperature is fine!). Allow to rise for 2-3 hours. The dough will just about double in size, stick to the sides of the bowl, and have a lot of air bubbles."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "You can continue with step 4 immediately, but for absolute best flavor and texture, I strongly recommend letting this risen dough rest in the refrigerator for at least 12 hours and up to 3 days. Place covered dough in the refrigerator for 12 hours – 3 days. I usually let it rest in the refrigerator for about 18 hours. The dough will puff up during this time, but may begin to deflate after 2 days. That’s fine and normal– nothing to worry about."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Lightly dust a large nonstick baking sheet (with or without rims and make sure it’s nonstick) with flour and/or cornmeal. Turn the cold dough out onto a floured work surface. Using a sharp knife or bench scraper, cut dough in half. Some air bubbles will deflate as you work with it. Place dough halves on prepared baking sheet. Using floured hands, shape into 2 long loaves about 9×3 inches each (doesn’t have to be exact) about 3 inches apart. Loosely cover and allow to rest for 45 minutes. You will bake the dough on this prepared baking sheet. See recipe note if you want to use a pizza stone."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "During this 45 minutes, preheat the oven to 475°F (246°C)."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "When ready to bake, using a very sharp knife or bread lame (some even use kitchen shears), score the bread loaves with 3 slashes, about 1/2 inch deep. (“Score” = shallow cut.) If the shaped loaves flattened out during the 45 minutes, use floured hands to narrow them out along the sides again."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Optional for a slightly crispier crust: After the oven is preheated and bread is scored, place a shallow metal or cast iron baking pan or skillet (I usually use a metal 9×13 baking pan) on the bottom oven rack. Carefully and quickly pour 3-4 cups of boiling water into it. Place the scored dough/baking pan on a higher rack and quickly shut the oven, trapping the steam inside. The steam helps create a crispier crust."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Place the shaped and scored dough (on the flour/cornmeal dusted pan) in the preheated oven on the center rack. Bake for 20-25 minutes or until the crust is golden brown. Gently tap the loaves– if they sound hollow, the bread is done."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Remove the bread from the oven and allow to cool for at least 5 minutes before slicing and serving. Store leftovers loosely covered at room temperature for up to 5 days or in the refrigerator for up to 10 days."
+    }
+  ],
+  "recipeYield": "2",
+  "sameAs": ["https://sallysbakingaddiction.com/homemade-artisan-bread/"],
+  "suitableForDiet": "https://schema.org/VeganDiet",
+  "totalTime": "PT4H25M",
+  "updatedAt": "2020-10-08T05:16:27.181Z",
+  "url": "https://sallysbakingaddiction.com/homemade-artisan-bread/",
+  "video": {
+    "@context": "http://schema.org",
+    "@type": "VideoObject",
+    "contentUrl": "https://www.youtube.com/watch?v=SgXjh5BJ0-M",
+    "description": "Even if you’ve never made homemade bread or worked with yeast before, this homemade artisan bread is for you. Watch the video tutorial above and review the recipe instructions and recipe notes prior to beginning.\n\nIf you’re new to working with yeast, reference my Baking with Yeast Guide for answers to common yeast FAQs: https://sallysbakingaddiction.com/baking-with-yeast/\n\nIngredients\n3 and 1/4 cups (420g) bread flour (spoon & leveled), plus more for hands and pan\n2 teaspoons instant yeast\n2 teaspoons coarse salt (see note)\n1 and 1/2 cups (360ml) cool water\noptional: cornmeal for dusting pan\n\nGet the full recipe: https://sallysbakingaddiction.com/homemade-artisan-bread/\n\n• Subscribe and turn on notifications to never miss a new video: https://www.youtube.com/channel/UCXSCbnLpg23d7WU5bIOAsBg?sub_confirmation=1\n\n#baking #recipes #artisanbread\n\nWelcome to my kitchen! I’m Sally, a cookbook author, photographer, and blogger. My goal is to give you the confidence and knowledge to cook and bake from scratch while providing quality recipes and plenty of pictures. Grab a cookie, take a seat, and have fun exploring! \n\n• For more of my favorite recipes go to https://sallysbakingaddiction.com/ \n\n• Follow me\nInstagram: https://www.instagram.com/sallysbakeblog\nFacebook: https://www.facebook.com/sallysbakingaddiction/\nTwitter: https://twitter.com/SallysBakeBlog\nPinterest: https://twitter.com/SallysBakeBlog",
+    "duration": "PT4M",
+    "embedUrl": "https://www.youtube.com/embed/SgXjh5BJ0-M?feature=oembed",
+    "name": "Homemade Artisan Bread (With or Without Dutch Oven) | Sally's Baking Addiction",
+    "thumbnailUrl": [
+      "https://content.jwplatform.com/thumbs/yXQwx8l1-720.jpg",
+      "https://i.ytimg.com/vi/SgXjh5BJ0-M/hqdefault.jpg"
+    ],
+    "uploadDate": "2020-05-30"
+  }
+}

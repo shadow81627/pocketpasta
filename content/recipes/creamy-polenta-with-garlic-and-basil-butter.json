@@ -1,0 +1,109 @@
+{
+  "@type": "Recipe",
+  "createdAt": "2020-10-08T05:31:23.443Z",
+  "datePublished": "2016-03-30",
+  "description": "This elegant side dish is a wonderful alternative to roast potatoes. ",
+  "image": "http://cdn.jamieoliver.com/recipe-database/xtra_med/Ckrd6gTOKtPBfco-_U_Qbv.jpg",
+  "keywords": "sides and sauces, gluten-free, vegetarian, polenta, Cheese, Dinner Party",
+  "name": "Creamy polenta with garlic and basil butter",
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "calories": "272 calories",
+    "carbohydrateContent": "22.4 g carbohydrate",
+    "fatContent": "17.4 g fat",
+    "fiberContent": "0 g fibre",
+    "proteinContent": "6.7 g protein",
+    "saturatedFatContent": "10.2 g saturated fat",
+    "servingSize": "1 serving",
+    "sodiumContent": "0 g salt",
+    "sugarContent": "1.6 g sugar"
+  },
+  "recipeCategory": "Sides",
+  "recipeCuisine": "https://schema.org/GlutenFreeDiet",
+  "recipeIngredient": [
+    "1 bulb of garlic",
+    "olive oil",
+    "200 ml milk",
+    "200 g polenta",
+    "1 large bunch of fresh basil",
+    "125 g butter",
+    "1 whole nutmeg for grating",
+    "75 g Parmesan cheese plus extra to serve"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "Preheat your oven to 200°C/400°F/gas 6."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Peel away all but one of the papery layers from the garlic bulb, then slice off the top centimeter, revealing a cross-section of the cloves."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Place the garlic on a sheet of tinfoil, drizzle with oil and rub it into the bulb."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Wrap it up, pop it on a baking tray and roast in the oven for 30 to 35 minutes, removing the foil after 20 minutes, until it’s soft."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Leave it to one side to cool a little."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Pour the milk into a large, heavy pan along with 800ml of water and 1 teaspoon of sea salt and bring it to the boil."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Pour in the polenta in a thin stream, whisking all the time so it thickens as you go."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Keep whisking for 2 to 3 minutes over a high heat."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Turn down the heat to the lowest setting and cook it for about 40 minutes, or until the polenta starts to come away from the pan, stirring every 5 minutes to stop it sticking."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Melt the butter, then pop half of it into a blender with the basil."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Squeeze all of the garlic cloves out of their skins (discarding these) and add them to the basil, along with a good grating of nutmeg."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Blitz to a vibrant green butter, then pour it into a small pan."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Warm it through gently over a low heat, then set aside."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "When the polenta is ready, finely grate in the Parmesan and stir in the remaining butter."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Serve immediately with the basil butter drizzled over the top, finished with an extra grating of Parmesan."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "."
+    }
+  ],
+  "recipeYield": "8",
+  "sameAs": [
+    "https://www.jamieoliver.com/recipes/cheese-recipes/creamy-polenta-with-garlic-and-basil-butter/"
+  ],
+  "suitableForDiet": [
+    "https://schema.org/GlutenFreeDiet",
+    "https://schema.org/VegetarianDiet"
+  ],
+  "totalTime": "PT1H",
+  "updatedAt": "2020-10-08T05:31:23.443Z"
+}

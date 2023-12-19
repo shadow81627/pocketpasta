@@ -1,0 +1,75 @@
+{
+  "@type": "Recipe",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingCount": "50",
+    "ratingValue": "4.95"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Beth - Budget Bytes"
+  },
+  "cookTime": "PT25M",
+  "createdAt": "2020-10-08T06:00:15.938Z",
+  "datePublished": "2016-12-15T11:09:07+00:00",
+  "description": "These Vegetarian French Dip Sandwiches are fast, easy, and feature a salty-sweet herb infused vegetarian au jus for dipping. ",
+  "image": [
+    "https://www.budgetbytes.com/wp-content/uploads/2016/12/Vegetarian-French-Dip-Sandwiches-H-1.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2016/12/Vegetarian-French-Dip-Sandwiches-H-1-500x500.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2016/12/Vegetarian-French-Dip-Sandwiches-H-1-500x375.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2016/12/Vegetarian-French-Dip-Sandwiches-H-1-480x270.jpg"
+  ],
+  "keywords": "Hot Sandwich",
+  "name": "Vegetarian French Dip Sandwiches",
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "calories": "402.65 kcal",
+    "carbohydrateContent": "48.58 g",
+    "fatContent": "14.08 g",
+    "fiberContent": "3.98 g",
+    "proteinContent": "15.83 g",
+    "servingSize": "1 Serving",
+    "sodiumContent": "1461.45 mg"
+  },
+  "prepTime": "PT10M",
+  "recipeIngredient": [
+    "1 yellow onion ($0.25)",
+    "3 portobello mushroom caps (about 1 lb.) ($5.39)",
+    "2 Tbsp butter ($0.22)",
+    "Pinch of salt and pepper ($0.05)",
+    "1/4 tsp dried thyme ($0.03)",
+    "1/4 tsp dried oregano ($0.03)",
+    "2 cups vegetable broth* ($0.28)",
+    "1 Tbsp soy sauce ($0.09)",
+    "1/2 Tbsp brown sugar ($0.02)",
+    "1/8 tsp garlic powder ($0.02)",
+    "4 6-inch French or Ciabatta rolls ($2.66)",
+    "4 slices provolone ($1.40)"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "Slice the onion into thin strips. Rinse the portobello caps to remove any dirt or debris. Slice each cap in half, then crosswise into 1/4-inch thick strips."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Add the butter to a deep skillet along with the sliced onions. Sauté the onions over medium heat for a few minutes, or just until they begin to soften. Add the sliced mushrooms, a pinch of salt and pepper, the thyme, and oregano. Sauté the mushrooms until they release all their moisture and the liquid in the bottom of the skillet has dried up (about 10 minutes). You want to see some of the liquid browning and coating the bottom of the skillet (but not burning)."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Once the evaporated juices begin to coat the bottom of the skillet, pour in the vegetable broth. Stir to dissolve the browned bits from the bottom of the skillet. Also add the soy sauce, brown sugar, and garlic powder. Allow the liquid to come up to a simmer, then turn down to low and simmer for about 5 minutes while you toast the bread."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Open the rolls and place them on a baking sheet, open sides up. Turn the oven on to broil and place the rolls in the oven. Watch the rolls closely and broil just until you see a slightly browning on the edges (about 5 minutes)."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Use a slotted spoon or tongs to take the mushrooms and onions out of the au jus. Divide the mushrooms and onions among the four rolls. Top each sandwich with a slice of provolone. Return the sandwiches to the oven and broil for a few minutes more, or just until the cheese is melted. Close the sandwiches up and serve with the au jus from the skillet for dipping."
+    }
+  ],
+  "recipeYield": "4",
+  "sameAs": ["https://www.budgetbytes.com/vegetarian-french-dip-sandwiches/"],
+  "totalTime": "PT35M",
+  "updatedAt": "2020-10-08T06:00:15.938Z"
+}

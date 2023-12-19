@@ -1,0 +1,140 @@
+{
+  "@graph": [
+    {
+      "@type": "Question",
+      "suggestedAnswer": [
+        {
+          "@type": "Answer",
+          "text": "Hot"
+        },
+        {
+          "@type": "Answer",
+          "text": "Cold"
+        }
+      ],
+      "text": "How do you usually eat farro?"
+    }
+  ],
+  "@type": "Recipe",
+  "aggregateRating": {
+    "@context": "http://schema.org/",
+    "@type": "AggregateRating",
+    "bestRating": 5,
+    "ratingValue": 4.9574466,
+    "reviewCount": 47,
+    "worstRating": 1
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Lena Abraham"
+  },
+  "cookTime": "PT0S",
+  "createdAt": "2020-10-08T05:23:42.504Z",
+  "dateModified": "2019-12-19T19:23:00Z",
+  "datePublished": "2015-07-09T16:44:00Z",
+  "description": "This recipe from Delish.com is truly the Best-Ever Farro Salad.",
+  "headline": "Best-Ever Farro Salad",
+  "image": {
+    "@type": "ImageObject",
+    "height": 1267,
+    "thumbnail": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/190307-farro-salad-288-1553552692.jpg?crop=0.671xw:1.00xh;0.196xw,0&resize=100:*",
+    "url": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/190307-farro-salad-288-1553552692.jpg",
+    "width": 1900
+  },
+  "keywords": "farro, farro salad recipes, how to cook farro, easy vinaigrette ",
+  "name": "Best-Ever Farro Salad",
+  "prepTime": "PT10M",
+  "publisher": {
+    "@type": "Organization",
+    "logo": {
+      "@type": "ImageObject",
+      "height": 60,
+      "url": "https://assets.hearstapps.com/sites/delish/assets/images/logos/logo-jsonld.58eed96.png",
+      "width": 219
+    },
+    "name": "Delish"
+  },
+  "recipeCategory": [
+    "healthy",
+    "vegetarian",
+    "dinner",
+    "lunch",
+    "main dish",
+    "salad"
+  ],
+  "recipeCuisine": [],
+  "recipeIngredient": [
+    "1 c. whole-grain farro",
+    "2 c. low-sodium vegetable broth",
+    "1 1/2 tsp. kosher salt",
+    "1 Bay leaf",
+    "1 Large shallot, very thinly sliced",
+    "1/3 c. extra virgin olive oil",
+    "3 tbsp. apple cider vinegar",
+    "1 tbsp. dijon mustard",
+    "2 tsp. honey",
+    "Freshly ground black pepper",
+    "2 c. lightly packed arugula",
+    "1 Green apple, chopped",
+    "1/2 c. shaved parmesan cheese",
+    "1/4 c. freshly chopped basil",
+    "1/8 c. freshly chopped parsley",
+    "1/4 c. toasted pecans, roughly chopped"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "In a medium saucepan, combine farro, vegetable broth, salt, and bay leaf."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Bring to a boil, then reduce to a simmer and let cook, stirring occasionally, until farro is tender and no broth remains, about 30 minutes."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "When farro is cooked, transfer to a large bowl to cool."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "In the meantime, make fried shallots: in a small saucepan over medium heat, combine oil and shallots."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "When the shallots begin to bubble, reduce heat to medium-low and cook, stirring occasionally, until shallots are golden and crisp, 15 to 20 minutes."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Remove shallots from oil with a slotted spoon and place on a paper-towel lined plate and season with salt."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Let oil cool."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Make dressing: in a medium bowl, combine the cooled olive oil with vinegar, mustard, and honey and season with salt and pepper."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Assemble salad: combine cooked farro, crispy shallots, arugula, apple, parmesan, basil, parsley, and pecans."
+    }
+  ],
+  "recipeYield": "4 servings",
+  "sameAs": [
+    "https://www.delish.com/cooking/recipe-ideas/recipes/a43059/best-farro-salad-recipe/"
+  ],
+  "thumbnailUrl": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/190307-farro-salad-288-1553552692.jpg?crop=0.671xw:1.00xh;0.196xw,0&resize=100:*",
+  "totalTime": "PT1H10M",
+  "updatedAt": "2020-10-08T05:23:42.504Z",
+  "url": "https://www.delish.com/cooking/recipe-ideas/recipes/a43059/best-farro-salad-recipe/",
+  "video": {
+    "@type": "VideoObject",
+    "contentUrl": "https://streaming.hearstdigitalstudios.com/fb4a2588-6c39-47f1-96fc-7377ada58f61/video_rover_16x9_1080p_hd_1593440423_32837.mp4",
+    "description": "So good!",
+    "duration": "PT1M9S",
+    "embedUrl": "https://glimmer.hearstapps.com/?id=c3245624-64fd-485e-9be5-a5518bebb439",
+    "name": "Our New Favorite Farro Salad Has The Best Dressing Ever",
+    "thumbnailUrl": "https://hips.hearstapps.com/hmg-prod/images/190307-farro-salad-288-1-1577980100.jpg",
+    "uploadDate": "2020-06-29T14:19:45.174026Z"
+  }
+}

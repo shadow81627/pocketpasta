@@ -1,0 +1,59 @@
+{
+  "@type": "Recipe",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingCount": "20",
+    "ratingValue": "4.95"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Beth - Budget Bytes"
+  },
+  "cookTime": "PT30M",
+  "createdAt": "2020-10-08T05:33:54.784Z",
+  "datePublished": "2015-03-14T13:28:36+00:00",
+  "description": "Sweet oven roasted carrots balance the earthy and spicy flavor of curry powder in these incredibly simple but flavorful Curry Roasted Carrots.",
+  "image": [
+    "https://www.budgetbytes.com/wp-content/uploads/2015/03/Curry-Roasted-Carrots-fork-1.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2015/03/Curry-Roasted-Carrots-fork-1-500x480.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2015/03/Curry-Roasted-Carrots-fork-1-500x375.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2015/03/Curry-Roasted-Carrots-fork-1-480x270.jpg"
+  ],
+  "name": "Curry Roasted Carrots",
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "calories": "68.85 kcal",
+    "carbohydrateContent": "1.85 g",
+    "fatContent": "7 g",
+    "fiberContent": "1.15 g",
+    "proteinContent": "0.4 g",
+    "servingSize": "1 Serving",
+    "sodiumContent": "303.15 mg"
+  },
+  "prepTime": "PT15M",
+  "recipeIngredient": [
+    "1 lb. carrots ($1.09)",
+    "1 Tbsp olive oil ($0.16)",
+    "1/2 Tbsp curry powder (hot or mild) ($0.15)",
+    "1/4 tsp salt ($0.02)",
+    "Handful fresh cilantro (optional) ($0.20)"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "Preheat the oven to 400 degrees and line a baking sheet with foil. Peel the carrots and cut off the rough ends. Slice the carrots on a diagonal, into 1/4\" thick slices."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Place the carrot slices in a bowl, drizzle with olive oil, then sprinkle the curry powder and salt. Toss the carrots until they're evenly coated in oil and spices."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Spread the carrots out over the prepared baking sheet in a single layer. Make sure they're not piled on top of one another. Roast in the oven for 30 minutes, stirring once half way through. Serve warm with a handful of freshly chopped cilantro over top."
+    }
+  ],
+  "recipeYield": "2",
+  "sameAs": ["https://www.budgetbytes.com/curry-roasted-carrots/"],
+  "totalTime": "PT45M",
+  "updatedAt": "2020-10-08T05:33:54.784Z"
+}

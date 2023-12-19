@@ -1,0 +1,79 @@
+{
+  "@type": "Recipe",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingCount": "18",
+    "ratingValue": "4.56"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Beth - Budget Bytes"
+  },
+  "cookTime": "PT30M",
+  "createdAt": "2020-10-08T05:25:31.652Z",
+  "datePublished": "2011-02-21T20:05:00+00:00",
+  "description": "Broccoli shells n' cheese is a classic American dish that goes well along side any meal, or as a hearty side dish. 100% real, 100% homemade.",
+  "image": [
+    "https://www.budgetbytes.com/wp-content/uploads/2011/02/Broccoli-Shells-and-Cheese-above.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2011/02/Broccoli-Shells-and-Cheese-above-500x500.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2011/02/Broccoli-Shells-and-Cheese-above-500x375.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2011/02/Broccoli-Shells-and-Cheese-above-480x270.jpg"
+  ],
+  "name": "Broccoli Shells n' Cheese",
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "calories": "679.88 kcal",
+    "carbohydrateContent": "61.85 g",
+    "fatContent": "35.38 g",
+    "fiberContent": "4 g",
+    "proteinContent": "29.65 g",
+    "servingSize": "1 Serving",
+    "sodiumContent": "850.38 mg"
+  },
+  "prepTime": "PT10M",
+  "recipeIngredient": [
+    "8 oz. pasta ($0.55)",
+    "1/2 lb. frozen broccoli florets* ($0.90)",
+    "1/2 small onion, about 1/2 cup diced ($0.18)",
+    "3 Tbsp butter ($0.33)",
+    "3 Tbsp all-purpose flour ($0.03)",
+    "2.5 cups milk ($0.65)",
+    "8 oz. 2 cups sharp cheddar, shredded ($1.89)",
+    "1/4 cup grated parmesan ($0.24)",
+    "Salt and pepper to taste ($0.05)"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "Bring a large pot of water to a boil for the pasta. Once boiling, add the pasta and continue to boil until the pasta is tender. Drain the pasta in a colander and set it aside until ready to use."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Meanwhile, allow the broccoli to thaw. Once partially thawed, chop the florets into smaller, bite-sized pieces, and set them aside to fully thaw while you prepare the rest of the dish."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "While the pasta is cooking, begin the cheese sauce. Finely dice the onion and add it to a sauce pot with the butter. Cook the onion and butter over medium heat until the onions are softened (about 2-3 minutes)."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Add the flour to the butter and onion. The flour and butter will form a paste, or roux. Whisk the roux over medium heat for 1-2 minutes more taking care not to let it scorch. This slightly cooks the flour preventing the cheese sauce from having an overly flour or paste-like flavor."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Whisk the milk into the roux until no lumps remain. Add some freshly cracked pepper to the sauce. Bring the mixture up to a simmer, stirring often (you may need to raise the heat just slightly). When the sauce reaches a simmer, it will begin to thicken. When it is thick enough to coat the back of a spoon, it’s time to add the cheese."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Turn the burner off and whisk in the shredded cheddar, one handful at a time, until it is fully melted in. Next, stir in the grated Parmesan. Give the cheese sauce a taste and add salt, pepper, and hot sauce to taste."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Once you have the cheese sauce seasoned to your liking, return the drained pasta to its large pot, add the chopped broccoli, and pour the cheese sauce over top. Stir until everything is combined and coated in the wonderfully cheesy sauce. Serve hot."
+    }
+  ],
+  "recipeYield": "4",
+  "sameAs": ["https://www.budgetbytes.com/broccoli-shells-n-cheese/"],
+  "totalTime": "PT40M",
+  "updatedAt": "2020-10-08T05:25:31.652Z"
+}

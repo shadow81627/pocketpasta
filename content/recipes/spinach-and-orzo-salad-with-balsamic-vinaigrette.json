@@ -1,0 +1,70 @@
+{
+  "@type": "Recipe",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingCount": "20",
+    "ratingValue": "4.75"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Beth - Budget Bytes"
+  },
+  "cookTime": "PT10M",
+  "createdAt": "2020-10-08T05:52:18.757Z",
+  "datePublished": "2017-05-24T16:33:07+00:00",
+  "description": "A quick homemade balsamic vinaigrette makes this simple Spinach and Orzo Salad extra special. Serve as a light lunch or a side with dinner.",
+  "image": [
+    "https://www.budgetbytes.com/wp-content/uploads/2017/05/Spinach-and-Orzo-Salad-above.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2017/05/Spinach-and-Orzo-Salad-above-500x500.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2017/05/Spinach-and-Orzo-Salad-above-500x375.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2017/05/Spinach-and-Orzo-Salad-above-480x270.jpg"
+  ],
+  "keywords": "cold lunch, Pasta Salad",
+  "name": "Spinach and Orzo Salad with Balsamic Vinaigrette",
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "calories": "477.6 kcal",
+    "carbohydrateContent": "59.5 g",
+    "fatContent": "21.7 g",
+    "fiberContent": "6.75 g",
+    "proteinContent": "14.13 g",
+    "servingSize": "1 Serving",
+    "sodiumContent": "660.18 mg"
+  },
+  "prepTime": "PT15M",
+  "recipeIngredient": [
+    "1/4 cup olive oil ($0.52)",
+    "2 Tbsp balsamic vinegar ($0.22)",
+    "1 clove garlic, minced ($0.08)",
+    "1 tsp Dijon mustard ($0.03)",
+    "Salt and pepper to taste ($0.03)",
+    "1/2 lb orzo ($0.50)",
+    "4 cups fresh baby spinach ($1.50)",
+    "1/2 cup sun dried tomatoes ($1.50)",
+    "2 oz feta ($1.12)"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "Prepare the vinaigrette first to allow the flavors time to blend. Add the olive oil, balsamic vinegar, minced garlic, Dijon, about 1/4 tsp salt, and some freshly cracked pepper to a jar or bowl. Whisk until the ingredients are combined, or place a lid on the jar and shake for 10-15 seconds. Set the dressing aside."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Bring a pot of water to a boil to cook the orzo. Once boiling, add the orzo and continue to boil until tender. Drain the orzo and allow it to cool just slightly."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "While waiting for the orzo to cook, chop the sun dried tomatoes into small pieces. Place them in a bowl and cover with hot water (I used a ladle full of boiling water from the pot just before adding the pasta). Let the chopped sun dried tomatoes sit in the hot water for about 5 minutes, then drain."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Place the baby spinach in a large bowl. Add the drained and still warm orzo to the bowl, along with the soaked sun dried tomatoes, and crumbled feta cheese. Pour the balsamic vinaigrette over top, then toss until the ingredients are combined and coated with vinaigrette. Serve immediately or refrigerate until ready to eat."
+    }
+  ],
+  "recipeYield": "4",
+  "sameAs": [
+    "https://www.budgetbytes.com/spinach-orzo-salad-balsamic-vinaigrette/"
+  ],
+  "totalTime": "PT25M",
+  "updatedAt": "2020-10-08T05:52:18.757Z"
+}

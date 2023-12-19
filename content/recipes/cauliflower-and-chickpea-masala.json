@@ -1,0 +1,91 @@
+{
+  "@type": "Recipe",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingCount": "139",
+    "ratingValue": "4.81"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Beth - Budget Bytes"
+  },
+  "cookTime": "PT30M",
+  "createdAt": "2020-10-08T05:26:02.164Z",
+  "datePublished": "2019-01-23T14:29:37+00:00",
+  "description": "This super easy, ultra creamy, and heavily spiced Cauliflower and Chickpea Masala will be your new favorite weeknight dinner! So much flavor, so little effort. ",
+  "image": [
+    "https://www.budgetbytes.com/wp-content/uploads/2019/01/Cauliflower-and-Chickpea-Masala-bowl.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2019/01/Cauliflower-and-Chickpea-Masala-bowl-500x500.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2019/01/Cauliflower-and-Chickpea-Masala-bowl-500x375.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2019/01/Cauliflower-and-Chickpea-Masala-bowl-480x270.jpg"
+  ],
+  "keywords": "Spicy, Vegetarian, Weeknight Dinner",
+  "name": "Cauliflower and Chickpea Masala",
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "calories": "306.9 kcal",
+    "carbohydrateContent": "33.3 g",
+    "fatContent": "16.48 g",
+    "fiberContent": "10.45 g",
+    "proteinContent": "9.58 g",
+    "servingSize": "1.25 Cups",
+    "sodiumContent": "1153.2 mg"
+  },
+  "prepTime": "PT10M",
+  "recipeIngredient": [
+    "2 Tbsp garam masala ($0.60)",
+    "1/2 tsp cumin ($0.05)",
+    "1/2 tsp turmeric ($0.05)",
+    "1/2 tsp smoked paprika ($0.05)",
+    "1/4 tsp cayenne ($0.02)",
+    "1/2 tsp salt ($0.02)",
+    "Freshly Cracked Pepper ($0.03)",
+    "1 yellow onion ($0.21)",
+    "3 cloves garlic ($0.24)",
+    "1/2 Tbsp grated fresh ginger ($0.15)",
+    "2 Tbsp olive oil ($0.32)",
+    "12 oz. frozen cauliflower florets ($1.00)",
+    "1 15oz. can chickpeas, drained ($0.49)",
+    "1 15oz. can tomato sauce* ($0.59)",
+    "1/4 cup water ($0.00)",
+    "1/3 cup heavy cream ($0.26)",
+    "salt to taste ($0.02)"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "In a small bowl, combine the spices for the masala spice mix (garam masala, cumin, turmeric, smoked paprika, cayenne, salt, and pepper)."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Finely dice the onion, mince the garlic, and grate the ginger. Add all three to a large skillet along with the olive oil and sauté over medium heat until the onions are soft and translucent (about 3 minutes). Add the spice mix and continue to sauté for one more minute."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Add the frozen cauliflower florets to the skillet with the aromatics and spices, and continue to sauté for about 5 minutes more, or until the cauliflower have thawed through and are completely coated in spices."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Add the drained chickpeas, tomato sauce, and 1/4 cup water to the skillet. Stir to combine, then allow them to simmer over medium-low heat, stirring occasionally, for about 15 minutes. This will help mellow the acidity of the tomato sauce and allow the spices to blend. If the mixture becomes too dry as it simmers, add a couple more tablespoons of water."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "After the sauce has simmered for 15 minutes, turn off the heat and stir in the heavy cream. Give the masala a taste and add salt as needed. Serve in a bowl either over rice or with a piece of bread for dipping."
+    }
+  ],
+  "recipeYield": "4",
+  "sameAs": [
+    "https://www.budgetbytes.com/easy-cauliflower-and-chickpea-masala/"
+  ],
+  "totalTime": "PT40M",
+  "updatedAt": "2020-10-08T05:26:02.164Z",
+  "video": {
+    "@type": "VideoObject",
+    "contentUrl": "https://embed.mediavine.com/videos/k17fndc84lnhahm57nfc",
+    "description": "This super easy, ultra creamy, and heavily spiced Cauliflower and Chickpea Masala will be your new favorite weeknight dinner! So much flavor, so little effort.",
+    "duration": "PT62S",
+    "name": "Cauliflower and Chickpea Masala",
+    "thumbnailUrl": "https://mediavine-res.cloudinary.com/image/upload/s--_EP2wBXR--/c_limit,f_auto,fl_lossy,h_1080,q_auto,w_1920/v1551042532/jhhfubygxx3eoaksj5ew.jpg",
+    "uploadDate": "2019-02-23T18:04:59+00:00"
+  }
+}

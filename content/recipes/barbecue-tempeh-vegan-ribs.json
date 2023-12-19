@@ -1,0 +1,125 @@
+{
+  "@type": "Recipe",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingCount": "8",
+    "ratingValue": "5"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Alissa Saenz"
+  },
+  "cookTime": "PT30M",
+  "createdAt": "2020-10-09T00:40:21.978Z",
+  "datePublished": "2018-06-29T10:18:47+00:00",
+  "description": "Smoky, savory, and slathered in sweet and zippy homemade barbecue sauce, these barbecue ribs are made from tempeh! Cook them in the oven or on the grill for a meatless summer feast!",
+  "image": {
+    "@type": "ImageObject",
+    "height": "1200",
+    "url": "https://www.connoisseurusveg.com/wp-content/uploads/2018/06/vegan-ribs-1200-1-of-1.jpg",
+    "width": "800"
+  },
+  "keywords": "barbecue, grilling, tempeh",
+  "name": "Barbecue Tempeh Vegan Ribs",
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "calories": "597 kcal",
+    "carbohydrateContent": "73 g",
+    "fatContent": "26.8 g",
+    "fiberContent": "1.2 g",
+    "proteinContent": "25.2 g",
+    "saturatedFatContent": "3.6 g",
+    "servingSize": "1 serving",
+    "sodiumContent": "3164 mg",
+    "sugarContent": "55.2 g"
+  },
+  "prepTime": "PT15M",
+  "recipeCategory": ["Entree"],
+  "recipeCuisine": "American",
+  "recipeIngredient": [
+    "1/4 cup water, (plus more as needed)",
+    "3 tablespoons soy sauce",
+    "1 tablespoon maple syrup",
+    "1 teaspoon liquid smoke",
+    "1 teaspoon sweet paprika",
+    "1/2 teaspoon onion powder",
+    "1/2 teaspoon garlic powder",
+    "1 (8 ounce) package tempeh",
+    "2 tablespoons canola oil, (or another high-heat vegetable oil)",
+    "1 cup ketchup",
+    "1/4 cup brown sugar",
+    "2 tablespoons vegan Worcestershire sauce",
+    "2 tablespoons apple cider vinegar",
+    "1/2 teaspoon liquid smoke",
+    "Pinch cayenne pepper, (or to taste)",
+    "1/4 teaspoon salt, (or to taste)",
+    "1/4 teaspoon black pepper, (or to taste)",
+    "Chopped scallions, (for topping)"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "Stir the water, soy sauce, maple syrup, paprika, onion powder, and garlic powder together in a small bowl."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Place the entire block of tempeh into a medium skillet or saucepan, and pour the soy sauce mixture over the tempeh."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Place the pan over medium heat and bring the liquid to a simmer."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Allow the liquid to simmer for about 5 minutes, flip the tempeh, and then allow it to simmer for another 5 minutes. Spoon some liquid over the tempeh every so often while cooking, and add water to the pan if the liquid dries up before 10 minutes is up."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "While the tempeh cooks, combine all of the barbecue sauce ingredients together in a small saucepan and place it over medium heat."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Bring the mixture to a simmer. Allow it to cook for about 10 minutes, adding a splash of water if it gets too thick."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "When the tempeh is finished cooking, remove it from the pan, and if needed, deglaze the pan with a bit of water."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Wipe out the pan and coat the bottom with the oil."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Place the pan over medium heat. When the oil is hot, add the tempeh. Cook for about 5 minutes on each side, until browned and crisp."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Remove the tempeh from the pan and transfer it to a plate."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "If you plan on baking your tempeh, preheat the oven to 400°. If you plan on grilling it, oil your grate, light your grill, and build a medium flame."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Brush the tempeh with about half of the barbecue sauce."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "If baking the tempeh, place it on a baking sheet or in an oven safe skillet. Bake for about 10 minutes, until the sauce dries up in spots."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "If grilling, place the tempeh directly on the grate and grill until lightly charred in spots, about 8 minutes."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Slice the tempeh into strips and serve with the remaining barbecue sauce on the side. Sprinkle with scallions if you like."
+    }
+  ],
+  "recipeYield": "2",
+  "sameAs": ["https://www.connoisseurusveg.com/vegan-ribs/"],
+  "totalTime": "PT45M",
+  "updatedAt": "2020-10-09T00:40:21.972Z"
+}

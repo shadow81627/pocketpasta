@@ -1,0 +1,69 @@
+{
+  "@type": "Recipe",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingCount": "5",
+    "ratingValue": "5"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Beth - Budget Bytes"
+  },
+  "cookTime": "PT20M",
+  "createdAt": "2020-10-08T05:36:18.060Z",
+  "datePublished": "2016-10-08T16:44:52+00:00",
+  "description": "Fried Cabbage and Noodles is a simple and inexpensive comfort food that can be served as a side dish or the base to full meal.",
+  "image": [
+    "https://www.budgetbytes.com/wp-content/uploads/2019/11/Fried-Cabbage-and-Noodles-close-pot.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2019/11/Fried-Cabbage-and-Noodles-close-pot-500x500.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2019/11/Fried-Cabbage-and-Noodles-close-pot-500x375.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2019/11/Fried-Cabbage-and-Noodles-close-pot-480x270.jpg"
+  ],
+  "keywords": "Comfort Food, Easy Meal",
+  "name": "Fried Cabbage and Noodles",
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "calories": "370.5 kcal",
+    "carbohydrateContent": "53.08 g",
+    "fatContent": "14.23 g",
+    "fiberContent": "5.13 g",
+    "proteinContent": "9.73 g",
+    "servingSize": "1 Serving",
+    "sodiumContent": "296.45 mg"
+  },
+  "prepTime": "PT5M",
+  "recipeIngredient": [
+    "2 Tbsp cooking oil ($0.08)",
+    "1 yellow onion ($0.32)",
+    "8 oz. wide egg noodles ($0.90)",
+    "1/2 head cabbage (4-5 cups sliced) ($1.28)",
+    "2 Tbsp butter ($0.20)",
+    "salt and pepper to taste ($0.05)"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "Slice the onion into 1/4-inch wide strips. Add the onion and cooking oil to a large pot. Sauté over medium to medium-high heat until the onions are soft and browned on the edges."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "While the onions are sautéing, remove the core from the cabbage and slice it into 1/2-inch wide strips."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Once the onions have caramelized a bit on the edges, add the sliced cabbage to the pot along with a pinch of salt and about 1/4 cup water. Continue to sauté the cabbage until it is tender, about 15 minutes, using the water to help dissolve any browned bits off the bottom of the pot."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "While the cabbage is sautéing, bring a pot of water to a boil for the egg noodles. Once boiling, add the noodles, and continue to boil until the noodles are tender (about 7 minutes). Drain the noodles in a colander."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Once the cabbage is tender, turn the heat off. Add the cooked and drained noodles, butter, and a generous amount of salt and pepper to the pot. Stir to combine and allow the residual heat to melt the butter. Taste the cabbage and noodles and add more salt and pepper to taste. Serve warm."
+    }
+  ],
+  "recipeYield": "4",
+  "sameAs": ["https://www.budgetbytes.com/fried-cabbage-and-noodles/"],
+  "totalTime": "PT25M",
+  "updatedAt": "2020-10-08T05:36:18.060Z"
+}

@@ -1,0 +1,73 @@
+{
+  "@type": "Recipe",
+  "author": "Yaman Agarwal",
+  "cookTime": "PT10M",
+  "createdAt": "2020-10-11T23:19:05.204Z",
+  "description": "In this video, we will make 2 types of Dosa and Idli Chutneys, these chutneys or pachadis are very famous as accompaniments for South Indian Delicacies like Dosa, Idly, Vada, Pesarattu, Vada, Bhajji etc. \n\nWatch my Sambar Recipe here - https://goo.gl/544aVi\nWatch my Rava Idli here - https://goo.gl/oiJgH8\n\nIngredients:\nCoconut Chutney:\nNariyal - 1 (medium size, peeled & diced)\nPuffed Chana Dal - ½ cup\nCurry Leaves - 1 sprig\nGreen Chili - 2\nGinger - 1/2 inch\nSalt - as per taste\nCumin - 1 tsp\nYogurt - 2 tbsp\nWater - 2 tbsp\nCoriander leaves - handful \n\nFor Takda\nOil - 1 tbsp\nMustard seeds/sarso - 1 tsp\nUrad dal - ½ tsp\nHing/Asafoetida - 1 pinch\nCurry Leaf - 4-5\nTurmeric - ¼ tsp\nWhole red chili - 2\n--\nPeanut Chutney:\nPeanut / Groundnut - ½ cup\nCoconut - 1 tbsp\nSalt -  as per taste\nWhole Red Chili - 6\nGarlic cloves - 5\nCumin seeds - ½ tsp\nTamarind pulpP. - 2 tbsp\nWater - ½ cup\n\nFor tadka\nOil - 1 tbsp\nMustard seeds/Sarso - 1 tsp\nUrad dal - ½ tsp\nWhole red chili - 2\nCurry leaves - 4-5\nTurmeric - ¼ tsp\nJaggery - 1 tsp\n\n\nWebsite: http://www.cookingshooking.com | http://www.cookingshooking.in\nFb: http://www.fb.com/cookingshooking\nBlog: http://www.cooknshook.blogspot.com",
+  "image": "https://storage.googleapis.com/cscom-2019.appspot.com/uploads/2018/08/Dosa-Chutneys-1-1.jpg",
+  "keywords": "accompaniment, coconut chutney recipe, idli dosa chutney, peanut chutney recipe, south indian coconut chutney",
+  "name": "2 Dosa Chutneys Recipe – Nariyal and Peanut Chutney for Idli – CookingShooking",
+  "prepTime": "PT25M",
+  "recipeIngredient": [
+    "1 medium peeled and diced Coconut",
+    "1/2 cup or any one roasted chana / cashewnut / peanut Puffed Chana Dal",
+    "1 sprig Curry Leaves",
+    "2 small Green Chili",
+    "1/2 inch Ginger",
+    "To taste salt",
+    "1 tsp Cumin",
+    "2 tbsp or lemon juice yogurt",
+    "2 tbsp Water",
+    "Handful Coriander"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "image": "https://cookingshooking.com/wp-content/uploads/2018/08/Step-1-24-300x161.jpg",
+      "text": "In a mixer grinder jar, combine coconut, curry leaves, cumin, ginger, green chili and salt."
+    },
+    {
+      "@type": "HowToStep",
+      "image": "https://cookingshooking.com/wp-content/uploads/2018/08/Step-2-22-176x300.jpg",
+      "text": "Next add puffed chana dal, water and coriander leaves. Blend everything until you get a paste like consistency. Add water if required."
+    },
+    {
+      "@type": "HowToStep",
+      "image": "https://cookingshooking.com/wp-content/uploads/2018/08/Step-3-26-263x300.jpg",
+      "text": "Add yogurt and give it a good stir, and transfer the coconut chutney in a bowl."
+    },
+    {
+      "@type": "HowToStep",
+      "image": "https://cookingshooking.com/wp-content/uploads/2018/08/Step-4-24-300x165.jpg",
+      "text": "Heat a tadka pan or a small pan over medium flame; add oil and then the mustard seeds, urad dal and hing. Allow it to crackle."
+    },
+    {
+      "@type": "HowToStep",
+      "image": "https://cookingshooking.com/wp-content/uploads/2018/08/Step-5-26-300x167.jpg",
+      "text": "Add the curry leaves, turmeric powder and finally the whole red chili. Allow everything to crackle."
+    },
+    {
+      "@type": "HowToStep",
+      "image": "https://cookingshooking.com/wp-content/uploads/2018/08/Step-6-21-229x300.jpg",
+      "text": "Add the tadka to the coconut chutney, and give it a light mix. Your coconut chutney is ready."
+    }
+  ],
+  "sameAs": [
+    "https://cscom-2019.web.app/2-dosa-chutneys-recipe-nariyal-and-peanut-chutney-for-idli-cookingshooking/"
+  ],
+  "serves": null,
+  "totalTime": "PT35M",
+  "updated": 1581362774000,
+  "updatedAt": "2020-10-11T23:19:05.204Z",
+  "video": {
+    "@type": "VideoObject",
+    "description": "In this video, we will make 2 types of Dosa and Idli Chutneys, these chutneys or pachadis are very famous as accompaniments for South Indian Delicacies like Dosa, Idly, Vada, Pesarattu, Vada, Bhajji etc. \n\nWatch my Sambar Recipe here - https://goo.gl/544aVi\nWatch my Rava Idli here - https://goo.gl/oiJgH8\n\nIngredients:\nCoconut Chutney:\nNariyal - 1 (medium size, peeled & diced)\nPuffed Chana Dal - ½ cup\nCurry Leaves - 1 sprig\nGreen Chili - 2\nGinger - 1/2 inch\nSalt - as per taste\nCumin - 1 tsp\nYogurt - 2 tbsp\nWater - 2 tbsp\nCoriander leaves - handful \n\nFor Takda\nOil - 1 tbsp\nMustard seeds/sarso - 1 tsp\nUrad dal - ½ tsp\nHing/Asafoetida - 1 pinch\nCurry Leaf - 4-5\nTurmeric - ¼ tsp\nWhole red chili - 2\n--\nPeanut Chutney:\nPeanut / Groundnut - ½ cup\nCoconut - 1 tbsp\nSalt -  as per taste\nWhole Red Chili - 6\nGarlic cloves - 5\nCumin seeds - ½ tsp\nTamarind pulpP. - 2 tbsp\nWater - ½ cup\n\nFor tadka\nOil - 1 tbsp\nMustard seeds/Sarso - 1 tsp\nUrad dal - ½ tsp\nWhole red chili - 2\nCurry leaves - 4-5\nTurmeric - ¼ tsp\nJaggery - 1 tsp\n\n\nWebsite: http://www.cookingshooking.com | http://www.cookingshooking.in\nFb: http://www.fb.com/cookingshooking\nBlog: http://www.cooknshook.blogspot.com",
+    "duration": "PT325S",
+    "embedUrl": "https://www.youtube.com/embed/yW9hvteapUk",
+    "interactionCount": "423319",
+    "name": "2 Dosa Chutneys Recipe - Nariyal and Peanut Chutney for Idli - CookingShooking",
+    "sameAs": ["https://www.youtube.com/watch/yW9hvteapUk?autoplay=1"],
+    "thumbnailUrl": ["https://i.ytimg.com/vi/yW9hvteapUk/maxresdefault.jpg"],
+    "uploadDate": "2018-02-02"
+  }
+}

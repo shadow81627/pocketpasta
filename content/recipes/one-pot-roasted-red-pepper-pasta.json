@@ -1,0 +1,82 @@
+{
+  "@type": "Recipe",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingCount": "67",
+    "ratingValue": "4.81"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Beth - Budget Bytes"
+  },
+  "cookTime": "PT20M",
+  "createdAt": "2020-10-08T05:43:06.008Z",
+  "datePublished": "2015-06-23T12:54:22+00:00",
+  "description": "This smoky, sweet, and creamy One Pot Roasted Red Pepper Pasta cooks in one single pot and can be on the table in about 30 minutes. ",
+  "image": [
+    "https://www.budgetbytes.com/wp-content/uploads/2015/06/One-Pot-Roasted-Red-Pepper-Pasta-close-1.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2015/06/One-Pot-Roasted-Red-Pepper-Pasta-close-1-500x480.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2015/06/One-Pot-Roasted-Red-Pepper-Pasta-close-1-500x375.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2015/06/One-Pot-Roasted-Red-Pepper-Pasta-close-1-480x270.jpg"
+  ],
+  "keywords": "easy, One Pot, Pasta, Vegetarian, Weeknight Dinner",
+  "name": "One Pot Roasted Red Pepper Pasta",
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "calories": "410.38 kcal",
+    "carbohydrateContent": "71.48 g",
+    "fatContent": "7.72 g",
+    "fiberContent": "3.4 g",
+    "proteinContent": "12.02 g",
+    "servingSize": "1 Serving",
+    "sodiumContent": "1049.45 mg"
+  },
+  "prepTime": "PT10M",
+  "recipeIngredient": [
+    "5 cups vegetable broth ($0.60)",
+    "1 lb. Fettuccine ($1.00)",
+    "1 small Vidalia onion ($0.61)",
+    "4 cloves garlic ($0.32)",
+    "1 12oz. jar roasted red peppers ($2.49)",
+    "1 15oz. can fire roasted diced tomatoes ($1.29)",
+    "1/2 Tbsp dried basil ($0.07)",
+    "1/4 tsp crushed red pepper (optional) ($0.03)",
+    "Freshly cracked black pepper ($0.05)",
+    "4 oz. cream cheese (optional) ($1.08)"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "Thinly slice the onion and mince the garlic. Remove the red peppers from the liquid in the jar and then slice them into thin strips."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "In a large pot, combine the broth, onion, garlic, red pepper slices, diced tomatoes (with juice), basil, crushed red pepper, and some freshly cracked black pepper (10-15 cranks of a pepper mill). Stir these ingredients to combine. Break the fettuccine in half, then add it to the pot, attempting to submerge the pieces as much as possible."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Place a lid on the pot and turn the heat up to high. As soon as the pot reaches a full boil, give it a quick stir to loosen any pieces that may have stuck to the bottom, return the lid, and turn the heat down to medium-low."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Let the pot simmer on medium low for 10-12 minutes, stirring every couple of minutes to make sure nothing sticks to the bottom. Return the lid as quickly as possible after each stir. After ten minutes, test the pasta to see if it is al dente. Once the pasta is tender, remove it from the heat. (If the pasta becomes too dry before it is tender, simply add a small amount of water and continue to simmer.)"
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Divide the cream cheese into tablespoon sized pieces, then add them to the pot. Stir the pasta until the cheese melts in and creates a smooth sauce (it will look lumpy at first, just keep stirring). Serve hot."
+    }
+  ],
+  "recipeYield": "6",
+  "sameAs": ["https://www.budgetbytes.com/one-pot-roasted-red-pepper-pasta/"],
+  "totalTime": "PT30M",
+  "updatedAt": "2020-10-08T05:43:06.008Z",
+  "video": {
+    "@type": "VideoObject",
+    "contentUrl": "https://embed.mediavine.com/videos/sgyd0wpsc3lzccvxvkxr",
+    "description": "This smoky, sweet, and creamy One Pot Roasted Red Pepper Pasta cooks in one single pot and can be on the table in about 30 minutes.",
+    "duration": "PT106S",
+    "name": "One Pot Roasted Red Pepper Pasta",
+    "thumbnailUrl": "https://mediavine-res.cloudinary.com/image/upload/s--M_vFoDnO--/c_limit,f_auto,fl_lossy,h_1080,q_auto,w_1920/v1551133851/zsb9wisz4azasnb0gozc.jpg",
+    "uploadDate": "2019-02-13T23:19:39+00:00"
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "@type": "Recipe",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingCount": "16",
+    "ratingValue": "4.94"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Beth - Budget Bytes"
+  },
+  "cookTime": "PT20M",
+  "createdAt": "2020-10-08T05:18:32.269Z",
+  "datePublished": "2019-11-20T10:12:20+00:00",
+  "description": "This super fast and easy Smoky Black Bean Soup is rich, filling, flavorful, and waiting to be piled high with fun toppings! An easy vegan weeknight dinner.",
+  "image": [
+    "https://www.budgetbytes.com/wp-content/uploads/2019/11/Smoky-Black-Bean-Soup-two-bowls-toppings.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2019/11/Smoky-Black-Bean-Soup-two-bowls-toppings-500x500.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2019/11/Smoky-Black-Bean-Soup-two-bowls-toppings-500x375.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2019/11/Smoky-Black-Bean-Soup-two-bowls-toppings-480x270.jpg"
+  ],
+  "keywords": "Easy Soup, gluten-free soup, Vegan Soup",
+  "name": "30-Minute Smoky Black Bean Soup",
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "calories": "194.75 kcal",
+    "carbohydrateContent": "20.5 g",
+    "fatContent": "7.25 g",
+    "fiberContent": "13 g",
+    "proteinContent": "7.25 g",
+    "servingSize": "1.5 cups",
+    "sodiumContent": "919.75 mg"
+  },
+  "prepTime": "PT5M",
+  "recipeIngredient": [
+    "1 yellow onion ($0.32)",
+    "2 cloves garlic ($0.16)",
+    "1 jalapeño (optional) ($0.15)",
+    "2 Tbsp olive oil ($0.32)",
+    "3 15oz. cans black beans ($2.07)",
+    "1 15oz. can fire roasted diced tomatoes ($1.00)",
+    "1 tsp ground cumin ($0.10)",
+    "1/2 tsp dried oregano ($0.05)",
+    "1/2 tsp smoked paprika or chipotle powder* ($0.05)",
+    "salt to taste ($0.02)"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "Dice the onion and mince the garlic. Remove the stem and seeds from the jalapeño, then dice the remaining jalapeño flesh. Add the onion, garlic, jalapeño, and olive oil to a soup pot and sauté over medium heat for about 5 minutes, or until the onions are soft and translucent."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "While the onion, garlic, and jalapeño are sautèing, use a blender to purée two of the three cans of black beans (with liquid from the can). If the beans are too thick to purée, add just enough water to make them blend."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Add all three cans of black beans to the soup pot (one can of whole beans with liquid, two puréed), along with the can of fire roasted diced tomatoes (with juices), the cumin, oregano, and smoked paprika. Stir to combine."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Place a lid on the pot and allow the soup to come up to a simmer. Allow the soup to simmer, stirring often, for about 15 minutes. After simmering for 15 minutes, taste and add salt to taste (I added 1/2 tsp). Serve hot with your choice of toppings."
+    }
+  ],
+  "recipeYield": "4",
+  "sameAs": ["https://www.budgetbytes.com/smoky-black-bean-soup/"],
+  "totalTime": "PT25M",
+  "updatedAt": "2020-10-08T05:18:32.269Z"
+}

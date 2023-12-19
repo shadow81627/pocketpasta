@@ -1,0 +1,72 @@
+{
+  "@type": "Recipe",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingCount": "137",
+    "ratingValue": "4.76"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Beth - Budget Bytes"
+  },
+  "cookTime": "PT20M",
+  "createdAt": "2020-10-08T05:33:20.512Z",
+  "datePublished": "2013-12-07T14:01:36+00:00",
+  "description": "These super fast Curried Chickpeas with spinach are packed with flavor and nutrients, vegan, gluten-free, and filling! Plus they freeze great!",
+  "image": [
+    "https://www.budgetbytes.com/wp-content/uploads/2013/12/Curried-Cickpeas-with-Spinach-Finished.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2013/12/Curried-Cickpeas-with-Spinach-Finished-500x500.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2013/12/Curried-Cickpeas-with-Spinach-Finished-500x375.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2013/12/Curried-Cickpeas-with-Spinach-Finished-480x270.jpg"
+  ],
+  "keywords": "easy, gluten free, Quick, Vegan, Vegetarian",
+  "name": "Curried Chickpeas with Spinach",
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "calories": "439.03 kcal",
+    "carbohydrateContent": "62.03 g",
+    "fatContent": "14.8 g",
+    "fiberContent": "21.55 g",
+    "proteinContent": "21.3 g",
+    "servingSize": "1 Cup",
+    "sodiumContent": "1286.48 mg"
+  },
+  "prepTime": "PT5M",
+  "recipeIngredient": [
+    "2 Tbsp olive oil ($0.26)",
+    "1 yellow onion ($0.47)",
+    "2 cloves garlic ($0.16)",
+    "1 inch fresh ginger ($0.16)",
+    "1 1/2 Tbsp curry powder ($0.45)",
+    "8 oz. spinach (fresh or frozen) ($1.49)",
+    "1 15oz. can tomato sauce ($0.59)",
+    "2 15oz. cans chickpeas ($1.10)"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "Dice the onion, mince the garlic, and grate the ginger on a small holed cheese grater. Sauté the onion, garlic, and ginger in a large skillet with the olive oil over medium heat until the onions have softened (3-5 minutes)."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Add the curry powder and continue to sauté with the onion mixture for one minute more. Add about 1/4 cup of water to the skillet along with the fresh spinach and continue to sauté until the spinach has wilted. The water will help steam and wilt the spinach (no water needed if using frozen spinach)."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Drain and rinse the chickpeas. Add them to the skillet along with the tomato sauce. Stir well to distribute the spices in the sauce and heat through (5 minutes). Serve over rice or with bread."
+    }
+  ],
+  "recipeYield": "4",
+  "sameAs": ["https://www.budgetbytes.com/curried-chickpeas-spinach/"],
+  "totalTime": "PT25M",
+  "updatedAt": "2020-10-08T05:33:20.512Z",
+  "video": {
+    "@type": "VideoObject",
+    "contentUrl": "https://embed.mediavine.com/videos/dmzomdvmndw7ylbnvvkm",
+    "description": "These super fast Curried Chickpeas with spinach are packed with flavor and nutrients, vegan, gluten-free, and filling! Plus they freeze great!",
+    "duration": "PT55S",
+    "name": "Curried Chickpeas with Spinach",
+    "thumbnailUrl": "https://mediavine-res.cloudinary.com/image/upload/s--vPRDurpm--/c_limit,f_auto,fl_lossy,h_1080,q_auto,w_1920/v1550277133/y9qqvcvxltagqkr4lhv8.jpg",
+    "uploadDate": "2019-02-13T22:21:35+00:00"
+  }
+}

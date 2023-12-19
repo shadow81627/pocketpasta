@@ -1,0 +1,97 @@
+{
+  "@type": "Recipe",
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingCount": "24",
+    "ratingValue": "4.88"
+  },
+  "author": {
+    "@type": "Person",
+    "name": "Beth - Budget Bytes"
+  },
+  "cookTime": "PT30M",
+  "createdAt": "2020-10-08T05:40:59.851Z",
+  "datePublished": "2018-07-02T15:49:27+00:00",
+  "description": "Perfect for stashing in the freezer, these Make Ahead Bean and Cheese Burritos will save you on busy weeknights!",
+  "image": [
+    "https://www.budgetbytes.com/wp-content/uploads/2018/07/Make-Ahead-Bean-and-Cheese-Burritos-front.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2018/07/Make-Ahead-Bean-and-Cheese-Burritos-front-500x500.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2018/07/Make-Ahead-Bean-and-Cheese-Burritos-front-500x375.jpg",
+    "https://www.budgetbytes.com/wp-content/uploads/2018/07/Make-Ahead-Bean-and-Cheese-Burritos-front-480x270.jpg"
+  ],
+  "name": "Make Ahead Bean and Cheese Burritos",
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "calories": "348.13 kcal",
+    "carbohydrateContent": "44.19 g",
+    "fatContent": "12.73 g",
+    "fiberContent": "7.6 g",
+    "proteinContent": "15.59 g",
+    "servingSize": "1 Serving",
+    "sodiumContent": "561.8 mg"
+  },
+  "prepTime": "PT20M",
+  "recipeIngredient": [
+    "1 Tbsp cooking oil ($0.04)",
+    "1 clove garlic, minced ($0.08)",
+    "1 tsp chili powder ($0.10)",
+    "1/4 tsp ground cumin ($0.02)",
+    "1/4 tsp oregano ($0.02)",
+    "1 cup long grain white rice ($0.53)",
+    "1/2 tsp salt ($0.02)",
+    "1.5 cups water ($0)",
+    "2 15oz. cans black beans ($1.18)",
+    "2 cups shredded cheddar ($1.50)",
+    "2 green onions ($0.17)",
+    "1/2 cup taco sauce ($0.88)",
+    "8 large flour tortillas ($2.39)"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "Begin making the seasoned rice first, so you can prepare the rest of the ingredients as the rice cooks. Add the cooking oil and minced garlic to a sauce pot and sauté over medium for about one minute, just to take the raw edge off the garlic."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Add the chili powder, cumin, oregano, and rice to the pot. Continue to sauté, stirring continuously, for about two more minutes to toast the rice and spices."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Carefully add the water and salt to the pot, place a lid on top, and turn the heat up to high. Allow the pot to come up to a boil, then turn the heat down to low. Allow the pot to simmer on low for 15 minutes. After 15 minutes, turn the heat off, and let the rice rest undisturbed for five more minutes. Finally, fluff the rice with a fork."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "While the rice is cooking, rinse and drain the black beans well. Slice the green onions."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "When the rice is finished cooking and you're ready to assemble the burritos, stack four tortillas on a large plate and place a damp paper towel over top. Microwave for 30 seconds to steam the tortillas, to make them more pliable and easy to roll. Steam the next four tortillas only when you're ready to begin working with them."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "To each tortilla add about 1/3 cup rice, 1/3 cup beans, 1 Tbsp taco sauce, 1/4 cup shredded cheddar, and a few slices of green onion. Roll the burritos up tightly, making sure to fold in the sides first to hold in the the filling."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Store the burritos in an air-tight container in the refrigerator for 4-5 days, or wrap each burrito individually in parchment paper or plastic wrap, then place in a freezer bag, and store for up to three months."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "To Cook from Refrigerated: Place the burrito in a skillet or on a grill pan and cook over medium-low heat until the outside is brown and crispy and the cheese is melted on the inside."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "To Cook from Frozen in Microwave: Set the microwave to the defrost setting for approximately 9 minutes, or the defrost by weight setting, programmed to one pound."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "To Cook from Frozen in the Oven: Wrap the burrito in foil and bake in a preheated 350oF oven for approximately 40 minutes."
+    }
+  ],
+  "recipeYield": "8",
+  "sameAs": [
+    "https://www.budgetbytes.com/make-ahead-bean-and-cheese-burritos/"
+  ],
+  "totalTime": "PT50M",
+  "updatedAt": "2020-10-08T05:40:59.851Z"
+}

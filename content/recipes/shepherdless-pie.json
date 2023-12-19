@@ -1,0 +1,78 @@
+{
+  "@type": "Recipe",
+  "createdAt": "2020-10-08T05:47:37.114Z",
+  "dateModified": "2020-02-26T06:37:53.161Z",
+  "datePublished": "2020-02-13T13:00:00.00Z",
+  "description": "A vegan twist on the classic shepherds pie. Made with lentils, mushrooms and a polenta topping, it's just as hearty as the original and oh-so tasty!",
+  "image": {
+    "@type": "ImageObject",
+    "height": 800,
+    "url": "https://d3lp4xedbqa8a5.cloudfront.net/s3/digital-cougar-assets/AwwFood/2020/02/26/31497/HL1080B17-).jpg?width=600&height=315&quality=75&mode=crop",
+    "width": 800
+  },
+  "keywords": "Lentil, Onion, Carrot, Tomato, Spinach",
+  "name": "Shepherdless pie",
+  "nutrition": {
+    "@type": "NutritionInformation",
+    "servingSize": "Serves 4"
+  },
+  "prepTime": "PT1H",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Australian Women's Weekly"
+  },
+  "recipeCategory": "Midweek Dinner",
+  "recipeCuisine": "Modern Australian",
+  "recipeIngredient": [
+    "1 cup (200g) French-style green lentils",
+    "2 tablespoons olive oil",
+    "1 medium onion (150g), chopped coarsely",
+    "2 cloves garlic, crushed",
+    "2 teaspoons fennel seeds",
+    "1 medium carrot (120g), chopped coarsely",
+    "200 g swiss brown mushrooms, halved",
+    "400 g grape tomatoes",
+    "2 tablespoons tomato paste",
+    "1 cup (250ml) vegetable stock",
+    "60 g baby spinach",
+    "fresh thyme leaves, to serve",
+    "polenta topping",
+    "1 litre (4 cups) vegetable stock",
+    "1 cup (170g) polenta (cornmeal)",
+    "2 tablespoons finely chopped fresh thyme leaves",
+    "2 tablespoons nutritional yeast flakes (see tips)"
+  ],
+  "recipeInstructions": [
+    {
+      "@type": "HowToStep",
+      "text": "Cook lentils in a medium saucepan of boiling water for 12 minutes or until just tender; drain."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Meanwhile, heat oil in a large deep frying pan over medium-high heat. Cook onion, garlic and seeds, stirring, for 5 minutes or until onion is soft. Add carrot, mushrooms and tomatoes; cook, covered, for 10 minutes or until carrot softens. Stir in paste; cook for 1 minute. Add stock; bring to the boil. Cook for 3 minutes or until thickened slightly. Stir in lentils and spinach; season. Cover to keep warm."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Make polenta topping."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Preheat grill (broiler) on high. Place lentil mixture in a 2-litre (8-cup) ovenproof dish; spread with polenta topping. Grill for 15 minutes or until golden and crisp."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Season; serve topped with thyme."
+    },
+    {
+      "@type": "HowToStep",
+      "text": "Bring stock to the boil in a large saucepan. Gradually add polenta and thyme to stock, stirring constantly. Reduce heat; cook, stirring, for 10 minutes or until polenta thickens. Stir in oil and yeast flakes; season to taste."
+    }
+  ],
+  "recipeYield": "Serves 4",
+  "sameAs": [
+    "https://www.womensweeklyfood.com.au/recipes/shepherdless-pie-31497"
+  ],
+  "totalTime": "PT1H",
+  "updatedAt": "2020-10-08T05:47:37.115Z",
+  "url": "https://www.womensweeklyfood.com.au/recipes/shepherdless-pie-31497"
+}
