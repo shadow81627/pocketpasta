@@ -2180,6 +2180,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@mdi/font@npm:7.3.67":
+  version: 7.3.67
+  resolution: "@mdi/font@npm:7.3.67"
+  checksum: e043e0cdb63e320eb7cd6bf07e12af2240af46b6a2115e60284aafa3409df702b45097408510e132fd72879a9095671bda93e99221eed5e08b8b0c9e032e8156
+  languageName: node
+  linkType: hard
+
 "@netlify/functions@npm:^2.4.0":
   version: 2.4.1
   resolution: "@netlify/functions@npm:2.4.1"
@@ -10730,6 +10737,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "pocketpasta@workspace:."
   dependencies:
+    "@mdi/font": "npm:7.3.67"
     "@nuxt/content": "npm:2.9.0"
     "@nuxt/devtools": "npm:latest"
     "@nuxt/image": "npm:1.1.0"

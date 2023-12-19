@@ -48,6 +48,7 @@
   },
   "packageManager": "yarn@4.0.2",
   "dependencies": {
+    "@mdi/font": "7.3.67",
     "@nuxt/content": "2.9.0",
     "@nuxt/image": "1.1.0",
     "dayjs": "1.11.10",
