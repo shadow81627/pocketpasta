@@ -26,15 +26,15 @@
 </template>
 
 <script>
-const defaultLayout = "list";
+const defaultLayout = 'list';
 export default {
   props: {
     value: { type: String, default: defaultLayout },
     layouts: {
       type: Array,
       default: () => [
-        { value: "list", label: "List" },
-        { value: "columns", label: "Grid" },
+        { value: 'list', label: 'List' },
+        { value: 'columns', label: 'Grid' },
       ],
     },
   },
@@ -56,7 +56,7 @@ export default {
       const vm = this;
       return Object.assign({}, this.$listeners, {
         input(event) {
-          vm.$emit("input", event);
+          vm.$emit('input', event);
         },
       });
     },

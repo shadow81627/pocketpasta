@@ -93,8 +93,8 @@ export default defineNuxtComponent({
     const commit = config.public.COMMIT;
 
     const { data: items } = await useAsyncData(
-      "layout-footer-pages",
-      () => queryContent("layout/footer").find(),
+      'layout-footer-pages',
+      () => queryContent('layout/footer').find(),
       {
         // server: false,
         transform(data) {
@@ -102,7 +102,7 @@ export default defineNuxtComponent({
             ...item,
             pos: fractionToDecimal(item.pos),
           }));
-          return useSortBy(items, ["pos"]);
+          return useSortBy(items, ['pos']);
         },
       },
     );

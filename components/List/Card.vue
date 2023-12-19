@@ -104,7 +104,7 @@ export default {
       const image = Array.isArray(this.image) ? this.image[0] : this.image;
       if (image) {
         if (
-          typeof image === "object" &&
+          typeof image === 'object' &&
           image !== null &&
           !Array.isArray(image)
         ) {
@@ -114,31 +114,31 @@ export default {
           return image;
         }
       } else {
-        return "/icon.png";
+        return '/icon.png';
       }
     },
   },
   methods: {
-    _srcset(src = "/v1559982334/hero_rko6us.jpg", options) {
+    _srcset(src = '/v1559982334/hero_rko6us.jpg', options) {
       const defaults = {
-        sizes: "xs:100vw sm:100vw md:100vw lg:100vw xl:100vw",
+        sizes: 'xs:100vw sm:100vw md:100vw lg:100vw xl:100vw',
         ...options,
       };
       const $img = useImage();
       return $img.getSizes(src, defaults);
     },
-    truncate(text = "", stop = 150, clamp = "...") {
-      return `${text.slice(0, stop)}${stop < text.length ? clamp : ""}`;
+    truncate(text = '', stop = 150, clamp = '...') {
+      return `${text.slice(0, stop)}${stop < text.length ? clamp : ''}`;
     },
     cloudinaryify({ image, width = 128, height = 128 }) {
       if (image) {
-        if (!image.startsWith("https://res.cloudinary.com")) {
+        if (!image.startsWith('https://res.cloudinary.com')) {
           return `https://res.cloudinary.com/pocketpasta/image/fetch/w_${width},h_${height},c_fill,f_auto,q_auto/${image}`;
         } else {
           return image;
         }
       } else {
-        return "";
+        return '';
       }
     },
     source({ image, width = 128, height = 128 }) {
@@ -153,10 +153,10 @@ export default {
               width: Number(width) ? Number(width) * dpr : width,
               height: Number(height) ? Number(height) * dpr : height,
             });
-            return imageUrl ? `${imageUrl} ${dpr}x` : "";
+            return imageUrl ? `${imageUrl} ${dpr}x` : '';
           })
           .filter(Boolean)
-          .join(", "),
+          .join(', '),
       };
     },
   },

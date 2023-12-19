@@ -127,7 +127,7 @@
 </template>
 
 <script>
-import ViewSwitcher from "@/components/List/ViewSwitcher.vue";
+import ViewSwitcher from '@/components/List/ViewSwitcher.vue';
 
 export default {
   components: { ViewSwitcher },

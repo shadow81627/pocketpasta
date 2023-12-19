@@ -8,10 +8,10 @@
 
 <script>
 export default {
-  name: "BaseIcon",
+  name: 'BaseIcon',
   props: {
     icon: { type: [String, Object], default: null },
-    color: { type: String, default: "grey" },
+    color: { type: String, default: 'grey' },
     size: {
       type: [Number, String],
       default: 56,

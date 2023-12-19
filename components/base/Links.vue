@@ -33,7 +33,7 @@
 </template>
 
 <script>
-import mailgo from "mailgo";
+import mailgo from 'mailgo';
 export default {
   props: {
     items: {
@@ -48,17 +48,17 @@ export default {
     }
   },
   methods: {
-    stripped(href = "") {
-      return href.replace(/^mailto:/, "").replace(/^tel:/, "");
+    stripped(href = '') {
+      return href.replace(/^mailto:/, '').replace(/^tel:/, '');
     },
     splits(href) {
-      return this.stripped(href).split("@");
+      return this.stripped(href).split('@');
     },
     hasSplits(href) {
       return this.splits(href).length > 1;
     },
     url(href) {
-      return this.hasSplits(href) || this.isTel(href) ? "#mailgo" : href;
+      return this.hasSplits(href) || this.isTel(href) ? '#mailgo' : href;
     },
     address(href) {
       return this.hasSplits(href) ? this.splits(href)[0] : undefined;
@@ -66,8 +66,8 @@ export default {
     domain(href) {
       return this.hasSplits(href) ? this.splits(href)[1] : undefined;
     },
-    isTel(href = "") {
-      return href.startsWith("tel:");
+    isTel(href = '') {
+      return href.startsWith('tel:');
     },
     tel(href) {
       return this.isTel(href) ? this.stripped(href) : undefined;

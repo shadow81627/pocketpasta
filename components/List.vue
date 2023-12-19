@@ -67,11 +67,11 @@
 </template>
 
 <script>
-const collections = ["Recipe", "Product"];
+const collections = ['Recipe', 'Product'];
 export default {
   props: {
     collection: { type: String, required: true },
-    heading: { type: String, default: "" },
+    heading: { type: String, default: '' },
     layout: { type: String, default: null },
     deep: { type: Boolean, default: false },
     fetchOnServer: { type: Boolean, default: true },
@@ -80,23 +80,23 @@ export default {
     headers: {
       type: Array,
       default: () => [
-        { value: "createdAt", text: "Created" },
-        { value: "name", text: "Name" },
-        { value: "description", text: "Description" },
+        { value: 'createdAt', text: 'Created' },
+        { value: 'name', text: 'Name' },
+        { value: 'description', text: 'Description' },
       ],
     },
   },
   async setup() {
     const { data: list } = await useAsyncData(
-      "recipes",
+      'recipes',
       () =>
-        queryContent("recipes")
-          .only(["id", "name", "description", "image", "@type", "_path"])
+        queryContent('recipes')
+          .only(['id', 'name', 'description', 'image', '@type', '_path'])
           .find(),
       {
         transform(data) {
           return data.map((item) => {
-            const slug = item._path.split("/").pop();
+            const slug = item._path.split('/').pop();
             return { ...item, slug };
           });
         },
@@ -161,7 +161,7 @@ export default {
   },
   computed: {
     itemComponent() {
-      return process.browser ? ItemComponent : "";
+      return process.browser ? ItemComponent : '';
     },
     pages() {
       const pages = Math.ceil(this.total / this.limit);
@@ -196,7 +196,7 @@ export default {
     },
     direction: {
       get() {
-        return this.$route.query.direction || "desc";
+        return this.$route.query.direction || 'desc';
       },
       set(direction) {
         this.$router.push({ query: this.generateQuery({ direction }) });
@@ -204,7 +204,7 @@ export default {
     },
     search: {
       get() {
-        return this.$route.query.search || "";
+        return this.$route.query.search || '';
       },
       set(search) {
         this.$router.push({ query: this.generateQuery({ search }) });
@@ -212,7 +212,7 @@ export default {
     },
     sortBy: {
       get() {
-        return this.$route.query.sortBy || "createdAt";
+        return this.$route.query.sortBy || 'createdAt';
       },
       set(sortBy) {
         this.$router.push({ query: this.generateQuery({ sortBy }) });
@@ -246,7 +246,7 @@ export default {
     },
   },
   watch: {
-    "$route.query": useDebounce(function () {
+    '$route.query': useDebounce(function () {
       // this.$fetch();
     }, 250),
   },
@@ -256,9 +256,9 @@ export default {
     },
     itemClass(index) {
       const view = this.view;
-      return `col-sm-${view === "columns" ? 6 : 12} col-md-${
-        view === "columns" ? 4 : 12
-      } col-lg-${view === "columns" ? 3 : 12}`;
+      return `col-sm-${view === 'columns' ? 6 : 12} col-md-${
+        view === 'columns' ? 4 : 12
+      } col-lg-${view === 'columns' ? 3 : 12}`;
     },
     onScrollToBottom() {
       if (this.infinite) {
@@ -284,10 +284,10 @@ export default {
       return Object.fromEntries(
         Object.entries({
           groupBy,
-          sortBy: sortBy && sortBy !== "createdAt" ? sortBy : undefined,
-          search: search && search !== "" ? search : undefined,
+          sortBy: sortBy && sortBy !== 'createdAt' ? sortBy : undefined,
+          search: search && search !== '' ? search : undefined,
           view: view && view !== this.layout ? view : undefined,
-          direction: direction !== "desc" ? direction : undefined,
+          direction: direction !== 'desc' ? direction : undefined,
           page: page !== 1 ? page : undefined,
           reset,
           limit:

@@ -5,9 +5,9 @@
       color: white;
       text-decoration: none;
       padding: 4px 6px;
-      font-family: -apple-system, BlinkMacSystemFont, &quot;San Francisco&quot;,
-        &quot;Helvetica Neue&quot;, Helvetica, Ubuntu, Roboto, Noto,
-        &quot;Segoe UI&quot;, Arial, sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, 'San Francisco',
+        'Helvetica Neue', Helvetica, Ubuntu, Roboto, Noto, 'Segoe UI', Arial,
+        sans-serif;
       font-size: 12px;
       font-weight: bold;
       line-height: 1.2;

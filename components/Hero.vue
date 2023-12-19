@@ -105,20 +105,20 @@ export default {
     heading: { type: String, default: undefined },
     subheading: { type: String, default: undefined },
     description: { type: String, default: undefined },
-    alt: { type: String, default: "" },
+    alt: { type: String, default: '' },
     gradient: {
       type: String,
-      default: "rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)",
+      default: 'rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)',
     },
     width: { type: [Number, String], default: 1280 },
     height: { type: [Number, String], default: 500 },
     color: {
       type: String,
-      default: "#575757",
+      default: '#575757',
     },
     src: {
       type: String,
-      default: "/img/header-bg.jpg",
+      default: '/img/header-bg.jpg',
     },
     credit: {
       type: Object,

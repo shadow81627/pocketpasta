@@ -1,6 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-import vuetify, { transformAssetUrls } from "vite-plugin-vuetify";
-import pkg from "./package";
+import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify';
+import pkg from './package';
 
 const env = {
   // HOST,
@@ -12,11 +12,11 @@ const env = {
     process.env.npm_package_gitHead || process.env.VERCEL_GITHUB_COMMIT_SHA,
   DATE_GENERATED: new Date().toISOString(),
 
-  CLOUDINARY_NAME: "pocketpasta",
-  IMAGE_PROVIDER: "cloudinary",
+  CLOUDINARY_NAME: 'pocketpasta',
+  IMAGE_PROVIDER: 'cloudinary',
   SENTRY_DSN:
     process.env.SENTRY_DSN ||
-    "https://46d059ea02a240dfbb89bfaa4926f463@sentry.io/1411042",
+    'https://46d059ea02a240dfbb89bfaa4926f463@sentry.io/1411042',
 
   DB_REMOTE: process.env.DB_REMOTE,
   DB_USERNAME: process.env.DB_USERNAME,
@@ -33,23 +33,23 @@ export default defineNuxtConfig({
   },
 
   build: {
-    transpile: ["vuetify"],
+    transpile: ['vuetify'],
   },
 
   modules: [
-    "nuxt-icon",
-    "@vite-pwa/nuxt",
-    "@nuxt/image",
-    "@nuxt/content",
-    "nuxt-lodash",
-    "@unocss/nuxt",
+    'nuxt-icon',
+    '@vite-pwa/nuxt',
+    '@nuxt/image',
+    '@nuxt/content',
+    'nuxt-lodash',
+    '@unocss/nuxt',
   ],
 
   unocss: {
     typography: true,
     webFonts: {
       fonts: {
-        sans: "Roboto",
+        sans: 'Roboto',
       },
     },
   },
@@ -57,26 +57,26 @@ export default defineNuxtConfig({
   pwa: {
     icons: [
       {
-        src: "pwa-64x64.png",
-        sizes: "64x64",
-        type: "image/png",
+        src: 'pwa-64x64.png',
+        sizes: '64x64',
+        type: 'image/png',
       },
       {
-        src: "pwa-192x192.png",
-        sizes: "192x192",
-        type: "image/png",
+        src: 'pwa-192x192.png',
+        sizes: '192x192',
+        type: 'image/png',
       },
       {
-        src: "pwa-512x512.png",
-        sizes: "512x512",
-        type: "image/png",
-        purpose: "any",
+        src: 'pwa-512x512.png',
+        sizes: '512x512',
+        type: 'image/png',
+        purpose: 'any',
       },
       {
-        src: "maskable-icon-512x512.png",
-        sizes: "512x512",
-        type: "image/png",
-        purpose: "maskable",
+        src: 'maskable-icon-512x512.png',
+        sizes: '512x512',
+        type: 'image/png',
+        purpose: 'maskable',
       },
     ],
   },
@@ -85,7 +85,7 @@ export default defineNuxtConfig({
     provider: env.IMAGE_PROVIDER,
     providers: {
       cloudinary_upload: {
-        provider: "cloudinary",
+        provider: 'cloudinary',
         options: {
           baseURL: `https://res.cloudinary.com/${env.CLOUDINARY_NAME}/image/upload/`,
         },
@@ -94,9 +94,9 @@ export default defineNuxtConfig({
     cloudinary: {
       baseURL: `https://res.cloudinary.com/${env.CLOUDINARY_NAME}/image/fetch/`,
       options: {
-        quality: "auto",
-        format: "auto",
-        dpr: "auto",
+        quality: 'auto',
+        format: 'auto',
+        dpr: 'auto',
       },
     },
     screens: {
@@ -107,34 +107,34 @@ export default defineNuxtConfig({
       lg: 1280,
       xl: 1920,
     },
-    domains: ["res.cloudinary.com"],
+    domains: ['res.cloudinary.com'],
     presets: {
       hero: {
-        sizes: "xs:100vw sm:100vw md:100vw lg:100vw xl:100vw",
+        sizes: 'xs:100vw sm:100vw md:100vw lg:100vw xl:100vw',
         modifiers: {
-          quality: "auto",
-          format: "auto",
-          dpr: "auto",
+          quality: 'auto',
+          format: 'auto',
+          dpr: 'auto',
           // ar: '16:9',
           // c: 'fill',
         },
       },
       og: {
-        sizes: "xs:100vw sm:100vw md:100vw lg:100vw xl:100vw",
+        sizes: 'xs:100vw sm:100vw md:100vw lg:100vw xl:100vw',
         modifiers: {
-          quality: "auto",
-          format: "auto",
-          dpr: "auto",
+          quality: 'auto',
+          format: 'auto',
+          dpr: 'auto',
           // height: 630,
           width: 1280,
-          c: "fill",
+          c: 'fill',
         },
       },
       placeholder: {
         modifiers: {
-          quality: "auto",
-          format: "auto",
-          dpr: "auto",
+          quality: 'auto',
+          format: 'auto',
+          dpr: 'auto',
           width: 10,
         },
       },

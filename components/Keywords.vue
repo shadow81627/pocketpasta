@@ -12,7 +12,7 @@
 <script>
 export default {
   props: {
-    label: { type: String, default: "Tags" },
+    label: { type: String, default: 'Tags' },
     tags: {
       type: Array,
       default: () => [],
@@ -20,12 +20,12 @@ export default {
   },
   head() {
     return {
-      meta: [{ hid: "keywords", name: "keywords", content: this.keywords }],
+      meta: [{ hid: 'keywords', name: 'keywords', content: this.keywords }],
     };
   },
   computed: {
     keywords() {
-      return this.tags.join(",");
+      return this.tags.join(',');
     },
   },
 };

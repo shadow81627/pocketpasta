@@ -95,25 +95,25 @@ export default {
   data() {
     return {
       damien: {
-        "@context": "http://schema.org",
-        "@type": "Person",
+        '@context': 'http://schema.org',
+        '@type': 'Person',
         description:
-          "Damien is a Web Developer with 5+ years of experience. He specialises in handcrafted, bespoke websites, with an interest in open source, marketing and ecommerce. Reach out about your fresh new digital presence today.",
-        keywords: "HTML, CSS, Vue, Bootstrap",
-        email: "mailto:damien.robinson@pocketpasta.com",
-        jobTitle: "Full Stack Web Developer",
-        brand: "PocketPasta",
-        name: "Damien Robinson",
-        givenName: "Damien",
-        familyName: "Robinson",
-        alumniOf: "Griffith University",
-        gender: "male",
-        nationality: "Australian",
-        url: "https://pocketpasta.com",
+          'Damien is a Web Developer with 5+ years of experience. He specialises in handcrafted, bespoke websites, with an interest in open source, marketing and ecommerce. Reach out about your fresh new digital presence today.',
+        keywords: 'HTML, CSS, Vue, Bootstrap',
+        email: 'mailto:damien.robinson@pocketpasta.com',
+        jobTitle: 'Full Stack Web Developer',
+        brand: 'PocketPasta',
+        name: 'Damien Robinson',
+        givenName: 'Damien',
+        familyName: 'Robinson',
+        alumniOf: 'Griffith University',
+        gender: 'male',
+        nationality: 'Australian',
+        url: 'https://pocketpasta.com',
         sameAs: [
-          "https://github.com/shadow81627",
-          "https://www.linkedin.com/in/damien-robinson-788925101/",
-          "https://twitter.com/Shadow81627",
+          'https://github.com/shadow81627',
+          'https://www.linkedin.com/in/damien-robinson-788925101/',
+          'https://twitter.com/Shadow81627',
         ],
       },
     };
@@ -123,11 +123,11 @@ export default {
       script: [
         {
           json: this.damien,
-          type: "application/ld+json",
+          type: 'application/ld+json',
         },
         {
-          async: "",
-          src: "https://static.addtoany.com/menu/page.js",
+          async: '',
+          src: 'https://static.addtoany.com/menu/page.js',
         },
       ],
     };

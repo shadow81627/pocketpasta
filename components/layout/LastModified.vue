@@ -21,8 +21,8 @@
 </template>
 
 <script>
-import dayjs from "dayjs";
-import relativeTime from "dayjs/plugin/relativeTime.js";
+import dayjs from 'dayjs';
+import relativeTime from 'dayjs/plugin/relativeTime.js';
 
 dayjs.extend(relativeTime);
 
@@ -30,7 +30,7 @@ export default {
   props: {
     utc: Boolean,
     interval: { type: Number, default: 60000 },
-    format: { type: String, default: "ddd, DD MMM YYYY HH:mm:ss Z" },
+    format: { type: String, default: 'ddd, DD MMM YYYY HH:mm:ss Z' },
   },
   setup() {
     const config = useRuntimeConfig();

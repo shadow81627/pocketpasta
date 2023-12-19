@@ -75,24 +75,24 @@ const $img = useImage();
 // return { $img };
 const contactDetails = [
   {
-    icon: "carbon:email",
-    subtitle: "Email",
-    title: "contact@pocketpasta.com",
-    href: "mailto:contact@pocketpasta.com",
+    icon: 'carbon:email',
+    subtitle: 'Email',
+    title: 'contact@pocketpasta.com',
+    href: 'mailto:contact@pocketpasta.com',
   },
   {
-    type: "location",
-    icon: "carbon:location",
-    subtitle: "Location",
-    title: "New Farm, Australia",
-    href: "https://www.google.com.au/maps/search/?api=1&query=Daim%20Digital%201%2F888%20Brunswick%20Street%20New%20Farm%20Queensland%204005%20Australia",
+    type: 'location',
+    icon: 'carbon:location',
+    subtitle: 'Location',
+    title: 'New Farm, Australia',
+    href: 'https://www.google.com.au/maps/search/?api=1&query=Daim%20Digital%201%2F888%20Brunswick%20Street%20New%20Farm%20Queensland%204005%20Australia',
     location: {
-      streetAddress: "Salt Space 1/888 Brunswick Street",
-      city: "New Farm",
-      countryCode: "AU",
-      country: "Australia",
-      postalCode: "4005",
-      region: "Queensland",
+      streetAddress: 'Salt Space 1/888 Brunswick Street',
+      city: 'New Farm',
+      countryCode: 'AU',
+      country: 'Australia',
+      postalCode: '4005',
+      region: 'Queensland',
     },
   },
 ];
@@ -121,7 +121,7 @@ const contactDetails = [
   right: 10px;
   bottom: 10%;
   left: 10px;
-  content: "";
+  content: '';
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 5px;
 }

@@ -14,9 +14,9 @@ export default {
     return {
       meta: [
         {
-          hid: "description",
-          name: "description",
-          content: "Easy pasta recipes made with simple ingredients.",
+          hid: 'description',
+          name: 'description',
+          content: 'Easy pasta recipes made with simple ingredients.',
         },
       ],
     };

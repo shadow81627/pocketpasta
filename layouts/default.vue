@@ -78,8 +78,8 @@
 export default {
   async setup() {
     const { data: items } = await useAsyncData(
-      "layout-sidebar-pages",
-      () => queryContent("layout/sidebar").find(),
+      'layout-sidebar-pages',
+      () => queryContent('layout/sidebar').find(),
       {
         // server: false,
         transform(data) {
@@ -87,7 +87,7 @@ export default {
             ...item,
             pos: fractionToDecimal(item.pos),
           }));
-          return useSortBy(items, ["pos"]);
+          return useSortBy(items, ['pos']);
         },
       },
     );
@@ -109,9 +109,9 @@ export default {
       meta: [
         ...i18nSeo.meta,
         {
-          hid: "og:url",
-          name: "og:url",
-          property: "og:url",
+          hid: 'og:url',
+          name: 'og:url',
+          property: 'og:url',
           content: `${this.$config.BASE_URL}${this.$route.path}`,
         },
       ],
