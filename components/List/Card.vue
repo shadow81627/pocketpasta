@@ -5,8 +5,7 @@
     nuxt
     ripple
     hover
-    elevation="4"
-    class="flex d-flex flex-column"
+    class="flex d-flex flex-column justify-between flex-grow-1"
   >
     <div
       v-show="layout === 'columns'"
