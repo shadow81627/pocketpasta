@@ -253,7 +253,6 @@ export default {
   },
   data() {
     return {
-      id: 0,
       showDescription: false,
       videoClicked: false,
     };
