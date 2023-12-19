@@ -1,13 +1,13 @@
 <template>
   <v-expansion-panel
-    class="performance-facts"
+    class="performance-facts mb-2"
     itemscope
     itemtype="http://schema.org/NutritionInformation"
   >
-    <v-expansion-panel-header>
+    <v-expansion-panel-title>
       <h2>Nutrition Facts</h2>
-    </v-expansion-panel-header>
-    <v-expansion-panel-content eager>
+    </v-expansion-panel-title>
+    <v-expansion-panel-text eager>
       <header class="performance-facts__header">
         <p itemprop="servingSize">Serving Size: {{ servingSize }}</p>
         <!-- <p>Serving Per Container 8</p> -->
@@ -231,7 +231,7 @@
     <p class="small-info text-center">
       Fat 9 &bull; Carbohydrate 4 &bull; Protein 4
     </p> -->
-    </v-expansion-panel-content>
+    </v-expansion-panel-text>
   </v-expansion-panel>
 </template>
 

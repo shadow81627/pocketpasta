@@ -101,7 +101,7 @@
               <v-expansion-panel-title>
                 <h2>Ingredients</h2>
               </v-expansion-panel-title>
-              <v-expansion-panel-content eager>
+              <v-expansion-panel-text eager>
                 <v-data-iterator
                   :items="recipeIngredient"
                   hide-default-footer
@@ -134,13 +134,13 @@
                     </ul>
                   </template>
                 </v-data-iterator>
-              </v-expansion-panel-content>
+              </v-expansion-panel-text>
             </v-expansion-panel>
             <v-expansion-panel class="my-4">
               <v-expansion-panel-title
                 ><h2>Instructions</h2></v-expansion-panel-title
               >
-              <v-expansion-panel-content eager>
+              <v-expansion-panel-text eager>
                 <v-data-iterator
                   v-if="Array.isArray(recipeInstructions)"
                   :items="recipeInstructions"
@@ -149,20 +149,21 @@
                   :items-per-page="-1"
                 >
                   <template #default="{ items }">
-                    <ol>
-                      <li v-for="{ raw: item } in items" :key="item.text">
-                        <v-card tile flat>
-                          <v-card-text
-                            class="text-subtitle-1 text-break text-wrap"
-                            >{{ item.text }}</v-card-text
-                          >
-                        </v-card>
+                    <ol class="list-inside">
+                      <li
+                        v-for="{ raw: item } in items"
+                        :key="item.text"
+                        class="py-3 px-6"
+                      >
+                        <span class="text-subtitle-1 text-break text-wrap">{{
+                          item.text
+                        }}</span>
                       </li>
                     </ol>
                   </template>
                 </v-data-iterator>
                 <p v-else>{{ recipeInstructions }}</p>
-              </v-expansion-panel-content>
+              </v-expansion-panel-text>
             </v-expansion-panel>
             <NutritionFactTable
               v-if="nutrition"
@@ -173,7 +174,7 @@
               <v-expansion-panel-title>
                 <h2>Tags</h2>
               </v-expansion-panel-title>
-              <v-expansion-panel-content>
+              <v-expansion-panel-text>
                 <div class="list-group-flush">
                   <Keywords
                     :tags="keywords?.split(',')"
@@ -181,13 +182,13 @@
                     class="list-group-item"
                   />
                 </div>
-              </v-expansion-panel-content>
+              </v-expansion-panel-text>
             </v-expansion-panel>
             <v-expansion-panel v-if="sameAs" class="d-print-none">
               <v-expansion-panel-title>
                 <h2>References</h2>
               </v-expansion-panel-title>
-              <v-expansion-panel-content>
+              <v-expansion-panel-text>
                 <div class="list-group-flush">
                   <span
                     v-for="reference in sameAs"
@@ -204,7 +205,7 @@
                     >
                   </span>
                 </div>
-              </v-expansion-panel-content>
+              </v-expansion-panel-text>
             </v-expansion-panel>
           </v-expansion-panels>
         </div>
