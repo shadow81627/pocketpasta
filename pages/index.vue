@@ -7,7 +7,7 @@
           position: relative;
           overflow: hidden;
           background-size: cover;
-          background-image: url(${$img(
+          background-image: url(${img(
             '/fl_progressive/ar_16:9,c_fill,f_auto,q_auto,dpr_auto,g_south,w_auto/c_limit,w_1920/v1559982334/hero_rko6us.jpg',
             {},
             { provider: 'cloudinary_upload' },
@@ -28,7 +28,7 @@
           >
             <v-img
               :src="
-                $img(
+                img(
                   '/v1560038491/logo_vlqvdr.png',
                   {
                     width: 200,
@@ -71,8 +71,8 @@
 </template>
 
 <script setup>
-const $img = useImage();
-// return { $img };
+const img = useImage();
+// return { img };
 const contactDetails = [
   {
     icon: 'carbon:email',

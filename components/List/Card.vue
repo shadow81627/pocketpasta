@@ -35,7 +35,7 @@
         }"
       ></LazyNuxtPicture>
       <!-- <v-img
-        :lazy-src="$img(imageUrl, {}, { preset: 'placeholder' })"
+        :lazy-src="img(imageUrl, {}, { preset: 'placeholder' })"
         :src="
           _srcset(imageUrl, {
             sizes: 'xs:100vw sm:50vw md:33vw lg:25vw',
@@ -57,7 +57,7 @@
         <v-col v-if="layout !== 'columns'" cols="auto">
           <div class="ma-sm-3" size="128" tile color="grey">
             <v-img
-              :lazy-src="$img(imageUrl, {}, { preset: 'placeholder' })"
+              :lazy-src="img(imageUrl, {}, { preset: 'placeholder' })"
               :src="source({ image: imageUrl }).src"
               :srcset="source({ image: imageUrl }).srcset"
               height="128"
@@ -92,8 +92,8 @@ export default {
     layout: { type: String, default: null },
   },
   setup() {
-    const $img = useImage();
-    return { $img };
+    const img = useImage();
+    return { img };
   },
   computed: {
     path() {
@@ -123,8 +123,8 @@ export default {
         sizes: 'xs:100vw sm:100vw md:100vw lg:100vw xl:100vw',
         ...options,
       };
-      const $img = useImage();
-      return $img.getSizes(src, defaults);
+      const img = useImage();
+      return img.getSizes(src, defaults);
     },
     truncate(text = '', stop = 150, clamp = '...') {
       return `${text.slice(0, stop)}${stop < text.length ? clamp : ''}`;
