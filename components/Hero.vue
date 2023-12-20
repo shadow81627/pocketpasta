@@ -125,7 +125,7 @@ export default {
       default: () => ({}),
     },
   },
-  setup(props) {
+  setup() {
     const imageStyle = `z-index: -1;
     object-fit: cover;
                   position: absolute;

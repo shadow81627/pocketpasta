@@ -141,6 +141,7 @@ export default {
       }
     },
     source({ image, width = 128, height = 128 }) {
+      // eslint-disable-next-line @typescript-eslint/no-this-alias
       const vm = this;
       const dprs = [1, 1.5, 2, 2.5, 3];
       return {

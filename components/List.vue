@@ -64,7 +64,6 @@
 </template>
 
 <script>
-const collections = ['Recipe', 'Product'];
 export default defineNuxtComponent({
   props: {
     collection: { type: String, required: true },
@@ -310,7 +309,7 @@ export default defineNuxtComponent({
     scrollToTop() {
       window.scrollTo(0, 0);
     },
-    itemClass(index) {
+    itemClass() {
       const view = this.view;
       return `col-sm-${view === 'columns' ? 6 : 12} col-md-${
         view === 'columns' ? 4 : 12
