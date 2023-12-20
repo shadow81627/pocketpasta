@@ -1,0 +1,14 @@
+name = "pocketpasta"
+type = "javascript"
+account_id = "65107ae3199fd4694b59791603a21660"
+workers_dev = true
+route = ""
+zone_id = ""
+build = "yarn run build"
+
+[site]
+bucket = ".output/public"
+
+[build]
+command = "true"
+upload.format = "service-worker"
