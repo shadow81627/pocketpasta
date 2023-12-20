@@ -6,25 +6,38 @@
       </v-col>
     </v-row>
 
+    <v-progress-circular
+      v-if="pending"
+      indeterminate
+      class="mx-auto d-block"
+      size="50"
+    ></v-progress-circular>
+
     <v-data-iterator
+      v-else
       :items="list"
       hide-default-footer
       :items-per-page="infinite ? total : limit"
+      :loading="pending"
       item-key="slug"
     >
-      <!-- <template #header>
-        <ListHeader
-          v-model:direction="direction"
-          v-model:sort-by="sortBy"
-          v-model:search="search"
-          v-model:group-by="groupBy"
-          v-model:limit="limit"
-          v-model:view="view"
-          :headers="headers"
-        />
-      </template> -->
+      <template #header>
+        <v-card dark class="mb-1">
+          <v-text-field
+            v-model="search"
+            clearable
+            flat
+            solo-inverted
+            single-line
+            hide-details
+            label="Search"
+            autocomplete="false"
+            @keydown.enter="$event.target.blur()"
+          ></v-text-field>
+        </v-card>
+      </template>
       <template #default="{ items }">
-        <v-row>
+        <v-row v-if="items && Array.isArray(items)">
           <v-col
             v-for="item in items"
             :key="`${item['@type']}-${item.slug}`"
@@ -46,8 +59,12 @@
       <template #footer>
         <v-row class="mt-2" align="center" justify="center">
           <v-col>
-            <v-pagination v-model="page" :length="pages" total-visible="9" />
-            <div v-show="false">Total: {{ total }}</div>
+            <v-pagination
+              v-model="page"
+              :length="pages"
+              total-visible="9"
+              @update:model-value="scrollToTop"
+            ></v-pagination>
           </v-col>
         </v-row>
       </template>
@@ -68,15 +85,15 @@
 
 <script>
 const collections = ['Recipe', 'Product'];
-export default {
+export default defineNuxtComponent({
   props: {
     collection: { type: String, required: true },
     heading: { type: String, default: '' },
     layout: { type: String, default: null },
     deep: { type: Boolean, default: false },
     fetchOnServer: { type: Boolean, default: true },
-    defaultLimit: { type: Number, default: -1 },
-    infinite: { type: Boolean, default: true },
+    defaultLimit: { type: Number, default: 24 },
+    infinite: { type: Boolean, default: false },
     headers: {
       type: Array,
       default: () => [
@@ -86,14 +103,101 @@ export default {
       ],
     },
   },
-  async setup() {
-    const { data: list } = await useAsyncData(
-      'recipes',
-      () =>
-        queryContent('recipes')
+  async setup(props) {
+    const { data: total } = await useAsyncData(
+      `recipes-total`,
+      function () {
+        return queryContent('recipes').count();
+      },
+      { lazy: false, immediate: true },
+    );
+    function generateQuery({
+      // groupBy = this.groupBy,
+      // sortBy = this.sortBy,
+      page,
+      limit,
+      // direction = this.direction,
+      search,
+      // view = this.view,
+      // reset = true,
+    }) {
+      // sorted query string for more cache hits
+      return Object.fromEntries(
+        Object.entries({
+          // groupBy,
+          // sortBy: sortBy && sortBy !== 'createdAt' ? sortBy : undefined,
+          search: search && search !== '' ? search : undefined,
+          // view: view && view !== this.layout ? view : undefined,
+          // direction: direction !== 'desc' ? direction : undefined,
+          page: page !== 1 ? page : undefined,
+          // reset,
+          limit:
+            limit !== props.defaultLimit && limit !== total.value
+              ? limit
+              : undefined,
+        }).sort(),
+      );
+    }
+    const limit = computed({
+      get() {
+        const route = useRoute();
+        const limit =
+          props.defaultLimit === -1 ? total.value : props.defaultLimit;
+        return parseInt(route.query.limit, 10) || limit;
+      },
+      set(limit) {
+        const router = useRouter();
+        router.push({ query: generateQuery({ limit }) });
+      },
+    });
+    const pages = computed(() => {
+      const pages = Math.ceil(total.value / limit.value);
+      return pages || 1;
+    });
+    const page = computed({
+      get() {
+        const route = useRoute();
+        const page = parseInt(route.query.page, 10) || 1;
+        // set page to last page if page is larger than last page
+        return page <= pages.value ? page : pages.value;
+      },
+      set(input) {
+        const router = useRouter();
+        const page = input <= pages.value ? input : pages.value;
+        if (page !== this.page) {
+          router.push({
+            query: generateQuery({ page: page !== 1 ? page : undefined }),
+          });
+        }
+      },
+    });
+    const search = computed({
+      get() {
+        const route = useRoute();
+        return route.query.search || '';
+      },
+      set(search) {
+        const router = useRouter();
+        router.push({ query: this.generateQuery({ search }) });
+      },
+    });
+    const {
+      data: list,
+      pending,
+      // refresh,
+    } = await useAsyncData(
+      `recipes`,
+      async function () {
+        return await queryContent('recipes')
           .only(['id', 'name', 'description', 'image', '@type', '_path'])
-          .find(),
+          .skip((page.value - 1) * limit.value)
+          .limit(limit.value)
+          // .search(search.value)
+          .find();
+      },
       {
+        watch: [total, page, limit],
+        // immediate: true,
         transform(data) {
           return data.map((item) => {
             const slug = item._path.split('/').pop();
@@ -102,11 +206,25 @@ export default {
         },
       },
     );
-    return { list };
+    // const route = useRoute();
+    // watch(route.query, function () {
+    //   useDebounce(async function () {
+    //     if (refresh) {
+    //       await refresh();
+    //     }
+    //   }, 250);
+    // });
+    return {
+      total,
+      list,
+      pending,
+      page,
+      limit,
+      pages,
+      search,
+      generateQuery,
+    };
   },
-  data: () => ({
-    total: null,
-  }),
   // async fetch() {
   //   try {
   //     this.total = (
@@ -156,43 +274,9 @@ export default {
   //     this.scrollToTop();
   //   }
   // },
-  fetchOnServer() {
-    return this.fetchOnServer;
-  },
   computed: {
     itemComponent() {
       return process.browser ? ItemComponent : '';
-    },
-    pages() {
-      const pages = Math.ceil(this.total / this.limit);
-      return pages || 1;
-    },
-    page: {
-      get() {
-        const page = parseInt(this.$route.query.page, 10) || 1;
-        // set page to last page if page is larger than last page
-        return page <= this.pages ? page : this.pages;
-      },
-      set(value) {
-        const page = value <= this.pages ? value : this.pages;
-        if (page !== this.page) {
-          this.$router.push({
-            query: this.generateQuery({
-              page,
-              reset: false,
-            }),
-          });
-        }
-      },
-    },
-    limit: {
-      get() {
-        const limit = this.defaultLimit === -1 ? this.total : this.defaultLimit;
-        return parseInt(this.$route.query.limit, 10) || limit;
-      },
-      set(limit) {
-        this.$router.push({ query: this.generateQuery({ limit }) });
-      },
     },
     direction: {
       get() {
@@ -200,14 +284,6 @@ export default {
       },
       set(direction) {
         this.$router.push({ query: this.generateQuery({ direction }) });
-      },
-    },
-    search: {
-      get() {
-        return this.$route.query.search || '';
-      },
-      set(search) {
-        this.$router.push({ query: this.generateQuery({ search }) });
       },
     },
     sortBy: {
@@ -247,7 +323,7 @@ export default {
   },
   watch: {
     '$route.query': useDebounce(function () {
-      // this.$fetch();
+      // this.refresh();
     }, 250),
   },
   methods: {
@@ -270,33 +346,6 @@ export default {
         query: this.generateQuery({ page }),
       };
     },
-    generateQuery({
-      groupBy = this.groupBy,
-      sortBy = this.sortBy,
-      page = this.reset ? 1 : this.page,
-      limit = this.limit,
-      direction = this.direction,
-      search = this.search,
-      view = this.view,
-      reset = true,
-    }) {
-      // sorted query string for more cache hits
-      return Object.fromEntries(
-        Object.entries({
-          groupBy,
-          sortBy: sortBy && sortBy !== 'createdAt' ? sortBy : undefined,
-          search: search && search !== '' ? search : undefined,
-          view: view && view !== this.layout ? view : undefined,
-          direction: direction !== 'desc' ? direction : undefined,
-          page: page !== 1 ? page : undefined,
-          reset,
-          limit:
-            limit !== this.defaultLimit && limit !== this.total
-              ? limit
-              : undefined,
-        }).sort(),
-      );
-    },
   },
-};
+});
 </script>

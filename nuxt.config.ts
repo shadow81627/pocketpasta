@@ -26,6 +26,10 @@ const env = {
 export default defineNuxtConfig({
   devtools: { enabled: true },
 
+  experimental: {
+    asyncContext: true,
+  },
+
   publicRuntimeConfig: {
     public: {
       ...env,
