@@ -190,11 +190,11 @@
               </v-expansion-panel-title>
               <v-expansion-panel-text>
                 <div class="list-group-flush">
-                  <span
+                  <div
                     v-for="reference in sameAs"
                     :key="reference"
                     style="max-width: 100%"
-                    class="d-inline-block text-truncate"
+                    class="text-truncate py-3"
                   >
                     <a
                       :href="reference"
@@ -203,7 +203,7 @@
                       rel="noopener"
                       >{{ reference }}</a
                     >
-                  </span>
+                  </div>
                 </div>
               </v-expansion-panel-text>
             </v-expansion-panel>
