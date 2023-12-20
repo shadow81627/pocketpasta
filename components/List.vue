@@ -6,69 +6,49 @@
       </v-col>
     </v-row>
 
+    <v-card dark class="mb-1">
+      <v-text-field
+        v-model="search"
+        clearable
+        flat
+        solo-inverted
+        single-line
+        hide-details
+        label="Search"
+        autocomplete="false"
+        @keydown.enter="$event.target.blur()"
+      ></v-text-field>
+    </v-card>
     <v-progress-circular
       v-if="pending"
       indeterminate
       class="mx-auto d-block"
       size="50"
     ></v-progress-circular>
+    <v-row v-else-if="list && Array.isArray(list)">
+      <v-col
+        v-for="item in list"
+        :key="`${item['@type']}-${item.slug}`"
+        cols="12"
+        :sm="view === 'columns' ? 6 : 12"
+        :md="view === 'columns' ? 4 : 12"
+        :lg="view === 'columns' ? 3 : 12"
+        class="d-flex flex-column"
+      >
+        <ListCard v-bind="item" :type="item['@type']" :layout="view"></ListCard>
+      </v-col>
+    </v-row>
 
-    <v-data-iterator
-      v-else
-      :items="list"
-      hide-default-footer
-      :items-per-page="infinite ? total : limit"
-      :loading="pending"
-      item-key="slug"
-    >
-      <template #header>
-        <v-card dark class="mb-1">
-          <v-text-field
-            v-model="search"
-            clearable
-            flat
-            solo-inverted
-            single-line
-            hide-details
-            label="Search"
-            autocomplete="false"
-            @keydown.enter="$event.target.blur()"
-          ></v-text-field>
-        </v-card>
-      </template>
-      <template #default="{ items }">
-        <v-row v-if="items && Array.isArray(items)">
-          <v-col
-            v-for="item in items"
-            :key="`${item['@type']}-${item.slug}`"
-            cols="12"
-            :sm="view === 'columns' ? 6 : 12"
-            :md="view === 'columns' ? 4 : 12"
-            :lg="view === 'columns' ? 3 : 12"
-            class="d-flex flex-column"
-          >
-            <ListCard
-              v-bind="item.raw"
-              :type="item.raw['@type']"
-              :layout="view"
-            ></ListCard>
-          </v-col>
-        </v-row>
-      </template>
-
-      <template #footer>
-        <v-row class="mt-2" align="center" justify="center">
-          <v-col>
-            <v-pagination
-              v-model="page"
-              :length="pages"
-              total-visible="9"
-              @update:model-value="scrollToTop"
-            ></v-pagination>
-          </v-col>
-        </v-row>
-      </template>
-    </v-data-iterator>
+    <v-row class="mt-2" align="center" justify="center">
+      <v-col>
+        <v-pagination
+          v-model="page"
+          :length="pages"
+          total-visible="9"
+          @update:model-value="scrollToTop"
+        ></v-pagination>
+      </v-col>
+    </v-row>
     <!-- <v-btn
       v-show="infinite"
       bottom
