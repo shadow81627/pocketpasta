@@ -145,6 +145,8 @@ export default defineNuxtConfig({
     },
   },
 
+  sourcemap: true,
+
   vite: {
     vue: {
       template: {
