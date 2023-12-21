@@ -81,13 +81,12 @@ export default {
       'layout-sidebar-pages',
       () => queryContent('layout/sidebar').find(),
       {
-        // server: false,
         transform(data) {
           const items = data.map((item) => ({
             ...item,
             pos: fractionToDecimal(item.pos),
           }));
-          return useSortBy(items, ['pos']);
+          return useOrderBy(items, ['pos'], 'desc');
         },
       },
     );
@@ -98,24 +97,6 @@ export default {
       loading: true,
       dialog: false,
       drawer: false,
-    };
-  },
-  head() {
-    const i18nSeo = this.$nuxtI18nSeo();
-    return {
-      htmlAttrs: {
-        ...i18nSeo.htmlAttrs,
-      },
-      meta: [
-        ...i18nSeo.meta,
-        {
-          hid: 'og:url',
-          name: 'og:url',
-          property: 'og:url',
-          content: `${this.$config.BASE_URL}${this.$route.path}`,
-        },
-      ],
-      link: [...i18nSeo.link],
     };
   },
   mounted() {
