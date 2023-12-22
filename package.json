@@ -26,6 +26,7 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@mdi/js": "7.3.67",
     "@nuxt/devtools": "latest",
     "@nuxtjs/eslint-config-typescript": "12.1.0",
     "@types/eslint": "^8",
