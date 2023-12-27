@@ -1813,10 +1813,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mdi/js@npm:6.4.95":
-  version: 6.4.95
-  resolution: "@mdi/js@npm:6.4.95"
-  checksum: 76055821b0b611090f1fadff3cb93b0d2c05f7c52778a0e8966abe1c85d3aae8312c497e91882bb8cb02bf9235edda901da944099553afb2dbacafb11ed40b18
+"@mdi/js@npm:7.4.47":
+  version: 7.4.47
+  resolution: "@mdi/js@npm:7.4.47"
+  checksum: 7379aa55e4494cd90e9121f90a6148312121e6b48d262432e33797da2c6c3431aa9da235aaa7c9ba8ef6357d9059c940c7a9f96283a35bfca2f3a9d4d9588650
   languageName: node
   linkType: hard
 
@@ -17563,7 +17563,7 @@ __metadata:
     "@commitlint/config-conventional": 13.2.0
     "@dansmaculotte/nuxt-security": 0.0.5
     "@lhci/cli": 0.6.1
-    "@mdi/js": 6.4.95
+    "@mdi/js": 7.4.47
     "@nuxt/content": 1.15.0
     "@nuxt/image": 0.6.0
     "@nuxtjs/auth": 4.9.1
