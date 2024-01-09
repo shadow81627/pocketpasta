@@ -104,10 +104,11 @@
 
           <template #[`item.done`]="{ item }">
             <v-checkbox-btn
-              :value="item.done"
-              @input="
+              :model-value="item.done"
+              @update:model-value="
                 (value) => {
-                  item.atomicSet('done', value);
+                  console.log('checkbox', value);
+                  item.patch({ done: value });
                 }
               "
             />
@@ -126,7 +127,7 @@
                   clearable
                   @input="
                     (value) => {
-                      item.atomicSet('name', value);
+                      item.patch({ name: value });
                     }
                   "
                 />
@@ -180,7 +181,7 @@
             </v-edit-dialog>
           </template>
 
-          <template #[`item.due`]="{ item }">
+          <!-- <template #[`item.due`]="{ item }">
             <v-edit-dialog
               v-model:return-value="item.due"
               large
@@ -190,7 +191,7 @@
                 <v-date-picker v-model="item.due" scrollable />
               </template>
             </v-edit-dialog>
-          </template>
+          </template> -->
 
           <template #[`item.actions`]="{ item }">
             <v-btn variant="text" icon title="edit" @click="editItem(item)">
@@ -282,9 +283,24 @@ import {
   mdiPlus,
 } from '@mdi/js';
 export default {
+  async setup() {
+    const { $rxdb } = useNuxtApp();
+    console.log('$rxdb', $rxdb);
+    let items = ref([]);
+    if ($rxdb) {
+      const query = $rxdb.shopping.find();
+      const sub = query.$.subscribe(function (results = []) {
+        console.log('results', results);
+        this.total = results.length;
+        items.value = results;
+      });
+      return { items, sub };
+    }
+    return { items };
+  },
   data: () => ({
     categories: [],
-    total: 10,
+    total: 100,
     defaultLimit: -1,
     newDueMenu: false,
     icons: {
@@ -327,14 +343,6 @@ export default {
         filterable: false,
         align: 'right',
         width: 1,
-      },
-    ],
-    items: [
-      {
-        id: '123',
-        name: 'Myname that is really long and should wrap to the next line',
-        category: 'Mycategory',
-        done: false,
       },
     ],
     editedIndex: -1,
@@ -407,7 +415,7 @@ export default {
       get() {
         const route = useRoute();
         const groupBy = route.query.groupBy ?? 'category';
-        return this.items.length ? [{ key: groupBy, expanded: true }] : null;
+        return this.items.length ? [{ key: groupBy }] : [];
       },
       set(groupBy) {
         // const router = useRouter();
@@ -463,7 +471,8 @@ export default {
     },
 
     async save(item) {
-      await this.$db.shopping.upsert(item);
+      const { $rxdb } = useNuxtApp();
+      await $rxdb.shopping.upsert(item);
       this.close();
     },
 
@@ -472,7 +481,7 @@ export default {
     },
 
     async bulkUpdateAttribute({ items, key, value }) {
-      await Promise.all(items.map((item) => item.atomicSet(key, value)));
+      await Promise.all(items.map((item) => item.patch({ [key]: value })));
     },
 
     query({
