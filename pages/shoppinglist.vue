@@ -285,7 +285,6 @@ import {
 export default {
   async setup() {
     const { $rxdb } = useNuxtApp();
-    console.log('$rxdb', $rxdb);
     let items = ref([]);
     if ($rxdb) {
       const query = $rxdb.shopping.find();
