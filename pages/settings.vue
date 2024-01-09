@@ -2,57 +2,7 @@
   <v-container>
     <v-row>
       <v-col>
-        <h1>{{ $t('settings.heading') }}</h1>
-      </v-col>
-    </v-row>
-
-    <!-- <v-expansion-panels multiple accordion>
-      <v-expansion-panel>
-        <v-expansion-panel-header>
-          header
-        </v-expansion-panel-header>
-        <v-expansion-panel-content>
-          content
-        </v-expansion-panel-content>
-      </v-expansion-panel>
-      <v-expansion-panel>
-        <v-expansion-panel-header>
-          header
-        </v-expansion-panel-header>
-        <v-expansion-panel-content>
-          content
-        </v-expansion-panel-content>
-      </v-expansion-panel>
-    </v-expansion-panels> -->
-
-    <v-row>
-      <v-col>
-        <v-card>
-          <v-card-title>
-            <h2>
-              {{ $t('settings.style.heading') }}
-            </h2>
-          </v-card-title>
-
-          <setting v-bind="$t('settings.style.theme-label')">
-            <ThemeSelector aria-labelledby="theme-label" />
-          </setting>
-        </v-card>
-      </v-col>
-    </v-row>
-
-    <v-row>
-      <v-col>
-        <v-card>
-          <v-card-title>
-            <h2>
-              {{ $t('settings.content.heading') }}
-            </h2>
-          </v-card-title>
-          <setting v-bind="$t('settings.content.language')">
-            <LangSwitcher />
-          </setting>
-        </v-card>
+        <h1>Settings</h1>
       </v-col>
     </v-row>
 
@@ -87,47 +37,8 @@
   </v-container>
 </template>
 
-<script>
-import ThemeSelector from '@/components/ThemeSelector.vue';
-import LangSwitcher from '@/components/Layout/LangSwitcher';
-import setting from '@/components/settings/setting';
-
-export default {
-  components: {
-    ThemeSelector,
-    LangSwitcher,
-    setting,
-  },
-  head() {
-    return {
-      link: [],
-    };
-  },
-  computed: {
-    dbRemote: {
-      get() {
-        return this.$warehouse.get('dbRemote') || this.$config.DB_REMOTE;
-      },
-      set(value) {
-        this.$warehouse.set('dbRemote', value);
-      },
-    },
-    dbUsername: {
-      get() {
-        return this.$warehouse.get('dbUsername') || this.$config.DB_USERNAME;
-      },
-      set(value) {
-        this.$warehouse.set('dbUsername', value);
-      },
-    },
-    dbPassword: {
-      get() {
-        return this.$warehouse.get('dbPassword') || this.$config.DB_PASSWORD;
-      },
-      set(value) {
-        this.$warehouse.set('dbPassword', value);
-      },
-    },
-  },
-};
+<script setup lang="ts">
+const dbRemote = useCookie('dbRemote');
+const dbUsername = useCookie('dbUsername');
+const dbPassword = useCookie('dbPassword');
 </script>

@@ -1,0 +1,6 @@
+{
+  "icon": "mdi:cook",
+  "name": "Recipes",
+  "route": "recipes",
+  "pos": "1/1"
+}

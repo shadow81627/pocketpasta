@@ -1,13 +1,13 @@
 <template>
   <v-expansion-panel
-    class="performance-facts"
+    class="performance-facts mb-2"
     itemscope
     itemtype="http://schema.org/NutritionInformation"
   >
-    <v-expansion-panel-header>
+    <v-expansion-panel-title>
       <h2>Nutrition Facts</h2>
-    </v-expansion-panel-header>
-    <v-expansion-panel-content eager>
+    </v-expansion-panel-title>
+    <v-expansion-panel-text eager>
       <header class="performance-facts__header">
         <p itemprop="servingSize">Serving Size: {{ servingSize }}</p>
         <!-- <p>Serving Per Container 8</p> -->
@@ -22,12 +22,17 @@
           <tr>
             <th colspan="2">
               <b>Calories</b>
-              <span itemprop="calories">{{ calories }}</span>
+              <span itemprop="calories">
+                {{ calories }}
+              </span>
             </th>
             <td>
               <span v-if="fiberContent">
                 <span class="d-none d-md-inline">Calories from Fat</span>
-                <span itemprop="fiberContent">{{ fiberContent }}</span>
+                <span>&nbsp;</span>
+                <span itemprop="fiberContent">
+                  {{ fiberContent }}
+                </span>
               </span>
             </td>
           </tr>
@@ -39,7 +44,10 @@
           <tr>
             <th colspan="2">
               <b>Total Fat</b>
-              <span itemprop="fatContent">{{ fatContent }}</span>
+              <span>&nbsp;</span>
+              <span itemprop="fatContent">
+                {{ fatContent }}
+              </span>
             </th>
             <td>
               <!-- <b>22%</b> -->
@@ -49,9 +57,10 @@
             <td class="blank-cell" />
             <th>
               Saturated Fat
-              <span itemprop="saturatedFatContent">{{
-                saturatedFatContent
-              }}</span>
+              <span>&nbsp;</span>
+              <span itemprop="saturatedFatContent">
+                {{ saturatedFatContent }}
+              </span>
             </th>
             <td>
               <!-- <b>22%</b> -->
@@ -61,18 +70,20 @@
             <td class="blank-cell" />
             <th>
               Trans Fat
-              <span itemprop="unsaturatedFatContent">{{
-                unsaturatedFatContent
-              }}</span>
+              <span>&nbsp;</span>
+              <span itemprop="unsaturatedFatContent">
+                {{ unsaturatedFatContent }}
+              </span>
             </th>
-            <td />
+            <td></td>
           </tr>
           <tr>
             <th colspan="2">
               <b>Cholesterol</b>
-              <span itemprop="cholesterolContent">{{
-                cholesterolContent
-              }}</span>
+              <span>&nbsp;</span>
+              <span itemprop="cholesterolContent">
+                {{ cholesterolContent }}
+              </span>
             </th>
             <td>
               <!-- <b>18%</b> -->
@@ -81,7 +92,10 @@
           <tr>
             <th colspan="2">
               <b>Sodium</b>
-              <span itemprop="sodiumContent">{{ sodiumContent }}</span>
+              <span>&nbsp;</span>
+              <span itemprop="sodiumContent">
+                {{ sodiumContent }}
+              </span>
             </th>
             <td>
               <!-- <b>2%</b> -->
@@ -90,9 +104,10 @@
           <tr>
             <th colspan="2">
               <b>Total Carbohydrate</b>
-              <span itemprop="carbohydrateContent">{{
-                carbohydrateContent
-              }}</span>
+              <span>&nbsp;</span>
+              <span itemprop="carbohydrateContent">
+                {{ carbohydrateContent }}
+              </span>
             </th>
             <td>
               <!-- <b>6%</b> -->
@@ -102,7 +117,10 @@
             <td class="blank-cell" />
             <th>
               Dietary Fiber
-              <span itemprop="fiberContent">{{ fiberContent }}</span>
+              <span>&nbsp;</span>
+              <span itemprop="fiberContent">
+                {{ fiberContent }}
+              </span>
             </th>
             <td>
               <!-- <b>4%</b> -->
@@ -112,16 +130,22 @@
             <td class="blank-cell" />
             <th>
               Sugars
-              <span itemprop="sugarContent">{{ sugarContent }}</span>
+              <span>&nbsp;</span>
+              <span itemprop="sugarContent">
+                {{ sugarContent }}
+              </span>
             </th>
-            <td />
+            <td></td>
           </tr>
           <tr class="thick-end">
             <th colspan="2">
               <b>Protein</b>
-              <span itemprop="proteinContent">{{ proteinContent }}</span>
+              <span>&nbsp;</span>
+              <span itemprop="proteinContent">
+                {{ proteinContent }}
+              </span>
             </th>
-            <td />
+            <td></td>
           </tr>
         </tbody>
       </table>
@@ -207,7 +231,7 @@
     <p class="small-info text-center">
       Fat 9 &bull; Carbohydrate 4 &bull; Protein 4
     </p> -->
-    </v-expansion-panel-content>
+    </v-expansion-panel-text>
   </v-expansion-panel>
 </template>
 

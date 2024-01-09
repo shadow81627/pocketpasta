@@ -1,3 +1,0 @@
-Contact: mailto:damien.robinson@pocketpasta.com
-Preferred-Languages: en
-Canonical: https://pocketpasta.com/security.txt

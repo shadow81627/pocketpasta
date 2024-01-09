@@ -1,0 +1,6 @@
+{
+  "icon": "carbon:shopping-bag",
+  "name": "Shopping List",
+  "route": "shoppinglist",
+  "pos": "1/2"
+}

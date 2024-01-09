@@ -5,18 +5,37 @@
     nuxt
     ripple
     hover
-    elevation="4"
-    class="flex d-flex flex-column"
+    class="flex d-flex flex-column justify-between flex-grow-1"
   >
-    <v-avatar
+    <div
       v-show="layout === 'columns'"
       color="grey"
-      height="256"
+      size="256"
       width="auto"
+      rounded="0"
       tile
     >
-      <v-img
-        :lazy-src="$img(imageUrl, {}, { preset: 'placeholder' })"
+      <LazyNuxtPicture
+        :src="imageUrl"
+        :width="640"
+        :height="360"
+        class="flex-grow-0 max-w-full h-auto"
+        crossorigin="anonymous"
+        itemprop="image"
+        fit="inside"
+        loading="lazy"
+        :alt="name"
+        sizes="xs:100vw sm:50vw md:33vw lg:33vw xl:33vw"
+        :img-attrs="{
+          style: {
+            'object-fit': 'cover',
+            'max-width': '100%',
+            height: 'auto',
+          },
+        }"
+      ></LazyNuxtPicture>
+      <!-- <v-img
+        :lazy-src="img(imageUrl, {}, { preset: 'placeholder' })"
         :src="
           _srcset(imageUrl, {
             sizes: 'xs:100vw sm:50vw md:33vw lg:25vw',
@@ -31,14 +50,14 @@
         height="256"
         max-height="256"
         :alt="name"
-      />
-    </v-avatar>
-    <v-container>
+      /> -->
+    </div>
+    <v-container class="pa-0">
       <v-row class="align-center justify-center" no-gutters>
-        <v-col v-show="layout !== 'columns'" cols="auto">
-          <v-avatar class="ma-sm-3" size="128" tile color="grey">
+        <v-col v-if="layout !== 'columns'" cols="auto">
+          <div class="ma-sm-3" size="128" tile color="grey">
             <v-img
-              :lazy-src="$img(imageUrl, {}, { preset: 'placeholder' })"
+              :lazy-src="img(imageUrl, {}, { preset: 'placeholder' })"
               :src="source({ image: imageUrl }).src"
               :srcset="source({ image: imageUrl }).srcset"
               height="128"
@@ -46,15 +65,15 @@
               itemprop="image"
               :alt="name"
             />
-          </v-avatar>
+          </div>
         </v-col>
         <v-col cols="12" sm="" style="min-width: 224px">
-          <v-card-title title-tag="h2" class="h4 text-break text-wrap">
+          <v-card-title tag="h2" class="text-break text-wrap">
             {{ name }}
           </v-card-title>
-          <v-card-subtitle class="text-wrap text-subtitle-1">{{
+          <v-card-text class="text--primary text-body-1 pt-0">{{
             truncate(description)
-          }}</v-card-subtitle>
+          }}</v-card-text>
         </v-col>
       </v-row>
     </v-container>
@@ -62,9 +81,7 @@
 </template>
 
 <script>
-import ImageSources from '@/mixins/srcset';
 export default {
-  mixins: [ImageSources],
   inheritAttrs: false,
   props: {
     type: { type: String, required: true },
@@ -74,9 +91,13 @@ export default {
     image: { type: [String, Object, Array], default: null },
     layout: { type: String, default: null },
   },
+  setup() {
+    const img = useImage();
+    return { img };
+  },
   computed: {
     path() {
-      return `/${this.type.toLowerCase()}s/${this.slug}`;
+      return `/${this.type?.toLowerCase()}s/${this.slug}`;
     },
     imageUrl() {
       const image = Array.isArray(this.image) ? this.image[0] : this.image;
@@ -92,11 +113,19 @@ export default {
           return image;
         }
       } else {
-        return null;
+        return '/icon.png';
       }
     },
   },
   methods: {
+    _srcset(src = '/v1559982334/hero_rko6us.jpg', options) {
+      const defaults = {
+        sizes: 'xs:100vw sm:100vw md:100vw lg:100vw xl:100vw',
+        ...options,
+      };
+      const img = useImage();
+      return img.getSizes(src, defaults);
+    },
     truncate(text = '', stop = 150, clamp = '...') {
       return `${text.slice(0, stop)}${stop < text.length ? clamp : ''}`;
     },
@@ -112,6 +141,7 @@ export default {
       }
     },
     source({ image, width = 128, height = 128 }) {
+      // eslint-disable-next-line @typescript-eslint/no-this-alias
       const vm = this;
       const dprs = [1, 1.5, 2, 2.5, 3];
       return {

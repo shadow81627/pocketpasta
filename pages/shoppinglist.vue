@@ -4,104 +4,111 @@
       <v-col>
         <h1>Shopping</h1>
         <v-data-table
+          :items-per-page="-1"
           :headers="headers"
           :items="items"
           multi-sort
           class="elevation-1"
-          :group-by.sync="groupBy"
+          :group-by="groupBy"
           item-key="id"
           mobile-breakpoint="0"
-          :loading="$fetchState.pending"
-          :items-per-page.sync="limit"
-          :page.sync="page"
-          :sort-by.sync="sortBy"
           hide-default-footer
         >
-          <template #top>
-            <ListHeader
-              :headers="headers"
-              :direction.sync="direction"
-              :sort-by.sync="sortBy"
-              :search.sync="search"
-              :group-by.sync="groupBy"
-              :limit.sync="limit"
-              :view.sync="view"
-            />
-          </template>
-
-          <template #[`group.header`]="{ group, items: groupItems }">
-            <td :colspan="headers.length" class="item handle">
-              <v-container class="pa-0">
-                <v-row>
-                  <v-col>
-                    <v-text-field
-                      v-if="!group || (group && group.length === 0)"
-                      :value="group"
-                      :label="
+          <template
+            #group-header="{
+              item,
+              group,
+              columns,
+              items: groupItems,
+              toggleGroup,
+              isGroupOpen,
+            }"
+          >
+            <tr>
+              <td :colspan="columns.length" class="item handle">
+                <v-container class="pa-0">
+                  <v-row>
+                    <v-col>
+                      <!-- <v-btn
+                        size="small"
+                        variant="text"
+                        :icon="isGroupOpen(item) ? '$expand' : '$next'"
+                        @click="toggleGroup(item)"
+                      ></v-btn> -->
+                      {{ item.value }}
+                      <!-- User render to toggle open group -->
+                      {{ isGroupOpen(item) ? '' : toggleGroup(item) }}
+                      <v-text-field
+                        v-if="
+                          (!group || (group && group.length === 0)) && false
+                        "
+                        :value="group"
+                        xlabel="
                         headers
                           .filter((item) => item.text)
                           .find((item) => item.value === groupBy).text
                       "
-                      name="shopping-category"
-                      single-line
-                      hide-details
-                      clearable
-                      dense
-                      solo-inverted
-                      @change="
-                        (value) => {
-                          bulkUpdateAttribute({
-                            items: groupItems,
-                            key: 'category',
-                            value,
-                          });
-                        }
-                      "
-                    />
-                    <v-edit-dialog v-else large>
-                      {{ group }}
-                      <template #input>
-                        <v-text-field
-                          :value="group"
-                          label="Category"
-                          name="shopping-category"
-                          single-line
-                          counter
-                          clearable
-                          @change="
-                            (value) => {
-                              bulkUpdateAttribute({
-                                items: groupItems,
-                                key: 'category',
-                                value,
-                              });
-                            }
-                          "
-                        />
-                      </template>
-                    </v-edit-dialog>
-                  </v-col>
-                  <v-col cols="auto">
-                    <v-btn
-                      small
-                      icon
-                      class="bg-primary"
-                      @click="create({ ...defaultItem(), category: group })"
-                    >
-                      <v-icon>{{ icons.mdiPlus }}</v-icon>
-                    </v-btn>
-                  </v-col>
-                </v-row>
-              </v-container>
-            </td>
+                        name="shopping-category"
+                        single-line
+                        hide-details
+                        clearable
+                        dense
+                        solo-inverted
+                        @change="
+                          (value) => {
+                            bulkUpdateAttribute({
+                              items: groupItems,
+                              key: 'category',
+                              value,
+                            });
+                          }
+                        "
+                      />
+                      <v-edit-dialog v-else-if="false" large>
+                        {{ item.value }}
+                        <template #input>
+                          <v-text-field
+                            :value="group"
+                            label="Category"
+                            name="shopping-category"
+                            single-line
+                            counter
+                            clearable
+                            @change="
+                              (value) => {
+                                bulkUpdateAttribute({
+                                  items: groupItems,
+                                  key: 'category',
+                                  value,
+                                });
+                              }
+                            "
+                          />
+                        </template>
+                      </v-edit-dialog>
+                    </v-col>
+                    <v-col cols="auto">
+                      <v-btn
+                        size="small"
+                        variant="plain"
+                        @click="create({ ...defaultItem(), category: group })"
+                      >
+                        <v-icon>{{ icons.mdiPlus }}</v-icon>
+                      </v-btn>
+                    </v-col>
+                  </v-row>
+                </v-container>
+              </td>
+            </tr>
           </template>
 
           <template #[`item.done`]="{ item }">
-            <v-simple-checkbox
-              :value="item.done"
-              @input="
+            <v-checkbox-btn
+              :model-value="item.done"
+              @update:model-value="
                 (value) => {
-                  item.atomicSet('done', value);
+                  console.log('checkbox', value);
+                  item.patch({ done: value });
                 }
               "
             />
@@ -120,7 +127,7 @@
                   clearable
                   @input="
                     (value) => {
-                      item.atomicSet('name', value);
+                      item.patch({ name: value });
                     }
                   "
                 />
@@ -153,7 +160,7 @@
             />
             <v-edit-dialog
               v-else
-              :return-value.sync="item.category"
+              v-model:return-value="item.category"
               large
               @save="
                 item.isNew = false;
@@ -174,46 +181,34 @@
             </v-edit-dialog>
           </template>
 
-          <template #[`item.due`]="{ item }">
+          <!-- <template #[`item.due`]="{ item }">
             <v-edit-dialog
-              :return-value.sync="item.due"
+              v-model:return-value="item.due"
               large
               @save="save(item)"
             >
-              <v-chip
-                :color="
-                  !item.done &&
-                  DateTime.fromISO(item.due) <
-                    DateTime.local().minus({ days: 1 })
-                    ? 'red'
-                    : null
-                "
-                >{{
-                  DateTime.fromISO(item.due).toLocaleString(DateTime.DATE_FULL)
-                }}</v-chip
-              >
-              &nbsp;
-              {{ DateTime.fromISO(item.due).toRelativeCalendar() }}
               <template #input>
                 <v-date-picker v-model="item.due" scrollable />
               </template>
             </v-edit-dialog>
-          </template>
+          </template> -->
 
           <template #[`item.actions`]="{ item }">
-            <v-btn icon title="edit" @click="editItem(item)">
+            <v-btn variant="text" icon title="edit" @click="editItem(item)">
               <v-icon>
                 {{ icons.mdiPencil }}
               </v-icon>
             </v-btn>
             <ConfirmDialog @confirm="deleteItem(item)" />
           </template>
+
+          <template #bottom></template>
         </v-data-table>
       </v-col>
     </v-row>
     <v-row>
       <v-col>
-        <ConfirmDialog
+        <!-- <ConfirmDialog
           v-if="items.length"
           action="delete all your items"
           @confirm="clear(items)"
@@ -221,7 +216,7 @@
           <template #activator="{ on, attrs }">
             <v-btn color="danger" v-bind="attrs" v-on="on">Clear All</v-btn>
           </template>
-        </ConfirmDialog>
+        </ConfirmDialog> -->
 
         <v-dialog v-model="dialog" persistent max-width="400">
           <template #activator="{ on, attrs }">
@@ -279,10 +274,6 @@
 </template>
 
 <script>
-import ConfirmDialog from '@/components/ConfirmDialog.vue';
-import ListHeader from '@/components/List/ListHeader.vue';
-import { init } from '@/db';
-import { Ripple } from 'vuetify/lib/directives';
 import {
   mdiPencil,
   mdiDelete,
@@ -291,24 +282,25 @@ import {
   mdiCalendar,
   mdiPlus,
 } from '@mdi/js';
-import { DateTime } from 'luxon';
-import cuid from 'cuid';
-import { debounce } from 'lodash-es';
-
 export default {
-  components: {
-    ConfirmDialog,
-    ListHeader,
-  },
-
-  directives: {
-    Ripple,
+  async setup() {
+    const { $rxdb } = useNuxtApp();
+    let items = ref([]);
+    if ($rxdb) {
+      const query = $rxdb.shopping.find();
+      const sub = query.$.subscribe(function (results = []) {
+        console.log('results', results);
+        this.total = results.length;
+        items.value = results;
+      });
+      return { items, sub };
+    }
+    return { items };
   },
   data: () => ({
     categories: [],
-    total: 10,
+    total: 100,
     defaultLimit: -1,
-    DateTime,
     newDueMenu: false,
     icons: {
       mdiPencil,
@@ -321,48 +313,44 @@ export default {
     dialog: false,
     deleteDialog: false,
     headers: [
+      {
+        title: '',
+        key: 'data-table-group',
+        width: '0px',
+        align: 'center',
+        sortable: false,
+        headerProps: { class: 'd-none' },
+        cellProps: { class: 'd-none' },
+      },
       { value: 'done', align: 'start', width: 1 },
       {
-        text: 'Name',
+        title: 'Name',
         value: 'name',
         align: 'start',
         groupable: false,
       },
-      { text: 'Category', value: 'category', groupable: true },
+      {
+        title: 'Category',
+        value: 'category',
+        groupable: true,
+        headerProps: { class: 'd-none' },
+        cellProps: { class: 'd-none' },
+      },
       {
         value: 'actions',
         sortable: false,
         filterable: false,
         align: 'right',
-        width: 'auto',
+        width: 1,
       },
     ],
-    items: [],
     editedIndex: -1,
     editedItem: {
-      id: `${cuid()}`,
       name: '',
-      due: DateTime.local().toISODate(),
       category: '',
       done: false,
     },
   }),
-  async fetch() {
-    this.$db = await init({
-      remote: this.$warehouse.get('dbRemote') || this.$config.DB_REMOTE,
-      username: this.$warehouse.get('dbUsername') || this.$config.DB_USERNAME,
-      password: this.$warehouse.get('dbPassword') || this.$config.DB_PASSWORD,
-    });
-    this.collection = this.$db.shopping.find({
-      selector: {
-        name: { $regex: `.*${this.search}.*` },
-      },
-    });
-    this.sub = this.collection.$.subscribe((results = []) => {
-      this.total = results.length;
-      this.items = results;
-    });
-  },
   head() {
     return {
       title: 'Shopping',
@@ -424,11 +412,13 @@ export default {
     },
     groupBy: {
       get() {
-        const groupBy = this.$route.query.groupBy ?? 'category';
-        return this.items.length ? groupBy : null;
+        const route = useRoute();
+        const groupBy = route.query.groupBy ?? 'category';
+        return this.items.length ? [{ key: groupBy }] : [];
       },
       set(groupBy) {
-        this.$router.push({ query: this.query({ groupBy }) });
+        // const router = useRouter();
+        // router.push({ query: this.query({ groupBy }) });
       },
     },
     view: {
@@ -445,26 +435,21 @@ export default {
     dialog(val) {
       val || this.close();
     },
-    '$route.query': debounce(function () {
-      this.$fetch();
-    }, 500),
   },
-  beforeDestroy() {
+  beforeUnmount() {
     if (this.sub) {
       this.sub.unsubscribe();
     }
   },
   methods: {
     defaultItem: () => ({
-      id: `${cuid()}`,
       name: '',
       category: '',
-      due: DateTime.local().toISODate(),
       done: false,
     }),
 
     editItem(item) {
-      this.editedItem = item.toJSON();
+      this.editedItem = item.toMutableJSON();
       this.dialog = true;
     },
     async deleteItem(item) {
@@ -485,7 +470,8 @@ export default {
     },
 
     async save(item) {
-      await this.$db.shopping.upsert(item);
+      const { $rxdb } = useNuxtApp();
+      await $rxdb.shopping.upsert(item);
       this.close();
     },
 
@@ -494,7 +480,7 @@ export default {
     },
 
     async bulkUpdateAttribute({ items, key, value }) {
-      await Promise.all(items.map((item) => item.atomicSet(key, value)));
+      await Promise.all(items.map((item) => item.patch({ [key]: value })));
     },
 
     query({

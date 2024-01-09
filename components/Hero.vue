@@ -1,22 +1,40 @@
 <template>
-  <v-container class="pa-0 hidden-print-only" fluid v-on="$listeners">
+  <v-container class="pa-0 hidden-print-only" fluid>
     <v-row no-gutters align="center" justify="center">
       <v-col cols="12" align-self="center">
-        <v-card :color="color" flat tile>
-          <v-img
-            :lazy-src="$img(src, {}, { preset: 'placeholder' })"
-            :src="_srcset(src, { preset: 'hero' }).src"
-            :srcset="_srcset(src, { preset: 'hero' }).srcset"
-            :alt="alt"
-            max-height="80vh"
-            :sizes="_srcset(src, { preset: 'hero' }).size"
-            :width="width"
-            :height="height"
-            :gradient="gradient"
-            :contain="contain"
-            color="grey"
-            :aspect-ratio="aspectRatio"
-          >
+        <v-card
+          :color="color"
+          variant="flat"
+          theme="dark"
+          rounded="0"
+          :style="{ backgroundColor: color }"
+        >
+          <v-responsive :height="height" :gradient="gradient">
+            <template #additional>
+              <NuxtPicture
+                preload
+                :src="src"
+                :height="height"
+                alt=""
+                itemprop="image"
+                fit="cover"
+                :img-attrs="{ style: imageStyle }"
+                :style="imageStyle"
+                crossorigin="anonymous"
+              ></NuxtPicture>
+              <div
+                style="
+                  background-repeat: no-repeat;
+                  z-index: -1;
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                "
+                :style="{ backgroundImage: `linear-gradient(${gradient})` }"
+              ></div>
+            </template>
             <slot>
               <v-container
                 class="fill-height align-items-end justify-start"
@@ -24,17 +42,57 @@
               >
                 <v-row align="center" justify="center">
                   <v-col class="text-center" cols="12">
-                    <h1 v-if="heading" class="mb-4 text-shadow">
-                      {{ heading }}
-                    </h1>
-                    <h2 v-if="subheading" class="subheading text-shadow">
+                    <slot name="heading">
+                      <h1
+                        v-if="heading"
+                        class="mb-4 text-shadow text-h3 font-weight-medium"
+                        itemprop="name"
+                      >
+                        {{ heading }}
+                      </h1>
+                    </slot>
+                    <h2
+                      v-if="subheading"
+                      class="subheading text-shadow text-h4 text-uppercase"
+                      itemprop="description"
+                    >
                       {{ subheading }}
                     </h2>
+                  </v-col>
+                  <v-col
+                    v-if="_attributions?.length"
+                    class="d-flex flex-col text-right align-end justify-end font-mono"
+                  >
+                    <div
+                      v-for="attribution of _attributions"
+                      :key="attribution.key"
+                    >
+                      {{ attribution.typeText }}
+                      <a
+                        :href="attribution.by.url"
+                        rel="noopener"
+                        target="_blank"
+                        class="text-white"
+                        >{{ attribution.by.text }}</a
+                      >
+                      <template
+                        v-if="attribution.on.text && attribution.by.text"
+                      >
+                        on
+                      </template>
+                      <a
+                        :href="attribution.on.url"
+                        rel="noopener"
+                        target="_blank"
+                        class="text-white"
+                        >{{ attribution.on.text }}</a
+                      >
+                    </div>
                   </v-col>
                 </v-row>
               </v-container>
             </slot>
-          </v-img>
+          </v-responsive>
         </v-card>
       </v-col>
     </v-row>
@@ -42,67 +100,60 @@
 </template>
 
 <script>
-import ImageSources from '@/mixins/srcset';
 export default {
-  mixins: [ImageSources],
   props: {
-    aspectRatio: { type: Number, default: 16 / 9 },
-    heading: { type: String, default: null },
-    subheading: { type: String, default: null },
+    heading: { type: String, default: undefined },
+    subheading: { type: String, default: undefined },
+    description: { type: String, default: undefined },
     alt: { type: String, default: '' },
-    contain: { type: Boolean, default: undefined },
     gradient: {
       type: String,
       default: 'rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)',
     },
-    width: { type: [Number, String], default: null },
-    height: { type: [Number, String], default: null },
+    width: { type: [Number, String], default: 1280 },
+    height: { type: [Number, String], default: 500 },
     color: {
       type: String,
-      default: null,
+      default: '#575757',
     },
     src: {
       type: String,
-      default: '/v1559982334/hero_rko6us.jpg',
+      default: '/img/header-bg.jpg',
+    },
+    credit: {
+      type: Object,
+      default: () => ({}),
     },
   },
-  head() {
-    return {
-      meta: [
-        {
-          hid: 'og:image',
-          property: 'og:image',
-          content: `${this.$config.BASE_URL}${this.$img(
-            this.src,
-            {},
-            { preset: 'og' },
-          )}`,
-        },
-        {
-          hid: 'og:image:width',
-          property: 'og:image:width',
-          content: 1280,
-        },
-        {
-          hid: 'og:image:height',
-          property: 'og:image:height',
-          content: 630,
-        },
-      ],
-      link: [
-        {
-          rel: 'preload',
-          as: 'image',
-          href: `${this.$config.BASE_URL}${this.$img(
-            this.src,
-            {},
-            { preset: 'hero' },
-          )}`,
-          imagesrcset: this._srcset.srcset,
-          imagesizes: this._srcset.size,
-        },
-      ],
-    };
+  setup() {
+    const imageStyle = `z-index: -1;
+    object-fit: cover;
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;`;
+    // const img = useImage();
+    // const ogImage = img(props.src, {
+    //   width: 1200,
+    //   height: 630,
+    //   fit: "cover",
+    //   format: "png",
+    // });
+    // useServerSeoMeta({
+    //   title: props.heading,
+    //   ogTitle: props.heading,
+    //   description: props.description ?? props.subheading,
+    //   ogDescription: props.description ?? props.subheading,
+    //   // ogImage,
+    //   ogImageHeight: props.height,
+    //   ogImageWidth: props.width,
+    // });
+    // defineOgImageStatic({
+    //   component: "CustomBanner",
+    //   backgroundImage: ogImage,
+    // });
+    return { imageStyle };
   },
 };
 </script>

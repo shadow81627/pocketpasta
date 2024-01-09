@@ -1,89 +1,52 @@
 <template>
-  <v-app id="inspire" clipped-left>
+  <v-app clipped-left>
     <v-navigation-drawer
       id="navigation-drawer"
       v-model="drawer"
-      :clipped="$vuetify.breakpoint.lgAndUp"
-      app
       disable-resize-watcher
       class="hidden-print-only"
     >
-      <v-list dense>
-        <template v-for="item in items">
-          <v-row v-if="item.heading" :key="item.heading" align="center">
-            <v-col cols="6">
-              <v-subheader v-if="item.heading">{{ item.heading }}</v-subheader>
-            </v-col>
-            <v-col cols="6" class="text-center">
-              <a href="#!" class="text-body-2 black--text">EDIT</a>
-            </v-col>
-          </v-row>
-          <v-list-group
-            v-else-if="item.children"
-            :key="item.text"
-            v-model="item.model"
-            :prepend-icon="item.model ? item.icon : item['icon-alt']"
-            append-icon
-          >
-            <template #activator>
-              <v-list-item>
-                <v-list-item-content>
-                  <v-list-item-title
-                    ><nuxt-link
-                      :to="localePath(item.route ? item.route : {})"
-                      >{{ item.text }}</nuxt-link
-                    ></v-list-item-title
-                  >
-                </v-list-item-content>
-              </v-list-item>
-            </template>
-            <v-list-item v-for="(child, i) in item.children" :key="i">
-              <v-list-item-action v-if="child.icon">
-                <v-icon>${{ child.icon }}</v-icon>
-              </v-list-item-action>
-              <v-list-item-content>
-                <v-list-item-title>
-                  <nuxt-link :to="localePath(item.route ? item.route : {})">{{
-                    child.text
-                  }}</nuxt-link></v-list-item-title
-                >
-              </v-list-item-content>
-            </v-list-item>
-          </v-list-group>
-          <v-list-item
-            v-else
-            :key="item.text"
-            :to="localePath(item.route ? item.route : {})"
-            nuxt
-          >
-            <v-list-item-action>
-              <v-icon>{{ item.icon }}</v-icon>
+      <v-list
+        v-if="Array.isArray(items) && items.length"
+        dense
+        :role="undefined"
+      >
+        <v-list-item
+          v-for="item in items"
+          :key="item.name"
+          :to="{ name: item.route }"
+          exact
+          class="text-decoration-none"
+        >
+          <template #prepend>
+            <v-list-item-action style="margin-right: 32px">
+              <BaseIcon :icon="item.icon"></BaseIcon>
             </v-list-item-action>
-            <v-list-item-content>
-              <v-list-item-title>{{ item.text }}</v-list-item-title>
-            </v-list-item-content>
-          </v-list-item>
-        </template>
+          </template>
+          <v-list-item-title style="font-size: 16px; line-height: 1.4">{{
+            item.name
+          }}</v-list-item-title>
+        </v-list-item>
       </v-list>
     </v-navigation-drawer>
     <v-app-bar
-      :clipped-left="$vuetify.breakpoint.lgAndUp"
-      app
-      fixed
       class="hidden-print-only"
       height="64"
       xcolor="#59ecc0"
+      :order="-1"
     >
       <v-app-bar-nav-icon
+        v-if="Array.isArray(items) && items.length"
         id="app-bar-nav-icon"
         aria-label="menu"
         @click.stop="drawer = !drawer"
-        ><v-progress-circular v-if="loading" indeterminate size="18" width="2"
-      /></v-app-bar-nav-icon>
+      >
+        <v-progress-circular v-if="loading" indeterminate size="18" width="2" />
+        <v-icon v-else icon="$menu"></v-icon>
+      </v-app-bar-nav-icon>
       <v-avatar width="32" height="32" tile>
         <v-img
-          :src="$icon(32)"
-          :srcset="`${$icon(32)} 1x, ${$icon(64)} 2x`"
+          src="/favicon.ico"
           width="32"
           height="32"
           alt="PocketPasta"
@@ -96,26 +59,38 @@
         <span class="brand d-none d-sm-flex pr-2">PocketPasta</span>
       </v-toolbar-title>
       <v-spacer />
-      <AddToHomeScreen icon />
-      <UserMenu />
     </v-app-bar>
-    <v-main class="pb-0">
-      <nuxt style="min-height: 100vh" xkeep-alive />
-      <TheFooter />
+    <v-main
+      class="pb-0"
+      style="padding-top: 64px"
+      role="main"
+      itemprop="mainContentOfPage"
+      itemscope
+      itemtype="https://schema.org/WebPageElement"
+    >
+      <slot style="min-height: 100vh"></slot>
+      <LayoutFooter></LayoutFooter>
     </v-main>
   </v-app>
 </template>
 
 <script>
-import AddToHomeScreen from '@/components/AddToHomeScreen.vue';
-import UserMenu from '@/components/UserMenu.vue';
-import TheFooter from '@/components/Layout/the-footer.vue';
-import { mdiClipboardListOutline } from '@mdi/js';
 export default {
-  components: {
-    AddToHomeScreen,
-    UserMenu,
-    TheFooter,
+  async setup() {
+    const { data: items } = await useAsyncData(
+      'layout-sidebar-pages',
+      () => queryContent('layout/sidebar').find(),
+      {
+        transform(data) {
+          const items = data.map((item) => ({
+            ...item,
+            pos: fractionToDecimal(item.pos),
+          }));
+          return useOrderBy(items, ['pos'], 'desc');
+        },
+      },
+    );
+    return { items };
   },
   data() {
     return {
@@ -123,55 +98,6 @@ export default {
       dialog: false,
       drawer: false,
     };
-  },
-  head() {
-    const i18nSeo = this.$nuxtI18nSeo();
-    return {
-      htmlAttrs: {
-        ...i18nSeo.htmlAttrs,
-      },
-      meta: [
-        ...i18nSeo.meta,
-        {
-          hid: 'og:url',
-          name: 'og:url',
-          property: 'og:url',
-          content: `${this.$config.BASE_URL}${this.$route.path}`,
-        },
-      ],
-      link: [...i18nSeo.link],
-    };
-  },
-  computed: {
-    items() {
-      return [
-        {
-          icon: '$book',
-          text: this.$t('layout.navigation.recipes'),
-          route: { name: 'recipes' },
-        },
-        {
-          icon: '$store',
-          text: this.$t('layout.navigation.products'),
-          route: { name: 'products' },
-        },
-        {
-          icon: mdiClipboardListOutline,
-          text: 'Shopping List',
-          route: { name: 'shoppinglist' },
-        },
-        {
-          icon: '$calendar-check',
-          text: 'Tasks',
-          route: { name: 'tasks' },
-        },
-        {
-          icon: '$settings',
-          text: this.$t('layout.navigation.settings'),
-          route: { name: 'settings' },
-        },
-      ];
-    },
   },
   mounted() {
     if (process.client) {

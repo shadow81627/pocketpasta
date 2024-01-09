@@ -1,36 +1,34 @@
 <template>
   <div>
-    <v-card dark>
+    <v-card theme="dark">
       <div
-        class="
-          position-relative
-          overflow-hidden
-          pa-3 pa-md-12
-          text-center
-          bg-dark
-          text-light text-shadow
-          banner-image-background
-        "
+        class="position-relative overflow-hidden pa-3 pa-md-12 text-center bg-dark text-light text-shadow banner-image-background"
         :style="`
           position: relative;
           overflow: hidden;
           background-size: cover;
-          background-image: url(${$img(
+          background-image: url(${img(
             '/fl_progressive/ar_16:9,c_fill,f_auto,q_auto,dpr_auto,g_south,w_auto/c_limit,w_1920/v1559982334/hero_rko6us.jpg',
             {},
             { provider: 'cloudinary_upload' },
           )});
         `"
       >
-        <div class="product-device shadow-sm d-none d-md-block" />
+        <div class="product-device shadow-sm d-none d-md-block"></div>
         <div
           class="product-device product-device-2 shadow-sm d-none d-md-block"
-        />
+        ></div>
         <div class="col-md-5 pa-lg-12 mx-auto my-5">
-          <v-avatar width="200" height="176" tile class="mx-auto">
+          <div
+            width="200"
+            height="176"
+            tile
+            class="mx-auto"
+            style="width: 200px"
+          >
             <v-img
               :src="
-                $img(
+                img(
                   '/v1560038491/logo_vlqvdr.png',
                   {
                     width: 200,
@@ -45,13 +43,13 @@
               center
               contain
             />
-          </v-avatar>
+          </div>
           <h1 class="text-centers">PocketPasta</h1>
           <p class="lead font-weight-normal">
-            {{ $t('landing.banner.subheading') }}
+            Eat spagetti to forgetti your regretti
           </p>
         </div>
-        <Credit style="position: absolute; right: 0; bottom: 0" />
+        <UnsplashCredit style="position: absolute; right: 0; bottom: 0" />
       </div>
     </v-card>
 
@@ -61,32 +59,9 @@
           <v-col cols="12" align-self="center">
             <v-card class="elevation-0 transparent">
               <v-card-title primary-title class="layout justify-center">
-                <div class="text-h5">{{ $t('landing.contact.heading') }}</div>
+                <div class="text-h5">Contact Us</div>
               </v-card-title>
-              <v-list class="transparent">
-                <v-list-item>
-                  <v-list-item-action>
-                    <v-icon class="text-primary">$place</v-icon>
-                  </v-list-item-action>
-                  <v-list-item-content>
-                    <v-list-item-title>{{
-                      $t('landing.contact.location')
-                    }}</v-list-item-title>
-                  </v-list-item-content>
-                </v-list-item>
-                <v-list-item>
-                  <v-list-item-action>
-                    <v-icon class="text-primary">$email</v-icon>
-                  </v-list-item-action>
-                  <v-list-item-content>
-                    <v-list-item-title
-                      ><a :href="`mailto:${$t('landing.contact.email')}`">{{
-                        $t('landing.contact.email')
-                      }}</a></v-list-item-title
-                    >
-                  </v-list-item-content>
-                </v-list-item>
-              </v-list>
+              <BaseLinks :items="contactDetails"></BaseLinks>
             </v-card>
           </v-col>
         </v-row>
@@ -95,29 +70,32 @@
   </div>
 </template>
 
-<script>
-import Credit from '@/components/Layout/Credit/landing-hero-image-credit';
-
-import ImageSources from '@/mixins/srcset';
-
-export default {
-  components: {
-    Credit,
+<script setup>
+const img = useImage();
+// return { img };
+const contactDetails = [
+  {
+    icon: 'carbon:email',
+    subtitle: 'Email',
+    title: 'contact@pocketpasta.com',
+    href: 'mailto:contact@pocketpasta.com',
   },
-  mixins: [ImageSources],
-  layout: 'default',
-  async head() {
-    return {
-      script: [
-        {
-          json: await this.$content('pocketpasta').fetch(),
-          type: 'application/ld+json',
-        },
-      ],
-      link: [],
-    };
+  {
+    type: 'location',
+    icon: 'carbon:location',
+    subtitle: 'Location',
+    title: 'New Farm, Australia',
+    href: 'https://www.google.com.au/maps/search/?api=1&query=Daim%20Digital%201%2F888%20Brunswick%20Street%20New%20Farm%20Queensland%204005%20Australia',
+    location: {
+      streetAddress: 'Salt Space 1/888 Brunswick Street',
+      city: 'New Farm',
+      countryCode: 'AU',
+      country: 'Australia',
+      postalCode: '4005',
+      region: 'Queensland',
+    },
   },
-};
+];
 </script>
 
 <style scoped>
