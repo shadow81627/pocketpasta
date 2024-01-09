@@ -1,0 +1,6 @@
+{
+  "icon": "carbon:settings",
+  "name": "Settings",
+  "route": "settings",
+  "pos": "1/3"
+}
