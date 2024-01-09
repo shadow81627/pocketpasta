@@ -449,7 +449,7 @@ export default {
     }),
 
     editItem(item) {
-      this.editedItem = item.toJSON();
+      this.editedItem = item.toMutableJSON();
       this.dialog = true;
     },
     async deleteItem(item) {
