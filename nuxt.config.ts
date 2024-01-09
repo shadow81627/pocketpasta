@@ -1,5 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify';
+import { nodePolyfills } from 'vite-plugin-node-polyfills';
 import pkg from './package';
 
 const env = {
@@ -147,12 +148,39 @@ export default defineNuxtConfig({
 
   sourcemap: true,
 
+  app: {
+    head: {
+      script: [
+        {
+          innerHTML: `if (window.global === undefined) {
+              window.global = window;
+            }
+            if (window.process === undefined) {
+              window.process = {};
+            }
+            if (window.process.nextTick === undefined) {
+              window.process.nextTick = (fn, ...args) => setTimeout(fn(...args), 0);
+            }`,
+        },
+      ],
+    },
+  },
+
   vite: {
     vue: {
       template: {
         transformAssetUrls,
       },
     },
-    plugins: [vuetify({ autoImport: true })],
+    plugins: [
+      vuetify({ autoImport: true }),
+      nodePolyfills({
+        include: ['process', '_stream_readable'],
+        globals: {
+          global: true,
+          process: true,
+        },
+      }),
+    ],
   },
 });
