@@ -4,6 +4,7 @@
       <v-col>
         <h1>Shopping</h1>
         <v-data-table
+          :items-per-page="-1"
           :headers="headers"
           :items="items"
           multi-sort
