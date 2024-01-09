@@ -27,9 +27,9 @@ const env = {
 export default defineNuxtConfig({
   devtools: { enabled: true },
 
-  experimental: {
-    asyncContext: true,
-  },
+  // experimental: {
+  //   asyncContext: true,
+  // },
 
   publicRuntimeConfig: {
     public: {
@@ -172,15 +172,6 @@ export default defineNuxtConfig({
         transformAssetUrls,
       },
     },
-    plugins: [
-      vuetify({ autoImport: true }),
-      nodePolyfills({
-        include: ['process', '_stream_readable'],
-        globals: {
-          global: true,
-          process: true,
-        },
-      }),
-    ],
+    plugins: [vuetify({ autoImport: true })],
   },
 });
