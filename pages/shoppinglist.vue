@@ -208,7 +208,7 @@
     </v-row>
     <v-row>
       <v-col>
-        <ConfirmDialog
+        <!-- <ConfirmDialog
           v-if="items.length"
           action="delete all your items"
           @confirm="clear(items)"
@@ -216,7 +216,7 @@
           <template #activator="{ on, attrs }">
             <v-btn color="danger" v-bind="attrs" v-on="on">Clear All</v-btn>
           </template>
-        </ConfirmDialog>
+        </ConfirmDialog> -->
 
         <v-dialog v-model="dialog" persistent max-width="400">
           <template #activator="{ on, attrs }">
