@@ -4279,6 +4279,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@vue/devtools-api@npm:^6.5.1":
+  version: 6.6.1
+  resolution: "@vue/devtools-api@npm:6.6.1"
+  checksum: cf12b5ebcc7729725087072289410107b55bb82e0b86b8442e4e85516977110a8a3f4e1dec763be8b567a59173703b4e9c0ac1b0489bb2bb81363af7ea258a27
+  languageName: node
+  linkType: hard
+
 "@webassemblyjs/ast@npm:1.9.0":
   version: 1.9.0
   resolution: "@webassemblyjs/ast@npm:1.9.0"
@@ -17622,7 +17629,7 @@ __metadata:
     stylelint: 14.0.1
     stylelint-config-prettier: 9.0.3
     utility-opentype: 0.1.4
-    vee-validate: 3.4.13
+    vee-validate: 4.12.6
     vue-disqus: 4.0.1
     vue-plyr: 6.0.4
     vue-virtual-scroll-list: 2.3.3
@@ -22556,6 +22563,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"type-fest@npm:^4.8.3":
+  version: 4.11.1
+  resolution: "type-fest@npm:4.11.1"
+  checksum: bbeebe45475f66b43d2b23af7cfc1b302fb5acca04e29f6e57dd2b198fb08f05275ea12a5337922961c1c059c8c1a7c4ea9967421c9d94aa5c950c86485c2e4b
+  languageName: node
+  linkType: hard
+
 "type-is@npm:^1.6.16, type-is@npm:~1.6.17, type-is@npm:~1.6.18":
   version: 1.6.18
   resolution: "type-is@npm:1.6.18"
@@ -23319,12 +23333,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vee-validate@npm:3.4.13":
-  version: 3.4.13
-  resolution: "vee-validate@npm:3.4.13"
+"vee-validate@npm:4.12.6":
+  version: 4.12.6
+  resolution: "vee-validate@npm:4.12.6"
+  dependencies:
+    "@vue/devtools-api": ^6.5.1
+    type-fest: ^4.8.3
   peerDependencies:
-    vue: ^2.5.18
-  checksum: e06b874f5dc5527f859e33923a67ab6b920384e163d81a8db4f4daf5b9fa0098c48422da3babac8064ae81d68860403034d476c0713e0f634ffcb50d4dd4b61b
+    vue: ^3.3.11
+  checksum: a0b4361b2eb6ae663e45e2da78f3564a108e72de793cb95166b32fdaee68997cdf9bd9eea56b6f371f0c6cd1897d1a1563eb5e020034dd74e5692d86b47bab48
   languageName: node
   linkType: hard
 
