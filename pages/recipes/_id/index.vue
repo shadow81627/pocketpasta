@@ -209,12 +209,18 @@
         </v-expansion-panels>
         <Disqus shortname="pocketpasta" style="margin-top: 16px" />
       </div>
+      <EditShoppingListItem
+        v-model="editedItem"
+        :dialog="dialog"
+        @dialog="(val) => (dialog = val)"
+      >
+        <span></span>
+      </EditShoppingListItem>
     </client-only>
   </div>
 </template>
 
 <script>
-import { init } from '@/db';
 import cuid from 'cuid';
 import { Disqus } from 'vue-disqus';
 import VuePlyr from 'vue-plyr/dist/vue-plyr.ssr.js';
@@ -256,6 +262,8 @@ export default {
       id: 0,
       showDescription: false,
       videoClicked: false,
+      editedItem: null,
+      dialog: false,
     };
   },
   head() {
@@ -317,13 +325,6 @@ export default {
       }
     },
   },
-  async created() {
-    this.$db = await init({
-      remote: this.$warehouse.get('dbRemote') || this.$config.DB_REMOTE,
-      username: this.$warehouse.get('dbUsername') || this.$config.DB_USERNAME,
-      password: this.$warehouse.get('dbPassword') || this.$config.DB_PASSWORD,
-    });
-  },
   mounted() {
     const buttons = document.getElementsByTagName('button');
     Array.from(buttons).map((btn) =>
@@ -338,14 +339,14 @@ export default {
         '@context': 'http://schema.org/',
       };
     },
-    async add(item) {
-      const _item = {
+    add(item) {
+      this.editedItem = {
         id: `${cuid()}`,
         name: item,
         category: '',
         done: false,
       };
-      await this.$db.shopping.upsert(_item);
+      this.dialog = true;
     },
   },
 };
