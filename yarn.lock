@@ -17627,7 +17627,7 @@ __metadata:
     vue-plyr: 6.0.4
     vue-virtual-scroll-list: 2.3.3
     vue-warehouse: 2.2.0
-    vuetify: 2.5.10
+    vuetify: 2.6.10
     vuetify-loader: 1.7.3
   languageName: unknown
   linkType: soft
@@ -23622,12 +23622,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vuetify@npm:2.5.10":
-  version: 2.5.10
-  resolution: "vuetify@npm:2.5.10"
+"vuetify@npm:2.6.10":
+  version: 2.6.10
+  resolution: "vuetify@npm:2.6.10"
   peerDependencies:
     vue: ^2.6.4
-  checksum: 3cbb3cb96d63daffdf44ffe0e57c44fb8970eb74d196eaca9ca257990d560a97b6d21ca9415e24435bbb54057d89b3d2392d97e3bf3bb6efd16f1202e846c64d
+  checksum: def5c3897cca432e5761059df947c3af3bccc47d23f481c91acca5bd5551aa1a35efcd3c146e59e8f37363b3a5729489d40a41345426d213ef9f3903e997c313
   languageName: node
   linkType: hard
 
