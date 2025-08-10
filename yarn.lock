@@ -2693,17 +2693,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxtjs/sentry@npm:5.1.4":
-  version: 5.1.4
-  resolution: "@nuxtjs/sentry@npm:5.1.4"
+"@nuxtjs/sentry@npm:5.1.7":
+  version: 5.1.7
+  resolution: "@nuxtjs/sentry@npm:5.1.7"
   dependencies:
-    "@sentry/browser": ^6.13.2
-    "@sentry/integrations": ^6.13.2
-    "@sentry/node": ^6.13.2
-    "@sentry/webpack-plugin": ^1.17.1
+    "@sentry/browser": ^6.17.3
+    "@sentry/integrations": ^6.17.3
+    "@sentry/node": ^6.17.3
+    "@sentry/webpack-plugin": ^1.18.4
     consola: ^2.15.3
     lodash.mergewith: ^4.6.2
-  checksum: 676fecf91550507b168522982f7568838594acaf7f878fcaca994b7eb6a2fe821c6540e29b80e01a0c69bba460ebc2cc45a8ca4a23dd40111e025ad9f6381f6f
+  checksum: 64142a0186d2d5af4ae1e4bf21fb58cf23f2344b01dbd02a96405740c8de703cb6e3ed9047f6bbe404e0cabfce866db2fe741e85ab2f78ee508de5fee33ae31c
   languageName: node
   linkType: hard
 
@@ -3153,7 +3153,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sentry/browser@npm:^6.13.2":
+"@sentry/browser@npm:^6.17.3":
   version: 6.19.7
   resolution: "@sentry/browser@npm:6.19.7"
   dependencies:
@@ -3165,20 +3165,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sentry/cli@npm:^1.74.6":
-  version: 1.74.6
-  resolution: "@sentry/cli@npm:1.74.6"
+"@sentry/cli@npm:^1.77.1":
+  version: 1.77.3
+  resolution: "@sentry/cli@npm:1.77.3"
   dependencies:
     https-proxy-agent: ^5.0.0
     mkdirp: ^0.5.5
     node-fetch: ^2.6.7
-    npmlog: ^4.1.2
     progress: ^2.0.3
     proxy-from-env: ^1.1.0
     which: ^2.0.2
   bin:
     sentry-cli: bin/sentry-cli
-  checksum: 3d1ef94d5505ed23858503228b59ae1ed401774e27466d7a47eba47be3855e9706f12292d4a0a6135303a5916791620e0d3a184d2fda9e28f2d26ccd347b36fb
+  checksum: 193a144c5b449d5c0ea709d7c5678da3f1daa15f31aefa7de40197ed1152fef7c2a0abe168ce2447f1cc2f6eed6fdbcdaa5f20dc4502f8987d656d3e5e87fe99
   languageName: node
   linkType: hard
 
@@ -3206,7 +3205,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sentry/integrations@npm:^6.13.2":
+"@sentry/integrations@npm:^6.17.3":
   version: 6.19.7
   resolution: "@sentry/integrations@npm:6.19.7"
   dependencies:
@@ -3229,7 +3228,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sentry/node@npm:^6.13.2":
+"@sentry/node@npm:^6.17.3":
   version: 6.19.7
   resolution: "@sentry/node@npm:6.19.7"
   dependencies:
@@ -3262,13 +3261,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sentry/webpack-plugin@npm:^1.17.1":
-  version: 1.20.0
-  resolution: "@sentry/webpack-plugin@npm:1.20.0"
+"@sentry/webpack-plugin@npm:^1.18.4":
+  version: 1.21.0
+  resolution: "@sentry/webpack-plugin@npm:1.21.0"
   dependencies:
-    "@sentry/cli": ^1.74.6
+    "@sentry/cli": ^1.77.1
     webpack-sources: ^2.0.0 || ^3.0.0
-  checksum: d582026c3686f287ddc23de4e64c6f03afc2a73a84ec5a8fd3eded56a45683094bf132f4c624a35386fff872eb518771109d5c0b91a2cf79da0aff035c5bb05b
+  checksum: 218cdf40df735fc8c358833dbeb16121cf4b0cf61f10adc233561877d4149b5ed0ac3f8b0efcdf3bc66e94d506820e641b2327487e435caecad93e9465b3522a
   languageName: node
   linkType: hard
 
@@ -4827,7 +4826,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"aproba@npm:^1.0.3, aproba@npm:^1.1.1":
+"aproba@npm:^1.1.1":
   version: 1.2.0
   resolution: "aproba@npm:1.2.0"
   checksum: 0fca141966559d195072ed047658b6e6c4fe92428c385dd38e288eacfc55807e7b4989322f030faff32c0f46bb0bc10f1e0ac32ec22d25315a1e5bbc0ebb76dc
@@ -4875,16 +4874,6 @@ __metadata:
     delegates: ^1.0.0
     readable-stream: ^4.1.0
   checksum: 35d6a65ce9a0c53d8d8eeef8805528c483c5c3512f2050b32c07e61becc440c4ec8178d6ee6cedc1e5a81b819eb55d9c0a9fc7d9f862cae4c7dc30ec393f0a58
-  languageName: node
-  linkType: hard
-
-"are-we-there-yet@npm:~1.1.2":
-  version: 1.1.7
-  resolution: "are-we-there-yet@npm:1.1.7"
-  dependencies:
-    delegates: ^1.0.0
-    readable-stream: ^2.0.6
-  checksum: 70d251719c969b2745bfe5ddf3ebaefa846a636e90a6d5212573676af5d6670e15457761d4725731e19cbebdce42c4ab0cbedf23ab047f2a08274985aa10a3c7
   languageName: node
   linkType: hard
 
@@ -7123,7 +7112,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"console-control-strings@npm:^1.0.0, console-control-strings@npm:^1.1.0, console-control-strings@npm:~1.1.0":
+"console-control-strings@npm:^1.0.0, console-control-strings@npm:^1.1.0":
   version: 1.1.0
   resolution: "console-control-strings@npm:1.1.0"
   checksum: 8755d76787f94e6cf79ce4666f0c5519906d7f5b02d4b884cf41e11dcd759ed69c57da0670afd9236d229a46e0f9cf519db0cd829c6dca820bb5a5c3def584ed
@@ -10786,22 +10775,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"gauge@npm:~2.7.3":
-  version: 2.7.4
-  resolution: "gauge@npm:2.7.4"
-  dependencies:
-    aproba: ^1.0.3
-    console-control-strings: ^1.0.0
-    has-unicode: ^2.0.0
-    object-assign: ^4.1.0
-    signal-exit: ^3.0.0
-    string-width: ^1.0.1
-    strip-ansi: ^3.0.1
-    wide-align: ^1.1.0
-  checksum: a89b53cee65579b46832e050b5f3a79a832cc422c190de79c6b8e2e15296ab92faddde6ddf2d376875cbba2b043efa99b9e1ed8124e7365f61b04e3cee9d40ee
-  languageName: node
-  linkType: hard
-
 "generate-function@npm:^2.0.0":
   version: 2.3.1
   resolution: "generate-function@npm:2.3.1"
@@ -11473,7 +11446,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"has-unicode@npm:^2.0.0, has-unicode@npm:^2.0.1":
+"has-unicode@npm:^2.0.1":
   version: 2.0.1
   resolution: "has-unicode@npm:2.0.1"
   checksum: 1eab07a7436512db0be40a710b29b5dc21fa04880b7f63c9980b706683127e3c1b57cb80ea96d47991bdae2dfe479604f6a1ba410106ee1046a41d1bd0814400
@@ -16358,18 +16331,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"npmlog@npm:^4.1.2":
-  version: 4.1.2
-  resolution: "npmlog@npm:4.1.2"
-  dependencies:
-    are-we-there-yet: ~1.1.2
-    console-control-strings: ~1.1.0
-    gauge: ~2.7.3
-    set-blocking: ~2.0.0
-  checksum: edbda9f95ec20957a892de1839afc6fb735054c3accf6fbefe767bac9a639fd5cea2baeac6bd2bcd50a85cb54924d57d9886c81c7fbc2332c2ddd19227504192
-  languageName: node
-  linkType: hard
-
 "npmlog@npm:^5.0.1":
   version: 5.0.1
   resolution: "npmlog@npm:5.0.1"
@@ -17575,7 +17536,7 @@ __metadata:
     "@nuxtjs/google-analytics": 2.4.0
     "@nuxtjs/markdownit": 2.0.0
     "@nuxtjs/pwa": 3.3.5
-    "@nuxtjs/sentry": 5.1.4
+    "@nuxtjs/sentry": 5.1.7
     "@nuxtjs/sitemap": 2.4.0
     "@nuxtjs/vuetify": 1.12.1
     "@semantic-release/changelog": 6.0.0
@@ -19427,7 +19388,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"readable-stream@npm:1 || 2, readable-stream@npm:^2.0.0, readable-stream@npm:^2.0.1, readable-stream@npm:^2.0.2, readable-stream@npm:^2.0.6, readable-stream@npm:^2.1.5, readable-stream@npm:^2.2.2, readable-stream@npm:^2.3.3, readable-stream@npm:^2.3.6, readable-stream@npm:~2.3.6":
+"readable-stream@npm:1 || 2, readable-stream@npm:^2.0.0, readable-stream@npm:^2.0.1, readable-stream@npm:^2.0.2, readable-stream@npm:^2.1.5, readable-stream@npm:^2.2.2, readable-stream@npm:^2.3.3, readable-stream@npm:^2.3.6, readable-stream@npm:~2.3.6":
   version: 2.3.7
   resolution: "readable-stream@npm:2.3.7"
   dependencies:
@@ -20758,7 +20719,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"set-blocking@npm:^2.0.0, set-blocking@npm:~2.0.0":
+"set-blocking@npm:^2.0.0":
   version: 2.0.0
   resolution: "set-blocking@npm:2.0.0"
   checksum: 6e65a05f7cf7ebdf8b7c75b101e18c0b7e3dff4940d480efed8aad3a36a4005140b660fa1d804cb8bce911cac290441dc728084a30504d3516ac2ff7ad607b02
@@ -23943,7 +23904,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"wide-align@npm:^1.1.0, wide-align@npm:^1.1.2, wide-align@npm:^1.1.5":
+"wide-align@npm:^1.1.2, wide-align@npm:^1.1.5":
   version: 1.1.5
   resolution: "wide-align@npm:1.1.5"
   dependencies:
