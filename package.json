@@ -67,7 +67,7 @@
     "@lhci/cli": "0.6.1",
     "@mdi/js": "6.4.95",
     "@nuxt/image": "0.6.0",
-    "@nuxtjs/color-mode": "2.1.1",
+    "@nuxtjs/color-mode": "3.5.2",
     "@nuxtjs/eslint-config": "7.0.0",
     "@nuxtjs/eslint-module": "3.0.2",
     "@nuxtjs/vuetify": "1.12.1",
