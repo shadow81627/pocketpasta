@@ -7464,10 +7464,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"core-js@npm:^3.26.1, core-js@npm:^3.8.1":
+"core-js@npm:^3.26.1":
   version: 3.26.1
   resolution: "core-js@npm:3.26.1"
   checksum: 0a01149f51ff1e9f41d1ea49cc4c9222047949ea597189ede7c4cf8cde3b097766b9c7615acc77c86fe65b4002f20b638a133dfba7b41dba830d707aeeed45ad
+  languageName: node
+  linkType: hard
+
+"core-js@npm:^3.45.1":
+  version: 3.50.0
+  resolution: "core-js@npm:3.50.0"
+  checksum: 3a3a0330731fbb98bb47fd676d90f9208171d6eacb42f9e0eb962d18f521fee412a5301c8aca533f5c3add550034824517e764d7fd9f6d4269cbca421027c193
   languageName: node
   linkType: hard
 
@@ -14202,6 +14209,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"loadjs@npm:^4.3.0":
+  version: 4.3.0
+  resolution: "loadjs@npm:4.3.0"
+  checksum: 47f882e590d71425b0fb3e78fc12168ceaf10b76c128879af262578c4893edee1dbcab26b0b26c8e342be6544bf9382d50bfeae597453a8e78f1fa825bcd7c7c
+  languageName: node
+  linkType: hard
+
 "localforage@npm:^1.8.1":
   version: 1.10.0
   resolution: "localforage@npm:1.10.0"
@@ -17512,16 +17526,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"plyr@npm:3.6.4":
-  version: 3.6.4
-  resolution: "plyr@npm:3.6.4"
+"plyr@npm:3.8.4":
+  version: 3.8.4
+  resolution: "plyr@npm:3.8.4"
   dependencies:
-    core-js: ^3.8.1
+    core-js: ^3.45.1
     custom-event-polyfill: ^1.0.7
-    loadjs: ^4.2.0
+    loadjs: ^4.3.0
     rangetouch: ^2.0.1
-    url-polyfill: ^1.1.12
-  checksum: 292a695b7ff831220181c582aa721ca3638bde3b108ab3079a82a3f66e29381bff1e84e9b104dd7053b21f6ede0cc5f573af1b2fd4cb0bd9d6835d567f0b0d51
+    url-polyfill: ^1.1.13
+  checksum: 8e06ee9a6c0db912aca17dba99b82e2f21b8a589a1d981ed600ce948d157b04f68c72581cb2bcd1b28aff3bf6aaba97214f798ec216e1e29646aa076f23a95c2
   languageName: node
   linkType: hard
 
@@ -17607,7 +17621,7 @@ __metadata:
     nuxt: 2.15.8
     nuxt-i18n: 6.28.1
     playwright: 1.16.2
-    plyr: 3.6.4
+    plyr: 3.8.4
     pouchdb-adapter-http: 7.2.2
     pouchdb-adapter-indexeddb: 7.2.2
     prettier: 2.4.1
@@ -23122,6 +23136,13 @@ __metadata:
   version: 1.1.12
   resolution: "url-polyfill@npm:1.1.12"
   checksum: 3214cc82424c215e921dacadac56b4b099f995d24e14078369bea9ff8aa74d1a4c803ab03021e61e0a275bee7979d212d046092dba3aab73cf232ee6739ddee4
+  languageName: node
+  linkType: hard
+
+"url-polyfill@npm:^1.1.13":
+  version: 1.1.14
+  resolution: "url-polyfill@npm:1.1.14"
+  checksum: a1ed653f8386804206f7af5f05b3885d3e59fd1162f8aececd4998738fa7e16cad89269f3f455f2225e49cd83c851f9ec739a0b97613447202c749569353dfc7
   languageName: node
   linkType: hard
 
