@@ -4279,6 +4279,39 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@vue/devtools-api@npm:^7.5.2":
+  version: 7.7.10
+  resolution: "@vue/devtools-api@npm:7.7.10"
+  dependencies:
+    "@vue/devtools-kit": ^7.7.10
+  checksum: ca55ffe1600c8c55c0304358cdb669e3f97399c8fdb3a4f0c4ff7d96c99b8a07bf42299551b1fe0c3cc6978b3668f843150ae58946f3b7076cd6e47d6d3cd6ef
+  languageName: node
+  linkType: hard
+
+"@vue/devtools-kit@npm:^7.7.10":
+  version: 7.7.10
+  resolution: "@vue/devtools-kit@npm:7.7.10"
+  dependencies:
+    "@vue/devtools-shared": ^7.7.10
+    birpc: ^2.3.0
+    hookable: ^5.5.3
+    mitt: ^3.0.1
+    perfect-debounce: ^1.0.0
+    speakingurl: ^14.0.1
+    superjson: ^2.2.2
+  checksum: e86819108c3b43e1f4e737fff5fc024b25d823877c1bd43f43c3a1f1af09c15e94bf72e5001d3867c9b2cb3a189a0ea382e50ab0c2a80d8da25228ee3eeef932
+  languageName: node
+  linkType: hard
+
+"@vue/devtools-shared@npm:^7.7.10":
+  version: 7.7.10
+  resolution: "@vue/devtools-shared@npm:7.7.10"
+  dependencies:
+    rfdc: ^1.4.1
+  checksum: 5ba8a061c91038cd964be56be039df15b807bbab95cd97b1e2f50cf1792668c089955d92aa823692bf2617ad0013aa4ef2dd2c0f63c92c00cfb68276d79f51a3
+  languageName: node
+  linkType: hard
+
 "@webassemblyjs/ast@npm:1.9.0":
   version: 1.9.0
   resolution: "@webassemblyjs/ast@npm:1.9.0"
@@ -5455,6 +5488,13 @@ __metadata:
   dependencies:
     file-uri-to-path: 1.0.0
   checksum: 65b6b48095717c2e6105a021a7da4ea435aa8d3d3cd085cb9e85bcb6e5773cf318c4745c3f7c504412855940b585bdf9b918236612a1c7a7942491de176f1ae7
+  languageName: node
+  linkType: hard
+
+"birpc@npm:^2.3.0":
+  version: 2.9.0
+  resolution: "birpc@npm:2.9.0"
+  checksum: 499cba9d33ae6749c199b4dc1fc30faeb72aabd41d5c75d73d1d415691f65f0b613d787f21aa2369607a555a5e09c55e437e02b14bc6bad67bb657f8ae58f3dd
   languageName: node
   linkType: hard
 
@@ -7424,6 +7464,13 @@ __metadata:
   version: 0.4.2
   resolution: "cookie@npm:0.4.2"
   checksum: a00833c998bedf8e787b4c342defe5fa419abd96b32f4464f718b91022586b8f1bafbddd499288e75c037642493c83083da426c6a9080d309e3bd90fd11baa9b
+  languageName: node
+  linkType: hard
+
+"copy-anything@npm:^4":
+  version: 4.1.0
+  resolution: "copy-anything@npm:4.1.0"
+  checksum: b92a28e78757a51c44d0a3f75edf23562d199463e7326278ae5cabc16cb866b480df2865b2f3d8a384b08ed4a5dbd3acfaa5b4e68343adbd2aa0c34445bcf5bd
   languageName: node
   linkType: hard
 
@@ -11733,6 +11780,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"hookable@npm:^5.5.3":
+  version: 5.5.3
+  resolution: "hookable@npm:5.5.3"
+  checksum: df659977888398649b6ef8c4470719e7e8384a1d939a6587e332e86fd55b3881806e2f8aaebaabdb4f218f74b83b98f2110e143df225e16d62a39dc271e7e288
+  languageName: node
+  linkType: hard
+
 "hosted-git-info@npm:*, hosted-git-info@npm:^6.0.0, hosted-git-info@npm:^6.1.1":
   version: 6.1.1
   resolution: "hosted-git-info@npm:6.1.1"
@@ -15488,6 +15542,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"mitt@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "mitt@npm:3.0.1"
+  checksum: b55a489ac9c2949ab166b7f060601d3b6d893a852515ae9eca4e11df01c013876df777ea109317622b5c1c60e8aae252558e33c8c94e14124db38f64a39614b1
+  languageName: node
+  linkType: hard
+
 "mixin-deep@npm:^1.2.0":
   version: 1.3.2
   resolution: "mixin-deep@npm:1.3.2"
@@ -17368,6 +17429,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"perfect-debounce@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "perfect-debounce@npm:1.0.0"
+  checksum: 220343acf52976947958fef3599849471605316e924fe19c633ae2772576298e9d38f02cefa8db46f06607505ce7b232cbb35c9bfd477bd0329bd0a2ce37c594
+  languageName: node
+  linkType: hard
+
 "performance-now@npm:^2.1.0":
   version: 2.1.0
   resolution: "performance-now@npm:2.1.0"
@@ -17622,7 +17690,7 @@ __metadata:
     stylelint: 14.0.1
     stylelint-config-prettier: 9.0.3
     utility-opentype: 0.1.4
-    vee-validate: 3.4.13
+    vee-validate: 4.15.1
     vue-disqus: 4.0.1
     vue-plyr: 6.0.4
     vue-virtual-scroll-list: 2.3.3
@@ -20143,6 +20211,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"rfdc@npm:^1.4.1":
+  version: 1.4.1
+  resolution: "rfdc@npm:1.4.1"
+  checksum: 3b05bd55062c1d78aaabfcea43840cdf7e12099968f368e9a4c3936beb744adb41cbdb315eac6d4d8c6623005d6f87fdf16d8a10e1ff3722e84afea7281c8d13
+  languageName: node
+  linkType: hard
+
 "rgb-regex@npm:^1.0.1":
   version: 1.0.1
   resolution: "rgb-regex@npm:1.0.1"
@@ -21280,6 +21355,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"speakingurl@npm:^14.0.1":
+  version: 14.0.1
+  resolution: "speakingurl@npm:14.0.1"
+  checksum: 5c7fb81d9b4cbda31f462f424cc2d59d9d07ca07e86f9f4e7b1c6325307646f9b82297891ce7f9e75b4bccf20ac436758e721506461b5cd6e5561e89186aa67b
+  languageName: node
+  linkType: hard
+
 "specificity@npm:^0.4.1":
   version: 0.4.1
   resolution: "specificity@npm:0.4.1"
@@ -21832,6 +21914,15 @@ __metadata:
   bin:
     stylelint: bin/stylelint.js
   checksum: 7279f25282a7d61956921e05b570a7c587cb3292635b114565fe9b1e25eb3f2884aafe6c4e47b7deecadbf5f113e58a69e78a37dd8a8c2a88a566a08911aa910
+  languageName: node
+  linkType: hard
+
+"superjson@npm:^2.2.2":
+  version: 2.2.6
+  resolution: "superjson@npm:2.2.6"
+  dependencies:
+    copy-anything: ^4
+  checksum: d860577809502d058144d1e5fcd383571b4cf0466cab7d7b6fa1675fff598af53148bacd7b3b0075fba0997ed1f05393bde95b3a3727f7708513396b1d88a8b6
   languageName: node
   linkType: hard
 
@@ -22553,6 +22644,13 @@ __metadata:
   version: 0.8.1
   resolution: "type-fest@npm:0.8.1"
   checksum: d61c4b2eba24009033ae4500d7d818a94fd6d1b481a8111612ee141400d5f1db46f199c014766b9fa9b31a6a7374d96fc748c6d688a78a3ce5a33123839becb7
+  languageName: node
+  linkType: hard
+
+"type-fest@npm:^4.8.3":
+  version: 4.41.0
+  resolution: "type-fest@npm:4.41.0"
+  checksum: 7055c0e3eb188425d07403f1d5dc175ca4c4f093556f26871fe22041bc93d137d54bef5851afa320638ca1379106c594f5aa153caa654ac1a7f22c71588a4e80
   languageName: node
   linkType: hard
 
@@ -23319,12 +23417,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vee-validate@npm:3.4.13":
-  version: 3.4.13
-  resolution: "vee-validate@npm:3.4.13"
+"vee-validate@npm:4.15.1":
+  version: 4.15.1
+  resolution: "vee-validate@npm:4.15.1"
+  dependencies:
+    "@vue/devtools-api": ^7.5.2
+    type-fest: ^4.8.3
   peerDependencies:
-    vue: ^2.5.18
-  checksum: e06b874f5dc5527f859e33923a67ab6b920384e163d81a8db4f4daf5b9fa0098c48422da3babac8064ae81d68860403034d476c0713e0f634ffcb50d4dd4b61b
+    vue: ^3.4.26
+  checksum: c2278cffca92fe904e97b6545cd36888604e71772ca9cc224c6e3bf70e38ec6f9e3b530fe93f830d306959f093be66cc74e874497b7040f53b9473a532b6ee3b
   languageName: node
   linkType: hard
 
