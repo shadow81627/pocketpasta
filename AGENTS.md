@@ -36,7 +36,13 @@ Yarn 3 (`packageManager`/`.yarnrc.yml`), Node 14+. Scripts live in `package.json
 - `yarn dev` — dev server on `:3000`.
 - `yarn lint` — ESLint over `.js` and `.vue`. The only static gate in this repo today.
 - `yarn test` — the codecept E2E suite in `test/e2e`, which needs a running app and the API. There is no unit runner yet, so most changes land with no automated check; say that plainly in the PR body.
-- `yarn build` / `yarn generate` — production build and static generate.
+- `yarn build` / `yarn generate` — production build and static generate. On Node 17 or newer
+  webpack 4 dies with `error:0308010C:digital envelope routines::unsupported`; run
+  `NODE_OPTIONS=--openssl-legacy-provider yarn generate` until the build ticket pins it in
+  `package.json`. Verified 2026-11-14 on Node 26: the flag produces a clean `dist/`.
+- `yarn install` exits 1 on a clean clone: transitive `canvas@2.x` (E2E image comparison) has no
+  prebuilt binary for modern Node and its source build fails. Everything else installs; ignore
+  the failure until the build ticket settles it.
 
 The app is Vue 2 (`vuetify` 2, `@nuxtjs/auth` 4). Do not introduce Vue 3 or Nuxt 3 APIs.
 
